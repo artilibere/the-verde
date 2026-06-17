@@ -46,3 +46,4 @@ Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
 
 - `assets/js/supabase-config.js` - sync diario
 - `assets/js/giscus.js` - community (impostare repo-id)
+# the-verde
