@@ -11,7 +11,7 @@ brew_grams: 4
 brew_seconds: 90
 brew_infusions: "2-3"
 sort_order: 3
-temi_kb: [lavorazione_qualita, degustazione_sensoriale]
+temi_kb: [lavorazione_qualità, degustazione_sensoriale]
 related_slugs: [sencha, matcha]
 momenti: [pausa]
 stagioni: [primavera]
@@ -37,7 +37,7 @@ Tre settimane di ombra prima del raccolto: la pianta produce clorofilla e L-tean
 
 ## I passaggi
 
-1. Scalda l acqua a 60 C - 2 min
+1. Scalda l'acqua a 60 °C - 2 min
 2. Infusiona 4 g per 100 ml per 90 secondi - 2 min
 3. Versa lentamente - 1 min
 
@@ -57,11 +57,11 @@ Il gyokuro dialoga con il pesce crudo e i vini bianchi strutturati: un ponte tra
 
 ## Domande frequenti
 
-### Perche cosi cara?
+### Perché così cara?
 
-L ombreggiatura riduce la resa e richiede manodopera: paghi qualita e lavorazione.
+L'ombreggiatura riduce la resa e richiede manodopera: paghi qualità e lavorazione.
 
-## Varieta simili
+## Varietà simili
 
 - **Matcha** (/varieta/matcha/) — stessa pianta ombreggiata, macinata
-- **Sencha** (/varieta/sencha/) — piu accessibile
+- **Sencha** (/varieta/sencha/) — più accessibile

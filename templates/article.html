@@ -11,13 +11,18 @@
   <header class="tv-article__header">
     <h1 class="tv-font-serif">{{ meta.title }}</h1>
     {% if meta.meta_description %}<p class="tv-article__lead">{{ meta.meta_description }}</p>{% endif %}
+    {% if has_levels %}
+    <button type="button" class="tv-btn tv-btn--text tv-level-toggle" data-level-toggle aria-pressed="false" aria-label="Mostra sezione approfondimento">Vista completa</button>
+    {% endif %}
   </header>
   <div class="tv-article__body">{{ content_html | safe }}</div>
+  {% include "includes/share.html" %}
 </article>
 {% endblock %}
 {% block scripts %}
+{% if has_levels %}<script src="{{ asset_js('level-toggle') }}" defer></script>{% endif %}
 {% if meta.url is defined and '/percorsi/' in meta.url %}
-<script src="/assets/js/badges.js" defer></script>
-<script src="/assets/js/paths.js" defer></script>
+<script src="{{ asset_js('percorsi') }}" defer></script>
 {% endif %}
+<script src="{{ asset_js('share') }}" defer></script>
 {% endblock %}

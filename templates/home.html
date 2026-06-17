@@ -1,16 +1,57 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="tv-hero"><h1 class="tv-hero__title">Il te verde, con radici e gusto</h1>
-<p class="tv-hero__subtitle">Cultura specialty per chi vive in Italia.</p>
-<a href="/varieta/" class="tv-btn tv-btn--filled">Esplora le varieta</a></section>
-{% if season %}<aside class="tv-season-banner"><p class="tv-season-banner__label">Stagione: {{ season.name }}</p><p>{{ season.narrative }}</p></aside>{% endif %}
-{% if infusion.url %}<section class="tv-infusion-day"><h2>Infusione del giorno</h2><a href="{{ infusion.url }}">{{ infusion.title }}</a></section>{% endif %}
-<section class="tv-section"><h2>Da dove iniziare?</h2><div class="tv-grid tv-grid--intent">
-  <a href="/gioca/percorsi/dal-bancha-al-matcha/" class="tv-intent-card"><h3>Non so da dove iniziare</h3></a>
-  <a href="/varieta/matcha/" class="tv-intent-card"><h3>Matcha</h3></a>
-  <a href="/impara/controversie/salute-scienza-vs-tradizione/" class="tv-intent-card"><h3>Il verde fa bene?</h3></a>
-  <a href="/italia/momenti/colazione/" class="tv-intent-card"><h3>A colazione</h3></a>
-</div></section>
-<section class="tv-section"><h2>Per iniziare</h2><div class="tv-grid tv-grid--cards">{% for v in varieties %}<article class="tv-variety-card"><h3><a href="{{ v.url }}">{{ v.title }}</a></h3><p>{{ v.brief }}</p></article>{% endfor %}</div></section>
+<section class="tv-hero" aria-labelledby="hero-title">
+  <p class="tv-hero__eyebrow">Solo <em>Camellia sinensis</em></p>
+  <h1 id="hero-title" class="tv-hero__title tv-font-serif">Il tè verde, con radici e gusto</h1>
+  <p class="tv-hero__subtitle">Cultura specialty per chi vive in Italia — senza detox, senza fretta.</p>
+  <a href="/varieta/" class="tv-btn tv-btn--filled">Esplora le varietà</a>
+</section>
+
+{% if season %}
+<aside class="tv-season-banner" aria-label="Stagione del tè">
+  <p class="tv-season-banner__label">Stagione: {{ season.name }}</p>
+  <p>{{ season.narrative }}</p>
+</aside>
+{% endif %}
+
+{% if infusion.url %}
+<section class="tv-infusion-day" aria-labelledby="infusion-heading">
+  <h2 id="infusion-heading">Infusione del giorno</h2>
+  <a href="{{ infusion.url }}" class="tv-infusion-day__card">{{ infusion.title }}</a>
+</section>
+{% endif %}
+
+<section class="tv-section" aria-labelledby="intent-heading">
+  <h2 id="intent-heading" class="tv-section__title">Da dove iniziare?</h2>
+  <div class="tv-grid tv-grid--intent">
+    <a href="/gioca/percorsi/dal-bancha-al-matcha/" class="tv-intent-card">
+      <h3 class="tv-intent-card__title">Non so da dove iniziare</h3>
+      <p class="tv-intent-card__brief">Percorso guidato in quattro tappe: dal bancha al matcha.</p>
+    </a>
+    <a href="/varieta/matcha/" class="tv-intent-card">
+      <h3 class="tv-intent-card__title">Matcha</h3>
+      <p class="tv-intent-card__brief">Polvere verde, gesto lento, umami profondo.</p>
+    </a>
+    <a href="/impara/controversie/salute-scienza-vs-tradizione/" class="tv-intent-card">
+      <h3 class="tv-intent-card__title">Il verde fa bene?</h3>
+      <p class="tv-intent-card__brief">Cosa dice la scienza — e cosa no — senza miracoli.</p>
+    </a>
+    <a href="/italia/momenti/colazione/" class="tv-intent-card">
+      <h3 class="tv-intent-card__title">A colazione</h3>
+      <p class="tv-intent-card__brief">Abbinamenti e rituali per la prima tazza del giorno.</p>
+    </a>
+  </div>
+</section>
+
+<section class="tv-section" aria-labelledby="start-heading">
+  <h2 id="start-heading" class="tv-section__title">Per iniziare</h2>
+  <div class="tv-grid tv-grid--cards">
+    {% for v in varieties %}
+    <article class="tv-variety-card">
+      <h3 class="tv-variety-card__title"><a href="{{ v.url }}">{{ v.title }}</a></h3>
+      <p class="tv-variety-card__brief">{{ v.brief }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
 {% endblock %}
-{% block scripts %}<script src="/assets/js/season.js" defer></script>{% endblock %}

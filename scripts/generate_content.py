@@ -14,7 +14,7 @@ VARIETIES = {
         "temi_kb": ["preparazione_servizio", "caffeina_tannini"],
         "related_slugs": ["kukicha", "hojicha"],
         "percorso_tappa": "dal-bancha-al-matcha", "badge_sblocco": "esploratore-verde",
-        "body": """Il bancha e il te che accompagna la giornata giapponese senza pretese: foglie piu mature, sapore morbido, caffeina contenuta.
+        "body": """Il bancha è il tè che accompagna la giornata giapponese senza pretese: foglie più mature, sapore morbido, caffeina contenuta.
 
 ## Profilo sensoriale
 
@@ -32,7 +32,7 @@ VARIETIES = {
 
 ## I passaggi
 
-1. Scalda l acqua a 80 C - 2 min
+1. Scalda l'acqua a 80 °C - 2 min
 2. Infusiona 3 g per 100 ml per 60 secondi - 1 min
 3. Versa tutto il liquore - 30 sec
 
@@ -54,11 +54,11 @@ Il bancha e ideale per chi cerca un'alternativa delicata al cappuccino: non comp
 
 ### Il bancha fa bene alla salute?
 
-Il consumo regolare di te verde puo supportare uno stile di vita sano grazie alle catechine, ma non sostituisce una dieta equilibrata ne le cure mediche.
+Il consumo regolare di tè verde può supportare uno stile di vita sano grazie alle catechine, ma non sostituisce una dieta equilibrata né le cure mediche.
 
-## Varieta simili
+## Varietà simili
 
-- **Kukicha** (/varieta/kukicha/) — ancora piu leggero, rametti e piccioli
+- **Kukicha** (/varieta/kukicha/) — ancora più leggero, rametti e piccioli
 - **Hojicha** (/varieta/hojicha/) — tostato, note nocciola
 """,
     },
@@ -71,7 +71,7 @@ Il consumo regolare di te verde puo supportare uno stile di vita sano grazie all
         "controversie": ["caffeina-stimolazione"],
         "related_slugs": ["gyokuro", "bancha"],
         "percorso_tappa": "dal-bancha-al-matcha",
-        "body": """Ago verdi, profumo di erba tagliata al mattino: il sencha e il battito cardiaco del te giapponese.
+        "body": """Ago verdi, profumo di erba tagliata al mattino: il sencha è il battito cardiaco del tè giapponese.
 
 ## Profilo sensoriale
 
@@ -89,7 +89,7 @@ Il consumo regolare di te verde puo supportare uno stile di vita sano grazie all
 
 ## I passaggi
 
-1. Scalda l acqua a 75 C - 2 min
+1. Scalda l'acqua a 75 °C - 2 min
 2. Infusiona 3 g per 100 ml per 60 secondi - 1 min
 3. Versa e degusta - 1 min
 
@@ -100,23 +100,23 @@ Il consumo regolare di te verde puo supportare uno stile di vita sano grazie all
 
 ## In Italia
 
-Dopo un pranzo in un ristorante giapponese, il sencha e spesso la prima rivelazione: non sa di erba amara se preparato bene. Perfetto per la pausa delle 16:00.
+Dopo un pranzo in un ristorante giapponese, il sencha è spesso la prima rivelazione: non sa di erba amara se preparato bene. Perfetto per la pausa delle 16:00.
 
 ## Abbinamenti
 
 - Pesce crudo, sashimi
-- Pasticceria a bassa grassosita
+- Pasticceria a bassa grassosità
 
 ## Domande frequenti
 
 ### Sencha o gyokuro?
 
-Il sencha e piu quotidiano e vegetale; il gyokuro e ombreggiato, piu umami e dolce.
+Il sencha è più quotidiano e vegetale; il gyokuro è ombreggiato, più umami e dolce.
 
-## Varieta simili
+## Varietà simili
 
-- **Gyokuro** (/varieta/gyokuro/) — piu umami e ombreggiato
-- **Bancha** (/varieta/bancha/) — piu leggero
+- **Gyokuro** (/varieta/gyokuro/) — più umami e ombreggiato
+- **Bancha** (/varieta/bancha/) — più leggero
 """,
     },
     "gyokuro": {
@@ -124,7 +124,7 @@ Il sencha e piu quotidiano e vegetale; il gyokuro e ombreggiato, piu umami e dol
         "origine": "Giappone", "stile": "gyokuro", "caffeina": "Alta", "stagione": "Primavera",
         "brew_temp": 60, "brew_grams": 4, "brew_seconds": 90, "brew_infusions": "2-3",
         "sort_order": 3, "momenti": ["pausa"], "stagioni": ["primavera"],
-        "temi_kb": ["lavorazione_qualita", "degustazione_sensoriale"],
+        "temi_kb": ["lavorazione_qualità", "degustazione_sensoriale"],
         "related_slugs": ["sencha", "matcha"],
         "percorso_tappa": "dal-bancha-al-matcha",
         "body": """Tre settimane di ombra prima del raccolto: la pianta produce clorofilla e L-teanina, e in tazza nasce un brodo verde quasi burroso.
@@ -145,7 +145,7 @@ Il sencha e piu quotidiano e vegetale; il gyokuro e ombreggiato, piu umami e dol
 
 ## I passaggi
 
-1. Scalda l acqua a 60 C - 2 min
+1. Scalda l'acqua a 60 °C - 2 min
 2. Infusiona 4 g per 100 ml per 90 secondi - 2 min
 3. Versa lentamente - 1 min
 
@@ -165,14 +165,14 @@ Il gyokuro dialoga con il pesce crudo e i vini bianchi strutturati: un ponte tra
 
 ## Domande frequenti
 
-### Perche cosi cara?
+### Perché così cara?
 
-L ombreggiatura riduce la resa e richiede manodopera: paghi qualita e lavorazione.
+L'ombreggiatura riduce la resa e richiede manodopera: paghi qualità e lavorazione.
 
-## Varieta simili
+## Varietà simili
 
 - **Matcha** (/varieta/matcha/) — stessa pianta ombreggiata, macinata
-- **Sencha** (/varieta/sencha/) — piu accessibile
+- **Sencha** (/varieta/sencha/) — più accessibile
 """,
     },
     "matcha": {
@@ -205,7 +205,7 @@ L ombreggiatura riduce la resa e richiede manodopera: paghi qualita e lavorazion
 ## I passaggi
 
 1. Setaccia 2 g di matcha nel chawan - 1 min
-2. Aggiungi 70 ml di acqua a 80 C - 30 sec
+2. Aggiungi 70 ml di acqua a 80 °C - 30 sec
 3. Frusta a M con il chasen fino a schiuma fine - 1 min
 
 ## Errori comuni
@@ -215,20 +215,20 @@ L ombreggiatura riduce la resa e richiede manodopera: paghi qualita e lavorazion
 
 ## In Italia
 
-Il matcha in pasticceria ha aperto porte, ma la preparazione tradizionale resta un altra esperienza: come il pistacchio di Bronte, e diventato ingrediente status — e anche gesto lento.
+Il matcha in pasticceria ha aperto porte, ma la preparazione tradizionale resta un altra esperienza: come il pistacchio di Bronte, è diventato ingrediente status — e anche gesto lento.
 
 ## Abbinamenti
 
 - Wagashi, marron glace
-- Pasticceria a bassa grassosita
+- Pasticceria a bassa grassosità
 
 ## Domande frequenti
 
 ### Matcha latte da bar e matcha cerimoniale?
 
-Prodotti diversi: il primo e spesso zuccherato; il secondo richiede tencha di qualita e gesto.
+Prodotti diversi: il primo è spesso zuccherato; il secondo richiede tencha di qualità e gesto.
 
-## Varieta simili
+## Varietà simili
 
 - **Gyokuro** (/varieta/gyokuro/) — stessa origine ombreggiata
 - **Genmaicha** (/varieta/genmaicha/) — quotidiano tostato
@@ -259,7 +259,7 @@ Prodotti diversi: il primo e spesso zuccherato; il secondo richiede tencha di qu
 
 ## I passaggi
 
-1. Scalda l acqua a 85 C - 2 min
+1. Scalda l'acqua a 85 °C - 2 min
 2. Infusiona 3 g per 100 ml per 45 secondi - 1 min
 3. Versa tutto - 30 sec
 
@@ -269,7 +269,7 @@ Prodotti diversi: il primo e spesso zuccherato; il secondo richiede tencha di qu
 
 ## In Italia
 
-Perfetto nelle sere d inverno, quando cerchi calore senza la pesantezza del te nero speziato.
+Perfetto nelle sere d'inverno, quando cerchi calore senza la pesantezza del tè nero speziato.
 
 ## Abbinamenti
 
@@ -282,7 +282,7 @@ Perfetto nelle sere d inverno, quando cerchi calore senza la pesantezza del te n
 
 Bassa: il riso diluisce la foglia e spesso si usa bancha.
 
-## Varieta simili
+## Varietà simili
 
 - **Hojicha** (/varieta/hojicha/) — tostato senza riso
 - **Bancha** (/varieta/bancha/) — base vegetale
@@ -293,9 +293,9 @@ Bassa: il riso diluisce la foglia e spesso si usa bancha.
         "origine": "Giappone", "stile": "hojicha", "caffeina": "Bassa", "stagione": "Autunno",
         "brew_temp": 90, "brew_grams": 3, "brew_seconds": 30, "brew_infusions": "2-3",
         "momenti": ["dopo-cena", "aperitivo"], "stagioni": ["autunno", "inverno"],
-        "temi_kb": ["lavorazione_qualita", "caffeina_tannini"],
+        "temi_kb": ["lavorazione_qualità", "caffeina_tannini"],
         "related_slugs": ["genmaicha", "kukicha"],
-        "body": """Tostato su carbone o forno: l hojicha trasforma il verde in note di nocciola e caramello, con quasi niente caffeina.
+        "body": """Tostato su carbone o forno: l'hojicha trasforma il verde in note di nocciola e caramello, con quasi niente caffeina.
 
 ## Profilo sensoriale
 
@@ -313,7 +313,7 @@ Bassa: il riso diluisce la foglia e spesso si usa bancha.
 
 ## I passaggi
 
-1. Scalda l acqua a 90 C - 2 min
+1. Scalda l'acqua a 90 °C - 2 min
 2. Infusiona 3 g per 100 ml per 30 secondi - 1 min
 3. Versa - 30 sec
 
@@ -332,11 +332,11 @@ Dopo cena, quando il palato chiede qualcosa di caldo senza tenere svegli: dialog
 
 ## Domande frequenti
 
-### Si puo bere la sera?
+### Si può bere la sera?
 
 Si: bassa caffeina, ideale dopo cena.
 
-## Varieta simili
+## Varietà simili
 
 - **Kukicha** (/varieta/kukicha/) — leggero, a volte tostato
 - **Genmaicha** (/varieta/genmaicha/) — cereale e verde
@@ -349,7 +349,7 @@ Si: bassa caffeina, ideale dopo cena.
         "momenti": ["colazione", "dopo-cena"], "stagioni": ["estate"],
         "temi_kb": ["caffeina_tannini", "preparazione_servizio"],
         "related_slugs": ["bancha", "hojicha"],
-        "body": """Piccioli e rametti: il kukicha e economico, gentile, perfetto per chi inizia senza paura dell amaro.
+        "body": """Piccioli e rametti: il kukicha è economico, gentile, perfetto per chi inizia senza paura dell'amaro.
 
 ## Profilo sensoriale
 
@@ -367,7 +367,7 @@ Si: bassa caffeina, ideale dopo cena.
 
 ## I passaggi
 
-1. Acqua a 80 C - 2 min
+1. Acqua a 80 °C - 2 min
 2. 3 g per 100 ml, 60 secondi - 1 min
 3. Versa - 30 sec
 
@@ -386,11 +386,11 @@ Ottima proposta per colazione leggera: non compete con cappuccino e cornetto.
 
 ## Domande frequenti
 
-### E un te di seconda scelta?
+### È un tè di seconda scelta?
 
 No: e un prodotto intenzionale, valorizzato per leggerezza.
 
-## Varieta simili
+## Varietà simili
 
 - **Bancha** (/varieta/bancha/) — foglia matura
 - **Hojicha** (/varieta/hojicha/) — versione tostata
@@ -417,13 +417,13 @@ No: e un prodotto intenzionale, valorizzato per leggerezza.
 ## Attrezzatura
 
 - Gaiwan o bicchiere alto
-- Acqua a 80 C
+- Acqua a 80 °C
 
 ## I passaggi
 
 1. Scalda il recipiente - 1 min
 2. Infusiona 3 g per 100 ml per 2 minuti - 2 min
-3. Rein infusiona piu volte - 2 min
+3. Rein infusiona più volte - 2 min
 
 ## Errori comuni
 
@@ -431,7 +431,7 @@ No: e un prodotto intenzionale, valorizzato per leggerezza.
 
 ## In Italia
 
-Un cinese tra i verdi piu accessibili al palato italiano: note tostate che ricordano frutta secca.
+Un cinese tra i verdi più accessibili al palato italiano: note tostate che ricordano frutta secca.
 
 ## Abbinamenti
 
@@ -440,11 +440,11 @@ Un cinese tra i verdi piu accessibili al palato italiano: note tostate che ricor
 
 ## Domande frequenti
 
-### Perche si chiama pozzo del drago?
+### Perché si chiama pozzo del drago?
 
 Leggenda locale a West Lake: il nome e parte della storia del Longjing.
 
-## Varieta simili
+## Varietà simili
 
 - **Bi Luo Chun** (/varieta/bi-luo-chun/) — spirale primaverile
 - **Gunpowder** (/varieta/gunpowder/) — perle verdi
@@ -457,13 +457,13 @@ Leggenda locale a West Lake: il nome e parte della storia del Longjing.
         "momenti": ["pausa"], "stagioni": ["autunno"],
         "temi_kb": ["storia_cultura", "preparazione_servizio"],
         "related_slugs": ["dragon-well", "genmaicha"],
-        "body": """Foglie arrotolate a pallottola: il gunpowder tiene a lungo aroma e resiste a infusioni piu calde.
+        "body": """Foglie arrotolate a pallottola: il gunpowder tiene a lungo aroma e resiste a infusioni più calde.
 
 ## Profilo sensoriale
 
 - **Aspetto:** Perle verdi compatte
 - **Aroma:** Fumo leggero, erba
-- **Gusto:** Robusto, leggermente affumicato
+- **Gusto:** Robusto, leggermentè affumicato
 - **Retrogusto:** Persistente
 
 **Origine:** Cina — **Stile:** gunpowder
@@ -471,21 +471,21 @@ Leggenda locale a West Lake: il nome e parte della storia del Longjing.
 ## Attrezzatura
 
 - Teiera
-- Acqua 85 C
+- Acqua 85 °C
 
 ## I passaggi
 
 1. Risciacqua le perle con acqua calda - 30 sec
 2. Infusiona 3 g per 100 ml, 90 secondi - 2 min
-3. Seconda infusione piu breve - 1 min
+3. Seconda infusione più breve - 1 min
 
 ## Errori comuni
 
-- Confonderlo con te affumicato lapsang
+- Confonderlo con tè affumicato lapsang
 
 ## In Italia
 
-Storico nelle miscele al menta del Maghreb: in tazza pura rivela un verde piu rustico e onesto.
+Storico nelle miscele al menta del Maghreb: in tazza pura rivela un verde più rustico e onesto.
 
 ## Abbinamenti
 
@@ -494,13 +494,13 @@ Storico nelle miscele al menta del Maghreb: in tazza pura rivela un verde piu ru
 
 ## Domande frequenti
 
-### Perche gunpowder?
+### Perché gunpowder?
 
-Le perle ricordano la polvere da sparo — nome evocativo, non di qualita.
+Le perle ricordano la polvere da sparo — nome evocativo, non di qualità.
 
-## Varieta simili
+## Varietà simili
 
-- **Dragon Well** (/varieta/dragon-well/) — cinese piu fine
+- **Dragon Well** (/varieta/dragon-well/) — cinese più fine
 - **Genmaicha** (/varieta/genmaicha/) — spesso usa base gunpowder
 """,
     },
@@ -509,7 +509,7 @@ Le perle ricordano la polvere da sparo — nome evocativo, non di qualita.
         "origine": "Cina", "stile": "bi-luo-chun", "caffeina": "Media", "stagione": "Primavera",
         "brew_temp": 75, "brew_grams": 3, "brew_seconds": 90, "brew_infusions": "3",
         "momenti": ["pausa"], "stagioni": ["primavera"],
-        "temi_kb": ["lavorazione_qualita", "degustazione_sensoriale"],
+        "temi_kb": ["lavorazione_qualità", "degustazione_sensoriale"],
         "related_slugs": ["dragon-well", "sencha"],
         "body": """Spiralate come conchiglie: un raccolto precoce che profuma di frutta e fiori primaverili.
 
@@ -525,7 +525,7 @@ Le perle ricordano la polvere da sparo — nome evocativo, non di qualita.
 ## Attrezzatura
 
 - Gaiwan
-- Acqua 75 C
+- Acqua 75 °C
 
 ## I passaggi
 
@@ -552,7 +552,7 @@ In primavera, in parallelo con asparagi e fave: un verde che celebra la rinascit
 
 Conchiglia di giada verde — nome poetico cinese.
 
-## Varieta simili
+## Varietà simili
 
 - **Dragon Well** (/varieta/dragon-well/) — altro grande verde cinese
 - **Sencha** (/varieta/sencha/) — giapponese primaverile
@@ -565,21 +565,21 @@ Conchiglia di giada verde — nome poetico cinese.
         "momenti": ["pausa"], "stagioni": ["primavera"],
         "temi_kb": ["storia_cultura", "degustazione_sensoriale"],
         "related_slugs": ["dragon-well", "sencha"],
-        "body": """Dalle pendici dell Himalaya: un verde raro, muschiato e floreale, lontano dai cliché del Darjeeling nero.
+        "body": """Dalle pendici dell'Himalaya: un verde raro, muschiato e floreale, lontano dai cliché del Darjeeling nero.
 
 ## Profilo sensoriale
 
 - **Aspetto:** Foglie scure con punture argento
 - **Aroma:** Muschio, fiori di montagna
 - **Gusto:** Complesso, leggermente astringente
-- **Retrogusto:** Mineralita
+- **Retrogusto:** Mineralità
 
 **Origine:** India — **Stile:** darjeeling
 
 ## Attrezzatura
 
 - Teiera porcellana
-- Acqua 80 C
+- Acqua 80 °C
 
 ## I passaggi
 
@@ -593,7 +593,7 @@ Conchiglia di giada verde — nome poetico cinese.
 
 ## In Italia
 
-Per chi ama i vini montani: un verde con personalita e terroir leggibile.
+Per chi ama i vini montani: un verde con personalità e terroir leggibile.
 
 ## Abbinamenti
 
@@ -606,7 +606,7 @@ Per chi ama i vini montani: un verde con personalita e terroir leggibile.
 
 No: stessa regione, lavorazione non ossidata — profilo diverso.
 
-## Varieta simili
+## Varietà simili
 
 - **Dragon Well** (/varieta/dragon-well/) — altro verde con note tostate
 - **Sencha** (/varieta/sencha/) — confronto quotidiano
@@ -648,7 +648,7 @@ No: stessa regione, lavorazione non ossidata — profilo diverso.
 
 ## In Italia
 
-Alternativa all aperitivo estivo: elegante, senza zucchero, perfetta per Ferragosto.
+Alternativa all'aperitivo estivo: elegante, senza zucchero, perfetta per Ferragosto.
 
 ## Abbinamenti
 
@@ -659,12 +659,12 @@ Alternativa all aperitivo estivo: elegante, senza zucchero, perfetta per Ferrago
 
 ### Quanta caffeina nel cold brew?
 
-Moderata: estrazione fredda piu dolce ma non priva di caffeina.
+Moderata: estrazione fredda più dolce ma non priva di caffeina.
 
-## Varieta simili
+## Varietà simili
 
 - **Gyokuro** (/varieta/gyokuro/) — versione calda
-- **Hojicha freddo** (/varieta/hojicha/) — piu tostato
+- **Hojicha freddo** (/varieta/hojicha/) — più tostato
 """,
     },
 }
@@ -703,40 +703,40 @@ def write_variety(slug: str, data: dict) -> None:
     if data.get("quiz_correlati"):
         fm_lines.append("quiz_correlati: [" + ", ".join(data["quiz_correlati"]) + "]")
     fm_lines.append("---\n")
-    path = ROOT / "varieta" / f"{slug}.md"
+    path = ROOT / "varietà" / f"{slug}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(fm_lines) + f"# {data['title'].split('—')[0].strip()}\n\n" + data["body"], encoding="utf-8")
 
 
 IMPARA_HUBS = {
-    "storia-cultura": ("Storia e cultura del te verde", "Dalle origini cinesi alla tavola italiana."),
-    "lavorazione": ("Lavorazione e qualita", "Come la foglia diventa verde in tazza."),
+    "storia-cultura": ("Storia e cultura del tè verde", "Dalle origini cinesi alla tavola italiana."),
+    "lavorazione": ("Lavorazione e qualità", "Come la foglia diventa verde in tazza."),
     "preparazione": ("Preparazione e servizio", "Temperatura, tempo, utensili."),
     "degustazione": ("Degustazione sensoriale", "Leggere foglia, liquore e palato."),
     "salute": ("Salute e catechine", "Evidenze sobrie, senza hype detox."),
     "cerimonia": ("Cerimonia e spiritualita", "Rituale codificato e gesto quotidiano."),
-    "caffeina": ("Caffeina e tannini", "Quale te a che ora."),
+    "caffeina": ("Caffeina e tannini", "Quale tè a che ora."),
     "cucina": ("Cucina e usi pratici", "Matcha, riuso foglie, cosmetica."),
 }
 
 CONTROVERSIES = {
     "salute-scienza-vs-tradizione": {
-        "title": "Quanto e davvero dimostrato che il te verde faccia bene?",
+        "title": "Quanto è davvero dimostrato che il tè verde faccia bene?",
         "desc": "Scienza e tradizione a confronto sulle catechine.",
         "posizioni": [
             {"fonte": "hara", "tesi": "Servono trial clinici e biodisponibilita misurabile per affermare effetti terapeutici."},
             {"fonte": "rosen", "tesi": "Secoli di medicina cinese e studi epidemiologici supportano benefici su cuore e invecchiamento."},
             {"fonte": "onuma", "tesi": "La saggezza popolare giapponese conferma virtu salutari prima dei paper."},
-            {"fonte": "pellegrino", "tesi": "Il te verde va nella prevenzione, ma non sostituisce le terapie del medico."},
+            {"fonte": "pellegrino", "tesi": "Il tè verde va nella prevenzione, ma non sostituisce le terapie del medico."},
         ],
-        "body": "## Per iniziare\n\nIl te verde contiene catechine con potenziale antiossidante documentato. Quanto possiamo promettere in tazza, pero, resta dibattuto.\n\n## Il cuore della questione\n\nTradizione e laboratorio convergono sulla prevenzione, ma divergono su dosi efficaci e certezza delle affermazioni.\n\n## Approfondimento\n\nHara e il piu cauto; Rosen e Onuma piu divulgativi. In Italia, diffida di chi vende miracoli detox.",
+        "body": "## Per iniziare\n\nIl tè verde contiene catechine con potenziale antiossidante documentato. Quanto possiamo promettere in tazza, però, resta dibattuto.\n\n## Il cuore della questione\n\nTradizione e laboratorio convergono sulla prevenzione, ma divergono su dosi efficaci e certezza delle affermazioni.\n\n## Approfondimento\n\nHara è il più cauto; Rosen e Onuma più divulgativi. In Italia, diffida di chi vende miracoli detox.",
     },
     "bevanda-vs-integratore": {
         "title": "Meglio in tazza o in capsula?",
         "desc": "Bevanda, rituale o estratto di EGCG.",
         "posizioni": [
             {"fonte": "rosen", "tesi": "Gli integratori offrono dosi concentrate ma privano del piacere rituale."},
-            {"fonte": "pellegrino", "tesi": "Il matcha, bevendo la foglia intera, concentra antiossidanti piu di un infusione filtrata."},
+            {"fonte": "pellegrino", "tesi": "Il matcha, bevendo la foglia intera, concentra antiossidanti più di un infusione filtrata."},
             {"fonte": "hara", "tesi": "I trial usano spesso estratti standardizzati, non tazze di sencha."},
         ],
         "body": "## Per iniziare\n\nCapsule o tazza? Non e solo chimica: e anche cultura e piacere.\n\n## Sintesi\n\nLa bevanda integra gesto e salute; gli estratti servono a chi cerca dosi precise.",
@@ -749,28 +749,28 @@ CONTROVERSIES = {
             {"fonte": "pellegrino", "tesi": "Il Chanoyu e evento formale con koicha, usucha, giardino roji."},
             {"fonte": "onuma", "tesi": "La cerimonia giapponese incarna semplicita adottabile anche in Occidente."},
         ],
-        "body": "## Per iniziare\n\nEntrambe elevano acqua e foglia ad arte, con anime diverse.\n\n## Approfondimento\n\nIl gong fu e piu sociale; il chanoyu piu spirituale e codificato.",
+        "body": "## Per iniziare\n\nEntrambe elevano acqua e foglia ad arte, con anime diverse.\n\n## Approfondimento\n\nIl gong fu è più sociale; il chanoyu più spirituale e codificato.",
     },
-    "qualita-sensoriale-vs-chimica": {
-        "title": "Cosa rende un te verde buono?",
+    "qualità-sensoriale-vs-chimica": {
+        "title": "Cosa rende un tè verde buono?",
         "desc": "Palato, occhio e laboratorio.",
         "posizioni": [
             {"fonte": "sommelier", "tesi": "Scheda sensoriale: equilibrio corpo/astringenza, assenza difetti."},
-            {"fonte": "onuma", "tesi": "Aroma di erba fresca e sapore equilibrato; il prezzo non e l unico indicatore."},
+            {"fonte": "onuma", "tesi": "Aroma di erba fresca e sapore equilibrato; il prezzo non è l'unico indicatore."},
             {"fonte": "hara", "tesi": "Catechine, cultivar e processo determinano il profilo salutare."},
-            {"fonte": "rosen", "tesi": "La bellezza della foglia e il piacere in tazza sono criteri legittimi."},
+            {"fonte": "rosen", "tesi": "La bellezza della foglia è il piacere in tazza sono criteri legittimi."},
         ],
-        "body": "## Per iniziare\n\nUn te eccellente al palato tende a essere anche ricco di principi attivi se fresco e ben lavorato.\n\n## Approfondimento\n\nDue linguaggi per valutare la stessa foglia.",
+        "body": "## Per iniziare\n\nUn tè eccellente al palato tende a essere anche ricco di principi attivi se fresco e ben lavorato.\n\n## Approfondimento\n\nDue linguaggi per valutare la stessa foglia.",
     },
     "caffeina-stimolazione": {
         "title": "Stimola o rilassa? Dipende",
-        "desc": "Caffeina, L-teanina e varieta scelta.",
+        "desc": "Caffeina, L-teanina e varietà scelta.",
         "posizioni": [
             {"fonte": "pellegrino", "tesi": "Stimola senza eccitare: caffeina legata ai tannini, L-teanina calma."},
             {"fonte": "sommelier", "tesi": "L-teanina aumenta onde alfa e concentrazione."},
             {"fonte": "onuma", "tesi": "Gyokuro prima dello sport si; prima di dormire no."},
         ],
-        "body": "## Per iniziare\n\nIl te verde contiene caffeina ma il profilo dipende da varieta e tempo di infusione.\n\n## In sintesi\n\nScegli la foglia in base al momento della giornata.",
+        "body": "## Per iniziare\n\nIl tè verde contiene caffeina ma il profilo dipende da varietà e tempo di infusione.\n\n## In sintesi\n\nScegli la foglia in base al momento della giornata.",
     },
     "consumo-quotidiano-vs-rituale": {
         "title": "Pane quotidiano o occasione speciale?",
@@ -785,45 +785,45 @@ CONTROVERSIES = {
 }
 
 GLOSSARIO = {
-    "sencha": ("Sencha", "Te verde giapponese non ombreggiato, il piu consumato in Giappone."),
+    "sencha": ("Sencha", "Tè verde giapponese non ombreggiato, il più consumato in Giappone."),
     "gyokuro": ("Gyokuro", "Te ombreggiato prima del raccolto, ricco di umami e L-teanina."),
     "matcha": ("Matcha", "Polvere di tencha: si beve la foglia intera sospesa in acqua."),
     "bancha": ("Bancha", "Te da foglie mature, bassa caffeina, sapore morbido."),
-    "hojicha": ("Hojicha", "Te verde tostato, note di nocciola, quasi privo di caffeina."),
-    "genmaicha": ("Genmaicha", "Te verde con riso tostato aggiunto."),
+    "hojicha": ("Hojicha", "Tè verde tostato, note di nocciola, quasi privo di caffeina."),
+    "genmaicha": ("Genmaicha", "Tè verde con riso tostato aggiunto."),
     "kukicha": ("Kukicha", "Te di piccioli e rametti, leggero e dolce."),
     "umami": ("Umami", "Quinto gusto, sapidita brodosa percepita nei verdi giapponesi di alta gamma."),
-    "chanoyu": ("Chanoyu", "Via del te giapponese: cerimonia codificata del matcha."),
-    "gong-fu-cha": ("Gong fu cha", "Arte cinese del te: piccole infusioni multiple in gaiwan o teiera Yixing."),
+    "chanoyu": ("Chanoyu", "Via del tè giapponese: cerimonia codificata del matcha."),
+    "gong-fu-cha": ("Gong fu cha", "Arte cinese del tè: piccole infusioni multiple in gaiwan o teiera Yixing."),
     "kyusu": ("Kyusu", "Teiera giapponese con manico laterale, spesso per sencha."),
     "yunomi": ("Yunomi", "Tazza cilindrica giapponese senza manico."),
     "chasen": ("Chasen", "Frusta di bambu per preparare il matcha."),
-    "chawan": ("Chawan", "Ciotola per matcha nella cerimonia del te."),
+    "chawan": ("Chawan", "Ciotola per matcha nella cerimonia del tè."),
     "tencha": ("Tencha", "Foglia ombreggiata destinata alla macinatura in matcha."),
     "shincha": ("Shincha", "Primo raccolto primaverile, massima freschezza."),
-    "catechine": ("Catechine", "Polifenoli antiossidanti, soprattutto EGCG nel te verde."),
-    "egcg": ("EGCG", "Epigallocatechina gallato, catechina piu studiata."),
-    "l-teanina": ("L-teanina", "Aminoacido del te che modula gli effetti della caffeina."),
-    "camellia-sinensis": ("Camellia sinensis", "Pianta del te vero, distinta dalle tisane."),
+    "catechine": ("Catechine", "Polifenoli antiossidanti, soprattutto EGCG nel tè verde."),
+    "egcg": ("EGCG", "Epigallocatechina gallato, catechina più studiata."),
+    "l-teanina": ("L-teanina", "Aminoacido del tè che modula gli effetti della caffeina."),
+    "camellia-sinensis": ("Camellia sinensis", "Pianta del tè vero, distinta dalle tisane."),
     "longjing": ("Longjing", "Dragon Well: famoso verde cinese appiattito a wok."),
     "gaiwan": ("Gaiwan", "Bicchiere con coperchio per infusioni stile gong fu."),
     "yixing": ("Yixing", "Argilla porosa per teiere dedicate a un solo tipo di te."),
     "astringenza": ("Astringenza", "Sensazione di ruvidita al palato data dai tannini."),
-    "wok": ("Wok", "Padella cinese per stabilizzare il te verde a calore diretto."),
+    "wok": ("Wok", "Padella cinese per stabilizzare il tè verde a calore diretto."),
     "vapore": ("Vapore", "Metodo giapponese di stabilizzazione che preserva colore e umami."),
     "usucha": ("Usucha", "Matcha rassente, schiuma leggera."),
-    "koicha": ("Koicha", "Matcha denso cerimoniale, piu concentrato."),
-    "roji": ("Roji", "Giardino del te che precede la sala cerimoniale."),
+    "koicha": ("Koicha", "Matcha denso cerimoniale, più concentrato."),
+    "roji": ("Roji", "Giardino del tè che precede la sala cerimoniale."),
     "darjeeling": ("Darjeeling", "Regione himalayana; esiste anche versione verde non ossidata."),
     "cold-brew": ("Cold brew", "Infusione a freddo, estrazione dolce e bassa in tannini."),
     "gunpowder": ("Gunpowder", "Te cinese arrotolato a perle."),
 }
 
 MOMENTI = {
-    "colazione": ("Te verde a colazione", "Alternative delicate al cappuccino.", ["bancha", "kukicha", "genmaicha"]),
-    "pausa": ("Te verde in pausa", "Pausa delle 10 o delle 16 senza nervosismo del caffe.", ["sencha", "dragon-well"]),
-    "dopo-cena": ("Te verde dopo cena", "Calore leggero senza tenere svegli.", ["hojicha", "kukicha"]),
-    "aperitivo": ("Te verde all aperitivo", "Cold brew e hojicha freddo analcolici.", ["cold-brew-gyokuro", "hojicha"]),
+    "colazione": ("Tè verde a colazione", "Alternative delicate al cappuccino.", ["bancha", "kukicha", "genmaicha"]),
+    "pausa": ("Tè verde in pausa", "Pausa delle 10 o delle 16 senza nervosismo del caffè.", ["sencha", "dragon-well"]),
+    "dopo-cena": ("Tè verde dopo cena", "Calore leggero senza tenere svegli.", ["hojicha", "kukicha"]),
+    "aperitivo": ("Tè verde all'aperitivo", "Cold brew e hojicha freddo analcolici.", ["cold-brew-gyokuro", "hojicha"]),
 }
 
 STAGIONI = {
@@ -853,7 +853,7 @@ meta_description: "{desc}"
 
 ## Approfondimento
 
-Esplora le varieta collegate e le controversie di questo tema nel catalogo The Verde.
+Esplora le varietà collegate e le controversie di questo tema nel catalogo The Verde.
 """, encoding="utf-8")
 
     for slug, data in CONTROVERSIES.items():
@@ -886,7 +886,7 @@ meta_description: "{desc}"
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.
 """, encoding="utf-8")
 
     italia = ROOT / "italia"
@@ -894,12 +894,12 @@ Consulta le schede varieta e le guide collegate per approfondire.
     (italia / "index.md").write_text("""---
 title: "In Italia"
 slug: italia
-meta_description: "Ponte culturale tra tradizioni del te e abitudini italiane."
+meta_description: "Ponte culturale tra tradizioni del tè e abitudini italiane."
 ---
 
 ## Per iniziare
 
-Il te verde in Italia non sostituisce il caffe: si affianca come gesto lento e scoperta sensoriale.
+Il tè verde in Italia non sostituisce il caffè: si affianca come gesto lento e scoperta sensoriale.
 
 ## Momenti e stagioni
 
@@ -919,7 +919,7 @@ varieties: [{", ".join(vars_)}]
 
 {desc}
 
-## Varieta consigliate
+## Varietà consigliate
 
 Vedi le schede nel catalogo per preparazione e abbinamenti italiani.
 """, encoding="utf-8")
@@ -941,7 +941,7 @@ varieties: [{", ".join(vars_)}]
     (italia / "abbinamenti.md").write_text("""---
 title: "Abbinamenti gastronomici italiani"
 slug: abbinamenti
-meta_description: "Te verde e cucina italiana: cosa funziona davvero."
+meta_description: "Tè verde e cucina italiana: cosa funziona davvero."
 ---
 
 ## Per iniziare
@@ -950,19 +950,19 @@ Gyokuro con pesce crudo, hojicha con cioccolato fondente, matcha con pasticceria
 
 ## Approfondimento
 
-Evita abbinamenti con acidita forte del pomodoro; onesta su caffeina e digestione.
+Evita abbinamenti con acidità forte del pomodoro; onestà su caffeina e digestione.
 """, encoding="utf-8")
 
     guide_dir = ROOT / "guide"
     guide_dir.mkdir(exist_ok=True)
     (guide_dir / "matcha-italia.md").write_text("""---
-title: "Perche il matcha non e una moda passeggera in Italia"
+title: "Perché il matcha non è una moda passeggera in Italia"
 slug: matcha-italia
 meta_description: "Dal boom pasticceria al matcha cerimoniale."
 published: 2026-03-15
 ---
 
-Il matcha e arrivato nelle vetrine italiane come ingrediente, non come rituale.
+Il matcha è arrivato nelle vetrine italiane come ingrediente, non come rituale.
 
 ## Per iniziare
 
@@ -970,11 +970,11 @@ Tiramisu matcha e gelato verde hanno aperto porte; la ciotola cerimoniale resta 
 
 ## Approfondimento
 
-Distingui matcha da supermercato zuccherato e tencha cerimoniale di qualita.
+Distingui matcha da supermercato zuccherato e tencha cerimoniale di qualità.
 """, encoding="utf-8")
 
     (guide_dir / "te-italia-storia.md").write_text("""---
-title: "Il te verde in Italia: una storia di nicchia"
+title: "Il tè verde in Italia: una storia di nicchia"
 slug: te-italia-storia
 meta_description: "Da Venezia al boom wellness: come il verde e entrato nelle case italiane."
 published: 2026-04-01
@@ -982,7 +982,7 @@ published: 2026-04-01
 
 ## Per iniziare
 
-Il caffe domina il bar italiano; il te verde cresce nei tea shop specialty delle grandi citta.
+Il caffè domina il bar italiano; il tè verde cresce nei tea shop specialty delle grandi città.
 
 ## Approfondimento
 
@@ -992,10 +992,10 @@ Oggi: matcha in pasticceria, interesse per single origin, corsi con autori itali
     percorsi = ROOT / "gioca" / "percorsi"
     percorsi.mkdir(parents=True, exist_ok=True)
     for slug, title, body in [
-        ("dal-bancha-al-matcha", "Dal bancha al matcha", "Quattro tappe dal verde piu leggero al matcha cerimoniale."),
-        ("palato-italiano", "Il palato italiano", "Degustazione e tre varieta con abbinamenti."),
-        ("scienza-tradizione", "Scienza o tradizione", "Tre controversie sulla salute del te."),
-        ("rituale-quotidiano", "Rituale e quotidiano", "Cerimonia, preparazione e due varieta."),
+        ("dal-bancha-al-matcha", "Dal bancha al matcha", "Quattro tappe dal verde più leggero al matcha cerimoniale."),
+        ("palato-italiano", "Il palato italiano", "Degustazione e tre varietà con abbinamenti."),
+        ("scienza-tradizione", "Scienza o tradizione", "Tre controversie sulla salute del tè."),
+        ("rituale-quotidiano", "Rituale è quotidiano", "Cerimonia, preparazione e due varietà."),
     ]:
         (percorsi / f"{slug}.md").write_text(f"""---
 title: "{title}"

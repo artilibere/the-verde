@@ -2,14 +2,38 @@
   const btn = document.querySelector('.tv-header__menu-btn');
   const nav = document.querySelector('.tv-header__nav');
   if (!btn || !nav) return;
-  btn.addEventListener('click', () => {
-    const open = nav.classList.toggle('tv-header__nav--open');
+
+  const links = nav.querySelectorAll('a[href]');
+  const path = window.location.pathname.replace(/\/$/, '') || '/';
+
+  function setOpen(open) {
+    nav.classList.toggle('tv-header__nav--open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Chiudi menu' : 'Apri menu');
+    document.body.classList.toggle('tv-nav-open', open);
+  }
+
+  links.forEach((link) => {
+    const href = link.getAttribute('href').replace(/\/$/, '') || '/';
+    if (href === path || (href !== '/' && path.startsWith(href))) {
+      link.setAttribute('aria-current', 'page');
+    }
+    link.addEventListener('click', () => setOpen(false));
   });
+
+  btn.addEventListener('click', () => {
+    setOpen(!nav.classList.contains('tv-header__nav--open'));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!nav.classList.contains('tv-header__nav--open')) return;
+    if (nav.contains(e.target) || btn.contains(e.target)) return;
+    setOpen(false);
+  });
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && nav.classList.contains('tv-header__nav--open')) {
-      nav.classList.remove('tv-header__nav--open');
-      btn.setAttribute('aria-expanded', 'false');
+      setOpen(false);
       btn.focus();
     }
   });

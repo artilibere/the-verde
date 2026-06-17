@@ -2,23 +2,36 @@
   const btn = document.querySelector('[data-level-toggle]');
   const body = document.querySelector('.tv-article__body');
   if (!btn || !body) return;
-  const sections = body.querySelectorAll('#approfondisci, h2');
+
+  const approfondisci =
+    body.querySelector('#approfondimento') ||
+    [...body.querySelectorAll('h2')].find((h) => /approfondimento/i.test(h.textContent));
+
+  if (!approfondisci) return;
+
+  const hiddenNodes = [];
+  let node = approfondisci;
+  while (node) {
+    hiddenNodes.push(node);
+    node = node.nextElementSibling;
+  }
+
+  function setCollapsed(collapsed) {
+    btn.setAttribute('aria-pressed', collapsed ? 'true' : 'false');
+    btn.textContent = collapsed ? 'Vista completa' : 'Vista rapida';
+    btn.setAttribute(
+      'aria-label',
+      collapsed ? 'Mostra sezione approfondimento' : 'Nascondi sezione approfondimento'
+    );
+    hiddenNodes.forEach((el) => {
+      el.hidden = collapsed;
+    });
+  }
+
+  setCollapsed(true);
+
   btn.addEventListener('click', () => {
-    const expanded = btn.getAttribute('aria-pressed') === 'true';
-    btn.setAttribute('aria-pressed', expanded ? 'false' : 'true');
-    btn.textContent = expanded ? 'Vista completa' : 'Vista rapida';
-    body.classList.toggle('tv-zone-collapsed', expanded);
-    if (!expanded) {
-      body.querySelectorAll('h2, h3, p, ul, ol, aside').forEach((el, i) => {
-        if (i > 2 && !el.closest('#scopri')) el.style.display = '';
-      });
-    } else {
-      const approfondisci = body.querySelector('[id*="approfond"]') || body.querySelectorAll('h2')[2];
-      body.querySelectorAll('h2, h3, p, ul, ol').forEach((el) => {
-        if (approfondisci && el.compareDocumentPosition(approfondisci) & Node.DOCUMENT_POSITION_FOLLOWING) {
-          if (el !== approfondisci) el.style.display = 'none';
-        }
-      });
-    }
+    const collapsed = btn.getAttribute('aria-pressed') === 'true';
+    setCollapsed(!collapsed);
   });
 })();

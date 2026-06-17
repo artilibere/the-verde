@@ -1,10 +1,35 @@
+# Hashed static assets — long cache, safe with fingerprinted filenames
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# JSON indexes and config
+/varieta/index.json
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/js/config/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Pagefind search assets (deploy only)
+/pagefind/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/feed.xml
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Content-Type: application/xml; charset=utf-8
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+# HTML: revalidate quickly, serve stale while updating
 /
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
 
 /*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+  Content-Language: it
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin

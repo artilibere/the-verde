@@ -1,5 +1,5 @@
 ---
-title: "Te verde dopo cena"
+title: "Tè verde dopo cena"
 slug: dopo-cena
 meta_description: "Calore leggero senza tenere svegli."
 varieties: [hojicha, kukicha]
@@ -9,6 +9,6 @@ varieties: [hojicha, kukicha]
 
 Calore leggero senza tenere svegli.
 
-## Varieta consigliate
+## Varietà consigliate
 
 Vedi le schede nel catalogo per preparazione e abbinamenti italiani.

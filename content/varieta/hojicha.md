@@ -11,14 +11,14 @@ brew_grams: 3
 brew_seconds: 30
 brew_infusions: "2-3"
 sort_order: 99
-temi_kb: [lavorazione_qualita, caffeina_tannini]
+temi_kb: [lavorazione_qualità, caffeina_tannini]
 related_slugs: [genmaicha, kukicha]
 momenti: [dopo-cena, aperitivo]
 stagioni: [autunno, inverno]
 ---
 # Hojicha
 
-Tostato su carbone o forno: l hojicha trasforma il verde in note di nocciola e caramello, con quasi niente caffeina.
+Tostato su carbone o forno: l'hojicha trasforma il verde in note di nocciola e caramello, con quasi niente caffeina.
 
 ## Profilo sensoriale
 
@@ -36,7 +36,7 @@ Tostato su carbone o forno: l hojicha trasforma il verde in note di nocciola e c
 
 ## I passaggi
 
-1. Scalda l acqua a 90 C - 2 min
+1. Scalda l'acqua a 90 °C - 2 min
 2. Infusiona 3 g per 100 ml per 30 secondi - 1 min
 3. Versa - 30 sec
 
@@ -55,11 +55,11 @@ Dopo cena, quando il palato chiede qualcosa di caldo senza tenere svegli: dialog
 
 ## Domande frequenti
 
-### Si puo bere la sera?
+### Si può bere la sera?
 
 Si: bassa caffeina, ideale dopo cena.
 
-## Varieta simili
+## Varietà simili
 
 - **Kukicha** (/varieta/kukicha/) — leggero, a volte tostato
 - **Genmaicha** (/varieta/genmaicha/) — cereale e verde

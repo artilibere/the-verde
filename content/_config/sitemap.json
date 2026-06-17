@@ -1,9 +1,22 @@
 {
   "site_name": "The Verde",
   "base_url": "https://the-verde.it",
+  "locale": "it-IT",
+  "hreflang": "it",
+  "country": "IT",
+  "audience_region": "Italia",
+  "og_image": "/assets/images/og-default.svg",
+  "social": {
+    "twitter_card": "summary_large_image",
+    "theme_color": "#3e5c4e",
+    "og_image_width": 1200,
+    "og_image_height": 630,
+    "og_image_alt": "The Verde — cultura del tè verde in Italia",
+    "same_as": []
+  },
   "nav": [
     { "label": "Scopri", "href": "/" },
-    { "label": "Varieta", "href": "/varieta/" },
+    { "label": "Varietà", "href": "/varieta/" },
     { "label": "Impara", "href": "/impara/" },
     { "label": "In Italia", "href": "/italia/" },
     { "label": "Gioca", "href": "/gioca/" },

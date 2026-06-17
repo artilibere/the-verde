@@ -2,46 +2,46 @@
   "quizzes": [
     {
       "slug": "che-varieta-sei",
-      "title": "Che varieta sei?",
-      "description": "Un profilo sensoriale, non un test di personalita.",
+      "title": "Che varietà sei?",
+      "description": "Un profilo sensoriale, non un test di personalità.",
       "badge": "quiz-sensoriale",
       "questions": [
         {"q": "Preferisci sapori...", "options": ["Delicati e leggeri", "Ricchi e umami", "Tostati e rassicuranti"], "scores": [0, 2, 1]},
-        {"q": "Quando bevi te...", "options": ["Mattina presto", "Pausa pomeridiana", "Dopo cena"], "scores": [1, 2, 0]},
+        {"q": "Quando bevi tè...", "options": ["Mattina presto", "Pausa pomeridiana", "Dopo cena"], "scores": [1, 2, 0]},
         {"q": "Ti attraggono note...", "options": ["Vegetali fresche", "Marine e burrose", "Nocciola e caramello"], "scores": [2, 1, 0]}
       ],
       "results": [
         {"min": 0, "max": 2, "title": "Bancha o kukicha", "url": "/varieta/bancha/", "text": "Cerchi leggerezza e bassa caffeina."},
-        {"min": 3, "max": 4, "title": "Sencha o dragon well", "url": "/varieta/sencha/", "text": "Equilibrio vegetale e quotidianita."},
+        {"min": 3, "max": 4, "title": "Sencha o dragon well", "url": "/varieta/sencha/", "text": "Equilibrio vegetale e quotidianità."},
         {"min": 5, "max": 6, "title": "Gyokuro o matcha", "url": "/varieta/gyokuro/", "text": "Umami profondo e attenzione al gesto."}
       ]
     },
     {
       "slug": "riconosci-errore",
-      "title": "Riconosci l errore",
+      "title": "Riconosci l'errore",
       "description": "Temperature e tempi: cosa rovina una tazza?",
       "badge": "quiz-errori",
       "questions": [
-        {"q": "Sencha con acqua bollente?", "options": ["Ottimo", "Amaro eccessivo"], "correct": 1, "explain": "Il sencha chiede 70-80 C.", "url": "/varieta/sencha/"},
+        {"q": "Sencha con acqua bollente?", "options": ["Ottimo", "Amaro eccessivo"], "correct": 1, "explain": "Il sencha chiede 70-80 °C.", "url": "/varieta/sencha/"},
         {"q": "Gyokuro infusionato 5 minuti?", "options": ["Corretto", "Troppo astringente"], "correct": 1, "explain": "Il gyokuro va infusionato brevemente.", "url": "/varieta/gyokuro/"},
         {"q": "Matcha sciolto con forchetta veloce?", "options": ["Tradizionale", "Serve frusta chasen"], "correct": 1, "explain": "La schiuma nasce dal gesto del chasen.", "url": "/varieta/matcha/"}
       ]
     },
     {
       "slug": "mito-verita",
-      "title": "Mito o verita",
-      "description": "Dieci affermazioni sulla salute del te verde.",
+      "title": "Mito o verità",
+      "description": "Dieci affermazioni sulla salute del tè verde.",
       "badge": "quiz-miti",
       "questions": [
-        {"q": "Il te verde brucia grassi da solo?", "options": ["Mito", "Verita"], "correct": 0, "explain": "Nessun alimento dimagrisce da solo.", "url": "/impara/controversie/salute-scienza-vs-tradizione/"},
-        {"q": "Le catechine sono antiossidanti?", "options": ["Mito", "Verita"], "correct": 1, "explain": "Evidenza solida sul potenziale antiossidante.", "url": "/impara/salute/"},
-        {"q": "Il te verde sostituisce il medico?", "options": ["Mito", "Verita"], "correct": 0, "explain": "Prevenzione si, terapia no.", "url": "/impara/salute/"}
+        {"q": "Il tè verde brucia grassi da solo?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Nessun alimento dimagrisce da solo.", "url": "/impara/controversie/salute-scienza-vs-tradizione/"},
+        {"q": "Le catechine sono antiossidanti?", "options": ["Mito", "Verità"], "correct": 1, "explain": "Evidenza solida sul potenziale antiossidante.", "url": "/impara/salute/"},
+        {"q": "Il tè verde sostituisce il medico?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Prevenzione si, terapia no.", "url": "/impara/salute/"}
       ]
     },
     {
       "slug": "cina-giappone",
       "title": "Cina o Giappone",
-      "description": "Associa varieta e tradizione.",
+      "description": "Associa varietà e tradizione.",
       "badge": "quiz-oriente",
       "questions": [
         {"q": "Dragon Well e...", "options": ["Cina", "Giappone"], "correct": 0, "url": "/varieta/dragon-well/"},
@@ -51,7 +51,7 @@
     },
     {
       "slug": "ora-giusta",
-      "title": "L ora giusta",
+      "title": "L'ora giusta",
       "description": "Caffeina e momento della giornata.",
       "badge": "quiz-ora",
       "questions": [

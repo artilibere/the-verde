@@ -2,7 +2,7 @@
 
 Repo: https://github.com/artilibere/the-verde
 
-Sito editoriale sul te verde (*Camellia sinensis*) con knowledge base, percorsi gamificati e diario.
+Sito editoriale sul tè verde (*Camellia sinensis*) con knowledge base, percorsi gamificati e diario.
 
 ## Build locale
 

@@ -4,7 +4,7 @@
       "slug": "primavera",
       "name": "Primavera",
       "months": [3, 4, 5],
-      "narrative": "Shincha e primi raccolti: il verde piu fresco dell anno, in parallelo con asparagi e fave.",
+      "narrative": "Shincha e primi raccolti: il verde più fresco dell anno, in parallelo con asparagi e fave.",
       "varieties": ["sencha", "bi-luo-chun", "dragon-well"]
     },
     {
@@ -25,7 +25,7 @@
       "slug": "inverno",
       "name": "Inverno",
       "months": [12, 1, 2],
-      "narrative": "Genmaicha e verdi tostati: comfort senza la pesantezza del te nero speziato.",
+      "narrative": "Genmaicha e verdi tostati: comfort senza la pesantezza del tè nero speziato.",
       "varieties": ["genmaicha", "hojicha", "kukicha"]
     }
   ]

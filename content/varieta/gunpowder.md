@@ -18,13 +18,13 @@ stagioni: [autunno]
 ---
 # Gunpowder
 
-Foglie arrotolate a pallottola: il gunpowder tiene a lungo aroma e resiste a infusioni piu calde.
+Foglie arrotolate a pallottola: il gunpowder tiene a lungo aroma e resiste a infusioni più calde.
 
 ## Profilo sensoriale
 
 - **Aspetto:** Perle verdi compatte
 - **Aroma:** Fumo leggero, erba
-- **Gusto:** Robusto, leggermente affumicato
+- **Gusto:** Robusto, leggermentè affumicato
 - **Retrogusto:** Persistente
 
 **Origine:** Cina — **Stile:** gunpowder
@@ -32,21 +32,21 @@ Foglie arrotolate a pallottola: il gunpowder tiene a lungo aroma e resiste a inf
 ## Attrezzatura
 
 - Teiera
-- Acqua 85 C
+- Acqua 85 °C
 
 ## I passaggi
 
 1. Risciacqua le perle con acqua calda - 30 sec
 2. Infusiona 3 g per 100 ml, 90 secondi - 2 min
-3. Seconda infusione piu breve - 1 min
+3. Seconda infusione più breve - 1 min
 
 ## Errori comuni
 
-- Confonderlo con te affumicato lapsang
+- Confonderlo con tè affumicato lapsang
 
 ## In Italia
 
-Storico nelle miscele al menta del Maghreb: in tazza pura rivela un verde piu rustico e onesto.
+Storico nelle miscele al menta del Maghreb: in tazza pura rivela un verde più rustico e onesto.
 
 ## Abbinamenti
 
@@ -55,11 +55,11 @@ Storico nelle miscele al menta del Maghreb: in tazza pura rivela un verde piu ru
 
 ## Domande frequenti
 
-### Perche gunpowder?
+### Perché gunpowder?
 
-Le perle ricordano la polvere da sparo — nome evocativo, non di qualita.
+Le perle ricordano la polvere da sparo — nome evocativo, non di qualità.
 
-## Varieta simili
+## Varietà simili
 
-- **Dragon Well** (/varieta/dragon-well/) — cinese piu fine
+- **Dragon Well** (/varieta/dragon-well/) — cinese più fine
 - **Genmaicha** (/varieta/genmaicha/) — spesso usa base gunpowder

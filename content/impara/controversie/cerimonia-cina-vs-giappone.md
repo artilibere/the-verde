@@ -17,4 +17,4 @@ Entrambe elevano acqua e foglia ad arte, con anime diverse.
 
 ## Approfondimento
 
-Il gong fu e piu sociale; il chanoyu piu spirituale e codificato.
+Il gong fu è più sociale; il chanoyu più spirituale e codificato.

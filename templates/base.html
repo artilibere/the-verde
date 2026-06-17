@@ -3,24 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}{{ title | default(meta.title if meta is defined else 'The Verde') }}{% endblock %} | The Verde</title>
-  <meta name="description" content="{% block description %}{{ meta_description | default(meta.meta_description if meta is defined else 'Cultura del te verde per chi vive in Italia.') }}{% endblock %}">
-  {% if url is defined %}
-  <link rel="canonical" href="{{ base_url }}{{ url }}">
-  {% elif meta is defined and meta.url is defined %}
-  <link rel="canonical" href="{{ base_url }}{{ meta.url }}">
+  {% set page_title = seo_title if site_name in seo_title else seo_title ~ ' | ' ~ site_name %}
+  <title>{% block title %}{{ page_title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ seo_description }}{% endblock %}">
+  <meta name="robots" content="{{ seo_robots }}">
+  {% if seo_url %}
+  <link rel="canonical" href="{{ base_url }}{{ seo_url }}">
+  <link rel="alternate" hreflang="{{ seo_hreflang }}" href="{{ base_url }}{{ seo_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ base_url }}{{ seo_url }}">
+  {% endif %}
+  <meta property="og:locale" content="{{ seo_locale | replace('-', '_') }}">
+  <meta property="og:site_name" content="{{ site_name }}">
+  <meta property="og:title" content="{{ seo_title }}">
+  <meta property="og:description" content="{{ seo_description }}">
+  {% if seo_url %}
+  <meta property="og:url" content="{{ base_url }}{{ seo_url }}">
+  {% endif %}
+  <meta property="og:type" content="{{ og_type }}">
+  {% if article_published is defined and article_published %}
+  <meta property="article:published_time" content="{{ article_published }}">
+  <meta property="article:author" content="{{ site_name }}">
+  {% endif %}
+  <meta name="twitter:card" content="{{ twitter_card | default('summary_large_image') }}">
+  <meta name="twitter:title" content="{{ seo_title }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  {% if theme_color is defined and theme_color %}
+  <meta name="theme-color" content="{{ theme_color }}">
   {% endif %}
   <link rel="alternate" type="application/rss+xml" title="The Verde Guide" href="/feed.xml">
-  <link rel="stylesheet" href="/assets/css/tokens.css">
-  <link rel="stylesheet" href="/assets/css/base.css">
-  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  {% if og_image is defined and og_image %}
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:alt" content="{{ og_image_alt | default(site_name) }}">
+  {% if og_image_width is defined %}<meta property="og:image:width" content="{{ og_image_width }}">{% endif %}
+  {% if og_image_height is defined %}<meta property="og:image:height" content="{{ og_image_height }}">{% endif %}
+  <meta name="twitter:image" content="{{ og_image }}">
+  <meta name="twitter:image:alt" content="{{ og_image_alt | default(site_name) }}">
+  {% endif %}
+  <link rel="preload" href="{{ asset_css() }}" as="style">
+  <link rel="stylesheet" href="{{ asset_css() }}">
+  {% for block in schema_blocks %}
+  <script type="application/ld+json">{{ block | safe }}</script>
+  {% endfor %}
   {% block head_extra %}{% endblock %}
 </head>
 <body class="tv-page tv-page--{{ page_type | default('default') }}{% if meta is defined and meta.path_nav %} tv-page--has-path-nav{% endif %}">
   <a class="tv-skip-link" href="#main">Vai al contenuto</a>
   <header class="tv-header" role="banner">
     <div class="tv-header__inner">
-      <a href="/" class="tv-header__logo"><span class="tv-header__logo-text">The Verde</span></a>
+      <a href="/" class="tv-header__logo" aria-label="The Verde — Home"><span class="tv-header__logo-text">The Verde</span></a>
       <button type="button" class="tv-header__menu-btn" aria-expanded="false" aria-controls="tv-nav-drawer" aria-label="Apri menu"><span class="tv-header__menu-icon" aria-hidden="true"></span></button>
       <nav class="tv-header__nav" id="tv-nav-drawer" aria-label="Navigazione principale">
         <ul class="tv-header__nav-list">
@@ -42,7 +73,7 @@
       <p class="tv-footer__copy">&copy; {{ year }} The Verde. Solo <em>Camellia sinensis</em>.</p>
     </div>
   </footer>
-  <script src="/assets/js/nav.js" defer></script>
+  <script src="{{ asset_js('nav') }}" defer></script>
   {% block scripts %}{% endblock %}
 </body>
 </html>

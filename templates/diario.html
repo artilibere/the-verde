@@ -2,15 +2,35 @@
 {% block content %}
 <header class="tv-page-header"><h1>{{ title }}</h1></header>
 {% if form_mode == "new" %}
-<form class="tv-diario-form" id="diario-form">
-<select id="diario-varieta" name="varieta" required><option value="">Scegli</option>{% for v in varieties %}<option value="{{ v.slug }}">{{ v.title }}</option>{% endfor %}</select>
-<input id="diario-temp" name="temp" type="number" placeholder="Temp C">
-<textarea id="diario-note" name="note"></textarea>
-<button type="submit" class="tv-btn tv-btn--filled">Salva</button>
+<form class="tv-diario-form" id="diario-form" novalidate>
+  <fieldset class="tv-diario-form__fieldset">
+    <legend class="tv-diario-form__legend">Nuova infusione</legend>
+    <div class="tv-form-group">
+      <label for="diario-varieta">Varietà</label>
+      <select id="diario-varieta" name="varieta" required aria-required="true">
+        <option value="">Scegli una varietà</option>
+        {% for v in varieties %}<option value="{{ v.slug }}">{{ v.title }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="tv-form-group">
+      <label for="diario-temp">Temperatura (°C)</label>
+      <input id="diario-temp" name="temp" type="number" min="40" max="100" inputmode="numeric" placeholder="es. 75" aria-describedby="diario-temp-hint">
+      <span id="diario-temp-hint" class="tv-form-hint">Opzionale: confronta con la scheda della varietà.</span>
+    </div>
+    <div class="tv-form-group">
+      <label for="diario-note">Note</label>
+      <textarea id="diario-note" name="note" rows="4" placeholder="Aroma, retrogusto, contesto"></textarea>
+    </div>
+    <button type="submit" class="tv-btn tv-btn--filled">Salva infusione</button>
+  </fieldset>
 </form>
 {% else %}
-<div class="tv-diario-toolbar"><a href="/diario/nuova/" class="tv-btn tv-btn--filled">Nuova</a><button id="diario-export" type="button" class="tv-btn tv-btn--outlined">Export JSON</button></div>
-<div id="diario-list"></div>
+<div class="tv-diario-toolbar">
+  <a href="/diario/nuova/" class="tv-btn tv-btn--filled">Nuova infusione</a>
+  <button id="diario-export" type="button" class="tv-btn tv-btn--outlined">Esporta JSON</button>
+</div>
+<p id="diario-stats" class="tv-diario-stats" aria-live="polite"></p>
+<div id="diario-list" aria-live="polite"></div>
 {% endif %}
 {% endblock %}
-{% block scripts %}<script src="/assets/js/diario.js" defer></script><script src="/assets/js/badges.js" defer></script>{% endblock %}
+{% block scripts %}<script src="{{ asset_js('diario-page') }}" defer></script>{% endblock %}

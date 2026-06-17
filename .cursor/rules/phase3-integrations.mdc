@@ -1,0 +1,37 @@
+---
+description: Promemoria configurazione Supabase e Giscus per the-verde.it (fase 3)
+globs:
+  - assets/js/supabase-config.js
+  - assets/js/giscus.js
+  - templates/community.html
+  - templates/diario.html
+alwaysApply: false
+---
+
+# Fase 3 — da configurare (promemoria)
+
+Il sito è online senza backend. Quando l'utente chiede deploy, community o sync diario, ricordare questi due passaggi pendenti.
+
+## Giscus (community)
+
+File: `assets/js/giscus.js`, pagina `/community/`
+
+1. Repo GitHub con **Discussions** attivate
+2. Installare app Giscus su GitHub
+3. Sostituire in `giscus.js`:
+   - `YOUR_ORG/the-verde` → repo reale
+   - `GISCUS_REPO_ID` e `GISCUS_CATEGORY_ID` da giscus.app
+
+## Supabase (sync diario)
+
+File: `assets/js/supabase-config.js`, pagina `/diario/`
+
+1. Progetto free su supabase.com
+2. Tabella `infusioni` (user_id, varietà, temp, grams, note, tags, momento, season, created_at)
+3. Auth opzionale (anon + RLS per user)
+4. Impostare `url` e `anonKey` in `supabase-config.js`
+5. Implementare `TVSupabase.sync()` in diario.js (oggi è placeholder)
+
+## Ordine consigliato
+
+Giscus prima (solo frontend), Supabase dopo (schema + auth).

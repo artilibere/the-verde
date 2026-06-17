@@ -7,10 +7,10 @@
       "controversie": ["cerimonia-cina-vs-giappone", "consumo-quotidiano-vs-rituale"]
     },
     {
-      "id": "lavorazione_qualita",
-      "nome": "Lavorazione e qualita",
+      "id": "lavorazione_qualità",
+      "nome": "Lavorazione e qualità",
       "url": "/impara/lavorazione/",
-      "controversie": ["qualita-sensoriale-vs-chimica"]
+      "controversie": ["qualità-sensoriale-vs-chimica"]
     },
     {
       "id": "preparazione_servizio",
@@ -22,7 +22,7 @@
       "id": "degustazione_sensoriale",
       "nome": "Degustazione sensoriale",
       "url": "/impara/degustazione/",
-      "controversie": ["qualita-sensoriale-vs-chimica"]
+      "controversie": ["qualità-sensoriale-vs-chimica"]
     },
     {
       "id": "salute_catechine",
@@ -51,13 +51,13 @@
   ],
   "relazioni": [
     {
-      "da": "lavorazione_qualita",
+      "da": "lavorazione_qualità",
       "a": "degustazione_sensoriale",
       "tipo": "presuppone",
       "descrizione": "Senza corretta stabilizzazione non emergono umami e note vegetali in tazza."
     },
     {
-      "da": "lavorazione_qualita",
+      "da": "lavorazione_qualità",
       "a": "salute_catechine",
       "tipo": "presuppone",
       "descrizione": "La stabilizzazione precoce preserva le catechine."
@@ -96,7 +96,7 @@
       "da": "degustazione_sensoriale",
       "a": "salute_catechine",
       "tipo": "contrasta",
-      "descrizione": "Palato e laboratorio valutano dimensioni diverse della qualita."
+      "descrizione": "Palato e laboratorio valutano dimensioni diverse della qualità."
     },
     {
       "da": "storia_cultura",
@@ -118,22 +118,22 @@
     },
     {
       "da": "cucina_usi_pratici",
-      "a": "lavorazione_qualita",
+      "a": "lavorazione_qualità",
       "tipo": "presuppone",
-      "descrizione": "Il matcha da cucina richiede polvere di qualita superiore."
+      "descrizione": "Il matcha da cucina richiede polvere di qualità superiore."
     }
   ],
   "varieta_temi": {
     "bancha": ["preparazione_servizio", "caffeina_tannini"],
     "sencha": ["preparazione_servizio", "degustazione_sensoriale"],
-    "gyokuro": ["lavorazione_qualita", "degustazione_sensoriale"],
+    "gyokuro": ["lavorazione_qualità", "degustazione_sensoriale"],
     "matcha": ["cerimonia_spiritualita", "cucina_usi_pratici"],
     "genmaicha": ["cucina_usi_pratici", "preparazione_servizio"],
-    "hojicha": ["lavorazione_qualita", "caffeina_tannini"],
+    "hojicha": ["lavorazione_qualità", "caffeina_tannini"],
     "kukicha": ["caffeina_tannini", "preparazione_servizio"],
     "dragon-well": ["storia_cultura", "degustazione_sensoriale"],
     "gunpowder": ["storia_cultura", "preparazione_servizio"],
-    "bi-luo-chun": ["lavorazione_qualita", "degustazione_sensoriale"],
+    "bi-luo-chun": ["lavorazione_qualità", "degustazione_sensoriale"],
     "darjeeling-verde": ["storia_cultura", "degustazione_sensoriale"],
     "cold-brew-gyokuro": ["preparazione_servizio", "caffeina_tannini"]
   }

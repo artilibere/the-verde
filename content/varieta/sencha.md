@@ -20,7 +20,7 @@ percorso_tappa: dal-bancha-al-matcha
 ---
 # Sencha
 
-Ago verdi, profumo di erba tagliata al mattino: il sencha e il battito cardiaco del te giapponese.
+Ago verdi, profumo di erba tagliata al mattino: il sencha è il battito cardiaco del tè giapponese.
 
 ## Profilo sensoriale
 
@@ -38,7 +38,7 @@ Ago verdi, profumo di erba tagliata al mattino: il sencha e il battito cardiaco 
 
 ## I passaggi
 
-1. Scalda l acqua a 75 C - 2 min
+1. Scalda l'acqua a 75 °C - 2 min
 2. Infusiona 3 g per 100 ml per 60 secondi - 1 min
 3. Versa e degusta - 1 min
 
@@ -49,20 +49,20 @@ Ago verdi, profumo di erba tagliata al mattino: il sencha e il battito cardiaco 
 
 ## In Italia
 
-Dopo un pranzo in un ristorante giapponese, il sencha e spesso la prima rivelazione: non sa di erba amara se preparato bene. Perfetto per la pausa delle 16:00.
+Dopo un pranzo in un ristorante giapponese, il sencha è spesso la prima rivelazione: non sa di erba amara se preparato bene. Perfetto per la pausa delle 16:00.
 
 ## Abbinamenti
 
 - Pesce crudo, sashimi
-- Pasticceria a bassa grassosita
+- Pasticceria a bassa grassosità
 
 ## Domande frequenti
 
 ### Sencha o gyokuro?
 
-Il sencha e piu quotidiano e vegetale; il gyokuro e ombreggiato, piu umami e dolce.
+Il sencha è più quotidiano e vegetale; il gyokuro è ombreggiato, più umami e dolce.
 
-## Varieta simili
+## Varietà simili
 
-- **Gyokuro** (/varieta/gyokuro/) — piu umami e ombreggiato
-- **Bancha** (/varieta/bancha/) — piu leggero
+- **Gyokuro** (/varieta/gyokuro/) — più umami e ombreggiato
+- **Bancha** (/varieta/bancha/) — più leggero

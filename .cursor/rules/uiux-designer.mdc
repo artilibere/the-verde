@@ -15,26 +15,26 @@ alwaysApply: false
 
 # Frontend the-verde.it: UI/UX Designer
 
-Quando crei o modifichi il frontend statico di the-verde.it (HTML, CSS, JS, wireframe, catalogo variet‡, schede tË, deploy Cloudflare Pages, repo site separato), applica la skill **[uiux-designer](../skills/uiux-designer/SKILL.md)**.
+Quando crei o modifichi il frontend statico di the-verde.it (HTML, CSS, JS, wireframe, catalogo variet√†, schede t√®, deploy Cloudflare Pages, repo site separato), applica la skill **[uiux-designer](../skills/uiux-designer/SKILL.md)**.
 
 ## Quando usare
 
-- Layout schede variet‡ (modello 3 zone Scopri / Prepara / Approfondisci)
+- Layout schede variet√† (modello 3 zone Scopri / Prepara / Approfondisci)
 - Design system Almost Acqua, token CSS Material 3, componenti `tv-*`
 - Catalogo filtrabile, hub origine/momento/stagione
 - Template articoli editoriali e guide
-- Build script Markdown ? HTML
+- Build script Markdown ‚Üí HTML
 - Configurazione `_headers`, `_redirects`, GitHub Actions, Cloudflare Pages
 
 ## Prima di implementare
 
 1. Leggi [the-verde-expert/SKILL.md](../skills/the-verde-expert/SKILL.md) e [cultura-italiana.md](../skills/the-verde-expert/cultura-italiana.md)
 2. Consulta i file di riferimento nella skill: `personas.md`, `design-system.md`, `componenti.md`, `template-pagine.md`, `mapping-contenuti.md`, `cloudflare-pages.md`
-3. Per microcopy UI: tono the-verde-expert (no detox, distinzione tË/tisane)
+3. Per microcopy UI: tono the-verde-expert (no detox, distinzione t√®/tisane)
 
 ## Regola di conflitto
 
-Accessibilit‡ e leggibilit‡ > decorazione. Tono the-verde-expert > copy marketing UI. Una sola CTA per pagina.
+Accessibilit√† e leggibilit√† > decorazione. Tono the-verde-expert > copy marketing UI. Una sola CTA per pagina.
 
 ## Cosa fare sempre
 
@@ -42,5 +42,5 @@ Accessibilit‡ e leggibilit‡ > decorazione. Tono the-verde-expert > copy marketin
 - Pagina HTML statica per ogni URL indicizzabile (no SPA router)
 - Palette Almost Acqua (`#CAD3C1`) come brand wash; primary scuro `#3E5C4E` per CTA
 - No estetica zen kitsch o wellness neon; no emoji negli heading
-- Box "In Italia" su ogni scheda variet‡
+- Box "In Italia" su ogni scheda variet√†
 - Chiudi con la checklist in SKILL.md

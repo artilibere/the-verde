@@ -1,6 +1,29 @@
 {% extends "base.html" %}
-{% block content %}<h1>{{ title }}</h1>
-<h2>Percorsi</h2><ul>{% for p in percorsi %}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{% endfor %}</ul>
-<h2>Quiz</h2><ul>{% for q in quizzes %}<li><a href="/gioca/quiz/{{ q.slug }}/">{{ q.title }}</a></li>{% endfor %}</ul>
-<a href="/gioca/badge/" class="tv-btn tv-btn--outlined">Badge</a>
+{% block content %}
+<header class="tv-page-header">
+  <h1 class="tv-font-serif">{{ title | default('Gioca') }}</h1>
+  <p class="tv-page-header__lead">Percorsi guidati, quiz e badge per esplorare il tè verde con leggerezza.</p>
+</header>
+<section class="tv-section" aria-labelledby="percorsi-heading">
+  <h2 id="percorsi-heading" class="tv-section__title">Percorsi</h2>
+  <div class="tv-grid tv-grid--cards">
+    {% for p in percorsi %}
+    <article class="tv-variety-card">
+      <h3 class="tv-variety-card__title"><a href="{{ p.url }}">{{ p.title }}</a></h3>
+      {% if p.meta_description %}<p class="tv-variety-card__brief">{{ p.meta_description }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="tv-section" aria-labelledby="quiz-heading">
+  <h2 id="quiz-heading" class="tv-section__title">Quiz</h2>
+  <ul class="tv-link-list">
+    {% for q in quizzes %}
+    <li><a href="/gioca/quiz/{{ q.slug }}/">{{ q.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+<p class="tv-section">
+  <a href="/gioca/badge/" class="tv-btn tv-btn--outlined">Collezione badge</a>
+</p>
 {% endblock %}

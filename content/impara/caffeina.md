@@ -1,13 +1,13 @@
 ---
 title: "Caffeina e tannini"
 slug: caffeina
-meta_description: "Quale te a che ora."
+meta_description: "Quale tè a che ora."
 ---
 
 ## Per iniziare
 
-Quale te a che ora.
+Quale tè a che ora.
 
 ## Approfondimento
 
-Esplora le varieta collegate e le controversie di questo tema nel catalogo The Verde.
+Esplora le varietà collegate e le controversie di questo tema nel catalogo The Verde.

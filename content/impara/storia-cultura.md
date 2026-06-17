@@ -1,5 +1,5 @@
 ---
-title: "Storia e cultura del te verde"
+title: "Storia e cultura del tè verde"
 slug: storia-cultura
 meta_description: "Dalle origini cinesi alla tavola italiana."
 ---
@@ -10,4 +10,4 @@ Dalle origini cinesi alla tavola italiana.
 
 ## Approfondimento
 
-Esplora le varieta collegate e le controversie di questo tema nel catalogo The Verde.
+Esplora le varietà collegate e le controversie di questo tema nel catalogo The Verde.

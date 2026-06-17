@@ -47,7 +47,7 @@ Ore in frigorifero: il gyokuro freddo esce dolce, setoso, senza amarezza — ape
 
 ## In Italia
 
-Alternativa all aperitivo estivo: elegante, senza zucchero, perfetta per Ferragosto.
+Alternativa all'aperitivo estivo: elegante, senza zucchero, perfetta per Ferragosto.
 
 ## Abbinamenti
 
@@ -58,9 +58,9 @@ Alternativa all aperitivo estivo: elegante, senza zucchero, perfetta per Ferrago
 
 ### Quanta caffeina nel cold brew?
 
-Moderata: estrazione fredda piu dolce ma non priva di caffeina.
+Moderata: estrazione fredda più dolce ma non priva di caffeina.
 
-## Varieta simili
+## Varietà simili
 
 - **Gyokuro** (/varieta/gyokuro/) — versione calda
-- **Hojicha freddo** (/varieta/hojicha/) — piu tostato
+- **Hojicha freddo** (/varieta/hojicha/) — più tostato

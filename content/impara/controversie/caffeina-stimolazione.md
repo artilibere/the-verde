@@ -1,7 +1,7 @@
 ---
 title: "Stimola o rilassa? Dipende"
 slug: caffeina-stimolazione
-meta_description: "Caffeina, L-teanina e varieta scelta."
+meta_description: "Caffeina, L-teanina e varietà scelta."
 posizioni:
   - fonte: pellegrino
     tesi: "Stimola senza eccitare: caffeina legata ai tannini, L-teanina calma."
@@ -13,7 +13,7 @@ posizioni:
 
 ## Per iniziare
 
-Il te verde contiene caffeina ma il profilo dipende da varieta e tempo di infusione.
+Il tè verde contiene caffeina ma il profilo dipende da varietà e tempo di infusione.
 
 ## In sintesi
 

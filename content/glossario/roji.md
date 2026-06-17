@@ -1,13 +1,13 @@
 ---
 title: "Roji"
 slug: roji
-meta_description: "Giardino del te che precede la sala cerimoniale."
+meta_description: "Giardino del tè che precede la sala cerimoniale."
 ---
 
 ## Per iniziare
 
-Giardino del te che precede la sala cerimoniale.
+Giardino del tè che precede la sala cerimoniale.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.

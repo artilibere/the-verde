@@ -10,4 +10,4 @@ Quinto gusto, sapidita brodosa percepita nei verdi giapponesi di alta gamma.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.

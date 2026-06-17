@@ -1,13 +1,13 @@
 ---
 title: "Catechine"
 slug: catechine
-meta_description: "Polifenoli antiossidanti, soprattutto EGCG nel te verde."
+meta_description: "Polifenoli antiossidanti, soprattutto EGCG nel tè verde."
 ---
 
 ## Per iniziare
 
-Polifenoli antiossidanti, soprattutto EGCG nel te verde.
+Polifenoli antiossidanti, soprattutto EGCG nel tè verde.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.

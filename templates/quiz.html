@@ -11,9 +11,11 @@
   <h1>{{ quiz.title }}</h1>
   <p class="tv-page-header__lead">{{ quiz.description }}</p>
 </header>
-<div id="quiz-app" class="tv-quiz" data-quiz-slug="{{ quiz.slug }}"></div>
+<div id="quiz-app" class="tv-quiz" data-quiz-slug="{{ quiz.slug }}" aria-busy="true">
+  <p class="tv-quiz__loading">Caricamento quiz…</p>
+</div>
 <noscript><p>Attiva JavaScript per giocare al quiz.</p></noscript>
 {% endblock %}
 {% block scripts %}
-<script src="/assets/js/quiz.js" defer></script>
+<script src="{{ asset_js('quiz') }}" defer></script>
 {% endblock %}

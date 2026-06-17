@@ -34,10 +34,12 @@
       {% endfor %}
       <button type="submit" class="tv-btn tv-btn--outlined">Registra la tua riflessione</button>
     </form>
-    <p class="tv-poll__result" id="poll-result" hidden></p>
+    <p class="tv-poll__result" id="poll-result" role="status" hidden></p>
   </section>
+  {% include "includes/share.html" %}
 </article>
 {% endblock %}
 {% block scripts %}
-<script src="/assets/js/poll.js" defer></script>
+<script src="{{ asset_js('poll') }}" defer></script>
+<script src="{{ asset_js('share') }}" defer></script>
 {% endblock %}

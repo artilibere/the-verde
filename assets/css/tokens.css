@@ -1,10 +1,14 @@
 :root {
   --tv-color-almost-acqua: #cad3c1;
+  --tv-color-almost-acqua-rgb: 202, 211, 193;
+
   --md-sys-color-primary: #3e5c4e;
   --md-sys-color-on-primary: #ffffff;
   --md-sys-color-primary-container: #cad3c1;
   --md-sys-color-on-primary-container: #1a2e24;
   --md-sys-color-secondary: #5a6b55;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #dde5d8;
   --md-sys-color-surface: #fafaf7;
   --md-sys-color-on-surface: #1c1f1d;
   --md-sys-color-surface-variant: #f0f2ee;
@@ -12,10 +16,24 @@
   --md-sys-color-outline: #737875;
   --md-sys-color-outline-variant: #c3c7c2;
   --md-sys-color-error: #ba1a1a;
+
+  --md-sys-typescale-headline-large: 600 2rem/1.25 var(--tv-font-serif-fallback);
+  --md-sys-typescale-headline-medium: 600 1.375rem/1.35 system-ui, -apple-system, "Segoe UI", sans-serif;
+  --md-sys-typescale-title-large: 600 1.125rem/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  --md-sys-typescale-body-large: 400 1.0625rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  --md-sys-typescale-label-large: 500 0.875rem/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  --md-sys-typescale-label-medium: 500 0.75rem/1.3 system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --tv-font-serif: Georgia, "Times New Roman", serif;
+  --tv-font-serif-fallback: Georgia, "Times New Roman", serif;
+
   --md-sys-shape-corner-small: 8px;
   --md-sys-shape-corner-medium: 12px;
   --md-sys-shape-corner-full: 9999px;
-  --tv-font-serif: Georgia, "Times New Roman", serif;
+
+  --md-sys-elevation-1: 0 1px 2px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --md-sys-elevation-2: 0 2px 6px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.06);
+
   --tv-content-max-width: 72ch;
   --tv-page-max-width: 1200px;
   --tv-spacing-2: 8px;
@@ -25,14 +43,20 @@
   --tv-spacing-6: 48px;
   --tv-header-height: 64px;
   --md-sys-motion-duration-short: 150ms;
+  --tv-focus-ring: 0 0 0 2px var(--md-sys-color-surface), 0 0 0 4px var(--md-sys-color-primary);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --md-sys-color-primary: #8fb5a0;
+    --md-sys-color-on-primary: #1a2e24;
     --md-sys-color-surface: #1a1c1a;
     --md-sys-color-on-surface: #e2e3e1;
     --md-sys-color-surface-variant: #2a2c2a;
+    --md-sys-color-on-surface-variant: #b8bcb8;
     --md-sys-color-primary-container: #2d4036;
+    --md-sys-color-on-primary-container: #cad3c1;
+    --md-sys-color-outline-variant: #434845;
+    --tv-focus-ring: 0 0 0 2px var(--md-sys-color-surface), 0 0 0 4px var(--md-sys-color-primary);
   }
 }

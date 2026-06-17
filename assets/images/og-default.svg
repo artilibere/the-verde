@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="The Verde">
+  <rect width="1200" height="630" fill="#3e5c4e"/>
+  <rect x="48" y="48" width="1104" height="534" rx="24" fill="#cad3c1"/>
+  <text x="600" y="290" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#1a2e24">The Verde</text>
+  <text x="600" y="360" text-anchor="middle" font-family="system-ui, sans-serif" font-size="30" fill="#3e5c4e">Cultura del tè verde in Italia</text>
+  <text x="600" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#434845">Camellia sinensis · the-verde.it</text>
+</svg>

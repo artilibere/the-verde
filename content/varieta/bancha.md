@@ -20,7 +20,7 @@ badge_sblocco: esploratore-verde
 ---
 # Bancha
 
-Il bancha e il te che accompagna la giornata giapponese senza pretese: foglie piu mature, sapore morbido, caffeina contenuta.
+Il bancha è il tè che accompagna la giornata giapponese senza pretese: foglie più mature, sapore morbido, caffeina contenuta.
 
 ## Profilo sensoriale
 
@@ -38,7 +38,7 @@ Il bancha e il te che accompagna la giornata giapponese senza pretese: foglie pi
 
 ## I passaggi
 
-1. Scalda l acqua a 80 C - 2 min
+1. Scalda l'acqua a 80 °C - 2 min
 2. Infusiona 3 g per 100 ml per 60 secondi - 1 min
 3. Versa tutto il liquore - 30 sec
 
@@ -60,9 +60,9 @@ Il bancha e ideale per chi cerca un'alternativa delicata al cappuccino: non comp
 
 ### Il bancha fa bene alla salute?
 
-Il consumo regolare di te verde puo supportare uno stile di vita sano grazie alle catechine, ma non sostituisce una dieta equilibrata ne le cure mediche.
+Il consumo regolare di tè verde può supportare uno stile di vita sano grazie alle catechine, ma non sostituisce una dieta equilibrata né le cure mediche.
 
-## Varieta simili
+## Varietà simili
 
-- **Kukicha** (/varieta/kukicha/) — ancora piu leggero, rametti e piccioli
+- **Kukicha** (/varieta/kukicha/) — ancora più leggero, rametti e piccioli
 - **Hojicha** (/varieta/hojicha/) — tostato, note nocciola

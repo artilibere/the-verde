@@ -11,7 +11,7 @@ brew_grams: 3
 brew_seconds: 90
 brew_infusions: "3"
 sort_order: 99
-temi_kb: [lavorazione_qualita, degustazione_sensoriale]
+temi_kb: [lavorazione_qualità, degustazione_sensoriale]
 related_slugs: [dragon-well, sencha]
 momenti: [pausa]
 stagioni: [primavera]
@@ -32,7 +32,7 @@ Spiralate come conchiglie: un raccolto precoce che profuma di frutta e fiori pri
 ## Attrezzatura
 
 - Gaiwan
-- Acqua 75 C
+- Acqua 75 °C
 
 ## I passaggi
 
@@ -59,7 +59,7 @@ In primavera, in parallelo con asparagi e fave: un verde che celebra la rinascit
 
 Conchiglia di giada verde — nome poetico cinese.
 
-## Varieta simili
+## Varietà simili
 
 - **Dragon Well** (/varieta/dragon-well/) — altro grande verde cinese
 - **Sencha** (/varieta/sencha/) — giapponese primaverile

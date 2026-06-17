@@ -18,7 +18,7 @@ stagioni: [estate]
 ---
 # Kukicha
 
-Piccioli e rametti: il kukicha e economico, gentile, perfetto per chi inizia senza paura dell amaro.
+Piccioli e rametti: il kukicha è economico, gentile, perfetto per chi inizia senza paura dell'amaro.
 
 ## Profilo sensoriale
 
@@ -36,7 +36,7 @@ Piccioli e rametti: il kukicha e economico, gentile, perfetto per chi inizia sen
 
 ## I passaggi
 
-1. Acqua a 80 C - 2 min
+1. Acqua a 80 °C - 2 min
 2. 3 g per 100 ml, 60 secondi - 1 min
 3. Versa - 30 sec
 
@@ -55,11 +55,11 @@ Ottima proposta per colazione leggera: non compete con cappuccino e cornetto.
 
 ## Domande frequenti
 
-### E un te di seconda scelta?
+### È un tè di seconda scelta?
 
 No: e un prodotto intenzionale, valorizzato per leggerezza.
 
-## Varieta simili
+## Varietà simili
 
 - **Bancha** (/varieta/bancha/) — foglia matura
 - **Hojicha** (/varieta/hojicha/) — versione tostata

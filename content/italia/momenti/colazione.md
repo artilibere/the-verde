@@ -1,5 +1,5 @@
 ---
-title: "Te verde a colazione"
+title: "Tè verde a colazione"
 slug: colazione
 meta_description: "Alternative delicate al cappuccino."
 varieties: [bancha, kukicha, genmaicha]
@@ -9,6 +9,6 @@ varieties: [bancha, kukicha, genmaicha]
 
 Alternative delicate al cappuccino.
 
-## Varieta consigliate
+## Varietà consigliate
 
 Vedi le schede nel catalogo per preparazione e abbinamenti italiani.

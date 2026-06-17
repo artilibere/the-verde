@@ -10,6 +10,9 @@
   </nav>
   <h1>{{ title }}</h1>
   {% if lead %}<p class="tv-page-header__lead">{{ lead }}</p>{% endif %}
+  {% if has_levels %}
+  <button type="button" class="tv-btn tv-btn--text tv-level-toggle" data-level-toggle aria-pressed="false" aria-label="Mostra sezione approfondimento">Vista completa</button>
+  {% endif %}
 </header>
 {% if content_html %}
 <div class="tv-article__body">{{ content_html | safe }}</div>
@@ -50,7 +53,7 @@
   <div class="tv-grid tv-grid--badges" id="badge-collection">
     {% for b in badges %}
     <div class="tv-badge" data-badge-id="{{ b.id }}" title="{{ b.description }}">
-      <span class="tv-badge__icon" aria-hidden="true">?</span>
+      <span class="tv-badge__icon" aria-hidden="true">&#9675;</span>
       <span class="tv-badge__name">{{ b.name }}</span>
     </div>
     {% endfor %}
@@ -59,5 +62,6 @@
 {% endif %}
 {% endblock %}
 {% block scripts %}
-{% if badges %}<script src="/assets/js/badges.js" defer></script>{% endif %}
+{% if has_levels %}<script src="{{ asset_js('level-toggle') }}" defer></script>{% endif %}
+{% if badges %}<script src="{{ asset_js('badges') }}" defer></script>{% endif %}
 {% endblock %}

@@ -1,13 +1,13 @@
 ---
 title: "Wok"
 slug: wok
-meta_description: "Padella cinese per stabilizzare il te verde a calore diretto."
+meta_description: "Padella cinese per stabilizzare il tè verde a calore diretto."
 ---
 
 ## Per iniziare
 
-Padella cinese per stabilizzare il te verde a calore diretto.
+Padella cinese per stabilizzare il tè verde a calore diretto.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.

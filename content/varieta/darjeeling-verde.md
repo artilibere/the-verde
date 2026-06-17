@@ -18,21 +18,21 @@ stagioni: [primavera]
 ---
 # Darjeeling verde
 
-Dalle pendici dell Himalaya: un verde raro, muschiato e floreale, lontano dai cliché del Darjeeling nero.
+Dalle pendici dell'Himalaya: un verde raro, muschiato e floreale, lontano dai cliché del Darjeeling nero.
 
 ## Profilo sensoriale
 
 - **Aspetto:** Foglie scure con punture argento
 - **Aroma:** Muschio, fiori di montagna
 - **Gusto:** Complesso, leggermente astringente
-- **Retrogusto:** Mineralita
+- **Retrogusto:** Mineralità
 
 **Origine:** India — **Stile:** darjeeling
 
 ## Attrezzatura
 
 - Teiera porcellana
-- Acqua 80 C
+- Acqua 80 °C
 
 ## I passaggi
 
@@ -46,7 +46,7 @@ Dalle pendici dell Himalaya: un verde raro, muschiato e floreale, lontano dai cl
 
 ## In Italia
 
-Per chi ama i vini montani: un verde con personalita e terroir leggibile.
+Per chi ama i vini montani: un verde con personalità e terroir leggibile.
 
 ## Abbinamenti
 
@@ -59,7 +59,7 @@ Per chi ama i vini montani: un verde con personalita e terroir leggibile.
 
 No: stessa regione, lavorazione non ossidata — profilo diverso.
 
-## Varieta simili
+## Varietà simili
 
 - **Dragon Well** (/varieta/dragon-well/) — altro verde con note tostate
 - **Sencha** (/varieta/sencha/) — confronto quotidiano

@@ -1,5 +1,17 @@
 const DIARIO_KEY = 'tv-diario';
 
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function entryVarieta(entry) {
+  return entry.varieta ?? entry.varietà ?? '';
+}
+
 function getEntries() {
   try {
     return JSON.parse(localStorage.getItem(DIARIO_KEY) || '[]');
@@ -18,17 +30,19 @@ function renderList() {
   if (!list) return;
   const entries = getEntries().sort((a, b) => new Date(b.date) - new Date(a.date));
   if (!entries.length) {
-    list.innerHTML = '<p>Nessuna infusione ancora. <a href="/diario/nuova/">Registra la prima</a>.</p>';
+    list.innerHTML =
+      '<p class="tv-diario-empty">Nessuna infusione ancora. <a href="/diario/nuova/">Registra la prima</a> dopo una tazza di sencha, genmaicha o gyokuro.</p>';
+    if (stats) stats.textContent = '';
     return;
   }
   list.innerHTML = entries
     .map(
       (e) => `
     <article class="tv-diario-list__item">
-      <strong>${e.varieta}</strong> — ${new Date(e.date).toLocaleDateString('it-IT')}
-      ${e.temp ? `<span>${e.temp}°C</span>` : ''}
-      <p>${e.note || ''}</p>
-      ${e.tags?.length ? `<p>${e.tags.map((t) => `<span class="tv-chip">${t}</span>`).join(' ')}</p>` : ''}
+      <strong>${escapeHtml(entryVarieta(e))}</strong> — ${new Date(e.date).toLocaleDateString('it-IT')}
+      ${e.temp ? `<span>${escapeHtml(e.temp)}°C</span>` : ''}
+      <p>${escapeHtml(e.note || '')}</p>
+      ${e.tags?.length ? `<p>${e.tags.map((t) => `<span class="tv-chip">${escapeHtml(t)}</span>`).join(' ')}</p>` : ''}
     </article>`
     )
     .join('');
@@ -52,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const exportBtn = document.getElementById('diario-export');
   const syncBtn = document.getElementById('diario-sync');
   const params = new URLSearchParams(window.location.search);
-  const prefill = params.get('varieta');
+  const prefill = params.get('varieta') || params.get('varietà');
   if (prefill) {
     const sel = document.getElementById('diario-varieta');
     if (sel) sel.value = prefill;
@@ -64,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const fd = new FormData(form);
       const entry = {
         id: Date.now(),
-        varieta: fd.get('varieta'),
+        varieta: fd.get('varieta') || fd.get('varietà'),
         date: new Date().toISOString(),
         temp: fd.get('temp'),
         grams: fd.get('grams'),

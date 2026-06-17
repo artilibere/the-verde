@@ -10,4 +10,4 @@ Argilla porosa per teiere dedicate a un solo tipo di te.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.

@@ -36,7 +36,7 @@ Il profumo di popcorn nel teiere: genmaicha unisce foglie di bancha e riso tosta
 
 ## I passaggi
 
-1. Scalda l acqua a 85 C - 2 min
+1. Scalda l'acqua a 85 °C - 2 min
 2. Infusiona 3 g per 100 ml per 45 secondi - 1 min
 3. Versa tutto - 30 sec
 
@@ -46,7 +46,7 @@ Il profumo di popcorn nel teiere: genmaicha unisce foglie di bancha e riso tosta
 
 ## In Italia
 
-Perfetto nelle sere d inverno, quando cerchi calore senza la pesantezza del te nero speziato.
+Perfetto nelle sere d'inverno, quando cerchi calore senza la pesantezza del tè nero speziato.
 
 ## Abbinamenti
 
@@ -59,7 +59,7 @@ Perfetto nelle sere d inverno, quando cerchi calore senza la pesantezza del te n
 
 Bassa: il riso diluisce la foglia e spesso si usa bancha.
 
-## Varieta simili
+## Varietà simili
 
 - **Hojicha** (/varieta/hojicha/) — tostato senza riso
 - **Bancha** (/varieta/bancha/) — base vegetale

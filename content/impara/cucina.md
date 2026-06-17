@@ -10,4 +10,4 @@ Matcha, riuso foglie, cosmetica.
 
 ## Approfondimento
 
-Esplora le varieta collegate e le controversie di questo tema nel catalogo The Verde.
+Esplora le varietà collegate e le controversie di questo tema nel catalogo The Verde.

@@ -32,13 +32,13 @@ Foglie appiattite a lancia nel wok: il Longjing profuma di castagna tostata e er
 ## Attrezzatura
 
 - Gaiwan o bicchiere alto
-- Acqua a 80 C
+- Acqua a 80 °C
 
 ## I passaggi
 
 1. Scalda il recipiente - 1 min
 2. Infusiona 3 g per 100 ml per 2 minuti - 2 min
-3. Rein infusiona piu volte - 2 min
+3. Rein infusiona più volte - 2 min
 
 ## Errori comuni
 
@@ -46,7 +46,7 @@ Foglie appiattite a lancia nel wok: il Longjing profuma di castagna tostata e er
 
 ## In Italia
 
-Un cinese tra i verdi piu accessibili al palato italiano: note tostate che ricordano frutta secca.
+Un cinese tra i verdi più accessibili al palato italiano: note tostate che ricordano frutta secca.
 
 ## Abbinamenti
 
@@ -55,11 +55,11 @@ Un cinese tra i verdi piu accessibili al palato italiano: note tostate che ricor
 
 ## Domande frequenti
 
-### Perche si chiama pozzo del drago?
+### Perché si chiama pozzo del drago?
 
 Leggenda locale a West Lake: il nome e parte della storia del Longjing.
 
-## Varieta simili
+## Varietà simili
 
 - **Bi Luo Chun** (/varieta/bi-luo-chun/) — spirale primaverile
 - **Gunpowder** (/varieta/gunpowder/) — perle verdi

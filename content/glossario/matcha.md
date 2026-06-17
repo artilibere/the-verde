@@ -10,4 +10,4 @@ Polvere di tencha: si beve la foglia intera sospesa in acqua.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.

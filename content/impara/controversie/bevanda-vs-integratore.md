@@ -6,7 +6,7 @@ posizioni:
   - fonte: rosen
     tesi: "Gli integratori offrono dosi concentrate ma privano del piacere rituale."
   - fonte: pellegrino
-    tesi: "Il matcha, bevendo la foglia intera, concentra antiossidanti piu di un infusione filtrata."
+    tesi: "Il matcha, bevendo la foglia intera, concentra antiossidanti più di un infusione filtrata."
   - fonte: hara
     tesi: "I trial usano spesso estratti standardizzati, non tazze di sencha."
 ---

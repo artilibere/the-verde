@@ -1,5 +1,5 @@
 ---
-title: "Te verde all aperitivo"
+title: "Tè verde all'aperitivo"
 slug: aperitivo
 meta_description: "Cold brew e hojicha freddo analcolici."
 varieties: [cold-brew-gyokuro, hojicha]
@@ -9,6 +9,6 @@ varieties: [cold-brew-gyokuro, hojicha]
 
 Cold brew e hojicha freddo analcolici.
 
-## Varieta consigliate
+## Varietà consigliate
 
 Vedi le schede nel catalogo per preparazione e abbinamenti italiani.

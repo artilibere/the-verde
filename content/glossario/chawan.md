@@ -1,13 +1,13 @@
 ---
 title: "Chawan"
 slug: chawan
-meta_description: "Ciotola per matcha nella cerimonia del te."
+meta_description: "Ciotola per matcha nella cerimonia del tè."
 ---
 
 ## Per iniziare
 
-Ciotola per matcha nella cerimonia del te.
+Ciotola per matcha nella cerimonia del tè.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.

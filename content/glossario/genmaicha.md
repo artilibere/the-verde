@@ -1,13 +1,13 @@
 ---
 title: "Genmaicha"
 slug: genmaicha
-meta_description: "Te verde con riso tostato aggiunto."
+meta_description: "Tè verde con riso tostato aggiunto."
 ---
 
 ## Per iniziare
 
-Te verde con riso tostato aggiunto.
+Tè verde con riso tostato aggiunto.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.

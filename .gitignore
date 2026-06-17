@@ -2,7 +2,9 @@ dist/
 __pycache__/
 *.pyc
 .venv/
+.cache/
 pagefind/
 .DS_Store
 .wrangler/
 books/*.pdf
+.env

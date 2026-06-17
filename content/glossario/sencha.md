@@ -1,13 +1,13 @@
 ---
 title: "Sencha"
 slug: sencha
-meta_description: "Te verde giapponese non ombreggiato, il piu consumato in Giappone."
+meta_description: "Tè verde giapponese non ombreggiato, il più consumato in Giappone."
 ---
 
 ## Per iniziare
 
-Te verde giapponese non ombreggiato, il piu consumato in Giappone.
+Tè verde giapponese non ombreggiato, il più consumato in Giappone.
 
 ## Approfondimento
 
-Consulta le schede varieta e le guide collegate per approfondire.
+Consulta le schede varietà e le guide collegate per approfondire.
