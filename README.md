@@ -23,7 +23,24 @@ python scripts/build.py --content content --out dist
 
 ## Deploy
 
-GitHub Actions in `.github/workflows/deploy.yml` (Cloudflare Pages + Pagefind).
+**Live:** https://the-verde.pages.dev (custom domain: https://the-verde.it quando DNS e SSL sono attivi)
+
+### Deploy rapido (Wrangler, account artilibere)
+
+```bash
+bash scripts/deploy.sh
+```
+
+Account Cloudflare: `artilibere` (`9d6667327f2b656718e75db0808133f7`)
+
+### GitHub Actions (opzionale)
+
+Secrets in GitHub → Settings → Secrets:
+
+- `CLOUDFLARE_API_TOKEN` — token con permesso Pages Edit
+- `CLOUDFLARE_ACCOUNT_ID` — `9d6667327f2b656718e75db0808133f7`
+
+Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
 
 ## Configurazione fase 3
 

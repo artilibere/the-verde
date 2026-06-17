@@ -4,3 +4,4 @@ __pycache__/
 .venv/
 pagefind/
 .DS_Store
+.wrangler/
