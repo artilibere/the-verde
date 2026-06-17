@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="tv-page-header"><h1>{{ title }}</h1></header>
+{% if form_mode == "new" %}
+<form class="tv-diario-form" id="diario-form">
+<select id="diario-varieta" name="varieta" required><option value="">Scegli</option>{% for v in varieties %}<option value="{{ v.slug }}">{{ v.title }}</option>{% endfor %}</select>
+<input id="diario-temp" name="temp" type="number" placeholder="Temp C">
+<textarea id="diario-note" name="note"></textarea>
+<button type="submit" class="tv-btn tv-btn--filled">Salva</button>
+</form>
+{% else %}
+<div class="tv-diario-toolbar"><a href="/diario/nuova/" class="tv-btn tv-btn--filled">Nuova</a><button id="diario-export" type="button" class="tv-btn tv-btn--outlined">Export JSON</button></div>
+<div id="diario-list"></div>
+{% endif %}
+{% endblock %}
+{% block scripts %}<script src="/assets/js/diario.js" defer></script><script src="/assets/js/badges.js" defer></script>{% endblock %}

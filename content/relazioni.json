@@ -1,0 +1,140 @@
+{
+  "temi": [
+    {
+      "id": "storia_cultura",
+      "nome": "Storia e cultura",
+      "url": "/impara/storia-cultura/",
+      "controversie": ["cerimonia-cina-vs-giappone", "consumo-quotidiano-vs-rituale"]
+    },
+    {
+      "id": "lavorazione_qualita",
+      "nome": "Lavorazione e qualita",
+      "url": "/impara/lavorazione/",
+      "controversie": ["qualita-sensoriale-vs-chimica"]
+    },
+    {
+      "id": "preparazione_servizio",
+      "nome": "Preparazione e servizio",
+      "url": "/impara/preparazione/",
+      "controversie": ["cerimonia-cina-vs-giappone", "consumo-quotidiano-vs-rituale"]
+    },
+    {
+      "id": "degustazione_sensoriale",
+      "nome": "Degustazione sensoriale",
+      "url": "/impara/degustazione/",
+      "controversie": ["qualita-sensoriale-vs-chimica"]
+    },
+    {
+      "id": "salute_catechine",
+      "nome": "Salute e catechine",
+      "url": "/impara/salute/",
+      "controversie": ["salute-scienza-vs-tradizione", "bevanda-vs-integratore"]
+    },
+    {
+      "id": "cerimonia_spiritualita",
+      "nome": "Cerimonia e spiritualita",
+      "url": "/impara/cerimonia/",
+      "controversie": ["cerimonia-cina-vs-giappone", "consumo-quotidiano-vs-rituale"]
+    },
+    {
+      "id": "caffeina_tannini",
+      "nome": "Caffeina e tannini",
+      "url": "/impara/caffeina/",
+      "controversie": ["caffeina-stimolazione"]
+    },
+    {
+      "id": "cucina_usi_pratici",
+      "nome": "Cucina e usi pratici",
+      "url": "/impara/cucina/",
+      "controversie": ["bevanda-vs-integratore"]
+    }
+  ],
+  "relazioni": [
+    {
+      "da": "lavorazione_qualita",
+      "a": "degustazione_sensoriale",
+      "tipo": "presuppone",
+      "descrizione": "Senza corretta stabilizzazione non emergono umami e note vegetali in tazza."
+    },
+    {
+      "da": "lavorazione_qualita",
+      "a": "salute_catechine",
+      "tipo": "presuppone",
+      "descrizione": "La stabilizzazione precoce preserva le catechine."
+    },
+    {
+      "da": "preparazione_servizio",
+      "a": "degustazione_sensoriale",
+      "tipo": "approfondisce",
+      "descrizione": "Temperatura e tempo modulano astringenza e corpo percepiti."
+    },
+    {
+      "da": "cerimonia_spiritualita",
+      "a": "preparazione_servizio",
+      "tipo": "complementa",
+      "descrizione": "I rituali nobilitano le stesse tecniche di infusione quotidiane."
+    },
+    {
+      "da": "storia_cultura",
+      "a": "cerimonia_spiritualita",
+      "tipo": "presuppone",
+      "descrizione": "Le cerimonie nascono da secoli di consumo culturale."
+    },
+    {
+      "da": "salute_catechine",
+      "a": "caffeina_tannini",
+      "tipo": "complementa",
+      "descrizione": "Catechine e L-teanina modulano gli effetti della caffeina."
+    },
+    {
+      "da": "salute_catechine",
+      "a": "cucina_usi_pratici",
+      "tipo": "complementa",
+      "descrizione": "Matcha concentra catechine anche fuori dalla tazza."
+    },
+    {
+      "da": "degustazione_sensoriale",
+      "a": "salute_catechine",
+      "tipo": "contrasta",
+      "descrizione": "Palato e laboratorio valutano dimensioni diverse della qualita."
+    },
+    {
+      "da": "storia_cultura",
+      "a": "salute_catechine",
+      "tipo": "approfondisce",
+      "descrizione": "La medicina tradizionale cinese anticipa le scoperte moderne."
+    },
+    {
+      "da": "caffeina_tannini",
+      "a": "preparazione_servizio",
+      "tipo": "approfondisce",
+      "descrizione": "Tempo di infusione cambia il rapporto caffeina/tannini."
+    },
+    {
+      "da": "cerimonia_spiritualita",
+      "a": "salute_catechine",
+      "tipo": "contrasta",
+      "descrizione": "Il chanoyu privilegia estetica; la scienza chiede dosi misurabili."
+    },
+    {
+      "da": "cucina_usi_pratici",
+      "a": "lavorazione_qualita",
+      "tipo": "presuppone",
+      "descrizione": "Il matcha da cucina richiede polvere di qualita superiore."
+    }
+  ],
+  "varieta_temi": {
+    "bancha": ["preparazione_servizio", "caffeina_tannini"],
+    "sencha": ["preparazione_servizio", "degustazione_sensoriale"],
+    "gyokuro": ["lavorazione_qualita", "degustazione_sensoriale"],
+    "matcha": ["cerimonia_spiritualita", "cucina_usi_pratici"],
+    "genmaicha": ["cucina_usi_pratici", "preparazione_servizio"],
+    "hojicha": ["lavorazione_qualita", "caffeina_tannini"],
+    "kukicha": ["caffeina_tannini", "preparazione_servizio"],
+    "dragon-well": ["storia_cultura", "degustazione_sensoriale"],
+    "gunpowder": ["storia_cultura", "preparazione_servizio"],
+    "bi-luo-chun": ["lavorazione_qualita", "degustazione_sensoriale"],
+    "darjeeling-verde": ["storia_cultura", "degustazione_sensoriale"],
+    "cold-brew-gyokuro": ["preparazione_servizio", "caffeina_tannini"]
+  }
+}

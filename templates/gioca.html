@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}<h1>{{ title }}</h1>
+<h2>Percorsi</h2><ul>{% for p in percorsi %}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{% endfor %}</ul>
+<h2>Quiz</h2><ul>{% for q in quizzes %}<li><a href="/gioca/quiz/{{ q.slug }}/">{{ q.title }}</a></li>{% endfor %}</ul>
+<a href="/gioca/badge/" class="tv-btn tv-btn--outlined">Badge</a>
+{% endblock %}

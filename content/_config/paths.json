@@ -1,0 +1,47 @@
+{
+  "paths": [
+    {
+      "slug": "dal-bancha-al-matcha",
+      "title": "Dal bancha al matcha",
+      "badge": "esploratore-verde",
+      "steps": [
+        {"slug": "bancha", "type": "varieta", "quiz": {"question": "Il bancha ha caffeina alta o bassa?", "options": ["Alta", "Bassa"], "correct": 1}},
+        {"slug": "sencha", "type": "varieta", "quiz": {"question": "Temperatura ideale per sencha?", "options": ["100 C", "75 C"], "correct": 1}},
+        {"slug": "gyokuro", "type": "varieta", "quiz": {"question": "Il gyokuro e ombreggiato?", "options": ["Si", "No"], "correct": 0}},
+        {"slug": "matcha", "type": "varieta", "quiz": {"question": "Nel matcha bevi la foglia intera?", "options": ["Si", "No"], "correct": 0}}
+      ]
+    },
+    {
+      "slug": "palato-italiano",
+      "title": "Il palato italiano",
+      "badge": "sommelier-erba",
+      "steps": [
+        {"slug": "degustazione", "type": "hub", "url": "/impara/degustazione/"},
+        {"slug": "sencha", "type": "varieta"},
+        {"slug": "gyokuro", "type": "varieta"},
+        {"slug": "dragon-well", "type": "varieta"}
+      ]
+    },
+    {
+      "slug": "scienza-tradizione",
+      "title": "Scienza o tradizione",
+      "badge": "lettore-critico",
+      "steps": [
+        {"slug": "salute-scienza-vs-tradizione", "type": "controversia"},
+        {"slug": "bevanda-vs-integratore", "type": "controversia"},
+        {"slug": "caffeina-stimolazione", "type": "controversia"}
+      ]
+    },
+    {
+      "slug": "rituale-quotidiano",
+      "title": "Rituale e quotidiano",
+      "badge": "maestro-gesto",
+      "steps": [
+        {"slug": "cerimonia", "type": "hub", "url": "/impara/cerimonia/"},
+        {"slug": "preparazione", "type": "hub", "url": "/impara/preparazione/"},
+        {"slug": "matcha", "type": "varieta"},
+        {"slug": "bancha", "type": "varieta"}
+      ]
+    }
+  ]
+}

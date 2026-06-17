@@ -1,0 +1,1512 @@
+{
+  "meta": {
+    "tema_centrale": "the verde",
+    "lingua": "it",
+    "data_generazione": "2026-06-17",
+    "descrizione": "Base di conoscenza originale sul tè verde, costruita incrociando cinque fonti in italiano, spagnolo e inglese. I temi sono normalizzati in italiano e collegati tra loro per offrire molteplici angoli e punti di vista.",
+    "fonti": [
+      {
+        "id": "rosen",
+        "titolo": "Il libro del tè verde",
+        "autore": "Diana Rosen",
+        "lingua_originale": "it",
+        "file": "Il libro del tè verde - Diana Rosen.pdf"
+      },
+      {
+        "id": "sommelier",
+        "titolo": "Manuale del sommelier del tè",
+        "autore": "Victoria Bisogno, Jane Pettigrew",
+        "lingua_originale": "it",
+        "file": "Manuale del sommelier del tè - Victoria Bisogno, Jane Pettigrew.pdf"
+      },
+      {
+        "id": "pellegrino",
+        "titolo": "Manuale per la preparazione del tè",
+        "autore": "Davide Pellegrino",
+        "lingua_originale": "it",
+        "file": "Manuale per la preparazione del tè - Davide Pellegrino.pdf"
+      },
+      {
+        "id": "onuma",
+        "titolo": "El secreto japones del te verde",
+        "autore": "Izumi Forasté Onuma",
+        "lingua_originale": "es",
+        "file": "El secreto japones del te verde - Izumi Foraste Onuma.pdf"
+      },
+      {
+        "id": "hara",
+        "titolo": "Health Benefits of Green Tea",
+        "autore": "Yukihiko Hara (a cura di)",
+        "lingua_originale": "en",
+        "file": "Health Benefits of Green Tea - Yukihiko Hara.pdf"
+      }
+    ]
+  },
+  "libri": [
+    {
+      "id": "rosen",
+      "titolo": "Il libro del tè verde",
+      "autore": "Diana Rosen",
+      "lingua_originale": "it",
+      "angolo_principale": "Divulgazione poetica e pratica: storia, tradizioni, preparazione, salute, bellezza e cucina con il tè verde.",
+      "temi": [
+        {
+          "id": "rosen-poesia",
+          "nome": "Poesia e filosofia del tè verde",
+          "descrizione": "Il tè verde come esperienza intima, rituale quotidiano e via di introspezione, distinta dagli altri tipi di tè per la sua delicatezza effimera.",
+          "sotto_temi": [
+            {
+              "nome": "Il tè come terapia in tazza",
+              "pagine": [
+                97,
+                189
+              ]
+            },
+            {
+              "nome": "Quotidianità culturale in Cina, Giappone e Asia-Pacifico",
+              "pagine": [
+                153,
+                174
+              ]
+            },
+            {
+              "nome": "La foglia come oggetto estetico",
+              "pagine": [
+                146,
+                151
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Il tè verde non è solo bevanda ma esperienza olfattiva e riflessiva che richiede tempo.",
+            "Ogni cultura produttrice attribuisce al verde un ruolo sociale diverso: convivialità cinese, quotidianità giapponese, uso salutare in India e Ceylon."
+          ],
+          "citazioni": [
+            {
+              "testo": "Il tè è letteralmente «terapia in tazza»: un modo di mettere ordine, di riflettere, di risolversi ad agire.",
+              "pagina": 181,
+              "lingua_originale": "it"
+            },
+            {
+              "testo": "Il tè può cambiare la vostra vita.",
+              "pagina": 189,
+              "lingua_originale": "it"
+            }
+          ]
+        },
+        {
+          "id": "rosen-storia",
+          "nome": "Storia e tradizioni del tè verde",
+          "descrizione": "Dalle origini leggendarie alla diffusione globale, con focus su Cina, India, Giappone e altre fonti.",
+          "sotto_temi": [
+            {
+              "nome": "Scoperta e miti (Shen Nong, Bodhidharma)",
+              "pagine": [
+                47,
+                398
+              ]
+            },
+            {
+              "nome": "Tè verde in Cina (cha)",
+              "pagine": [
+                49,
+                473
+              ]
+            },
+            {
+              "nome": "Tè verde in Giappone (o-cha)",
+              "pagine": [
+                51,
+                1698
+              ]
+            },
+            {
+              "nome": "Tè verde in India e Sri Lanka",
+              "pagine": [
+                50,
+                171
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "La storia del tè verde si intreccia con commercio, spiritualità e medicina tradizionale.",
+            "Il Giappone consuma quasi tutto il tè che produce, con lavorazioni distintive come Gyokuro e Matcha."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "rosen-lavorazione",
+          "nome": "Lavorazione e varietà",
+          "descrizione": "Come la stessa foglia di Camellia sinensis diventa tè verde attraverso essiccazione, vapore, torrefazione e arrotolamento.",
+          "sotto_temi": [
+            {
+              "nome": "Lavorazione del Gyokuro",
+              "pagine": [
+                1575
+              ]
+            },
+            {
+              "nome": "Lavorazione del Matcha",
+              "pagine": [
+                1585
+              ]
+            },
+            {
+              "nome": "Lavorazione di Bancha e Sencha",
+              "pagine": [
+                1592
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "La versatilità della lavorazione genera innumerevoli sapori da una singola pianta.",
+            "La bellezza della foglia essiccata e infusa è parte integrante del piacere del tè verde."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "rosen-preparazione",
+          "nome": "Acquisto, conservazione e preparazione",
+          "descrizione": "Guida pratica su come scegliere, conservare e servire il tè verde, inclusi utensili cinesi e stile gung fu.",
+          "sotto_temi": [
+            {
+              "nome": "Teiere Yixing e cura degli utensili",
+              "pagine": [
+                2300,
+                2351
+              ]
+            },
+            {
+              "nome": "Servizio gung fu applicato anche al verde",
+              "pagine": [
+                2385,
+                2432
+              ]
+            },
+            {
+              "nome": "Recipienti e tazze per apprezzare colore e aroma",
+              "pagine": [
+                2435,
+                2448
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Una teiera Yixing va dedicata a un solo tipo di tè per preservare integrità del sapore.",
+            "Il gung fu, pur nato per l'oolong, è anche un modo pratico ed elegante di servire il verde."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "rosen-salute",
+          "nome": "Salute e benessere",
+          "descrizione": "Proprietà antiossidanti, effetti su cancro, cuore, invecchiamento e confronto con integratori.",
+          "sotto_temi": [
+            {
+              "nome": "Polifenoli, EGCG e antiossidanti",
+              "pagine": [
+                2714,
+                2838
+              ]
+            },
+            {
+              "nome": "Cancro e studi epidemiologici",
+              "pagine": [
+                2724,
+                2796
+              ]
+            },
+            {
+              "nome": "Paradosso giapponese fumatori-tè verde",
+              "pagine": [
+                2770,
+                2786
+              ]
+            },
+            {
+              "nome": "Integratori vs bevanda",
+              "pagine": [
+                2807,
+                2819
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Il tè verde fa bene ma Rosen privilegia il piacere della bevanda rispetto agli estratti in capsule.",
+            "Gli effetti preventivi sembrano correlati a consumi elevati (4-10 tazze/giorno in alcuni studi giapponesi)."
+          ],
+          "citazioni": [
+            {
+              "testo": "Il tè verde si è mostrato venti volte più attivo della vitamina E nel rallentare la degenerazione cellulare.",
+              "pagina": 2837,
+              "lingua_originale": "it",
+              "nota": "Citazione del professor Takuo Okada riportata da Rosen"
+            }
+          ]
+        },
+        {
+          "id": "rosen-bellezza-cucina",
+          "nome": "Bellezza e cucina",
+          "descrizione": "Uso del tè verde in cosmetica domestica, ricette dolci e salate, cura della pelle.",
+          "sotto_temi": [
+            {
+              "nome": "Cura della pelle e idratanti al tè",
+              "pagine": [
+                3099,
+                3109
+              ]
+            },
+            {
+              "nome": "Ricette con tè verde in cucina",
+              "pagine": [
+                57,
+                58
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Il tè verde è versatile oltre la tazza: cosmetica, cucina e persino uso come concime.",
+            "I benefici per la pelle uniscono tradizione e scienza moderna."
+          ],
+          "citazioni": []
+        }
+      ]
+    },
+    {
+      "id": "sommelier",
+      "titolo": "Manuale del sommelier del tè",
+      "autore": "Victoria Bisogno, Jane Pettigrew",
+      "lingua_originale": "it",
+      "angolo_principale": "Prospettiva professionale: storia, tecnica produttiva, analisi sensoriale, servizio e cerimonie del tè.",
+      "temi": [
+        {
+          "id": "sommelier-storia",
+          "nome": "Storia e cultura del tè",
+          "descrizione": "Millenni di tradizione dal Oriente all'Occidente, con aneddoti e nozioni per consumatori esperti e neofiti.",
+          "sotto_temi": [
+            {
+              "nome": "La cultura del tè: dalla terra allo spirito",
+              "pagine": [
+                190,
+                200
+              ]
+            },
+            {
+              "nome": "Ruolo del sommelier del tè",
+              "pagine": [
+                159,
+                185
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "La parola cultura deriva dal latino colere: coltivare la terra e, metaforicamente, lo spirito.",
+            "Il sommelier del tè trasforma il bere tè in esperienza sensoriale descrivibile e consigliabile."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "sommelier-produzione-verde",
+          "nome": "Produzione del tè verde",
+          "descrizione": "Processo tecnico completo: appassimento, stabilizzazione, arrotolamento, essiccazione; differenze Cina vs Giappone.",
+          "sotto_temi": [
+            {
+              "nome": "Stabilizzazione: wok vs vapore",
+              "pagine": [
+                3055,
+                3085
+              ]
+            },
+            {
+              "nome": "Effetto dell'appassimento sull'aroma",
+              "pagine": [
+                3056,
+                3069
+              ]
+            },
+            {
+              "nome": "Confronto sensoriale Cina/Giappone",
+              "pagine": [
+                3045,
+                3050
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "I tè verdi cinesi sono più morbidi e dolci; quelli giapponesi più intensi, astringenti, con note di alghe e umami.",
+            "La stabilizzazione in wok produce note tostate-dolci; il vapore giapponese preserva freschezza vegetale."
+          ],
+          "citazioni": [
+            {
+              "testo": "I tè verdi ortodossi offrono un ventaglio di aromi che vanno dalle verdure cotte alle noci tostate, dagli agrumi ad altri frutti.",
+              "pagina": 3041,
+              "lingua_originale": "it"
+            }
+          ]
+        },
+        {
+          "id": "sommelier-degustazione",
+          "nome": "Analisi sensoriale del tè verde",
+          "descrizione": "Schede di degustazione professionale per Lung Ching, Sencha, Gyokuro, Matcha e verdi indiani.",
+          "sotto_temi": [
+            {
+              "nome": "Lung Ching (Dragonwell)",
+              "pagine": [
+                3103,
+                3120
+              ]
+            },
+            {
+              "nome": "Sencha",
+              "pagine": [
+                3122,
+                3140
+              ]
+            },
+            {
+              "nome": "Gyokuro",
+              "pagine": [
+                3142,
+                3159
+              ]
+            },
+            {
+              "nome": "Matcha",
+              "pagine": [
+                3161,
+                3176
+              ]
+            },
+            {
+              "nome": "Tè verde indiano (Nilgiri)",
+              "pagine": [
+                3178,
+                3194
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "La qualità si valuta su foglie secche, infuso, liquore, corpo e astringenza.",
+            "Il Gyokuro richiede temperature più basse (60-65 °C) per esprimere umami e dolcezza."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "sommelier-proprieta",
+          "nome": "Proprietà chimiche e salutari",
+          "descrizione": "Componenti del tè: catechine, tannini, caffeina, L-teanina, vitamine e minerali.",
+          "sotto_temi": [
+            {
+              "nome": "Catechine e antiossidanti",
+              "pagine": [
+                2348,
+                2353
+              ]
+            },
+            {
+              "nome": "L-teanina e calma mentale",
+              "pagine": [
+                2375,
+                2378
+              ]
+            },
+            {
+              "nome": "Caffeina: teina come sinonimo",
+              "pagine": [
+                2366,
+                2373
+              ]
+            },
+            {
+              "nome": "Effetti su bellezza, immunità e metabolismo",
+              "pagine": [
+                2409,
+                2427
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Le catechine del verde sono antiossidanti più efficaci della vitamina C e al 25% più della vitamina E.",
+            "I polifenoli rallentano l'assorbimento della caffeina: stimolazione più dolce e prolungata rispetto al caffè."
+          ],
+          "citazioni": [
+            {
+              "testo": "Godersi una tazza di tè è un'esperienza sensoriale e culturale.",
+              "pagina": 2336,
+              "lingua_originale": "it"
+            }
+          ]
+        },
+        {
+          "id": "sommelier-cerimonie",
+          "nome": "Cerimonie del tè",
+          "descrizione": "Rituali mondiali con focus su Gongfu Cha cinese e cerimonia giapponese.",
+          "sotto_temi": [
+            {
+              "nome": "Gongfu Cha: sette passi fondamentali",
+              "pagine": [
+                4332,
+                4438
+              ]
+            },
+            {
+              "nome": "Etichetta e ospitalità cinese",
+              "pagine": [
+                4355,
+                4359
+              ]
+            },
+            {
+              "nome": "Cerimonia giapponese e scuole del tè",
+              "pagine": [
+                4306,
+                4449
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Ogni giorno chi prepara il tè crea una propria cerimonia: i rituali sono vivi e in evoluzione.",
+            "Nel Gongfu Cha servire il miglior tè esprime generosità, rispetto e status sociale."
+          ],
+          "citazioni": [
+            {
+              "testo": "Si dice che «nessun tè è scortese»: è maleducazione non offrire del tè a un ospite.",
+              "pagina": 4358,
+              "lingua_originale": "it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pellegrino",
+      "titolo": "Manuale per la preparazione del tè",
+      "autore": "Davide Pellegrino",
+      "lingua_originale": "it",
+      "angolo_principale": "Manuale agronomico-pratico: dalla pianta alla tazza, con schede varietali, tradizioni mondiali e salute.",
+      "temi": [
+        {
+          "id": "pellegrino-pianta",
+          "nome": "Coltivazione e lavorazione",
+          "descrizione": "Botanica della Camellia sinensis, raccolta, ossidazione vs stabilizzazione, zone produttive.",
+          "sotto_temi": [
+            {
+              "nome": "La pianta del tè e la raccolta",
+              "pagine": [
+                15,
+                17
+              ]
+            },
+            {
+              "nome": "Fermentazione o ossidazione?",
+              "pagine": [
+                20,
+                27
+              ]
+            },
+            {
+              "nome": "Zone di coltivazione mondiali",
+              "pagine": [
+                33,
+                33
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Il tè verde si ottiene disattivando l'ossidazione; il nero la favorisce.",
+            "La qualità dipende da altitudine, suolo, cultivar e momento di raccolta."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "pellegrino-via-del-te",
+          "nome": "La via del tè: acqua, teiere e preparazione",
+          "descrizione": "Scelta dell'acqua, teiere Yixing, tecniche di infusione, umami e tè freddo.",
+          "sotto_temi": [
+            {
+              "nome": "Classificazione dell'acqua (Lu Yu)",
+              "pagine": [
+                45,
+                46
+              ]
+            },
+            {
+              "nome": "Teiere Yixing e manutenzione",
+              "pagine": [
+                50,
+                62
+              ]
+            },
+            {
+              "nome": "Umami, quinto sapore",
+              "pagine": [
+                67,
+                67
+              ]
+            },
+            {
+              "nome": "Tè freddo e conservazione foglie",
+              "pagine": [
+                69,
+                69
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "L'acqua è metà del tè: la sua qualità determina metà del risultato in tazza.",
+            "L'umami è centrale nella percezione dei tè verdi giapponesi di alta gamma."
+          ],
+          "citazioni": [
+            {
+              "testo": "Le migliori foglie di tè devono piegarsi come stivali di cuoio dei cavalieri tartari...",
+              "pagina": 11,
+              "lingua_originale": "it",
+              "nota": "Citazione di Lu Yu, Il canone del tè"
+            }
+          ]
+        },
+        {
+          "id": "pellegrino-tradizioni",
+          "nome": "Tradizioni mondiali del tè verde",
+          "descrizione": "Riti in Cina (Gong Fu Cha), Giappone (Chanoyu), Corea, Russia, Inghilterra e altri.",
+          "sotto_temi": [
+            {
+              "nome": "Gong Fu Cha in Cina",
+              "pagine": [
+                85,
+                86
+              ]
+            },
+            {
+              "nome": "Chanoyu giapponese: koicha e usucha",
+              "pagine": [
+                91,
+                93
+              ]
+            },
+            {
+              "nome": "Sette regole di Sen no Rikyu",
+              "pagine": [
+                2692,
+                2697
+              ]
+            },
+            {
+              "nome": "Tè verde coreano (Jeoncha)",
+              "pagine": [
+                2698,
+                2727
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Il chanoyu è teismo estetico: arte, spiritualità zen e ospitalità in un unico rito.",
+            "In Giappone convivono consumo quotidiano (bancha in bottiglia) e culto del Chado."
+          ],
+          "citazioni": [
+            {
+              "testo": "Preparate un tè che sia piacevole da bere.",
+              "pagina": 2694,
+              "lingua_originale": "it",
+              "nota": "Prima delle sette regole di Sen no Rikyu"
+            }
+          ]
+        },
+        {
+          "id": "pellegrino-salute",
+          "nome": "Il tè verde e la salute",
+          "descrizione": "Componenti della foglia, proprietà benefiche, caffeina vs caffè, riuso delle foglie.",
+          "sotto_temi": [
+            {
+              "nome": "Polifenoli, catechine e perdita nell'ossidazione",
+              "pagine": [
+                2811,
+                2824
+              ]
+            },
+            {
+              "nome": "Sistema cardiovascolare e colesterolo",
+              "pagine": [
+                2907,
+                2924
+              ]
+            },
+            {
+              "nome": "Oncologia, diabete e dimagrimento",
+              "pagine": [
+                2938,
+                2964
+              ]
+            },
+            {
+              "nome": "Matcha: antiossidanti superiori",
+              "pagine": [
+                2976,
+                2986
+              ]
+            },
+            {
+              "nome": "Caffeina del tè vs caffè",
+              "pagine": [
+                3014,
+                3058
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Il tè verde va inserito nella prevenzione, non come sostituto delle terapie mediche.",
+            "La caffeina del tè, legata ai tannini, agisce più dolcemente e a lungo rispetto al caffè."
+          ],
+          "citazioni": [
+            {
+              "testo": "Il tè stimola, senza eccitare.",
+              "pagina": 3042,
+              "lingua_originale": "it"
+            }
+          ]
+        },
+        {
+          "id": "pellegrino-varietà",
+          "nome": "Varietà di tè verde",
+          "descrizione": "Schede tecniche per decine di verdi cinesi e giapponesi con parametri di infusione.",
+          "sotto_temi": [
+            {
+              "nome": "Verdi cinesi (Long Jing, Bi Lo Chun, Gunpowder...)",
+              "pagine": [
+                112,
+                122
+              ]
+            },
+            {
+              "nome": "Verdi giapponesi (Sencha, Matcha, Gyokuro, Bancha...)",
+              "pagine": [
+                123,
+                128
+              ]
+            },
+            {
+              "nome": "Tè verde e cucina (Matcha, kombucha)",
+              "pagine": [
+                76,
+                81
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Ogni varietà ha temperatura, tempo e abbinamenti specifici.",
+            "Il Matcha, essendo polvere intera, offre concentrazione massima di principi attivi."
+          ],
+          "citazioni": []
+        }
+      ]
+    },
+    {
+      "id": "onuma",
+      "titolo": "El secreto japones del te verde",
+      "autore": "Izumi Forasté Onuma",
+      "lingua_originale": "es",
+      "angolo_principale": "Sguardo italo-giapponese: vita quotidiana, cerimonia, salute, mindfulness e cultura del benessere.",
+      "temi": [
+        {
+          "id": "onuma-vincolo",
+          "nome": "Legame personale e familiare con il tè verde",
+          "descrizione": "Il tè verde come presenza costante dalla infanzia, tramandato dalla nonna Takeko in Giappone.",
+          "sotto_temi": [
+            {
+              "nome": "Rituale quotidiano in famiglia",
+              "pagine": [
+                108,
+                131
+              ]
+            },
+            {
+              "nome": "Takeko's Tea: dal ricordo al progetto imprenditoriale",
+              "pagine": [
+                165,
+                172
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "La prima tazza del mattino protegge dalle disgrazie del giorno (detto della nonna).",
+            "Il tè verde autentico e fresco è difficile da trovare in Occidente."
+          ],
+          "citazioni": [
+            {
+              "testo": "La primera taza de la mañana nos protege de las desgracias del día.",
+              "pagina": 123,
+              "lingua_originale": "es",
+              "traduzione_it": "La prima tazza del mattino ci protegge dalle disgrazie del giorno."
+            }
+          ]
+        },
+        {
+          "id": "onuma-storia",
+          "nome": "Storia del tè verde in Giappone",
+          "descrizione": "Dalla medicina cinese al buddhismo, alla corte Heian e al libro di Eisai Kissa y?j?-ki.",
+          "sotto_temi": [
+            {
+              "nome": "Importazione buddhista dalla Cina",
+              "pagine": [
+                179,
+                198
+              ]
+            },
+            {
+              "nome": "Kinomidokyou: cerimonia di corte",
+              "pagine": [
+                70,
+                190
+              ]
+            },
+            {
+              "nome": "Eisai: «il tè è l'elisir della salute»",
+              "pagine": [
+                195,
+                198
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Per secoli il tè verde fu bevanda elitaria di monaci e nobiltà.",
+            "Eisai legò medicina, zen e consumo di matcha nella cultura giapponese."
+          ],
+          "citazioni": [
+            {
+              "testo": "El té es el elixir de la salud.",
+              "pagina": 196,
+              "lingua_originale": "es",
+              "traduzione_it": "Il tè è l'elisir della salute.",
+              "nota": "Da Eisai, Kissa y?j?-ki (1211)"
+            }
+          ]
+        },
+        {
+          "id": "onuma-cerimonia",
+          "nome": "Cerimonia e protocollo del tè verde",
+          "descrizione": "Riti, utensili (kyusu, chazutsu, yunomi), etichetta e valori estetici giapponesi.",
+          "sotto_temi": [
+            {
+              "nome": "Cerimonia del tè (cap. 4)",
+              "pagine": [
+                15,
+                15
+              ]
+            },
+            {
+              "nome": "Protocollo e galateo",
+              "pagine": [
+                22,
+                22
+              ]
+            },
+            {
+              "nome": "Tazze e teiere",
+              "pagine": [
+                21,
+                21
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "La cerimonia incarna bellezza, semplicità e salute adottabili nella vita quotidiana occidentale.",
+            "Il protocollo trasforma il bere tè in atto di cura e rispetto."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "onuma-salute-pratica",
+          "nome": "Proprietà e consumo consapevole",
+          "descrizione": "Quando bere quale tè, limiti di caffeina, stomaco vuoto, umami e qualità delle foglie.",
+          "sotto_temi": [
+            {
+              "nome": "Tè prima dello sport, prima di dormire, a digiuno",
+              "pagine": [
+                1202,
+                1241
+              ]
+            },
+            {
+              "nome": "Quantità giornaliera (5-10 tazze)",
+              "pagine": [
+                1242,
+                1253
+              ]
+            },
+            {
+              "nome": "Contenuto caffeina per varietà",
+              "pagine": [
+                1267,
+                1275
+              ]
+            },
+            {
+              "nome": "Umami come quinto sapore",
+              "pagine": [
+                1279,
+                1309
+              ]
+            },
+            {
+              "nome": "Come riconoscere un buon tè verde",
+              "pagine": [
+                1312,
+                1348
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Gyokuro ha altissima caffeina (160 mg/100 ml): da evitare a stomaco vuoto e prima di dormire.",
+            "La qualità delle foglie conta più della perfezione tecnica di preparazione."
+          ],
+          "citazioni": [
+            {
+              "testo": "En última instancia es la calidad de las hojas de té la que determinará su sabor.",
+              "pagina": 1317,
+              "lingua_originale": "es",
+              "traduzione_it": "In ultima istanza è la qualità delle foglie di tè a determinare il sapore."
+            }
+          ]
+        },
+        {
+          "id": "onuma-matcha-cucina",
+          "nome": "Matcha, pelle e riuso",
+          "descrizione": "Ricette con matcha, cosmetica naturale, foglie usate e pratica di mindfulness.",
+          "sotto_temi": [
+            {
+              "nome": "Ricette con matcha",
+              "pagine": [
+                24,
+                24
+              ]
+            },
+            {
+              "nome": "Tè verde per nutrire la pelle",
+              "pagine": [
+                23,
+                23
+              ]
+            },
+            {
+              "nome": "Riutilizzo delle foglie gastadas",
+              "pagine": [
+                3600,
+                3619
+              ]
+            },
+            {
+              "nome": "Mindfulness con tè verde",
+              "pagine": [
+                26,
+                26
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Le foglie usate hanno ancora valore: cosmetica, compost, repellente insetti.",
+            "Il matcha unisce gastronomia, benessere e meditazione."
+          ],
+          "citazioni": []
+        }
+      ]
+    },
+    {
+      "id": "hara",
+      "titolo": "Health Benefits of Green Tea",
+      "autore": "Yukihiko Hara (a cura di)",
+      "lingua_originale": "en",
+      "angolo_principale": "Raccolta scientifica evidence-based: meccanismi molecolari, trial clinici e applicazioni terapeutiche delle catechine.",
+      "temi": [
+        {
+          "id": "hara-panoramica",
+          "nome": "Prospettiva scientifica globale",
+          "descrizione": "Ricerche su tè e salute in Giappone, Cina, Africa e mondo; caratteristiche del tè verde giapponese.",
+          "sotto_temi": [
+            {
+              "nome": "Efficacia del tè nella salute umana",
+              "pagine": [
+                71,
+                71
+              ]
+            },
+            {
+              "nome": "Caratteristiche del tè verde giapponese",
+              "pagine": [
+                74,
+                74
+              ]
+            },
+            {
+              "nome": "Ricerca cinese e industria del tè",
+              "pagine": [
+                76,
+                78
+              ]
+            },
+            {
+              "nome": "Biodisponibilità dei polifenoli",
+              "pagine": [
+                89,
+                89
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "La scienza moderna conferma e approfondisce tradizioni millenarie.",
+            "La biodisponibilità e biotrasformazione delle catechine sono cruciali per gli effetti reali."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "hara-anticancer",
+          "nome": "Effetti anticancerogeni",
+          "descrizione": "Meccanismi molecolari delle catechine, prevenzione del tumore colorettale, recettori EGCG, trial clinici.",
+          "sotto_temi": [
+            {
+              "nome": "Catechine in prevenzione e terapia del cancro",
+              "pagine": [
+                102,
+                104
+              ]
+            },
+            {
+              "nome": "Prevenzione tumorigenesi colorettale",
+              "pagine": [
+                106,
+                108
+              ]
+            },
+            {
+              "nome": "Recettore sensibile all'EGCG",
+              "pagine": [
+                110,
+                110
+              ]
+            },
+            {
+              "nome": "Trial clinici e sviluppo farmaci",
+              "pagine": [
+                113,
+                113
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "L'EGCG è il polifenolo più studiato per effetti antiproliferativi.",
+            "Il passaggio dal laboratorio al letto del paziente richiede trial clinici rigorosi."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "hara-metabolismo",
+          "nome": "Obesità, metabolismo e cuore",
+          "descrizione": "Effetti su grasso corporeo, sindrome metabolica, malattie cardiovascolari e cerebrovascolari, diabete.",
+          "sotto_temi": [
+            {
+              "nome": "Prevenzione obesità",
+              "pagine": [
+                118,
+                118
+              ]
+            },
+            {
+              "nome": "Riduzione grasso corporeo",
+              "pagine": [
+                121,
+                121
+              ]
+            },
+            {
+              "nome": "Malattie cardio- e cerebrovascolari",
+              "pagine": [
+                124,
+                124
+              ]
+            },
+            {
+              "nome": "Effetti antidiabetici",
+              "pagine": [
+                131,
+                131
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Le catechine gallati influenzano metabolismo lipidico e termogenesi.",
+            "Gli effetti cardiovascolari si estendono oltre l'antiossidante puro."
+          ],
+          "citazioni": []
+        },
+        {
+          "id": "hara-altri-effetti",
+          "nome": "Immunità, infezioni, fegato, cervello e oral health",
+          "descrizione": "Ampio spettro di effetti: batteri resistenti, influenza, immunomodulazione, epatite, demenza, salute orale.",
+          "sotto_temi": [
+            {
+              "nome": "Patogeni batterici multidroga-resistenti",
+              "pagine": [
+                136,
+                136
+              ]
+            },
+            {
+              "nome": "Influenza e raffreddore",
+              "pagine": [
+                139,
+                139
+              ]
+            },
+            {
+              "nome": "Regolazione immunitaria",
+              "pagine": [
+                142,
+                142
+              ]
+            },
+            {
+              "nome": "Epatite e fibrosi epatica",
+              "pagine": [
+                145,
+                145
+              ]
+            },
+            {
+              "nome": "Invecchiamento e demenza",
+              "pagine": [
+                148,
+                152
+              ]
+            },
+            {
+              "nome": "Salute orale",
+              "pagine": [
+                165,
+                165
+              ]
+            },
+            {
+              "nome": "Flora intestinale",
+              "pagine": [
+                171,
+                171
+              ]
+            }
+          ],
+          "punti_di_vista": [
+            "Il tè verde agisce su molteplici sistemi: non è un singolo «farmaco miracoloso».",
+            "La teanina e altri componenti modulano stress e neuroprotezione oltre alle catechine."
+          ],
+          "citazioni": []
+        }
+      ]
+    }
+  ],
+  "temi_trasversali": [
+    {
+      "id": "storia_cultura",
+      "nome": "Storia e cultura del tè verde",
+      "descrizione": "Dalle origini cinesi alla diffusione globale, il tè verde attraversa medicina, buddhismo, commercio e rituali sociali.",
+      "libri_correlati": [
+        "rosen",
+        "sommelier",
+        "pellegrino",
+        "onuma"
+      ],
+      "temi_libro": [
+        "rosen-storia",
+        "sommelier-storia",
+        "pellegrino-tradizioni",
+        "onuma-storia",
+        "onuma-vincolo"
+      ],
+      "convergenze": [
+        "Tutte le fonti collocano le origini in Cina, con importazione in Giappone tramite monaci buddhisti.",
+        "Eisai e la tradizione medica cinese sono punti di riferimento comuni.",
+        "Il tè verde passa da bevanda elitaria a consumo popolare quotidiano."
+      ],
+      "divergenze": [
+        "Rosen enfatizza la poesia e l'esperienza personale; Hara resta su evidenze cliniche.",
+        "Onuma racconta la storia dal vissuto familiare; Pellegrino la inquadra in prospettiva comparata mondiale."
+      ]
+    },
+    {
+      "id": "lavorazione_qualita",
+      "nome": "Lavorazione e qualità",
+      "descrizione": "Stabilizzazione, arrotolamento e essiccazione determinano profilo sensoriale e contenuto di catechine.",
+      "libri_correlati": [
+        "rosen",
+        "sommelier",
+        "pellegrino",
+        "onuma"
+      ],
+      "temi_libro": [
+        "rosen-lavorazione",
+        "sommelier-produzione-verde",
+        "pellegrino-pianta",
+        "onuma-salute-pratica"
+      ],
+      "convergenze": [
+        "La stabilizzazione precoce preserva catechine e colore verde.",
+        "Cina (wok) e Giappone (vapore) producono profili sensoriali distinti.",
+        "La qualità delle foglie primeggia su utensili e tecnica."
+      ],
+      "divergenze": [
+        "Il sommelier descrive il processo con lessico tecnico da degustazione; Rosen lo racconta come arte della foglia.",
+        "Onuma collega qualità a prezzo e accessibilità nel mercato occidentale."
+      ]
+    },
+    {
+      "id": "preparazione_servizio",
+      "nome": "Preparazione e servizio",
+      "descrizione": "Temperatura, tempo, acqua e utensili trasformano le foglie in esperienza.",
+      "libri_correlati": [
+        "rosen",
+        "sommelier",
+        "pellegrino",
+        "onuma"
+      ],
+      "temi_libro": [
+        "rosen-preparazione",
+        "sommelier-degustazione",
+        "pellegrino-via-del-te",
+        "onuma-cerimonia"
+      ],
+      "convergenze": [
+        "Acqua non troppo bollente per i verdi delicati (60-80 °C).",
+        "Le teiere porose (Yixing) vanno dedicate a un solo tipo di tè.",
+        "Servire con equità tra gli ospiti è segno di rispetto."
+      ],
+      "divergenze": [
+        "Gung fu cinese privilegia piccoli infusioni multiple; il quotidiano giapponese usa kyusu e yunomi.",
+        "Pellegrino include schede per decine di varietà; Onuma focalizza su tè giapponesi."
+      ]
+    },
+    {
+      "id": "degustazione_sensoriale",
+      "nome": "Degustazione e analisi sensoriale",
+      "descrizione": "Valutazione di foglie, infuso, liquore, corpo, astringenza e umami.",
+      "libri_correlati": [
+        "sommelier",
+        "pellegrino",
+        "onuma"
+      ],
+      "temi_libro": [
+        "sommelier-degustazione",
+        "pellegrino-varietà",
+        "onuma-salute-pratica"
+      ],
+      "convergenze": [
+        "L'umami distingue i verdi giapponesi di alta gamma (Gyokuro, Matcha).",
+        "Aroma, aspetto e sapore vanno valutati insieme.",
+        "I verdi in bustina sono generalmente inferiori agli ortodossi."
+      ],
+      "divergenze": [
+        "Il sommelier usa schede professionali da sommelier; Onuma insegna al consumatore a riconoscere qualità al supermercato."
+      ]
+    },
+    {
+      "id": "salute_catechine",
+      "nome": "Salute, catechine e prevenzione",
+      "descrizione": "Antiossidanti, effetti su cancro, cuore, metabolismo, immunità e longevità.",
+      "libri_correlati": [
+        "rosen",
+        "sommelier",
+        "pellegrino",
+        "onuma",
+        "hara"
+      ],
+      "temi_libro": [
+        "rosen-salute",
+        "sommelier-proprieta",
+        "pellegrino-salute",
+        "onuma-salute-pratica",
+        "hara-anticancer",
+        "hara-metabolismo",
+        "hara-altri-effetti"
+      ],
+      "convergenze": [
+        "Le catechine (soprattutto EGCG) sono i principali responsabili degli effetti salutari.",
+        "Il tè verde supporta prevenzione cardiovascolare e antiossidante.",
+        "Il consumo regolare è più efficace dell'assunzione sporadica."
+      ],
+      "divergenze": [
+        "Hara richiede evidenze da trial e meccanismi molecolari; Rosen e Pellegrino accettano studi epidemiologici e tradizione.",
+        "Rosen menziona integratori; Onuma e Pellegrino privilegiano la bevanda.",
+        "Le dosi efficaci in laboratorio non sempre corrispondono a 1-3 tazze quotidiane."
+      ]
+    },
+    {
+      "id": "cerimonia_spiritualita",
+      "nome": "Cerimonia e spiritualità",
+      "descrizione": "Il tè come rito estetico, zen, ospitalità e pausa consapevole.",
+      "libri_correlati": [
+        "rosen",
+        "sommelier",
+        "pellegrino",
+        "onuma"
+      ],
+      "temi_libro": [
+        "rosen-poesia",
+        "sommelier-cerimonie",
+        "pellegrino-tradizioni",
+        "onuma-cerimonia",
+        "onuma-matcha-cucina"
+      ],
+      "convergenze": [
+        "Gongfu Cha e Chanoyu elevano acqua e foglia ad arte.",
+        "Sen no Rikyu definisce regole di semplicità e attenzione all'ospite.",
+        "Ogni preparazione quotidiana può essere una mini-cerimonia."
+      ],
+      "divergenze": [
+        "Il chanoyu giapponese è altamente codificato; il gong fu cinese è più flessibile e conviviale.",
+        "Onuma propone mindfulness accessibile; Pellegrino descrive il chanoyu come evento sociale formale."
+      ]
+    },
+    {
+      "id": "caffeina_tannini",
+      "nome": "Caffeina, tannini e consumo consapevole",
+      "descrizione": "Stimolazione, digestione, limiti giornalieri e scelta della varietà in base al momento.",
+      "libri_correlati": [
+        "sommelier",
+        "pellegrino",
+        "onuma"
+      ],
+      "temi_libro": [
+        "sommelier-proprieta",
+        "pellegrino-salute",
+        "onuma-salute-pratica"
+      ],
+      "convergenze": [
+        "La caffeina del tè agisce più dolcemente grazie ai tannini.",
+        "Gyokuro e matcha hanno più caffeina del sencha.",
+        "A stomaco vuoto i tannini possono irritare."
+      ],
+      "divergenze": [
+        "Onuma quantifica mg/100 ml per varietà; Pellegrino spiega il meccanismo legato ai tannini.",
+        "Rosen non approfondisce i limiti di consumo come Onuma."
+      ]
+    },
+    {
+      "id": "cucina_usi_pratici",
+      "nome": "Cucina, cosmetica e riuso",
+      "descrizione": "Matcha in ricette, cura della pelle, foglie usate e usi domestici.",
+      "libri_correlati": [
+        "rosen",
+        "pellegrino",
+        "onuma"
+      ],
+      "temi_libro": [
+        "rosen-bellezza-cucina",
+        "pellegrino-varietà",
+        "onuma-matcha-cucina"
+      ],
+      "convergenze": [
+        "Il matcha è l'ingrediente versatile per cucina e pasticceria.",
+        "Le foglie usate hanno valore come compost o cosmetica.",
+        "I tannini del verde proteggono la pelle dagli UV."
+      ],
+      "divergenze": [
+        "Rosen propone idratanti casalinghi; Onuma ricette giapponesi moderne (torta matcha, cheesecake).",
+        "Pellegrino include kombucha e drink alcolici a base di tè nero, non solo verde."
+      ]
+    }
+  ],
+  "relazioni": [
+    {
+      "da": "lavorazione_qualita",
+      "a": "degustazione_sensoriale",
+      "tipo": "presuppone",
+      "descrizione": "Senza corretta stabilizzazione e arrotolamento non emergono umami, note vegetali o tostate descritte nelle schede di degustazione."
+    },
+    {
+      "da": "lavorazione_qualita",
+      "a": "salute_catechine",
+      "tipo": "presuppone",
+      "descrizione": "La stabilizzazione precoce preserva le catechine; l'ossidazione le trasforma in teoflavine e teorubigine con profilo salutare diverso."
+    },
+    {
+      "da": "preparazione_servizio",
+      "a": "degustazione_sensoriale",
+      "tipo": "approfondisce",
+      "descrizione": "Temperatura e tempo di infusione modulano astringenza, dolcezza e corpo percepiti in tazza."
+    },
+    {
+      "da": "cerimonia_spiritualita",
+      "a": "preparazione_servizio",
+      "tipo": "complementa",
+      "descrizione": "I rituali codificano e nobilitano le stesse tecniche di infusione usate quotidianamente."
+    },
+    {
+      "da": "storia_cultura",
+      "a": "cerimonia_spiritualita",
+      "tipo": "presuppone",
+      "descrizione": "Le cerimonie nascono da secoli di consumo culturale e valori estetici accumulati."
+    },
+    {
+      "da": "salute_catechine",
+      "a": "caffeina_tannini",
+      "tipo": "complementa",
+      "descrizione": "Catechine e L-teanina modulano gli effetti della caffeina, spiegando perché il tè «stimola senza eccitare»."
+    },
+    {
+      "da": "salute_catechine",
+      "a": "cucina_usi_pratici",
+      "tipo": "complementa",
+      "descrizione": "Matcha e estratti concentrano catechine anche fuori dalla tazza, in cucina e cosmetica."
+    },
+    {
+      "da": "degustazione_sensoriale",
+      "a": "salute_catechine",
+      "tipo": "contrasta",
+      "descrizione": "La ricerca sensoriale premia freschezza e qualità organolettica; la scienza misura molecole: due linguaggi per valutare lo stesso tè."
+    },
+    {
+      "da": "storia_cultura",
+      "a": "salute_catechine",
+      "tipo": "approfondisce",
+      "descrizione": "La medicina tradizionale cinese e il Kissa y?j?-ki di Eisai anticipano le scoperte moderne sulle catechine."
+    },
+    {
+      "da": "caffeina_tannini",
+      "a": "preparazione_servizio",
+      "tipo": "approfondisce",
+      "descrizione": "Tempo di infusione e «lavaggio» delle foglie cambiano il rapporto caffeina/tannini in tazza."
+    },
+    {
+      "da": "cerimonia_spiritualita",
+      "a": "salute_catechine",
+      "tipo": "contrasta",
+      "descrizione": "Il chanoyu privilegia estetica e presenza mentale; la scienza chiede dosi e biodisponibilità misurabili."
+    },
+    {
+      "da": "cucina_usi_pratici",
+      "a": "lavorazione_qualita",
+      "tipo": "presuppone",
+      "descrizione": "Matcha da cucina richiede polvere di qualità superiore, prodotta con foglie ombreggiate come il Gyokuro."
+    }
+  ],
+  "prospettive_contrastanti": [
+    {
+      "id": "salute-scienza-vs-tradizione",
+      "questione": "Quanto è «dimostrato» che il tè verde faccia bene?",
+      "posizioni": [
+        {
+          "fonte": "hara",
+          "tesi": "Servono meccanismi molecolari, trial clinici e misurazione della biodisponibilità delle catechine per affermare effetti terapeutici."
+        },
+        {
+          "fonte": "rosen",
+          "tesi": "Secoli di uso medicinale cinese e studi epidemiologici (Giappone, Shizuoka) supportano benefici su cancro, cuore e invecchiamento."
+        },
+        {
+          "fonte": "onuma",
+          "tesi": "La saggezza popolare giapponese (nonna, Eisai) e l'esperienza quotidiana confermano virtù salutari prima ancora dei paper."
+        },
+        {
+          "fonte": "pellegrino",
+          "tesi": "Il tè verde va inserito nella prevenzione e nello stile di vita sano, ma non sostituisce le terapie del medico."
+        }
+      ],
+      "sintesi": "Tradizione e scienza convergono sul potenziale preventivo, ma divergono su dosi efficaci e certezza delle affermazioni. Hara è il più cauto; Rosen e Onuma più divulgativi."
+    },
+    {
+      "id": "bevanda-vs-integratore",
+      "questione": "Meglio bere tè verde o assumere estratti?",
+      "posizioni": [
+        {
+          "fonte": "rosen",
+          "tesi": "Gli integratori offrono dosi concentrate senza caffeina, ma privano del piacere rituale; la bevanda resta ideale."
+        },
+        {
+          "fonte": "pellegrino",
+          "tesi": "Il Matcha, bevendo la foglia intera, concentra antiossidanti più di qualsiasi infusione filtrata."
+        },
+        {
+          "fonte": "hara",
+          "tesi": "La biodisponibilità e i trial clinici usano spesso estratti standardizzati di EGCG, non tazze di sencha."
+        }
+      ],
+      "sintesi": "La bevanda integra cultura, piacere e salute; gli estratti servono alla ricerca e a chi cerca dosi precise, ma perdono il contesto cerimoniale."
+    },
+    {
+      "id": "cerimonia-cina-vs-giappone",
+      "questione": "Come si confrontano Gongfu Cha e Chanoyu?",
+      "posizioni": [
+        {
+          "fonte": "sommelier",
+          "tesi": "Il Gongfu Cha è conviviale, informale, centrato su ospitalità e abilità tecnica; sette passi precisi ma adattabili."
+        },
+        {
+          "fonte": "pellegrino",
+          "tesi": "Il Chanoyu è evento sociale formale con koicha e usucha, giardino roji, umiltà e fusione di arti (ikebana, ceramica, architettura)."
+        },
+        {
+          "fonte": "onuma",
+          "tesi": "La cerimonia giapponese incarna valori di bellezza e semplicità adottabili anche in Occidente, non solo come spettacolo."
+        }
+      ],
+      "sintesi": "Entrambe elevano il tè ad arte, ma il gong fu è più sociale e flessibile; il chanoyu più spirituale e codificato."
+    },
+    {
+      "id": "qualita-sensoriale-vs-chimica",
+      "questione": "Cosa definisce un «buon» tè verde?",
+      "posizioni": [
+        {
+          "fonte": "sommelier",
+          "tesi": "Scheda sensoriale professionale: assenza di difetti, equilibrio corpo/astringenza, note varietali tipiche."
+        },
+        {
+          "fonte": "onuma",
+          "tesi": "Aroma di erba fresca, brillantezza foglie e sapore equilibrato; il prezzo non è l'unico indicatore."
+        },
+        {
+          "fonte": "hara",
+          "tesi": "Contenuto di catechine, varietà cultivar e processo produttivo giapponese determinano il profilo salutare."
+        },
+        {
+          "fonte": "rosen",
+          "tesi": "La bellezza della foglia e il piacere in tazza sono criteri legittimi, non solo analisi chimica."
+        }
+      ],
+      "sintesi": "Palato, occhio e laboratorio valutano dimensioni diverse della qualità; un tè eccellente sensorialmente tende a essere anche ricco di principi attivi se fresco e ben lavorato."
+    },
+    {
+      "id": "caffeina-stimolazione",
+      "questione": "Il tè verde stimola o rilassa?",
+      "posizioni": [
+        {
+          "fonte": "pellegrino",
+          "tesi": "Stimola senza eccitare: caffeina legata ai tannini, effetto più lungo e dolce del caffè; L-teanina calma."
+        },
+        {
+          "fonte": "sommelier",
+          "tesi": "L-teanina aumenta onde alfa e concentrazione mantenendo calma corporea."
+        },
+        {
+          "fonte": "onuma",
+          "tesi": "Gyokuro prima dello sport sì, prima di dormire no; la scelta della varietà conta più della bevanda in sé."
+        }
+      ],
+      "sintesi": "Il tè verde contiene caffeina ma il profilo di effetti dipende da varietà, tempo di infusione e contesto di consumo."
+    },
+    {
+      "id": "consumo-quotidiano-vs-rituale",
+      "questione": "Tè verde: abitudine quotidiana o esperienza speciale?",
+      "posizioni": [
+        {
+          "fonte": "onuma",
+          "tesi": "Presenza costante dalla colazione al ristorante; il tè accompagna ogni momento della giornata."
+        },
+        {
+          "fonte": "rosen",
+          "tesi": "Il quotidiano piacere del tè (con riso, con visitatori) convive con la cerimonia formale cha-no-yu."
+        },
+        {
+          "fonte": "pellegrino",
+          "tesi": "In Giappone coesistono bancha in bottiglia e culto del Chado: non c'è contraddizione."
+        }
+      ],
+      "sintesi": "Il tè verde è insieme pane quotidiano e occasione straordinaria; la stessa bevanda attraversa entrambi i registri."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "seasons": [
+    {
+      "slug": "primavera",
+      "name": "Primavera",
+      "months": [3, 4, 5],
+      "narrative": "Shincha e primi raccolti: il verde piu fresco dell anno, in parallelo con asparagi e fave.",
+      "varieties": ["sencha", "bi-luo-chun", "dragon-well"]
+    },
+    {
+      "slug": "estate",
+      "name": "Estate",
+      "months": [6, 7, 8],
+      "narrative": "Cold brew e bancha freddo: alternativa raffinata alle bibite zuccherate.",
+      "varieties": ["cold-brew-gyokuro", "bancha", "sencha"]
+    },
+    {
+      "slug": "autunno",
+      "name": "Autunno",
+      "months": [9, 10, 11],
+      "narrative": "Hojicha e note tostate che dialogano con castagne e funghi.",
+      "varieties": ["hojicha", "genmaicha", "gunpowder"]
+    },
+    {
+      "slug": "inverno",
+      "name": "Inverno",
+      "months": [12, 1, 2],
+      "narrative": "Genmaicha e verdi tostati: comfort senza la pesantezza del te nero speziato.",
+      "varieties": ["genmaicha", "hojicha", "kukicha"]
+    }
+  ]
+}

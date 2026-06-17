@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="tv-page-header">
+  <nav class="tv-breadcrumb" aria-label="Breadcrumb">
+    <ol class="tv-breadcrumb__list">
+      {% for crumb in breadcrumbs %}
+      <li>{% if not loop.last %}<a href="{{ crumb.url if crumb.url is defined else crumb[1] }}">{{ crumb.name if crumb.name is defined else crumb[0] }}</a>{% else %}<span aria-current="page">{{ crumb.name if crumb.name is defined else crumb[0] }}</span>{% endif %}</li>
+      {% endfor %}
+    </ol>
+  </nav>
+  <h1>{{ title }}</h1>
+  {% if lead %}<p class="tv-page-header__lead">{{ lead }}</p>{% endif %}
+</header>
+{% if content_html %}
+<div class="tv-article__body">{{ content_html | safe }}</div>
+{% endif %}
+{% if relazioni %}
+<section class="tv-relazioni" aria-labelledby="rel-heading">
+  <h2 id="rel-heading">Collegamenti tematici</h2>
+  <ul class="tv-relazioni__list">
+    {% for r in relazioni %}
+    <li><span class="tv-relazioni__tipo">{{ r.tipo }}</span> {{ r.descrizione }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% if controversies %}
+<section class="tv-section">
+  <h2>Controversie collegate</h2>
+  <ul class="tv-link-list">
+    {% for c in controversies %}
+    <li><a href="{{ c.url }}">{{ c.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% if items %}
+<div class="tv-grid tv-grid--cards">
+  {% for item in items %}
+  <article class="tv-variety-card">
+    <h3 class="tv-variety-card__title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+    {% if item.brief %}<p class="tv-variety-card__brief">{{ item.brief }}</p>{% endif %}
+  </article>
+  {% endfor %}
+</div>
+{% endif %}
+{% if badges %}
+<section class="tv-badges-grid" aria-labelledby="badges-heading">
+  <h2 id="badges-heading">Badge disponibili</h2>
+  <div class="tv-grid tv-grid--badges" id="badge-collection">
+    {% for b in badges %}
+    <div class="tv-badge" data-badge-id="{{ b.id }}" title="{{ b.description }}">
+      <span class="tv-badge__icon" aria-hidden="true">?</span>
+      <span class="tv-badge__name">{{ b.name }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}
+{% block scripts %}
+{% if badges %}<script src="/assets/js/badges.js" defer></script>{% endif %}
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="tv-page-header"><h1>Varieta di te verde</h1><p>Solo Camellia sinensis.</p></header>
+<div class="tv-catalog-layout"><aside class="tv-filter-bar"><div id="filter-origine" class="tv-filter-options"></div><div id="filter-stile" class="tv-filter-options"></div><div id="filter-caffeina" class="tv-filter-options"></div><div id="filter-stagione" class="tv-filter-options"></div></aside>
+<div class="tv-catalog-results"><p id="variety-count"></p><div id="variety-grid" class="tv-grid tv-grid--cards"></div></div></div>
+{% endblock %}
+{% block scripts %}<script src="/assets/js/filters.js" defer></script>{% endblock %}

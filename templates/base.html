@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ title | default(meta.title if meta is defined else 'The Verde') }}{% endblock %} | The Verde</title>
+  <meta name="description" content="{% block description %}{{ meta_description | default(meta.meta_description if meta is defined else 'Cultura del te verde per chi vive in Italia.') }}{% endblock %}">
+  {% if url is defined %}
+  <link rel="canonical" href="{{ base_url }}{{ url }}">
+  {% elif meta is defined and meta.url is defined %}
+  <link rel="canonical" href="{{ base_url }}{{ meta.url }}">
+  {% endif %}
+  <link rel="alternate" type="application/rss+xml" title="The Verde Guide" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  {% block head_extra %}{% endblock %}
+</head>
+<body class="tv-page tv-page--{{ page_type | default('default') }}{% if meta is defined and meta.path_nav %} tv-page--has-path-nav{% endif %}">
+  <a class="tv-skip-link" href="#main">Vai al contenuto</a>
+  <header class="tv-header" role="banner">
+    <div class="tv-header__inner">
+      <a href="/" class="tv-header__logo"><span class="tv-header__logo-text">The Verde</span></a>
+      <button type="button" class="tv-header__menu-btn" aria-expanded="false" aria-controls="tv-nav-drawer" aria-label="Apri menu"><span class="tv-header__menu-icon" aria-hidden="true"></span></button>
+      <nav class="tv-header__nav" id="tv-nav-drawer" aria-label="Navigazione principale">
+        <ul class="tv-header__nav-list">
+          {% for item in nav %}<li><a href="{{ item.href }}">{{ item.label }}</a></li>{% endfor %}
+          <li><a href="/cerca/">Cerca</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="tv-main tv-main--{{ page_type | default('default') }}">{% block content %}{% endblock %}</main>
+  <footer class="tv-footer" role="contentinfo">
+    <div class="tv-footer__inner">
+      <p class="tv-footer__brand">The Verde</p>
+      <nav class="tv-footer__nav" aria-label="Link utili"><ul>
+        <li><a href="/glossario/">Glossario</a></li><li><a href="/guide/">Guide</a></li>
+        <li><a href="/community/">Community</a></li><li><a href="/feed.xml">RSS</a></li>
+        <li><a href="/privacy/">Privacy</a></li><li><a href="/termini/">Termini</a></li>
+      </ul></nav>
+      <p class="tv-footer__copy">&copy; {{ year }} The Verde. Solo <em>Camellia sinensis</em>.</p>
+    </div>
+  </footer>
+  <script src="/assets/js/nav.js" defer></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

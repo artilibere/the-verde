@@ -1,0 +1,13 @@
+{
+  "site_name": "The Verde",
+  "base_url": "https://the-verde.it",
+  "nav": [
+    { "label": "Scopri", "href": "/" },
+    { "label": "Varieta", "href": "/varieta/" },
+    { "label": "Impara", "href": "/impara/" },
+    { "label": "In Italia", "href": "/italia/" },
+    { "label": "Gioca", "href": "/gioca/" },
+    { "label": "Diario", "href": "/diario/" }
+  ],
+  "path_order": ["bancha", "sencha", "gyokuro", "matcha"]
+}

@@ -1,0 +1,6 @@
+dist/
+__pycache__/
+*.pyc
+.venv/
+pagefind/
+.DS_Store

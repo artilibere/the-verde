@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="tv-article" data-slug="{{ meta.slug }}">
+  <nav class="tv-mininav" aria-label="Sezioni"><ul class="tv-mininav__list">
+    <li><a href="#scopri" class="tv-mininav__link tv-mininav__link--active">Panoramica</a></li>
+    <li><a href="#prepara" class="tv-mininav__link">Preparazione</a></li>
+    <li><a href="#approfondisci" class="tv-mininav__link">Approfondisci</a></li>
+  </ul></nav>
+  <section id="scopri" class="tv-scopri tv-zone">
+    <nav class="tv-breadcrumb" aria-label="Breadcrumb"><ol class="tv-breadcrumb__list">
+      {% for crumb in breadcrumbs %}<li>{% if not loop.last %}<a href="{{ crumb.url }}">{{ crumb.name }}</a>{% else %}<span aria-current="page">{{ crumb.name }}</span>{% endif %}</li>{% endfor %}
+    </ol></nav>
+    <h1>{{ meta.title }}</h1>
+    <div class="tv-scopri__meta">
+      <dl class="tv-brew-card">
+        <div class="tv-brew-card__row"><dt>Temperatura</dt><dd>{{ meta.brew_temp }} C</dd></div>
+        <div class="tv-brew-card__row"><dt>Dosaggio</dt><dd>{{ meta.brew_grams }} g / 100 ml</dd></div>
+        <div class="tv-brew-card__row"><dt>Prima infusione</dt><dd>{{ meta.brew_seconds }} sec</dd></div>
+        <div class="tv-brew-card__row"><dt>Infusioni</dt><dd>{{ meta.brew_infusions }}</dd></div>
+      </dl>
+      {% if meta.sensory %}<dl class="tv-sensory-profile">{% for k,v in meta.sensory.items() %}<div class="tv-sensory-profile__row"><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>{% endif %}
+    </div>
+    <div class="tv-origin-chips"><span class="tv-chip">{{ meta.origine }}</span><span class="tv-chip">{{ meta.stile }}</span></div>
+  </section>
+  <div class="tv-article__body">{{ content_html | safe }}</div>
+  {% if meta.explore_next %}<aside class="tv-explore-next"><h2>Potrebbe interessarti</h2><ul>{% for link in meta.explore_next %}<li><a href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}</ul></aside>{% endif %}
+  <p class="tv-diario-cta"><a href="/diario/nuova/?varieta={{ meta.slug }}" class="tv-btn tv-btn--outlined">Annota nel diario</a></p>
+</article>
+{% if meta.path_nav %}<nav class="tv-path-nav">{% if meta.path_nav.prev %}<a href="{{ meta.path_nav.prev.url }}">Prev</a>{% endif %}<span>{{ meta.path_nav.index }}/{{ meta.path_nav.total }}</span>{% if meta.path_nav.next %}<a href="{{ meta.path_nav.next.url }}">Next</a>{% endif %}</nav>{% endif %}
+{% endblock %}
+{% block scripts %}<script src="/assets/js/scroll-spy.js" defer></script>{% endblock %}

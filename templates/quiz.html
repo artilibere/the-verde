@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="tv-page-header">
+  <nav class="tv-breadcrumb" aria-label="Breadcrumb">
+    <ol class="tv-breadcrumb__list">
+      {% for crumb in breadcrumbs %}
+      <li>{% if not loop.last %}<a href="{{ crumb.url if crumb.url is defined else crumb[1] }}">{{ crumb.name if crumb.name is defined else crumb[0] }}</a>{% else %}<span aria-current="page">{{ crumb.name if crumb.name is defined else crumb[0] }}</span>{% endif %}</li>
+      {% endfor %}
+    </ol>
+  </nav>
+  <h1>{{ quiz.title }}</h1>
+  <p class="tv-page-header__lead">{{ quiz.description }}</p>
+</header>
+<div id="quiz-app" class="tv-quiz" data-quiz-slug="{{ quiz.slug }}"></div>
+<noscript><p>Attiva JavaScript per giocare al quiz.</p></noscript>
+{% endblock %}
+{% block scripts %}
+<script src="/assets/js/quiz.js" defer></script>
+{% endblock %}
