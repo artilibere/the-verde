@@ -72,4 +72,10 @@
   <symbol id="tv-icon-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
     <path d="M4 6h16M7 12h10M10 18h4"/>
   </symbol>
+  <symbol id="tv-icon-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="18" cy="5" r="3"/>
+    <circle cx="6" cy="12" r="3"/>
+    <circle cx="18" cy="19" r="3"/>
+    <path d="M8.6 13.5l6.8 3.9M15.4 6.6l-6.8 3.9"/>
+  </symbol>
 </svg>

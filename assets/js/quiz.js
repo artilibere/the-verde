@@ -99,16 +99,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="tv-quiz__result">
           <h2>${escapeHtml(r.title)}</h2>
           <p>${escapeHtml(r.text)}</p>
-          <a href="${escapeHtml(r.url)}" class="tv-btn tv-btn--filled">Scopri la scheda</a>
+          <div class="tv-quiz__result-actions">
+            <a href="${escapeHtml(r.url)}" class="tv-btn tv-btn--filled">Scopri la scheda</a>
+            <a href="#condividi" class="tv-btn tv-btn--outlined">Sfida un amico</a>
+          </div>
         </div>`;
     } else {
       app.innerHTML = `
         <div class="tv-quiz__result">
           <h2>Completato!</h2>
           <p>Punteggio: ${score}/${quiz.questions.length}</p>
+          <div class="tv-quiz__result-actions">
+            <a href="#condividi" class="tv-btn tv-btn--outlined">Sfida un amico al quiz</a>
+          </div>
         </div>`;
     }
     if (quiz.badge && window.TVBadges) window.TVBadges.unlockBadge(quiz.badge);
+    document.getElementById('condividi')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   app.setAttribute('aria-busy', 'false');

@@ -46,25 +46,15 @@
 {% if items %}
 <div class="tv-grid tv-grid--cards">
   {% for item in items %}
-  <article class="tv-variety-card">
-    <h3 class="tv-variety-card__title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+  <a href="{{ item.url }}" class="tv-variety-card">
+    <h3 class="tv-variety-card__title">{{ item.title }}</h3>
     {% if item.brief %}<p class="tv-variety-card__brief">{{ item.brief }}</p>{% endif %}
-  </article>
+  </a>
   {% endfor %}
 </div>
 {% endif %}
 {% if meta is defined and meta.explore_next %}
-<aside class="tv-card tv-card--explore tv-explore-next">
-  <header class="tv-card__header"><h2 class="tv-card__title">Potrebbe interessarti</h2></header>
-  <ul class="tv-explore-next__list tv-scroll-rail">
-    {% for link in meta.explore_next %}
-    <li>
-      {% if link.type %}<span class="tv-explore-next__type">{{ link.type | capitalize }}</span>{% endif %}
-      <a href="{{ link.url }}">{{ link.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</aside>
+{% with meta=meta %}{% include "partials/explore-next.html" %}{% endwith %}
 {% endif %}
 {% if badges %}
 <section class="tv-badges-grid" aria-labelledby="badges-heading">
@@ -79,7 +69,9 @@
   </div>
 </section>
 {% endif %}
+{% include "includes/share.html" %}
 {% endblock %}
 {% block scripts %}
 {% if badges %}<script src="{{ asset_js('badges') }}" defer></script>{% endif %}
+<script src="{{ asset_js('hub-page') }}" defer></script>
 {% endblock %}

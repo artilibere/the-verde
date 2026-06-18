@@ -1,8 +1,8 @@
 <div class="tv-link-grid">
   {% for item in body['items'] %}
-  <article class="tv-variety-card">
-    <h3 class="tv-variety-card__title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+  <a href="{{ item.url }}" class="tv-variety-card">
+    <h3 class="tv-variety-card__title">{{ item.title }}</h3>
     {% if item.brief %}<p class="tv-variety-card__brief">{{ item.brief }}</p>{% endif %}
-  </article>
+  </a>
   {% endfor %}
 </div>

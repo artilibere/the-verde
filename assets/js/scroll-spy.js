@@ -1,8 +1,15 @@
 (function () {
-  const links = document.querySelectorAll('.tv-mininav__link');
-  const sections = ['scopri', 'prepara', 'approfondisci']
-    .map((id) => document.getElementById(id))
+  const mininav = document.querySelector('.tv-mininav');
+  if (!mininav) return;
+
+  const links = [...mininav.querySelectorAll('.tv-mininav__link')];
+  const sections = links
+    .map((link) => {
+      const id = link.getAttribute('href')?.slice(1);
+      return id ? document.getElementById(id) : null;
+    })
     .filter(Boolean);
+
   if (!links.length || !sections.length) return;
 
   const ratios = new Map();
@@ -18,7 +25,7 @@
 
   links.forEach((link) => {
     link.addEventListener('click', () => {
-      const id = link.getAttribute('href').slice(1);
+      const id = link.getAttribute('href')?.slice(1);
       if (id) setActive(id);
     });
   });

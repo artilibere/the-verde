@@ -1,8 +1,12 @@
 <ul class="tv-related__list tv-scroll-rail">
   {% for item in body['items'] %}
   <li class="tv-related__item">
-    <a href="{{ item.url }}"><strong>{{ item.name }}</strong></a>
-    {% if item.reason %}<span class="tv-related__reason"> — {{ item.reason }}</span>{% endif %}
+    <a href="{{ item.url }}"
+       data-tv-track="related_links"
+       data-tv-track-url="{{ item.url }}"
+       data-tv-track-label="{{ item.name }}"
+       data-tv-track-reason="{{ item.reason | default('') }}">{{ item.name }}</a>
+    {% if item.reason %}<span class="tv-related__reason">{{ item.reason }}</span>{% endif %}
   </li>
   {% endfor %}
 </ul>

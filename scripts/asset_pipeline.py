@@ -11,12 +11,17 @@ CSS_BUNDLE = ("tokens.css", "base.css", "components.css")
 
 # Bundled to cut HTTP requests on hot pages (order preserved).
 JS_PAGE_BUNDLES: dict[str, tuple[str, ...]] = {
-    "core": ("nav", "level-toggle"),
+    "core": ("nav", "level-toggle", "explore-tracking"),
     "article-page": ("share",),
     "diario-page": ("supabase-config", "diario", "badges"),
     "percorsi": ("badges", "paths"),
     "variety-page": ("scroll-spy", "share"),
     "controversy-page": ("poll", "share"),
+    "home-page": ("share",),
+    "glossary-page": ("share",),
+    "hub-page": ("share",),
+    "catalog-page": ("share",),
+    "quiz-page": ("quiz", "share"),
 }
 
 # Built only when referenced; omit dead scripts from dist.

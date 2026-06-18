@@ -2,6 +2,10 @@
 
 html { scroll-behavior: smooth; }
 
+.tv-page--variety {
+  scroll-padding-top: calc(var(--tv-header-height) + var(--tv-mininav-height) + var(--tv-spacing-2));
+}
+
 body {
   margin: 0;
   font: var(--md-sys-typescale-body-large);
@@ -47,6 +51,41 @@ h3 { font: var(--md-sys-typescale-title-large); }
   max-width: var(--tv-page-max-width);
   margin: 0 auto;
   padding: var(--tv-spacing-4) var(--tv-spacing-3) var(--tv-spacing-6);
+}
+
+.tv-main--home,
+.tv-main--variety,
+.tv-main--catalog,
+.tv-main--hub,
+.tv-main--glossary,
+.tv-main--search {
+  padding-top: var(--tv-spacing-2);
+}
+
+@media (max-width: 899px) {
+  .tv-main--home,
+  .tv-main--variety,
+  .tv-main--search {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .tv-grid--intent {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    grid-template-columns: unset;
+  }
+  .tv-grid--intent::-webkit-scrollbar { display: none; }
+  .tv-grid--intent .tv-intent-card {
+    flex: 0 0 min(82vw, 300px);
+    scroll-snap-align: start;
+  }
 }
 
 .tv-font-serif { font-family: var(--tv-font-serif); }
@@ -256,6 +295,12 @@ h3 { font: var(--md-sys-typescale-title-large); }
 .tv-quiz__loading,
 .tv-quiz__error { color: var(--md-sys-color-on-surface-variant); }
 .tv-quiz__result { padding: var(--tv-spacing-4) 0; }
+.tv-quiz__result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tv-spacing-2);
+  margin-top: var(--tv-spacing-4);
+}
 .tv-quiz__intro { margin-bottom: var(--tv-spacing-4); }
 
 .tv-search { min-height: 200px; }

@@ -32,3 +32,9 @@ def test_minify_html_strips_comments():
 def test_variety_and_controversy_page_bundles():
     assert JS_PAGE_BUNDLES["variety-page"] == ("scroll-spy", "share")
     assert JS_PAGE_BUNDLES["controversy-page"] == ("poll", "share")
+
+
+def test_referral_page_bundles_include_share():
+    assert JS_PAGE_BUNDLES["home-page"] == ("share",)
+    assert JS_PAGE_BUNDLES["quiz-page"] == ("quiz", "share")
+    assert JS_PAGE_BUNDLES["catalog-page"] == ("share",)

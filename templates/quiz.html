@@ -14,8 +14,9 @@
 <div id="quiz-app" class="tv-quiz" data-quiz-slug="{{ quiz.slug }}" aria-busy="true">
   <p class="tv-quiz__loading">Caricamento quiz…</p>
 </div>
+{% include "includes/share.html" %}
 <noscript><p>Attiva JavaScript per giocare al quiz.</p></noscript>
 {% endblock %}
 {% block scripts %}
-<script src="{{ asset_js('quiz') }}" defer></script>
+<script src="{{ asset_js('quiz-page') }}" defer></script>
 {% endblock %}

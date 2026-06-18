@@ -1,9 +1,53 @@
-<aside class="tv-share" aria-label="Condividi questa pagina">
-  <p class="tv-share__label">Condividi</p>
-  <div class="tv-share__actions">
-    <button type="button" class="tv-btn tv-btn--text tv-share__btn" data-share="copy">Copia link</button>
-    <button type="button" class="tv-btn tv-btn--text tv-share__btn" data-share="native" hidden>Condividi…</button>
-    <a class="tv-btn tv-btn--text tv-share__btn" data-share="whatsapp" href="#" rel="noopener noreferrer" target="_blank" aria-label="Condividi su WhatsApp">WhatsApp</a>
+{% set invite_titles = {
+  'variety': 'Conosci qualcuno curioso del gusto?',
+  'controversy': 'Mandalo a chi ha dubbi sul tè verde',
+  'glossary': 'Un termine da passare a chi inizia',
+  'quiz': 'Sfida un amico al quiz',
+  'home': 'Porta un amico nel mondo del tè',
+  'catalog': 'Esplorate le varietà insieme',
+  'hub': 'Utile? Inoltralo a qualcuno',
+  'article': 'Vale la pena condividerlo',
+} %}
+{% set invite_leads = {
+  'variety': 'Messaggio pronto con scheda e link — tu scegli a chi mandarlo.',
+  'controversy': 'Aiuta un amico a districarsi, senza hype detox.',
+  'quiz': 'Chi indovina la varietà giusta? Invia il quiz e confrontatevi.',
+  'home': 'Cultura specialty, radicata in Italia. Niente miracoli, solo gusto.',
+  'catalog': 'Dodici varietà, un catalogo chiaro — perfetto da esplorare in due.',
+} %}
+<aside
+  class="tv-card tv-invite tv-share"
+  id="condividi"
+  aria-labelledby="tv-invite-title"
+  data-share-context="{{ page_type | default('default') }}"
+>
+  <header class="tv-card__header">
+    {% with name='share', class='tv-card__icon' %}{% include 'partials/icon.html' %}{% endwith %}
+    <h2 class="tv-card__title" id="tv-invite-title">{{ invite_titles.get(page_type, 'Ti è stato utile? Invita qualcuno.') }}</h2>
+  </header>
+  <div class="tv-card__body">
+    <p class="tv-invite__lead">{{ invite_leads.get(page_type, 'Messaggio pronto da inviare. Nessun tracciamento da parte nostra.') }}</p>
+    <div class="tv-share__actions">
+      <a
+        class="tv-btn tv-btn--filled tv-share__btn tv-share__btn--whatsapp"
+        data-share="whatsapp"
+        href="#"
+        rel="noopener noreferrer"
+        target="_blank"
+      >Invita su WhatsApp</a>
+      <a
+        class="tv-btn tv-btn--outlined tv-share__btn"
+        data-share="telegram"
+        href="#"
+        rel="noopener noreferrer"
+        target="_blank"
+      >Telegram</a>
+      <button type="button" class="tv-btn tv-btn--outlined tv-share__btn" data-share="copy-message">Copia messaggio</button>
+      <button type="button" class="tv-btn tv-btn--text tv-share__btn" data-share="native" hidden>Condividi…</button>
+      <button type="button" class="tv-btn tv-btn--text tv-share__btn" data-share="copy-link">Solo link</button>
+      <a class="tv-btn tv-btn--text tv-share__btn" data-share="email" href="#">Email</a>
+    </div>
+    <p class="tv-share__preview" data-share-preview hidden></p>
+    <p class="tv-share__feedback" role="status" aria-live="polite" hidden></p>
   </div>
-  <p class="tv-share__feedback" role="status" aria-live="polite" hidden></p>
 </aside>

@@ -3,6 +3,7 @@
 <link rel="preload" href="/assets/js/config/varieties.json" as="fetch" crossorigin>
 {% endblock %}
 {% block content %}
+<button type="button" class="tv-filter-scrim" hidden aria-label="Chiudi filtri"></button>
 <header class="tv-page-header tv-catalog-header">
   <div class="tv-catalog-header__top">
     <h1 class="tv-font-serif">{{ title | default('Varietà di tè verde') }}</h1>
@@ -34,11 +35,17 @@
     <button type="button" id="filter-reset" class="tv-btn tv-btn--text tv-filter-reset" hidden>Azzera filtri</button>
   </aside>
   <div class="tv-catalog-results">
+    <div id="catalog-quick-filters" class="tv-scroll-rail tv-catalog-quick-filters" role="group" aria-label="Filtri rapidi"></div>
+    <div id="catalog-active-filters" class="tv-scroll-rail tv-catalog-active-filters" role="group" aria-label="Filtri attivi" hidden></div>
     <p id="variety-count" class="tv-catalog-results__count" aria-live="polite">Caricamento varietà…</p>
     <div id="variety-grid" class="tv-grid tv-grid--cards tv-catalog-results__grid" aria-busy="true" aria-label="Elenco varietà">
       <p class="tv-catalog-results__loading">Stiamo preparando il catalogo…</p>
     </div>
   </div>
 </div>
+{% include "includes/share.html" %}
 {% endblock %}
-{% block scripts %}<script src="{{ asset_js('filters') }}" defer></script>{% endblock %}
+{% block scripts %}
+<script src="{{ asset_js('filters') }}" defer></script>
+<script src="{{ asset_js('catalog-page') }}" defer></script>
+{% endblock %}

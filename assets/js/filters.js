@@ -9,9 +9,12 @@
 
   const grid = document.getElementById('variety-grid');
   const countEl = document.getElementById('variety-count');
+  const quickRail = document.getElementById('catalog-quick-filters');
+  const activeRail = document.getElementById('catalog-active-filters');
   if (!grid) return;
 
   const filters = { origine: new Set(), stile: new Set(), caffeina: new Set(), stagione: new Set() };
+  const QUICK_KEYS = ['origine', 'caffeina'];
   let varieties = [];
 
   const LABELS = {
@@ -40,8 +43,7 @@
   function readUrlFilters() {
     const params = new URLSearchParams(window.location.search);
     ['origine', 'stile', 'caffeina', 'stagione'].forEach((key) => {
-      const vals = params.getAll(key);
-      vals.forEach((val) => {
+      params.getAll(key).forEach((val) => {
         if (val) filters[key].add(val);
       });
     });
@@ -57,10 +59,46 @@
     window.history.replaceState({}, '', next);
   }
 
+  function syncFilterButtonStates(key, value) {
+    const active = filters[key].has(value);
+    document.querySelectorAll(`[data-filter="${key}"][data-value="${value}"]`).forEach((btn) => {
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      btn.classList.toggle('tv-filter-options__btn--active', active);
+      btn.classList.toggle('tv-chip--filter-active', active);
+    });
+  }
+
+  function syncAllFilterButtonStates() {
+    document.querySelectorAll('[data-filter][data-value]').forEach((btn) => {
+      syncFilterButtonStates(btn.dataset.filter, btn.dataset.value);
+    });
+  }
+
+  function toggleFilter(key, value) {
+    if (filters[key].has(value)) filters[key].delete(value);
+    else filters[key].add(value);
+    syncFilterButtonStates(key, value);
+    applyFilters();
+  }
+
+  function createFilterButton(key, value, className) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = className;
+    btn.textContent = humanize(value);
+    btn.dataset.filter = key;
+    btn.dataset.value = value;
+    btn.setAttribute('aria-pressed', filters[key].has(value) ? 'true' : 'false');
+    if (filters[key].has(value)) btn.classList.add('tv-filter-options__btn--active', 'tv-chip--filter-active');
+    btn.addEventListener('click', () => toggleFilter(key, value));
+    return btn;
+  }
+
   function showError() {
     grid.classList.remove('tv-catalog-results__grid--loading');
     grid.setAttribute('aria-busy', 'false');
     if (countEl) countEl.textContent = 'Catalogo non disponibile';
+    if (quickRail) quickRail.hidden = true;
     grid.innerHTML =
       '<p class="tv-catalog-results__empty">Non riusciamo a caricare le varietà. <a href="">Riprova</a>.</p>';
     grid.querySelector('a')?.addEventListener('click', (e) => {
@@ -78,36 +116,61 @@
       varieties = data.varieties || [];
       readUrlFilters();
       buildFilterUI(data.varieties);
-      render(varieties);
+      buildQuickFilters(data.varieties);
+      applyFilters();
     })
     .catch(showError);
 
   function buildFilterUI(items) {
-    const keys = ['origine', 'stile', 'caffeina', 'stagione'];
-    keys.forEach((key) => {
+    ['origine', 'stile', 'caffeina', 'stagione'].forEach((key) => {
       const container = document.getElementById(`filter-${key}`);
       if (!container) return;
       const values = [...new Set(items.map((v) => v[key]).filter(Boolean))].sort();
       values.forEach((val) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.textContent = humanize(val);
-        const pressed = filters[key].has(val);
-        btn.setAttribute('aria-pressed', pressed ? 'true' : 'false');
-        btn.dataset.filter = key;
-        btn.dataset.value = val;
-        if (pressed) btn.classList.add('tv-filter-options__btn--active');
-        btn.addEventListener('click', () => {
-          if (filters[key].has(val)) filters[key].delete(val);
-          else filters[key].add(val);
-          const active = filters[key].has(val);
-          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-          btn.classList.toggle('tv-filter-options__btn--active', active);
-          applyFilters();
-        });
-        container.appendChild(btn);
+        container.appendChild(createFilterButton(key, val, 'tv-filter-options__btn'));
       });
     });
+  }
+
+  function buildQuickFilters(items) {
+    if (!quickRail) return;
+    quickRail.innerHTML = '';
+    QUICK_KEYS.forEach((key) => {
+      const values = [...new Set(items.map((v) => v[key]).filter(Boolean))].sort();
+      values.forEach((val) => {
+        quickRail.appendChild(createFilterButton(key, val, 'tv-chip tv-chip--filter'));
+      });
+    });
+    quickRail.hidden = quickRail.children.length === 0;
+  }
+
+  function updateActiveFiltersRail() {
+    if (!activeRail) return;
+    activeRail.innerHTML = '';
+    let hasAny = false;
+    ['origine', 'stile', 'caffeina', 'stagione'].forEach((key) => {
+      filters[key].forEach((val) => {
+        hasAny = true;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'tv-chip tv-chip--filter tv-chip--filter-active';
+        btn.dataset.filter = key;
+        btn.dataset.value = val;
+        btn.setAttribute('aria-label', `Rimuovi filtro ${humanize(val)}`);
+        btn.innerHTML = `${escapeHtml(humanize(val))} <span aria-hidden="true">×</span>`;
+        btn.addEventListener('click', () => toggleFilter(key, val));
+        activeRail.appendChild(btn);
+      });
+    });
+    if (hasAny) {
+      const reset = document.createElement('button');
+      reset.type = 'button';
+      reset.className = 'tv-btn tv-btn--text tv-catalog-active-filters__clear';
+      reset.textContent = 'Azzera tutti';
+      reset.addEventListener('click', resetFilters);
+      activeRail.appendChild(reset);
+    }
+    activeRail.hidden = !hasAny;
   }
 
   function applyFilters() {
@@ -119,6 +182,7 @@
       })
     );
     updateResetButton();
+    updateActiveFiltersRail();
     render(filtered);
   }
 
@@ -131,10 +195,7 @@
 
   function resetFilters() {
     ['origine', 'stile', 'caffeina', 'stagione'].forEach((key) => filters[key].clear());
-    document.querySelectorAll('.tv-filter-options button').forEach((btn) => {
-      btn.setAttribute('aria-pressed', 'false');
-      btn.classList.remove('tv-filter-options__btn--active');
-    });
+    syncAllFilterButtonStates();
     applyFilters();
   }
 
@@ -142,15 +203,24 @@
 
   const filterToggle = document.getElementById('catalog-filter-toggle');
   const filterPanel = document.getElementById('catalog-filters');
+  const filterScrim = document.querySelector('.tv-filter-scrim');
+
+  function setFilterOpen(open) {
+    if (!filterPanel) return;
+    filterPanel.classList.toggle('tv-filter-bar--open', open);
+    filterToggle?.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('tv-filter-open', open);
+    if (filterScrim) filterScrim.hidden = !open;
+  }
+
   if (filterToggle && filterPanel) {
     filterToggle.addEventListener('click', () => {
-      const open = filterPanel.classList.toggle('tv-filter-bar--open');
-      filterToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      setFilterOpen(!filterPanel.classList.contains('tv-filter-bar--open'));
     });
+    filterScrim?.addEventListener('click', () => setFilterOpen(false));
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && filterPanel.classList.contains('tv-filter-bar--open')) {
-        filterPanel.classList.remove('tv-filter-bar--open');
-        filterToggle.setAttribute('aria-expanded', 'false');
+        setFilterOpen(false);
         filterToggle.focus();
       }
     });
@@ -172,14 +242,14 @@
     grid.innerHTML = items
       .map(
         (v) => `
-      <article class="tv-variety-card">
-        <h3 class="tv-variety-card__title"><a href="${escapeHtml(v.url)}">${escapeHtml(v.title)}</a></h3>
+      <a href="${escapeHtml(v.url)}" class="tv-variety-card">
+        <h3 class="tv-variety-card__title">${escapeHtml(v.title)}</h3>
         <p class="tv-variety-card__brief">${escapeHtml(v.brief || '')}</p>
         <div class="tv-origin-chips">
           <span class="tv-chip">${escapeHtml(humanize(v.origine))}</span>
           <span class="tv-chip">${escapeHtml(humanize(v.stile))}</span>
         </div>
-      </article>`
+      </a>`
       )
       .join('');
   }

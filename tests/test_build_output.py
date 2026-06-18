@@ -125,15 +125,17 @@ def test_impara_hub_has_card_feed(built_dist):
     assert len(page.find_all(class_="tv-card")) >= 2
 
 
-def test_home_loads_single_core_script(built_dist):
+def test_home_loads_core_and_share_bundle(built_dist):
     page = _soup(built_dist / "index.html")
     scripts = [
         s["src"]
         for s in page.find_all("script", src=True)
         if s["src"].startswith("/assets/js/")
     ]
-    assert len(scripts) == 1
-    assert "core." in scripts[0]
+    assert len(scripts) == 2
+    assert any("core." in src for src in scripts)
+    assert any("home-page." in src for src in scripts)
+    assert page.find(id="condividi") is not None
 
 
 def test_variety_loads_core_and_variety_bundle(built_dist):

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <article class="tv-article tv-feed-page" data-slug="{{ meta.slug }}" itemscope itemtype="https://schema.org/Article">
-  <nav class="tv-mininav tv-scroll-rail" aria-label="Sezioni scheda">
+  <nav class="tv-mininav" aria-label="Sezioni scheda">
     <ul class="tv-mininav__list">
       <li><a href="#brief" class="tv-mininav__link">{% with name='grid', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}<span>Scopri</span></a></li>
       <li><a href="#brew" class="tv-mininav__link">{% with name='list', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}<span>Prepara</span></a></li>
@@ -28,22 +28,12 @@
     {% endfor %}
   </div>
   {% if meta.explore_next %}
-  <aside class="tv-card tv-card--explore tv-explore-next">
-    <header class="tv-card__header"><h2 class="tv-card__title">Potrebbe interessarti</h2></header>
-    <ul class="tv-explore-next__list tv-scroll-rail">
-      {% for link in meta.explore_next %}
-      <li>
-        {% if link.type %}<span class="tv-explore-next__type">{% if link.type == 'varieta' %}Varietà{% elif link.type == 'tema' %}Tema{% else %}{{ link.type | capitalize }}{% endif %}</span>{% endif %}
-        <a href="{{ link.url }}">{{ link.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </aside>
+  {% with meta=meta %}{% include "partials/explore-next.html" %}{% endwith %}
   {% endif %}
+  {% include "includes/share.html" %}
   <p class="tv-diario-cta">
     <a href="/diario/nuova/?varieta={{ meta.slug }}" class="tv-btn tv-btn--outlined">Annota nel diario</a>
   </p>
-  {% include "includes/share.html" %}
 </article>
 {% if meta.path_nav %}
 <nav class="tv-path-nav" aria-label="Percorso dal bancha al matcha">

@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Cerca nel sito</h1>
-<div id="search" class="tv-search" role="search" aria-label="Cerca pagine e contenuti sul tè verde"></div>
+<div class="tv-feed tv-search-feed">
+  <header class="tv-page-header tv-card tv-card--hero">
+    <h1 class="tv-font-serif">Cerca</h1>
+    <p class="tv-page-header__lead">Varietà, guide, glossario e temi — solo <em>Camellia sinensis</em>.</p>
+  </header>
+  <div class="tv-card tv-search-card">
+    <div id="search" class="tv-search" role="search" aria-label="Cerca pagine e contenuti sul tè verde"></div>
+  </div>
+</div>
 {% endblock %}
 {% block head_extra %}<link rel="stylesheet" href="/pagefind/pagefind-ui.css">{% endblock %}
 {% block scripts %}<script src="/pagefind/pagefind-ui.js"></script><script>document.addEventListener("DOMContentLoaded",()=>{if(window.PagefindUI)new PagefindUI({element:"#search",showImages:false});});</script>{% endblock %}

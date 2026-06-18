@@ -21,7 +21,9 @@
     if (!result) return;
     result.hidden = false;
     result.setAttribute('aria-live', 'polite');
-    result.textContent = `Hai scelto la prospettiva ${label(value)}. Ora leggi le altre: è lì che nasce la comprensione.`;
+    result.innerHTML =
+      `Hai scelto la prospettiva ${label(value)}. Ora leggi le altre: è lì che nasce la comprensione. ` +
+      '<a href="#condividi">Invita un amico a leggere →</a>';
     form.querySelectorAll('input, button').forEach((el) => {
       el.disabled = true;
     });

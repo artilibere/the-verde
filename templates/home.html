@@ -77,13 +77,17 @@
     <div class="tv-card__body">
       <div class="tv-grid tv-grid--cards">
         {% for v in varieties %}
-        <article class="tv-variety-card">
-          <h3 class="tv-variety-card__title"><a href="{{ v.url }}">{{ v.title }}</a></h3>
+        <a href="{{ v.url }}" class="tv-variety-card">
+          <h3 class="tv-variety-card__title">{{ v.title }}</h3>
           <p class="tv-variety-card__brief">{{ v.brief }}</p>
-        </article>
+        </a>
         {% endfor %}
       </div>
     </div>
   </section>
 </div>
+{% include "includes/share.html" %}
+{% endblock %}
+{% block scripts %}
+<script src="{{ asset_js('home-page') }}" defer></script>
 {% endblock %}

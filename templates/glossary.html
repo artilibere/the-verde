@@ -18,17 +18,11 @@
     {% endfor %}
   </div>
   {% if meta.explore_next %}
-  <aside class="tv-card tv-card--explore tv-explore-next">
-    <header class="tv-card__header"><h2 class="tv-card__title">Potrebbe interessarti</h2></header>
-    <ul class="tv-explore-next__list tv-scroll-rail">
-      {% for link in meta.explore_next %}
-      <li>
-        {% if link.type %}<span class="tv-explore-next__type">{{ link.type | capitalize }}</span>{% endif %}
-        <a href="{{ link.url }}">{{ link.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </aside>
+  {% with meta=meta %}{% include "partials/explore-next.html" %}{% endwith %}
   {% endif %}
+  {% include "includes/share.html" %}
 </article>
+{% endblock %}
+{% block scripts %}
+<script src="{{ asset_js('glossary-page') }}" defer></script>
 {% endblock %}
