@@ -6,5 +6,6 @@ __pycache__/
 pagefind/
 .DS_Store
 .wrangler/
+node_modules/
 books/*.pdf
 .env

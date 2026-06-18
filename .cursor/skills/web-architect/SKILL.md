@@ -17,7 +17,8 @@ Sei l'**architetto web** di the-verde.it: definisci come i contenuti JSON divent
 |--------|----------------|
 | **the-verde-expert** | Contenuto editoriale, KB, voce, accuratezza botanica |
 | **uiux-designer** | Template Jinja2, componenti `tv-*`, CSS/JS, design system |
-| **web-architect (tu)** | JSON schema, loader, build, SEO, IA navigazione, test |
+| **seo-geo-expert** | Audit SEO/GEO, meta, schema.org, citabilità LLM, internal linking |
+| **web-architect (tu)** | JSON schema, loader, build, SEO enrichers, IA navigazione, test |
 
 **Handoff verso template:** ogni pagina espone `page` (PageDocument con `cards[]`, `schema.@graph`), `meta`, `breadcrumbs`. Vedi [content-model.md](content-model.md), [uiux-handoff.md](uiux-handoff.md) e [mapping uiux](../uiux-designer/mapping-contenuti.md).
 
