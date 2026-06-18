@@ -3,11 +3,13 @@
   "type": "hub",
   "slug": "pausa",
   "meta": {
-    "title": "Tè verde in pausa",
-    "description": "Pausa delle 10 o delle 16 senza nervosismo del caffè.",
+    "title": "Tè verde in pausa lavoro",
+    "description": "Pausa delle 10 o delle 16: sencha o gyokuro per concentrazione senza il nervosismo del quarto caffè.",
     "keywords": [
-      "tè verde in pausa",
-      "tè verde",
+      "tè verde pausa",
+      "sencha ufficio",
+      "l-teanina",
+      "alternativa caffè",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/momenti/pausa/"
@@ -18,9 +20,35 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
-    "controversie": [],
-    "explore_next": []
+    "temi_kb": [
+      "caffeina_tannini",
+      "preparazione_servizio"
+    ],
+    "controversie": [
+      "caffeina-stimolazione"
+    ],
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "pausa"
+      },
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "focus"
+      },
+      {
+        "name": "Caffeina",
+        "url": "/impara/caffeina/",
+        "reason": "approfondimento"
+      },
+      {
+        "name": "Colazione",
+        "url": "/italia/momenti/colazione/",
+        "reason": "momento"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +62,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Pausa delle 10 o delle 16 senza nervosismo del caffè."
+                "value": "La pausa delle 10 o delle 16 in ufficio è il momento in cui molti italiani bevono il terzo caffè: un sencha o un gyokuro offrono attenzione e L-teanina senza il picco nervoso dell'espresso."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Un kyusu o una tazza con infusore bastano; due grammi per 100 ml, 60–90 secondi, e torni alla scrivania senza tremori."
               }
             ]
           }
@@ -46,7 +83,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Varietà Consigliate"
+            "value": "Varietà consigliate"
           }
         ]
       },
@@ -55,7 +92,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Vedi le schede nel catalogo per preparazione e abbinamenti italiani."
+            "value": "Sencha per equilibrio quotidiano, gyokuro se cerchi umami e concentrazione; evita matcha in polvere se non hai frullino a portata di mano."
           }
         ]
       }

@@ -27,7 +27,7 @@ from site_builder.builders import glossary as glossary_builder
 from site_builder.builders import hub as hub_builder
 from site_builder.builders import variety as variety_builder
 from site_builder.document import document_to_meta, variety_breadcrumb_title
-from site_builder.enrichers._seo_core import build_robots_txt, build_sitemap_xml
+from site_builder.enrichers._seo_core import build_llms_txt, build_robots_txt, build_sitemap_xml
 from site_builder.enrichers.navigation import PATH_ORDER, explore_next, path_nav
 from site_builder.page_document import document_to_page
 from site_builder.renderer import TemplateRenderer
@@ -146,6 +146,9 @@ class SiteBuilder:
             build_sitemap_xml(entries, hreflang=self.hreflang), encoding="utf-8"
         )
         (self.out_dir / "robots.txt").write_text(build_robots_txt(self.base_url), encoding="utf-8")
+        (self.out_dir / "llms.txt").write_text(
+            build_llms_txt(self.base_url, self.site_name), encoding="utf-8"
+        )
 
     def breadcrumbs(self, *crumbs: tuple[str, str]) -> list[dict]:
         items = [{"name": "Home", "url": "/"}]
@@ -408,8 +411,8 @@ class SiteBuilder:
             "home.html",
             page_type="home",
             url="/",
-            seo_title="The Verde — Il tè verde, con radici e gusto",
-            meta_description="Cultura del tè verde (Camellia sinensis) per chi vive in Italia: varietà, preparazione, abbinamenti e guide editoriali.",
+            seo_title=meta.get("title", self.site_name),
+            meta_description=meta.get("meta_description") or meta.get("description", ""),
             meta=meta,
             content_html=render_blocks(blocks) if blocks else "",
             varieties=self.varieties[:4],
@@ -527,12 +530,20 @@ class SiteBuilder:
             shutil.rmtree(self.out_dir)
             self.out_dir.mkdir(parents=True)
 
+    def _cached_asset_files_present(self, cached: dict) -> bool:
+        for url in [cached["css_url"], *cached["js_urls"].values()]:
+            if not (self.out_dir / url.lstrip("/")).is_file():
+                return False
+        return True
+
     def build(self) -> None:
         self.load_content()
         sig = asset_source_signature(self.assets_dir)
         cached = load_asset_manifest(ASSET_MANIFEST)
         assets_unchanged = bool(cached and cached.get("signature") == sig)
         self._clean_output(preserve_assets=assets_unchanged)
+        if assets_unchanged and cached and not self._cached_asset_files_present(cached):
+            assets_unchanged = False
         if assets_unchanged and cached:
             self.css_url = cached["css_url"]
             self.js_urls = cached["js_urls"]

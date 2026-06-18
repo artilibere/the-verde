@@ -3,11 +3,13 @@
   "type": "hub",
   "slug": "primavera",
   "meta": {
-    "title": "Primavera",
-    "description": "Shincha e primi raccolti.",
+    "title": "Tè verde in primavera — shincha e primi raccolti",
+    "description": "Primavera: shincha e sencha dei primi raccolti, tazze fresche e erbacee per il risveglio stagionale in Italia.",
     "keywords": [
-      "primavera",
-      "tè verde",
+      "tè verde primavera",
+      "shincha",
+      "sencha",
+      "primo raccolto",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/stagioni/primavera/"
@@ -18,9 +20,32 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "degustazione_sensoriale"
+    ],
     "controversie": [],
-    "explore_next": []
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "primo raccolto"
+      },
+      {
+        "name": "Shincha",
+        "url": "/glossario/shincha/",
+        "reason": "termine"
+      },
+      {
+        "name": "Estate",
+        "url": "/italia/stagioni/estate/",
+        "reason": "stagione"
+      },
+      {
+        "name": "Pausa",
+        "url": "/italia/momenti/pausa/",
+        "reason": "momento"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +59,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Shincha e primi raccolti."
+                "value": "La primavera in Giappone porta lo shincha, il tè verde del primo raccolto: foglie tenere, aroma di erba tagliata, umami delicato. In Italia arriva come scoperta stagionale, non come sostituto del caffè del mattino."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Infusione a 70–75 °C, tempi brevi: è il momento di apprezzare la freschezza prima che l'estate spinga verso cold brew e tazze fredde."
               }
             ]
           }

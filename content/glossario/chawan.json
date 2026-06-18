@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "chawan",
   "meta": {
-    "title": "Chawan",
-    "description": "Ciotola da tè per matcha: forma, ceramica, mani.",
+    "title": "Chawan — ciotola per matcha",
+    "description": "Il chawan è la ciotola giapponese senza manico in cui si prepara e si beve il matcha, in cerimonia o in casa.",
     "keywords": [
       "chawan",
       "tè verde",
@@ -17,16 +17,28 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "matcha"
+    ],
     "temi_kb": [
       "cerimonia_spiritualita"
     ],
     "controversie": [],
     "explore_next": [
       {
+        "name": "Chasen",
+        "url": "/glossario/chasen/",
+        "reason": "strumento"
+      },
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "scheda"
+      },
+      {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
-        "reason": "approfondimento"
+        "reason": "contesto"
       }
     ]
   },
@@ -42,7 +54,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Il chawan è più di un recipiente: è il palmo che accoglie il matcha, il bordo da cui sorseggi in cerimonia, la ceramica che dialoga con stagioni e ospiti."
+                "value": "Il chawan è la ciotola da tè usata per whiskare e bere il matcha. Il chawan è più di un recipiente: è il palmo che accoglie il matcha, il bordo da cui sorseggi in cerimonia, la ceramica che dialoga con stagioni e ospiti."
               }
             ]
           }

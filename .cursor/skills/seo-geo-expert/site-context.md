@@ -19,7 +19,8 @@
 
 - Base URL: `https://the-verde.it` (`content/_config/sitemap.json`)
 - Locale: `it-IT`, hreflang `it`, audience Italia
-- OG default: `/assets/images/og-default.svg`
+- OG default sito: `/assets/images/og-default.svg`
+- OG social share: `/assets/images/og-default.png` (`social.og_image_social` in sitemap.json)
 - Search: `/cerca/?q=` (noindex)
 
 ## Enrichers SEO (build)

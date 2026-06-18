@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "bancha",
   "meta": {
-    "title": "Bancha",
-    "description": "Foglia matura o tardiva: quotidiano, leggero, bassa caffeina.",
+    "title": "Bancha — definizione",
+    "description": "Bancha è tè verde giapponese da foglia matura o tardiva: gusto leggero, bassa caffeina, ideale dopo cena in Italia.",
     "keywords": [
       "bancha",
       "tè verde",
@@ -17,7 +17,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "bancha"
+    ],
     "temi_kb": [
       "preparazione_servizio",
       "caffeina_tannini"
@@ -28,6 +30,16 @@
         "name": "Bancha",
         "url": "/varieta/bancha/",
         "reason": "scheda"
+      },
+      {
+        "name": "Sencha",
+        "url": "/glossario/sencha/",
+        "reason": "confronto"
+      },
+      {
+        "name": "Dopo cena",
+        "url": "/italia/momenti/dopo-cena/",
+        "reason": "momento"
       }
     ]
   },

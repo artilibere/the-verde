@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "longjing",
   "meta": {
-    "title": "Long Jing (Dragon Well)",
-    "description": "Tè piatto di Zhejiang: nocciola, fagiolini, primavera cinese.",
+    "title": "Longjing — Dragon Well",
+    "description": "Il Longjing (Dragon Well) è tè verde piatto di Hangzhou: aroma di nocciola e fagiolini, icona del verde cinese.",
     "keywords": [
       "longjing",
       "tè verde",
@@ -17,7 +17,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "dragon-well"
+    ],
     "temi_kb": [
       "storia_cultura",
       "degustazione_sensoriale"
@@ -28,6 +30,16 @@
         "name": "Dragon Well",
         "url": "/varieta/dragon-well/",
         "reason": "scheda"
+      },
+      {
+        "name": "Wok",
+        "url": "/glossario/wok/",
+        "reason": "lavorazione"
+      },
+      {
+        "name": "Bi Luo Chun",
+        "url": "/varieta/bi-luo-chun/",
+        "reason": "cinese"
       }
     ]
   },

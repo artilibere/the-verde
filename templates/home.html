@@ -2,8 +2,14 @@
 {% block content %}
 <section class="tv-hero" aria-labelledby="hero-title">
   <p class="tv-hero__eyebrow">Solo <em>Camellia sinensis</em></p>
+  {% if content_html %}
+  <div class="tv-hero__intro tv-prose" id="hero-title">
+    {{ content_html | safe }}
+  </div>
+  {% else %}
   <h1 id="hero-title" class="tv-hero__title tv-font-serif">Il tè verde, con radici e gusto</h1>
   <p class="tv-hero__subtitle">Cultura specialty per chi vive in Italia — senza detox, senza fretta.</p>
+  {% endif %}
   <a href="/varieta/" class="tv-btn tv-btn--filled">Esplora le varietà</a>
 </section>
 

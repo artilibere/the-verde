@@ -39,8 +39,11 @@ def test_varieta_catalog_json(build_out):
 def test_sitemap_and_robots(build_out):
     assert (build_out / "sitemap.xml").exists()
     assert (build_out / "robots.txt").exists()
+    assert (build_out / "llms.txt").exists()
     robots = (build_out / "robots.txt").read_text(encoding="utf-8")
     assert "Sitemap:" in robots
+    llms = (build_out / "llms.txt").read_text(encoding="utf-8")
+    assert "Glossario" in llms
 
 
 def test_validate_only():

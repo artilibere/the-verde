@@ -44,9 +44,13 @@ Priorità per LLM che leggono JSON-LD:
 - `Article` con `about`, `mentions`, `countryOfOrigin`
 - `Organization` + `WebSite` — entità sito
 
-### 5. llms.txt (raccomandato)
+### 5. llms.txt
 
-File `llms.txt` alla root (da aggiungere in build se assente):
+File `llms.txt` alla root, generato in build (`builder.py` → `build_llms_txt`). Discovery:
+
+- `<link rel="alternate" type="text/plain" href="/llms.txt">` in `base.html`
+- Link nel footer
+- Commento in `robots.txt` (solo informativo)
 
 ```markdown
 # The Verde

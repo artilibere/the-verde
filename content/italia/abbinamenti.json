@@ -3,11 +3,13 @@
   "type": "article",
   "slug": "abbinamenti",
   "meta": {
-    "title": "Abbinamenti gastronomici italiani",
-    "description": "Tè verde e cucina italiana: cosa funziona davvero.",
+    "title": "Abbinamenti gastronomici italiani con tè verde",
+    "description": "Gyokuro con pesce crudo, hojicha con cioccolato, matcha in pasticceria: abbinamenti onesti tra tè verde e cucina italiana.",
     "keywords": [
-      "abbinamenti gastronomici italiani",
-      "tè verde",
+      "abbinamenti tè verde",
+      "tè verde cucina italiana",
+      "gyokuro pesce",
+      "matcha dolci",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/abbinamenti/"
@@ -18,9 +20,33 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "cucina_usi_pratici",
+      "degustazione_sensoriale"
+    ],
     "controversie": [],
-    "explore_next": []
+    "explore_next": [
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "umami"
+      },
+      {
+        "name": "Hojicha",
+        "url": "/varieta/hojicha/",
+        "reason": "tostato"
+      },
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "pasticceria"
+      },
+      {
+        "name": "In Italia",
+        "url": "/italia/",
+        "reason": "hub"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +60,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Gyokuro con pesce crudo, hojicha con cioccolato fondente, matcha con pasticceria leggera."
+                "value": "Abbinare tè verde e cucina italiana significa rispettare sia il profilo della foglia sia il piatto: un gyokuro umami con crudo di pesce, un hojicha tostato con cioccolato fondente, un matcha cremoso con pasticceria leggera."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Evita abbinamenti con sughi molto acidi al pomodoro o formaggi stagionati fortissimi che schiacciano la delicatezza del verde; meglio verdure, riso, pesce bianco e dolci poco burrosi."
               }
             ]
           }
@@ -49,7 +84,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Evita abbinamenti con acidità forte del pomodoro; onestà su caffeina e digestione."
+                "value": "Onestà anche sulla caffeina: un sencha dopo cena può disturbare il sonno; hojicha e bancha sono scelte più prudenti. Non promettiamo effetti digestivi miracolosi."
               }
             ]
           }

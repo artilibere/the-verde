@@ -20,6 +20,10 @@
 /robots.txt
   Cache-Control: public, max-age=86400
 
+/llms.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
+
 # HTML: revalidate quickly, serve stale while updating
 /
   Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400

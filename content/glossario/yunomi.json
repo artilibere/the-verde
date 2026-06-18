@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "yunomi",
   "meta": {
-    "title": "Yunomi",
-    "description": "Tazza giapponese senza manico per tè quotidiano.",
+    "title": "Yunomi — tazza giapponese",
+    "description": "Lo yunomi è la tazza giapponese senza manico per il tè quotidiano: più alta del chawan, adatta a sencha e gyokuro.",
     "keywords": [
       "yunomi",
       "tè verde",
@@ -17,16 +17,28 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "sencha"
+    ],
     "temi_kb": [
       "preparazione_servizio"
     ],
     "controversie": [],
     "explore_next": [
       {
+        "name": "Kyusu",
+        "url": "/glossario/kyusu/",
+        "reason": "teiera"
+      },
+      {
         "name": "Degustazione",
         "url": "/impara/degustazione/",
         "reason": "metodo"
+      },
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "esempio"
       }
     ]
   },

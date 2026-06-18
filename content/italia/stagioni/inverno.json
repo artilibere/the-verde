@@ -3,11 +3,13 @@
   "type": "hub",
   "slug": "inverno",
   "meta": {
-    "title": "Inverno",
-    "description": "Comfort caldo.",
+    "title": "Tè verde in inverno — comfort caldo in Italia",
+    "description": "Inverno: hojicha, genmaicha e bancha in tazza grande per calore leggero, con meno caffeina del caffè serale.",
     "keywords": [
-      "inverno",
-      "tè verde",
+      "tè verde inverno",
+      "hojicha",
+      "bancha",
+      "tè caldo",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/stagioni/inverno/"
@@ -18,9 +20,33 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "cucina_usi_pratici",
+      "caffeina_tannini"
+    ],
     "controversie": [],
-    "explore_next": []
+    "explore_next": [
+      {
+        "name": "Hojicha",
+        "url": "/varieta/hojicha/",
+        "reason": "sera"
+      },
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "leggero"
+      },
+      {
+        "name": "Dopo cena",
+        "url": "/italia/momenti/dopo-cena/",
+        "reason": "momento"
+      },
+      {
+        "name": "Primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "stagione"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +60,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Comfort caldo."
+                "value": "L'inverno italiano invita a tazze grandi e calde: hojicha tostato, genmaicha con riso soffiato o bancha dalla foglia matura offrono comfort senza la carica nervosa di un espresso dopo cena."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Acqua a 85–90 °C, infusioni brevi ripetute: il verde tostato regge meglio temperature alte rispetto al gyokuro d'ombra."
               }
             ]
           }

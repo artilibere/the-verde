@@ -90,6 +90,42 @@ def extract_from_blocks(blocks: list[dict]) -> dict[str, Any]:
     return out
 
 
+def collect_faq_items(
+    *,
+    doc: dict | None = None,
+    page: dict | None = None,
+) -> list[dict]:
+    """Merge FAQ entries from document blocks, page cards, and meta."""
+    items: list[dict] = []
+    seen: set[str] = set()
+
+    def add(question: str, answer: str) -> None:
+        q = (question or "").strip()
+        if not q or q in seen:
+            return
+        seen.add(q)
+        items.append({"question": q, "answer": (answer or "").strip()})
+
+    if doc:
+        blocks = doc.get("body", {}).get("blocks", [])
+        for faq in extract_from_blocks(blocks).get("faqs", []):
+            add(faq.get("question", ""), faq.get("answer", ""))
+        for faq in (doc.get("meta") or {}).get("faqs", []):
+            add(faq.get("question", ""), faq.get("answer", ""))
+
+    if page:
+        for card in page.get("cards", []):
+            if card.get("id") != "faq":
+                continue
+            for item in card.get("body", {}).get("items", []):
+                add(
+                    item.get("question", ""),
+                    spans_to_plain(item.get("answer_spans", [])),
+                )
+
+    return items
+
+
 def document_to_meta(doc: dict, *, url: str | None = None) -> dict[str, Any]:
     """Normalize JSON document to template meta dict."""
     meta = dict(doc.get("meta", {}))
@@ -115,6 +151,18 @@ def document_to_meta(doc: dict, *, url: str | None = None) -> dict[str, Any]:
     ):
         if key in nav:
             meta[key] = nav[key]
+
+    explore = nav.get("explore_next") or []
+    if explore:
+        meta["explore_next"] = [
+            {
+                "title": link.get("title") or link.get("name", ""),
+                "url": link.get("url", ""),
+                "type": link.get("type") or link.get("reason", ""),
+                "brief": link.get("brief", ""),
+            }
+            for link in explore
+        ]
 
     if doc.get("type") == "variety":
         brew = tax.get("brew", {})

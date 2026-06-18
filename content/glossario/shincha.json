@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "shincha",
   "meta": {
-    "title": "Shincha",
-    "description": "Primo raccolto primaverile del sencha: freschezza effimera.",
+    "title": "Shincha — primo raccolto",
+    "description": "Lo shincha è il tè verde del primo raccolto primaverile in Giappone: foglie tenere, massima freschezza, disponibilità stagionale limitata.",
     "keywords": [
       "shincha",
       "tè verde",
@@ -17,7 +17,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "sencha"
+    ],
     "temi_kb": [
       "storia_cultura",
       "lavorazione_qualità"
@@ -28,6 +30,16 @@
         "name": "Sencha",
         "url": "/varieta/sencha/",
         "reason": "scheda"
+      },
+      {
+        "name": "Primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "stagione"
+      },
+      {
+        "name": "Sencha",
+        "url": "/glossario/sencha/",
+        "reason": "termine"
       }
     ]
   },

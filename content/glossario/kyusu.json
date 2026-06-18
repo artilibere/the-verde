@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "kyusu",
   "meta": {
-    "title": "Kyusu",
-    "description": "Teiera giapponese con manico laterale: sencha quotidiano.",
+    "title": "Kyusu — teiera giapponese",
+    "description": "Il kyusu è la teiera giapponese con manico laterale, ideale per sencha e gyokuro: controllo del versamento e infusioni brevi.",
     "keywords": [
       "kyusu",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "sencha",
+      "gyokuro"
+    ],
     "temi_kb": [
       "preparazione_servizio"
     ],
@@ -27,6 +30,16 @@
         "name": "Sencha",
         "url": "/varieta/sencha/",
         "reason": "scheda"
+      },
+      {
+        "name": "Preparazione",
+        "url": "/impara/preparazione/",
+        "reason": "metodo"
+      },
+      {
+        "name": "Yunomi",
+        "url": "/glossario/yunomi/",
+        "reason": "tazza"
       }
     ]
   },

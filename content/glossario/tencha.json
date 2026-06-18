@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "tencha",
   "meta": {
-    "title": "Tencha",
-    "description": "Foglie ombreggiate non arrotolate: base del matcha.",
+    "title": "Tencha — definizione",
+    "description": "Tencha sono foglie di tè verde giapponesi ombreggiate, non arrotolate: vengono macinate per produrre il matcha.",
     "keywords": [
       "tencha",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "matcha",
+      "gyokuro"
+    ],
     "temi_kb": [
       "lavorazione_qualità"
     ],
@@ -27,6 +30,16 @@
         "name": "Matcha",
         "url": "/varieta/matcha/",
         "reason": "scheda"
+      },
+      {
+        "name": "Matcha",
+        "url": "/glossario/matcha/",
+        "reason": "termine"
+      },
+      {
+        "name": "Lavorazione",
+        "url": "/impara/lavorazione/",
+        "reason": "processo"
       }
     ]
   },

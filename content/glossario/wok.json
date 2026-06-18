@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "wok",
   "meta": {
-    "title": "Wok (padella)",
-    "description": "Padella cinese per fissare il verde: Dragon Well e bi luo chun.",
+    "title": "Wok — padella per il tè verde",
+    "description": "Il wok nella lavorazione del tè è la padella in cui si fissa il verde cinese a fuoco vivo, tipico di Longjing e Bi Luo Chun.",
     "keywords": [
       "wok",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "dragon-well",
+      "bi-luo-chun"
+    ],
     "temi_kb": [
       "lavorazione_qualità"
     ],
@@ -26,7 +29,17 @@
       {
         "name": "Lavorazione",
         "url": "/impara/lavorazione/",
-        "reason": "approfondimento"
+        "reason": "processo"
+      },
+      {
+        "name": "Vapore",
+        "url": "/glossario/vapore/",
+        "reason": "contrasto"
+      },
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "esempio"
       }
     ]
   },
@@ -42,7 +55,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Il wok non è solo cucina: nella lavorazione del tè è la padella rovente che ferma l'enzima dell'ossidazione e imprime note di nocciola e fagiolino."
+                "value": "Il wok nella lavorazione del tè è la padella in cui si fissa il verde cinese a fuoco vivo. Il wok non è solo cucina: nella lavorazione del tè è la padella rovente che ferma l'enzima dell'ossidazione e imprime note di nocciola e fagiolino."
               }
             ]
           }

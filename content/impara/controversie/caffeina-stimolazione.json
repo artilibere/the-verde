@@ -4,7 +4,7 @@
   "slug": "caffeina-stimolazione",
   "meta": {
     "title": "Il tè verde stimola o rilassa?",
-    "description": "Caffeina, L-teanina e varietà scelta: la risposta è «dipende» — ecco da cosa.",
+    "description": "Caffeina, L-teanina e varietà scelta: il tè verde stimola o rilassa? La risposta è «dipende» — ecco da cosa dipende.",
     "keywords": [
       "caffeina stimolazione",
       "tè verde",
@@ -18,13 +18,25 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "caffeina_tannini"
+    ],
     "controversie": [],
     "explore_next": [
       {
         "name": "Salute",
         "url": "/impara/salute/",
         "reason": "contesto"
+      },
+      {
+        "name": "Caffeina",
+        "url": "/impara/caffeina/",
+        "reason": "hub tema"
+      },
+      {
+        "name": "L-teanina",
+        "url": "/glossario/l-teanina/",
+        "reason": "modulazione"
       }
     ]
   },

@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "astringenza",
   "meta": {
-    "title": "Astringenza",
-    "description": "Sensazione di ruvidità e contrazione sulla lingua, legata a tannini e catechine.",
+    "title": "Astringenza — definizione nel tè",
+    "description": "L'astringenza è la sensazione di ruvidità e contrazione sulla lingua, causata da tannini e catechine nel tè verde infuso troppo a lungo o troppo caldo.",
     "keywords": [
       "astringenza",
       "tannini",
@@ -19,7 +19,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "sencha",
+      "gyokuro"
+    ],
     "temi_kb": [
       "degustazione_sensoriale",
       "preparazione_servizio"
@@ -27,9 +30,19 @@
     "controversie": [],
     "explore_next": [
       {
+        "name": "Catechine",
+        "url": "/glossario/catechine/",
+        "reason": "composti"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "metodo"
+      },
+      {
         "name": "Sencha",
         "url": "/varieta/sencha/",
-        "reason": "esempio pratico"
+        "reason": "esempio"
       }
     ]
   },

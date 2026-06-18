@@ -1,17 +1,6 @@
 {
   "schema_version": "1.0",
   "type": "page",
-  "slug": "termini",
-  "meta": {
-    "title": "Termini di utilizzo",
-    "description": "Termini di utilizzo",
-    "keywords": [
-      "termini di utilizzo",
-      "tè verde",
-      "Camellia sinensis"
-    ],
-    "canonical_path": "/termini/"
-  },
   "seo": {
     "robots": "index,follow",
     "og_type": "article"
@@ -23,6 +12,19 @@
     "explore_next": []
   },
   "taxonomy": {},
+  "slug": "termini",
+  "meta": {
+    "title": "Termini di utilizzo",
+    "description": "Termini di utilizzo di the-verde.it: contenuti editoriali sul tè verde, limiti di responsabilità, proprietà intellettuale e legge italiana.",
+    "keywords": [
+      "termini di utilizzo",
+      "condizioni d'uso",
+      "the-verde.it",
+      "tè verde"
+    ],
+    "canonical_path": "/termini/",
+    "published": "2026-06-18"
+  },
   "body": {
     "blocks": [
       {
@@ -30,7 +32,443 @@
         "spans": [
           {
             "type": "text",
-            "value": "Contenuti editoriali a scopo informativo. Non sostituiscono parere medico."
+            "value": "Termini di utilizzo del sito the-verde.it (giugno 2026)."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "1. Introduzione"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "the-verde.it («The Verde») è un sito informativo gratuito sul tè verde ("
+          },
+          {
+            "type": "em",
+            "value": "Camellia sinensis"
+          },
+          {
+            "type": "text",
+            "value": ") e sulla sua cultura, con attenzione al contesto italiano. Navigando il sito accetti i presenti Termini di utilizzo."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il sito non vende tè né altri prodotti, non offre consulenza medica o nutrizionale personalizzata e non sostituisce il parere di professionisti qualificati."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "2. Uso consentito"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Puoi consultare, citare e condividere i contenuti per uso personale, formativo o professionale non commerciale, nel rispetto delle leggi applicabili e dei presenti Termini."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Non è consentito:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "tentare accessi non autorizzati all'infrastruttura o ai repository collegati"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "sovraccaricare il sito con richieste automatizzate abusive (scraping massivo, denial of service)"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "riprodurre integralmente sezioni del sito per finalità commerciali senza autorizzazione scritta"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "usare i contenuti in modo fraudolento, diffamatorio o lesivo di diritti altrui"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "presentare estratti fuori contesto come consigli medici o terapeutici"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "3. Contenuti informativi e salute"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Gli articoli su salute, caffeina, catechine e benefici del tè verde hanno scopo divulgativo. Le fonti sono indicate quando possibile; le prospettive diverse sono esplicitate nella sezione Controversie."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il tè verde non è un integratore alimentare né un farmaco. Non promettiamo guarigioni, dimagrimento o risultati clinici. In caso di gravidanza, patologie, terapie farmacologiche o sensibilità alla caffeina, consulta il tuo medico prima di modificare le abitudini alimentari."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il sito è fornito «così com'è». Non garantiamo che sia sempre disponibile, privo di errori o aggiornato in tempo reale rispetto alla ricerca scientifica."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "4. Proprietà intellettuale"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "I contenuti editoriali originali di The Verde (testi, struttura, grafica del sito) sono protetti dalle leggi sul diritto d'autore (L. 633/1941 e s.m.i.). Il marchio e il nome The Verde si riferiscono a questo progetto editoriale."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Termini giapponesi, cinesi e nomi di varietà appartengono alle rispettive tradizioni e mercati. Le citazioni da opere di riferimento (Rosen, Bisogno/Pettigrew, Pellegrino, Onuma, Hara) rispettano i limiti della citazione e del fair use."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Sono consentite citazioni brevi con indicazione della fonte e link alla pagina citata. Per riusi estesi o commerciali scrivi a "
+          },
+          {
+            "type": "link",
+            "value": "ciao@carlogandolfo.it",
+            "href": "mailto:ciao@carlogandolfo.it"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "5. Funzioni interattive"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Diario, percorsi, badge e sondaggi"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Queste funzioni salvano dati sul tuo dispositivo (localStorage). Sei responsabile del dispositivo usato e della riservatezza delle tue note. L'esportazione JSON è a tua cura."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Community"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "I commenti su /community/ sono ospitati da Giscus/GitHub. Devi rispettare le regole di GitHub e un comportamento civile: niente spam, offese, pubblicità occulta o contenuti illegali. Il Titolare può moderare o segnalare abusi alla piattaforma ospitante."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Gioca e quiz"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "I quiz hanno valore ludico-pedagogico. Non costituiscono certificazione di competenza professionale sulla somministrazione del tè."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "6. Limitazione di responsabilità"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Nei limiti consentiti dalla legge italiana, il Titolare non risponde di danni indiretti o consequenziali derivanti dall'uso del sito, dall'affidamento sui suoi contenuti, da preparazioni del tè effettuate seguendo le schede, né da interruzioni del servizio dovute a manutenzione o cause di forza maggiore."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Resta ferma la responsabilità per dolo o colpa grave e i diritti inderogabili del consumatore ove applicabili."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "7. Privacy"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il trattamento dei dati personali è descritto nella "
+          },
+          {
+            "type": "link",
+            "value": "Privacy policy",
+            "href": "/privacy/"
+          },
+          {
+            "type": "text",
+            "value": ", conforme al GDPR."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "8. Link esterni"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il sito può contenere link a negozi, enciclopedie, repository o social di terze parti. Non controlliamo quei siti e non ne rispondiamo dei contenuti, delle politiche commerciali o delle informative privacy."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "9. Legge applicabile e foro competente"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "I presenti Termini sono regolati dalla legge italiana. Per ogni controversia relativa all'interpretazione o esecuzione dei Termini è competente il Foro di Milano, salvo il foro inderogabile del consumatore residente o domiciliato nel luogo previsto dal Codice del consumo (D.Lgs. 206/2005)."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "10. Contatti"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Titolare: Carlo Gandolfo"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Email: ciao@carlogandolfo.it"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sito: the-verde.it"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sede: Milano, Lombardia, Italia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "11. Aggiornamenti"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il Titolare può modificare i presenti Termini. La data sotto indica l'ultima revisione. L'uso continuato del sito dopo la pubblicazione delle modifiche implica accettazione dei Termini aggiornati."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Data di ultimo aggiornamento: 18 giugno 2026"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Data di entrata in vigore: 18 giugno 2026"
           }
         ]
       }

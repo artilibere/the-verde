@@ -4,7 +4,7 @@
   "slug": "qualita-sensoriale-vs-chimica",
   "meta": {
     "title": "Cosa definisce un buon tè verde?",
-    "description": "Palato, occhio e laboratorio: tre modi di misurare la stessa foglia.",
+    "description": "Palato, occhio e laboratorio: tre modi di misurare la stessa foglia — cosa definisce davvero un buon tè verde in tazza?",
     "keywords": [
       "qualita sensoriale vs chimica",
       "tè verde",
@@ -18,13 +18,26 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
     "controversie": [],
     "explore_next": [
       {
         "name": "Salute scienza vs tradizione",
         "url": "/impara/controversie/salute-scienza-vs-tradizione/",
         "reason": "correlata"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "palato"
+      },
+      {
+        "name": "Lavorazione",
+        "url": "/impara/lavorazione/",
+        "reason": "qualità foglia"
       }
     ]
   },

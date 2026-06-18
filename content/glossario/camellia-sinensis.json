@@ -4,12 +4,12 @@
   "slug": "camellia-sinensis",
   "meta": {
     "title": "Camellia sinensis",
-    "description": "L'unica pianta che produce il vero tè: foglie lavorate, non tisane.",
+    "description": "Camellia sinensis è l'unica pianta del vero tè: le sue foglie lavorate producono verde, nero, oolong — non le tisane.",
     "keywords": [
       "Camellia sinensis",
       "pianta del tè",
       "tè verde",
-      "Camellia sinensis"
+      "tisane differenza"
     ],
     "canonical_path": "/glossario/camellia-sinensis/"
   },
@@ -18,7 +18,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "sencha"
+    ],
     "temi_kb": [
       "storia_cultura",
       "lavorazione_qualità"

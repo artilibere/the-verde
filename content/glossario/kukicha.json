@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "kukicha",
   "meta": {
-    "title": "Kukicha",
-    "description": "Tè di rametti e fogli: dolce, leggero, economico.",
+    "title": "Kukicha — definizione",
+    "description": "Il kukicha è tè verde da rametti e foglioline: infusione dolce, caffeina molto bassa, scelta prudente per la sera.",
     "keywords": [
       "kukicha",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "kukicha",
+      "bancha"
+    ],
     "temi_kb": [
       "caffeina_tannini",
       "preparazione_servizio"
@@ -28,6 +31,16 @@
         "name": "Kukicha",
         "url": "/varieta/kukicha/",
         "reason": "scheda"
+      },
+      {
+        "name": "Bancha",
+        "url": "/glossario/bancha/",
+        "reason": "famiglia"
+      },
+      {
+        "name": "Caffeina",
+        "url": "/impara/caffeina/",
+        "reason": "approfondimento"
       }
     ]
   },

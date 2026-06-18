@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "sencha",
   "meta": {
-    "title": "Sencha",
-    "description": "Il tè verde quotidiano del Giappone: foglie al sole, aroma di erba fresca.",
+    "title": "Sencha — definizione",
+    "description": "Sencha è il tè verde giapponese per eccellenza: foglie coltivate al sole, profilo erbaceo e infusione quotidiana a 70–80 °C.",
     "keywords": [
       "sencha",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "sencha",
+      "bancha"
+    ],
     "temi_kb": [
       "preparazione_servizio",
       "degustazione_sensoriale"
@@ -30,9 +33,9 @@
         "reason": "scheda completa"
       },
       {
-        "name": "Bancha",
-        "url": "/glossario/bancha/",
-        "reason": "più leggero"
+        "name": "Gyokuro",
+        "url": "/glossario/gyokuro/",
+        "reason": "ombra"
       }
     ]
   },

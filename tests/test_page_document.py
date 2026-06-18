@@ -87,3 +87,29 @@ def test_hub_page_merges_link_cards():
     assert "controversies" in ids
     assert ids == sorted(ids, key=lambda x: HUB_CARD_ORDER.index(x))
 
+
+def test_italia_hub_includes_child_sections():
+    doc = json.loads((CONTENT_DIR / "italia/index.json").read_text(encoding="utf-8"))
+    cards = merge_hub_cards(
+        doc["body"]["blocks"],
+        {
+            "sections": [
+                {
+                    "id": "momenti",
+                    "title": "Momenti della giornata",
+                    "items": [{"title": "Colazione", "url": "/italia/momenti/colazione/", "brief": "Mattino"}],
+                },
+                {
+                    "id": "stagioni",
+                    "title": "Le stagioni in Italia",
+                    "items": [{"title": "Estate", "url": "/italia/stagioni/estate/", "brief": "Freddo"}],
+                },
+            ],
+            "items": [{"title": "Bancha", "url": "/varieta/bancha/", "brief": "Quotidiano"}],
+        },
+    )
+    ids = [c["id"] for c in cards]
+    assert "momenti" in ids
+    assert "stagioni" in ids
+    assert "varieties" in ids
+

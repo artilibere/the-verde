@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import json
 from bs4 import BeautifulSoup
 import pytest
 
@@ -58,6 +59,38 @@ def test_home_has_website_schema(built_dist):
     scripts = page.find_all("script", type="application/ld+json")
     combined = " ".join(s.string or "" for s in scripts)
     assert "WebSite" in combined
+
+
+def test_home_meta_from_json(built_dist):
+    home = json.loads((CONTENT_DIR / "pagine" / "home.json").read_text(encoding="utf-8"))
+    page = _soup(built_dist / "index.html")
+    title = page.find("title")
+    desc = page.find("meta", attrs={"name": "description"})
+    assert title is not None
+    assert home["meta"]["title"] in title.get_text()
+    assert desc is not None
+    assert desc["content"] == home["meta"]["description"]
+    og_image = page.find("meta", property="og:image")
+    assert og_image is not None
+    assert og_image["content"].endswith("/assets/images/og-default.png")
+
+
+def test_home_body_geo_visible(built_dist):
+    page = _soup(built_dist / "index.html")
+    hero = page.select_one(".tv-hero__intro")
+    assert hero is not None
+    h1 = hero.find("h1")
+    assert h1 is not None
+    assert "Camellia sinensis" in hero.get_text()
+    assert len(page.find_all("h1")) == 1
+
+
+def test_llms_txt_linked_in_head_and_footer(built_dist):
+    page = _soup(built_dist / "index.html")
+    head_link = page.find("link", href="/llms.txt")
+    assert head_link is not None
+    footer_link = page.find("footer").find("a", href="/llms.txt")
+    assert footer_link is not None
 
 
 def test_sencha_has_card_feed(built_dist):

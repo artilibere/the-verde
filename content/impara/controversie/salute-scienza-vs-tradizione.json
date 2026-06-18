@@ -18,13 +18,25 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "salute_catechine"
+    ],
     "controversie": [],
     "explore_next": [
       {
         "name": "Bevanda vs integratore",
         "url": "/impara/controversie/bevanda-vs-integratore/",
         "reason": "correlata"
+      },
+      {
+        "name": "Salute e catechine",
+        "url": "/impara/salute/",
+        "reason": "hub tema"
+      },
+      {
+        "name": "Catechine",
+        "url": "/glossario/catechine/",
+        "reason": "molecole"
       }
     ]
   },

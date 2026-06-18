@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "genmaicha",
   "meta": {
-    "title": "Genmaicha",
-    "description": "Bancha o sencha con riso tostato: comfort cereale in tazza.",
+    "title": "Genmaicha — definizione",
+    "description": "Il genmaicha mescola tè verde (bancha o sencha) con riso soffiato tostato: profilo cereale, comfort autunnale, poca caffeina.",
     "keywords": [
       "genmaicha",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "genmaicha",
+      "bancha"
+    ],
     "temi_kb": [
       "cucina_usi_pratici"
     ],
@@ -27,6 +30,16 @@
         "name": "Genmaicha",
         "url": "/varieta/genmaicha/",
         "reason": "scheda"
+      },
+      {
+        "name": "Bancha",
+        "url": "/glossario/bancha/",
+        "reason": "base"
+      },
+      {
+        "name": "Abbinamenti",
+        "url": "/italia/abbinamenti/",
+        "reason": "cucina"
       }
     ]
   },

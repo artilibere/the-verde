@@ -5,7 +5,7 @@ from __future__ import annotations
 from copy import deepcopy
 from typing import Any
 
-from site_builder.document import document_to_meta, spans_to_plain
+from site_builder.document import document_to_meta, spans_to_plain, collect_faq_items
 from site_builder.enrichers._seo_core import (
     article_schema,
     breadcrumb_schema,
@@ -32,7 +32,7 @@ VARIETY_CARD_ORDER = (
 
 GLOSSARY_CARD_ORDER = ("intro", "deep", "related", "faq")
 CONTROVERSY_CARD_ORDER = ("intro", "positions", "deep", "synthesis")
-HUB_CARD_ORDER = ("intro", "deep", "varieties", "controversies", "themes")
+HUB_CARD_ORDER = ("intro", "deep", "momenti", "stagioni", "gastronomia", "varieties", "controversies", "themes")
 
 CARD_TITLES = {
     "brief": "In breve",
@@ -50,6 +50,9 @@ CARD_TITLES = {
     "content": "Contenuto",
     "positions": "Prospettive",
     "varieties": "Varietà collegate",
+    "momenti": "Momenti della giornata",
+    "stagioni": "Le stagioni in Italia",
+    "gastronomia": "Gastronomia",
     "controversies": "Controversie collegate",
     "themes": "Collegamenti tematici",
     "synthesis": "In sintesi",
@@ -175,6 +178,8 @@ def _prose_blocks_from_list(blocks: list[dict]) -> list[dict]:
                     "items": block.get("items", []),
                 }
             )
+        elif btype == "callout":
+            prose.extend(spans_to_prose_blocks(block.get("spans", [])))
     return prose
 
 
@@ -256,8 +261,31 @@ def hub_extras_to_cards(
     items: list[dict] | None = None,
     controversies: list[dict] | None = None,
     relazioni: list[dict] | None = None,
+    sections: list[dict] | None = None,
 ) -> list[dict]:
     extras: list[dict] = []
+    if sections:
+        for section in sections:
+            section_items = section.get("items") or []
+            if not section_items:
+                continue
+            extras.append(
+                _card(
+                    section["id"],
+                    {
+                        "type": "linkGrid",
+                        "items": [
+                            {
+                                "title": i.get("title", ""),
+                                "url": i.get("url", ""),
+                                "brief": i.get("brief", ""),
+                            }
+                            for i in section_items
+                        ],
+                    },
+                    title=section.get("title"),
+                )
+            )
     if items:
         extras.append(
             _card(
@@ -312,6 +340,7 @@ def merge_hub_cards(blocks: list[dict], hub_extras: dict | None) -> list[dict]:
                 items=hub_extras.get("items"),
                 controversies=hub_extras.get("controversies"),
                 relazioni=hub_extras.get("relazioni"),
+                sections=hub_extras.get("sections"),
             )
         )
     by_id = {c["id"]: c for c in cards}
@@ -379,6 +408,7 @@ def build_schema_graph(
     base_url: str,
     page_type: str,
     breadcrumbs: list[dict] | None = None,
+    doc: dict | None = None,
 ) -> dict:
     meta = page.get("meta", {})
     url = meta.get("url") or meta.get("canonical_path", "")
@@ -397,16 +427,7 @@ def build_schema_graph(
                 origin_label=meta.get("origine", ""),
             )
         )
-        faq_items = []
-        for card in page.get("cards", []):
-            if card.get("id") == "faq":
-                for item in card.get("body", {}).get("items", []):
-                    faq_items.append(
-                        {
-                            "question": item.get("question", ""),
-                            "answer": spans_to_plain(item.get("answer_spans", [])),
-                        }
-                    )
+        faq_items = collect_faq_items(doc=doc, page=page)
         faq = faq_schema(faq_items or meta.get("faqs", []))
         if faq:
             graph.append(faq)
@@ -438,6 +459,14 @@ def build_schema_graph(
             graph.append(
                 webpage_schema(base_url, title=title, description=description, url=url, italy_context=True)
             )
+
+    faq_types = ("article", "controversy", "glossary", "hub", "legal", "guide")
+    if page_type in faq_types or page_type == "variety":
+        faq_items = collect_faq_items(doc=doc, page=page)
+        if page_type != "variety":
+            faq = faq_schema(faq_items or meta.get("faqs", []))
+            if faq and not any(n.get("@type") == "FAQPage" for n in graph):
+                graph.append(faq)
 
     if breadcrumbs and len(breadcrumbs) > 1:
         graph.append(breadcrumb_schema(base_url, breadcrumbs))
@@ -508,5 +537,6 @@ def document_to_page(
         base_url=base_url,
         page_type=page_type,
         breadcrumbs=breadcrumbs,
+        doc=doc,
     )
     return page

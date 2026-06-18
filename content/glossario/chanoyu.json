@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "chanoyu",
   "meta": {
-    "title": "Chanoyu",
-    "description": "Via del tè giapponese: estetica, ospite, presenza.",
+    "title": "Chanoyu — cerimonia del tè",
+    "description": "Il chanoyu è la via del tè giapponese (chado): ospitalità estetica attorno al matcha, non solo bevanda ma gesto condiviso.",
     "keywords": [
       "chanoyu",
       "tè verde",
@@ -17,7 +17,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "matcha"
+    ],
     "temi_kb": [
       "cerimonia_spiritualita"
     ],
@@ -26,7 +28,17 @@
       {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
-        "reason": "approfondimento"
+        "reason": "hub"
+      },
+      {
+        "name": "Matcha",
+        "url": "/glossario/matcha/",
+        "reason": "termine"
+      },
+      {
+        "name": "Roji",
+        "url": "/glossario/roji/",
+        "reason": "giardino"
       }
     ]
   },

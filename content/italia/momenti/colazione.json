@@ -3,11 +3,13 @@
   "type": "hub",
   "slug": "colazione",
   "meta": {
-    "title": "Tè verde a colazione",
-    "description": "Alternative delicate al cappuccino.",
+    "title": "Tè verde a colazione in Italia",
+    "description": "Sencha leggero o bancha al posto del cappuccino: alternative delicate al mattino, con meno acidità e caffeina modulabile.",
     "keywords": [
-      "tè verde a colazione",
-      "tè verde",
+      "tè verde colazione",
+      "sencha mattina",
+      "bancha",
+      "alternativa cappuccino",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/momenti/colazione/"
@@ -18,9 +20,33 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "preparazione_servizio",
+      "caffeina_tannini"
+    ],
     "controversie": [],
-    "explore_next": []
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "quotidiano"
+      },
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "leggero"
+      },
+      {
+        "name": "Pausa",
+        "url": "/italia/momenti/pausa/",
+        "reason": "momento"
+      },
+      {
+        "name": "In Italia",
+        "url": "/italia/",
+        "reason": "hub"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +60,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Alternative delicate al cappuccino."
+                "value": "A colazione in Italia il tè verde non deve competere con cornetto e cappuccino: un sencha leggero o un bancha offrono un avvio dolce, erbaceo, con meno acidità del caffè e caffeina più modulabile."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Evita gyokuro e matcha ad alta concentrazione al mattino se sei sensibile alla caffeina; preferisci infusioni brevi a 70 °C con biscotti semplici o pane tostato."
               }
             ]
           }
@@ -46,7 +81,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Varietà Consigliate"
+            "value": "Varietà consigliate"
           }
         ]
       },
@@ -55,7 +90,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Vedi le schede nel catalogo per preparazione e abbinamenti italiani."
+            "value": "Sencha, bancha e genmaicha sono le scelte più accessibili; consulta le schede per grammi e secondi precisi."
           }
         ]
       }

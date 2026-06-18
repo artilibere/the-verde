@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "gong-fu-cha",
   "meta": {
-    "title": "Gong fu cha",
-    "description": "Arte cinese del tè: infusioni brevi, ospitalità, abilità.",
+    "title": "Gong fu cha — arte cinese del tè",
+    "description": "Il gong fu cha è la preparazione cinese del tè a infusioni brevi e ripetute: ospitalità, concentrazione e massimo controllo sensoriale.",
     "keywords": [
       "gong fu cha",
       "tè verde",
@@ -17,16 +17,29 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "yixing",
+      "gaiwan"
+    ],
     "temi_kb": [
       "cerimonia_spiritualita"
     ],
     "controversie": [],
     "explore_next": [
       {
-        "name": "Cerimonia",
-        "url": "/impara/cerimonia/",
-        "reason": "hub"
+        "name": "Gaiwan",
+        "url": "/glossario/gaiwan/",
+        "reason": "strumento"
+      },
+      {
+        "name": "Cerimonia Cina vs Giappone",
+        "url": "/impara/controversie/cerimonia-cina-vs-giappone/",
+        "reason": "dibattito"
+      },
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "esempio"
       }
     ]
   },

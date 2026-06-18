@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "gunpowder",
   "meta": {
-    "title": "Gunpowder (Zhu Cha)",
-    "description": "Foglie arrotolate a perla: verde cinese robusto e viaggiatore.",
+    "title": "Gunpowder — definizione",
+    "description": "Il gunpowder (zhucha) è tè verde cinese con foglie arrotolate a pallina: sapore deciso, buona resistenza a infusioni multiple.",
     "keywords": [
       "gunpowder",
       "tè verde",
@@ -17,7 +17,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "gunpowder"
+    ],
     "temi_kb": [
       "storia_cultura",
       "preparazione_servizio"
@@ -28,6 +30,16 @@
         "name": "Gunpowder",
         "url": "/varieta/gunpowder/",
         "reason": "scheda"
+      },
+      {
+        "name": "Wok",
+        "url": "/glossario/wok/",
+        "reason": "lavorazione"
+      },
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "cinese"
       }
     ]
   },

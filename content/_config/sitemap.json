@@ -12,6 +12,8 @@
     "og_image_width": 1200,
     "og_image_height": 630,
     "og_image_alt": "The Verde — cultura del tè verde in Italia",
+    "og_image_type": "image/png",
+    "og_image_social": "/assets/images/og-default.png",
     "same_as": []
   },
   "nav": [
@@ -22,5 +24,18 @@
     { "label": "Gioca", "href": "/gioca/" },
     { "label": "Diario", "href": "/diario/" }
   ],
-  "path_order": ["bancha", "sencha", "gyokuro", "matcha"]
+  "path_order": [
+    "bancha",
+    "sencha",
+    "gyokuro",
+    "matcha",
+    "genmaicha",
+    "hojicha",
+    "kukicha",
+    "gunpowder",
+    "dragon-well",
+    "bi-luo-chun",
+    "darjeeling-verde",
+    "cold-brew-gyokuro"
+  ]
 }

@@ -92,6 +92,55 @@ def build_impara(builder) -> None:
     builder.track_sitemap("/impara/", priority=0.8, changefreq="weekly")
 
 
+def _hub_link_item(doc: dict, url: str) -> dict:
+    meta = document_to_meta(doc, url=url)
+    return {
+        "title": meta.get("title", ""),
+        "url": url,
+        "brief": (meta.get("meta_description") or meta.get("description") or "")[:120],
+    }
+
+
+def _italia_hub_sections(builder) -> list[dict]:
+    momenti = [
+        _hub_link_item(doc, f"/italia/momenti/{doc['slug']}/")
+        for _path, doc in builder.docs_in("italia/momenti", doc_type="hub")
+    ]
+    stagioni = [
+        _hub_link_item(doc, f"/italia/stagioni/{doc['slug']}/")
+        for _path, doc in builder.docs_in("italia/stagioni", doc_type="hub")
+    ]
+    gastronomia: list[dict] = []
+    abbinamenti = builder.doc_at("italia", "abbinamenti.json")
+    if abbinamenti:
+        gastronomia.append(_hub_link_item(abbinamenti, "/italia/abbinamenti/"))
+
+    sections: list[dict] = []
+    if momenti:
+        sections.append({"id": "momenti", "title": "Momenti della giornata", "items": momenti})
+    if stagioni:
+        sections.append({"id": "stagioni", "title": "Le stagioni in Italia", "items": stagioni})
+    if gastronomia:
+        sections.append({"id": "gastronomia", "title": "Gastronomia", "items": gastronomia})
+    return sections
+
+
+def _italia_featured_varieties(builder) -> list[dict]:
+    preferred = ("bancha", "sencha", "genmaicha", "hojicha", "cold-brew-gyokuro", "matcha")
+    picked: list[dict] = []
+    for slug in preferred:
+        v = next((x for x in builder.varieties if x["slug"] == slug), None)
+        if v:
+            picked.append(
+                {
+                    "title": v["title"],
+                    "url": v["url"],
+                    "brief": (v.get("brief") or "")[:120],
+                }
+            )
+    return picked
+
+
 def build_italia(builder) -> None:
     doc = builder.doc_at("italia", "index.json")
     if doc:
@@ -104,6 +153,10 @@ def build_italia(builder) -> None:
             template="hub.html",
             meta=meta,
             breadcrumbs=builder.breadcrumbs(("In Italia", "/italia/")),
+            hub_extras={
+                "sections": _italia_hub_sections(builder),
+                "items": _italia_featured_varieties(builder),
+            },
         )
         builder.write_page(builder.out_dir / "italia", html)
         builder.track_sitemap("/italia/", priority=0.7, changefreq="weekly")

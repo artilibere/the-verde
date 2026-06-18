@@ -4,7 +4,7 @@
   "slug": "l-teanina",
   "meta": {
     "title": "L-teanina",
-    "description": "Aminoacido del tè che modula caffeina e calma, soprattutto nei verdi ombreggiati.",
+    "description": "La L-teanina è un aminoacido del tè verde che modula gli effetti della caffeina, favorendo calma e attenzione — soprattutto nel gyokuro.",
     "keywords": [
       "L-teanina",
       "teanina",
@@ -18,7 +18,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "gyokuro"
+    ],
     "temi_kb": [
       "caffeina_tannini",
       "salute_catechine"
@@ -29,6 +31,16 @@
         "name": "Gyokuro",
         "url": "/varieta/gyokuro/",
         "reason": "alta L-teanina"
+      },
+      {
+        "name": "Caffeina",
+        "url": "/impara/caffeina/",
+        "reason": "approfondimento"
+      },
+      {
+        "name": "Caffeina e stimolazione",
+        "url": "/impara/controversie/caffeina-stimolazione/",
+        "reason": "dibattito"
       }
     ]
   },

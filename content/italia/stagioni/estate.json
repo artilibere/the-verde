@@ -3,11 +3,13 @@
   "type": "hub",
   "slug": "estate",
   "meta": {
-    "title": "Estate",
-    "description": "Freddo e leggerezza.",
+    "title": "Tè verde in estate — freddo e leggerezza",
+    "description": "Estate italiana: cold brew di gyokuro, sencha freddo e hojicha glacé per idratazione senza zuccheri aggiunti.",
     "keywords": [
-      "estate",
-      "tè verde",
+      "tè verde estate",
+      "cold brew tè",
+      "sencha freddo",
+      "gyokuro freddo",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/stagioni/estate/"
@@ -18,9 +20,33 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "preparazione_servizio",
+      "cucina_usi_pratici"
+    ],
     "controversie": [],
-    "explore_next": []
+    "explore_next": [
+      {
+        "name": "Cold brew gyokuro",
+        "url": "/varieta/cold-brew-gyokuro/",
+        "reason": "estate"
+      },
+      {
+        "name": "Cold brew",
+        "url": "/glossario/cold-brew/",
+        "reason": "metodo"
+      },
+      {
+        "name": "Aperitivo",
+        "url": "/italia/momenti/aperitivo/",
+        "reason": "momento"
+      },
+      {
+        "name": "Autunno",
+        "url": "/italia/stagioni/autunno/",
+        "reason": "stagione"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +60,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Freddo e leggerezza."
+                "value": "L'estate in Italia chiede leggerezza: il cold brew di gyokuro o sencha in frigorifero per 4–8 ore produce un infuso dolce, privo di amarezza, perfetto per la pausa pomeridiana o l'aperitivo analcolico."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Evita acqua bollente su foglie pregiate anche nelle giornate calde: il freddo estrae meno tannini e meno caffeina, con profilo più morbido."
               }
             ]
           }

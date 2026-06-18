@@ -10,7 +10,7 @@
       "id": "lavorazione_qualità",
       "nome": "Lavorazione e qualità",
       "url": "/impara/lavorazione/",
-      "controversie": ["qualità-sensoriale-vs-chimica"]
+      "controversie": ["qualita-sensoriale-vs-chimica"]
     },
     {
       "id": "preparazione_servizio",
@@ -22,7 +22,7 @@
       "id": "degustazione_sensoriale",
       "nome": "Degustazione sensoriale",
       "url": "/impara/degustazione/",
-      "controversie": ["qualità-sensoriale-vs-chimica"]
+      "controversie": ["qualita-sensoriale-vs-chimica"]
     },
     {
       "id": "salute_catechine",

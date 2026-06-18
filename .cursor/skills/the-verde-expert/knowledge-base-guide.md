@@ -104,7 +104,7 @@ Dettaglio operativo: [varietà.md](varietà.md).
 | `salute-scienza-vs-tradizione` | Quanto è dimostrato che il tè verde faccia bene? | hara cauta vs rosen/onuma entusiaste; sintesi equilibrata |
 | `bevanda-vs-integratore` | Meglio bere tè verde o assumere estratti? | Matcha come foglia intera vs pillole; biodisponibilità |
 | `cerimonia-cina-vs-giappone` | Come si confrontano Gongfu Cha e Chanoyu? | Gestualità, estetica, non gerarchia |
-| `qualità-sensoriale-vs-chimica` | Cosa definisce un buon tè verde? | Palato vs analisi catechine |
+| `qualita-sensoriale-vs-chimica` | Cosa definisce un buon tè verde? | Palato vs analisi catechine |
 | `caffeina-stimolazione` | Il tè verde stimola o rilassa? | Teina + L-teanina; varietà conta |
 | `consumo-quotidiano-vs-rituale` | Abitudine quotidiana o esperienza speciale? | Bancha in bottiglia vs Chado (onuma) |
 

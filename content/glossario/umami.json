@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "umami",
   "meta": {
-    "title": "Umami",
-    "description": "Quinto gusto, sapidità brodosa percepita nei verdi giapponesi di alta gamma.",
+    "title": "Umami — definizione nel tè",
+    "description": "Umami è il quinto gusto, sapidità brodosa e glutammica: nel tè verde emerge soprattutto in gyokuro e matcha di qualità.",
     "keywords": [
       "umami",
       "quinto gusto",
@@ -19,7 +19,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "gyokuro",
+      "matcha"
+    ],
     "temi_kb": [
       "degustazione_sensoriale"
     ],
@@ -29,6 +32,16 @@
         "name": "Gyokuro",
         "url": "/varieta/gyokuro/",
         "reason": "riferimento"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "metodo"
+      },
+      {
+        "name": "Gyokuro",
+        "url": "/glossario/gyokuro/",
+        "reason": "termine"
       }
     ]
   },

@@ -56,7 +56,7 @@ Auto-generazione: `site_builder/enrichers/schema_org.py`. Override manuale: `seo
 
 - Asset hashed con cache lunga (`_headers`)
 - HTML `must-revalidate` per freshness
-- Immagine OG: `/assets/images/og-default.svg` (1200×630 metadata in sitemap.json)
+- Immagine OG social: `/assets/images/og-default.png` (1200×630; SVG in sito, raster per share)
 
 ## Errori comuni da correggere
 

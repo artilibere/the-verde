@@ -35,11 +35,13 @@
   {% endif %}
   <link rel="alternate" type="application/rss+xml" title="The Verde Guide" href="/feed.xml">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
   {% if og_image is defined and og_image %}
   <meta property="og:image" content="{{ og_image }}">
   <meta property="og:image:alt" content="{{ og_image_alt | default(site_name) }}">
   {% if og_image_width is defined %}<meta property="og:image:width" content="{{ og_image_width }}">{% endif %}
   {% if og_image_height is defined %}<meta property="og:image:height" content="{{ og_image_height }}">{% endif %}
+  {% if og_image_type is defined %}<meta property="og:image:type" content="{{ og_image_type }}">{% endif %}
   <meta name="twitter:image" content="{{ og_image }}">
   <meta name="twitter:image:alt" content="{{ og_image_alt | default(site_name) }}">
   {% endif %}
@@ -86,7 +88,7 @@
       <p class="tv-footer__brand">The Verde</p>
       <nav class="tv-footer__nav" aria-label="Link utili"><ul>
         <li><a href="/glossario/">Glossario</a></li><li><a href="/guide/">Guide</a></li>
-        <li><a href="/community/">Community</a></li><li><a href="/feed.xml">RSS</a></li>
+        <li><a href="/community/">Community</a></li><li><a href="/feed.xml">RSS</a></li><li><a href="/llms.txt">llms.txt</a></li>
         <li><a href="/privacy/">Privacy</a></li><li><a href="/termini/">Termini</a></li>
       </ul></nav>
       <p class="tv-footer__copy">&copy; {{ year }} The Verde. Solo <em>Camellia sinensis</em>.</p>

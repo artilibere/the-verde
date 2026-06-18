@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "roji",
   "meta": {
-    "title": "Roji",
-    "description": "Giardino del tè: transizione dal mondo al chanoyu.",
+    "title": "Roji — giardino del tè",
+    "description": "Il roji è il giardino del percorso verso la sala da tè giapponese: spazio di transizione dal mondo profano alla cerimonia.",
     "keywords": [
       "roji",
       "tè verde",
@@ -17,16 +17,29 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "matcha",
+      "chanoyu"
+    ],
     "temi_kb": [
       "cerimonia_spiritualita"
     ],
     "controversie": [],
     "explore_next": [
       {
+        "name": "Chanoyu",
+        "url": "/glossario/chanoyu/",
+        "reason": "cerimonia"
+      },
+      {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
         "reason": "hub"
+      },
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "scheda"
       }
     ]
   },

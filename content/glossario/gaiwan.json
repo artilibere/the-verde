@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "gaiwan",
   "meta": {
-    "title": "Gaiwan",
-    "description": "Coppa con coperchio e sottocoppa: versatilità del gong fu.",
+    "title": "Gaiwan — coppa con coperchio",
+    "description": "Il gaiwan è la coppa cinese con coperchio e sottocoppa: strumento versatile per gong fu cha e degustazioni comparative.",
     "keywords": [
       "gaiwan",
       "tè verde",
@@ -17,16 +17,29 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "dragon-well",
+      "bi-luo-chun"
+    ],
     "temi_kb": [
       "preparazione_servizio"
     ],
     "controversie": [],
     "explore_next": [
       {
-        "name": "Preparazione",
-        "url": "/impara/preparazione/",
-        "reason": "guida"
+        "name": "Gong fu cha",
+        "url": "/glossario/gong-fu-cha/",
+        "reason": "metodo"
+      },
+      {
+        "name": "Yixing",
+        "url": "/glossario/yixing/",
+        "reason": "teiera"
+      },
+      {
+        "name": "Lavorazione",
+        "url": "/impara/lavorazione/",
+        "reason": "contesto"
       }
     ]
   },

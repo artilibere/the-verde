@@ -4,7 +4,7 @@
   "slug": "catechine",
   "meta": {
     "title": "Catechine",
-    "description": "Polifenoli antiossidanti del tè verde, responsabili di gran parte del profilo salutare.",
+    "description": "Le catechine sono polifenoli antiossidanti del tè verde (Camellia sinensis), alla base del dibattito salute — senza promesse da integratore.",
     "keywords": [
       "catechine",
       "polifenoli",
@@ -19,7 +19,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "matcha",
+      "gyokuro"
+    ],
     "temi_kb": [
       "salute_catechine"
     ],
@@ -31,9 +34,9 @@
         "reason": "dibattito aperto"
       },
       {
-        "name": "Matcha",
-        "url": "/varieta/matcha/",
-        "reason": "concentrazione in tazza"
+        "name": "EGCG",
+        "url": "/glossario/egcg/",
+        "reason": "composto chiave"
       }
     ]
   },

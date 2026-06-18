@@ -4,7 +4,7 @@
   "slug": "bevanda-vs-integratore",
   "meta": {
     "title": "Meglio in tazza o in capsula?",
-    "description": "EGCG in polvere o matcha frustato: due modi di assumere catechine, due esperienze.",
+    "description": "EGCG in polvere o matcha frustato: due modi di assumere catechine, due esperienze — quale scegliere senza farti ingannare?",
     "keywords": [
       "bevanda vs integratore",
       "tè verde",
@@ -18,13 +18,26 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "salute_catechine",
+      "cucina_usi_pratici"
+    ],
     "controversie": [],
     "explore_next": [
       {
         "name": "Scienza vs tradizione",
         "url": "/impara/controversie/salute-scienza-vs-tradizione/",
         "reason": "correlata"
+      },
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "foglia intera"
+      },
+      {
+        "name": "Cucina",
+        "url": "/impara/cucina/",
+        "reason": "usi pratici"
       }
     ]
   },

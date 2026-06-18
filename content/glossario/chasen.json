@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "chasen",
   "meta": {
-    "title": "Chasen",
-    "description": "Frusta di bambù per matcha: schiuma, gesto, cerimonia.",
+    "title": "Chasen — frusta per matcha",
+    "description": "Il chasen è la frusta di bambù a 80–120 rene usata per frullare il matcha in acqua e ottenere schiuma cremosa.",
     "keywords": [
       "chasen",
       "tè verde",
@@ -17,7 +17,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "matcha"
+    ],
     "temi_kb": [
       "cerimonia_spiritualita",
       "preparazione_servizio"
@@ -26,8 +28,18 @@
     "explore_next": [
       {
         "name": "Matcha",
-        "url": "/varieta/matcha/",
-        "reason": "preparazione"
+        "url": "/glossario/matcha/",
+        "reason": "termine"
+      },
+      {
+        "name": "Chawan",
+        "url": "/glossario/chawan/",
+        "reason": "strumento"
+      },
+      {
+        "name": "Cerimonia",
+        "url": "/impara/cerimonia/",
+        "reason": "contesto"
       }
     ]
   },

@@ -4,7 +4,20 @@ from __future__ import annotations
 
 from typing import Any
 
-PATH_ORDER = ["bancha", "sencha", "gyokuro", "matcha"]
+PATH_ORDER = [
+    "bancha",
+    "sencha",
+    "gyokuro",
+    "matcha",
+    "genmaicha",
+    "hojicha",
+    "kukicha",
+    "gunpowder",
+    "dragon-well",
+    "bi-luo-chun",
+    "darjeeling-verde",
+    "cold-brew-gyokuro",
+]
 MAX_EXPLORE = 4
 MIN_EXPLORE = 3
 

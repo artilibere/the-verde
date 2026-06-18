@@ -3,11 +3,12 @@
   "type": "hub",
   "slug": "index",
   "meta": {
-    "title": "In Italia",
-    "description": "Ponte culturale tra tradizioni del tè e abitudini italiane.",
+    "title": "Tè verde in Italia — guida pratica",
+    "description": "Come integrare il tè verde (Camellia sinensis) nella vita italiana: momenti della giornata, stagioni, abbinamenti con la cucina locale.",
     "keywords": [
-      "in italia",
-      "tè verde",
+      "tè verde Italia",
+      "cultura del tè italiana",
+      "abbinamenti tè verde",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/"
@@ -17,10 +18,41 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
-    "temi_kb": [],
-    "controversie": [],
-    "explore_next": []
+    "related_slugs": [
+      "bancha",
+      "sencha",
+      "genmaicha",
+      "hojicha"
+    ],
+    "temi_kb": [
+      "cucina_usi_pratici",
+      "storia_cultura"
+    ],
+    "controversie": [
+      "consumo-quotidiano-vs-rituale"
+    ],
+    "explore_next": [
+      {
+        "name": "Abbinamenti gastronomici",
+        "url": "/italia/abbinamenti/",
+        "reason": "cucina"
+      },
+      {
+        "name": "Colazione",
+        "url": "/italia/momenti/colazione/",
+        "reason": "momento"
+      },
+      {
+        "name": "Estate",
+        "url": "/italia/stagioni/estate/",
+        "reason": "stagione"
+      },
+      {
+        "name": "Consumo quotidiano vs rituale",
+        "url": "/impara/controversie/consumo-quotidiano-vs-rituale/",
+        "reason": "controversia"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,28 +66,119 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Il tè verde in Italia non sostituisce il caffè: si affianca come gesto lento e scoperta sensoriale."
+                "value": "In Italia il tè verde non compete con il caffè: si affianca come gesto più lento, con profili che vanno dal sencha erbaceo al matcha cremoso, dal bancha leggero all'hojicha tostato. Il caffè resta il rito urbano per eccellenza — espresso al bar, moka a casa — mentre il verde trova spazio in chi cerca meno acidità, una caffeina più modulabile o un abbinamento diverso a tavola."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Questa sezione non chiede di «convertirsi» al tè: propone ponti concreti tra varietà, stagioni e momenti della giornata italiani — colazione, pausa lavoro, aperitivo analcolico, dopo cena — e con la cucina che già conosci."
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "italia",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Acqua del rubinetto spesso dura nelle città italiane: per sencha e gyokuro conviene filtrare o usare minerale leggera. Non è snobismo tecnico — è il modo più semplice per evitare amaro e foglia «cotta»."
               }
             ]
           }
         ]
       },
       {
-        "type": "heading",
-        "level": 2,
-        "spans": [
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
           {
-            "type": "text",
-            "value": "Momenti E Stagioni"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "spans": [
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Perché il verde ha senso qui"
+              }
+            ]
+          },
           {
-            "type": "text",
-            "value": "Esplora hub per colazione, pausa, dopo cena e calendario stagionale."
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè entrò in Italia via commercio veneziano e genovese, ma restò bevanda di nicchia rispetto al caffè. Nel Novecento il verde fu spesso confuso con tisane «detox»; oggi crescono tea shop specialty, ristorazione giapponese e interesse per single origin nelle grandi città — Milano e Torino in testa, Roma e Firenze con turismo gastronomico, Sud più dipendente dall'e-commerce."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Colazione: bancha, kukicha o genmaicha come alternativa delicata al cappuccino — non sostituto ideologico."
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Pausa delle 10 o delle 16: sencha o dragon well per concentrazione senza il nervosismo del quarto caffè."
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Aperitivo: cold brew di gyokuro o hojicha freddo — analcolico, pulito, lontano dalle bibite zuccherate estive."
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Dopo cena: hojicha o genmaicha — bassa caffeina, note tostate; mai presentarli come «digestivi miracolosi»."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Stagioni italiane, foglie diverse"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "La stagionalità non è decorazione: in primavera shincha e bi luo chun dialogano con asparagi e fave; in estate il cold brew sostituisce con eleganza le bibite gassate; in autunno hojicha e genmaicha accompagnano castagne e funghi; in inverno bancha e kukicha offrono comfort senza la pesantezza del tè nero speziato."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Per gli abbinamenti a tavola — gyokuro con crudo di pesce, hojicha con cioccolato fondente, matcha in pasticceria — c'è una guida dedicata. Evita sughi molto acidi al pomodoro con verdi delicati: l'acidità esalta l'amaro della foglia."
+              }
+            ]
           }
         ]
       }

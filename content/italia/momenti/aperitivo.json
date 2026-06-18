@@ -3,11 +3,13 @@
   "type": "hub",
   "slug": "aperitivo",
   "meta": {
-    "title": "Tè verde all'aperitivo",
-    "description": "Cold brew e hojicha freddo analcolici.",
+    "title": "Tè verde all'aperitivo analcolico",
+    "description": "Cold brew e hojicha freddo per l'aperitivo senza alcol: profili tostati e dolci che accompagnano olive e stuzzichini.",
     "keywords": [
-      "tè verde all'aperitivo",
-      "tè verde",
+      "tè verde aperitivo",
+      "cold brew",
+      "hojicha freddo",
+      "analcolico",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/momenti/aperitivo/"
@@ -18,9 +20,33 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "cucina_usi_pratici",
+      "preparazione_servizio"
+    ],
     "controversie": [],
-    "explore_next": []
+    "explore_next": [
+      {
+        "name": "Hojicha",
+        "url": "/varieta/hojicha/",
+        "reason": "tostato"
+      },
+      {
+        "name": "Cold brew",
+        "url": "/glossario/cold-brew/",
+        "reason": "metodo"
+      },
+      {
+        "name": "Abbinamenti",
+        "url": "/italia/abbinamenti/",
+        "reason": "cucina"
+      },
+      {
+        "name": "Estate",
+        "url": "/italia/stagioni/estate/",
+        "reason": "stagione"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +60,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Cold brew e hojicha freddo analcolici."
+                "value": "L'aperitivo analcolico sta crescendo in Italia: cold brew di sencha o gyokuro, hojicha freddo con ghiaccio e una fetta di limone offrono complessità senza alcol né zuccheri aggiunti."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "I profili tostati dell'hojicha si sposano con olive, taralli e formaggi freschi; il cold brew regge meglio gli stuzzichini salati rispetto al verde bollente."
               }
             ]
           }
@@ -46,7 +81,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Varietà Consigliate"
+            "value": "Varietà consigliate"
           }
         ]
       },
@@ -55,7 +90,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Vedi le schede nel catalogo per preparazione e abbinamenti italiani."
+            "value": "Hojicha, sencha cold brew e genmaicha fredda; prepara in anticipo una brocca in frigorifero per servire direttamente."
           }
         ]
       }

@@ -239,4 +239,44 @@ def build_sitemap_xml(entries: list[dict], *, hreflang: str = "it") -> str:
 
 
 def build_robots_txt(base_url: str) -> str:
-    return f"User-agent: *\nAllow: /\nDisallow: /diario/nuova/\n\nSitemap: {base_url}/sitemap.xml\n"
+    return (
+        f"User-agent: *\n"
+        f"Allow: /\n"
+        f"Disallow: /diario/nuova/\n\n"
+        f"Sitemap: {base_url}/sitemap.xml\n"
+        f"# GEO: {base_url}/llms.txt\n"
+    )
+
+
+def build_llms_txt(base_url: str, site_name: str) -> str:
+    """Machine-readable site summary for generative engines (llms.txt)."""
+    return f"""# {site_name}
+
+> Cultura del tè verde (Camellia sinensis) per chi vive in Italia — non tisane, non hype detox.
+
+## Hub principali
+
+- [Varietà]({base_url}/varieta/): schede sensoriali, parametri infusione, contesto italiano
+- [Impara]({base_url}/impara/): storia, salute, cerimonia, preparazione, controversie
+- [Glossario]({base_url}/glossario/): termini definiti (DefinedTerm)
+- [In Italia]({base_url}/italia/): abbinamenti, stagioni, momenti della giornata
+- [Guide]({base_url}/guide/): articoli long-form
+- [Gioca]({base_url}/gioca/): percorsi e quiz
+
+## Formato contenuti
+
+Ogni pagina espone meta title, description (≤160 char), canonical, JSON-LD schema.org e breadcrumb.
+Le varietà includono profilo sensoriale, HowTo per la preparazione e FAQPage quando presenti.
+Le controversie presentano prospettive multiple con fonti (E-E-A-T).
+
+## Lingua e audience
+
+- Lingua: italiano (it-IT)
+- Audience: appassionati di tè verde in Italia
+- Distingue sempre tè verde (Camellia sinensis) da tisane
+
+## Sitemap
+
+{base_url}/sitemap.xml
+"""
+

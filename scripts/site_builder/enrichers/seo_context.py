@@ -16,6 +16,7 @@ from site_builder.enrichers._seo_core import (
     website_schema,
 )
 from site_builder.enrichers.schema_org import supplementary_schemas
+from site_builder.document import collect_faq_items
 
 
 def apply_seo(ctx: dict, builder) -> None:
@@ -45,13 +46,17 @@ def apply_seo(ctx: dict, builder) -> None:
     ctx.setdefault("seo_hreflang", builder.hreflang)
     ctx.setdefault("seo_locale", builder.locale)
     if builder.og_image:
-        ctx.setdefault("og_image", f"{builder.base_url}{builder.og_image}")
+        social_image = builder.social.get("og_image_social") or builder.og_image
+        ctx.setdefault("og_image", f"{builder.base_url}{social_image}")
         ctx.setdefault("og_image_width", builder.social.get("og_image_width", 1200))
         ctx.setdefault("og_image_height", builder.social.get("og_image_height", 630))
         ctx.setdefault(
             "og_image_alt",
             builder.social.get("og_image_alt", f"{builder.site_name} — tè verde in Italia"),
         )
+        ctx.setdefault("twitter_image", ctx["og_image"])
+        if builder.social.get("og_image_type"):
+            ctx.setdefault("og_image_type", builder.social["og_image_type"])
     ctx.setdefault("twitter_card", builder.social.get("twitter_card", "summary_large_image"))
     ctx.setdefault("theme_color", builder.social.get("theme_color", "#3e5c4e"))
     if meta.get("published"):
@@ -106,6 +111,10 @@ def build_schema_blocks(
                     article_schema(base_url, title=title, description=description, url=url)
                 )
             )
+        faq_items = collect_faq_items(doc=doc, page=ctx.get("page"))
+        faq = faq_schema(faq_items or meta.get("faqs", []))
+        if faq:
+            blocks.append(dumps_json_ld(faq))
     elif page_type == "variety" and url:
         blocks.append(
             dumps_json_ld(
@@ -119,7 +128,8 @@ def build_schema_blocks(
                 )
             )
         )
-        faq = faq_schema(meta.get("faqs", []))
+        faq_items = collect_faq_items(doc=doc, page=ctx.get("page"))
+        faq = faq_schema(faq_items or meta.get("faqs", []))
         if faq:
             blocks.append(dumps_json_ld(faq))
     elif page_type == "hub" and url and url.startswith("/italia/"):
@@ -136,6 +146,10 @@ def build_schema_blocks(
                 )
             )
         )
+        faq_items = collect_faq_items(doc=doc, page=ctx.get("page"))
+        faq = faq_schema(faq_items or meta.get("faqs", []))
+        if faq:
+            blocks.append(dumps_json_ld(faq))
     elif page_type == "catalog" and url:
         blocks.append(
             dumps_json_ld(

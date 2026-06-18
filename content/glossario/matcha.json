@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "matcha",
   "meta": {
-    "title": "Matcha",
-    "description": "Polvere di tencha: bevi la foglia intera, sospesa in acqua.",
+    "title": "Matcha — definizione e usi",
+    "description": "Matcha è polvere di tencha giapponese: bevi la foglia intera frullata in acqua, in cerimonia o in pasticceria.",
     "keywords": [
       "matcha",
       "tè verde",
@@ -17,7 +17,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "matcha"
+    ],
     "temi_kb": [
       "cerimonia_spiritualita",
       "cucina_usi_pratici"
@@ -28,6 +30,16 @@
         "name": "Matcha",
         "url": "/varieta/matcha/",
         "reason": "scheda"
+      },
+      {
+        "name": "Tencha",
+        "url": "/glossario/tencha/",
+        "reason": "materia prima"
+      },
+      {
+        "name": "Chasen",
+        "url": "/glossario/chasen/",
+        "reason": "strumento"
       }
     ]
   },

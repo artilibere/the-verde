@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from site_builder.enrichers._seo_core import dumps_json_ld, faq_schema, webpage_schema
+from site_builder.document import collect_faq_items
+from site_builder.enrichers._seo_core import build_llms_txt, dumps_json_ld, faq_schema, webpage_schema
 from site_builder.enrichers.schema_org import howto_schema, supplementary_schemas
 
 
@@ -62,3 +63,32 @@ def test_dumps_json_ld_compact():
     raw = dumps_json_ld({"@context": "https://schema.org", "@type": "Thing"})
     assert '"@context"' in raw
     assert " " not in raw or raw.count(" ") < 3
+
+
+def test_collect_faq_items_from_blocks():
+    doc = {
+        "body": {
+            "blocks": [
+                {
+                    "type": "faq",
+                    "items": [
+                        {
+                            "question": "Cos'è il sencha?",
+                            "answer_spans": [{"type": "text", "value": "Tè verde giapponese al sole."}],
+                        }
+                    ],
+                }
+            ]
+        }
+    }
+    items = collect_faq_items(doc=doc)
+    assert len(items) == 1
+    assert items[0]["question"] == "Cos'è il sencha?"
+
+
+def test_build_llms_txt_contains_hubs():
+    text = build_llms_txt("https://the-verde.it", "The Verde")
+    assert "Camellia sinensis" in text
+    assert "/glossario/" in text
+    assert "/varieta/" in text
+

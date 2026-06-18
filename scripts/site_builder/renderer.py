@@ -65,6 +65,7 @@ class TemplateRenderer:
 
         page = ctx.get("page")
         if page and page.get("schema"):
+            # PageDocument @graph replaces apply_seo schema_blocks for typed pages.
             ctx["schema_graph_json"] = json.dumps(page["schema"], ensure_ascii=False)
             ctx["schema_blocks"] = [
                 json.dumps(page["schema"], ensure_ascii=False, separators=(",", ":"))

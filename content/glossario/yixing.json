@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "yixing",
   "meta": {
-    "title": "Yixing",
-    "description": "Teiera di terracotta porosa cinese: una teiera, un tè.",
+    "title": "Yixing — teiera di terracotta",
+    "description": "La teiera Yixing è in terracotta porosa cinese: una teiera dedicata a un solo tè, tradizione del gong fu cha.",
     "keywords": [
       "yixing",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "dragon-well",
+      "gong-fu-cha"
+    ],
     "temi_kb": [
       "preparazione_servizio",
       "cerimonia_spiritualita"
@@ -27,7 +30,17 @@
       {
         "name": "Gong fu cha",
         "url": "/glossario/gong-fu-cha/",
-        "reason": "contesto"
+        "reason": "metodo"
+      },
+      {
+        "name": "Gaiwan",
+        "url": "/glossario/gaiwan/",
+        "reason": "strumento"
+      },
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "cinese"
       }
     ]
   },

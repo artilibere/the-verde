@@ -1,17 +1,6 @@
 {
   "schema_version": "1.0",
   "type": "page",
-  "slug": "privacy",
-  "meta": {
-    "title": "Privacy policy",
-    "description": "Privacy policy",
-    "keywords": [
-      "privacy policy",
-      "tè verde",
-      "Camellia sinensis"
-    ],
-    "canonical_path": "/privacy/"
-  },
   "seo": {
     "robots": "index,follow",
     "og_type": "article"
@@ -23,6 +12,20 @@
     "explore_next": []
   },
   "taxonomy": {},
+  "slug": "privacy",
+  "meta": {
+    "title": "Privacy policy",
+    "description": "Informativa privacy di the-verde.it: dati raccolti, localStorage, Giscus, diritti GDPR e contatti del titolare.",
+    "keywords": [
+      "privacy policy",
+      "GDPR",
+      "the-verde.it",
+      "trattamento dati personali",
+      "cookie"
+    ],
+    "canonical_path": "/privacy/",
+    "published": "2026-06-18"
+  },
   "body": {
     "blocks": [
       {
@@ -30,7 +33,967 @@
         "spans": [
           {
             "type": "text",
-            "value": "Informazioni sul trattamento dei dati. Il diario in fase 1 resta sul tuo dispositivo (localStorage)."
+            "value": "Informativa aggiornata per il sito the-verde.it (giugno 2026)."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "1. Informazioni preliminari"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "La presente informativa descrive come il sito the-verde.it tratta i dati personali in conformità al Regolamento UE 2016/679 (GDPR), al D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018 e alle Linee guida del Garante Privacy su cookie e altri strumenti di tracciamento."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "The Verde è una risorsa editoriale gratuita sul tè verde ("
+          },
+          {
+            "type": "em",
+            "value": "Camellia sinensis"
+          },
+          {
+            "type": "text",
+            "value": ") pensata per chi vive in Italia. Non vende prodotti, non richiede registrazione account sul sito e non gestisce newsletter."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Indirizzo web: "
+          },
+          {
+            "type": "link",
+            "value": "https://the-verde.it",
+            "href": "https://the-verde.it"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "2. Chi siamo"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Titolare del trattamento"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Carlo Gandolfo"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Contatti"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Email: ciao@carlogandolfo.it"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sito: the-verde.it"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sede: Milano, Lombardia, Italia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "3. Quali dati raccogliamo"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Dati di navigazione (hosting)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il sito è ospitato su Cloudflare Pages. Per erogare le pagine e garantire sicurezza, il provider può trattare automaticamente indirizzo IP, data e ora di accesso, URL richiesto, user agent del browser e dati tecnici di rete."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Finalità: erogazione del sito, sicurezza, prevenzione abusi"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Base giuridica: legittimo interesse del titolare (art. 6(1)(f) GDPR) e necessità tecnica"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Conservazione: secondo i termini di Cloudflare (in genere pochi giorni per i log)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Dati salvati sul tuo dispositivo (localStorage)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Alcune funzioni del sito memorizzano informazioni solo nel browser del tuo dispositivo, senza inviarle ai nostri server. In particolare:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Diario del tè (chiave tv-diario): varietà, temperatura, note sulle infusioni che registri"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Percorsi guidati (tv-paths-progress): avanzamento nei quiz tematici"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Badge (tv-badges): traguardi pedagogici sbloccati navigando il sito"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Glossario e controversie (tv-glossary-views, tv-controversies-read): pagine consultate per i badge"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sondaggi nelle controversie (tv-poll-*): la prospettiva che scegli in ciascun articolo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Finalità: personalizzare l'esperienza di apprendimento sul tuo dispositivo"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Base giuridica: legittimo interesse (art. 6(1)(f) GDPR) per funzionalità richieste dall'utente; i dati restano sotto il tuo controllo"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Conservazione: fino a cancellazione manuale dai dati del sito nel browser o uso del pulsante Esporta/Elimina dove previsto"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Puoi esportare le infusioni del diario in JSON o cancellare tutti i dati locali dalle impostazioni del browser. Il Titolare non ha accesso a queste informazioni finché non ci contatti volontariamente."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Community (Giscus) — solo se visiti /community/"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "La pagina Community integra Giscus, servizio di commenti basato su GitHub Discussions. Se accedi con il tuo account GitHub per commentare, GitHub e Giscus possono trattare dati quali username, avatar, testo del commento e indirizzo email associato all'account GitHub, secondo le rispettive informative."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Finalità: consentire discussioni tra appassionati sul tè verde"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Base giuridica: esecuzione di misure precontrattuali su tua richiesta (art. 6(1)(b) GDPR) e consenso implicito nell'uso del servizio di commento"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Titolare/responsabili: GitHub B.V. / GitHub, Inc. e Giscus (terze parti)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Ricerca interna (Pagefind)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "La funzione Cerca utilizza un indice statico generato in fase di build e interrogato dal tuo browser. Non invia query a server esterni: le ricerche restano sul dispositivo."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Condivisione pagine"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "I pulsanti di condivisione (WhatsApp, copia link, condivisione nativa del sistema) agiscono solo su tua iniziativa. Non tracciamo i click. Se usi WhatsApp o altri servizi esterni, si applicano le informative di quei fornitori."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Sincronizzazione diario (eventuale, non attiva)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "In futuro potremo offrire la sincronizzazione opzionale del diario tramite Supabase. Se e quando attivata, aggiorneremo questa informativa con i dettagli su base giuridica, conservazione e diritto di revoca. Oggi la sincronizzazione cloud non è configurata: i dati del diario restano solo in locale."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Analisi del traffico"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Al momento non utilizziamo Google Analytics, pixel pubblicitari né strumenti di profilazione. Non è presente un banner cookie per analisi perché non raccogliamo dati statistici tramite terze parti con finalità di misurazione."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "4. Cookie e tecnologie simili"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Oltre al localStorage descritto sopra, durante la navigazione possono essere impostati cookie tecnici da Cloudflare (es. per sicurezza e anti-bot) e, solo sulla pagina Community, cookie di Giscus/GitHub necessari al servizio di commenti."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cookie tecnici Cloudflare: necessari all'erogazione sicura del sito; base giuridica: legittimo interesse / necessità tecnica"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cookie Giscus/GitHub: solo se accedi alla Community e interagisci con i commenti; consulta le policy di GitHub e giscus.app"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Puoi gestire o bloccare cookie e localStorage dalle impostazioni del browser. La disattivazione può limitare diario, badge, percorsi e commenti."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Policy dei fornitori:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cloudflare: https://www.cloudflare.com/privacypolicy/"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Giscus: https://giscus.app"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "5. Destinatari dei dati"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "I dati possono essere trattati da:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cloudflare, Inc. — hosting, CDN, sicurezza (Responsabile del trattamento)"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "GitHub e Giscus — commenti Community, se li utilizzi"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Personale autorizzato del Titolare"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Autorità competenti, se richiesto dalla legge"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "I fornitori sono vincolati da accordi che rispettano il GDPR."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "6. Trasferimento verso paesi terzi"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Cloudflare e GitHub possono trattare dati anche negli Stati Uniti e in altri paesi. I trasferimenti avvengono con garanzie previste dal GDPR (es. Clausole Contrattuali Standard) e, ove applicabile, il Data Privacy Framework UE-USA."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "7. Quanto tempo conserviamo i dati"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Log di hosting (Cloudflare): secondo policy del fornitore (tipicamente pochi giorni)"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dati in localStorage: fino a cancellazione nel browser da parte dell'utente"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Commenti Giscus/GitHub: secondo le policy di GitHub finché non li elimini o richiedi la cancellazione"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Corrispondenza email con il Titolare: 24 mesi dalla richiesta"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "8. I tuoi diritti GDPR"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Hai diritto di:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Accesso (art. 15) — ottenere conferma e copia dei dati che ti riguardano"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Rettifica (art. 16) — correggere dati inesatti"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cancellazione (art. 17) — richiedere la cancellazione, nei casi previsti dalla legge"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Limitazione (art. 18) — limitare il trattamento in determinate circostanze"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Portabilità (art. 20) — ricevere i dati in formato strutturato, ove applicabile"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Opposizione (art. 21) — opporti al trattamento basato su legittimo interesse"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Revoca del consenso — in qualsiasi momento, senza pregiudicare i trattamenti già effettuati"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Per i dati salvati solo in localStorage puoi esercitare la cancellazione direttamente dal browser. Per i commenti su Giscus, segui le procedure GitHub o contattaci per assistenza."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "9. Come esercitare i diritti"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Invia una richiesta scritta a "
+          },
+          {
+            "type": "link",
+            "value": "ciao@carlogandolfo.it",
+            "href": "mailto:ciao@carlogandolfo.it"
+          },
+          {
+            "type": "text",
+            "value": ", indicando il diritto che vuoi esercitare (es. accesso ai dati ai sensi dell'art. 15 GDPR). Risponderemo entro 30 giorni; in casi complessi il termine può essere esteso a 60 giorni, con comunicazione preventiva. Le richieste sono generalmente gratuite."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "10. Sicurezza"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Adottiamo misure tecniche adeguate, tra cui:"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Connessione cifrata HTTPS (TLS)"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Hosting su infrastruttura con protezione DDoS e WAF"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Minimizzazione dei dati raccolti (nessuna analisi di terze parti attiva)"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Diario e progressi salvati localmente per default"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Nessun sistema è sicuro al 100%. In caso di violazione dei dati con rischio elevato per i tuoi diritti, informeremo te e il Garante Privacy nei termini di legge."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "11. Utenti minorenni"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il sito non è rivolto a minori di 16 anni. Non raccogliamo consapevolmente dati di minori. Se un genitore o tutore ritiene che un minore ci abbia fornito dati, scriva a "
+          },
+          {
+            "type": "link",
+            "value": "ciao@carlogandolfo.it",
+            "href": "mailto:ciao@carlogandolfo.it"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "12. Modifiche a questa informativa"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Possiamo aggiornare questa pagina per adeguarla a cambi normativi, tecnici o all'introduzione di nuove funzioni (es. sincronizzazione diario). La data in fondo indica l'ultimo aggiornamento. Per modifiche rilevanti useremo un avviso visibile sul sito."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "13. Contatti e ricorso"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Titolare: Carlo Gandolfo — "
+          },
+          {
+            "type": "link",
+            "value": "ciao@carlogandolfo.it",
+            "href": "mailto:ciao@carlogandolfo.it"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Garante per la protezione dei dati personali"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Email: garante@gpdp.it"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Indirizzo: Piazza di Monte Citorio, 121 — 00186 Roma, Italia"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sito: https://www.garanteprivacy.it"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Hai anche il diritto di proporre reclamo al Garante o di adire l'autorità giudiziaria competente."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "14. Link esterni"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il sito contiene link a risorse di terze parti (es. WhatsApp, GitHub, siti di riferimento sul tè). Non controlliamo le loro informative privacy: consultale prima di inviare dati personali."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Data di ultimo aggiornamento: 18 giugno 2026"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "strong",
+            "value": "Data di entrata in vigore: 18 giugno 2026"
           }
         ]
       }

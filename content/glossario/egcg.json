@@ -4,7 +4,7 @@
   "slug": "egcg",
   "meta": {
     "title": "EGCG",
-    "description": "Epigallocatechina gallato: la catechina più abbondante e più studiata nel tè verde.",
+    "description": "L'EGCG (epigallocatechina gallato) è la catechina più abbondante nel tè verde e la più studiata — non equivale a un integratore in capsule.",
     "keywords": [
       "EGCG",
       "epigallocatechina gallato",
@@ -18,7 +18,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "matcha"
+    ],
     "temi_kb": [
       "salute_catechine"
     ],
@@ -28,6 +30,16 @@
         "name": "Salute",
         "url": "/impara/salute/",
         "reason": "quadro completo"
+      },
+      {
+        "name": "Catechine",
+        "url": "/glossario/catechine/",
+        "reason": "famiglia"
+      },
+      {
+        "name": "Bevanda vs integratore",
+        "url": "/impara/controversie/bevanda-vs-integratore/",
+        "reason": "dibattito"
       }
     ]
   },

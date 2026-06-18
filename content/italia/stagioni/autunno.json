@@ -3,11 +3,13 @@
   "type": "hub",
   "slug": "autunno",
   "meta": {
-    "title": "Autunno",
-    "description": "Note tostate.",
+    "title": "Tè verde in autunno — varietà tostate per l'Italia",
+    "description": "Autunno in Italia: hojicha, genmaicha e bancha per tazze calde dal profilo tostato, ideali con castagne e piatti di terra.",
     "keywords": [
-      "autunno",
-      "tè verde",
+      "tè verde autunno",
+      "hojicha",
+      "genmaicha",
+      "bancha",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/stagioni/autunno/"
@@ -18,9 +20,32 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "cucina_usi_pratici"
+    ],
     "controversie": [],
-    "explore_next": []
+    "explore_next": [
+      {
+        "name": "Hojicha",
+        "url": "/varieta/hojicha/",
+        "reason": "tostato"
+      },
+      {
+        "name": "Genmaicha",
+        "url": "/varieta/genmaicha/",
+        "reason": "riso"
+      },
+      {
+        "name": "Inverno",
+        "url": "/italia/stagioni/inverno/",
+        "reason": "stagione"
+      },
+      {
+        "name": "Abbinamenti",
+        "url": "/italia/abbinamenti/",
+        "reason": "cucina"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +59,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Note tostate."
+                "value": "In autunno, quando in Italia tornano zuppe, funghi e castagne, il tè verde tostato trova il suo posto: hojicha con note di nocciola, genmaicha con il riso soffiato, bancha leggera per la sera."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Temperature di infusione leggermente più alte (80–90 °C) esaltano il calore confortante senza l'amarezza del sencha primaverile scottato."
               }
             ]
           }

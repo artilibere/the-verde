@@ -3,27 +3,91 @@
   "type": "page",
   "slug": "home",
   "meta": {
-    "title": "Home",
-    "description": "Home",
+    "title": "The Verde — cultura del tè verde in Italia",
+    "description": "Scopri varietà, preparazione e cultura del tè verde (Camellia sinensis) con guide pensate per chi vive in Italia — non tisane, non hype.",
     "keywords": [
-      "home",
       "tè verde",
-      "Camellia sinensis"
+      "Camellia sinensis",
+      "cultura del tè Italia",
+      "varietà tè verde",
+      "preparazione tè verde"
     ],
     "canonical_path": "/"
   },
   "seo": {
     "robots": "index,follow",
-    "og_type": "article"
+    "og_type": "website"
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "storia_cultura",
+      "preparazione_servizio"
+    ],
     "controversie": [],
-    "explore_next": []
+    "explore_next": [
+      {
+        "name": "Varietà",
+        "url": "/varieta/",
+        "reason": "catalogo"
+      },
+      {
+        "name": "Impara",
+        "url": "/impara/",
+        "reason": "guide tematiche"
+      },
+      {
+        "name": "Glossario",
+        "url": "/glossario/",
+        "reason": "termini"
+      },
+      {
+        "name": "In Italia",
+        "url": "/italia/",
+        "reason": "contesto locale"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
-    "blocks": []
+    "blocks": [
+      {
+        "type": "heading",
+        "level": 1,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il tè verde, con radici e gusto"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "The Verde è una guida al tè verde — la foglia di Camellia sinensis, non le tisane di erbe — pensata per chi vive in Italia: come scegliere una varietà, prepararla senza scottarla e inserirla nella propria giornata senza snobismo."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Dal sencha quotidiano al gyokuro d'ombra, dal matcha in pasticceria al bancha leggero: qui trovi schede sensoriali, parametri di infusione, glossario e ponti con la cultura italiana del bere."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Ogni contenuto distingue tradizioni giapponesi, cinesi e indiane senza fonderle in un generico «tè orientale», e cita le fonti quando il tema è controverso."
+          }
+        ]
+      }
+    ]
   }
 }

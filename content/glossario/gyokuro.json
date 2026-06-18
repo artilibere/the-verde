@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "gyokuro",
   "meta": {
-    "title": "Gyokuro",
-    "description": "Tè ombreggiato: umami denso, infusione tiepida, gesto lento.",
+    "title": "Gyokuro — definizione",
+    "description": "Gyokuro è tè verde giapponese ombreggiato prima del raccolto: massimo umami, infusione a 50–60 °C, gesto lento.",
     "keywords": [
       "gyokuro",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "gyokuro",
+      "sencha"
+    ],
     "temi_kb": [
       "lavorazione_qualità",
       "degustazione_sensoriale"
@@ -28,6 +31,16 @@
         "name": "Gyokuro",
         "url": "/varieta/gyokuro/",
         "reason": "scheda"
+      },
+      {
+        "name": "Umami",
+        "url": "/glossario/umami/",
+        "reason": "gusto"
+      },
+      {
+        "name": "Sencha",
+        "url": "/glossario/sencha/",
+        "reason": "confronto"
       }
     ]
   },

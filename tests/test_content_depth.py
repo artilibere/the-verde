@@ -166,6 +166,9 @@ def test_controversy_depth(path: Path):
         assert len(item.get("tesi", "")) >= 80, f"{path.name} tesi too short for {item.get('fonte')}"
     assert _word_count(text) >= 210, f"{path.name} total too short ({_word_count(text)} words)"
     assert "Il cuore della questione" in text, f"{path.name} missing cuore section"
+    desc = doc.get("meta", {}).get("description", "")
+    assert len(desc) >= 90, f"{path.name} description too short ({len(desc)} chars)"
+    assert len(doc["navigation"].get("explore_next", [])) >= 3, f"{path.name} explore_next"
 
 
 @pytest.mark.parametrize("path", sorted((CONTENT_DIR / "guide").glob("*.json")))

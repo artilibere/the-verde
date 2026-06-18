@@ -4,13 +4,13 @@
   "slug": "gyokuro",
   "meta": {
     "title": "Gyokuro — ombra e umami",
-    "description": "Profilo, preparazione e contesto italiano del gyokuro.",
+    "description": "Gyokuro è tè verde ombreggiato del Giappone: massimo umami, infusione a 50–60 °C. Profilo sensoriale, preparazione e contesto italiano.",
     "keywords": [
       "gyokuro",
-      "tè verde",
+      "tè ombreggiato",
+      "umami",
       "Camellia sinensis",
-      "gyokuro",
-      "Giappone"
+      "Uji"
     ],
     "canonical_path": "/varieta/gyokuro/"
   },
@@ -74,7 +74,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Il gyokuro non si beve di fretta. È ombra, seta e brodo vegetale: un verde che chiede acqua tiepida e un minuto di silenzio."
+            "value": "Il gyokuro è il tè verde giapponese ombreggiato prima del raccolto: foglie coltivate sotto copertura per massimizzare umami e L-teanina. Non si beve di fretta — è ombra, seta e brodo vegetale: un verde che chiede acqua tiepida e un minuto di silenzio."
           }
         ]
       },

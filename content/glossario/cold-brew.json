@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "cold-brew",
   "meta": {
-    "title": "Cold brew",
-    "description": "Infusione a freddo: dolcezza, zero amaro, estate lenta.",
+    "title": "Cold brew — tè verde freddo",
+    "description": "Il cold brew estrae il tè verde in acqua fredda per ore: meno tannini, più dolcezza, ideale per l'estate italiana e l'aperitivo analcolico.",
     "keywords": [
       "cold brew",
       "tè verde",
@@ -17,7 +17,10 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "cold-brew-gyokuro",
+      "gyokuro"
+    ],
     "temi_kb": [
       "preparazione_servizio",
       "caffeina_tannini"
@@ -28,6 +31,16 @@
         "name": "Cold brew gyokuro",
         "url": "/varieta/cold-brew-gyokuro/",
         "reason": "scheda"
+      },
+      {
+        "name": "Estate",
+        "url": "/italia/stagioni/estate/",
+        "reason": "stagione"
+      },
+      {
+        "name": "Aperitivo",
+        "url": "/italia/momenti/aperitivo/",
+        "reason": "momento"
       }
     ]
   },

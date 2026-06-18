@@ -4,7 +4,7 @@
   "slug": "cerimonia-cina-vs-giappone",
   "meta": {
     "title": "Gong fu cha o chanoyu: due anime del rituale",
-    "description": "Convivialità cinese e codice giapponese: confronto senza scegliere un vincitore.",
+    "description": "Convivialità cinese e codice giapponese: confronto tra Gong fu cha e chanoyu senza scegliere un vincitore culturale.",
     "keywords": [
       "cerimonia cina vs giappone",
       "tè verde",
@@ -18,13 +18,26 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "storia_cultura",
+      "cerimonia_spiritualita"
+    ],
     "controversie": [],
     "explore_next": [
       {
         "name": "Consumo vs rituale",
         "url": "/impara/controversie/consumo-quotidiano-vs-rituale/",
         "reason": "correlata"
+      },
+      {
+        "name": "Cerimonia",
+        "url": "/impara/cerimonia/",
+        "reason": "hub tema"
+      },
+      {
+        "name": "Chanoyu",
+        "url": "/glossario/chanoyu/",
+        "reason": "rituale giapponese"
       }
     ]
   },

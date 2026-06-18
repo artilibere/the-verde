@@ -235,7 +235,7 @@ HUBS: dict[str, dict] = {
             ],
         ),
         "lavorazione_qualità",
-        ["qualità-sensoriale-vs-chimica"],
+        ["qualita-sensoriale-vs-chimica"],
         [
             ("Bi Luo Chun", "/varieta/bi-luo-chun/", "spirali primaverili"),
             ("Hojicha", "/varieta/hojicha/", "tostatura"),
@@ -344,7 +344,7 @@ HUBS: dict[str, dict] = {
             ],
         ),
         "degustazione_sensoriale",
-        ["qualità-sensoriale-vs-chimica"],
+        ["qualita-sensoriale-vs-chimica"],
         [
             ("Bi Luo Chun", "/varieta/bi-luo-chun/", "floreale"),
             ("Dragon Well", "/varieta/dragon-well/", "nocciola"),

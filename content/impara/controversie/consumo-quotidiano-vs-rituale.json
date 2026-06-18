@@ -4,7 +4,7 @@
   "slug": "consumo-quotidiano-vs-rituale",
   "meta": {
     "title": "Tè verde: abitudine quotidiana o esperienza speciale?",
-    "description": "Bancha in bottiglia e chanoyu nella stessa cultura: perché non è contraddizione.",
+    "description": "Bancha in bottiglia e chanoyu nella stessa cultura: perché abitudine quotidiana ed esperienza speciale non si escludono.",
     "keywords": [
       "consumo quotidiano vs rituale",
       "tè verde",
@@ -18,13 +18,26 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
+    "temi_kb": [
+      "storia_cultura",
+      "cerimonia_spiritualita"
+    ],
     "controversie": [],
     "explore_next": [
       {
         "name": "Gong fu vs chanoyu",
         "url": "/impara/controversie/cerimonia-cina-vs-giappone/",
         "reason": "correlata"
+      },
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "quotidiano"
+      },
+      {
+        "name": "Cerimonia",
+        "url": "/impara/cerimonia/",
+        "reason": "hub tema"
       }
     ]
   },

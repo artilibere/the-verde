@@ -3,8 +3,8 @@
   "type": "glossary",
   "slug": "hojicha",
   "meta": {
-    "title": "Hojicha",
-    "description": "Tè verde tostato: nocciola, bassa caffeina, sera rassicurante.",
+    "title": "Hojicha — definizione",
+    "description": "L'hojicha è tè verde tostato su carbone o in forno: note di nocciola, bassa caffeina, adatto alla sera e al freddo in Italia.",
     "keywords": [
       "hojicha",
       "tè verde",
@@ -17,7 +17,9 @@
     "og_type": "article"
   },
   "navigation": {
-    "related_slugs": [],
+    "related_slugs": [
+      "hojicha"
+    ],
     "temi_kb": [
       "lavorazione_qualità",
       "caffeina_tannini"
@@ -28,6 +30,16 @@
         "name": "Hojicha",
         "url": "/varieta/hojicha/",
         "reason": "scheda"
+      },
+      {
+        "name": "Dopo cena",
+        "url": "/italia/momenti/dopo-cena/",
+        "reason": "momento"
+      },
+      {
+        "name": "Autunno",
+        "url": "/italia/stagioni/autunno/",
+        "reason": "stagione"
       }
     ]
   },

@@ -3,11 +3,13 @@
   "type": "hub",
   "slug": "dopo-cena",
   "meta": {
-    "title": "Tè verde dopo cena",
-    "description": "Calore leggero senza tenere svegli.",
+    "title": "Tè verde dopo cena — calore leggero",
+    "description": "Dopo cena in Italia: hojicha e bancha per una tazza calda con poca caffeina, senza disturbare il sonno come un caffè.",
     "keywords": [
       "tè verde dopo cena",
-      "tè verde",
+      "hojicha sera",
+      "bancha",
+      "caffeina bassa",
       "Camellia sinensis"
     ],
     "canonical_path": "/italia/momenti/dopo-cena/"
@@ -18,9 +20,35 @@
   },
   "navigation": {
     "related_slugs": [],
-    "temi_kb": [],
-    "controversie": [],
-    "explore_next": []
+    "temi_kb": [
+      "caffeina_tannini",
+      "cucina_usi_pratici"
+    ],
+    "controversie": [
+      "caffeina-stimolazione"
+    ],
+    "explore_next": [
+      {
+        "name": "Hojicha",
+        "url": "/varieta/hojicha/",
+        "reason": "sera"
+      },
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "leggero"
+      },
+      {
+        "name": "Caffeina",
+        "url": "/impara/caffeina/",
+        "reason": "approfondimento"
+      },
+      {
+        "name": "Inverno",
+        "url": "/italia/stagioni/inverno/",
+        "reason": "stagione"
+      }
+    ]
   },
   "taxonomy": {},
   "body": {
@@ -34,7 +62,16 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Calore leggero senza tenere svegli."
+                "value": "Dopo cena molti italiani bevono un caffè ristretto; hojicha e bancha offrono calore e ritualità con meno caffeina e profilo tostato che non acidisce lo stomaco già impegnato."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Evita sencha e gyokuro serali se sei sensibile alla caffeina; preferisci foglie tostate o mature, infusione breve, niente zucchero obbligatorio."
               }
             ]
           }
@@ -46,7 +83,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Varietà Consigliate"
+            "value": "Varietà consigliate"
           }
         ]
       },
@@ -55,7 +92,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Vedi le schede nel catalogo per preparazione e abbinamenti italiani."
+            "value": "Hojicha, bancha e kukicha sono le scelte più prudenti per la sera italiana."
           }
         ]
       }
