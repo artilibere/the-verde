@@ -36,6 +36,7 @@
 
   --tv-content-max-width: 72ch;
   --tv-page-max-width: 1200px;
+  --tv-layout-width-wide: 80vw;
   --tv-spacing-2: 8px;
   --tv-spacing-3: 16px;
   --tv-spacing-4: 24px;
@@ -51,6 +52,14 @@
   --tv-safe-bottom: env(safe-area-inset-bottom, 0px);
   --md-sys-motion-duration-short: 150ms;
   --tv-focus-ring: 0 0 0 2px var(--md-sys-color-surface), 0 0 0 4px var(--md-sys-color-primary);
+}
+
+@media (min-width: 900px) {
+  :root {
+    --tv-page-max-width: var(--tv-layout-width-wide);
+    --tv-feed-max-width: 100%;
+    --tv-content-max-width: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
