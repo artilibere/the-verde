@@ -6,6 +6,9 @@
   "country": "IT",
   "audience_region": "Italia",
   "og_image": "/assets/images/og-default.svg",
+  "analytics": {
+    "gtm_id": "GTM-N2KZQ8CT"
+  },
   "social": {
     "twitter_card": "summary_large_image",
     "theme_color": "#3e5c4e",

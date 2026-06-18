@@ -29,6 +29,7 @@ class TemplateRenderer:
         self._locale = "it-IT"
         self._og_image = ""
         self._social: dict = {}
+        self._gtm_id = ""
 
     def configure_site(
         self,
@@ -39,11 +40,13 @@ class TemplateRenderer:
         social: dict,
         css_url: str,
         js_urls: dict[str, str],
+        gtm_id: str = "",
     ) -> None:
         self._hreflang = hreflang
         self._locale = locale
         self._og_image = og_image
         self._social = social
+        self._gtm_id = gtm_id
         self.css_url = css_url
         self.js_urls = js_urls
 
@@ -52,6 +55,7 @@ class TemplateRenderer:
         ctx.setdefault("nav", self.nav)
         ctx.setdefault("base_url", self.base_url)
         ctx.setdefault("year", date.today().year)
+        ctx.setdefault("gtm_id", self._gtm_id)
 
         builder_proxy = _BuilderProxy(
             site_name=self.site_name,

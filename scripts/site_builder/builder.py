@@ -70,6 +70,7 @@ class SiteBuilder:
         self.social = self.sitemap.get("social", {})
         self.nav = self.sitemap.get("nav", [])
         self.site_name = self.sitemap.get("site_name", "The Verde")
+        self.gtm_id = self.sitemap.get("analytics", {}).get("gtm_id", "")
         self.renderer = TemplateRenderer(templates_dir, self.site_name, self.base_url, self.nav)
         self.varieties: list[dict] = []
         self.glossary: list[dict] = []
@@ -491,6 +492,7 @@ class SiteBuilder:
             social=self.social,
             css_url=self.css_url,
             js_urls=self.js_urls,
+            gtm_id=self.gtm_id,
         )
         config_out = self.out_dir / "assets" / "js" / "config"
         config_out.mkdir(parents=True, exist_ok=True)

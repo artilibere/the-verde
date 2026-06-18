@@ -15,7 +15,7 @@
   "slug": "privacy",
   "meta": {
     "title": "Privacy policy",
-    "description": "Informativa privacy di the-verde.it: dati raccolti, localStorage, Giscus, diritti GDPR e contatti del titolare.",
+    "description": "Informativa privacy di the-verde.it: dati raccolti, localStorage, Giscus, Google Tag Manager, diritti GDPR e contatti del titolare.",
     "keywords": [
       "privacy policy",
       "GDPR",
@@ -431,7 +431,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Al momento non utilizziamo Google Analytics, pixel pubblicitari né strumenti di profilazione. Non è presente un banner cookie per analisi perché non raccogliamo dati statistici tramite terze parti con finalità di misurazione."
+            "value": "Utilizziamo Google Tag Manager (GTM) per misurare in forma aggregata come viene usato il sito. Attraverso GTM possono essere attivati tag di analisi (es. Google Analytics 4), configurati nel container GTM-N2KZQ8CT. In questo caso possono essere trattati, in forma aggregata o pseudonimizzata: pagine visitate, provenienza approssimativa, tipo di dispositivo e browser, durata della sessione ed eventi di interazione (es. scroll, click), se configurati. Base giuridica: legittimo interesse a migliorare contenuti e usabilità del sito (art. 6.1.f GDPR). Non utilizziamo pixel pubblicitari né profilazione per remarketing."
           }
         ]
       },
@@ -450,7 +450,7 @@
         "spans": [
           {
             "type": "text",
-            "value": "Oltre al localStorage descritto sopra, durante la navigazione possono essere impostati cookie tecnici da Cloudflare (es. per sicurezza e anti-bot) e, solo sulla pagina Community, cookie di Giscus/GitHub necessari al servizio di commenti."
+            "value": "Oltre al localStorage descritto sopra, durante la navigazione possono essere impostati cookie tecnici da Cloudflare (es. per sicurezza e anti-bot), cookie di analisi tramite Google Tag Manager / Google Analytics (se attivati nel container) e, solo sulla pagina Community, cookie di Giscus/GitHub necessari al servizio di commenti."
           }
         ]
       },
@@ -463,6 +463,14 @@
               {
                 "type": "text",
                 "value": "Cookie tecnici Cloudflare: necessari all'erogazione sicura del sito; base giuridica: legittimo interesse / necessità tecnica"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cookie Google Tag Manager / Analytics: misurazione aggregata del traffico; base giuridica: legittimo interesse (art. 6.1.f GDPR); puoi bloccarli dal browser"
               }
             ]
           },
@@ -503,6 +511,14 @@
               {
                 "type": "text",
                 "value": "Cloudflare: https://www.cloudflare.com/privacypolicy/"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Google Tag Manager / Analytics: https://policies.google.com/privacy"
               }
             ]
           },
@@ -560,6 +576,14 @@
               {
                 "type": "text",
                 "value": "GitHub e Giscus — commenti Community, se li utilizzi"
+              }
+            ]
+          },
+          {
+            "spans": [
+              {
+                "type": "text",
+                "value": "Google Ireland Limited / Google LLC — Google Tag Manager e servizi di analisi collegati (Responsabile del trattamento)"
               }
             ]
           },
@@ -818,7 +842,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Minimizzazione dei dati raccolti (nessuna analisi di terze parti attiva)"
+                "value": "Misurazione aggregata del traffico tramite Google Tag Manager, senza profilazione pubblicitaria"
               }
             ]
           },
