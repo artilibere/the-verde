@@ -192,4 +192,4 @@ def test_guide_depth(path: Path):
             faq_in_deep.extend(b for b in block.get("blocks", []) if b.get("type") == "faq")
     faq_count = sum(len(b.get("items", [])) for b in faq_blocks + faq_in_deep)
     assert faq_count >= 2, f"{path.name} needs >= 2 FAQ"
-    assert "Fonti" in text, f"{path.name} missing Fonti section"
+    assert "Bibliografia" in text or "Fonti" in text, f"{path.name} missing bibliography section"

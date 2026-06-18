@@ -178,6 +178,8 @@ def _prose_blocks_from_list(blocks: list[dict]) -> list[dict]:
                     "items": block.get("items", []),
                 }
             )
+        elif btype == "bibliography":
+            prose.append({"type": "bibliography", "items": block.get("items", [])})
         elif btype == "callout":
             prose.extend(spans_to_prose_blocks(block.get("spans", [])))
     return prose

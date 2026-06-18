@@ -561,6 +561,45 @@ details.tv-faq summary:focus-visible { outline: none; box-shadow: var(--tv-focus
 }
 .tv-prose__p { margin: 0 0 var(--tv-spacing-2); }
 .tv-prose__link { color: var(--md-sys-color-primary); }
+
+/* Bibliografia — citazioni formali */
+.tv-bibliography {
+  margin-top: var(--tv-spacing-4);
+  padding-top: var(--tv-spacing-3);
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+}
+.tv-bibliography__list {
+  margin: var(--tv-spacing-2) 0 0;
+  padding-left: 1.25rem;
+  list-style: decimal;
+}
+.tv-bibliography__item {
+  margin-bottom: var(--tv-spacing-2);
+  font: var(--md-sys-typescale-body-medium);
+  color: var(--md-sys-color-on-surface-variant);
+  line-height: 1.55;
+}
+.tv-bibliography__work {
+  display: inline;
+  color: var(--md-sys-color-on-surface);
+}
+.tv-bibliography__author {
+  font-weight: 600;
+}
+.tv-bibliography__title {
+  font-style: italic;
+}
+.tv-bibliography__loc {
+  display: inline;
+}
+.tv-bibliography__tema,
+.tv-bibliography__kb {
+  font-family: var(--md-ref-typeface-plain, ui-monospace, monospace);
+  font-size: 0.9em;
+}
+.tv-bibliography__kb {
+  font-size: 0.85em;
+}
 .tv-bottom-nav {
   position: fixed;
   bottom: 0;

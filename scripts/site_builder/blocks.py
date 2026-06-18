@@ -91,6 +91,9 @@ def render_block(block: dict) -> str:
         inner = render_blocks(block.get("blocks", []))
         return f"<h2>{title}</h2>{inner}"
 
+    if btype == "bibliography":
+        return render_bibliography(block.get("items", []))
+
     if btype in ("sensory_profile", "brew_params"):
         return ""
 
@@ -148,6 +151,52 @@ def _render_related(items: list[dict]) -> str:
     return (
         '<h2 id="varieta-simili">Varietà simili</h2>'
         f'<ul class="tv-related__list">{"".join(lis)}</ul>'
+    )
+
+
+def render_bibliography(items: list[dict]) -> str:
+    """Formal bibliography section (author, title, KB tema, pages)."""
+    if not items:
+        return ""
+    entries = []
+    for item in items:
+        author = escape(item.get("author", ""))
+        title = escape(item.get("title", ""))
+        tema = escape(item.get("tema", ""))
+        sotto = escape(item.get("sotto_tema", ""))
+        pages = item.get("pages")
+        kb_ref = item.get("kb_ref")
+
+        work = (
+            f'<span class="tv-bibliography__work">'
+            f'<span class="tv-bibliography__author">{author}</span>, '
+            f'<cite class="tv-bibliography__title">{title}</cite>.</span>'
+        )
+        if kb_ref and not pages:
+            loc = (
+                f'<span class="tv-bibliography__loc">'
+                f'<span class="tv-bibliography__tema">{tema}</span> — '
+                f'«{sotto}» '
+                f'(<code class="tv-bibliography__kb">{escape(kb_ref)}</code>).</span>'
+            )
+        else:
+            page_label = f"pp. {escape(str(pages))}" if pages else ""
+            loc = (
+                f'<span class="tv-bibliography__loc">'
+                f'Tema <span class="tv-bibliography__tema">{tema}</span>, '
+                f'«{sotto}»'
+            )
+            if page_label:
+                loc += f", {page_label}"
+            loc += ".</span>"
+
+        entries.append(f'<li class="tv-bibliography__item">{work} {loc}</li>')
+
+    return (
+        '<section class="tv-bibliography" aria-label="Bibliografia">'
+        '<h2 class="tv-prose__heading tv-prose__heading--2">Bibliografia</h2>'
+        f'<ol class="tv-bibliography__list">{"".join(entries)}</ol>'
+        "</section>"
     )
 
 

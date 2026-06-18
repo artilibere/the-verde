@@ -119,7 +119,20 @@ Quando tocchi salute, chiudi con una di queste formule (non tutte insieme):
 
 - Nel corpo: **nessuna citazione esplicita** del tipo «come scrive Pellegrino» — la voce resta unitaria.
 - Le fonti dalla knowledge base vanno in **nota a piè di pagina** o sezione **Fonti** finale.
-- Formato nota: id libro + pagina quando disponibile (`Pellegrino, p. 142` o `rosen, p. 181`).
+- **Formato obbligatorio** (dettaglio in [bibliografia.md](bibliografia.md)):
+
+```
+{id}, tema `{tema_id}`, «{sotto_tema}», pp. {X–Y}
+```
+
+Esempi:
+- `pellegrino`, tema `pellegrino-tradizioni`, «Chanoyu giapponese», pp. 91–93
+- `hara`, tema `hara-anticancer`, «Trial clinici», p. 113
+- `rosen`, tema `rosen-poesia`, «Terapia in tazza», p. 181
+
+Prima di scrivere Fonti: apri il tema in `libri[].temi[]`, individua `sotto_temi` e `pagine`; per citazioni letterali usa `citazioni[]`.
+
+**Evitare:** `pellegrino, chanoyu` · `rosen, lavorazione` · `hara, salute` (senza tema e pagine).
 
 ## Chiusura
 

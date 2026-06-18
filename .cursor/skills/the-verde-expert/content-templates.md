@@ -6,7 +6,7 @@ Playbook operativo per popolare `content/` secondo voice-guide e knowledge base.
 
 - [ ] JSON valida (`pytest tests/test_schemas.py`)
 - [ ] KB consultata; nessun placeholder «Consulta le schede»
-- [ ] Fonti in `heading` + `list` finale (KB + Treccani se usato)
+- [ ] Fonti in `heading` + `list` finale — formato preciso: id + tema KB + sotto-tema + pp. (vedi [bibliografia.md](bibliografia.md))
 - [ ] `navigation.temi_kb` e `explore_next` popolati
 - [ ] Voce: tu, poetico-evocativo, Per iniziare + Approfondimento
 - [ ] `python scripts/build.py` senza errori
@@ -65,8 +65,8 @@ Percorso: `content/glossario/{slug}.json`
           },
           { "type": "heading", "level": 2, "spans": [{ "type": "text", "value": "Fonti" }] },
           { "type": "list", "ordered": false, "items": [
-            { "spans": [{ "type": "text", "value": "pellegrino, p. 123" }] },
-            { "spans": [{ "type": "text", "value": "Treccani — voce correlata" }] }
+            { "spans": [{ "type": "text", "value": "Pellegrino — Manuale per la preparazione del tè, tema pellegrino-via-del-te «Umami, quinto sapore», p. 67" }] },
+            { "spans": [{ "type": "text", "value": "Treccani — voce «umami»" }] }
           ]}
         ]
       }

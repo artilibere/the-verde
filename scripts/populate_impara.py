@@ -4,9 +4,13 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from site_builder.citations import bib_item, bib_kb_prospettiva, bibliography_block
 IMPARA = ROOT / "content" / "impara"
 CONTRO = IMPARA / "controversie"
 
@@ -48,7 +52,12 @@ def callout_italia(text: str) -> dict:
 
 
 def fonti(items: list[str]) -> list[dict]:
+    """Legacy bullet list — prefer bibliography_block() for new content."""
     return [h2("Fonti"), ul(items)]
+
+
+def fonti_bibliography(items: list[dict]) -> list[dict]:
+    return [bibliography_block(items)]
 
 
 def intro_deep(intro_paras: list[str], deep_blocks: list[dict]) -> list[dict]:
@@ -396,7 +405,14 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti(["hara, temi salute", "rosen, tema rosen-salute", "pellegrino, prevenzione"]),
+                *fonti_bibliography(
+                    [
+                        bib_item("hara", "hara-panoramica", "Efficacia del tè nella salute umana", "71"),
+                        bib_item("hara", "hara-anticancer", "Catechine in prevenzione e terapia del cancro", "102–104"),
+                        bib_item("rosen", "rosen-salute", "Polifenoli, EGCG e antiossidanti", "2714–2838"),
+                        bib_item("pellegrino", "pellegrino-salute", "Oncologia, diabete e dimagrimento", "2938–2964"),
+                    ]
+                ),
             ],
         ),
         "salute_catechine",
@@ -608,7 +624,19 @@ CONTROVERSIES: dict[str, dict] = {
                     ("Quiz miti", "/gioca/quiz/mito-verita/", "verifica"),
                 ]
             ),
-            *fonti(["hara, temi salute", "rosen, tema rosen-salute", "prospettive_contrastanti KB"]),
+            *fonti_bibliography(
+                [
+                    bib_item("hara", "hara-panoramica", "Biodisponibilità dei polifenoli", "89"),
+                    bib_item("hara", "hara-anticancer", "Catechine in prevenzione e terapia del cancro", "102–104"),
+                    bib_item("rosen", "rosen-salute", "Polifenoli, EGCG e antiossidanti", "2714–2838"),
+                    bib_item("onuma", "onuma-storia", "Eisai: «il tè è l'elisir della salute»", "196"),
+                    bib_item("pellegrino", "pellegrino-salute", "Il tè verde va inserito nella prevenzione", "2907–2964"),
+                    bib_kb_prospettiva(
+                        "salute-scienza-vs-tradizione",
+                        "Quanto è dimostrato che il tè verde faccia bene?",
+                    ),
+                ]
+            ),
         ],
         [("Bevanda vs integratore", "/impara/controversie/bevanda-vs-integratore/", "correlata")],
     ),

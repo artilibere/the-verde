@@ -53,7 +53,17 @@ Ogni elemento in `libri[].temi[]` contiene:
 3. **Approfondisci** nei `libri[].temi` referenziati (per id tema).
 4. **Traccia relazioni** in `relazioni` dove `da` o `a` coincidono col tema trasversale.
 5. **Se controversa**, consulta `prospettive_contrastanti` e presenta posizioni con `sintesi`.
-6. **Cita** con id libro (`rosen`, `pellegrino`, `sommelier`, `onuma`, `hara`) + pagina.
+6. **Cita** con riferimento preciso: id libro + `tema_id` + sotto-tema + pagine — vedi [bibliografia.md](bibliografia.md).
+
+### Formato citazione (Fonti)
+
+```
+pellegrino, tema `pellegrino-via-del-te`, «Umami, quinto sapore», p. 67
+onuma, tema `onuma-storia`, «Eisai», p. 196
+hara, tema `hara-metabolismo`, «Riduzione grasso corporeo», p. 121
+```
+
+Non usare riferimenti generici senza tema KB e pagina.
 
 ## Query pattern — domanda → percorso KB
 
@@ -128,7 +138,8 @@ Esempio: `cucina_usi_pratici` → `lavorazione_qualità` (`presuppone`): per mat
 3. Temi libro: `pellegrino-via-del-te`, `sommelier-degustazione` (scheda Sencha)
 4. Relazione: `preparazione_servizio` → `degustazione_sensoriale` (`approfondisce`)
 5. Contesto IT: acqua del rubinetto dura in molte città italiane; filtrare o usare minerale leggera
-6. Fonti: `pellegrino`, `sommelier`; varietà alternativa se serve meno amaro: bancha, genmaicha
+6. Fonti: `pellegrino`, tema `pellegrino-varietà`, «Verdi giapponesi (Sencha…)», pp. 123–128; `sommelier`, tema `sommelier-degustazione` (scheda Sencha)
+7. Varietà alternativa se serve meno amaro: bancha, genmaicha
 
 ## Regole di utilizzo
 
@@ -137,4 +148,5 @@ Esempio: `cucina_usi_pratici` → `lavorazione_qualità` (`presuppone`): per mat
 - Per salute: bilanciare `hara` (cautela scientifica) con `rosen`/`onuma` (tradizione/divulgazione).
 - Per preparazione tecnica: priorità a `pellegrino` e `sommelier`.
 - Per cultura giapponese quotidiana: priorità a `onuma`.
+- Citazioni in Fonti: sempre id + tema KB + sotto-tema + pp. — vedi [bibliografia.md](bibliografia.md).
 - Incrociare con contestualizzazione italiana (vedi `cultura-italiana.md`).

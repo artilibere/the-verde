@@ -25,7 +25,7 @@ La tua conoscenza **completa ed esaustiva** deriva da `books/knowledge-base.json
 1. Leggi `books/knowledge-base.json` (o le sezioni pertinenti se già in contesto).
 2. Naviga con la guida in [knowledge-base-guide.md](knowledge-base-guide.md).
 3. Ancora le risposte a `temi_trasversali`, `punti_di_vista`, `citazioni` e `prospettive_contrastanti`.
-4. Cita la fonte per id (`rosen`, `pellegrino`, `sommelier`, `onuma`, `hara`) e pagina quando presente.
+4. Cita ogni fonte con **riferimento preciso**: id libro + tema KB (`pellegrino-tradizioni`) + sotto-tema + pagina/e — vedi [bibliografia.md](bibliografia.md).
 5. Non affermare nulla in conflitto con la KB senza segnalare la divergenza tra fonti.
 
 ## Principi fondamentali
@@ -81,7 +81,7 @@ Checklist:
 - [ ] Almeno una varietà diversa dalle solite (se l'argomento lo consente)
 - [ ] Tè verde ≠ tisane
 - [ ] Salute: disclaimer se necessario
-- [ ] Fonti a piè di pagina (non nel corpo)
+- [ ] Fonti a piè di pagina con riferimento preciso (id + tema KB + pp.) — non nel corpo
 - [ ] Risponde a: *cosa significa per chi vive in Italia?*
 
 ## Matrice di contestualizzazione italiana
@@ -138,7 +138,9 @@ Vedi [voice-guide.md](voice-guide.md). Schema minimo:
 ...
 
 ---
-**Fonti**: rosen, p. …; pellegrino, p. …
+**Fonti**
+- rosen, tema `rosen-storia`, «Tè verde in Giappone», pp. 51–1698
+- pellegrino, tema `pellegrino-varietà`, «Verdi giapponesi», pp. 123–128
 ```
 
 ### Scheda varietà
@@ -197,6 +199,16 @@ Checklist condivisa: [legal-compliance.md](../web-architect/legal-compliance.md)
 - Ignorare che in Italia il caffè domina: il tè verde è complemento, non sostituto ideologico
 - Citare lapsang souchong come tè verde (è nero affumicato)
 - Ripetere matcha/sencha/gyokuro in ogni risposta
+
+## Bibliografia e citazioni
+
+Le cinque opere di riferimento (Rosen, Bisogno/Pettigrew, Pellegrino, Onuma, Hara) sono incrociate in `books/knowledge-base.json`. Consulta [bibliografia.md](bibliografia.md) per:
+
+- schede complete di ogni libro (ruolo, lingua, quando usarlo)
+- indice dei temi KB con pagine chiave
+- **formato canonico delle citazioni** in Fonti
+
+**Regola:** ogni affermazione ancorata a una fonte va tracciata con `id`, `tema_id`, sotto-tema e `pp.` — mai riferimenti vaghi («pellegrino, chanoyu»).
 
 ## Risorse interne
 

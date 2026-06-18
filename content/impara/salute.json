@@ -196,42 +196,35 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "hara, temi salute"
-                  }
-                ]
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-panoramica",
+                "sotto_tema": "Efficacia del tè nella salute umana",
+                "pages": "71"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, tema rosen-salute"
-                  }
-                ]
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-anticancer",
+                "sotto_tema": "Catechine in prevenzione e terapia del cancro",
+                "pages": "102–104"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, prevenzione"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-salute",
+                "sotto_tema": "Polifenoli, EGCG e antiossidanti",
+                "pages": "2714–2838"
+              },
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-salute",
+                "sotto_tema": "Oncologia, diabete e dimagrimento",
+                "pages": "2938–2964"
               }
             ]
           }
