@@ -106,9 +106,46 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (syncBtn) {
-    syncBtn.addEventListener('click', () => {
-      if (window.TVSupabase?.sync) window.TVSupabase.sync(getEntries());
-      else alert('Sincronizzazione disponibile con account Supabase (fase 3).');
+    syncBtn.addEventListener('click', async () => {
+      const statusEl = document.getElementById('diario-sync-status');
+      const showStatus = (message, isError = false) => {
+        if (!statusEl) return;
+        statusEl.hidden = false;
+        statusEl.textContent = message;
+        statusEl.classList.toggle('tv-diario-sync-status--error', isError);
+      };
+      syncBtn.disabled = true;
+      showStatus('Sincronizzazione in corso…');
+      try {
+        if (!window.TVSupabase?.sync) {
+          showStatus('Sincronizzazione non disponibile.', true);
+          return;
+        }
+        const result = await window.TVSupabase.sync(getEntries());
+        if (result.ok) {
+          const count = result.synced ?? 0;
+          showStatus(
+            count
+              ? `${count} infusioni sincronizzate nel cloud.`
+              : 'Nessuna infusione da sincronizzare.'
+          );
+        } else if (result.reason === 'not_configured') {
+          showStatus('Cloud non configurato. Usa Esporta JSON.', true);
+        } else if (result.reason === 'library_missing') {
+          showStatus('Libreria Supabase non caricata. Ricarica la pagina.', true);
+        } else if (result.reason === 'auth_failed') {
+          showStatus('Accesso anonimo non riuscito. Verifica le impostazioni Supabase.', true);
+        } else if (result.reason === 'anonymous_disabled') {
+          showStatus(
+            'Accesso anonimo disabilitato nel progetto Supabase. Abilitalo da Authentication → Providers → Anonymous Sign-Ins, poi riprova.',
+            true
+          );
+        } else {
+          showStatus(result.message || 'Errore di sincronizzazione.', true);
+        }
+      } finally {
+        syncBtn.disabled = false;
+      }
     });
   }
 

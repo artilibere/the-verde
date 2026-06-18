@@ -28,9 +28,14 @@
 <div class="tv-diario-toolbar">
   <a href="/diario/nuova/" class="tv-btn tv-btn--filled">Nuova infusione</a>
   <button id="diario-export" type="button" class="tv-btn tv-btn--outlined">Esporta JSON</button>
+  <button id="diario-sync" type="button" class="tv-btn tv-btn--outlined">Sincronizza cloud</button>
 </div>
 <p id="diario-stats" class="tv-diario-stats" aria-live="polite"></p>
+<p id="diario-sync-status" class="tv-diario-sync-status" aria-live="polite" hidden></p>
 <div id="diario-list" aria-live="polite"></div>
 {% endif %}
 {% endblock %}
-{% block scripts %}<script src="{{ asset_js('diario-page') }}" defer></script>{% endblock %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+<script src="{{ asset_js('diario-page') }}" defer></script>
+{% endblock %}

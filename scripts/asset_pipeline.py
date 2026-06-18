@@ -11,12 +11,12 @@ CSS_BUNDLE = ("tokens.css", "base.css", "components.css")
 
 # Bundled to cut HTTP requests on hot pages (order preserved).
 JS_PAGE_BUNDLES: dict[str, tuple[str, ...]] = {
-    "diario-page": ("diario", "badges"),
+    "diario-page": ("supabase-config", "diario", "badges"),
     "percorsi": ("badges", "paths"),
 }
 
 # Built only when referenced; omit dead scripts from dist.
-JS_SKIP = frozenset({"season", "supabase-config"})
+JS_SKIP = frozenset({"season"})
 
 
 def short_hash(content: bytes) -> str:
