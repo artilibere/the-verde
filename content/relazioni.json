@@ -4,48 +4,56 @@
       "id": "storia_cultura",
       "nome": "Storia e cultura",
       "url": "/impara/storia-cultura/",
+      "descrizione": "Dalle leggende cinesi al tè verde sulla tavola italiana: come una foglia ha attraversato continenti.",
       "controversie": ["cerimonia-cina-vs-giappone", "consumo-quotidiano-vs-rituale"]
     },
     {
       "id": "lavorazione_qualità",
       "nome": "Lavorazione e qualità",
       "url": "/impara/lavorazione/",
+      "descrizione": "Come una foglia diventa verde: vapore, padella, ombra e la chimica che resta in tazza.",
       "controversie": ["qualita-sensoriale-vs-chimica"]
     },
     {
       "id": "preparazione_servizio",
       "nome": "Preparazione e servizio",
       "url": "/impara/preparazione/",
+      "descrizione": "Temperatura, grammi, secondi: trasformare la foglia in una tazza che mantiene la promessa del titolo.",
       "controversie": ["cerimonia-cina-vs-giappone", "consumo-quotidiano-vs-rituale"]
     },
     {
       "id": "degustazione_sensoriale",
       "nome": "Degustazione sensoriale",
       "url": "/impara/degustazione/",
+      "descrizione": "Occhio, naso, palato: leggere il tè verde come si legge un vino — senza snobismo, con precisione.",
       "controversie": ["qualita-sensoriale-vs-chimica"]
     },
     {
       "id": "salute_catechine",
       "nome": "Salute e catechine",
       "url": "/impara/salute/",
+      "descrizione": "Cosa sappiamo davvero sul tè verde e il benessere — senza detox, senza promesse da integratore.",
       "controversie": ["salute-scienza-vs-tradizione", "bevanda-vs-integratore"]
     },
     {
       "id": "cerimonia_spiritualita",
       "nome": "Cerimonia e spiritualita",
       "url": "/impara/cerimonia/",
+      "descrizione": "Dal gong fu cha al chanoyu: quando il tè diventa rito — e quando basta una pausa consapevole.",
       "controversie": ["cerimonia-cina-vs-giappone", "consumo-quotidiano-vs-rituale"]
     },
     {
       "id": "caffeina_tannini",
       "nome": "Caffeina e tannini",
       "url": "/impara/caffeina/",
+      "descrizione": "Stimola o calma? Dipende dalla foglia, dal tempo in tazza e dall'orologio — caffeina, L-teanina e tannini.",
       "controversie": ["caffeina-stimolazione"]
     },
     {
       "id": "cucina_usi_pratici",
       "nome": "Cucina e usi pratici",
       "url": "/impara/cucina/",
+      "descrizione": "Matcha in pasticceria, hojicha nel dessert: il tè verde esce dalla tazza e entra nella cucina italiana.",
       "controversie": ["bevanda-vs-integratore"]
     }
   ],
