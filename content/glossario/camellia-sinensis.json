@@ -36,6 +36,16 @@
         "name": "Sencha",
         "url": "/varieta/sencha/",
         "reason": "varietà quotidiana"
+      },
+      {
+        "name": "Quiz origine",
+        "url": "/gioca/quiz/china-giappone/",
+        "reason": "geografia del tè"
+      },
+      {
+        "name": "Storia e cultura",
+        "url": "/impara/storia-cultura/",
+        "reason": "radici"
       }
     ]
   },
@@ -120,6 +130,15 @@
             ]
           },
           {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Unica specie del tè vero: verde, nero, oolong, bianco sono lavorazioni diverse della stessa pianta. Camomilla, menta, rooibos non sono tè — distinzione essenziale nel mercato italiano pieno di «tisane verdi»."
+              }
+            ]
+          },
+          {
             "type": "related_links",
             "items": [
               {
@@ -148,6 +167,15 @@
                   {
                     "type": "text",
                     "value": "No: stessa Camellia sinensis. La differenza è nella lavorazione — il verde ferma l'ossidazione presto."
+                  }
+                ]
+              },
+              {
+                "question": "Tè verde decaffeinato è altra pianta?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No: stessa Camellia sinensis, processo di decaffeinazione che altera anche il profilo."
                   }
                 ]
               }

@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "tencha",
+  "meta": {
+    "title": "Tencha — foglia prima del matcha",
+    "description": "Tencha è tè verde giapponese ombreggiato, macinato per il matcha: foglie senza venature, base della cerimonia del tè.",
+    "keywords": [
+      "tencha",
+      "matcha",
+      "tè verde giapponese",
+      "Cerimonia del tè",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/varieta/tencha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "matcha",
+      "gyokuro"
+    ],
+    "temi_kb": [
+      "cerimonia_spiritualita",
+      "lavorazione_qualità"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "polvere in tazza"
+      },
+      {
+        "name": "Chasen",
+        "url": "/glossario/chasen/",
+        "reason": "strumento"
+      },
+      {
+        "name": "Chanoyu",
+        "url": "/glossario/chanoyu/",
+        "reason": "cerimonia"
+      },
+      {
+        "name": "Percorso bancha→matcha",
+        "url": "/gioca/percorsi/dal-bancha-al-matcha/",
+        "reason": "tappa finale"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "tencha",
+    "caffeina": "Alta",
+    "stagione": "Primavera",
+    "cultivar": "Cultivar ombreggiate (base del matcha)",
+    "sort_order": 23,
+    "brew": {
+      "temp": 80,
+      "grams": 2,
+      "seconds": 0,
+      "infusions": "1"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Prima della polvere: il tencha è gyokuro senza arrotolamento — foglie ombreggiate, venature rimosse, destinate al frantoio di pietra che produce il matcha."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Foglie piatte verde scuro (non polvere)",
+        "aroma": "Vegetale intenso, alghe",
+        "gusto": "Umami denso (se infuso raramente)",
+        "retrogusto": "Dolce, persistente"
+      },
+      {
+        "type": "brew_params",
+        "temp": 80,
+        "grams": 2,
+        "seconds": 0,
+        "infusions": "1"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Matcha: chawan, chasen, chashaku",
+          "Conservazione in frigo dopo apertura"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Il tencha si macina in matcha, non si infonde come sencha",
+            "duration": "—"
+          },
+          {
+            "text": "Per matcha: 2 g in 60 ml a 80 °C, frullare con chasen",
+            "duration": "1 min"
+          },
+          {
+            "text": "Conserva sottovuoto in frigo dopo apertura",
+            "duration": "—"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Infondere tencha come sencha in kyusu (non è il suo uso)",
+          "Usare tencha economico per usucha cerimoniale",
+          "Conservare al caldo dopo apertura"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Capire il tencha chiarisce il matcha: non è polvere generica, ma foglia ombreggiata macinata — la stessa filiera del gyokuro verso la cerimonia."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Wagashi",
+          "Pasticceria a bassa grassosità"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Si beve il tencha in infusione?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Raramente: è semilavorato per matcha. Si beve la polvere di tencha macinata."
+              }
+            ]
+          },
+          {
+            "question": "Tencha e matcha?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Il matcha è tencha macinato in frantoio di pietra; qualità e ombreggiatura determinano il grado cerimoniale."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dall'ombra al frantoio"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Prodotto come il gyokuro con ombreggiatura pre-raccolta; venature rimosse, foglie essiccate piatte. Macinato in frantoi di pietra diventa matcha per la cerimonia del tè. Qualità pregiate da piante mature e raccolto primaverile; grade economiche da aracha per cucina."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Matcha (Tencha)",
+                "pages": "127"
+              },
+              {
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Tencha e matcha",
+                "pages": "1163–1165"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Matcha",
+            "url": "/varieta/matcha/",
+            "reason": "prodotto finale"
+          },
+          {
+            "name": "Gyokuro",
+            "url": "/varieta/gyokuro/",
+            "reason": "stessa ombra"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -29,22 +29,22 @@
       {
         "name": "Sencha",
         "url": "/varieta/sencha/",
-        "reason": "quotidiano"
+        "reason": "tazza di tutti i giorni"
       },
       {
         "name": "Bancha",
         "url": "/varieta/bancha/",
-        "reason": "leggero"
+        "reason": "bassa intensità"
       },
       {
         "name": "Pausa",
         "url": "/italia/momenti/pausa/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       },
       {
         "name": "In Italia",
         "url": "/italia/",
-        "reason": "hub"
+        "reason": "contesto italiano"
       }
     ]
   },
@@ -76,21 +76,84 @@
         ]
       },
       {
-        "type": "heading",
-        "level": 2,
-        "spans": [
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
           {
-            "type": "text",
-            "value": "Varietà consigliate"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "spans": [
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Varietà consigliate"
+              }
+            ]
+          },
           {
-            "type": "text",
-            "value": "Sencha, bancha e genmaicha sono le scelte più accessibili; consulta le schede per grammi e secondi precisi."
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sencha, bancha e genmaicha sono le scelte più accessibili al mattino: profili erbacei o tostati che non competono con cornetto e marmellata. Il kukicha — tè di rametti — è ancora più leggero se la caffeina ti preoccupa."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Parametri pratici: 2–3 g per 150 ml, acqua a 70–75 °C, 60–90 secondi. Una tazza grande basta per iniziare la giornata senza il picco dell'espresso."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Genmaicha",
+                "url": "/varieta/genmaicha/",
+                "reason": "riso tostato al mattino"
+              },
+              {
+                "name": "Kukicha",
+                "url": "/varieta/kukicha/",
+                "reason": "leggerissimo"
+              },
+              {
+                "name": "Pausa lavoro",
+                "url": "/italia/momenti/pausa/",
+                "reason": "prossimo momento"
+              },
+              {
+                "name": "Preparazione",
+                "url": "/impara/preparazione/",
+                "reason": "parametri"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Il tè verde sostituisce il cappuccino?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No — e non deve. È un'alternativa per chi cerca meno acidità o vuole variare; il caffè resta il rito italiano per eccellenza."
+                  }
+                ]
+              },
+              {
+                "question": "Posso bere gyokuro a colazione?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Se tolleri la caffeina, sì — ma è un tè d'ombra intenso, meglio riservarlo a chi cerca concentrazione, non a chi vuole solo idratazione leggera."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

@@ -27,12 +27,22 @@
       {
         "name": "Degustazione",
         "url": "/impara/degustazione/",
-        "reason": "hub"
+        "reason": "approfondisci il tema"
       },
       {
         "name": "Abbinamenti Italia",
         "url": "/italia/abbinamenti/",
-        "reason": "gastronomia"
+        "reason": "abbinamenti a tavola"
+      },
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "verde in padella"
+      },
+      {
+        "name": "Rituale quotidiano",
+        "url": "/gioca/percorsi/rituale-quotidiano/",
+        "reason": "continua a Gioca"
       }
     ]
   },
@@ -113,6 +123,31 @@
               {
                 "type": "text",
                 "value": "Tre verdi, tre grammatiche: vapore giapponese al sole, ombra umami, nocciola cinese in padella. Il palato italiano trova ponti senza snaturare le origini."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Sencha",
+                "url": "/varieta/sencha/",
+                "reason": "verde quotidiano"
+              },
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "umami d'ombra"
+              },
+              {
+                "name": "Dragon Well",
+                "url": "/varieta/dragon-well/",
+                "reason": "nocciola cinese"
+              },
+              {
+                "name": "Astringenza",
+                "url": "/glossario/astringenza/",
+                "reason": "lessico"
               }
             ]
           },

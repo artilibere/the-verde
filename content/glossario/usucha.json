@@ -33,12 +33,12 @@
       {
         "name": "Matcha",
         "url": "/varieta/matcha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Chasen",
         "url": "/glossario/chasen/",
-        "reason": "strumento"
+        "reason": "utensile essenziale"
       }
     ]
   },
@@ -79,7 +79,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Usucha collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "L'usucha è il matcha «tè leggero»: più acqua, schiuma fine, corpo arioso. È la forma quotidiana del chanoyu e il punto di partenza per chi impara a usare il chasen senza la densità intimidatoria del koicha."
               }
             ]
           },
@@ -151,6 +151,15 @@
                   {
                     "type": "text",
                     "value": "No: è tradizione cerimoniale, non latte zuccherato."
+                  }
+                ]
+              },
+              {
+                "question": "Usucha e matcha latte?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Niente a che fare: il latte maschera la polvere; l'usucha tradizionale è solo acqua e matcha frullato."
                   }
                 ]
               }

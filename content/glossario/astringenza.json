@@ -32,17 +32,17 @@
       {
         "name": "Catechine",
         "url": "/glossario/catechine/",
-        "reason": "composti"
+        "reason": "chimica in tazza"
       },
       {
         "name": "Degustazione",
         "url": "/impara/degustazione/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       },
       {
         "name": "Sencha",
         "url": "/varieta/sencha/",
-        "reason": "esempio"
+        "reason": "vedi in pratica"
       }
     ]
   },
@@ -83,7 +83,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Un filo di astringenza può dare struttura alla tazza; in eccesso segnala errore di infusione o foglia di bassa qualità."
+                "value": "Sensazione di ruvidità sulla lingua, distinta dall'amaro: arriva dai tannini estratti troppo a lungo o troppo caldi. Un filo può strutturare la tazza; in eccesso segnala errore di preparazione."
               }
             ]
           },
@@ -155,6 +155,15 @@
                   {
                     "type": "text",
                     "value": "Non sempre. È un difetto se domina e nasconde aroma e dolcezza; può essere equilibrio in un verde strutturato."
+                  }
+                ]
+              },
+              {
+                "question": "Astringenza e stomaco vuoto?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "I tannini su mucosa sensibile irritano: meglio bancha o genmaicha a digiuno, non gyokuro scottato."
                   }
                 ]
               }

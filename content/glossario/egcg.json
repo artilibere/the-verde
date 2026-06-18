@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "In laboratorio l'EGCG mostra attività antiossidante marcata; i trial sull'uomo usano spesso estratti standardizzati, non sempre una tazza quotidiana di sencha."
+                "value": "Epigallocatechina gallato: la catechina più studiata in laboratorio. Nel tè verde è abbondante; nel matcha ancora di più perché bevi la foglia intera. Gli integratori concentrano dosi che la tazza quotidiana non raggiunge — dibattito aperto in KB."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "No da solo. Supporta ricerca preventiva; non sostituisce terapie mediche."
+                  }
+                ]
+              },
+              {
+                "question": "Più EGCG = più beneficio?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Non linearmente: eccesso può irritare fegato in integratori; la bevanda modera dose e piacere."
                   }
                 ]
               }

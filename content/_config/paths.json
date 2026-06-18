@@ -207,6 +207,210 @@
           }
         }
       ]
+    },
+    {
+      "slug": "primavera-in-tazza",
+      "title": "Primavera in tazza",
+      "badge": "raccoglitore-primavera",
+      "steps": [
+        {
+          "slug": "shincha",
+          "type": "varieta",
+          "title": "Shincha",
+          "quiz": {
+            "question": "Lo shincha è il sencha del...",
+            "options": ["Primo raccolto primaverile", "Raccolto autunnale", "Foglia tostata"],
+            "correct": 0,
+            "explain": "Shincha significa «nuovo tè»: massima freschezza clorofilica, finestra breve dopo la raccolta."
+          }
+        },
+        {
+          "slug": "bi-luo-chun",
+          "type": "varieta",
+          "title": "Bi Luo Chun",
+          "quiz": {
+            "question": "Il bi luo chun si riconosce per le foglie...",
+            "options": ["A spirale", "Piattate come monete", "A sfera"],
+            "correct": 0,
+            "explain": "Spirali primaverili del Jiangsu: raccolto precoce, profilo floreale delicato."
+          }
+        },
+        {
+          "slug": "snow-bud",
+          "type": "varieta",
+          "title": "Snow Bud",
+          "quiz": {
+            "question": "Lo Snow Bud (Xue Ya) usa spesso la cultivar...",
+            "options": ["Da Bai", "Assamica pura", "Zhucha"],
+            "correct": 0,
+            "explain": "Germogli lanuginosi da cultivar tipica del bianco, lavorati come verde in alta quota Fujian."
+          }
+        },
+        {
+          "slug": "huangshan-maofeng",
+          "type": "varieta",
+          "title": "Huang Shan Mao Feng",
+          "quiz": {
+            "question": "«Mao Feng» indica...",
+            "options": ["Germogli con lanugine", "Foglia tostata", "Perle arrotolate"],
+            "correct": 0,
+            "explain": "Punte pelose dell'Huang Shan: due foglioline e germoglio, profilo floreale e castagna."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "grandi-verdi-cinesi",
+      "title": "Grandi verdi cinesi",
+      "badge": "esploratore-anhui",
+      "steps": [
+        {
+          "slug": "huangshan-maofeng",
+          "type": "varieta",
+          "title": "Huang Shan Mao Feng",
+          "quiz": {
+            "question": "L'Huang Shan Mao Feng proviene principalmente da...",
+            "options": ["Anhui", "Giappone", "Assam"],
+            "correct": 0,
+            "explain": "Montagne Gialle dell'Anhui: nebbia, lanugine, esportazione dal tardo Ottocento."
+          }
+        },
+        {
+          "slug": "tai-ping-hou-kui",
+          "type": "varieta",
+          "title": "Tai Ping Hou Kui",
+          "quiz": {
+            "question": "Il Tai Ping Hou Kui ha foglie...",
+            "options": ["Lunghe, piatte, pressate", "A spirale sottile", "A sfera compatta"],
+            "correct": 0,
+            "explain": "Pressatura distintiva a scacchiera; cultivar Shi-da raccolta a mano in alta quota."
+          }
+        },
+        {
+          "slug": "liu-an-guapian",
+          "type": "varieta",
+          "title": "Lu An Gua Pian",
+          "quiz": {
+            "question": "Il Lu An Gua Pian è insolito perché...",
+            "options": ["Non usa il germoglio", "È un tè nero", "Si beve in polvere"],
+            "correct": 0,
+            "explain": "Foglie mature a forma di seme di melone; lavorazione in wok con scopetta di paglia."
+          }
+        },
+        {
+          "slug": "dragon-well",
+          "type": "varieta",
+          "title": "Dragon Well",
+          "quiz": {
+            "question": "Il Long Jing si fissa tradizionalmente in...",
+            "options": ["Padella wok", "Forno a vapore giapponese", "Cesta di bambù"],
+            "correct": 0,
+            "explain": "Pan-firing nello Zhejiang: foglie piattate, profilo nocciola e fagiolini."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ombra-e-luce",
+      "title": "Ombra e luce",
+      "badge": "equilibrio-ombra",
+      "steps": [
+        {
+          "slug": "sencha",
+          "type": "varieta",
+          "title": "Sencha",
+          "quiz": {
+            "question": "Il sencha cresce...",
+            "options": ["Al sole", "Sempre all'ombra", "Solo in inverno"],
+            "correct": 0,
+            "explain": "Foglia esposta al sole, fissata al vapore: profilo vegetale e marinezza quotidiana."
+          }
+        },
+        {
+          "slug": "kabusecha",
+          "type": "varieta",
+          "title": "Kabusecha",
+          "quiz": {
+            "question": "Il kabusecha si distingue perché...",
+            "options": ["Piante coperte da telo prima del raccolto", "Foglia tostata", "È un blend con riso"],
+            "correct": 0,
+            "explain": "Ombreggiatura breve come il gyokuro, ma resta sencha: più umami del sole pieno."
+          }
+        },
+        {
+          "slug": "gyokuro",
+          "type": "varieta",
+          "title": "Gyokuro",
+          "quiz": {
+            "question": "L'ombra sul gyokuro favorisce soprattutto...",
+            "options": ["L-teanina e umami", "Solo colore scuro", "Zero caffeina"],
+            "correct": 0,
+            "explain": "Meno luce solare: più aminoacidi dolci, meno amaro; acqua tiepida in tazza."
+          }
+        },
+        {
+          "slug": "tencha",
+          "type": "varieta",
+          "title": "Tencha",
+          "quiz": {
+            "question": "Il tencha diventa matcha quando...",
+            "options": ["Viene macinato in frantoio", "Si arrotola ad ago", "Si tosta come hojicha"],
+            "correct": 0,
+            "explain": "Foglie ombreggiate senza arrotolamento: base della polvere cerimoniale."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tre-latitudini",
+      "title": "Tre latitudini",
+      "badge": "cartografo-verde",
+      "steps": [
+        {
+          "slug": "jeoncha",
+          "type": "varieta",
+          "title": "Jeoncha",
+          "quiz": {
+            "question": "Il jeoncha (Korean Green) viene dalla...",
+            "options": ["Corea", "Cina meridionale", "Taiwan"],
+            "correct": 0,
+            "explain": "Raccolto primaverile coreano Gogu–Ipha: vapore, tostatura leggera, corpo vellutato."
+          }
+        },
+        {
+          "slug": "nilgiri-verde",
+          "type": "varieta",
+          "title": "Nilgiri verde",
+          "quiz": {
+            "question": "I Nilgiri («monti azzurri») si trovano in...",
+            "options": ["India meridionale", "Himalaya settentrionale", "Giappone"],
+            "correct": 0,
+            "explain": "Altiplano del Tamil Nadu: verde ortodosso agrumato, distinto dal Darjeeling himalayano."
+          }
+        },
+        {
+          "slug": "darjeeling-verde",
+          "type": "varieta",
+          "title": "Darjeeling verde",
+          "quiz": {
+            "question": "Il Darjeeling verde condivide la regione con il Darjeeling nero ma...",
+            "options": ["Ha profilo diverso", "È identico al nero", "Non è Camellia sinensis"],
+            "correct": 0,
+            "explain": "Stessa montagna, altra lavorazione: mineralità e nebbia, non muscat del first flush nero."
+          }
+        },
+        {
+          "slug": "chun-mee",
+          "type": "varieta",
+          "title": "Chun Mee",
+          "quiz": {
+            "question": "Il Chun Mee è spesso base per...",
+            "options": ["Tè alla menta marocchino", "Matcha cerimoniale", "Cold brew gyokuro"],
+            "correct": 0,
+            "explain": "Foglie a sopracciglio, robuste: export cinese storico, profilo simile al gunpowder."
+          }
+        }
+      ]
     }
   ]
 }

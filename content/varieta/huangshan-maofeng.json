@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "huangshan-maofeng",
+  "meta": {
+    "title": "Huang Shan Mao Feng — lanugine delle Montagne Gialle",
+    "description": "Huang Shan Mao Feng è tè verde dell'Anhui: germogli lanuginosi, profilo floreale e di castagna. Parametri di infusione e abbinamenti.",
+    "keywords": [
+      "huang shan mao feng",
+      "mao feng",
+      "tè verde cinese",
+      "Anhui",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/varieta/huangshan-maofeng/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "bi-luo-chun",
+      "dragon-well",
+      "tai-ping-hou-kui"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "verde in padella"
+      },
+      {
+        "name": "Gaiwan",
+        "url": "/glossario/gaiwan/",
+        "reason": "strumento ideale"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "leggi il profilo"
+      },
+      {
+        "name": "Primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "stagione"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "huangshan-maofeng",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Cultivar dell'Huang Shan, Anhui",
+    "sort_order": 14,
+    "brew": {
+      "temp": 75,
+      "grams": 3,
+      "seconds": 210,
+      "infusions": "3-4"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Lanugine bianca su foglie lunghe e brillanti: lo Huang Shan Mao Feng profuma di fiori e frutta in guscio, con dolcezza discreta in tazza."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Verde brillante, lanugine bianca impalpabile",
+        "aroma": "Floreale, frutta in guscio",
+        "gusto": "Fresco, delicato",
+        "retrogusto": "Leggermente dolce"
+      },
+      {
+        "type": "brew_params",
+        "temp": 75,
+        "grams": 3,
+        "seconds": 210,
+        "infusions": "3-4"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Gaiwan o teiera in porcellana",
+          "Acqua 75–80 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Stile occidentale: 3 g in 150 ml a 75 °C per 3–4 min",
+            "duration": "4 min"
+          },
+          {
+            "text": "Stile orientale: 5 g in 150 ml a 80 °C per 30–40 sec",
+            "duration": "40 sec"
+          },
+          {
+            "text": "Ripeti 3–4 infusioni brevi",
+            "duration": "2 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Acqua troppo calda che appiattisce i fiori",
+          "Troppa foglia in tazza piccola",
+          "Infusione unica troppo lunga in stile orientale"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Tra Anhui e Jiangsu: se ami il bi luo chun, lo Huang Shan Mao Feng è il passo successivo verso note di castagna e nebbia montana — perfetto in pausa pomeridiana primaverile."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Frutta secca e castagne",
+          "Verdure tenere primaverili"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Cosa significa Mao Feng?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Punte pelose: indica germogli ricoperti da sottile lanugine bianca, segno di raccolta precoce."
+              }
+            ]
+          },
+          {
+            "question": "Occidentale o orientale?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Entrambi funzionano: infusione singola più semplile; gaiwan multipla esalta la progressione aromatica."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Montagne Gialle dell'Anhui"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Originario dell'altopiano Huang Shan, esportato dal tardo Ottocento. Raccolta delle due prime foglioline e del germoglio. Foglie verde brillante con lanugine, liquore giallo-verde dal profilo floreale e di castagna. Uno dei verdi cinesi più rinomati al mondo."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Huang Shan Mao Feng",
+                "pages": "114"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Bi Luo Chun",
+            "url": "/varieta/bi-luo-chun/",
+            "reason": "altra primavera cinese"
+          },
+          {
+            "name": "Tai Ping Hou Kui",
+            "url": "/varieta/tai-ping-hou-kui/",
+            "reason": "stesso Anhui"
+          }
+        ]
+      }
+    ]
+  }
+}

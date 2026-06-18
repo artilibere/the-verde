@@ -34,17 +34,17 @@
       {
         "name": "Cold brew",
         "url": "/glossario/cold-brew/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       },
       {
         "name": "Abbinamenti",
         "url": "/italia/abbinamenti/",
-        "reason": "cucina"
+        "reason": "ricette e usi"
       },
       {
         "name": "Estate",
         "url": "/italia/stagioni/estate/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       }
     ]
   },
@@ -76,21 +76,84 @@
         ]
       },
       {
-        "type": "heading",
-        "level": 2,
-        "spans": [
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
           {
-            "type": "text",
-            "value": "Varietà consigliate"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "spans": [
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Varietà consigliate"
+              }
+            ]
+          },
           {
-            "type": "text",
-            "value": "Hojicha, sencha cold brew e genmaicha fredda; prepara in anticipo una brocca in frigorifero per servire direttamente."
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Hojicha freddo, sencha cold brew e genmaicha glacé: prepara una brocca la sera prima e servi direttamente dal frigo. Il profilo tostato dell'hojicha regge olive, taralli e formaggi freschi meglio di un verde erbaceo bollente."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Per un aperitivo più strutturato, prova cold brew di gyokuro con una fetta di limone — umami dolce, zero alcol, lontano dalle bibite gassate zuccherate dell'estate italiana."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Cold brew gyokuro",
+                "url": "/varieta/cold-brew-gyokuro/",
+                "reason": "scheda estiva"
+              },
+              {
+                "name": "Abbinamenti",
+                "url": "/italia/abbinamenti/",
+                "reason": "stuzzichini"
+              },
+              {
+                "name": "Estate",
+                "url": "/italia/stagioni/estate/",
+                "reason": "stagione"
+              },
+              {
+                "name": "Genmaicha",
+                "url": "/varieta/genmaicha/",
+                "reason": "freddo tostato"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Serve zucchero nel cold brew?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Di solito no: l'estrazione fredda esalta dolcezza naturale. Se aggiungi zucchero, stai creando una bibita — non c'è nulla di male, ma non è più «tè puro»."
+                  }
+                ]
+              },
+              {
+                "question": "Hojicha o sencha per l'aperitivo?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Hojicha con stuzzichini salati e tostati; sencha o gyokuro cold brew con crudité e pesce leggero. Due registri, entrambi analcolici."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

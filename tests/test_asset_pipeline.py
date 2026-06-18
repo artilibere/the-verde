@@ -14,7 +14,7 @@ def test_minify_js_strips_line_comments_outside_strings():
 
 
 def test_core_bundle_includes_nav_and_level_toggle():
-    assert JS_PAGE_BUNDLES["core"] == ("nav", "level-toggle")
+    assert JS_PAGE_BUNDLES["core"] == ("nav", "level-toggle", "explore-tracking")
 
 
 def test_article_page_bundle_includes_share():

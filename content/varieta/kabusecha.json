@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "kabusecha",
+  "meta": {
+    "title": "Kabusecha — sencha ombreggiato",
+    "description": "Kabusecha è sencha prodotto coprendo le piante con telo prima del raccolto: più umami del sencha, meno estremo del gyokuro.",
+    "keywords": [
+      "kabusecha",
+      "tè verde giapponese",
+      "ombreggiatura",
+      "Camellia sinensis",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/kabusecha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "sencha",
+      "gyokuro"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "punto di partenza"
+      },
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "passo successivo"
+      },
+      {
+        "name": "Umami",
+        "url": "/glossario/umami/",
+        "reason": "gusto chiave"
+      },
+      {
+        "name": "Percorso bancha→matcha",
+        "url": "/gioca/percorsi/dal-bancha-al-matcha/",
+        "reason": "tappa intermedia"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "kabusecha",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Yabukita (ombreggiatura breve)",
+    "sort_order": 22,
+    "brew": {
+      "temp": 70,
+      "grams": 3,
+      "seconds": 90,
+      "infusions": "2-3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Tra sole e ombra: il kabusecha copre le piante con telo per qualche settimana — più umami del sencha, più accessibile del gyokuro."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Aghi verdi medio-scuri",
+        "aroma": "Vegetale, alghe, dolcezza discreta",
+        "gusto": "Umami moderato, amaro controllato",
+        "retrogusto": "Dolce, persistente"
+      },
+      {
+        "type": "brew_params",
+        "temp": 70,
+        "grams": 3,
+        "seconds": 90,
+        "infusions": "2-3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Kyusu in ceramica",
+          "Acqua 65–75 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "2–3 g in 150 ml a 70–75 °C per 2 min",
+            "duration": "2 min"
+          },
+          {
+            "text": "Dosaggio generoso in kyusu: infusioni brevi",
+            "duration": "1 min"
+          },
+          {
+            "text": "2–3 infusioni con temperatura stabile",
+            "duration": "2 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Prepararlo come sencha al sole (acqua troppo calda)",
+          "Prepararlo come gyokuro puro (dosaggio insufficiente)",
+          "Ignorare l'ombreggiatura breve vs gyokuro lungo"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Ponte pedagogico perfetto: se il gyokuro ti sembra troppo intenso, il kabusecha insegna l'umami senza il prezzo o la difficoltà del «tè delle occasioni speciali»."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Pesce crudo",
+          "Riso in bianco"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Kabusecha e gyokuro?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Entrambi ombreggiati, ma il kabusecha resta sencha: telo per settimane, non settimane di ombra totale come il gyokuro."
+              }
+            ]
+          },
+          {
+            "question": "Perché esiste?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Compromesso tra freschezza vegetale del sencha e dolcezza umami dell'ombra."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Ombra breve"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Versione del sencha prodotta coprendo le piante con telo qualche settimana prima della raccolta, come per il gyokuro ma con ombreggiatura più breve. Più aminoacidi e dolcezza rispetto al sencha al sole; profilo intermedio ideale per avvicinarsi all'umami."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Sencha (Kabusecha)",
+                "pages": "126"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Sencha",
+            "url": "/varieta/sencha/",
+            "reason": "al sole"
+          },
+          {
+            "name": "Gyokuro",
+            "url": "/varieta/gyokuro/",
+            "reason": "ombra lunga"
+          }
+        ]
+      }
+    ]
+  }
+}

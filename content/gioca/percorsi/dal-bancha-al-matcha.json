@@ -27,12 +27,22 @@
       {
         "name": "Quiz sensoriale",
         "url": "/gioca/quiz/che-varieta-sei/",
-        "reason": "profilo"
+        "reason": "scopri il tuo stile"
       },
       {
         "name": "Percorso palato italiano",
         "url": "/gioca/percorsi/palato-italiano/",
-        "reason": "successivo"
+        "reason": "continua il percorso"
+      },
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "inizia dal bancha"
+      },
+      {
+        "name": "Preparazione",
+        "url": "/impara/preparazione/",
+        "reason": "temperatura e tempo"
       }
     ]
   },
@@ -122,6 +132,31 @@
               {
                 "type": "text",
                 "value": "Completa i micro-quiz sotto ogni step per sbloccare il badge. Se sbagli, rileggi la scheda: l'errore è parte del metodo."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Bancha",
+                "url": "/varieta/bancha/",
+                "reason": "tappa 1"
+              },
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "tappa 3"
+              },
+              {
+                "name": "Matcha",
+                "url": "/varieta/matcha/",
+                "reason": "tappa 4"
+              },
+              {
+                "name": "Palato italiano",
+                "url": "/gioca/percorsi/palato-italiano/",
+                "reason": "percorso successivo"
               }
             ]
           },

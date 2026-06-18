@@ -27,12 +27,22 @@
       {
         "name": "Quiz miti",
         "url": "/gioca/quiz/mito-verita/",
-        "reason": "verifica"
+        "reason": "metti alla prova"
       },
       {
         "name": "Salute",
         "url": "/impara/salute/",
-        "reason": "hub"
+        "reason": "approfondisci il tema"
+      },
+      {
+        "name": "Bevanda vs integratore",
+        "url": "/impara/controversie/bevanda-vs-integratore/",
+        "reason": "tema aperto"
+      },
+      {
+        "name": "Rituale quotidiano",
+        "url": "/gioca/percorsi/rituale-quotidiano/",
+        "reason": "continua a Gioca"
       }
     ]
   },
@@ -113,6 +123,31 @@
               {
                 "type": "text",
                 "value": "Tradizione e laboratorio convergono sul potenziale preventivo, divergono su dosi e certezze. Bevi per piacere; eventuali benefici sono un plus, non una promessa."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Salute: scienza vs tradizione",
+                "url": "/impara/controversie/salute-scienza-vs-tradizione/",
+                "reason": "dibattito 1"
+              },
+              {
+                "name": "Bevanda vs integratore",
+                "url": "/impara/controversie/bevanda-vs-integratore/",
+                "reason": "dibattito 2"
+              },
+              {
+                "name": "Caffeina: stimolazione",
+                "url": "/impara/controversie/caffeina-stimolazione/",
+                "reason": "dibattito 3"
+              },
+              {
+                "name": "Catechine",
+                "url": "/glossario/catechine/",
+                "reason": "lessico"
               }
             ]
           },

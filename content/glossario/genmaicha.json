@@ -29,7 +29,7 @@
       {
         "name": "Genmaicha",
         "url": "/varieta/genmaicha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Bancha",
@@ -39,7 +39,7 @@
       {
         "name": "Abbinamenti",
         "url": "/italia/abbinamenti/",
-        "reason": "cucina"
+        "reason": "ricette e usi"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Genmaicha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Bancha o sencha con riso tostato soffiato: profilo di pane caldo e nocciola. Comfort food giapponese che in inverno italiano dialoga con zuppe e castagne — bassa caffeina, gesto semplice."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "No. Modella sapore e corpo; è parte integrante del blend."
+                  }
+                ]
+              },
+              {
+                "question": "Genmaicha fa ingrassare per il riso?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No: le calorie del riso soffiato sono trascurabili; è bevanda, non piatto."
                   }
                 ]
               }

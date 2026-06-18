@@ -44,7 +44,7 @@
       {
         "name": "In Italia",
         "url": "/italia/",
-        "reason": "hub"
+        "reason": "contesto italiano"
       }
     ]
   },
@@ -80,11 +80,136 @@
         "level": "deep",
         "blocks": [
           {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Abbinamenti che funzionano"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il gyokuro umami dialoga con crudo di pesce, carpaccio di branzino e riso in bianco — la stessa logica del vino bianco strutturato con il mare. Il dragon well, più nocciola e morbido, regge verdure saltate e risotti leggeri senza burro."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "L'hojicha tostato incontra cioccolato fondente, cantucci e castagne: note di caramello senza zucchero aggiunto. Il genmaicha, con il riso soffiato, è comfort food giapponese che si avvicina al sapore del pane tostato — naturale dopo zuppe invernali."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Matcha in pasticceria: marron glacé, amaretti di Saronno, agrumi canditi — non solo tiramisù trendy."
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Darjeeling verde con formaggi freschi e insalate di montagna — mineralità che ricorda un bianco alpino."
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Cold brew estivo con olive, taralli e stuzzichini salati — aperitivo analcolico pulito."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa evitare"
+              }
+            ]
+          },
+          {
             "type": "paragraph",
             "spans": [
               {
                 "type": "text",
                 "value": "Onestà anche sulla caffeina: un sencha dopo cena può disturbare il sonno; hojicha e bancha sono scelte più prudenti. Non promettiamo effetti digestivi miracolosi."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sughi molto acidi al pomodoro, formaggi stagionati fortissimi e piatti piccanti schiacciano verdi delicati come bi luo chun o gyokuro. Meglio riservarli a gunpowder o hojicha, più robusti."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "umami e mare"
+              },
+              {
+                "name": "Hojicha",
+                "url": "/varieta/hojicha/",
+                "reason": "tostato e dolci"
+              },
+              {
+                "name": "Aperitivo analcolico",
+                "url": "/italia/momenti/aperitivo/",
+                "reason": "momento"
+              },
+              {
+                "name": "Cucina e usi pratici",
+                "url": "/impara/cucina/",
+                "reason": "oltre la tazza"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Posso abbinare tè verde e formaggio?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Sì, con criterio: formaggi freschi e caprini con darjeeling verde o dragon well; evita pecorino stagionato con gyokuro — l'intensità si scontrano."
+                  }
+                ]
+              },
+              {
+                "question": "Il matcha in cucina vale quello cerimoniale?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Per dolci e impasti va bene un matcha da cucina; per usucha tradizionale serve qualità superiore. Due usi, due budget — entrambi legittimi."
+                  }
+                ]
               }
             ]
           }

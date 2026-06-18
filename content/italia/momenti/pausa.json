@@ -46,7 +46,7 @@
       {
         "name": "Colazione",
         "url": "/italia/momenti/colazione/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       }
     ]
   },
@@ -78,21 +78,84 @@
         ]
       },
       {
-        "type": "heading",
-        "level": 2,
-        "spans": [
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
           {
-            "type": "text",
-            "value": "Varietà consigliate"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "spans": [
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Varietà consigliate"
+              }
+            ]
+          },
           {
-            "type": "text",
-            "value": "Sencha per equilibrio quotidiano, gyokuro se cerchi umami e concentrazione; evita matcha in polvere se non hai frullino a portata di mano."
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sencha per equilibrio quotidiano, gyokuro se cerchi umami e concentrazione profonda, dragon well se preferisci note di nocciola senza l'intensità dell'ombra giapponese."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Evita matcha in polvere in ufficio se non hai frullino: la polvere richiede gesto e tempo. Un kyusu o un infusore in vetro bastano per due grammi e un minuto di attesa — meno di una fila al distributore automatico."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "L-teanina",
+                "url": "/glossario/l-teanina/",
+                "reason": "calma e focus"
+              },
+              {
+                "name": "Caffeina",
+                "url": "/impara/caffeina/",
+                "reason": "quarto caffè vs tè"
+              },
+              {
+                "name": "Aperitivo",
+                "url": "/italia/momenti/aperitivo/",
+                "reason": "fine giornata"
+              },
+              {
+                "name": "Kyusu",
+                "url": "/glossario/kyusu/",
+                "reason": "strumento"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Il tè verde mi fa meno nervoso del caffè?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Per molti sì: L-teanina e caffeina convivono nella foglia e modulano la stimolazione. Non è una regola universale — dipende da sensibilità e dosaggio."
+                  }
+                ]
+              },
+              {
+                "question": "Quante infusioni in pausa?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Un sencha regge 2–3 versate brevi: la seconda è spesso la più dolce. Ottimo pretesto per allungare la pausa senza aprire un'altra bustina."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

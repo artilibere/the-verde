@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "jeoncha",
+  "meta": {
+    "title": "Jeoncha — verde coreano di primavera",
+    "description": "Jeoncha (Korean Green) è tè verde coreano raccolto a mano tra aprile e maggio: aroma vegetale, liquore vellutato. Scheda e preparazione.",
+    "keywords": [
+      "jeoncha",
+      "korean green",
+      "tè verde coreano",
+      "Camellia sinensis",
+      "Corea"
+    ],
+    "canonical_path": "/varieta/jeoncha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "sencha",
+      "gyokuro"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "storia_cultura"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "confronto giapponese"
+      },
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "più ombra e umami"
+      },
+      {
+        "name": "Glossario sencha",
+        "url": "/glossario/sencha/",
+        "reason": "termine collegato"
+      },
+      {
+        "name": "Storia e cultura",
+        "url": "/impara/storia-cultura/",
+        "reason": "contesto orientale"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Corea",
+    "stile": "jeoncha",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Cultivar coreana (raccolto Gogu–Ipha)",
+    "sort_order": 13,
+    "brew": {
+      "temp": 78,
+      "grams": 2.5,
+      "seconds": 150,
+      "infusions": "1"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Piccole foglie tenere, vapore e tostatura leggera: il jeoncha unisce la marinezza giapponese alla morbidezza vellutata di alcuni verdi cinesi."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Verde intenso, leggermente arricciato",
+        "aroma": "Erbaceo, prato fiorito",
+        "gusto": "Rotondo, vellutato",
+        "retrogusto": "Persistente, delicato"
+      },
+      {
+        "type": "brew_params",
+        "temp": 78,
+        "grams": 2.5,
+        "seconds": 150,
+        "infusions": "1"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Kyusu in porcellana o ceramica",
+          "Acqua 75–80 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "2–3 g per 150 ml, acqua a 75–80 °C",
+            "duration": "2 min"
+          },
+          {
+            "text": "Infusione singola 2–3 minuti",
+            "duration": "3 min"
+          },
+          {
+            "text": "Versa tutto il liquore in una volta",
+            "duration": "30 sec"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Acqua bollente (amaro vegetale)",
+          "Infusione troppo lunga",
+          "Confonderlo con sencha giapponese (dosaggio diverso)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "In Corea il jeoncha accompagna riso e pesce: in Italia prova la prima infusione dopo un sushi leggero o un pranzo di mare senza condimenti pesanti."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Pesce crudo e riso",
+          "Verdure al vapore"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Jeoncha e Korean Green sono la stessa cosa?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Sì: jeoncha è il nome coreano; in Occidente spesso compare come Korean Green."
+              }
+            ]
+          },
+          {
+            "question": "Perché ricorda il sencha?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Stabilizzazione al vapore e tostatura leggera avvicinano il profilo ai verdi giapponesi, con corpo più morbido in bocca."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Raccolto primaverile coreano"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Raccolto a mano tra aprile e maggio, nei periodi Gogu e Ipha del calendario lunare. Foglie tenere leggermente arricciate, stabilizzate al vapore e tostate con parsimonia. Liquore giallo dorato, profumo di prato fiorito simile ai sencha primaverili giapponesi, sapore rotondo e vellutato."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Korean Green",
+                "pages": "113"
+              },
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Tè verde coreano (Jeoncha)",
+                "pages": "2698–2727"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Sencha",
+            "url": "/varieta/sencha/",
+            "reason": "verde giapponese affine"
+          },
+          {
+            "name": "Primavera",
+            "url": "/italia/stagioni/primavera/",
+            "reason": "stagione del raccolto"
+          }
+        ]
+      }
+    ]
+  }
+}

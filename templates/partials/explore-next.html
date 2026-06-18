@@ -1,0 +1,20 @@
+<aside class="tv-card tv-card--explore tv-explore-next" data-tv-section="explore-next">
+  <header class="tv-card__header"><h2 class="tv-card__title">Potrebbe interessarti</h2></header>
+  <ul class="tv-explore-next__list tv-scroll-rail">
+    {% for link in meta.explore_next %}
+    <li>
+      {% if link.type in ('varieta', 'tema', 'controversia', 'hub', 'glossario', 'controversy', 'article') %}
+      <span class="tv-explore-next__type">{% if link.type == 'varieta' %}Varietà{% elif link.type == 'tema' %}Tema{% else %}{{ link.type | capitalize }}{% endif %}</span>
+      {% elif link.reason %}
+      <span class="tv-explore-next__reason">{{ link.reason }}</span>
+      {% endif %}
+      <a href="{{ link.url }}"
+         data-tv-track="explore_next"
+         data-tv-track-url="{{ link.url }}"
+         data-tv-track-label="{{ link.title }}"
+         data-tv-track-reason="{{ link.reason | default('') }}"
+         data-tv-track-pos="{{ loop.index }}">{{ link.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>

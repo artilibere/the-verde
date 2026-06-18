@@ -29,7 +29,7 @@
       {
         "name": "Matcha",
         "url": "/varieta/matcha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Tencha",
@@ -39,7 +39,7 @@
       {
         "name": "Chasen",
         "url": "/glossario/chasen/",
-        "reason": "strumento"
+        "reason": "utensile essenziale"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Matcha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Tencha macinato, bevuto intero: catechine concentrate, gesto del chasen, usucha o koicha. In Italia è ingrediente pasticceria e bevanda trendy — due mondi, stessa polvere di origine diversa."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "No. Grado cerimoniale, da cucina e polveri zuccherate per latte sono mondi diversi."
+                  }
+                ]
+              },
+              {
+                "question": "Matcha cerimoniale e da cucina?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Stessa pianta, qualità diverse: il culinary grade colora e profuma; il cerimoniale ha umami e dolcezza superiori in tazza."
                   }
                 ]
               }

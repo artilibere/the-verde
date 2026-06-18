@@ -29,7 +29,7 @@
       {
         "name": "Gong fu cha",
         "url": "/glossario/gong-fu-cha/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       },
       {
         "name": "Yixing",
@@ -39,7 +39,7 @@
       {
         "name": "Lavorazione",
         "url": "/impara/lavorazione/",
-        "reason": "contesto"
+        "reason": "leggi il filo"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Gaiwan collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Coppa con coperchio e sottocoppa: strumento versatile del gong fu cha. Permette di controllare tempo e temperatura guardando la foglia che si apre — perfetto per dragon well, bi luo chun e oolong leggeri."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Un po'; ma è uno degli strumenti più didattici per capire il tè."
+                  }
+                ]
+              },
+              {
+                "question": "Gaiwan solo per esperti?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No: è tra gli strumenti più accessibili; richiede solo attenzione al bordo caldo quando versi."
                   }
                 ]
               }

@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "shincha",
+  "meta": {
+    "title": "Shincha — nuovo tè di primavera",
+    "description": "Shincha è il primo raccolto primaverile giapponese: foglie tenere, massima freschezza clorofilica. Disponibilità stagionale e preparazione.",
+    "keywords": [
+      "shincha",
+      "tè verde giapponese",
+      "primo raccolto",
+      "Camellia sinensis",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/shincha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "sencha",
+      "gyokuro"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "base quotidiana"
+      },
+      {
+        "name": "Primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "calendario"
+      },
+      {
+        "name": "Glossario shincha",
+        "url": "/glossario/shincha/",
+        "reason": "termine"
+      },
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "passo successivo"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "shincha",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Yabukita (primo raccolto primaverile)",
+    "sort_order": 21,
+    "brew": {
+      "temp": 75,
+      "grams": 3,
+      "seconds": 120,
+      "infusions": "2-3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Nuovo tè: lo shincha è il sencha del primo raccolto, più tenue, più scuro, più vivido — una finestra breve che profuma di erba appena tagliata."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Aghi verdi scuri e teneri",
+        "aroma": "Clorofilla, erba di montagna",
+        "gusto": "Fresco, sapido, leggermente amaro",
+        "retrogusto": "Marino, persistente"
+      },
+      {
+        "type": "brew_params",
+        "temp": 75,
+        "grams": 3,
+        "seconds": 120,
+        "infusions": "2-3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Kyusu in porcellana o ceramica",
+          "Acqua 75 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "2–3 g in 150 ml a 75 °C per 2–3 min",
+            "duration": "3 min"
+          },
+          {
+            "text": "Stile kyusu: 10 g in 210 ml a 80 °C per 1 min",
+            "duration": "1 min"
+          },
+          {
+            "text": "2–3 infusioni con acqua nuova",
+            "duration": "2 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Conservarlo oltre la stagione aspettandosi la stessa vivacità",
+          "Acqua bollente",
+          "Confonderlo con sencha tardivo (stesso nome commerciale generico)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "In Giappone lo shincha si beve appena arrivato: in Italia, cercalo tra aprile e giugno — un rituale primaverile paragonabile al primo olio nuovo."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Pesce crudo",
+          "Verdure al vapore"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Shincha e sencha?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Lo shincha è sencha del primo raccolto primaverile — più pregiato e stagionale."
+              }
+            ]
+          },
+          {
+            "question": "Come riconoscerlo?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Foglie più tenere e scure indicano qualità superiore, come suggerisce Pellegrino."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Primo raccolto giapponese"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Shincha significa «nuovo tè»: il sencha più pregiato del primo raccolto primaverile. Stessa lavorazione al vapore e rolling ad ago, ma foglie più tenere e scure. Profumo di clorofilla e erba di montagna; disponibilità limitata dopo la raccolta."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Sencha (Shincha)",
+                "pages": "126"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Sencha",
+            "url": "/varieta/sencha/",
+            "reason": "verde quotidiano"
+          },
+          {
+            "name": "Glossario shincha",
+            "url": "/glossario/shincha/",
+            "reason": "definizione"
+          }
+        ]
+      }
+    ]
+  }
+}

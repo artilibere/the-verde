@@ -37,6 +37,16 @@
         "name": "EGCG",
         "url": "/glossario/egcg/",
         "reason": "composto chiave"
+      },
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "bevi la polvere"
+      },
+      {
+        "name": "Hub salute",
+        "url": "/impara/salute/",
+        "reason": "visione d'insieme"
       }
     ]
   },
@@ -86,7 +96,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Temperatura e tempo di infusione ne modulano l'estrazione: acqua troppo calda può rendere la tazza amara senza necessariamente «fare più bene»."
+                "value": "Famiglia di polifenoli antiossidanti: non solo EGCG. Temperatura e tempo modulano quanto finisce in tazza — acqua bollente estrae più amaro, non necessariamente «più salute» in modo lineare."
               }
             ]
           },
@@ -149,6 +159,15 @@
                   {
                     "type": "text",
                     "value": "Dipende da varietà, freschezza, temperatura e tempo. Il matcha, bevendo la polvere, ne concentra di più rispetto a un infusionato filtrato."
+                  }
+                ]
+              },
+              {
+                "question": "Decaffeinazione perde catechine?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "In parte sì: i processi industriali alterano anche polifenoli e profilo sensoriale."
                   }
                 ]
               }

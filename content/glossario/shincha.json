@@ -29,17 +29,17 @@
       {
         "name": "Sencha",
         "url": "/varieta/sencha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Primavera",
         "url": "/italia/stagioni/primavera/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       },
       {
         "name": "Sencha",
         "url": "/glossario/sencha/",
-        "reason": "termine"
+        "reason": "definizione collegata"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Shincha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Primo raccolto dell'anno giapponese: foglie tenere, alta umami, prezzo premium. In Italia arriva in primavera come evento per appassionati — da consumare entro pochi mesi per freschezza."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Lo shincha è sencha di prima fioritura; stessa lavorazione, foglia più giovane."
+                  }
+                ]
+              },
+              {
+                "question": "Shincha e sencha di primavera?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Lo shincha è il sencha del very first flush — massima vivacità, scorta limitata."
                   }
                 ]
               }

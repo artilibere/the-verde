@@ -36,12 +36,12 @@
       {
         "name": "Degustazione",
         "url": "/impara/degustazione/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       },
       {
         "name": "Gyokuro",
         "url": "/glossario/gyokuro/",
-        "reason": "termine"
+        "reason": "definizione collegata"
       }
     ]
   },
@@ -82,7 +82,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Il termine giapponese umami indica una piacevole sapidità; nel tè verde emerge quando aminoacidi e lavorazione preservano dolcezza e riducono l'amaro grezzo."
+                "value": "Quinto gusto, sapidità rotonda: nel tè emerge soprattutto dopo ombreggiatura e lavorazione che preserva aminoacidi. Ponte naturale per chi in Italia conosce parmigiano e colatura — senza forzare paragoni snobistici."
               }
             ]
           },
@@ -154,6 +154,15 @@
                   {
                     "type": "text",
                     "value": "Il concetto è giapponese; la sensazione compare anche in altri verdi ben fatti, ma è iconica nel gyokuro."
+                  }
+                ]
+              },
+              {
+                "question": "Umami solo nel gyokuro?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Iconico lì, ma compare in matcha e sencha premium; raramente in gunpowder o hojicha tostato."
                   }
                 ]
               }

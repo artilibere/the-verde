@@ -27,24 +27,24 @@
     "controversie": [],
     "explore_next": [
       {
+        "name": "Percorso dal bancha al matcha",
+        "url": "/gioca/percorsi/dal-bancha-al-matcha/",
+        "reason": "percorso guidato"
+      },
+      {
         "name": "Varietà",
         "url": "/varieta/",
-        "reason": "catalogo"
-      },
-      {
-        "name": "Impara",
-        "url": "/impara/",
-        "reason": "guide tematiche"
-      },
-      {
-        "name": "Glossario",
-        "url": "/glossario/",
-        "reason": "termini"
+        "reason": "sfoglia le varietà"
       },
       {
         "name": "In Italia",
         "url": "/italia/",
-        "reason": "contesto locale"
+        "reason": "tè verde in Italia"
+      },
+      {
+        "name": "Quiz che varietà sei",
+        "url": "/gioca/quiz/che-varieta-sei/",
+        "reason": "quiz personalità"
       }
     ]
   },
@@ -85,6 +85,24 @@
           {
             "type": "text",
             "value": "Ogni contenuto distingue tradizioni giapponesi, cinesi e indiane senza fonderle in un generico «tè orientale», e cita le fonti quando il tema è controverso."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Se non sai da dove iniziare, segui un percorso guidato — dal bancha al matcha in quattro tappe, oppure il palato italiano per chi viene dal vino. Poi esplora momenti della giornata (colazione, pausa, aperitivo, dopo cena) e stagioni: ogni pagina ti porta verso varietà, glossario e quiz collegati."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Apri una scheda varietà e scorri fino a «Potrebbe interessarti»: ogni link è scelto per continuare il filo — preparazione, abbinamento, controversia — senza perderti nel catalogo."
           }
         ]
       }

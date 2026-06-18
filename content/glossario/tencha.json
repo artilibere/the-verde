@@ -29,12 +29,12 @@
       {
         "name": "Matcha",
         "url": "/varieta/matcha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Matcha",
         "url": "/glossario/matcha/",
-        "reason": "termine"
+        "reason": "definizione collegata"
       },
       {
         "name": "Lavorazione",
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Tencha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Foglia ombreggiata non arrotolata, destinata alla macinatura: è la materia prima del matcha. Non si infusiona — si macina a pietra o a macchina e si beve sospeso in acqua."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Raramente al dettaglio; è materia prima per matcha."
+                  }
+                ]
+              },
+              {
+                "question": "Tencha e matcha sono la stessa cosa?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Quasi: il matcha è tencha macinato. La tencha intera esiste ma raramente si trova fuori dal Giappone."
                   }
                 ]
               }

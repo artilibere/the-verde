@@ -34,9 +34,19 @@
         "reason": "frusta matcha"
       },
       {
-        "name": "Impara preparazione",
+        "name": "Preparazione",
         "url": "/impara/preparazione/",
-        "reason": "tecnica base"
+        "reason": "parametri infusione"
+      },
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "matcha lento"
+      },
+      {
+        "name": "Gong fu cha",
+        "url": "/glossario/gong-fu-cha/",
+        "reason": "gong fu cha"
       }
     ]
   },
@@ -96,6 +106,15 @@
               {
                 "type": "text",
                 "value": "In Giappone convivono bancha in bottiglia e Chado formale — non c'è contraddizione. Il quotidiano e il sacro attraversano la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia il rituale può essere minimo: scaldare la kyusu, versare tre volte, silenzio di un minuto. Non serve sala tatami — serve interruzione consapevole dalla fretta del telefono. Il percorso «Rituale è quotidiano» collega gong fu, chanoyu e bancha in bottiglia senza gerarchie moralistiche."
               }
             ]
           },

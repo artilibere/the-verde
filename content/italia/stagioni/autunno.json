@@ -38,12 +38,12 @@
       {
         "name": "Inverno",
         "url": "/italia/stagioni/inverno/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       },
       {
         "name": "Abbinamenti",
         "url": "/italia/abbinamenti/",
-        "reason": "cucina"
+        "reason": "ricette e usi"
       }
     ]
   },
@@ -69,6 +69,79 @@
               {
                 "type": "text",
                 "value": "Temperature di infusione leggermente più alte (80–90 °C) esaltano il calore confortante senza l'amarezza del sencha primaverile scottato."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Autunno tostato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Quando tornano zuppe, funghi porcini e castagne arrosto, il verde tostato trova casa: hojicha con note di nocciola, genmaicha con il riso soffiato che ricorda pane caldo, bancha leggero per la sera lunga."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Genmaicha",
+                "url": "/varieta/genmaicha/",
+                "reason": "comfort"
+              },
+              {
+                "name": "Abbinamenti",
+                "url": "/italia/abbinamenti/",
+                "reason": "castagne e dolci"
+              },
+              {
+                "name": "Inverno",
+                "url": "/italia/stagioni/inverno/",
+                "reason": "prossima stagione"
+              },
+              {
+                "name": "Dopo cena",
+                "url": "/italia/momenti/dopo-cena/",
+                "reason": "momento"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Hojicha o genmaicha in autunno?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Hojicha se cerchi tostatura pura; genmaicha se vuoi il contrasto del riso soffiato. Entrambi reggono temperature più alte del sencha primaverile."
+                  }
+                ]
+              },
+              {
+                "question": "Posso abbinarli ai funghi?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Sì: profili terrosi e tostati dialogano con porcini e champignon saltati, meglio che un gyokuro delicato che il fungo schiaccierebbe."
+                  }
+                ]
               }
             ]
           }

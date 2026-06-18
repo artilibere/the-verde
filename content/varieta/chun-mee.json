@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "chun-mee",
+  "meta": {
+    "title": "Chun Mee — sopracciglia preziose",
+    "description": "Chun Mee è tè verde cinese dal gusto deciso: foglie a sopracciglio, profilo erbaceo simile al gunpowder. Preparazione e abbinamenti.",
+    "keywords": [
+      "chun mee",
+      "chun mei",
+      "tè verde cinese",
+      "Camellia sinensis",
+      "export"
+    ],
+    "canonical_path": "/varieta/chun-mee/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "gunpowder",
+      "dragon-well"
+    ],
+    "temi_kb": [
+      "storia_cultura",
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa",
+      "aperitivo"
+    ],
+    "stagioni": [
+      "estate"
+    ],
+    "explore_next": [
+      {
+        "name": "Gunpowder",
+        "url": "/varieta/gunpowder/",
+        "reason": "confronto robusto"
+      },
+      {
+        "name": "Estate",
+        "url": "/italia/stagioni/estate/",
+        "reason": "freddo e menta"
+      },
+      {
+        "name": "Preparazione",
+        "url": "/impara/preparazione/",
+        "reason": "sciacquo foglie"
+      },
+      {
+        "name": "Aperitivo",
+        "url": "/italia/momenti/aperitivo/",
+        "reason": "momento"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "chun-mee",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Cultivar multi-provincia (Chun Mee)",
+    "sort_order": 18,
+    "brew": {
+      "temp": 83,
+      "grams": 2.5,
+      "seconds": 150,
+      "infusions": "1-2"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Foglie arrotolate a sopracciglio, verde intenso: il Chun Mee è popolare, robusto, onesto — il verde cinese che ha attraversato mercati e tè alla menta."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Verde intenso, curve a sopracciglio (~1 cm)",
+        "aroma": "Erbaceo intenso",
+        "gusto": "Forte, simile al gunpowder",
+        "retrogusto": "Persistente, leggermente aspro"
+      },
+      {
+        "type": "brew_params",
+        "temp": 83,
+        "grams": 2.5,
+        "seconds": 150,
+        "infusions": "1-2"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera in ceramica o porcellana",
+          "Acqua 80–85 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Sciacqua le foglie con acqua calda per pochi secondi",
+            "duration": "10 sec"
+          },
+          {
+            "text": "2–3 g in 150 ml a 80–85 °C per 2–3 min",
+            "duration": "3 min"
+          },
+          {
+            "text": "Versa tutto; adatto anche freddo o con menta",
+            "duration": "30 sec"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Saltare lo sciacquo con qualità economiche (asprezza)",
+          "Infusione troppo lunga",
+          "Confonderlo con gunpowder (forma diversa, profilo affine)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Base storica del tè alla menta marocchino: in estate italiana, prova freddo con menta fresca — più pulito del gunpowder se la qualità è buona (gradi alti come 41022)."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Menta e dolce leggero",
+          "Piatti speziati moderati"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Cosa significa Chun Mee?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Preziose sopracciglia: la forma arrotolata ricorda un sopracciglio."
+              }
+            ]
+          },
+          {
+            "question": "Come scegliere la qualità?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "I gradi numerici indicano qualità: evita i più bassi (8147); Moonpalace e simili sono più floreali e puliti."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Export e tè alla menta"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Prodotto in diverse province cinesi, molto popolare all'estero. Foglie arrotolate a sopracciglio; profilo simile al gunpowder ma forma diversa. Qualità scadenti lasciano sensazione di polvere in bocca; le pregiate (41022, Moonpalace) offrono gusto forte e profumo fiorito."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Chun Mee",
+                "pages": "120"
+              },
+              {
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Chunmee",
+                "pages": "875–882"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Gunpowder",
+            "url": "/varieta/gunpowder/",
+            "reason": "verde robusto affine"
+          },
+          {
+            "name": "Storia",
+            "url": "/impara/storia-cultura/",
+            "reason": "commercio del tè"
+          }
+        ]
+      }
+    ]
+  }
+}

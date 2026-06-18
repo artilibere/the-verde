@@ -9,7 +9,7 @@ def test_path_nav_order():
     nav = path_nav("sencha", lambda s: s)
     assert nav is not None
     assert nav["prev"]["slug"] == "bancha"
-    assert nav["next"]["slug"] == "gyokuro"
+    assert nav["next"]["slug"] == "shincha"
 
 
 def test_explore_next_related_varieties():

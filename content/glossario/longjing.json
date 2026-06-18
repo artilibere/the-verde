@@ -29,7 +29,7 @@
       {
         "name": "Dragon Well",
         "url": "/varieta/dragon-well/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Wok",
@@ -124,6 +124,15 @@
             ]
           },
           {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dragon Well, Long Jing: tè piatto di Zhejiang, pan-firing nel wok, nocciola e fagiolino. Uno dei verdi cinesi più riconoscibili — ideale per palati abituati a vini bianchi morbidi."
+              }
+            ]
+          },
+          {
             "type": "related_links",
             "items": [
               {
@@ -152,6 +161,15 @@
                   {
                     "type": "text",
                     "value": "Sì: Long Jing è il nome cinese, Dragon Well la traduzione."
+                  }
+                ]
+              },
+              {
+                "question": "Long Jing autentico?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Il mercato è pieno di imitazioni; provenienza West Lake (Xihu) e prezzo coerente sono segnali utili."
                   }
                 ]
               }

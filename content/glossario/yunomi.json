@@ -33,12 +33,12 @@
       {
         "name": "Degustazione",
         "url": "/impara/degustazione/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       },
       {
         "name": "Sencha",
         "url": "/varieta/sencha/",
-        "reason": "esempio"
+        "reason": "vedi in pratica"
       }
     ]
   },
@@ -79,7 +79,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Yunomi collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Tazza alta senza manico per sencha quotidiano: si tiene con entrambe le mani, si assapora l'aroma prima del sorso. Forme e smalti variano; in casa italiana può convivere con tazze da caffè senza conflitto estetico."
               }
             ]
           },
@@ -151,6 +151,15 @@
                   {
                     "type": "text",
                     "value": "Forme diverse; lo yunomi è per piccole quantità ripetute."
+                  }
+                ]
+              },
+              {
+                "question": "Yunomi e tazza da tè inglese?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "La yunomi è più alta e stretta, pensata per sorbi piccoli e reinfusioni — non per zuccherare o aggiungere latte."
                   }
                 ]
               }

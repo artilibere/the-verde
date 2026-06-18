@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "primavera-in-tazza",
+  "meta": {
+    "title": "Primavera in tazza",
+    "description": "Quattro verdi di primavera: shincha, bi luo chun, snow bud e mao feng. Calendario del raccolto e abbinamenti con la stagione italiana.",
+    "keywords": [
+      "primavera in tazza",
+      "shincha",
+      "tè verde",
+      "percorso",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/gioca/percorsi/primavera-in-tazza/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Calendario di primavera",
+        "url": "/gioca/quiz/calendario-primavera/",
+        "reason": "metti alla prova"
+      },
+      {
+        "name": "Stagione primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "calendario italiano"
+      },
+      {
+        "name": "Shincha",
+        "url": "/varieta/shincha/",
+        "reason": "primo raccolto"
+      },
+      {
+        "name": "Grandi verdi cinesi",
+        "url": "/gioca/percorsi/grandi-verdi-cinesi/",
+        "reason": "percorso successivo"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Primavera non è solo calendario: è lanugine sui germogli, erba appena tagliata, una finestra breve in cui il mercato del tè respira come i mercati di asparagi e fave."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Durata: 35–50 minuti tra lettura e infusioni. Badge: Raccoglitore di primavera."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Capire shincha e raccolto precoce giapponese"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Confrontare spirali cinesi e germogli lanuginosi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Abbinare primavera italiana e verde primaverile"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa hai imparato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il verde di primavera non si conserva come un vino da cantina: shincha, bi luo chun, snow bud e mao feng chiedono attenzione al calendario e temperatura moderata. In Italia, prova la tazza accanto a verdure tenere — non serve imitare un rito giapponese."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Shincha",
+                "url": "/varieta/shincha/",
+                "reason": "tappa 1"
+              },
+              {
+                "name": "Bi Luo Chun",
+                "url": "/varieta/bi-luo-chun/",
+                "reason": "spirali"
+              },
+              {
+                "name": "Snow Bud",
+                "url": "/varieta/snow-bud/",
+                "reason": "germoglio di neve"
+              },
+              {
+                "name": "Huang Shan Mao Feng",
+                "url": "/varieta/huangshan-maofeng/",
+                "reason": "lanugine Anhui"
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Verdi cinesi e giapponesi (Sencha, Shincha…)",
+                "pages": "112–126"
+              },
+              {
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-vincolo",
+                "sotto_tema": "Stagionalità e consumo",
+                "pages": "108–131"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -29,17 +29,17 @@
       {
         "name": "Chanoyu",
         "url": "/glossario/chanoyu/",
-        "reason": "cerimonia"
+        "reason": "rito e gesto"
       },
       {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
-        "reason": "hub"
+        "reason": "approfondisci il tema"
       },
       {
         "name": "Matcha",
         "url": "/varieta/matcha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Roji collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Pietre levigate, lanterne di pietra, muschio umido: il roji è progettato per rallentare il passo prima del chashitsu. In scuole di chanoyu a Milano o Roma si simula spesso con un corridoio silenzioso o un angolo di giardino — l'intenzione conta più della perfezione botanica."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Raramente fedele; puoi creare un angolo di transizione anche su un balcone."
+                  }
+                ]
+              },
+              {
+                "question": "Serve un giardino grande?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No: anche tre metri quadrati con una pianta e un secchio d'acqua possono segnare il passaggio dal quotidiano al rito."
                   }
                 ]
               }

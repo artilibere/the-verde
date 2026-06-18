@@ -27,7 +27,7 @@ def test_build_completes(build_out):
 
 def test_build_page_count(build_out):
     html_files = list(build_out.rglob("index.html"))
-    assert len(html_files) == 95
+    assert len(html_files) == 115
 
 
 def test_varieta_catalog_json(build_out):
@@ -41,7 +41,7 @@ def test_sitemap_and_robots(build_out):
     assert (build_out / "robots.txt").exists()
     assert (build_out / "llms.txt").exists()
     sitemap = (build_out / "sitemap.xml").read_text(encoding="utf-8")
-    assert sitemap.count("<url>") == 91
+    assert sitemap.count("<url>") == 111
     robots = (build_out / "robots.txt").read_text(encoding="utf-8")
     assert "Sitemap:" in robots
     llms = (build_out / "llms.txt").read_text(encoding="utf-8")

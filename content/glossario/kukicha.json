@@ -30,7 +30,7 @@
       {
         "name": "Kukicha",
         "url": "/varieta/kukicha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Bancha",
@@ -81,7 +81,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Kukicha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Tè di rametti e foglioline: leggerissimo, bassa caffeina, profilo dolce. Ideale per bambini giapponesi e per chi in Italia cerca un verde serale senza intensità."
               }
             ]
           },
@@ -153,6 +153,15 @@
                   {
                     "type": "text",
                     "value": "È diverso: meno pregiato nel mercato premium, ma autentico e piacevole."
+                  }
+                ]
+              },
+              {
+                "question": "Kukicha e bancha?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Entrambi leggeri; il kukicha usa parti di stelo, il bancha foglie mature — profili simili, origine diversa."
                   }
                 ]
               }

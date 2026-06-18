@@ -39,7 +39,7 @@
       {
         "name": "Dragon Well",
         "url": "/varieta/dragon-well/",
-        "reason": "esempio"
+        "reason": "vedi in pratica"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Wok (padella) collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Padella di ferro o acciaio per la fixation cinese: la foglia salta a fuoco vivo, si ferma l'ossidazione, nascono note di nocciola e fagiolino tipiche del Long Jing. Il wok è il cuore della lavorazione di molti verdi cinesi, opposto al vapore giapponese."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Né migliore né peggiore: tradizioni e profili diversi."
+                  }
+                ]
+              },
+              {
+                "question": "Il wok lascia sapore di padella?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No se la lavorazione è corretta: il calore breve stabilizza senza bruciare — il profilo tostato è voluto, non difetto."
                   }
                 ]
               }

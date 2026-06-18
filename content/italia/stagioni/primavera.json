@@ -33,17 +33,17 @@
       {
         "name": "Shincha",
         "url": "/glossario/shincha/",
-        "reason": "termine"
+        "reason": "definizione collegata"
       },
       {
         "name": "Estate",
         "url": "/italia/stagioni/estate/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       },
       {
         "name": "Pausa",
         "url": "/italia/momenti/pausa/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       }
     ]
   },
@@ -69,6 +69,79 @@
               {
                 "type": "text",
                 "value": "Infusione a 70–75 °C, tempi brevi: è il momento di apprezzare la freschezza prima che l'estate spinga verso cold brew e tazze fredde."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Primavera in tazza"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Lo shincha e il bi luo chun arrivano in Italia come scoperta stagionale: foglie tenere, profili floreali che dialogano con asparagi, fave e primizie del mercato. Non competono con il caffè del mattino — sono un piacere da weekend o da pausa consapevole."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Bi Luo Chun",
+                "url": "/varieta/bi-luo-chun/",
+                "reason": "primavera cinese"
+              },
+              {
+                "name": "Shincha",
+                "url": "/glossario/shincha/",
+                "reason": "termine"
+              },
+              {
+                "name": "Colazione",
+                "url": "/italia/momenti/colazione/",
+                "reason": "momento"
+              },
+              {
+                "name": "Estate",
+                "url": "/italia/stagioni/estate/",
+                "reason": "prossima stagione"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Lo shincha vale il prezzo extra?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Per chi ama la freschezza del primo raccolto, sì — è un'esperienza limitata nel tempo. Per iniziare, un sencha di qualità costa meno e insegna lo stesso metodo."
+                  }
+                ]
+              },
+              {
+                "question": "Quando passare al cold brew?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Quando le giornate si fanno calde — di solito da maggio in poi in Italia. Fino ad allora, goditi i verdi primaverili caldi a 70 °C."
+                  }
+                ]
               }
             ]
           }

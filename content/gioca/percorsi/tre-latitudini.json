@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "tre-latitudini",
+  "meta": {
+    "title": "Tre latitudini",
+    "description": "Corea, India meridionale e Himalaya: jeoncha, nilgiri verde, darjeeling verde e chun mee. Il mondo del verde oltre Cina e Giappone.",
+    "keywords": [
+      "tre latitudini",
+      "jeoncha",
+      "nilgiri",
+      "percorso",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/gioca/percorsi/tre-latitudini/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "storia_cultura",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Indovina l'origine II",
+        "url": "/gioca/quiz/indovina-origine-ii/",
+        "reason": "quiz collegato"
+      },
+      {
+        "name": "Storia e cultura",
+        "url": "/impara/storia-cultura/",
+        "reason": "contesto coloniale"
+      },
+      {
+        "name": "Nilgiri verde",
+        "url": "/varieta/nilgiri-verde/",
+        "reason": "India meridionale"
+      },
+      {
+        "name": "Primavera in tazza",
+        "url": "/gioca/percorsi/primavera-in-tazza/",
+        "reason": "altro percorso"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Non tutto il verde viene da Hangzhou o Shizuoka. Corea, Tamil Nadu e Himalaya offrono profili diversi — e il chun mee ricorda che l'export ha plasmato tazze per secoli."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Durata: 40 minuti. Badge: Cartografo del verde."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Distinguere jeoncha, nilgiri e darjeeling verde"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Capire il ruolo del chun mee nell'export"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Evitare il generico «tè orientale»"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa hai imparato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tre latitudini, quattro voci: velluto coreano, agrume del Nilgiri, nebbia himalayana, robustezza del chun mee. Per chi in Italia cerca alternative al solito sencha, questa mappa apre scaffali senza tradire la botanica."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Jeoncha",
+                "url": "/varieta/jeoncha/",
+                "reason": "Corea"
+              },
+              {
+                "name": "Nilgiri verde",
+                "url": "/varieta/nilgiri-verde/",
+                "reason": "Sud India"
+              },
+              {
+                "name": "Darjeeling verde",
+                "url": "/varieta/darjeeling-verde/",
+                "reason": "Himalaya"
+              },
+              {
+                "name": "Chun Mee",
+                "url": "/varieta/chun-mee/",
+                "reason": "export"
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Tè verde coreano (Jeoncha)",
+                "pages": "2698–2727"
+              },
+              {
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Tè verde indiano (Nilgiri)",
+                "pages": "2776–2791"
+              },
+              {
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Nilgiri Green",
+                "pages": "1292–1305"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -27,12 +27,22 @@
       {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
-        "reason": "hub"
+        "reason": "approfondisci il tema"
       },
       {
         "name": "Consumo vs rituale",
         "url": "/impara/controversie/consumo-quotidiano-vs-rituale/",
         "reason": "KB"
+      },
+      {
+        "name": "Chanoyu",
+        "url": "/glossario/chanoyu/",
+        "reason": "definizione collegata"
+      },
+      {
+        "name": "Scienza-tradizione",
+        "url": "/gioca/percorsi/scienza-tradizione/",
+        "reason": "continua a Gioca"
       }
     ]
   },
@@ -113,6 +123,31 @@
               {
                 "type": "text",
                 "value": "Il tè è insieme pane quotidiano e occasione straordinaria. Scegli il registro che ti serve oggi — bancha veloce o matcha lento — senza moralismi."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Gong fu cha",
+                "url": "/glossario/gong-fu-cha/",
+                "reason": "via cinese"
+              },
+              {
+                "name": "Chanoyu",
+                "url": "/glossario/chanoyu/",
+                "reason": "via giapponese"
+              },
+              {
+                "name": "Bancha",
+                "url": "/varieta/bancha/",
+                "reason": "quotidiano"
+              },
+              {
+                "name": "Pausa lavoro",
+                "url": "/italia/momenti/pausa/",
+                "reason": "rituale breve"
               }
             ]
           },

@@ -28,12 +28,12 @@
       {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
-        "reason": "hub"
+        "reason": "approfondisci il tema"
       },
       {
         "name": "Matcha",
         "url": "/glossario/matcha/",
-        "reason": "termine"
+        "reason": "definizione collegata"
       },
       {
         "name": "Roji",
@@ -79,7 +79,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Chanoyu collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Codificato da Sen no Rikyū nel XVI secolo, il chanoyu unisce estetica wabi-sabi, architettura dello spazio e preparazione del matcha. Non è spettacolo: è presenza condivisa. In Italia si pratica in scuole dedicate o si attinge al gesto lento senza recitare ogni regola."
               }
             ]
           },
@@ -151,6 +151,15 @@
                   {
                     "type": "text",
                     "value": "La forma completa richiede studio; il gesto consapevole è accessibile a casa."
+                  }
+                ]
+              },
+              {
+                "question": "Chanoyu e cerimonia del tè cinese?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Tradizioni distinte: il chanoyu è giapponese con matcha; il gong fu cha cinese usa foglia intera e gaiwan — non confonderli."
                   }
                 ]
               }

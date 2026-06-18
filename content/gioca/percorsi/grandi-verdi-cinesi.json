@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "grandi-verdi-cinesi",
+  "meta": {
+    "title": "Grandi verdi cinesi",
+    "description": "Anhui e Zhejiang oltre il Long Jing: mao feng, hou kui, gua pian e padella. Quattro tappe tra lanugine, pressatura e wok.",
+    "keywords": [
+      "grandi verdi cinesi",
+      "Anhui",
+      "tè verde",
+      "percorso",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/gioca/percorsi/grandi-verdi-cinesi/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "storia_cultura"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Forma della foglia",
+        "url": "/gioca/quiz/forma-foglia/",
+        "reason": "quiz collegato"
+      },
+      {
+        "name": "Gaiwan",
+        "url": "/glossario/gaiwan/",
+        "reason": "strumento ideale"
+      },
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "tappa finale"
+      },
+      {
+        "name": "Tre latitudini",
+        "url": "/gioca/percorsi/tre-latitudini/",
+        "reason": "altro percorso"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il Long Jing non esaurisce la Cina del verde. Nell'Anhui trovi lanugine e foglie lunghissime; nel Lu An, foglie mature lavorate come semi di melone — ogni forma racconta un gesto in padella."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Durata: 45 minuti. Badge: Esploratore dell'Anhui."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Riconoscere mao feng, hou kui e gua pian"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Capire perché non tutti i pregiati usano il germoglio"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Infusione occidentale vs gaiwan orientale"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa hai imparato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Quattro grammatiche cinesi: lanugine floreale, foglie piatte monumentali, semi di melone senza germoglio, nocciola in padella. Il gaiwan e l'acqua a 75 °C sono i tuoi alleati — l'ebollizione è il nemico comune in cucina italiana."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Huang Shan Mao Feng",
+                "url": "/varieta/huangshan-maofeng/",
+                "reason": "Montagne Gialle"
+              },
+              {
+                "name": "Tai Ping Hou Kui",
+                "url": "/varieta/tai-ping-hou-kui/",
+                "reason": "pressatura"
+              },
+              {
+                "name": "Lu An Gua Pian",
+                "url": "/varieta/liu-an-guapian/",
+                "reason": "senza germoglio"
+              },
+              {
+                "name": "Wok",
+                "url": "/glossario/wok/",
+                "reason": "lavorazione"
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Verdi cinesi (Huang Shan, Tai Ping, Lu An, Long Jing…)",
+                "pages": "114–122"
+              },
+              {
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Lung Ching",
+                "pages": "2708–2720"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

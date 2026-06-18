@@ -143,6 +143,17 @@
     "gunpowder": ["storia_cultura", "preparazione_servizio"],
     "bi-luo-chun": ["lavorazione_qualità", "degustazione_sensoriale"],
     "darjeeling-verde": ["storia_cultura", "degustazione_sensoriale"],
-    "cold-brew-gyokuro": ["preparazione_servizio", "caffeina_tannini"]
+    "cold-brew-gyokuro": ["preparazione_servizio", "caffeina_tannini"],
+    "jeoncha": ["lavorazione_qualità", "storia_cultura"],
+    "huangshan-maofeng": ["lavorazione_qualità", "degustazione_sensoriale"],
+    "tai-ping-hou-kui": ["lavorazione_qualità", "storia_cultura"],
+    "xin-yang-mao-jian": ["lavorazione_qualità", "degustazione_sensoriale"],
+    "snow-bud": ["lavorazione_qualità", "degustazione_sensoriale"],
+    "chun-mee": ["storia_cultura", "preparazione_servizio"],
+    "liu-an-guapian": ["lavorazione_qualità", "cucina_usi_pratici"],
+    "nilgiri-verde": ["storia_cultura", "degustazione_sensoriale"],
+    "shincha": ["lavorazione_qualità", "degustazione_sensoriale"],
+    "kabusecha": ["lavorazione_qualità", "degustazione_sensoriale"],
+    "tencha": ["cerimonia_spiritualita", "lavorazione_qualità"]
   }
 }

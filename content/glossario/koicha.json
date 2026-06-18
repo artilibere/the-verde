@@ -33,12 +33,12 @@
       {
         "name": "Matcha",
         "url": "/varieta/matcha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
-        "reason": "contesto"
+        "reason": "leggi il filo"
       }
     ]
   },
@@ -79,7 +79,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Koicha collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Si prepara con il doppio della polvere dell'usucha e meno acqua: il risultato è una pasta viscosa, quasi oleosa, che si beve in pochi sorsi condivisi. Richiede matcha cerimoniale di altissima qualità — polveri amare o granulose tradiscono il gesto."
               }
             ]
           },
@@ -151,6 +151,15 @@
                   {
                     "type": "text",
                     "value": "Meglio iniziare con usucha; il koicha è esperienza avanzata."
+                  }
+                ]
+              },
+              {
+                "question": "Quanta polvere per il koicha?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Circa 4 g per 40 ml d'acqua tiepida — il doppio dell'usucha, con mescolatura lenta e senza schiuma grossolana."
                   }
                 ]
               }

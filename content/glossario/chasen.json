@@ -29,17 +29,17 @@
       {
         "name": "Matcha",
         "url": "/glossario/matcha/",
-        "reason": "termine"
+        "reason": "definizione collegata"
       },
       {
         "name": "Chawan",
         "url": "/glossario/chawan/",
-        "reason": "strumento"
+        "reason": "utensile essenziale"
       },
       {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
-        "reason": "contesto"
+        "reason": "leggi il filo"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Chasen collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Frusta di bambou con 80–120 renghe: il gesto del chasen incorpora aria e crea la schiuma fine del matcha. Si bagnano le setole prima dell'uso e si asciugano a testa in su — un oggetto fragile ma essenziale per usucha e koicha."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Sconsigliato: il chasen incorpora aria senza graffiare."
+                  }
+                ]
+              },
+              {
+                "question": "Posso usare un frullino elettrico?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Per cucina sì; per matcha tradizionale no — la schiuma del chasen ha texture e temperatura diverse."
                   }
                 ]
               }

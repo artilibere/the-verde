@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "xin-yang-mao-jian",
+  "meta": {
+    "title": "Xin Yang Mao Jian — mao jian dell'Henan",
+    "description": "Xin Yang Mao Jian è tè verde cinese dell'Henan: germogli lanuginosi, freschezza erbacea intensa. Preparazione e profilo in tazza.",
+    "keywords": [
+      "xin yang mao jian",
+      "mao jian",
+      "tè verde cinese",
+      "Henan",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/varieta/xin-yang-mao-jian/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "huangshan-maofeng",
+      "bi-luo-chun"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Huang Shan Mao Feng",
+        "url": "/varieta/huangshan-maofeng/",
+        "reason": "confronto premium"
+      },
+      {
+        "name": "Gaiwan",
+        "url": "/glossario/gaiwan/",
+        "reason": "infusioni brevi"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "metodo"
+      },
+      {
+        "name": "Primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "stagione"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "xin-yang-mao-jian",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Cultivar di Xin Yang, Henan",
+    "sort_order": 16,
+    "brew": {
+      "temp": 70,
+      "grams": 2.5,
+      "seconds": 210,
+      "infusions": "3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Germogli lanuginosi e foglie sottili: lo Xin Yang Mao Jian unisce erbaceità viva a retrogusto rinfrescante — tè da riservare alle occasioni speciali."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Verde scuro, piccole foglie arrotolate",
+        "aroma": "Erbaceo, castagna lessa",
+        "gusto": "Intenso, fresco",
+        "retrogusto": "Persistente, rinfrescante"
+      },
+      {
+        "type": "brew_params",
+        "temp": 70,
+        "grams": 2.5,
+        "seconds": 210,
+        "infusions": "3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera in porcellana o vetro",
+          "Acqua 70–80 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "2–3 g in 150 ml a 70 °C per 3–4 min",
+            "duration": "4 min"
+          },
+          {
+            "text": "Stile orientale: 5 g, 30–40 sec a 70–80 °C",
+            "duration": "40 sec"
+          },
+          {
+            "text": "Fino a 3 infusioni successive",
+            "duration": "2 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Temperatura oltre 80 °C (amaro erbaceo)",
+          "Infusione troppo breve in stile occidentale",
+          "Acquistare qualità scadente senza lanugine visibile"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Non sempre in vetrina nei tea shop italiani: quando lo trovi, trattalo come un grande bianco strutturato — poche tazze, massima attenzione."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Verdure primaverili",
+          "Piatti leggeri non speziati"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Cosa significa Mao Jian?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Punte pelose: prima foglia con germoglio, coperti da lanugine."
+              }
+            ]
+          },
+          {
+            "question": "Perché 70 °C?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Pellegrino suggerisce temperatura più bassa per preservare freschezza erbacea e note floreali."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Henan e raccolta selettiva"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Prodotto nella regione di Xin Yang, provincia di Henan, tra i verdi cinesi più stimati. Gusto soave e freschezza erbacea; raccolta della prima foglia con germoglio. Foglie verde scuro, liquore verde-giallo intenso con retrogusto rinfrescante."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Xin Yang Mao Jian",
+                "pages": "118"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Huang Shan Mao Feng",
+            "url": "/varieta/huangshan-maofeng/",
+            "reason": "altro mao"
+          },
+          {
+            "name": "Bi Luo Chun",
+            "url": "/varieta/bi-luo-chun/",
+            "reason": "primavera delicata"
+          }
+        ]
+      }
+    ]
+  }
+}

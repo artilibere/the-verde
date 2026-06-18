@@ -29,17 +29,17 @@
       {
         "name": "Hojicha",
         "url": "/varieta/hojicha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Dopo cena",
         "url": "/italia/momenti/dopo-cena/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       },
       {
         "name": "Autunno",
         "url": "/italia/stagioni/autunno/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Hojicha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Bancha o kukicha tostata a high heat: colore ambrato, caffeina ridotta, note di caramello. La scelta serale per eccellenza in Italia — dopo cena senza disturbare il sonno come un espresso."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "No. Parte da verde; la tostatura cambia colore e profilo, non la botanica."
+                  }
+                ]
+              },
+              {
+                "question": "Hojicha è tè nero?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No: resta verde non ossidato, solo tostato — Camellia sinensis, non tisana."
                   }
                 ]
               }

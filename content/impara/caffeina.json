@@ -30,12 +30,22 @@
       {
         "name": "Bancha",
         "url": "/varieta/bancha/",
-        "reason": "bassa caffeina"
+        "reason": "sera senza nervi"
       },
       {
         "name": "Matcha",
         "url": "/varieta/matcha/",
-        "reason": "alta caffeina"
+        "reason": "focus intenso"
+      },
+      {
+        "name": "Controversia stimolazione",
+        "url": "/impara/controversie/caffeina-stimolazione/",
+        "reason": "leggi le posizioni"
+      },
+      {
+        "name": "Dopo cena",
+        "url": "/italia/momenti/dopo-cena/",
+        "reason": "momento giusto"
       }
     ]
   },
@@ -133,6 +143,15 @@
                     "value": "Infusione lunga = più caffeina (e più amaro)"
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In ufficio italiano la pausa delle 16 è territorio del caffè: un sencha o un gyokuro offrono focus diverso — meno picco, più plateau. Per la sera, hojicha e kukicha sono la scelta prudente; il matcha dopo cena resta per chi tolera bene la caffeina."
               }
             ]
           },

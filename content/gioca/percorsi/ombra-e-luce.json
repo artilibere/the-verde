@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "ombra-e-luce",
+  "meta": {
+    "title": "Ombra e luce",
+    "description": "Dal sencha al sole al tencha ombreggiato: quattro tappe sulla scala giapponese di luce, umami e matcha.",
+    "keywords": [
+      "ombra e luce",
+      "kabusecha",
+      "tencha",
+      "percorso",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/gioca/percorsi/ombra-e-luce/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "cerimonia_spiritualita"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Quale temperatura?",
+        "url": "/gioca/quiz/quale-temperatura/",
+        "reason": "verifica parametri"
+      },
+      {
+        "name": "Umami",
+        "url": "/glossario/umami/",
+        "reason": "gusto chiave"
+      },
+      {
+        "name": "Dal bancha al matcha",
+        "url": "/gioca/percorsi/dal-bancha-al-matcha/",
+        "reason": "percorso complementare"
+      },
+      {
+        "name": "Kabusecha",
+        "url": "/varieta/kabusecha/",
+        "reason": "ponte ombra"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Stessa pianta, quantità di luce diversa: il sencha al sole è erba tagliata; il gyokuro all'ombra è brodo setoso; tra i due, il kabusecha impara a dividere il cielo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Durata: 40 minuti. Badge: Equilibrio ombra."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Scala sole → ombra breve → ombra lunga"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Collegare tencha e matcha nella stessa filiera"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Adattare temperatura e dosaggio a ogni tappa"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa hai imparato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "L'ombreggiatura non è snobismo: modifica chimica e gusto. Il kabusecha è il ponte didattico perfetto; il tencha spiega il matcha senza confonderlo con polvere da supermercato. In Italia, prova la progressione in una sola settimana — quattro tazze, quattro registri."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Sencha",
+                "url": "/varieta/sencha/",
+                "reason": "sole"
+              },
+              {
+                "name": "Kabusecha",
+                "url": "/varieta/kabusecha/",
+                "reason": "ombra breve"
+              },
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "ombra lunga"
+              },
+              {
+                "name": "Tencha",
+                "url": "/varieta/tencha/",
+                "reason": "prima del matcha"
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Sencha, Kabusecha, Gyokuro, Matcha (Tencha)",
+                "pages": "126–128"
+              },
+              {
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Lavorazione Gyokuro e Matcha",
+                "pages": "1585–1592"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

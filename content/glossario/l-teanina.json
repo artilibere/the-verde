@@ -81,7 +81,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Si accumula nelle foglie ombreggiate — gyokuro, tencha per matcha — perché la pianta, al buio, produce più aminoacidi e meno catechine amare."
+                "value": "Aminoacido che modula la caffeina: vigilanza più stabile, meno picco nervoso. Abonda nei verdi ombreggiati (gyokuro, matcha). Spiega perché molti italiani abituati all'espresso trovano il tè «più dolce» sulla stimolazione."
               }
             ]
           },
@@ -153,6 +153,15 @@
                   {
                     "type": "text",
                     "value": "No. La modula: meno picco nervoso, effetto più prolungato e dolce."
+                  }
+                ]
+              },
+              {
+                "question": "L-teanina come integratore?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Esiste in capsule; nel tè convive con centinaia di composti — effetto diverso dal mono-ingrediente."
                   }
                 ]
               }

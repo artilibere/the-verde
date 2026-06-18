@@ -31,7 +31,7 @@
       {
         "name": "Sencha",
         "url": "/glossario/sencha/",
-        "reason": "termine"
+        "reason": "definizione collegata"
       },
       {
         "name": "Lavorazione",
@@ -82,7 +82,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Dopo il vapore seguono rolling e essiccazione: la foglia si arrotola, si asciuga, si stabilizza. Ogni fase modula umami, amaro e persistenza."
+                "value": "Lo steaming giapponese fissa la foglia in 15–30 secondi preservando clorofilla e note marine. Sencha, gyokuro e bancha condividono questo metodo; la differenza nasce poi da ombra, raccolto e arrotolatura."
               }
             ]
           },
@@ -154,6 +154,15 @@
                   {
                     "type": "text",
                     "value": "No. Molti verdi cinesi usano padella; il vapore è dominante in Giappone."
+                  }
+                ]
+              },
+              {
+                "question": "Vapore o padella: quale è «migliore»?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Nessuno vince: sono due estetiche. Il vapore esalta verde intenso; la padella cinese privilegia nocciola e morbidezza."
                   }
                 ]
               }

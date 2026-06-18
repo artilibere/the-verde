@@ -29,12 +29,12 @@
       {
         "name": "Sencha",
         "url": "/varieta/sencha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Preparazione",
         "url": "/impara/preparazione/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       },
       {
         "name": "Yunomi",
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Kyusu collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Teiera giapponese con manico laterale e filtro integrato: pensata per sencha quotidiano e reinfusioni brevi. Il terracotta poroso esiste ma la ceramica smaltata è la scelta più pratica per chi alterna varietà."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Principalmente sì; dedicare una teiera a un tipo di tè."
+                  }
+                ]
+              },
+              {
+                "question": "Kyusu o tazza con infusore?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "L'infusore va bene; il kyusu distribuisce meglio la foglia e rende omaggio al gesto giapponese quotidiano."
                   }
                 ]
               }

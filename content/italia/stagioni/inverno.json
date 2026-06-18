@@ -29,22 +29,22 @@
       {
         "name": "Hojicha",
         "url": "/varieta/hojicha/",
-        "reason": "sera"
+        "reason": "dopo cena leggero"
       },
       {
         "name": "Bancha",
         "url": "/varieta/bancha/",
-        "reason": "leggero"
+        "reason": "bassa intensità"
       },
       {
         "name": "Dopo cena",
         "url": "/italia/momenti/dopo-cena/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       },
       {
         "name": "Primavera",
         "url": "/italia/stagioni/primavera/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       }
     ]
   },
@@ -70,6 +70,79 @@
               {
                 "type": "text",
                 "value": "Acqua a 85–90 °C, infusioni brevi ripetute: il verde tostato regge meglio temperature alte rispetto al gyokuro d'ombra."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Inverno in tazza grande"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tazze grandi, mani calde, profili tostati: hojicha e genmaicha sono il complemento invernale al caffè serale, non il suo nemico. Il bancha dalla foglia matura offre idratazione leggera durante le giornate corte."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Genmaicha",
+                "url": "/varieta/genmaicha/",
+                "reason": "comfort"
+              },
+              {
+                "name": "Dopo cena",
+                "url": "/italia/momenti/dopo-cena/",
+                "reason": "momento"
+              },
+              {
+                "name": "Primavera",
+                "url": "/italia/stagioni/primavera/",
+                "reason": "prossima stagione"
+              },
+              {
+                "name": "Kukicha",
+                "url": "/varieta/kukicha/",
+                "reason": "leggerissimo"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Tè verde o tisana in inverno?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Camellia sinensis e tisane sono mondi diversi. Se cerchi caffeina modulata e profilo tostato, hojicha e genmaicha; se zero caffeina, la camomilla è un'altra storia."
+                  }
+                ]
+              },
+              {
+                "question": "Quante infusioni da una tazza grande?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Bancha e hojicha reggono 2–3 versate con acqua calda: allunga il rito senza aprire un nuovo sacchetto."
+                  }
+                ]
               }
             ]
           }

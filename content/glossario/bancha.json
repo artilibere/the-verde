@@ -29,17 +29,17 @@
       {
         "name": "Bancha",
         "url": "/varieta/bancha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Sencha",
         "url": "/glossario/sencha/",
-        "reason": "confronto"
+        "reason": "confronta i profili"
       },
       {
         "name": "Dopo cena",
         "url": "/italia/momenti/dopo-cena/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Bancha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Foglie mature raccolte dopo il sencha principale: quotidiano giapponese, basso costo, bassa caffeina. Perfetto per chi in Italia inizia dal verde senza investire in gyokuro."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "No. È una categoria voluta, con storia e uso quotidiano in Giappone."
+                  }
+                ]
+              },
+              {
+                "question": "Bancha è tè scadente?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No: è scelta di lavorazione e stagione — meno pregiato del sencha prima qualità, ma legittimo e delizioso."
                   }
                 ]
               }

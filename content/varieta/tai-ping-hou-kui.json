@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "tai-ping-hou-kui",
+  "meta": {
+    "title": "Tai Ping Hou Kui — foglie piatte di Anhui",
+    "description": "Tai Ping Hou Kui è tè verde raro dell'Anhui: foglie pressate lunghe, profilo floreale di orchidea. Scheda sensoriale e preparazione.",
+    "keywords": [
+      "tai ping hou kui",
+      "hou kui",
+      "tè verde cinese",
+      "Anhui",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/varieta/tai-ping-hou-kui/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "huangshan-maofeng",
+      "bi-luo-chun"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "storia_cultura"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Huang Shan Mao Feng",
+        "url": "/varieta/huangshan-maofeng/",
+        "reason": "confronto Anhui"
+      },
+      {
+        "name": "Gaiwan",
+        "url": "/glossario/gaiwan/",
+        "reason": "infusioni multiple"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "scheda sensoriale"
+      },
+      {
+        "name": "Primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "stagione"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "tai-ping-hou-kui",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Shi-da (Anhui, alta quota)",
+    "sort_order": 15,
+    "brew": {
+      "temp": 75,
+      "grams": 3,
+      "seconds": 240,
+      "infusions": "3-4"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Foglie lunghissime, piatte, con impronta a scacchiera: il Tai Ping Hou Kui è raro, elegante, profumo di orchidea su liquore verde chiaro."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Verde pallido, foglie tese e appiattite",
+        "aroma": "Floreale, orchidea",
+        "gusto": "Delicato, fresco",
+        "retrogusto": "Pulito, persistente"
+      },
+      {
+        "type": "brew_params",
+        "temp": 75,
+        "grams": 3,
+        "seconds": 240,
+        "infusions": "3-4"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera o gaiwan in porcellana o vetro",
+          "Acqua 75 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "3 g in 150 ml a 75 °C per 4 minuti (stile occidentale)",
+            "duration": "4 min"
+          },
+          {
+            "text": "Oppure 5 g in 150 ml, 30–40 sec (stile orientale)",
+            "duration": "40 sec"
+          },
+          {
+            "text": "3–4 infusioni successive brevi",
+            "duration": "2 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Spezzare le foglie lunghe (perdi la presentazione)",
+          "Acqua bollente",
+          "Dosaggio eccessivo per un tè così delicato"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Per le grandi occasioni — Pellegrino lo suggerisce al mattino o nel pomeriggio. In Italia, un Hou Kui merita una tazza senza distrazioni, come un grande vino bianco strutturato."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Piatti di pesce leggeri",
+          "Verdure al vapore"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Perché «Hou Kui»?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Leggenda del «primo tè delle scimmie»: hou significa scimmia, kui il primo — per l'area inaccessibile di raccolta."
+              }
+            ]
+          },
+          {
+            "question": "Perché le venature rossastre?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Effetto della pressatura in lavorazione; in infusione è normale e distintivo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cultivar Shi-da in alta quota"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Coltivato ad alta altitudine nella contea di Tai Ping, Anhui. Si raccolgono a mano solo le due foglie apicali con germoglio, con alto scarto in lavorazione. Foglie pressate assumono forma inconfondibile; liquore verde chiaro, profumo floreale di orchidea."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Tai Ping Hou Kui",
+                "pages": "115"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Huang Shan Mao Feng",
+            "url": "/varieta/huangshan-maofeng/",
+            "reason": "stesso Anhui"
+          },
+          {
+            "name": "Bi Luo Chun",
+            "url": "/varieta/bi-luo-chun/",
+            "reason": "primavera cinese"
+          }
+        ]
+      }
+    ]
+  }
+}

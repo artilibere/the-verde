@@ -33,9 +33,19 @@
         "reason": "tostato in dessert"
       },
       {
-        "name": "Italia abbinamenti",
+        "name": "Abbinamenti Italia",
         "url": "/italia/abbinamenti/",
-        "reason": "gastronomia"
+        "reason": "abbinamenti a tavola"
+      },
+      {
+        "name": "Matcha in Italia",
+        "url": "/guide/matcha-italia/",
+        "reason": "tè verde in Italia"
+      },
+      {
+        "name": "Bevanda vs integratore",
+        "url": "/impara/controversie/bevanda-vs-integratore/",
+        "reason": "matcha fuori tazza"
       }
     ]
   },
@@ -105,6 +115,15 @@
               {
                 "type": "text",
                 "value": "Il matcha latte verde dei bar non è riferimento gastronomico: zucchero e latte mascherano polveri mediocri. Per cucinare, compra matcha da pasticceria di provenienza chiara."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Genmaicha in tempura di verdure, matcha in panna cotta, hojicha in gelato: il verde esce dalla tazza quando la polvere è fresca e dosata con parsimonia. In pasticceria italiana il matcha funziona con marron glacé e agrumi canditi meglio che con panna montata zuccherata."
               }
             ]
           },

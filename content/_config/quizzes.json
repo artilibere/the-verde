@@ -88,6 +88,86 @@
         {"q": "Colazione leggera alternativa...", "options": ["Genmaicha", "Gyokuro"], "correct": 0, "explain": "Genmaicha comfort, bassa caffeina. Gyokuro è degustazione, non colazione rapida.", "url": "/varieta/genmaicha/"},
         {"q": "Sport leggero pomeridiano...", "options": ["Gyokuro", "Darjeeling verde"], "correct": 0, "explain": "Onuma suggerisce gyokuro prima dello sport; la scelta dipende dalla tolleranza alla caffeina.", "url": "/impara/controversie/caffeina-stimolazione/"}
       ]
+    },
+    {
+      "slug": "quale-temperatura",
+      "title": "Quale temperatura?",
+      "description": "Associa ogni verde alla sua acqua ideale: l'errore più comune in Italia è l'ebollizione indiscriminata.",
+      "badge": "quiz-temperatura",
+      "questions": [
+        {"q": "Gyokuro", "options": ["50–60 °C", "85 °C", "100 °C"], "correct": 0, "explain": "Ombreggiato e denso: acqua tiepida ed estrazione breve per umami senza astringenza.", "url": "/varieta/gyokuro/"},
+        {"q": "Bi Luo Chun", "options": ["75 °C", "95 °C", "50 °C"], "correct": 0, "explain": "Primavera delicata: calore moderato preserva fiori e frutta bianca.", "url": "/varieta/bi-luo-chun/"},
+        {"q": "Gunpowder", "options": ["80–85 °C", "60 °C", "100 °C"], "correct": 0, "explain": "Perle compatte tollerano più calore del sencha premium; sciacquo utile se aspro.", "url": "/varieta/gunpowder/"},
+        {"q": "Nilgiri verde", "options": ["70–75 °C", "90 °C", "50 °C"], "correct": 0, "explain": "Sommelier: verde indiano ortodosso con note agrumate — non trattarlo come Assam nero.", "url": "/varieta/nilgiri-verde/"},
+        {"q": "Hojicha", "options": ["80–90 °C", "50 °C", "100 °C a lungo"], "correct": 0, "explain": "Foglia tostata: più indulgente, ma eccesso di tempo può accentuare amarezza tostata.", "url": "/varieta/hojicha/"},
+        {"q": "Matcha (frullato)", "options": ["80 °C", "100 °C", "40 °C"], "correct": 0, "explain": "Pellegrino: 2 g in 60 ml a 80 °C con chasen — polvere intera, non infusionato.", "url": "/varieta/matcha/"},
+        {"q": "Chun Mee", "options": ["80–85 °C", "65 °C", "100 °C"], "correct": 0, "explain": "Verde robusto da export: come gunpowder, regge calore moderamente alto.", "url": "/varieta/chun-mee/"},
+        {"q": "Shincha", "options": ["75 °C", "90 °C", "55 °C"], "correct": 0, "explain": "Primo raccolto tenace ma delicato: stessa logica del sencha, massima attenzione al calore.", "url": "/varieta/shincha/"}
+      ]
+    },
+    {
+      "slug": "indovina-origine-ii",
+      "title": "Indovina l'origine II",
+      "description": "Undici nuove schede, quattro continenti: riconosci Corea, Anhui, Nilgiri e Henan senza confondere tutto in «tè orientale».",
+      "badge": "quiz-origine-ii",
+      "questions": [
+        {"q": "Jeoncha", "options": ["Corea", "Cina", "Giappone"], "correct": 0, "explain": "Korean Green: raccolto primaverile coreano tra Gogu e Ipha.", "url": "/varieta/jeoncha/"},
+        {"q": "Tai Ping Hou Kui", "options": ["Anhui, Cina", "Uji, Giappone", "Darjeeling, India"], "correct": 0, "explain": "Contea di Tai Ping, cultivar Shi-da, foglie pressate iconiche.", "url": "/varieta/tai-ping-hou-kui/"},
+        {"q": "Nilgiri verde", "options": ["India meridionale", "Nepal", "Vietnam"], "correct": 0, "explain": "Monti azzurri del Tamil Nadu: seconda regione produttrice indiana.", "url": "/varieta/nilgiri-verde/"},
+        {"q": "Kabusecha", "options": ["Giappone", "Cina", "Corea"], "correct": 0, "explain": "Sencha ombreggiato brevemente: ponte tra sole e gyokuro.", "url": "/varieta/kabusecha/"},
+        {"q": "Xin Yang Mao Jian", "options": ["Henan, Cina", "Jiangsu, Cina", "Kyushu, Giappone"], "correct": 0, "explain": "Mao Jian dell'Henan: germogli lanuginosi, freschezza erbacea intensa.", "url": "/varieta/xin-yang-mao-jian/"},
+        {"q": "Snow Bud (Xue Ya)", "options": ["Fujian, Cina", "Zhejiang, Cina", "Formosa"], "correct": 0, "explain": "Oltre i 1000 m nel Fujian, cultivar Da Bai lavorata come verde.", "url": "/varieta/snow-bud/"},
+        {"q": "Lu An Gua Pian", "options": ["Anhui, Cina", "Yunnan, Cina", "Giappone"], "correct": 0, "explain": "Contea di Lu An: foglie mature a seme di melone, wok artigianale.", "url": "/varieta/liu-an-guapian/"},
+        {"q": "Tencha", "options": ["Giappone", "Cina", "India"], "correct": 0, "explain": "Base ombreggiata del matcha: macinata in frantoio di pietra.", "url": "/varieta/tencha/"}
+      ]
+    },
+    {
+      "slug": "verde-vero",
+      "title": "Verde vero",
+      "description": "Camellia sinensis o altro? In Italia confondiamo spesso tè verde, tisane e bevande aromatizzate.",
+      "badge": "quiz-verde-vero",
+      "questions": [
+        {"q": "Camomilla in tazza", "options": ["Tisana, non tè verde", "Tè verde cinese", "Matcha"], "correct": 0, "explain": "Solo Camellia sinensis è tè vero; la camomilla è un'altra pianta.", "url": "/glossario/camellia-sinensis/"},
+        {"q": "Gunpowder (Zhu Cha)", "options": ["Tè verde", "Tisana", "Rooibos"], "correct": 0, "explain": "Perle di foglia di tè verde cinese, storico tè da export.", "url": "/varieta/gunpowder/"},
+        {"q": "Rooibos «verde»", "options": ["Non è Camellia sinensis", "È sencha sudafricano", "È gyokuro"], "correct": 0, "explain": "Aspalathus linearis: infuso rosso/south african, non tè in senso botanico.", "url": "/glossario/camellia-sinensis/"},
+        {"q": "Genmaicha", "options": ["Tè verde con riso tostato", "Solo riso", "Tisana di cereali"], "correct": 0, "explain": "Blend giapponese: bancha o sencha + genmai — resta tè verde.", "url": "/varieta/genmaicha/"},
+        {"q": "Tè al gelsomino (base verde)", "options": ["Resta tè se la base è sinensis", "Diventa tisana", "Non esiste"], "correct": 0, "explain": "Profumato sì, ma la foglia base può essere verde cinese — distinto dalla camomilla.", "url": "/impara/storia-cultura/"},
+        {"q": "Mate", "options": ["Non è tè verde", "È sencha argentino", "È matcha"], "correct": 0, "explain": "Ilex paraguariensis: bevanda sudamericana, altra botanica del tutto.", "url": "/glossario/camellia-sinensis/"},
+        {"q": "Hojicha", "options": ["Tè verde tostato", "Tè nero giapponese", "Caffè di cebada"], "correct": 0, "explain": "Parte sempre da verde (bancha): la tostatura cambia colore, non la pianta.", "url": "/varieta/hojicha/"},
+        {"q": "Matcha latte zuccherato da bar", "options": ["Spesso bevanda, non cerimonia", "Sempre matcha cerimoniale", "Tisana"], "correct": 0, "explain": "Prodotto e gesto diversi dal matcha tradizionale — può contenere poco tencha reale.", "url": "/impara/controversie/bevanda-vs-integratore/"}
+      ]
+    },
+    {
+      "slug": "calendario-primavera",
+      "title": "Calendario di primavera",
+      "description": "Shincha, raccolti cinesi e calendario italiano: il verde di primavera ha una scadenza — in tazza e sul mercato.",
+      "badge": "quiz-primavera",
+      "questions": [
+        {"q": "Lo shincha è più fresco quando...", "options": ["Lo compri subito dopo il raccolto", "Lo conservi anni", "Lo freddi dopo ebollizione"], "correct": 0, "explain": "Primo raccolto giapponese: vive di clorofilla giovane, non di invecchiamento.", "url": "/varieta/shincha/"},
+        {"q": "In Italia, primavera gastronomica + shincha richiamano...", "options": ["Asparagi e fave", "Castagne e funghi", "Panettone"], "correct": 0, "explain": "Stagionalità parallela: verdure tenere e verde primaverile senza forzature.", "url": "/italia/stagioni/primavera/"},
+        {"q": "Il jeoncha coreano si raccolte tra...", "options": ["Aprile e maggio", "Dicembre", "Solo agosto"], "correct": 0, "explain": "Periodi Gogu e Ipha nel calendario lunare: primavera coreana del tè.", "url": "/varieta/jeoncha/"},
+        {"q": "Bi Luo Chun è simbolo di...", "options": ["Primavera del Jiangsu", "Tostatura invernale", "Export marocchino"], "correct": 0, "explain": "Spirali primaverili, spesso vicino a frutteti di pesco nel Dongting.", "url": "/varieta/bi-luo-chun/"},
+        {"q": "Long Jing «prima della pioggia» indica...", "options": ["Raccolto precoce pre-monsone", "Tè fermentato", "Hojicha"], "correct": 0, "explain": "Yu Qian Long Jing: massimo pregio prima delle piogge di primavera nello Zhejiang.", "url": "/varieta/dragon-well/"},
+        {"q": "Snow Bud si raccoglie...", "options": ["Inizio primavera in alta quota", "Autunno in pianura", "D'inverno tostato"], "correct": 0, "explain": "Oltre i 1000 m nel Fujian: germogli apicali lanuginosi di primavera.", "url": "/varieta/snow-bud/"},
+        {"q": "Conservare shincha come vino longevo...", "options": ["Sconsigliato: perde vivacità", "Ideale", "Obbligatorio per umami"], "correct": 0, "explain": "Bevi il nuovo tè nel suo tempo; non è un puerh da invecchiare.", "url": "/glossario/shincha/"},
+        {"q": "Huang Shan Mao Feng profuma spesso di...", "options": ["Fiori e castagna", "Riso tostato", "Affumicatura intensa"], "correct": 0, "explain": "Lanugine e raccolta precoce dell'Anhui: floreale e frutta in guscio.", "url": "/varieta/huangshan-maofeng/"}
+      ]
+    },
+    {
+      "slug": "forma-foglia",
+      "title": "Forma della foglia",
+      "description": "Spirale, sopracciglio, seme di melon: la forma racconta lavorazione e origine prima ancora del sorso.",
+      "badge": "quiz-forma",
+      "questions": [
+        {"q": "Bi Luo Chun", "options": ["Spirali sottili", "Foglie piatte lunghe", "Palline"], "correct": 0, "explain": "Conchiglie di giada: rolling primaverile del Jiangsu.", "url": "/varieta/bi-luo-chun/"},
+        {"q": "Chun Mee", "options": ["Arcuate a sopracciglio", "Ago di pino", "Polvere"], "correct": 0, "explain": "«Preziose sopracciglia»: arrotolamento curvo tipico dell'export cinese.", "url": "/varieta/chun-mee/"},
+        {"q": "Lu An Gua Pian", "options": ["Come semi di melone", "Come perle", "Come aghi"], "correct": 0, "explain": "Gua Pian: foglie mature senza germoglio, forma allungata e arricciata.", "url": "/varieta/liu-an-guapian/"},
+        {"q": "Tai Ping Hou Kui", "options": ["Lunghe e appiattite", "A spirale", "Triturate"], "correct": 0, "explain": "Pressatura iconica; in tazza possono comparire venature rossastre.", "url": "/varieta/tai-ping-hou-kui/"},
+        {"q": "Sencha", "options": ["Aghi di pino", "Piastrelle", "Polvere finissima"], "correct": 0, "explain": "Rolling ad ago dopo steaming: profilo vegetale giapponese.", "url": "/varieta/sencha/"},
+        {"q": "Gunpowder", "options": ["Palline compatte", "Foglie piatte", "Steli soli"], "correct": 0, "explain": "Zhu Cha: perle per conservazione e viaggio, comune in Marocco col mint.", "url": "/varieta/gunpowder/"},
+        {"q": "Huang Shan Mao Feng", "options": ["Lunghe con lanugine", "Tostate marroni", "A polvere"], "correct": 0, "explain": "Mao Feng: germogli pelosi delle Montagne Gialle.", "url": "/varieta/huangshan-maofeng/"},
+        {"q": "Matcha in vendita", "options": ["Polvere verde", "Foglia piatta", "Riso misto"], "correct": 0, "explain": "Tencha macinato: bevi la foglia intera sospesa in acqua.", "url": "/varieta/matcha/"}
+      ]
     }
   ]
 }

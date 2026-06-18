@@ -30,7 +30,7 @@
       {
         "name": "Gyokuro",
         "url": "/varieta/gyokuro/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Umami",
@@ -40,7 +40,7 @@
       {
         "name": "Sencha",
         "url": "/glossario/sencha/",
-        "reason": "confronto"
+        "reason": "confronta i profili"
       }
     ]
   },
@@ -81,7 +81,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Gyokuro non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Ombreggiato 20+ giorni prima del raccolto: massima L-teanina, umami denso, infusione a 50–60 °C. Il vertice del verde giapponese — non per chi cerca semplicità da bustina bollente."
               }
             ]
           },
@@ -153,6 +153,15 @@
                   {
                     "type": "text",
                     "value": "L'ombreggiatura riduce la resa e richiede manodopera; paghi qualità e lavorazione."
+                  }
+                ]
+              },
+              {
+                "question": "Gyokuro a colazione?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Possibile se tolleri caffeina; molti preferiscono sencha al mattino e gyokuro nel pomeriggio."
                   }
                 ]
               }

@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "snow-bud",
+  "meta": {
+    "title": "Snow Bud — germoglio di neve del Fujian",
+    "description": "Snow Bud (Xue Ya) è tè verde del Fujian oltre i 1000 m: cultivar Da Bai, lanugine argentea, profilo dolce e di castagna arrosto.",
+    "keywords": [
+      "snow bud",
+      "xue ya",
+      "tè verde cinese",
+      "Fujian",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/varieta/snow-bud/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "bi-luo-chun",
+      "dragon-well"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Bi Luo Chun",
+        "url": "/varieta/bi-luo-chun/",
+        "reason": "primavera cinese"
+      },
+      {
+        "name": "Primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "stagione"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "profilo"
+      },
+      {
+        "name": "Gaiwan",
+        "url": "/glossario/gaiwan/",
+        "reason": "strumento"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "snow-bud",
+    "caffeina": "Bassa",
+    "stagione": "Primavera",
+    "cultivar": "Da Bai (Fujian, >1000 m)",
+    "sort_order": 17,
+    "brew": {
+      "temp": 78,
+      "grams": 2.5,
+      "seconds": 150,
+      "infusions": "1"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Germogli argentati come neve appena caduta: lo Snow Bud unisce la cultivar del tè bianco a una lavorazione verde — morbido, dolce, di castagna arrosto."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Verde chiaro, germogli con lanugine bianca",
+        "aroma": "Erbaceo, floreale delicato",
+        "gusto": "Morbido, leggermente dolce",
+        "retrogusto": "Castagna arrosto, persistente"
+      },
+      {
+        "type": "brew_params",
+        "temp": 78,
+        "grams": 2.5,
+        "seconds": 150,
+        "infusions": "1"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Gaiwan in porcellana o vetro",
+          "Acqua 75–80 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "2–3 g in 150 ml a 75–80 °C",
+            "duration": "2 min"
+          },
+          {
+            "text": "Infusione singola 2–3 minuti",
+            "duration": "3 min"
+          },
+          {
+            "text": "Non riinfondere: germogli esauriti rapidamente",
+            "duration": "30 sec"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Acqua bollente che brucia i germogli",
+          "Dosaggio eccessivo (amaro floreale)",
+          "Confonderlo con bai mu dan (è lavorato come verde)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Abbina cibi salati leggeri e verdure crude — in primavera italiana, un'insalata di rucola e finocchio senza aceto forte lascia emergere la dolcezza del liquore."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Verdure crude",
+          "Cibi salati leggeri"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Perché «germoglio di neve»?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Xue Ya in cinese: i germogli apicali coperti di lanugine bianca ricordano la neve."
+              }
+            ]
+          },
+          {
+            "question": "È un tè bianco?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "No: usa cultivar Da Bai tipica del bianco, ma la lavorazione segue il verde."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Da Bai in alta quota"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Prodotto oltre i 1000 metri nel Fujian. Raccolta primaverile accurata di foglie e germogli apicali lanuginosi. Liquore giallo paglierino, note fruttate e castagna arrosto. Particolare incrocio tra tradizione bianca e lavorazione verde."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Snow Bud (Xue Ya)",
+                "pages": "119"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Bi Luo Chun",
+            "url": "/varieta/bi-luo-chun/",
+            "reason": "primavera delicata"
+          },
+          {
+            "name": "Dragon Well",
+            "url": "/varieta/dragon-well/",
+            "reason": "verde cinese"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -28,17 +28,17 @@
       {
         "name": "Chasen",
         "url": "/glossario/chasen/",
-        "reason": "strumento"
+        "reason": "utensile essenziale"
       },
       {
         "name": "Matcha",
         "url": "/varieta/matcha/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Cerimonia",
         "url": "/impara/cerimonia/",
-        "reason": "contesto"
+        "reason": "leggi il filo"
       }
     ]
   },
@@ -79,7 +79,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Chawan collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Ciotola di ceramica per matcha: forma aperta per usucha, più profonda per koicha. Ogni pezzo racconta stagione e maestro ceramista. In Italia ne trovi di produzione giapponese o artigianale locale — non serve un antico raku per imparare."
               }
             ]
           },
@@ -151,6 +151,15 @@
                   {
                     "type": "text",
                     "value": "Per cerimonia no; per casa sì, se larga e stabile per la frusta."
+                  }
+                ]
+              },
+              {
+                "question": "Quale dimensione per iniziare?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Circa 12 cm di diametro per usucha: spazio sufficiente per il gesto del chasen senza schizzi."
                   }
                 ]
               }

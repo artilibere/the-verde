@@ -31,12 +31,22 @@
       {
         "name": "Sencha",
         "url": "/varieta/sencha/",
-        "reason": "scheda pratica"
+        "reason": "infusione passo passo"
       },
       {
         "name": "Percorso dal bancha al matcha",
         "url": "/gioca/percorsi/dal-bancha-al-matcha/",
-        "reason": "apprendimento"
+        "reason": "percorso guidato"
+      },
+      {
+        "name": "Consumo vs rituale",
+        "url": "/impara/controversie/consumo-quotidiano-vs-rituale/",
+        "reason": "quotidiano vs rito"
+      },
+      {
+        "name": "Quiz errori",
+        "url": "/gioca/quiz/riconosci-errore/",
+        "reason": "quiz preparazione"
       }
     ]
   },

@@ -30,12 +30,22 @@
       {
         "name": "Sencha",
         "url": "/varieta/sencha/",
-        "reason": "scheda completa"
+        "reason": "parametri e gusto"
       },
       {
         "name": "Gyokuro",
         "url": "/glossario/gyokuro/",
-        "reason": "ombra"
+        "reason": "verde ombreggiato"
+      },
+      {
+        "name": "Kyusu",
+        "url": "/glossario/kyusu/",
+        "reason": "utensile essenziale"
+      },
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "meno caffeina"
       }
     ]
   },
@@ -76,7 +86,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Nel tè verde, Sencha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+                "value": "Verde giapponese al sole, fissato al vapore: erbaceo, marine, amaro controllato a 75 °C. È la grammatica base per capire gyokuro (ombra) e bancha (foglia matura)."
               }
             ]
           },
@@ -148,6 +158,15 @@
                   {
                     "type": "text",
                     "value": "Sì, stessa Camellia sinensis. Il gyokuro è ombreggiato prima del raccolto; il sencha cresce al sole."
+                  }
+                ]
+              },
+              {
+                "question": "Sencha in bustina al supermercato?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Spesso polvere fine o tagli grossolani scadenti — non rappresenta il sencha specialty in foglia."
                   }
                 ]
               }

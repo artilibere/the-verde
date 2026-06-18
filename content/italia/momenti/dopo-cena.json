@@ -31,12 +31,12 @@
       {
         "name": "Hojicha",
         "url": "/varieta/hojicha/",
-        "reason": "sera"
+        "reason": "dopo cena leggero"
       },
       {
         "name": "Bancha",
         "url": "/varieta/bancha/",
-        "reason": "leggero"
+        "reason": "bassa intensità"
       },
       {
         "name": "Caffeina",
@@ -46,7 +46,7 @@
       {
         "name": "Inverno",
         "url": "/italia/stagioni/inverno/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       }
     ]
   },
@@ -78,21 +78,84 @@
         ]
       },
       {
-        "type": "heading",
-        "level": 2,
-        "spans": [
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
           {
-            "type": "text",
-            "value": "Varietà consigliate"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "spans": [
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Varietà consigliate"
+              }
+            ]
+          },
           {
-            "type": "text",
-            "value": "Hojicha, bancha e kukicha sono le scelte più prudenti per la sera italiana."
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Hojicha, bancha e kukicha sono le scelte più prudenti per la sera italiana: bassa caffeina, note tostate, calore senza il nervosismo del caffè. Il genmaicha con riso soffiato è comfort food che dialoga con cioccolato fondente o cantucci."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Acqua a 85–90 °C, infusione breve: anche la sera puoi reinfundare due volte senza estrarre troppi tannini. Non presentare il tè come digestivo miracoloso — è piacere e ritualità, non farmaco."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Kukicha",
+                "url": "/varieta/kukicha/",
+                "reason": "sera leggera"
+              },
+              {
+                "name": "Caffeina",
+                "url": "/impara/caffeina/",
+                "reason": "caffè vs tè"
+              },
+              {
+                "name": "Inverno",
+                "url": "/italia/stagioni/inverno/",
+                "reason": "stagione"
+              },
+              {
+                "name": "Abbinamenti",
+                "url": "/italia/abbinamenti/",
+                "reason": "dolci"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Posso sostituire il caffè ristretto?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Se cerchi meno caffeina e un profilo tostato, sì. Se ami l'intensità del caffè, l'hojicha non imita quella sensazione — offre un'altra esperienza."
+                  }
+                ]
+              },
+              {
+                "question": "Il tè verde fa digerire?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Non ci sono evidenze solide da integratore. Bevi per piacere e calma; eventuali benefici digestivi restano tradizione, non promessa."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

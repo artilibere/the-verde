@@ -35,22 +35,22 @@
       {
         "name": "Abbinamenti gastronomici",
         "url": "/italia/abbinamenti/",
-        "reason": "cucina"
+        "reason": "ricette e usi"
       },
       {
         "name": "Colazione",
         "url": "/italia/momenti/colazione/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       },
       {
         "name": "Estate",
         "url": "/italia/stagioni/estate/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       },
       {
         "name": "Consumo quotidiano vs rituale",
         "url": "/impara/controversie/consumo-quotidiano-vs-rituale/",
-        "reason": "controversia"
+        "reason": "tema aperto"
       }
     ]
   },
@@ -177,6 +177,31 @@
               {
                 "type": "text",
                 "value": "Per gli abbinamenti a tavola — gyokuro con crudo di pesce, hojicha con cioccolato fondente, matcha in pasticceria — c'è una guida dedicata. Evita sughi molto acidi al pomodoro con verdi delicati: l'acidità esalta l'amaro della foglia."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Abbinamenti gastronomici",
+                "url": "/italia/abbinamenti/",
+                "reason": "cucina"
+              },
+              {
+                "name": "Percorso dal bancha al matcha",
+                "url": "/gioca/percorsi/dal-bancha-al-matcha/",
+                "reason": "inizia"
+              },
+              {
+                "name": "Colazione",
+                "url": "/italia/momenti/colazione/",
+                "reason": "momento"
+              },
+              {
+                "name": "Primavera",
+                "url": "/italia/stagioni/primavera/",
+                "reason": "stagione"
               }
             ]
           }

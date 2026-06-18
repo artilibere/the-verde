@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "nilgiri-verde",
+  "meta": {
+    "title": "Nilgiri verde — monti azzurri del Sud India",
+    "description": "Nilgiri verde è tè dell'altopiano indiano meridionale: profilo vegetale e agrumato, raccolta tutto l'anno. Scheda sensoriale e infusione.",
+    "keywords": [
+      "nilgiri verde",
+      "nilgiri green",
+      "tè verde indiano",
+      "India",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/varieta/nilgiri-verde/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "darjeeling-verde",
+      "sencha"
+    ],
+    "temi_kb": [
+      "storia_cultura",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "inverno",
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Darjeeling verde",
+        "url": "/varieta/darjeeling-verde/",
+        "reason": "confronto indiano"
+      },
+      {
+        "name": "Storia e cultura",
+        "url": "/impara/storia-cultura/",
+        "reason": "India del tè"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "profilo"
+      },
+      {
+        "name": "Glossario Darjeeling",
+        "url": "/glossario/darjeeling/",
+        "reason": "contesto Himalaya"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "India",
+    "stile": "nilgiri",
+    "caffeina": "Media",
+    "stagione": "Tutto l'anno",
+    "cultivar": "Cultivar dell'altopiano Nilgiri",
+    "sort_order": 20,
+    "brew": {
+      "temp": 73,
+      "grams": 2.5,
+      "seconds": 90,
+      "infusions": "1-2"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Monti azzurri del Tamil Nadu: il Nilgiri verde profuma di verdure cotte e lime, liquore dorato leggero — l'India oltre il Darjeeling che già conosci."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Foglie grandi, sottili, verde grigiastro",
+        "aroma": "Verdure cotte, lime, gardenia",
+        "gusto": "Agrumato, vegetale, leggermente tostato",
+        "retrogusto": "Vegetale, astringente medio"
+      },
+      {
+        "type": "brew_params",
+        "temp": 73,
+        "grams": 2.5,
+        "seconds": 90,
+        "infusions": "1-2"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera in porcellana o terracotta",
+          "Acqua 70–75 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "2–3 g in 150 ml a 70–75 °C",
+            "duration": "1 min"
+          },
+          {
+            "text": "Infusione 1–2 minuti (Sommelier: 70–75 °C)",
+            "duration": "2 min"
+          },
+          {
+            "text": "Liquore dorato chiaro: non surinfondere",
+            "duration": "30 sec"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Temperatura da tè nero indiano (90 °C)",
+          "Confonderlo con Nilgiri CTC per masala chai",
+          "Infusione troppo lunga (astringenza)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Mentre il Darjeeling verde parla l'himalayano, il Nilgiri verde è più aperto e agrumato — ideale per chi cerca un verde indiano accessibile tutto l'anno, anche fuori stagione del first flush."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Verdure grigliate",
+          "Pesce leggermente speziato"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Nilgiri verde e Nilgiri nero sono la stessa cosa?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Stessa regione, lavorazioni diverse: il verde ortodosso è raro rispetto al CTC per chai."
+              }
+            ]
+          },
+          {
+            "question": "Quando è il miglior raccolto?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Pellegrino indica gennaio come migliore per la regione; il verde premium si trova tutto l'anno con profili variabili."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Monti azzurri e verde ortodosso"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "L'altopiano Nilgiri, scoperto nel 1840, è seconda regione produttrice indiana. Raccolta durante tutto l'anno; miglior raccolto a gennaio. Il verde ortodosso (es. estate Hari Talvar) offre foglie grandi verde grigiastro, liquore dorato con note di lime, verdure cotte e noce moscata — corpo leggero, astringenza media."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Tè verde indiano (Nilgiri)",
+                "pages": "2776–2791"
+              },
+              {
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Nilgiri Green",
+                "pages": "1292–1305"
+              },
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Nilgiri (contesto regionale)",
+                "pages": "151"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Darjeeling verde",
+            "url": "/varieta/darjeeling-verde/",
+            "reason": "India settentrionale"
+          },
+          {
+            "name": "Degustazione",
+            "url": "/impara/degustazione/",
+            "reason": "scheda sensoriale"
+          }
+        ]
+      }
+    ]
+  }
+}

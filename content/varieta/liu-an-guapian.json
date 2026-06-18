@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "liu-an-guapian",
+  "meta": {
+    "title": "Lu An Gua Pian — semi di melone dell'Anhui",
+    "description": "Lu An Gua Pian è tè verde dell'Anhui senza germoglio: foglie mature a forma di seme di melone, profilo corposo e dolce.",
+    "keywords": [
+      "lu an gua pian",
+      "gua pian",
+      "tè verde cinese",
+      "Anhui",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/varieta/liu-an-guapian/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "dragon-well",
+      "huangshan-maofeng"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "cucina_usi_pratici"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera",
+      "estate"
+    ],
+    "explore_next": [
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "altro wok"
+      },
+      {
+        "name": "Abbinamenti",
+        "url": "/italia/abbinamenti/",
+        "reason": "cibo e tè"
+      },
+      {
+        "name": "Wok",
+        "url": "/glossario/wok/",
+        "reason": "lavorazione"
+      },
+      {
+        "name": "Huang Shan Mao Feng",
+        "url": "/varieta/huangshan-maofeng/",
+        "reason": "Anhui"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "liu-an-guapian",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Cultivar di Lu An, Anhui (foglie mature)",
+    "sort_order": 19,
+    "brew": {
+      "temp": 78,
+      "grams": 3,
+      "seconds": 180,
+      "infusions": "4-5"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Foglie grandi senza germoglio, lavorate in wok con scopetta di paglia: il Lu An Gua Pian ha forma di seme di melone e sapore corposo, miele e frutta secca tostata."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Verde scuro, lungo, leggermente arricciato",
+        "aroma": "Erbaceo, frutta secca tostata",
+        "gusto": "Corposo, leggermente dolce",
+        "retrogusto": "Prolungato, miele"
+      },
+      {
+        "type": "brew_params",
+        "temp": 78,
+        "grams": 3,
+        "seconds": 180,
+        "infusions": "4-5"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Gaiwan in porcellana o vetro",
+          "Acqua 75–80 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "3 g in 150 ml a 75–80 °C per 3 min (occidentale)",
+            "duration": "3 min"
+          },
+          {
+            "text": "5 g in 150 ml, 30 sec (orientale)",
+            "duration": "30 sec"
+          },
+          {
+            "text": "4–5 infusioni successive da 30 sec",
+            "duration": "2 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Trattarlo come tè a germoglio (dosaggio da bi luo chun)",
+          "Acqua bollente",
+          "Infusione unica troppo breve per foglie mature"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Pellegrino suggerisce prosciutto e melone: abbinamento italiano naturale — salato dolce che esalta la dolcezza vegetale del liquore."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Prosciutto e melone",
+          "Verdure a foglia"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Perché «semi di melone»?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Gua Pian: le foglie mature lavorate assomigliano a semi di melone, non usano il germoglio."
+              }
+            ]
+          },
+          {
+            "question": "Perché la lavorazione è così laboriosa?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Stabilizzazione in wok con scopetta di paglia, poi riscaldamento in cesta ~60 volte: tè di grande artigianalità."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Senza germoglio, solo foglia"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Prodotto nella contea di Lu An, Anhui. A differenza di molti verdi pregiati usa foglie più grandi e tenere, non il germoglio. Lavorazione in wok con scopetta di paglia e cicli brevi di riscaldamento ripetuti. Liquore giallo-verde corposo, note di frutta secca tostata e miele."
+              }
+            ]
+          },
+          {
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Lu An Gua Pian",
+                "pages": "122"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Dragon Well",
+            "url": "/varieta/dragon-well/",
+            "reason": "wok cinese"
+          },
+          {
+            "name": "Abbinamenti",
+            "url": "/italia/abbinamenti/",
+            "reason": "prosciutto e melone"
+          }
+        ]
+      }
+    ]
+  }
+}

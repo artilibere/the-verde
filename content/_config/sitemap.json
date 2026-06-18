@@ -30,15 +30,26 @@
   "path_order": [
     "bancha",
     "sencha",
+    "shincha",
+    "kabusecha",
     "gyokuro",
+    "tencha",
     "matcha",
     "genmaicha",
     "hojicha",
     "kukicha",
     "gunpowder",
+    "chun-mee",
     "dragon-well",
     "bi-luo-chun",
+    "huangshan-maofeng",
+    "tai-ping-hou-kui",
+    "xin-yang-mao-jian",
+    "snow-bud",
+    "liu-an-guapian",
+    "jeoncha",
     "darjeeling-verde",
+    "nilgiri-verde",
     "cold-brew-gyokuro"
   ]
 }

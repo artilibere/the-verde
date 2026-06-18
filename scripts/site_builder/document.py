@@ -160,7 +160,8 @@ def document_to_meta(doc: dict, *, url: str | None = None) -> dict[str, Any]:
             {
                 "title": link.get("title") or link.get("name", ""),
                 "url": link.get("url", ""),
-                "type": link.get("type") or link.get("reason", ""),
+                "type": link.get("type", ""),
+                "reason": link.get("reason", link.get("brief", "")),
                 "brief": link.get("brief", ""),
             }
             for link in explore

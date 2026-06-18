@@ -29,7 +29,7 @@
       {
         "name": "Gaiwan",
         "url": "/glossario/gaiwan/",
-        "reason": "strumento"
+        "reason": "utensile essenziale"
       },
       {
         "name": "Cerimonia Cina vs Giappone",
@@ -39,7 +39,7 @@
       {
         "name": "Dragon Well",
         "url": "/varieta/dragon-well/",
-        "reason": "esempio"
+        "reason": "vedi in pratica"
       }
     ]
   },
@@ -80,7 +80,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Gong fu cha collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Letteralmente «tè con arte»: infusioni brevi in gaiwan o teiera yixing, tazze minute, ospitalità come valore centrale. Il gong fu esalta oolong e pu-erh, ma funziona benissimo anche con dragon well e bi luo chun — ideal per chi ama la degustazione vino."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Nato per oolong; oggi anche verdi e bianchi in stile gong fu."
+                  }
+                ]
+              },
+              {
+                "question": "Quante infusioni in gong fu?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Spesso 5–8 versate da pochi secondi: ogni infusione rivela un strato diverso della foglia."
                   }
                 ]
               }

@@ -30,12 +30,12 @@
       {
         "name": "Gong fu cha",
         "url": "/glossario/gong-fu-cha/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       },
       {
         "name": "Gaiwan",
         "url": "/glossario/gaiwan/",
-        "reason": "strumento"
+        "reason": "utensile essenziale"
       },
       {
         "name": "Dragon Well",
@@ -81,7 +81,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Yixing collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+                "value": "Teiera di argilla porosa del Jiangsu: assorbe oli della foglia e «seasoning» con il tempo. Si dedica a una famiglia di tè — mescolare sencha e pu-erh nella stessa yixing confonde i profili."
               }
             ]
           },
@@ -153,6 +153,15 @@
                   {
                     "type": "text",
                     "value": "No: il matcha usa chawan; lo yixing è per infusioni di foglia."
+                  }
+                ]
+              },
+              {
+                "question": "Serve seasoning prima dell'uso?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Tradizione vuole bollire la teiera con foglia scartata; oggi molti la usano subito con cura — l'importante è non cambiare famiglia di tè."
                   }
                 ]
               }

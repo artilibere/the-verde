@@ -31,12 +31,22 @@
       {
         "name": "Quiz miti",
         "url": "/gioca/quiz/mito-verita/",
-        "reason": "verifica"
+        "reason": "metti alla prova"
       },
       {
         "name": "EGCG",
         "url": "/glossario/egcg/",
-        "reason": "catechina studiata"
+        "reason": "EGCG spiegato"
+      },
+      {
+        "name": "Catechine",
+        "url": "/glossario/catechine/",
+        "reason": "chimica in tazza"
+      },
+      {
+        "name": "Percorso scienza-tradizione",
+        "url": "/gioca/percorsi/scienza-tradizione/",
+        "reason": "percorso critico"
       }
     ]
   },
@@ -144,6 +154,15 @@
               {
                 "type": "text",
                 "value": "In Italia erboristerie e social promettono spesso miracoli. Diffida di chi confonde tisane e tè verde, o vende integratori EGCG come sostituto del piacere in tazza."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nessun contenuto qui sostituisce il medico: il tè verde può far parte di uno stile di vita equilibrato, non di protocolli detox da influencer. Bevi per piacere; eventuali benefici sono plus, non promessa — coerente con i Termini del sito."
               }
             ]
           },

@@ -29,7 +29,7 @@
       {
         "name": "Gunpowder",
         "url": "/varieta/gunpowder/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Wok",
@@ -89,7 +89,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Capire Gunpowder (Zhu Cha) ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+                "value": "Zhu Cha cinese, perle arrotolate: robusto, tollera 85 °C, profilo affumicato leggero. Indulgente per chi sbaglia temperatura — ponte accessibile dal tè amaro in bustina."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Per la forma a pallottola che ricorda la polvere da sparo — nome occidentale, non cinese."
+                  }
+                ]
+              },
+              {
+                "question": "Perché «gunpowder»?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Nome occidentale per la forma a pallottola che ricorda polvere da sparo — non ha sapore di fumo come lapsang souchong."
                   }
                 ]
               }

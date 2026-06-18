@@ -34,17 +34,17 @@
       {
         "name": "Cold brew",
         "url": "/glossario/cold-brew/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       },
       {
         "name": "Aperitivo",
         "url": "/italia/momenti/aperitivo/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       },
       {
         "name": "Autunno",
         "url": "/italia/stagioni/autunno/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       }
     ]
   },
@@ -70,6 +70,88 @@
               {
                 "type": "text",
                 "value": "Evita acqua bollente su foglie pregiate anche nelle giornate calde: il freddo estrae meno tannini e meno caffeina, con profilo più morbido."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Estate senza amaro"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il cold brew è la risposta italiana al Ferragosto: brocca in frigo la sera, servizio freddo il giorno dopo. Gyokuro per umami dolce, sencha per leggerezza, bancha per chi vuole ancora meno caffeina — tutti senza zuccheri aggiunti."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Evita di scottare foglie pregiate anche d'estate: il tè freddo «sbrigativo» con acqua bollente e ghiaccio produce amaro. La pazienza del freddo — 4–8 ore — è il gesto che fa la differenza."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Cold brew",
+                "url": "/glossario/cold-brew/",
+                "reason": "metodo"
+              },
+              {
+                "name": "Aperitivo",
+                "url": "/italia/momenti/aperitivo/",
+                "reason": "momento"
+              },
+              {
+                "name": "Autunno",
+                "url": "/italia/stagioni/autunno/",
+                "reason": "prossima stagione"
+              },
+              {
+                "name": "Sencha",
+                "url": "/varieta/sencha/",
+                "reason": "freddo leggero"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Quanto dura il cold brew in frigo?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Consumalo entro 24–48 ore per freschezza. Oltre, il profilo si appiattisce e può ossidarsi leggermente."
+                  }
+                ]
+              },
+              {
+                "question": "Posso usare il tè in bustina freddo?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Puoi, ma la qualità della foglia conta: polvere fine o tagli grossolani danno profili piatti. Un sencha intero in foglia cambia l'esperienza."
+                  }
+                ]
               }
             ]
           }

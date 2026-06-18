@@ -29,7 +29,7 @@
       {
         "name": "Darjeeling verde",
         "url": "/varieta/darjeeling-verde/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Camellia sinensis",
@@ -39,7 +39,7 @@
       {
         "name": "Degustazione",
         "url": "/impara/degustazione/",
-        "reason": "metodo"
+        "reason": "tecnica passo passo"
       }
     ]
   },
@@ -89,7 +89,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Capire Darjeeling verde ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+                "value": "Verde himalayano: mineralità, muschio, note floreali montane. Diverso dai verdi giapponesi al vapore — parallelo con bianchi strutturati dell'Alto Adige per chi viene dal vino."
               }
             ]
           },
@@ -152,6 +152,15 @@
                   {
                     "type": "text",
                     "value": "Stessa regione, lavorazione diversa: profilo completamente diverso."
+                  }
+                ]
+              },
+              {
+                "question": "Darjeeling verde e nero?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Stessa regione, lavorazione diversa: il verde non ossida; profili non sono intercambiabili."
                   }
                 ]
               }

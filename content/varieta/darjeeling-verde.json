@@ -38,17 +38,17 @@
       {
         "name": "Degustazione",
         "url": "/impara/degustazione/",
-        "reason": "scheda sensoriale"
+        "reason": "leggi il profilo"
       },
       {
         "name": "Storia India",
         "url": "/impara/storia-cultura/",
-        "reason": "contesto"
+        "reason": "leggi il filo"
       },
       {
         "name": "Glossario Darjeeling",
         "url": "/glossario/darjeeling/",
-        "reason": "termine"
+        "reason": "definizione collegata"
       }
     ]
   },

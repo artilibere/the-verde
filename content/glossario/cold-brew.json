@@ -30,17 +30,17 @@
       {
         "name": "Cold brew gyokuro",
         "url": "/varieta/cold-brew-gyokuro/",
-        "reason": "scheda"
+        "reason": "prova in tazza"
       },
       {
         "name": "Estate",
         "url": "/italia/stagioni/estate/",
-        "reason": "stagione"
+        "reason": "calendario del gusto"
       },
       {
         "name": "Aperitivo",
         "url": "/italia/momenti/aperitivo/",
-        "reason": "momento"
+        "reason": "scegli l'orario"
       }
     ]
   },
@@ -90,7 +90,7 @@
             "spans": [
               {
                 "type": "text",
-                "value": "Capire Cold brew ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+                "value": "Estrazione a freddo per 4–8 ore: meno caffeina, zero amaro, profilo dolce. Ideale per estate italiana e aperitivo analcolico. Gyokuro e sencha premium rendono meglio di polveri industriali."
               }
             ]
           },
@@ -153,6 +153,15 @@
                   {
                     "type": "text",
                     "value": "No: è estrazione a freddo dall'inizio; profilo diverso."
+                  }
+                ]
+              },
+              {
+                "question": "Cold brew con acqua calda veloce?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No: il freddo estrae lentamente catechine amare — la pazienza è parte del metodo."
                   }
                 ]
               }
