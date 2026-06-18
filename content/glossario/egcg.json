@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "egcg",
+  "meta": {
+    "title": "EGCG",
+    "description": "Epigallocatechina gallato: la catechina più abbondante e più studiata nel tè verde.",
+    "keywords": [
+      "EGCG",
+      "epigallocatechina gallato",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/egcg/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "salute_catechine"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Salute",
+        "url": "/impara/salute/",
+        "reason": "quadro completo"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Se le catechine sono il coro, l'EGCG è la voce che la scienza ascolta più spesso. È la catechina dominante nel tè verde e compare in molti studi su antiossidanti e metabolismo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Scienza e tazza"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In laboratorio l'EGCG mostra attività antiossidante marcata; i trial sull'uomo usano spesso estratti standardizzati, non sempre una tazza quotidiana di sencha."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Non confondere milligrammi in vitro con l'esperienza del bere: piacere, ritualità e consumo regolare contano quanto una molecola isolata."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Più abbondante in verdi freschi e ben conservati"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Sensibile a ossidazione e a infusioni troppo lunghe"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Integratori ≠ tazza: biodisponibilità diversa"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Catechine",
+                "url": "/glossario/catechine/",
+                "reason": "famiglia chimica"
+              },
+              {
+                "name": "Bevanda vs integratore",
+                "url": "/impara/controversie/bevanda-vs-integratore/",
+                "reason": "prospettiva KB"
+              },
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "verde ricco se fresco"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "L'EGCG dimostra che il tè cura?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No da solo. Supporta ricerca preventiva; non sostituisce terapie mediche."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, tema hara-anticancer"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, tema hara-metabolismo"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Treccani — epigallocatechina"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

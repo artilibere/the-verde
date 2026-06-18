@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "preparazione",
+  "meta": {
+    "title": "Preparazione e servizio",
+    "description": "Temperatura, grammi, secondi: trasformare la foglia in una tazza che mantiene la promessa del titolo.",
+    "keywords": [
+      "preparazione tè verde",
+      "temperatura",
+      "infusione",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/impara/preparazione/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "preparazione_servizio"
+    ],
+    "controversie": [
+      "cerimonia-cina-vs-giappone",
+      "consumo-quotidiano-vs-rituale"
+    ],
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "scheda pratica"
+      },
+      {
+        "name": "Percorso dal bancha al matcha",
+        "url": "/gioca/percorsi/dal-bancha-al-matcha/",
+        "reason": "apprendimento"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Hai comprato un sencha pregiato e lo hai scottato con acqua bollente? La preparazione non è pedanteria da manuale: è il modo in cui rispetti il lavoro di chi ha coltivato e lavorato la foglia."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Qui impari i parametri che contano — gradi, grammi, secondi — e gli strumenti che aiutano senza trasformarti in collezionista compulsivo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "I tre numeri che salvano la tazza"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Temperatura dell'acqua, rapporto foglia/acqua, tempo di infusione. Cambiando uno solo modifichi amaro, corpo, caffeina estratta. Il sencha chiede 70–80 °C; il gyokuro ancora meno; il gunpowder regge un po' più di calore."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia l'acqua del rubinetto spesso è dura: un filtro può migliorare sencha e gyokuro. La teiera dedicata — kyusu per il Giappone, gaiwan per il gong fu — non è snobismo: evita sapori residui."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Sencha: ~3 g / 100 ml, 75 °C, 60 s"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Gyokuro: ~4 g / 100 ml, 50–60 °C, 90 s"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Dragon Well: ~3 g / 100 ml, 80 °C, 2 min"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Matcha: 2 g / 70 ml, frusta chasen, non infusione"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "italia",
+            "spans": [
+              {
+                "type": "text",
+                "value": "L'errore italiano più comune è l'acqua dell'ebollitore versata su qualsiasi verde. Se hai sempre trovato il tè «amaro e insaporevole», prova bancha o genmaicha con 80 °C prima di abbandonare il verde."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Kyusu",
+                "url": "/glossario/kyusu/",
+                "reason": "teiera giapponese"
+              },
+              {
+                "name": "Gaiwan",
+                "url": "/glossario/gaiwan/",
+                "reason": "coppa cinese"
+              },
+              {
+                "name": "Quiz errori",
+                "url": "/gioca/quiz/riconosci-errore/",
+                "reason": "verifica"
+              },
+              {
+                "name": "Cold brew",
+                "url": "/varieta/cold-brew-gyokuro/",
+                "reason": "estrazione fredda"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Devo pesare la foglia?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Per imparare sì; poi l'occhio basta. Un cucchiaino raso di sencha è circa 3 g — ma la bilancia insegna in una settimana."
+                  }
+                ]
+              },
+              {
+                "question": "Posso reinfundere?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Molti verdi reggono 2–3 infusioni brevi; il profilo cambia a ogni versata. È parte del piacere del gong fu e del sencha in kyusu."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, via del tè"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, servizio"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, preparazione quotidiana"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

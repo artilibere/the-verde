@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "matcha-italia",
+  "meta": {
+    "title": "Perché il matcha non è una moda passeggera in Italia",
+    "description": "Dal boom pasticceria al matcha cerimoniale: come il verde in polvere ha trovato radici nel gusto italiano.",
+    "keywords": [
+      "matcha Italia",
+      "matcha pasticceria",
+      "matcha cerimoniale",
+      "trend tè verde",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/guide/matcha-italia/",
+    "published": "2026-03-15"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "cucina_usi_pratici",
+      "cerimonia_spiritualita"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Scheda matcha",
+        "url": "/varieta/matcha/",
+        "reason": "filiera completa"
+      },
+      {
+        "name": "Cucina e usi",
+        "url": "/impara/cucina/",
+        "reason": "ricette e abbinamenti"
+      },
+      {
+        "name": "Bevanda o integratore?",
+        "url": "/impara/controversie/bevanda-vs-integratore/",
+        "reason": "controversia"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il matcha è arrivato nelle vetrine italiane come ingrediente — verde intenso in un tiramisù, in un gelato, in un latte zuccherato — molto prima che molti italiani sapessero cosa fosse una chasen o una ciotola di tencha."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Questa guida spiega perché quel verde non è solo un colore di tendenza: è l'estremo di una filiera giapponese (ombra, macinazione, foglia intera) che la cucina italiana ha adottato per estetica e sapore, aprendo porte a un tè più consapevole."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dalla vetrina alla tazza"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Giappone il matcha nasce come bevanda da cerimonia e come compagno quotidiano in versione usucha o koicha. In Italia lo hai incontrato probabilmente al contrario: prima il dolce, poi — se sei curioso — la polvere amara frullata con acqua calda."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Non è un errore culturale da correggere con snobismo: è un percorso di adozione. La pasticceria italiana ha sempre assorbito ingredienti stranieri (cacao, vaniglia, agrumi canditi) e li ha resi suoi. Il matcha segue la stessa logica, con un vantaggio: ti introduce alla Camellia sinensis come foglia intera, non come infusione filtrata."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tre matcha, tre storie"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Matcha da supermercato o da bar: spesso zuccherato, colorante, poco tencha vero — marketing «cerimoniale» senza sostanza"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Matcha da cucina: polvere più rustica, ottima per torte, panna, gelato; non pretendere umami da koicha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Matcha cerimoniale: tencha ombreggiato macinato a pietra, brillante, vegetale, amaro-equilibrato — si beve, non solo si spolvera"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Onuma e Rosen documentano entrambi il matcha in cucina e in cosmetica; Pellegrino lo colloca nella famiglia dei verdi giapponesi con regole di preparazione precise. La lezione per l'Italia: non esiste un solo «matcha», come non esiste un solo «vino»."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Perché non è una moda passeggera"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Le mode alimentari italiane durano un estate e spariscono. Il matcha resta perché risolve problemi reali del mercato: colore naturale senza additivi, nota vegetale in pasticceria premium, alternativa al caffè con curva di energia diversa, ponte verso la ristorazione giapponese e coreana ormai radicata nelle grandi città."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il bubble tea ha amplificato la domanda; i tea shop specialty hanno educato una fascia di pubblico alla polvere di qualità. Anche quando il latte matcha cala nei social, resta una platea che ha imparato a distinguere polvere spenta e tencha fresco — e chiede di più."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia il rischio non è che il matcha scompaia: è che resti confinato al dolce zuccherato. La sfida educativa è mostrare che la stessa pianta può essere usucha in tazza, matcha su panettone semplice, o koicha in silenzio — senza contraddizione."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Come iniziare con intelligenza"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Compra polvere con origine e data di macinatura indicata; evita confezioni senza produttore"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Prova prima usucha (2 g, 70 ml, 80 °C) prima di usare tutto in crema pasticcera"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Abbina a dolci italiani poco zuccherati: panettone semplice, marron glacé, agrumi canditi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Non confondere l-theanina e caffeina concentrate con «detox» — il matcha stimola, in dosi diverse dal caffè"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi e matcha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, matcha in cucina e quotidianità"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, usi pratici e estetica della foglia"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, catechine e foglia intera"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Treccani — voce «tè» (storia del consumo in Europa)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Tencha",
+            "url": "/glossario/tencha/",
+            "reason": "materia prima"
+          },
+          {
+            "name": "Chasen",
+            "url": "/glossario/chasen/",
+            "reason": "strumento"
+          },
+          {
+            "name": "Chanoyu",
+            "url": "/glossario/chanoyu/",
+            "reason": "rito"
+          },
+          {
+            "name": "Percorso dal bancha al matcha",
+            "url": "/gioca/percorsi/dal-bancha-al-matcha/",
+            "reason": "apprendimento"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Il matcha del bar è «falso»?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Spesso è zuccherato e di grado basso: non è falso tè, ma non è cerimoniale. Va bene come dessert; per capire il matcha serve polvere pura in tazza."
+              }
+            ]
+          },
+          {
+            "question": "Posso usare lo stesso matcha per torta e cerimonia?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Puoi, ma il cerimoniale in forno è uno spreco economico e il da cucina in tazza può essere grossolano e amaro. Meglio due qualità se ti appassioni."
+              }
+            ]
+          },
+          {
+            "question": "Il matcha sostituisce il caffè?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Non deve sostituirlo: offre energia più lunga e meno picco per molti bevitori. In Italia convive con l'espresso come opzione di metà pomeriggio o merenda consapevole."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "dopo-cena",
+  "meta": {
+    "title": "Tè verde dopo cena",
+    "description": "Calore leggero senza tenere svegli.",
+    "keywords": [
+      "tè verde dopo cena",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/italia/momenti/dopo-cena/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": []
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Calore leggero senza tenere svegli."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Varietà Consigliate"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Vedi le schede nel catalogo per preparazione e abbinamenti italiani."
+          }
+        ]
+      }
+    ]
+  }
+}

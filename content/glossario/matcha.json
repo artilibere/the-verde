@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "matcha",
+  "meta": {
+    "title": "Matcha",
+    "description": "Polvere di tencha: bevi la foglia intera, sospesa in acqua.",
+    "keywords": [
+      "matcha",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/matcha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "cerimonia_spiritualita",
+      "cucina_usi_pratici"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "scheda"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il matcha non si infusa e non si scarta: si scia, si frusta, si beve tutto. È tencha macinata, ombreggiata, senza le venature dell'arrotolamento del sencha."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cerimonia e cucina"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel tè verde, Matcha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Capire Matcha ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Usucha leggera e koicha densa in chanoyu"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Matcha da cucina ≠ cerimoniale"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Frusta chasen, non forchetta"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Scheda matcha",
+                "url": "/varieta/matcha/",
+                "reason": "preparazione"
+              },
+              {
+                "name": "Tencha",
+                "url": "/glossario/tencha/",
+                "reason": "materia prima"
+              },
+              {
+                "name": "Chasen",
+                "url": "/glossario/chasen/",
+                "reason": "frusta"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Tutto il matcha verde in polvere è uguale?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No. Grado cerimoniale, da cucina e polveri zuccherate per latte sono mondi diversi."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-lavorazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, tema onuma-matcha-cucina"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "caffeina",
+  "meta": {
+    "title": "Caffeina e tannini",
+    "description": "Stimola o calma? Dipende dalla foglia, dal tempo in tazza e dall'orologio.",
+    "keywords": [
+      "caffeina tè verde",
+      "L-teanina",
+      "tannini",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/impara/caffeina/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "caffeina_tannini"
+    ],
+    "controversie": [
+      "caffeina-stimolazione"
+    ],
+    "explore_next": [
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "bassa caffeina"
+      },
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "alta caffeina"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè verde contiene caffeina — a volte più di quanto credi, soprattutto in matcha e gyokuro. Eppure molti lo descrivono come «più dolce» del caffè: entrano in gioco tannini e L-teanina."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Qui impari a scegliere la varietà giusta per la mattina, la pausa o la sera senza sorprese."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Modulare energia e calma"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "I tannini legano parte della caffeina e rallentano l'assorbimento. La L-teanina, abbondante nei verdi ombreggiati, è associata a vigilanza più stabile. Non è magia: è chimica in tazza."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Gyokuro e matcha prima di dormire? Sconsigliati per la maggior parte. Hojicha o kukicha la sera: sì. Sencha a metà pomeriggio: equilibrio per molti palati italiani abituati all'espresso."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Alta caffeina: matcha, gyokuro"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Media: sencha, dragon well"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Bassa: bancha, kukicha, hojicha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Infusione lunga = più caffeina (e più amaro)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Controversia stimolazione",
+                "url": "/impara/controversie/caffeina-stimolazione/",
+                "reason": "posizioni KB"
+              },
+              {
+                "name": "L-teanina",
+                "url": "/glossario/l-teanina/",
+                "reason": "aminoacido"
+              },
+              {
+                "name": "Quiz l'ora giusta",
+                "url": "/gioca/quiz/ora-giusta/",
+                "reason": "esercizio"
+              },
+              {
+                "name": "Hojicha",
+                "url": "/varieta/hojicha/",
+                "reason": "sera"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Tè verde decaffeinato?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Esiste, ma perde parte del profilo; spesso meglio hojicha naturale per la sera."
+                  }
+                ]
+              },
+              {
+                "question": "Stomaco vuoto?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Tannini su stomaco sensibile possono irritare: inizia con bancha o genmaicha, non gyokuro a digiuno."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, proprietà"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, mg caffeina"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

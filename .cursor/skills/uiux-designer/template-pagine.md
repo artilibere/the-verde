@@ -1,405 +1,306 @@
-—#— —T—e—m—p—l—a—t—e— —p—a—g—i—n—e— ——— —t—h—e—-—v—e—r—d—e—.—i—t—
-—
-—W—i—r—e—f—r—a—m—e— —t—e—s—t—u—a—l—e— —e— —s—t—r—u—t—t—u—r—a— —H—T—M—L— —p—e—r— —o—g—n—i— —t—i—p—o— —d—i— —p—a—g—i—n—a—.— —T—u—t—t—i— —i— —t—e—m—p—l—a—t—e— —c—o—n—d—i—v—i—d—o—n—o— —`—t—v—-—h—e—a—d—e—r—`—,— —`—m—a—i—n—.—t—v—-—m—a—i—n—`—,— —`—t—v—-—f—o—o—t—e—r—`—.— —C—S—S— —d—a— —[—d—e—s—i—g—n—-—s—y—s—t—e—m—.—m—d—]—(—d—e—s—i—g—n—-—s—y—s—t—e—m—.—m—d—)—,— —c—o—m—p—o—n—e—n—t—i— —d—a— —[—c—o—m—p—o—n—e—n—t—i—.—m—d—]—(—c—o—m—p—o—n—e—n—t—i—.—m—d—)—.—
-—
-—-—-—-—
-—
-—#—#— —S—t—r—u—t—t—u—r—a— —H—T—M—L— —c—o—m—u—n—e—
-—
-—`—`—`—h—t—m—l—
-—<—!—D—O—C—T—Y—P—E— —h—t—m—l—>—
-—<—h—t—m—l— —l—a—n—g—=—"—i—t—"—>—
-—<—h—e—a—d—>—
-— — —<—m—e—t—a— —c—h—a—r—s—e—t—=—"—u—t—f—-—8—"—>—
-— — —<—m—e—t—a— —n—a—m—e—=—"—v—i—e—w—p—o—r—t—"— —c—o—n—t—e—n—t—=—"—w—i—d—t—h—=—d—e—v—i—c—e—-—w—i—d—t—h—,— —i—n—i—t—i—a—l—-—s—c—a—l—e—=—1—"—>—
-— — —<—t—i—t—l—e—>—{—t—i—t—l—e—}—<—/—t—i—t—l—e—>—
-— — —<—m—e—t—a— —n—a—m—e—=—"—d—e—s—c—r—i—p—t—i—o—n—"— —c—o—n—t—e—n—t—=—"—{—m—e—t—a—_—d—e—s—c—r—i—p—t—i—o—n—}—"—>—
-— — —<—l—i—n—k— —r—e—l—=—"—c—a—n—o—n—i—c—a—l—"— —h—r—e—f—=—"—{—u—r—l—}—"—>—
-— — —<—l—i—n—k— —r—e—l—=—"—s—t—y—l—e—s—h—e—e—t—"— —h—r—e—f—=—"—/—a—s—s—e—t—s—/—c—s—s—/—t—o—k—e—n—s—.—c—s—s—"—>—
-— — —<—l—i—n—k— —r—e—l—=—"—s—t—y—l—e—s—h—e—e—t—"— —h—r—e—f—=—"—/—a—s—s—e—t—s—/—c—s—s—/—b—a—s—e—.—c—s—s—"—>—
-— — —<—l—i—n—k— —r—e—l—=—"—s—t—y—l—e—s—h—e—e—t—"— —h—r—e—f—=—"—/—a—s—s—e—t—s—/—c—s—s—/—c—o—m—p—o—n—e—n—t—s—.—c—s—s—"—>—
-—<—/—h—e—a—d—>—
-—<—b—o—d—y— —c—l—a—s—s—=—"—t—v—-—p—a—g—e— —t—v—-—p—a—g—e—-—-—{—t—y—p—e—}—"— —d—a—t—a—-—s—l—u—g—=—"—{—s—l—u—g—}—"—>—
-— — —<—!—-—-— —t—v—-—h—e—a—d—e—r— —-—-—>—
-— — —<—m—a—i—n— —i—d—=—"—m—a—i—n—"— —c—l—a—s—s—=—"—t—v—-—m—a—i—n—"—>—
-— — — — —<—!—-—-— —c—o—n—t—e—n—u—t—o— —p—e—r— —t—i—p—o— —-—-—>—
-— — —<—/—m—a—i—n—>—
-— — —<—!—-—-— —t—v—-—f—o—o—t—e—r— —-—-—>—
-— — —<—s—c—r—i—p—t— —s—r—c—=—"—/—a—s—s—e—t—s—/—j—s—/—n—a—v—.—j—s—"— —d—e—f—e—r—>—<—/—s—c—r—i—p—t—>—
-— — —<—!—-—-— —s—c—r—i—p—t— —a—g—g—i—u—n—t—i—v—i— —p—e—r— —t—i—p—o— —-—-—>—
-—<—/—b—o—d—y—>—
-—<—/—h—t—m—l—>—
-—`—`—`—
-—
-—-—-—-—
-—
-—#—#— —H—o—m—e—
-—
-—*—*—S—o—r—g—e—n—t—e—:—*—*— —m—a—n—i—f—e—s—t—o— —b—r—a—n—d— —(—d—a— —c—r—e—a—r—e— —i—n— —`—c—o—n—t—e—n—t—/—p—a—g—i—n—e—/—h—o—m—e—.—m—d—`—)— — —
-—*—*—U—R—L—:—*—*— —`—/—`—
-—
-—#—#—#— —W—i—r—e—f—r—a—m—e—
-—
-—`—`—`—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—h—e—a—d—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —H—E—R—O— —(—s—f—o—n—d—o— —A—l—m—o—s—t— —A—c—q—u—a— —w—a—s—h—)— — — — — — — — — —?—
-—?— —H—1—:— —I—l— —t—è— —v—e—r—d—e—,— —c—o—n— —r—a—d—i—c—i— —e— —g—u—s—t—o— — — — — —?—
-—?— —S—o—t—t—o—t—i—t—o—l—o—:— —c—u—l—t—u—r—a— —s—p—e—c—i—a—l—t—y— —i—n— —I—t—a—l—i—a—?—
-—?— —[—C—T—A— —f—i—l—l—e—d—:— —E—s—p—l—o—r—a— —l—e— —v—a—r—i—e—t—à—]— — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —P—E—R—C—H—É— —T—H—E— —V—E—R—D—E— —(—H—2—)— — — — — — — — — — — — — — — — — — — —?—
-—?— —— —p—o—n—t—e— —c—u—l—t—u—r—a—l—e— — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —— —e—d—u—c—a—z—i—o—n—e— —o—l—t—r—e— —l—a— —b—u—s—t—i—n—a— — — — — — — — — — — —?—
-—?— —— —g—e—s—t—o— —l—e—n—t—o— —s—e—n—z—a— —m—o—r—a—l—i—s—m—o— — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —P—E—R— —I—N—I—Z—I—A—R—E— —(—H—2—)— — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —3—-—4— —t—v—-—v—a—r—i—e—t—y—-—c—a—r—d— —c—o—m—p—a—t—t—e— — — — — — — — — — — — —?—
-—?— —(—b—a—n—c—h—a—,— —s—e—n—c—h—a—,— —g—y—o—k—u—r—o—,— —m—a—t—c—h—a—)— — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —P—E—R— —M—O—M—E—N—T—O— —(—H—2—)— — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —4— —l—i—n—k—:— —c—o—l—a—z—i—o—n—e— —|— —p—a—u—s—a— —|— —d—o—p—o— —c—e—n—a— — — —?—
-—?— — — — — — — — — —|— —a—p—e—r—i—t—i—v—o— — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —S—T—A—G—I—O—N—E— —(—t—v—-—s—e—a—s—o—n—-—b—a—n—n—e—r—)— — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —G—U—I—D—E— —R—E—C—E—N—T—I— —(—H—2—)— — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —2—-—3— —l—i—n—k— —a—r—t—i—c—o—l—i— —e—d—i—t—o—r—i—a—l—i— — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—c—t—a— —f—i—n—a—l—e— — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—f—o—o—t—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—`—`—`—
-—
-—#—#—#— —S—t—r—u—t—t—u—r—a—
-—
-—`—`—`—h—t—m—l—
-—<—m—a—i—n— —i—d—=—"—m—a—i—n—"— —c—l—a—s—s—=—"—t—v—-—m—a—i—n— —t—v—-—m—a—i—n—-—-—h—o—m—e—"—>—
-— — —<—s—e—c—t—i—o—n— —c—l—a—s—s—=—"—t—v—-—h—e—r—o—"—>—
-— — — — —<—h—1— —c—l—a—s—s—=—"—t—v—-—h—e—r—o—_—_—t—i—t—l—e—"—>—I—l— —t—è— —v—e—r—d—e—,— —c—o—n— —r—a—d—i—c—i— —e— —g—u—s—t—o—<—/—h—1—>—
-— — — — —<—p— —c—l—a—s—s—=—"—t—v—-—h—e—r—o—_—_—s—u—b—t—i—t—l—e—"—>—C—u—l—t—u—r—a— —s—p—e—c—i—a—l—t—y— —d—e—l— —t—è— —v—e—r—d—e— —p—e—r— —c—h—i— —v—i—v—e—,— —m—a—n—g—i—a— —e— —s—o—c—i—a—l—i—z—z—a— —i—n— —I—t—a—l—i—a—.—<—/—p—>—
-— — — — —<—a— —h—r—e—f—=—"—/—v—a—r—i—e—t—à—/—"— —c—l—a—s—s—=—"—t—v—-—b—t—n— —t—v—-—b—t—n—-—-—f—i—l—l—e—d—"—>—E—s—p—l—o—r—a— —l—e— —v—a—r—i—e—t—à—<—/—a—>—
-— — —<—/—s—e—c—t—i—o—n—>—
-—
-— — —<—s—e—c—t—i—o—n— —c—l—a—s—s—=—"—t—v—-—s—e—c—t—i—o—n—"— —a—r—i—a—-—l—a—b—e—l—l—e—d—b—y—=—"—w—h—y—-—h—e—a—d—i—n—g—"—>—
-— — — — —<—h—2— —i—d—=—"—w—h—y—-—h—e—a—d—i—n—g—"—>—P—e—r—c—h—é— —T—h—e— —V—e—r—d—e—<—/—h—2—>—
-— — — — —<—u—l— —c—l—a—s—s—=—"—t—v—-—s—e—c—t—i—o—n—_—_—l—i—s—t—"—>—
-— — — — — — —<—l—i—>—P—o—n—t—e— —t—r—a— —t—r—a—d—i—z—i—o—n—i— —d—'—o—r—i—g—i—n—e— —e— —a—b—i—t—u—d—i—n—i— —i—t—a—l—i—a—n—e—<—/—l—i—>—
-— — — — — — —<—l—i—>—E—d—u—c—a—z—i—o—n—e— —o—l—t—r—e— —l—a— —b—u—s—t—i—n—a— —s—c—a—d—e—n—t—e—<—/—l—i—>—
-— — — — — — —<—l—i—>—I—l— —t—è— —c—o—m—e— —g—e—s—t—o— —l—e—n—t—o— ——— —s—e—n—z—a— —m—o—r—a—l—i—s—m—o—<—/—l—i—>—
-— — — — —<—/—u—l—>—
-— — —<—/—s—e—c—t—i—o—n—>—
-—
-— — —<—s—e—c—t—i—o—n— —c—l—a—s—s—=—"—t—v—-—s—e—c—t—i—o—n—"— —a—r—i—a—-—l—a—b—e—l—l—e—d—b—y—=—"—s—t—a—r—t—-—h—e—a—d—i—n—g—"—>—
-— — — — —<—h—2— —i—d—=—"—s—t—a—r—t—-—h—e—a—d—i—n—g—"—>—P—e—r— —i—n—i—z—i—a—r—e—<—/—h—2—>—
-— — — — —<—d—i—v— —c—l—a—s—s—=—"—t—v—-—g—r—i—d— —t—v—-—g—r—i—d—-—-—c—a—r—d—s—"—>—
-— — — — — — —<—!—-—-— —t—v—-—v—a—r—i—e—t—y—-—c—a—r—d— —×— —4— —-—-—>—
-— — — — —<—/—d—i—v—>—
-— — —<—/—s—e—c—t—i—o—n—>—
-—
-— — —<—s—e—c—t—i—o—n— —c—l—a—s—s—=—"—t—v—-—c—t—a—"—>—
-— — — — —<—h—2— —c—l—a—s—s—=—"—t—v—-—c—t—a—_—_—t—i—t—l—e—"—>—U—n— —p—e—r—c—o—r—s—o— —g—u—i—d—a—t—o—<—/—h—2—>—
-— — — — —<—p— —c—l—a—s—s—=—"—t—v—-—c—t—a—_—_—t—e—x—t—"—>—D—a—l— —b—a—n—c—h—a— —a—l— —m—a—t—c—h—a—:— —q—u—a—t—t—r—o— —t—a—p—p—e— —p—e—r— —c—a—p—i—r—e— —i—l— —t—è— —v—e—r—d—e—.—<—/—p—>—
-— — — — —<—a— —h—r—e—f—=—"—/—v—a—r—i—e—t—à—/—b—a—n—c—h—a—/—"— —c—l—a—s—s—=—"—t—v—-—b—t—n— —t—v—-—b—t—n—-—-—f—i—l—l—e—d—"—>—I—n—i—z—i—a— —d—a—l— —b—a—n—c—h—a—<—/—a—>—
-— — —<—/—s—e—c—t—i—o—n—>—
-—<—/—m—a—i—n—>—
-—`—`—`—
-—
-—*—*—C—S—S— —h—e—r—o—:—*—*— —`—b—a—c—k—g—r—o—u—n—d—:— —c—o—l—o—r—-—m—i—x—(—i—n— —s—r—g—b—,— —v—a—r—(—-—-—t—v—-—c—o—l—o—r—-—a—l—m—o—s—t—-—a—c—q—u—a—)— —3—5—%—,— —v—a—r—(—-—-—m—d—-—s—y—s—-—c—o—l—o—r—-—s—u—r—f—a—c—e—)—)—;— —p—a—d—d—i—n—g—:— —v—a—r—(—-—-—t—v—-—s—p—a—c—i—n—g—-—6—)— —v—a—r—(—-—-—t—v—-—s—p—a—c—i—n—g—-—4—)—;—`—
-—
-—-—-—-—
-—
-—#—#— —C—a—t—a—l—o—g—o— —v—a—r—i—e—t—à—
-—
-—*—*—S—o—r—g—e—n—t—e—:—*—*— —`—c—o—n—t—e—n—t—/—v—a—r—i—e—t—à—/—*—.—m—d—`— —+— —`—v—a—r—i—e—t—i—e—s—/—i—n—d—e—x—.—j—s—o—n—`— — —
-—*—*—U—R—L—:—*—*— —`—/—v—a—r—i—e—t—à—/—`—
-—
-—#—#—#— —W—i—r—e—f—r—a—m—e—
-—
-—`—`—`—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—h—e—a—d—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —H—1—:— —V—a—r—i—e—t—à— —d—i— —t—è— —v—e—r—d—e— — — — — — — — — — — — — — — — — —?—
-—?— —L—e—a—d—:— —1— —f—r—a—s—e— —o—r—i—e—n—t—a—m—e—n—t—o— — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—f—i—l—t—e—r—-—b—a—r—?— —G—r—i—g—l—i—a— —t—v—-—v—a—r—i—e—t—y—-—c—a—r—d— — —?—
-—?— —(—s—i—d—e—b—a—r— —l—g—)— —?— —(—2— —c—o—l— —m—d—,— —3— —c—o—l— —l—g—)— — — — — —?—
-—?— — — — — — — — — — — — — — —?— — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —[—F—i—l—t—r—a— —m—o—b—]— —?— —a—r—i—a—-—l—i—v—e— —c—o—n—t—e—g—g—i—o— — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—f—o—o—t—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—`—`—`—
-—
-—#—#—#— —S—t—r—u—t—t—u—r—a—
-—
-—`—`—`—h—t—m—l—
-—<—m—a—i—n— —i—d—=—"—m—a—i—n—"— —c—l—a—s—s—=—"—t—v—-—m—a—i—n— —t—v—-—m—a—i—n—-—-—c—a—t—a—l—o—g—"—>—
-— — —<—h—e—a—d—e—r— —c—l—a—s—s—=—"—t—v—-—p—a—g—e—-—h—e—a—d—e—r—"—>—
-— — — — —<—h—1—>—V—a—r—i—e—t—à— —d—i— —t—è— —v—e—r—d—e—<—/—h—1—>—
-— — — — —<—p— —c—l—a—s—s—=—"—t—v—-—p—a—g—e—-—h—e—a—d—e—r—_—_—l—e—a—d—"—>—S—c—h—e—d—e— —p—e—r— —o—r—i—g—i—n—e—,— —s—t—i—l—e— —e— —p—r—e—p—a—r—a—z—i—o—n—e— ——— —s—o—l—o— —<—e—m—>—C—a—m—e—l—l—i—a— —s—i—n—e—n—s—i—s—<—/—e—m—>—,— —n—o—n— —t—i—s—a—n—e—.—<—/—p—>—
-— — —<—/—h—e—a—d—e—r—>—
-—
-— — —<—d—i—v— —c—l—a—s—s—=—"—t—v—-—c—a—t—a—l—o—g—-—l—a—y—o—u—t—"—>—
-— — — — —<—a—s—i—d—e— —c—l—a—s—s—=—"—t—v—-—f—i—l—t—e—r—-—b—a—r—"— —a—r—i—a—-—l—a—b—e—l—=—"—F—i—l—t—r—a— —v—a—r—i—e—t—à—"—>—
-— — — — — — —<—!—-—-— —f—a—c—e—t—:— —o—r—i—g—i—n—e—,— —s—t—i—l—e—,— —c—a—f—f—e—i—n—a—,— —s—t—a—g—i—o—n—e— —-—-—>—
-— — — — —<—/—a—s—i—d—e—>—
-—
-— — — — —<—d—i—v— —c—l—a—s—s—=—"—t—v—-—c—a—t—a—l—o—g—-—r—e—s—u—l—t—s—"—>—
-— — — — — — —<—p— —c—l—a—s—s—=—"—t—v—-—c—a—t—a—l—o—g—-—r—e—s—u—l—t—s—_—_—c—o—u—n—t—"— —a—r—i—a—-—l—i—v—e—=—"—p—o—l—i—t—e—"—>—{—n—}— —v—a—r—i—e—t—à—<—/—p—>—
-— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—t—v—-—g—r—i—d— —t—v—-—g—r—i—d—-—-—c—a—r—d—s—"— —i—d—=—"—v—a—r—i—e—t—y—-—g—r—i—d—"—>—
-— — — — — — — — —<—!—-—-— —t—v—-—v—a—r—i—e—t—y—-—c—a—r—d— —g—e—n—e—r—a—t—i— —d—a— —b—u—i—l—d— —o— —J—S— —-—-—>—
-— — — — — — —<—/—d—i—v—>—
-— — — — —<—/—d—i—v—>—
-— — —<—/—d—i—v—>—
-—<—/—m—a—i—n—>—
-—<—s—c—r—i—p—t— —s—r—c—=—"—/—a—s—s—e—t—s—/—j—s—/—f—i—l—t—e—r—s—.—j—s—"— —d—e—f—e—r—>—<—/—s—c—r—i—p—t—>—
-—`—`—`—
-—
-—*—*—M—o—b—i—l—e—:—*—*— —b—o—t—t—o—n—e— —"—F—i—l—t—r—a—"— —a—p—r—e— —d—r—a—w—e—r—;— —g—r—i—g—l—i—a— —1— —c—o—l—o—n—n—a—.—
-—
-—-—-—-—
-—
-—#—#— —S—c—h—e—d—a— —v—a—r—i—e—t—à—
-—
-—*—*—S—o—r—g—e—n—t—e—:—*—*— —`—c—o—n—t—e—n—t—/—v—a—r—i—e—t—à—/—{—s—l—u—g—}—.—m—d—`— ——— —f—o—r—m—a—t—o— —"—S—c—h—e—d—a— —v—a—r—i—e—t—à—"— —i—n— —t—h—e—-—v—e—r—d—e—-—e—x—p—e—r—t— — —
-—*—*—U—R—L—:—*—*— —`—/—v—a—r—i—e—t—à—/—{—s—l—u—g—}—/—`—
-—
-—#—#—#— —W—i—r—e—f—r—a—m—e—
-—
-—`—`—`—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—h—e—a—d—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—m—i—n—i—n—a—v—:— —S—c—o—p—r—i— —|— —P—r—e—p—a—r—a— —|— —A—p—p—r—o—f—o—n—d—i—s—c—i— —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —#—s—c—o—p—r—i— —(—t—v—-—s—c—o—p—r—i—)— — — — — — — — — — — — — — — — — — — — — —?—
-—?— —b—r—e—a—d—c—r—u—m—b— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —H—1—:— —S—e—n—c—h—a— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —I—n— —b—r—e—v—e— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —t—v—-—b—r—e—w—-—c—a—r—d— —|— —t—v—-—s—e—n—s—o—r—y—-—p—r—o—f—i—l—e— — — — — — — —?—
-—?— —t—v—-—o—r—i—g—i—n—-—c—h—i—p—s— — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —#—p—r—e—p—a—r—a— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —H—2— —A—t—t—r—e—z—z—a—t—u—r—a— — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —H—2— —I— —p—a—s—s—a—g—g—i— —(—t—v—-—s—t—e—p—-—l—i—s—t—)— — — — — — — — — — — — —?—
-—?— —H—2— —E—r—r—o—r—i— —c—o—m—u—n—i— — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —#—a—p—p—r—o—f—o—n—d—i—s—c—i— — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —t—v—-—i—t—a—l—y—-—b—o—x— — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —H—2— —A—b—b—i—n—a—m—e—n—t—i— — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —t—v—-—f—a—q— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —t—v—-—r—e—l—a—t—e—d— —(—s—i—m—i—l—i—)— — — — — — — — — — — — — — — — — — — — — —?—
-—?— —t—v—-—p—a—t—h—-—n—a—v— —(—s—t—i—c—k—y— —b—o—t—t—o—m— —m—o—b—i—l—e—)— — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—f—o—o—t—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—`—`—`—
-—
-—#—#—#— —S—t—r—u—t—t—u—r—a—
-—
-—`—`—`—h—t—m—l—
-—<—m—a—i—n— —i—d—=—"—m—a—i—n—"— —c—l—a—s—s—=—"—t—v—-—m—a—i—n— —t—v—-—m—a—i—n—-—-—v—a—r—i—e—t—y—"—>—
-— — —<—a—r—t—i—c—l—e— —c—l—a—s—s—=—"—t—v—-—a—r—t—i—c—l—e—"— —i—t—e—m—s—c—o—p—e— —i—t—e—m—t—y—p—e—=—"—h—t—t—p—s—:—/—/—s—c—h—e—m—a—.—o—r—g—/—A—r—t—i—c—l—e—"—>—
-— — — — —<—n—a—v— —c—l—a—s—s—=—"—t—v—-—m—i—n—i—n—a—v—"— —a—r—i—a—-—l—a—b—e—l—=—"—S—e—z—i—o—n—i— —d—e—l—l—a— —s—c—h—e—d—a—"—>—
-— — — — — — —<—u—l— —c—l—a—s—s—=—"—t—v—-—m—i—n—i—n—a—v—_—_—l—i—s—t—"—>—
-— — — — — — — — —<—l—i—>—<—a— —h—r—e—f—=—"—#—s—c—o—p—r—i—"— —c—l—a—s—s—=—"—t—v—-—m—i—n—i—n—a—v—_—_—l—i—n—k— —t—v—-—m—i—n—i—n—a—v—_—_—l—i—n—k—-—-—a—c—t—i—v—e—"—>—P—a—n—o—r—a—m—i—c—a—<—/—a—>—<—/—l—i—>—
-— — — — — — — — —<—l—i—>—<—a— —h—r—e—f—=—"—#—p—r—e—p—a—r—a—"— —c—l—a—s—s—=—"—t—v—-—m—i—n—i—n—a—v—_—_—l—i—n—k—"—>—P—r—e—p—a—r—a—z—i—o—n—e—<—/—a—>—<—/—l—i—>—
-— — — — — — — — —<—l—i—>—<—a— —h—r—e—f—=—"—#—a—p—p—r—o—f—o—n—d—i—s—c—i—"— —c—l—a—s—s—=—"—t—v—-—m—i—n—i—n—a—v—_—_—l—i—n—k—"—>—A—p—p—r—o—f—o—n—d—i—s—c—i—<—/—a—>—<—/—l—i—>—
-— — — — — — —<—/—u—l—>—
-— — — — —<—/—n—a—v—>—
-—
-— — — — —<—s—e—c—t—i—o—n— —i—d—=—"—s—c—o—p—r—i—"— —c—l—a—s—s—=—"—t—v—-—s—c—o—p—r—i— —t—v—-—z—o—n—e—"—>—
-— — — — — — —<—!—-—-— —b—r—e—a—d—c—r—u—m—b—,— —H—1—,— —b—r—i—e—f—,— —b—r—e—w—-—c—a—r—d—,— —s—e—n—s—o—r—y—-—p—r—o—f—i—l—e—,— —c—h—i—p—s— —-—-—>—
-— — — — —<—/—s—e—c—t—i—o—n—>—
-—
-— — — — —<—s—e—c—t—i—o—n— —i—d—=—"—p—r—e—p—a—r—a—"— —c—l—a—s—s—=—"—t—v—-—p—r—e—p—a—r—a— —t—v—-—z—o—n—e—"—>—
-— — — — — — —<—h—2—>—A—t—t—r—e—z—z—a—t—u—r—a—<—/—h—2—>—
-— — — — — — —<—!—-—-— —u—l— —-—-—>—
-— — — — — — —<—h—2—>—I— —p—a—s—s—a—g—g—i—<—/—h—2—>—
-— — — — — — —<—!—-—-— —t—v—-—s—t—e—p—-—l—i—s—t— —-—-—>—
-— — — — — — —<—h—2—>—E—r—r—o—r—i— —c—o—m—u—n—i—<—/—h—2—>—
-— — — — — — —<—!—-—-— —u—l— —-—-—>—
-— — — — —<—/—s—e—c—t—i—o—n—>—
-—
-— — — — —<—s—e—c—t—i—o—n— —i—d—=—"—a—p—p—r—o—f—o—n—d—i—s—c—i—"— —c—l—a—s—s—=—"—t—v—-—a—p—p—r—o—f—o—n—d—i—s—c—i— —t—v—-—z—o—n—e—"—>—
-— — — — — — —<—!—-—-— —t—v—-—i—t—a—l—y—-—b—o—x—,— —a—b—b—i—n—a—m—e—n—t—i—,— —f—a—q—,— —r—e—l—a—t—e—d— —-—-—>—
-— — — — —<—/—s—e—c—t—i—o—n—>—
-— — —<—/—a—r—t—i—c—l—e—>—
-—
-— — —<—n—a—v— —c—l—a—s—s—=—"—t—v—-—p—a—t—h—-—n—a—v—"— —a—r—i—a—-—l—a—b—e—l—=—"—P—e—r—c—o—r—s—o— —g—u—i—d—a—t—o—"—>—
-— — — — —<—!—-—-— —p—r—e—v—/—n—e—x—t— —-—-—>—
-— — —<—/—n—a—v—>—
-—<—/—m—a—i—n—>—
-—<—s—c—r—i—p—t— —s—r—c—=—"—/—a—s—s—e—t—s—/—j—s—/—s—c—r—o—l—l—-—s—p—y—.—j—s—"— —d—e—f—e—r—>—<—/—s—c—r—i—p—t—>—
-—`—`—`—
-—
-—*—*—b—o—d—y— —c—l—a—s—s—:—*—*— —a—g—g—i—u—n—g—e—r—e— —`—t—v—-—p—a—g—e—-—-—h—a—s—-—p—a—t—h—-—n—a—v—`— —s—u— —m—o—b—i—l—e— —p—e—r— —p—a—d—d—i—n—g—-—b—o—t—t—o—m—.—
-—
-—-—-—-—
-—
-—#—#— —A—r—t—i—c—o—l—o— —e—d—i—t—o—r—i—a—l—e—
-—
-—*—*—S—o—r—g—e—n—t—e—:—*—*— —f—o—r—m—a—t—o— —"—A—r—t—i—c—o—l—o— —p—e—r— —t—h—e—-—v—e—r—d—e—.—i—t—"— —i—n— —t—h—e—-—v—e—r—d—e—-—e—x—p—e—r—t— — —
-—*—*—U—R—L—:—*—*— —`—/—g—u—i—d—e—/—{—s—l—u—g—}—/—`—
-—
-—#—#—#— —W—i—r—e—f—r—a—m—e—
-—
-—`—`—`—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—h—e—a—d—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —b—r—e—a—d—c—r—u—m—b— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —H—1—:— —T—i—t—o—l—o— —a—r—t—i—c—o—l—o— — — — — — — — — — — — — — — — — — — — — —?—
-—?— —L—e—a—d— —(—p—e—r—c—h—é— —c—o—n—t—a— —p—e—r— —i—l— —l—e—t—t—o—r—e— —I—T—)— — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —#—#— —S—e—z—i—o—n—e— —1— — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —b—o—d—y— —7—2—c—h— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —#—#— —S—e—z—i—o—n—e— —2— — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —.—.—.— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —#—#— —I—n— —s—i—n—t—e—s—i— — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —— —p—u—n—t—o— —1— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —— —p—u—n—t—o— —2— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —— —p—u—n—t—o— —3— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—r—e—l—a—t—e—d— —(—g—u—i—d—e— —c—o—r—r—e—l—a—t—e—)— — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—f—o—o—t—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—`—`—`—
-—
-—#—#—#— —S—t—r—u—t—t—u—r—a—
-—
-—`—`—`—h—t—m—l—
-—<—m—a—i—n— —i—d—=—"—m—a—i—n—"— —c—l—a—s—s—=—"—t—v—-—m—a—i—n— —t—v—-—m—a—i—n—-—-—a—r—t—i—c—l—e—"—>—
-— — —<—a—r—t—i—c—l—e— —c—l—a—s—s—=—"—t—v—-—a—r—t—i—c—l—e— —t—v—-—a—r—t—i—c—l—e—-—-—e—d—i—t—o—r—i—a—l—"—>—
-— — — — —<—n—a—v— —c—l—a—s—s—=—"—t—v—-—b—r—e—a—d—c—r—u—m—b—"— —a—r—i—a—-—l—a—b—e—l—=—"—B—r—e—a—d—c—r—u—m—b—"—>—.—.—.—<—/—n—a—v—>—
-— — — — —<—h—e—a—d—e—r— —c—l—a—s—s—=—"—t—v—-—a—r—t—i—c—l—e—_—_—h—e—a—d—e—r—"—>—
-— — — — — — —<—h—1—>—{—t—i—t—l—e—}—<—/—h—1—>—
-— — — — — — —<—p— —c—l—a—s—s—=—"—t—v—-—a—r—t—i—c—l—e—_—_—l—e—a—d—"—>—{—l—e—a—d—}—<—/—p—>—
-— — — — —<—/—h—e—a—d—e—r—>—
-— — — — —<—d—i—v— —c—l—a—s—s—=—"—t—v—-—a—r—t—i—c—l—e—_—_—b—o—d—y—"—>—
-— — — — — — —<—!—-—-— —s—e—z—i—o—n—i— —H—2— —d—a—l— —M—a—r—k—d—o—w—n— —-—-—>—
-— — — — —<—/—d—i—v—>—
-— — — — —<—a—s—i—d—e— —c—l—a—s—s—=—"—t—v—-—a—r—t—i—c—l—e—_—_—s—u—m—m—a—r—y—"— —a—r—i—a—-—l—a—b—e—l—l—e—d—b—y—=—"—s—u—m—m—a—r—y—-—h—e—a—d—i—n—g—"—>—
-— — — — — — —<—h—2— —i—d—=—"—s—u—m—m—a—r—y—-—h—e—a—d—i—n—g—"—>—I—n— —s—i—n—t—e—s—i—<—/—h—2—>—
-— — — — — — —<—u—l—>—.—.—.—<—/—u—l—>—
-— — — — —<—/—a—s—i—d—e—>—
-— — —<—/—a—r—t—i—c—l—e—>—
-— — —<—a—s—i—d—e— —c—l—a—s—s—=—"—t—v—-—r—e—l—a—t—e—d—"—>—.—.—.—<—/—a—s—i—d—e—>—
-—<—/—m—a—i—n—>—
-—`—`—`—
-—
-—*—*—T—i—p—o—g—r—a—f—i—a—:—*—*— —H—1— —c—o—n— —`—t—v—-—f—o—n—t—-—s—e—r—i—f—`— —o—p—z—i—o—n—a—l—e— —p—e—r— —t—o—n—o— —e—d—i—t—o—r—i—a—l—e—.—
-—
-—-—-—-—
-—
-—#—#— —H—u—b— —o—r—i—g—i—n—e—
-—
-—*—*—U—R—L—:—*—*— —`—/—o—r—i—g—i—n—e—/—{—p—a—e—s—e—}—/—`— —(—e—s—.— —`—/—o—r—i—g—i—n—e—/—g—i—a—p—p—o—n—e—/—`—)—
-—
-—#—#—#— —W—i—r—e—f—r—a—m—e—
-—
-—`—`—`—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—h—e—a—d—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —H—1—:— —T—è— —v—e—r—d—e— —d—a—l— —G—i—a—p—p—o—n—e— — — — — — — — — — — — — — — —?—
-—?— —I—n—t—r—o— —c—o—n—t—e—s—t—o— —c—u—l—t—u—r—a—l—e— —(—b—r—e—v—e—)— — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —G—r—i—g—l—i—a— —t—v—-—v—a—r—i—e—t—y—-—c—a—r—d— —f—i—l—t—r—a—t—e— — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —L—i—n—k— —a—d— —a—l—t—r—i— —h—u—b— —o—r—i—g—i—n—e— — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—f—o—o—t—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—`—`—`—
-—
-—-—-—-—
-—
-—#—#— —H—u—b— —m—o—m—e—n—t—o—
-—
-—*—*—U—R—L—:—*—*— —`—/—p—e—r—-—m—o—m—e—n—t—o—/—{—m—o—m—e—n—t—o—}—/—`— — —
-—*—*—S—o—r—g—e—n—t—e—:—*—*— —t—a—b—e—l—l—a— —m—o—m—e—n—t—i— —i—n— —[—p—e—r—s—o—n—a—s—.—m—d—]—(—p—e—r—s—o—n—a—s—.—m—d—)— —/— —c—u—l—t—u—r—a—-—i—t—a—l—i—a—n—a—
-—
-—#—#—#— —W—i—r—e—f—r—a—m—e—
-—
-—`—`—`—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —H—1—:— —T—è— —v—e—r—d—e— —a— —c—o—l—a—z—i—o—n—e— — — — — — — — — — — — — — — — —?—
-—?— —L—e—a—d—:— —a—l—t—e—r—n—a—t—i—v—a— —d—e—l—i—c—a—t—a— —a—l— —c—a—p—p—u—c—c—i—n—o—?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —V—a—r—i—e—t—à— —c—o—n—s—i—g—l—i—a—t—e— —(—t—v—-—v—a—r—i—e—t—y—-—c—a—r—d—)— — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —N—o—t—a— —o—n—e—s—t—a— —(—n—o— —"—d—i—g—e—s—t—i—v—o— —m—i—r—a—c—o—l—o—s—o—"—)— —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—f—o—o—t—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—`—`—`—
-—
-—-—-—-—
-—
-—#—#— —H—u—b— —s—t—a—g—i—o—n—e—
-—
-—*—*—U—R—L—:—*—*— —`—/—s—t—a—g—i—o—n—i—/—{—s—t—a—g—i—o—n—e—}—/—`—
-—
-—#—#—#— —W—i—r—e—f—r—a—m—e—
-—
-—`—`—`—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—s—e—a—s—o—n—-—b—a—n—n—e—r— —(—h—e—r—o—)— — — — — — — — — — — — — — — — — —?—
-—?— —H—1—:— —P—r—i—m—a—v—e—r—a— — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?— —N—a—r—r—a—t—i—v—a— —p—a—r—a—l—l—e—l—o— —g—a—s—t—r—o—n—o—m—i—c—o— —I—T— — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —G—r—i—g—l—i—a— —t—v—-—v—a—r—i—e—t—y—-—c—a—r—d— — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—?— —t—v—-—f—o—o—t—e—r— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —?—
-—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—?—
-—`—`—`—
-—
-—-—-—-—
-—
-—#—#— —P—a—g—i—n—a— —l—e—g—a—l—e—
-—
-—*—*—U—R—L—:—*—*— —`—/—p—r—i—v—a—c—y—/—`—,— —`—/—t—e—r—m—i—n—i—/—`— — —
-—*—*—L—a—y—o—u—t—:—*—*— —c—o—l—o—n—n—a— —s—i—n—g—o—l—a— —7—2—c—h—,— —n—e—s—s—u—n—a— —C—T—A—,— —n—e—s—s—u—n— —P—a—t—h—N—a—v—.—
-—
-—`—`—`—h—t—m—l—
-—<—m—a—i—n— —i—d—=—"—m—a—i—n—"— —c—l—a—s—s—=—"—t—v—-—m—a—i—n— —t—v—-—m—a—i—n—-—-—l—e—g—a—l—"—>—
-— — —<—a—r—t—i—c—l—e— —c—l—a—s—s—=—"—t—v—-—a—r—t—i—c—l—e— —t—v—-—a—r—t—i—c—l—e—-—-—l—e—g—a—l—"—>—
-— — — — —<—h—1—>—P—r—i—v—a—c—y— —p—o—l—i—c—y—<—/—h—1—>—
-— — — — —<—d—i—v— —c—l—a—s—s—=—"—t—v—-—a—r—t—i—c—l—e—_—_—b—o—d—y—"—>—
-— — — — — — —<—!—-—-— —c—o—n—t—e—n—u—t—o— —l—e—g—a—l—e— —-—-—>—
-— — — — —<—/—d—i—v—>—
-— — —<—/—a—r—t—i—c—l—e—>—
-—<—/—m—a—i—n—>—
-—`—`—`—
-—
-—-—-—-—
-—
-—#—#— —R—i—e—p—i—l—o—g—o— —s—c—r—i—p—t— —p—e—r— —t—i—p—o— —p—a—g—i—n—a—
-—
-—|— —T—i—p—o— —p—a—g—i—n—a— —|— —S—c—r—i—p—t— —|—
-—|—-—-—-—-—-—-—-—-—-—-—-—-—-—|—-—-—-—-—-—-—-—-—|—
-—|— —T—u—t—t—e— —|— —`—n—a—v—.—j—s—`— —|—
-—|— —S—c—h—e—d—a— —v—a—r—i—e—t—à— —|— —`—s—c—r—o—l—l—-—s—p—y—.—j—s—`— —|—
-—|— —C—a—t—a—l—o—g—o— —|— —`—f—i—l—t—e—r—s—.—j—s—`— —|—
-—|— —H—o—m—e—,— —a—r—t—i—c—o—l—o—,— —h—u—b—,— —l—e—g—a—l—e— —|— —s—o—l—o— —`—n—a—v—.—j—s—`— —|—
-—
-—-—-—-—
-—
-—#—#— —C—l—a—s—s—i— —b—o—d—y— —p—e—r— —t—i—p—o—
-—
-—|— —`—t—v—-—p—a—g—e—-—-—*—`— —|— —U—s—o— —|—
-—|—-—-—-—-—-—-—-—-—-—-—-—-—-—-—|—-—-—-—-—-—|—
-—|— —`—h—o—m—e—`— —|— —H—e—r—o— —A—l—m—o—s—t— —A—c—q—u—a— —|—
-—|— —`—c—a—t—a—l—o—g—`— —|— —L—a—y—o—u—t— —s—i—d—e—b—a—r— —f—i—l—t—r—i— —|—
-—|— —`—v—a—r—i—e—t—y—`— —|— —M—i—n—i—-—n—a—v— —+— —P—a—t—h—N—a—v— —m—o—b—i—l—e— —|—
-—|— —`—a—r—t—i—c—l—e—`— —|— —S—e—r—i—f— —H—1— —o—p—z—i—o—n—a—l—e— —|—
-—|— —`—h—u—b—`— —|— —G—r—i—g—l—i—a— —c—a—r—d— —|—
-—|— —`—l—e—g—a—l—`— —|— —L—a—y—o—u—t— —m—i—n—i—m—a—l—e— —|—
-—
+# Template pagine — the-verde.it
+
+Wireframe **web-app mobile-first**: app shell + card feed. Template Jinja2 in repo site — vedi [rendering-json-html.md](rendering-json-html.md).
+
+---
+
+## Struttura HTML comune (app shell)
+
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.meta.title }}</title>
+  <meta name="description" content="{{ page.meta.description }}">
+  <link rel="canonical" href="{{ page.meta.canonical }}">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  {% include 'partials/json-ld.html' %}
+</head>
+<body class="tv-page tv-page--{{ page.type }} tv-page--has-bottom-nav" data-slug="{{ page.slug }}">
+  {% include 'partials/app-bar.html' %}
+  <main id="main" class="tv-feed">
+    {% block feed %}{% endblock %}
+  </main>
+  {% include 'partials/bottom-nav.html' %}
+  <script src="/assets/js/nav.js" defer></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
+```
+
+**Note:** niente footer testuale lungo su mobile; nav primaria in `tv-bottom-nav`. Script d3 solo se pagina ha chart.
+
+---
+
+## Home
+
+**Template:** `pages/home.html`  
+**URL:** `/`
+
+### Wireframe (card feed)
+
+```
+tv-app-bar: The Verde
+--- feed ---
+tv-card (icon leaf): Esplora le varietà → /varietà/
+tv-card (icon path): Percorso guidato → bancha
+tv-scroll-rail: 4 entry momenti (icon cup)
+tv-grid 2×2: stagioni (icon sun/snow)
+tv-card: Ultima guida
+tv-bottom-nav
+```
+
+Niente hero testuale lungo — entry point a card con icone grandi.
+
+---
+
+## Catalogo varietà
+
+**Sorgente:** `content/varietà/*.md` + `varieties/index.json`  
+**URL:** `/varietà/`
+
+### Wireframe
+
+```
+???????????????????????????????????????????
+? tv-header                               ?
+???????????????????????????????????????????
+? H1: Varietà di tè verde                 ?
+? Lead: 1 frase orientamento              ?
+???????????????????????????????????????????
+? tv-filter-bar? Griglia tv-variety-card  ?
+? (sidebar lg) ? (2 col md, 3 col lg)     ?
+?              ?                          ?
+? [Filtra mob] ? aria-live conteggio      ?
+???????????????????????????????????????????
+? tv-footer                               ?
+???????????????????????????????????????????
+```
+
+### Struttura
+
+```html
+<main id="main" class="tv-main tv-main--catalog">
+  <header class="tv-page-header">
+    <h1>Varietà di tè verde</h1>
+    <p class="tv-page-header__lead">Schede per origine, stile e preparazione  solo <em>Camellia sinensis</em>, non tisane.</p>
+  </header>
+
+  <div class="tv-catalog-layout">
+    <aside class="tv-filter-bar" aria-label="Filtra varietà">
+      <!-- facet: origine, stile, caffeina, stagione -->
+    </aside>
+
+    <div class="tv-catalog-results">
+      <p class="tv-catalog-results__count" aria-live="polite">{n} varietà</p>
+      <div class="tv-grid tv-grid--cards" id="variety-grid">
+        <!-- tv-variety-card generati da build o JS -->
+      </div>
+    </div>
+  </div>
+</main>
+<script src="/assets/js/filters.js" defer></script>
+```
+
+**Mobile:** bottone "Filtra" apre drawer; griglia 1 colonna.
+
+---
+
+## Scheda varietà
+
+**Template:** `pages/variety.html`  
+**URL:** `/varietà/{slug}/`
+
+### Wireframe (card feed)
+
+```
+tv-app-bar [back] Sencha
+tv-scroll-rail: Scopri | Prepara | Approfondisci (icone)
+--- feed (article itemscope Article) ---
+tv-card #brief — In breve (prose)
+tv-card #brew — tv-metric-row
+tv-card #sensory — tabella o lista
+tv-card #gear — attrezzatura
+tv-card #steps — tv-step-list (HowTo)
+tv-card #errors — lista
+tv-card #italy — In Italia
+tv-card #pairings — abbinamenti
+tv-card #faq — FAQ + schema
+tv-scroll-rail — varietà simili
+tv-path-nav (sopra bottom nav)
+tv-bottom-nav
+```
+
+### Jinja2
+
+```jinja2
+{% extends 'pages/base.html' %}
+{% block feed %}
+<article itemscope itemtype="https://schema.org/Article">
+  {% for card in page.cards %}
+    {% include 'partials/card.html' %}
+  {% endfor %}
+</article>
+{% endblock %}
+{% block scripts %}
+<script src="/assets/js/scroll-spy.js" defer></script>
+{% if page.has_chart %}<script src="/assets/js/vendor/d3.min.js" defer></script>
+<script src="/assets/js/charts.js" defer></script>{% endif %}
+{% endblock %}
+```
+
+---
+
+## Articolo editoriale
+
+**Template:** `pages/article.html`  
+**URL:** `/guide/{slug}/`
+
+### Wireframe
+
+```
+tv-app-bar [back] Titolo articolo
+--- feed ---
+tv-card — lead (prose)
+tv-card — sezione H2 (una card per sezione)
+tv-card — sezione H2
+tv-card tv-card--highlight — In sintesi
+tv-bottom-nav
+```
+
+Niente colonna wiki continua: ogni `##` del MD = una `tv-card`.
+
+### Struttura
+
+```html
+<main id="main" class="tv-main tv-main--article">
+  <article class="tv-article tv-article--editorial">
+    <nav class="tv-breadcrumb" aria-label="Breadcrumb">...</nav>
+    <header class="tv-article__header">
+      <h1>{title}</h1>
+      <p class="tv-article__lead">{lead}</p>
+    </header>
+    <div class="tv-article__body">
+      <!-- sezioni H2 dal Markdown -->
+    </div>
+    <aside class="tv-article__summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">In sintesi</h2>
+      <ul>...</ul>
+    </aside>
+  </article>
+  <aside class="tv-related">...</aside>
+</main>
+```
+
+**Tipografia:** H1 con `tv-font-serif` opzionale per tono editoriale.
+
+---
+
+## Hub origine
+
+**URL:** `/origine/{paese}/` (es. `/origine/giappone/`)
+
+### Wireframe
+
+```
+???????????????????????????????????????????
+? tv-header                               ?
+???????????????????????????????????????????
+? H1: Tè verde dal Giappone               ?
+? Intro contesto culturale (breve)        ?
+???????????????????????????????????????????
+? Griglia tv-variety-card filtrate        ?
+???????????????????????????????????????????
+? Link ad altri hub origine               ?
+???????????????????????????????????????????
+? tv-footer                               ?
+???????????????????????????????????????????
+```
+
+---
+
+## Hub momento
+
+**URL:** `/per-momento/{momento}/`  
+**Sorgente:** tabella momenti in [personas.md](personas.md) / cultura-italiana
+
+### Wireframe
+
+```
+???????????????????????????????????????????
+? H1: Tè verde a colazione                ?
+? Lead: alternativa delicata al cappuccino?
+???????????????????????????????????????????
+? Varietà consigliate (tv-variety-card)   ?
+???????????????????????????????????????????
+? Nota onesta (no "digestivo miracoloso") ?
+???????????????????????????????????????????
+? tv-footer                               ?
+???????????????????????????????????????????
+```
+
+---
+
+## Hub stagione
+
+**URL:** `/stagioni/{stagione}/`
+
+### Wireframe
+
+```
+???????????????????????????????????????????
+? tv-season-banner (hero)                 ?
+? H1: Primavera                           ?
+? Narrativa parallelo gastronomico IT     ?
+???????????????????????????????????????????
+? Griglia tv-variety-card                 ?
+???????????????????????????????????????????
+? tv-footer                               ?
+???????????????????????????????????????????
+```
+
+---
+
+## Pagina legale
+
+**URL:** `/privacy/`, `/termini/`  
+**Layout:** colonna singola 72ch, nessuna CTA, nessun PathNav.
+
+```html
+<main id="main" class="tv-main tv-main--legal">
+  <article class="tv-article tv-article--legal">
+    <h1>Privacy policy</h1>
+    <div class="tv-article__body">
+      <!-- contenuto legale -->
+    </div>
+  </article>
+</main>
+```
+
+---
+
+## Riepilogo script per tipo pagina
+
+| Tipo pagina | Script |
+|-------------|--------|
+| Tutte | `nav.js` |
+| Scheda varietà | `scroll-spy.js` |
+| Catalogo | `filters.js` |
+| Home, articolo, hub, legale | solo `nav.js` |
+
+---
+
+## Classi body per tipo
+
+| `tv-page--*` | Uso |
+|--------------|-----|
+| `home` | Hero Almost Acqua |
+| `catalog` | Layout sidebar filtri |
+| `variety` | Mini-nav + PathNav mobile |
+| `article` | Serif H1 opzionale |
+| `hub` | Griglia card |
+| `legal` | Layout minimale |

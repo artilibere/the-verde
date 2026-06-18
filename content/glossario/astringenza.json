@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "astringenza",
+  "meta": {
+    "title": "Astringenza",
+    "description": "Sensazione di ruvidità e contrazione sulla lingua, legata a tannini e catechine.",
+    "keywords": [
+      "astringenza",
+      "tannini",
+      "degustazione",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/astringenza/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "degustazione_sensoriale",
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "esempio pratico"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "L'astringenza non è amaro: è quella sensazione che stringe il palato, come un vino giovane o una mela verde. Nel tè verde arriva soprattutto da tannini e catechine estratti troppo a lungo o troppo caldi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Percezione e preparazione"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Un filo di astringenza può dare struttura alla tazza; in eccesso segnala errore di infusione o foglia di bassa qualità."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "I verdi giapponesi delicati — gyokuro, sencha di prima qualità — la rivelano se scotti l'acqua o insisti nei secondi."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Diversa dall'amaro, anche se spesso convivono"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Modulabile con temperatura, dosaggio e tempo"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Stomaco vuoto: i tannini irritano più facilmente"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Degustazione",
+                "url": "/impara/degustazione/",
+                "reason": "lessico del gusto"
+              },
+              {
+                "name": "Sencha",
+                "url": "/varieta/sencha/",
+                "reason": "sensibile al calore"
+              },
+              {
+                "name": "Preparazione",
+                "url": "/impara/preparazione/",
+                "reason": "parametri"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "L'astringenza è un difetto?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Non sempre. È un difetto se domina e nasconde aroma e dolcezza; può essere equilibrio in un verde strutturato."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, tema sommelier-degustazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, tema pellegrino-via-del-te"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "gunpowder",
+  "meta": {
+    "title": "Gunpowder (Zhu Cha)",
+    "description": "Foglie arrotolate a perla: verde cinese robusto e viaggiatore.",
+    "keywords": [
+      "gunpowder",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/gunpowder/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "storia_cultura",
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Gunpowder",
+        "url": "/varieta/gunpowder/",
+        "reason": "scheda"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il gunpowder sembra munizioni di foglia: perle scure che si aprono in tazza. È il verde che ha attraversato i mari — resistente, intenso, forgiving se sbagli un po' la temperatura."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cina"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel tè verde, Gunpowder (Zhu Cha) non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Capire Gunpowder (Zhu Cha) ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Pan-firing o vapore + rolling compatto"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "85 °C, infusioni ripetute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Note legnose e leggermente affumicate"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Scheda gunpowder",
+                "url": "/varieta/gunpowder/",
+                "reason": "parametri"
+              },
+              {
+                "name": "Wok",
+                "url": "/glossario/wok/",
+                "reason": "lavorazione"
+              },
+              {
+                "name": "Dragon Well",
+                "url": "/glossario/longjing/",
+                "reason": "altro cinese"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Perché si chiama gunpowder?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Per la forma a pallottola che ricorda la polvere da sparo — nome occidentale, non cinese."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi cinesi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, produzione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

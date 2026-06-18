@@ -2,7 +2,7 @@
 
 ## Objective
 
-Generare il sito statico in `dist/` e verificare che la build sia pulita.
+Validare i contenuti JSON, generare il sito statico in `dist/` e verificare che build e test siano puliti.
 
 ## Process
 
@@ -11,33 +11,33 @@ Generare il sito statico in `dist/` e verificare che la build sia pulita.
    ```bash
    cd /var/www/the-verde.it
 
-   # Opzionale: correggere accenti in content/ prima del build
-   python3 scripts/fix_encoding.py
+   pip install -r requirements.txt
+
+   # Test (obbligatorio prima del build)
+   python3 -m pytest tests/ -q
+
+   # Solo validazione JSON
+   python3 scripts/build.py --validate-only
 
    # Build HTML + asset
    python3 scripts/build.py --content content --out dist
    ```
 
-2. **Opzionale** — rigenerare contenuti da script:
-
-   ```bash
-   python3 scripts/generate_content.py
-   ```
-
-3. **Opzionale** — indicizzazione Pagefind (ricerca locale):
+2. **Opzionale** — indicizzazione Pagefind (ricerca locale):
 
    ```bash
    npx --yes pagefind --site dist --output-path dist/pagefind
    ```
 
-4. Verificare output:
+3. Verificare output:
    - Messaggio finale: `Built N pages → dist`
    - Campione: `dist/varieta/sencha/index.html`, `dist/index.html`
    - Breadcrumb «Varietà», link diario `?varieta=`, frecce path nav
 
 ## Checklist
 
-- [ ] Exit code 0
+- [ ] `pytest` exit code 0
+- [ ] Build exit code 0
 - [ ] ~69 pagine generate
 - [ ] Nessun errore UTF-8 in template
 - [ ] Asset CSS/JS hashed in `dist/assets/`
@@ -56,6 +56,8 @@ Generare il sito statico in `dist/` e verificare che la build sia pulita.
 
 ## Notes
 
+- Contenuti editoriali in `content/**/*.json` (non Markdown)
+- Schemi in `content/_schemas/`
 - `dist/` è in `.gitignore` — output locale/deploy only
-- Dipendenze: `pip install -r requirements.txt` (venv consigliato)
 - Per deploy completo: `/deploy`
+- Agente architettura: skill `web-architect`

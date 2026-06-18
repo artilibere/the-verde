@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "primavera",
+  "meta": {
+    "title": "Primavera",
+    "description": "Shincha e primi raccolti.",
+    "keywords": [
+      "primavera",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/italia/stagioni/primavera/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": []
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Shincha e primi raccolti."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

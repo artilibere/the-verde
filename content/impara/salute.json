@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "salute",
+  "meta": {
+    "title": "Salute e catechine",
+    "description": "Cosa sappiamo davvero sul tè verde e il benessere — senza detox, senza promesse da integratore.",
+    "keywords": [
+      "salute tè verde",
+      "catechine",
+      "EGCG",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/impara/salute/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "salute_catechine"
+    ],
+    "controversie": [
+      "salute-scienza-vs-tradizione",
+      "bevanda-vs-integratore"
+    ],
+    "explore_next": [
+      {
+        "name": "Quiz miti",
+        "url": "/gioca/quiz/mito-verita/",
+        "reason": "verifica"
+      },
+      {
+        "name": "EGCG",
+        "url": "/glossario/egcg/",
+        "reason": "catechina studiata"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè verde contiene polifenoli — soprattutto catechine — con potenziale antiossidante documentato in laboratorio. Ma tra una molecola in provetta e la tua tazza del mattino c'è un mondo di differenze."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Questa pagina non ti vende cure: ti aiuta a distinguere evidenza, tradizione e marketing italiano post-2000."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa è ragionevole aspettarsi"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Consumo regolare di tè verde può far parte di uno stile di vita attento; non sostituisce terapie mediche né una dieta equilibrata. Il matcha, bevendo la foglia intera, concentra più catechine di un sencha filtrato — ma non è una pillola magica."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Gli studi clinici usano spesso estratti standardizzati di EGCG; le dosi in tazza sono più basse e modulate da temperatura, tempo e qualità della foglia."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Evidenza solida: potenziale antiossidante delle catechine"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Dibattito aperto: dosi efficaci per prevenzione specifica"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Da evitare: «detox», «brucia grassi», «cura tumori» in etichetta"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Matcha e sencha quotidiano: più catechine di bancha leggero"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "italia",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia erboristerie e social promettono spesso miracoli. Diffida di chi confonde tisane e tè verde, o vende integratori EGCG come sostituto del piacere in tazza."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Controversia scienza vs tradizione",
+                "url": "/impara/controversie/salute-scienza-vs-tradizione/",
+                "reason": "dibattito KB"
+              },
+              {
+                "name": "Bevanda vs integratore",
+                "url": "/impara/controversie/bevanda-vs-integratore/",
+                "reason": "capsule o tazza"
+              },
+              {
+                "name": "Catechine",
+                "url": "/glossario/catechine/",
+                "reason": "molecole chiave"
+              },
+              {
+                "name": "Matcha",
+                "url": "/varieta/matcha/",
+                "reason": "foglia intera"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Quante tazze al giorno?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Tradizione giapponese: 3–5; scienza non fissa un numero universale. Ascolta corpo e medico se hai condizioni specifiche."
+                  }
+                ]
+              },
+              {
+                "question": "Il tè verde dimagrisce?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Non da solo. Eventuali effetti sul metabolismo sono modesti e non compensano abitudini alimentari."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, temi salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, prevenzione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "cucina",
+  "meta": {
+    "title": "Cucina e usi pratici",
+    "description": "Matcha in pasticceria, hojicha nel dessert, foglie usate: il tè verde esce dalla tazza.",
+    "keywords": [
+      "matcha cucina",
+      "ricette tè verde",
+      "cucina",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/impara/cucina/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "cucina_usi_pratici"
+    ],
+    "controversie": [
+      "bevanda-vs-integratore"
+    ],
+    "explore_next": [
+      {
+        "name": "Hojicha",
+        "url": "/varieta/hojicha/",
+        "reason": "tostato in dessert"
+      },
+      {
+        "name": "Italia abbinamenti",
+        "url": "/italia/abbinamenti/",
+        "reason": "gastronomia"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il matcha non è solo cerimonia: è polvere di colore, umami e catechine che invade gelati, tiramisù, pannacotte. In Giappone Onuma propone cheesecake e torte; in Italia il verde è diventato ingrediente da pasticceria — con risultati disomogenei."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fuori dalla moda, il tè verde in cucina ha senso quando la qualità della polvere regge: culinary grade sì, polvere zuccherata da latte no."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Ingredienti e riusi"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Matcha per dolci e saltato (tempura verde, rub su pesce). Hojicha per note tostate in crema e cioccolato. Foglie usate di gyokuro o sencha ancora profumate — compost o cosmetica casalinga secondo Rosen."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il matcha da cucina richiede comunque foglie ombreggiate ben lavorate; il prezzo basso spesso significa amaro e colore spento."
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "italia",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il matcha latte verde dei bar non è riferimento gastronomico: zucchero e latte mascherano polveri mediocri. Per cucinare, compra matcha da pasticceria di provenienza chiara."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Matcha",
+                "url": "/varieta/matcha/",
+                "reason": "ingrediente base"
+              },
+              {
+                "name": "Genmaicha",
+                "url": "/varieta/genmaicha/",
+                "reason": "comfort"
+              },
+              {
+                "name": "Bevanda vs integratore",
+                "url": "/impara/controversie/bevanda-vs-integratore/",
+                "reason": "dose in cucina"
+              },
+              {
+                "name": "Guide matcha Italia",
+                "url": "/guide/matcha-italia/",
+                "reason": "contesto"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Matcha da supermercato per dolci?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Funziona per colore; per sapore serve grado culinary o superiore, conservato al buio."
+                  }
+                ]
+              },
+              {
+                "question": "Tè verde in savory italiano?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Matcha su risotto o pesce chiede dosi minime; hojicha più facile con cioccolato e noci."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, ricette matcha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, cucina e bellezza"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, matcha"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

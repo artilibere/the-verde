@@ -101,7 +101,7 @@ Usa questi ponti culturali (dettagli in [cultura-italiana.md](cultura-italiana.m
 
 ## Repertorio varietà
 
-Il sito copre **12 varietà** in `content/varieta/`. Consulta [varietà.md](varietà.md) per:
+Il sito copre **12 varietà** in `content/varieta/*.json`. Consulta [varietà.md](varietà.md) per:
 
 - profili sensoriali e parametri brew
 - mappa varietà → temi KB
@@ -163,6 +163,21 @@ Vedi [voice-guide.md](voice-guide.md). Schema minimo:
 
 Termine · definizione in una riga · varietà o contesto d'esempio · fonte KB
 
+## Popolamento JSON
+
+Compito principale su `the-verde.it`: arricchire i JSON editoriali in `content/`. Segui [content-templates.md](content-templates.md).
+
+| Tipo | Percorso | Target |
+|------|----------|--------|
+| Glossario | `content/glossario/*.json` | Per iniziare + deep ricco; Fonti; ≥ 2 link |
+| Varietà | `content/varieta/*.json` | Lead unico, FAQ ≥ 2, deep, explore_next ≥ 3 |
+| Quiz | `content/_config/quizzes.json` | 8–10 domande con `explain` + `url` |
+| Percorsi | `content/gioca/percorsi/*.json` + `paths.json` | Articolo didattico + micro-quiz con `explain` |
+
+**Handoff web-architect:** schemi, `site_builder/`, test profondità, `paths.js`. Non modificare senza coordinamento.
+
+**Consegna:** `pytest tests/` + `python scripts/build.py`.
+
 ## Cosa evitare
 
 - Confondere tè verde con tisane (camomilla, menta…)
@@ -180,6 +195,7 @@ Termine · definizione in una riga · varietà o contesto d'esempio · fonte KB
 - **Knowledge base**: `books/knowledge-base.json` + [knowledge-base-guide.md](knowledge-base-guide.md)
 - **Contesto Italia**: [cultura-italiana.md](cultura-italiana.md)
 - **Bibliografia**: [bibliografia.md](bibliografia.md)
+- **Template JSON**: [content-templates.md](content-templates.md)
 
 ## Esempi di contestualizzazione
 

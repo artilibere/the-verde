@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "kukicha",
+  "meta": {
+    "title": "Kukicha",
+    "description": "Tè di rametti e fogli: dolce, leggero, economico.",
+    "keywords": [
+      "kukicha",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/kukicha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "caffeina_tannini",
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Kukicha",
+        "url": "/varieta/kukicha/",
+        "reason": "scheda"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il kukicha usa parti spesso scartate altrove — steli e fogli — e ne fa un tè dolce e accessibile. Bassa caffeina, quotidianità senza pretese."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Economia della pianta"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel tè verde, Kukicha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Capire Kukicha ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Ago o pezzi di ramo"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Infusione a 80 °C"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Adatto a tutto il giorno"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Scheda kukicha",
+                "url": "/varieta/kukicha/",
+                "reason": "scheda"
+              },
+              {
+                "name": "Bancha",
+                "url": "/glossario/bancha/",
+                "reason": "alternativa leggera"
+              },
+              {
+                "name": "Hojicha",
+                "url": "/glossario/hojicha/",
+                "reason": "sera"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Kukicha è inferiore al sencha?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "È diverso: meno pregiato nel mercato premium, ma autentico e piacevole."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

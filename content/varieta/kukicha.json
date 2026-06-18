@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "kukicha",
+  "meta": {
+    "title": "Kukicha — twig tea leggero",
+    "description": "Profilo, preparazione e contesto italiano del kukicha.",
+    "keywords": [
+      "kukicha",
+      "tè verde",
+      "Camellia sinensis",
+      "kukicha",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/kukicha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "bancha",
+      "hojicha"
+    ],
+    "temi_kb": [
+      "caffeina_tannini",
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "momenti": [
+      "colazione",
+      "dopo-cena"
+    ],
+    "stagioni": [
+      "estate"
+    ],
+    "explore_next": [
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "alternativa"
+      },
+      {
+        "name": "Glossario kukicha",
+        "url": "/glossario/kukicha/",
+        "reason": "termine"
+      },
+      {
+        "name": "Prima infusione",
+        "url": "/impara/preparazione/",
+        "reason": "basilari"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "kukicha",
+    "caffeina": "Bassa",
+    "stagione": "Estate",
+    "cultivar": "Steli e fogli di sencha o gyokuro",
+    "sort_order": 99,
+    "brew": {
+      "temp": 80,
+      "grams": 3,
+      "seconds": 60,
+      "infusions": "2-3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Steli e fogli in miniatura: il kukicha è dolce, leggero, onesto — il tè che non pretende di essere pregiato per farsi amare."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Rametti verdi e chiari",
+        "aroma": "Leggero, legnoso",
+        "gusto": "Dolce vegetale, poco tannico",
+        "retrogusto": "Pulito"
+      },
+      {
+        "type": "brew_params",
+        "temp": 80,
+        "grams": 3,
+        "seconds": 60,
+        "infusions": "2-3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera",
+          "Termometro opzionale"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Acqua a 80 °C",
+            "duration": "2 min"
+          },
+          {
+            "text": "3 g per 100 ml, 60 secondi",
+            "duration": "1 min"
+          },
+          {
+            "text": "Versa",
+            "duration": "30 sec"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Dosaggio eccessivo",
+          "Dosaggio da sencha premium (troppo concentrato)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Ottima proposta per colazione leggera: non compete con cappuccino e cornetto."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Frutta, yogurt",
+          "Miele leggero"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "È un tè di seconda scelta?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "No: e un prodotto intenzionale, valorizzato per leggerezza."
+              }
+            ]
+          },
+          {
+            "question": "Si vede la differenza col sencha?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Sì: pezzi di ramo, infusione più chiara, meno marinezza."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Economia della pianta"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Usa parti spesso scartate nella selezione premium. Bassa caffeina, prezzo accessibile, sapore pulito. Ideale per introdurre palati italiani al verde senza amaro."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Bancha",
+            "url": "/varieta/bancha/",
+            "reason": "foglia matura"
+          },
+          {
+            "name": "Hojicha",
+            "url": "/varieta/hojicha/",
+            "reason": "versione tostata"
+          }
+        ]
+      }
+    ]
+  }
+}

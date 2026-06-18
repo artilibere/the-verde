@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "type": "controversy",
+  "slug": "cerimonia-cina-vs-giappone",
+  "meta": {
+    "title": "Gong fu cha o chanoyu: due anime del rituale",
+    "description": "Convivialità cinese e codice giapponese: confronto senza scegliere un vincitore.",
+    "keywords": [
+      "cerimonia cina vs giappone",
+      "tè verde",
+      "controversia"
+    ],
+    "canonical_path": "/impara/controversie/cerimonia-cina-vs-giappone/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Consumo vs rituale",
+        "url": "/impara/controversie/consumo-quotidiano-vs-rituale/",
+        "reason": "correlata"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "positions",
+        "items": [
+          {
+            "fonte": "sommelier",
+            "tesi": "Il gong fu cha è conviviale e informale: ospite al centro, abilità tecnica del preparatore, sette passi classici ma adattabili. Oolong e verdi in infusioni multiple; conversazione e tazze piccole."
+          },
+          {
+            "fonte": "pellegrino",
+            "tesi": "Il chanoyu è evento sociale formale: koicha denso e usucha leggero, percorso nel roji, umiltà verso l'ospite, fusione con ikebana, ceramica e architettura del chashitsu."
+          },
+          {
+            "fonte": "onuma",
+            "tesi": "La cerimonia giapponese incarna bellezza e semplicità adottabili anche in Occidente — non come spettacolo esotico ma come esercizio di presenza."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cina e Giappone non condividono un unico «rito del tè». Condividono l'idea che acqua e foglia meritino attenzione — poi divergono."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia spesso tutto viene etichettato «cerimoniale» in confezione regalo. Capire gong fu e chanoyu ti salva da marketing vuoto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il cuore della questione"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il gong fu cha nasce come ospitalità: offri il meglio che hai, reinfondi, conversi. Il chanoyu nasce come disciplina estetica zen: ogni movimento ha nome, il silenzio è parte del menu."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Nessuno è «superiore»: il gong fu è più accessibile a una cena tra amici; il chanoyu richiede studio e spazio. Puoi ispirarti a entrambi senza appropriazione superficiale."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa portare a casa"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dal gong fu: piccole tazze, infusioni brevi, attenzione all'ospite. Dal chanoyu: lentezza, pulizia del gesto, matcha preparato con cura."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia non serve replicare un roji: serve smettere di chiamare «cerimoniale» ogni confezione regalo. Impara un gesto alla volta."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Gong fu cha",
+                "url": "/glossario/gong-fu-cha/",
+                "reason": "definizione"
+              },
+              {
+                "name": "Chanoyu",
+                "url": "/glossario/chanoyu/",
+                "reason": "definizione"
+              },
+              {
+                "name": "Cerimonia hub",
+                "url": "/impara/cerimonia/",
+                "reason": "approfondimento"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, cerimonie"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, chanoyu"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, cerimonia"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

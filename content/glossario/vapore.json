@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "vapore",
+  "meta": {
+    "title": "Vapore (steaming)",
+    "description": "Fissazione al vapore: metodo giapponese che preserva il verde brillante del tè.",
+    "keywords": [
+      "vapore",
+      "steaming",
+      "lavorazione",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/vapore/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "lavorazione_qualità"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "esempio"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il vapore è il gesto che ferma la foglia al verde. In Giappone, pochi secondi di steam dopo il raccolto bloccano l'ossidazione e fissano l'aroma erbaceo che distingue sencha e gyokuro dalla panificazione cinese."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Lavorazione"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dopo il vapore seguono rolling e essiccazione: la foglia si arrotola, si asciuga, si stabilizza. Ogni fase modula umami, amaro e persistenza."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il metodo cinese preferisce spesso la padella calda; non è meglio o peggio — è un'altra grammatica del gusto."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Tipico del Giappone (sencha, gyokuro, bancha)"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Preserva colore verde e note vegetali"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Alternativa cinese: pan-firing nel wok"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Lavorazione",
+                "url": "/impara/lavorazione/",
+                "reason": "dalla pianta alla tazza"
+              },
+              {
+                "name": "Sencha",
+                "url": "/varieta/sencha/",
+                "reason": "verde al vapore"
+              },
+              {
+                "name": "Wok",
+                "url": "/glossario/wok/",
+                "reason": "metodo cinese"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Tutto il tè verde è al vapore?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No. Molti verdi cinesi usano padella; il vapore è dominante in Giappone."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-lavorazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, tema pellegrino-lavorazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, tema sommelier-produzione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

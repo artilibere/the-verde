@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "l-teanina",
+  "meta": {
+    "title": "L-teanina",
+    "description": "Aminoacido del tè che modula caffeina e calma, soprattutto nei verdi ombreggiati.",
+    "keywords": [
+      "L-teanina",
+      "teanina",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/l-teanina/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "caffeina_tannini",
+      "salute_catechine"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "alta L-teanina"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "La L-teanina è l'amico silenzioso della caffeina nel tè. Non la annulla: la accompagna, ammorbidendo l'eccitazione e favorendo una vigilanza più stabile."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Effetto in tazza"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Si accumula nelle foglie ombreggiate — gyokuro, tencha per matcha — perché la pianta, al buio, produce più aminoacidi e meno catechine amare."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "È uno dei motivi per cui il tè «stimola senza eccitare» rispetto al caffè, almeno per molti bevitori."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Più presente in gyokuro e matcha di qualità"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Associata a onde alfa e concentrazione (sommelier, pellegrino)"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Non è un sedativo: è equilibrio"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Caffeina e stimolazione",
+                "url": "/impara/controversie/caffeina-stimolazione/",
+                "reason": "dibattito KB"
+              },
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "ombra e aminoacidi"
+              },
+              {
+                "name": "Caffeina",
+                "url": "/impara/caffeina/",
+                "reason": "modulazione"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "La L-teanina elimina la caffeina?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No. La modula: meno picco nervoso, effetto più prolungato e dolce."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, tema pellegrino-salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, tema sommelier-proprieta"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Treccani — teanina"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

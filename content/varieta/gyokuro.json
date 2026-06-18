@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "gyokuro",
+  "meta": {
+    "title": "Gyokuro — ombra e umami",
+    "description": "Profilo, preparazione e contesto italiano del gyokuro.",
+    "keywords": [
+      "gyokuro",
+      "tè verde",
+      "Camellia sinensis",
+      "gyokuro",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/gyokuro/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "sencha",
+      "matcha"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "stessa filiera ombra"
+      },
+      {
+        "name": "Umami",
+        "url": "/glossario/umami/",
+        "reason": "gusto chiave"
+      },
+      {
+        "name": "Pausa",
+        "url": "/italia/momenti/pausa/",
+        "reason": "momento consigliato"
+      }
+    ],
+    "percorso_tappa": "dal-bancha-al-matcha"
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "gyokuro",
+    "caffeina": "Alta",
+    "stagione": "Primavera",
+    "cultivar": "Yabukita, Okumidori (ombreggiati)",
+    "sort_order": 3,
+    "brew": {
+      "temp": 60,
+      "grams": 4,
+      "seconds": 90,
+      "infusions": "2-3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il gyokuro non si beve di fretta. È ombra, seta e brodo vegetale: un verde che chiede acqua tiepida e un minuto di silenzio."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Ago scuri, verde intenso",
+        "aroma": "Umami profondo, alghe marine",
+        "gusto": "Dolcezza vegetale, burroso",
+        "retrogusto": "Lungo e setoso"
+      },
+      {
+        "type": "brew_params",
+        "temp": 60,
+        "grams": 4,
+        "seconds": 90,
+        "infusions": "2-3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Kyusu piccola",
+          "Tazze yunomi"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Scalda l'acqua a 60 °C",
+            "duration": "2 min"
+          },
+          {
+            "text": "Infusiona 4 g per 100 ml per 90 secondi",
+            "duration": "2 min"
+          },
+          {
+            "text": "Versa lentamente",
+            "duration": "1 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Temperatura troppo alta",
+          "Dosaggio insufficiente",
+          "Trattarlo come sencha (temperatura e dosaggio sbagliati)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il gyokuro dialoga con il pesce crudo e i vini bianchi strutturati: un ponte tra degustazione giapponese e abitudini italiane al mare."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Sashimi, ceviche",
+          "Formaggi freschi delicati"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Perché così cara?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "L'ombreggiatura riduce la resa e richiede manodopera: paghi qualità e lavorazione."
+              }
+            ]
+          },
+          {
+            "question": "Quante infusioni?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Due o tre con tempi leggermente crescenti; dosaggio generoso (4 g / 100 ml)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Ombreggiatura"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tre settimane sotto reti prima del raccolto: la pianta produce più clorofilla e L-teanina, meno catechine amare. Da foglie ombreggiate non arrotolate nasce il tencha, base del matcha."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, scheda gyokuro"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, quotidianità vs Chado"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Matcha",
+            "url": "/varieta/matcha/",
+            "reason": "stessa pianta ombreggiata, macinata"
+          },
+          {
+            "name": "Sencha",
+            "url": "/varieta/sencha/",
+            "reason": "più accessibile"
+          }
+        ]
+      }
+    ]
+  }
+}

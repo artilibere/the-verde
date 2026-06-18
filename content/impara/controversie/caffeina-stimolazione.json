@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "type": "controversy",
+  "slug": "caffeina-stimolazione",
+  "meta": {
+    "title": "Il tè verde stimola o rilassa?",
+    "description": "Caffeina, L-teanina e varietà scelta: la risposta è «dipende» — ecco da cosa.",
+    "keywords": [
+      "caffeina stimolazione",
+      "tè verde",
+      "controversia"
+    ],
+    "canonical_path": "/impara/controversie/caffeina-stimolazione/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Salute",
+        "url": "/impara/salute/",
+        "reason": "contesto"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "positions",
+        "items": [
+          {
+            "fonte": "pellegrino",
+            "tesi": "Stimola senza eccitare: la caffeina è legata ai tannini, rilascio più lento del caffè; la L-teanina modula verso calma vigile. Effetto più lungo e meno nervoso per molti bevitori."
+          },
+          {
+            "fonte": "sommelier",
+            "tesi": "La L-teanina è associata ad onde alfa e concentrazione con calma corporea — spiega perché il tè non equivale a un espresso per il sistema nervoso."
+          },
+          {
+            "fonte": "onuma",
+            "tesi": "Gyokuro prima dello sport può aiutare; prima di dormire no. La varietà conta più dell'etichetta generica «tè verde»."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia ti dicono «il tè verde fa bene e calma». Poi bevi matcha alle tre del mattino e non capisci perché non dormi. La caffeina c'è; cambia forma e dose."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Non esiste un unico effetto: esiste una tazza, un momento, una foglia."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il cuore della questione"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il caffè italiano concentra caffeina in pochi millilitri e la libera in fretta. Il tè la lega a polifenoli e aminoacidi: curva diversa. Ma gyokuro e matcha possono superare sencha per mg in tazza."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Scegli hojicha dopo cena, sencha a metà pomeriggio, evita matcha se sei sensibile. Non è regola universale: ascolta il corpo."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Guida rapida"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Mattina energia: matcha, gyokuro con cautela"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Pausa lavoro: sencha, dragon well"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Sera: hojicha, kukicha, bancha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Infusione lunga: più caffeina e più amaro"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il caffè espresso resta la bussola italiana per molti: il tè non deve sostituirlo, ma offre un'altra curva di energia quando vuoi meno picco e più durata."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Caffeina hub",
+                "url": "/impara/caffeina/",
+                "reason": "tema"
+              },
+              {
+                "name": "Quiz ora giusta",
+                "url": "/gioca/quiz/ora-giusta/",
+                "reason": "esercizio"
+              },
+              {
+                "name": "L-teanina",
+                "url": "/glossario/l-teanina/",
+                "reason": "modulazione"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, proprieta"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, varieta"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

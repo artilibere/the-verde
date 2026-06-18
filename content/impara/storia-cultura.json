@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "storia-cultura",
+  "meta": {
+    "title": "Storia e cultura del tè verde",
+    "description": "Dalle leggende cinesi al tè verde sulla tavola italiana: come una foglia ha attraversato continenti.",
+    "keywords": [
+      "storia tè verde",
+      "cultura del tè",
+      "origini",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/impara/storia-cultura/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "storia_cultura"
+    ],
+    "controversie": [
+      "cerimonia-cina-vs-giappone",
+      "consumo-quotidiano-vs-rituale"
+    ],
+    "explore_next": [
+      {
+        "name": "Gunpowder",
+        "url": "/varieta/gunpowder/",
+        "reason": "storia export"
+      },
+      {
+        "name": "Darjeeling verde",
+        "url": "/varieta/darjeeling-verde/",
+        "reason": "India"
+      },
+      {
+        "name": "Guide matcha Italia",
+        "url": "/guide/matcha-italia/",
+        "reason": "contesto locale"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè verde non nasce in un supermercato: nasce in colline umide, in monasteri, in porti dove mercanti scambiavano merci preziose. Capirne la storia ti aiuta a bere con più consapevolezza — e a non confondere tradizione con marketing."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Qui trovi il filo che collega Shen Nong e i monaci buddhisti al matcha nelle pasticcerie italiane di oggi. Non è un elenco di date: è la mappa culturale del verde."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dalle origini alla diffusione"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Cina la leggenda attribuisce la scoperta a Shen Nong; in Giappone il monaco Eisai portò semi e testi che legarono il tè alla meditazione zen. Il verde restò a lungo la forma dominante prima che l'ossidazione generasse oolong e neri."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Via Venezia e le rotte commerciali il tè entrò in Europa come bene di lusso. In Italia non ha mai soppiantato il caffè, ma oggi — tea shop, ristorazione giapponese, interesse per il benessere — il verde trova spazio come complemento, non come sostituto ideologico."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Cina: culla del tè, pan-firing e gong fu cha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Giappone: vapore, sencha quotidiano, matcha cerimoniale"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "India e Sri Lanka: verdi di montagna meno noti ma affascinanti"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Italia: adozione recente, spesso filtrata da moda wellness"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "italia",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia il tè verde arriva spesso tramite pasticceria (matcha) o erboristeria (tisane confuse con vero tè). Conoscere la storia distingue Camellia sinensis da camomilla e valorizza le tradizioni d'origine."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Dragon Well",
+                "url": "/varieta/dragon-well/",
+                "reason": "tè cinese iconico"
+              },
+              {
+                "name": "Matcha",
+                "url": "/varieta/matcha/",
+                "reason": "filiera giapponese"
+              },
+              {
+                "name": "Gong fu cha",
+                "url": "/glossario/gong-fu-cha/",
+                "reason": "rito cinese"
+              },
+              {
+                "name": "Controversia Cina vs Giappone",
+                "url": "/impara/controversie/cerimonia-cina-vs-giappone/",
+                "reason": "due rituali"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Il tè verde è sempre stato «salutare» nella storia?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "La medicina tradizionale cinese lo valorizzò presto; la scienza moderna misura catechine con altri strumenti. La storia parla di uso culturale e medicinale; non di capsule miracolose."
+                  }
+                ]
+              },
+              {
+                "question": "Perché in Italia siamo legati al caffè e non al tè?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Storia economica e sociale: il caffè divenne rito urbano nel Settecento. Il tè restò di nicchia fino al boom wellness degli anni Duemila."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-storia"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, tradizioni mondiali"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, cultura quotidiana"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

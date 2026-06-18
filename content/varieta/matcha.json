@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "matcha",
+  "meta": {
+    "title": "Matcha — polvere di presenza",
+    "description": "Profilo, preparazione e contesto italiano del matcha.",
+    "keywords": [
+      "matcha",
+      "tè verde",
+      "Camellia sinensis",
+      "matcha",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/matcha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "gyokuro",
+      "genmaicha"
+    ],
+    "temi_kb": [
+      "cerimonia_spiritualita",
+      "cucina_usi_pratici"
+    ],
+    "controversie": [
+      "bevanda-vs-integratore"
+    ],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Chasen",
+        "url": "/glossario/chasen/",
+        "reason": "strumento"
+      },
+      {
+        "name": "Chanoyu",
+        "url": "/glossario/chanoyu/",
+        "reason": "rito"
+      },
+      {
+        "name": "Cucina",
+        "url": "/impara/cucina/",
+        "reason": "ricette"
+      }
+    ],
+    "percorso_tappa": "dal-bancha-al-matcha",
+    "badge_sblocco": "esploratore-verde"
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "matcha",
+    "caffeina": "Alta",
+    "stagione": "Primavera",
+    "cultivar": "Tencha ombreggiato macinato",
+    "sort_order": 4,
+    "brew": {
+      "temp": 80,
+      "grams": 2,
+      "seconds": 0,
+      "infusions": "1"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Polvere verde brillante, schiuma fine: nel matcha bevi la foglia intera, non un infusionato. È gesto, colore, corpo denso."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Polvere verde brillante",
+        "aroma": "Vegetale intenso, erba fresca",
+        "gusto": "Umami, leggermente amaro, dolcezza finale",
+        "retrogusto": "Persistente, quasi cremoso"
+      },
+      {
+        "type": "brew_params",
+        "temp": 80,
+        "grams": 2,
+        "seconds": 0,
+        "infusions": "1"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Chawan (ciotola)",
+          "Chasen (frusta di bambu)",
+          "Chashaku (paletta)"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Setaccia 2 g di matcha nel chawan",
+            "duration": "1 min"
+          },
+          {
+            "text": "Aggiungi 70 ml di acqua a 80 °C",
+            "duration": "30 sec"
+          },
+          {
+            "text": "Frusta a M con il chasen fino a schiuma fine",
+            "duration": "1 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Matcha da cucina per usucha cerimoniale",
+          "Acqua bollente che brucia il sapore",
+          "Frullare con latte freddo senza setacciare (grumi)",
+          "Confondere culinary grade e cerimoniale"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il matcha in pasticceria ha aperto porte, ma la preparazione tradizionale resta un altra esperienza: come il pistacchio di Bronte, è diventato ingrediente status — e anche gesto lento."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Wagashi, marron glace",
+          "Pasticceria a bassa grassosità"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Matcha latte da bar e matcha cerimoniale?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Prodotti diversi: il primo è spesso zuccherato; il secondo richiede tencha di qualità e gesto."
+              }
+            ]
+          },
+          {
+            "question": "Matcha in pasticceria italiana?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Valido come ingrediente se la polvere è di qualità; diverso dal matcha zuccherato da supermercato."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tencha e cerimonia"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Foglie ombreggiate, venature rimosse, macinate in pietra. Usucha per la cerimonia quotidiana, koicha per incontri formali. Il matcha da cucina e da latte non sostituisce il grado cerimoniale."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, lavorazione matcha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, matcha e cucina"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, matcha"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Gyokuro",
+            "url": "/varieta/gyokuro/",
+            "reason": "stessa origine ombreggiata"
+          },
+          {
+            "name": "Genmaicha",
+            "url": "/varieta/genmaicha/",
+            "reason": "quotidiano tostato"
+          }
+        ]
+      }
+    ]
+  }
+}

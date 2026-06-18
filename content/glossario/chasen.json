@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "chasen",
+  "meta": {
+    "title": "Chasen",
+    "description": "Frusta di bambù per matcha: schiuma, gesto, cerimonia.",
+    "keywords": [
+      "chasen",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/chasen/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "cerimonia_spiritualita",
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "preparazione"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il chasen è un bouquet di bambù tagliato a petali. Senza di lui il matcha resta polvere morta in fondo alla ciotola; con lui nasce schiuma e corpo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Utensile"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Chasen collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia puoi incontrarlo nei tea shop, nei corsi di preparazione o nelle schede varietà: riconoscerlo ti orienta tra utensili e rituali diversi."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "80–120 petali di bambù"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Movimento a M, non frullatore"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Va asciugato e conservato con cura"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Matcha",
+                "url": "/glossario/matcha/",
+                "reason": "bevanda"
+              },
+              {
+                "name": "Chawan",
+                "url": "/glossario/chawan/",
+                "reason": "ciotola"
+              },
+              {
+                "name": "Chanoyu",
+                "url": "/glossario/chanoyu/",
+                "reason": "rito"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Posso usare la frusta da cucina?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Sconsigliato: il chasen incorpora aria senza graffiare."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, cerimonia"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, matcha"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

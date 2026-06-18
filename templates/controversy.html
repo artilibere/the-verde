@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<article class="tv-article tv-article--controversy">
+<article class="tv-article tv-article--controversy tv-feed-page">
   <nav class="tv-breadcrumb" aria-label="Breadcrumb">
     <ol class="tv-breadcrumb__list">
       {% for crumb in breadcrumbs %}
@@ -8,24 +8,16 @@
       {% endfor %}
     </ol>
   </nav>
-  <header class="tv-article__header">
+  <header class="tv-article__header tv-card tv-card--hero">
     <h1>{{ meta.title }}</h1>
     <p class="tv-article__lead">{{ meta.meta_description }}</p>
   </header>
-  <div class="tv-article__body">{{ content_html | safe }}</div>
+  <div class="tv-feed">
+    {% for card in page.cards %}
+      {% include "partials/card.html" %}
+    {% endfor %}
+  </div>
   {% if meta.posizioni %}
-  <section class="tv-posizioni" aria-labelledby="pos-heading">
-    <h2 id="pos-heading">Le prospettive</h2>
-    <div class="tv-grid tv-grid--posizioni">
-      {% for p in meta.posizioni %}
-      <article class="tv-posizione-card" data-fonte="{{ p.fonte }}">
-        <h3>{{ p.fonte | capitalize }}</h3>
-        <p>{{ p.tesi }}</p>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-  {% endif %}
   <section class="tv-poll" aria-labelledby="poll-heading" data-controversy="{{ meta.slug }}">
     <h2 id="poll-heading">Tu da che parte ti senti?</h2>
     <form class="tv-poll__form" id="controversy-poll">
@@ -36,6 +28,7 @@
     </form>
     <p class="tv-poll__result" id="poll-result" role="status" hidden></p>
   </section>
+  {% endif %}
   {% include "includes/share.html" %}
 </article>
 {% endblock %}

@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "camellia-sinensis",
+  "meta": {
+    "title": "Camellia sinensis",
+    "description": "L'unica pianta che produce il vero tè: foglie lavorate, non tisane.",
+    "keywords": [
+      "Camellia sinensis",
+      "pianta del tè",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/camellia-sinensis/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "storia_cultura",
+      "lavorazione_qualità"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Lavorazione",
+        "url": "/impara/lavorazione/",
+        "reason": "dalla foglia al verde"
+      },
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "varietà quotidiana"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Quando parli di tè verde, parli sempre di una sola pianta: la Camellia sinensis. Non è un'erba generica né una miscela aromatica: è un arbusto dalle foglie che, se non ossidate, diventano il verde che conosci in tazza."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Botanica e origini"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Appartenente alla famiglia delle Teaceae, la Camellia sinensis cresce in colline umide e climi temperati. Due varietà principali — sinensis e assamica — e innumerevoli cultivar danno origine a sencha, dragon well, gyokuro e tutto il resto."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il nome unisce l'omaggio al botanico Georg Josef Kamel e il latino sinensis, «cinese», perché le prime descrizioni scientifiche partirono da lì. Ma la pianta vive oggi dal Giappone all'India, dal Kenya allo Sri Lanka."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Solo le foglie (e in casi come il matcha, anche il consumo dell'intera foglia) contano per il tè vero"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Tisane come camomilla o menta non sono Camellia sinensis"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Stessa pianta, lavorazioni diverse: verde, oolong, nero, bianco"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Sencha",
+                "url": "/varieta/sencha/",
+                "reason": "esempio di verde giapponese"
+              },
+              {
+                "name": "Catechine",
+                "url": "/glossario/catechine/",
+                "reason": "polifenoli nella foglia"
+              },
+              {
+                "name": "Storia e cultura",
+                "url": "/impara/storia-cultura/",
+                "reason": "diffusione mondiale"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Il tè verde è una pianta diversa dal tè nero?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No: stessa Camellia sinensis. La differenza è nella lavorazione — il verde ferma l'ossidazione presto."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, pp. 45–52"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, pp. 47–51"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Treccani — Camellia"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

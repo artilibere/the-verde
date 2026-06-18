@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "index",
+  "meta": {
+    "title": "In Italia",
+    "description": "Ponte culturale tra tradizioni del tè e abitudini italiane.",
+    "keywords": [
+      "in italia",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/italia/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": []
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè verde in Italia non sostituisce il caffè: si affianca come gesto lento e scoperta sensoriale."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Momenti E Stagioni"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Esplora hub per colazione, pausa, dopo cena e calendario stagionale."
+          }
+        ]
+      }
+    ]
+  }
+}

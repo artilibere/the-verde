@@ -1,49 +1,45 @@
-# the-verde.it
+# The Verde
 
-Repo: https://github.com/artilibere/the-verde
+**[the-verde.it](https://the-verde.it)** — un luogo per esplorare il tè verde (*Camellia sinensis*): non tisane, non moda wellness, ma foglia, tradizione e palato.
 
-Sito editoriale sul tè verde (*Camellia sinensis*) con knowledge base, percorsi gamificati e diario.
+Il sito è pensato per chi vive in Italia e vuole capire cosa c’è in tazza — temperatura, origine, gesto — senza snaturare le culture da cui il tè arriva.
 
-## Build locale
+## Cosa trovi
 
-```bash
-pip install -r requirements.txt
-python scripts/generate_content.py   # rigenera content/ da script
-python scripts/build.py --content content --out dist
-```
+### Impara
 
-## Struttura
+Guide tematiche su storia e cultura, preparazione, degustazione, lavorazione, salute, caffeina, cerimonia e cucina. Ogni argomento parte dal sensoriale e arriva al dettaglio tecnico quando serve.
 
-- `content/` - Markdown sorgente (varietà, guide, impara, glossario, gioca)
-- `books/knowledge-base.json` - KB canonica
-- `templates/` - Jinja2
-- `assets/` - CSS/JS vanilla
-- `scripts/build.py` - generatore HTML statico
-- `dist/` - output deploy
+Nella sezione **Controversie** trovi prospettive diverse affiancate: scienza e tradizione, rituale e consumo quotidiano, bevanda e integratore — senza verdetto unico, con le fonti in chiaro.
 
-## Deploy
+### Varietà
 
-**Live:** https://the-verde.pages.dev (custom domain: https://the-verde.it quando DNS e SSL sono attivi)
+Schede dedicate a dodici verdi: dal quotidiano **sencha** e **bancha** all’ombreggiato **gyokuro**, dalla polvere di **matcha** al tostato **hojicha**, dalla perla cinese **gunpowder** al **darjeeling verde**. Per ognuna: profilo in tazza, parametri di infusione, contesto d’origine.
 
-### Deploy rapido (Wrangler, account artilibere)
+### Glossario
 
-```bash
-bash scripts/deploy.sh
-```
+Termini tecnici e culturali — *umami*, *chanoyu*, *gaiwan*, catechine, vapore — spiegati in italiano, con rinvii alle schede e agli approfondimenti.
 
-Account Cloudflare: `artilibere` (`9d6667327f2b656718e75db0808133f7`)
+### In Italia
 
-### GitHub Actions (opzionale)
+Un ponte tra tradizioni del tè e abitudini italiane: momenti della giornata (colazione, pausa, aperitivo, dopo cena), stagioni, abbinamenti con la cucina locale. Il verde non sostituisce il caffè: si affianca come gesto lento e scoperta.
 
-Secrets in GitHub → Settings → Secrets:
+### Gioca
 
-- `CLOUDFLARE_API_TOKEN` — token con permesso Pages Edit
-- `CLOUDFLARE_ACCOUNT_ID` — `9d6667327f2b656718e75db0808133f7`
+Percorsi guidati con quiz leggeri — dal **bancha** al **matcha**, dal palato italiano alla scienza in confronto con la tradizione. Ogni passo apre una scheda o un articolo; i badge segnano il progresso.
 
-Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+### Guide
 
-## Configurazione fase 3
+Letture più lunghe, ad esempio sul matcha in Italia e sulla storia del tè verde nel nostro paese.
 
-- `assets/js/supabase-config.js` - sync diario
-- `assets/js/giscus.js` - community (impostare repo-id)
-# the-verde
+## Come è fatto il contenuto
+
+Gli articoli si fondano su una knowledge base incrociata di cinque testi di riferimento (Rosen, Bisogno/Pettigrew, Pellegrino, Onuma, Hara). Quando le fonti divergono, lo diciamo. Quando un claim wellness è esagerato, lo segnaliamo.
+
+Il tono è diretto (*tu*), evocativo dove serve, rigoroso sempre: *Camellia sinensis*, origini rispettate, esempi che ruotano tra le varietà — non solo matcha e sencha.
+
+## Visita il sito
+
+👉 **[the-verde.it](https://the-verde.it)**
+
+Il progetto è pubblico su [GitHub](https://github.com/artilibere/the-verde).

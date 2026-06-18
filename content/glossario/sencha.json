@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "sencha",
+  "meta": {
+    "title": "Sencha",
+    "description": "Il tè verde quotidiano del Giappone: foglie al sole, aroma di erba fresca.",
+    "keywords": [
+      "sencha",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/sencha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "preparazione_servizio",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Sencha",
+        "url": "/varieta/sencha/",
+        "reason": "scheda completa"
+      },
+      {
+        "name": "Bancha",
+        "url": "/glossario/bancha/",
+        "reason": "più leggero"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il sencha è quello che beve il Giappone a colazione, al lavoro, con gli amici. Foglie esposte al sole, fissate al vapore, arrotolate in aghi sottili."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Lavorazione e gusto"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel tè verde, Sencha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Capire Sencha ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Raccolto principale del verde giapponese"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Profilo vegetale, marinezza, amaro controllato"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "75 °C circa, non acqua bollente"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Scheda sencha",
+                "url": "/varieta/sencha/",
+                "reason": "preparazione"
+              },
+              {
+                "name": "Gyokuro",
+                "url": "/glossario/gyokuro/",
+                "reason": "confronto ombra"
+              },
+              {
+                "name": "Vapore",
+                "url": "/glossario/vapore/",
+                "reason": "steaming"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Sencha e gyokuro sono la stessa pianta?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Sì, stessa Camellia sinensis. Il gyokuro è ombreggiato prima del raccolto; il sencha cresce al sole."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, pp. 123–125"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-lavorazione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

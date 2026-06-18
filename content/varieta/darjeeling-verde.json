@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "darjeeling-verde",
+  "meta": {
+    "title": "Darjeeling verde — Himalaya in tazza",
+    "description": "Profilo, preparazione e contesto italiano del darjeeling-verde.",
+    "keywords": [
+      "darjeeling verde",
+      "tè verde",
+      "Camellia sinensis",
+      "darjeeling",
+      "India"
+    ],
+    "canonical_path": "/varieta/darjeeling-verde/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "dragon-well",
+      "sencha"
+    ],
+    "temi_kb": [
+      "storia_cultura",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "scheda sensoriale"
+      },
+      {
+        "name": "Storia India",
+        "url": "/impara/storia-cultura/",
+        "reason": "contesto"
+      },
+      {
+        "name": "Glossario Darjeeling",
+        "url": "/glossario/darjeeling/",
+        "reason": "termine"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "India",
+    "stile": "darjeeling",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Cultivar dell'Himalaya (AV2, ecc.)",
+    "sort_order": 99,
+    "brew": {
+      "temp": 80,
+      "grams": 3,
+      "seconds": 180,
+      "infusions": "2"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Muschio di sentiero dopo pioggia, nebbia in quota: il Darjeeling verde non assomiglia al muscat del Darjeeling nero."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Foglie scure con punture argento",
+        "aroma": "Muschio, fiori di montagna",
+        "gusto": "Complesso, leggermente astringente",
+        "retrogusto": "Mineralità"
+      },
+      {
+        "type": "brew_params",
+        "temp": 80,
+        "grams": 3,
+        "seconds": 180,
+        "infusions": "2"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera porcellana",
+          "Acqua 80 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Infusiona 3 g per 100 ml",
+            "duration": "1 min"
+          },
+          {
+            "text": "Attendi 3 minuti",
+            "duration": "3 min"
+          },
+          {
+            "text": "Versa con calma",
+            "duration": "1 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Trattarlo come Darjeeling nero (tempi diversi)",
+          "Aspettarsi muscat tipico del nero",
+          "Infusione troppo breve per foglia intrecciata"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Per chi ama i vini montani: un verde con personalità e terroir leggibile."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Formaggi medi",
+          "Piatti speziati leggeri"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "E lo stesso del Darjeeling nero?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "No: stessa regione, lavorazione non ossidata — profilo diverso."
+              }
+            ]
+          },
+          {
+            "question": "È lo stesso Darjeeling che conosco?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Stessa regione, altra lavorazione: profilo completamente diverso."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Verde di montagna"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Raro rispetto al nero della stessa regione. Lavorazione che preserva freschezza vegetale e mineralità. Per palati abituati a vini bianchi strutturati."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, contesto indiano"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, Nilgiri verde"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Dragon Well",
+            "url": "/varieta/dragon-well/",
+            "reason": "well/) — altro verde con note tostate"
+          },
+          {
+            "name": "Sencha",
+            "url": "/varieta/sencha/",
+            "reason": "confronto quotidiano"
+          }
+        ]
+      }
+    ]
+  }
+}

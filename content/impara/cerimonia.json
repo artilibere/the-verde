@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "cerimonia",
+  "meta": {
+    "title": "Cerimonia e spiritualità",
+    "description": "Dal gong fu cha al chanoyu: quando il tè diventa rito — e quando basta una pausa consapevole.",
+    "keywords": [
+      "cerimonia del tè",
+      "chanoyu",
+      "gong fu cha",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/impara/cerimonia/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "cerimonia_spiritualita"
+    ],
+    "controversie": [
+      "cerimonia-cina-vs-giappone",
+      "consumo-quotidiano-vs-rituale"
+    ],
+    "explore_next": [
+      {
+        "name": "Chasen",
+        "url": "/glossario/chasen/",
+        "reason": "frusta matcha"
+      },
+      {
+        "name": "Impara preparazione",
+        "url": "/impara/preparazione/",
+        "reason": "tecnica base"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cerimonia non significa per forza kimono e giardino di muschio. Significa che acqua e foglia ricevono attenzione piena — in Cina come convivialità, in Giappone come via estetica."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Puoi attingere a queste tradizioni senza recitarle: un kyusu scaldato, tre respiri prima del primo sorso, già è un gesto diverso dal bustino scartato al volo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Due tradizioni, due registri"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il gong fu cha cinese è ospitalità e abilità: piccole tazze, infusioni ripetute, gaiwan o yixing. Il chanoyu giapponese codifica spazio (roji), strumenti (chawan, chasen) e matcha in usucha o koicha."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Giappone convivono bancha in bottiglia e Chado formale — non c'è contraddizione. Il quotidiano e il sacro attraversano la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Chanoyu",
+                "url": "/glossario/chanoyu/",
+                "reason": "via del tè"
+              },
+              {
+                "name": "Gong fu cha",
+                "url": "/glossario/gong-fu-cha/",
+                "reason": "arte cinese"
+              },
+              {
+                "name": "Percorso rituale è quotidiano",
+                "url": "/gioca/percorsi/rituale-quotidiano/",
+                "reason": "gioco"
+              },
+              {
+                "name": "Matcha",
+                "url": "/varieta/matcha/",
+                "reason": "cuore cerimoniale"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Posso praticare chanoyu in Italia?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Ci sono scuole e gruppi; anche senza sala formale puoi imparare usucha con matcha e chasen di qualità."
+                  }
+                ]
+              },
+              {
+                "question": "Il rituale è religioso?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Ha radici zen; oggi molti lo vivono come estetica e presenza, non come dogma."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, cerimonia"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, chanoyu"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, cerimonie"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

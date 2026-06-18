@@ -12,7 +12,7 @@ Analizzare e applicare miglioramenti mirati al sito statico **the-verde.it**: co
 | KB canonica | `books/knowledge-base.json` | Fonte di verità editoriale |
 | Template | `templates/` | Jinja2 → HTML in `dist/` |
 | Asset | `assets/css/`, `assets/js/` | Vanilla CSS/JS, design system `tv-*` |
-| Build | `scripts/build.py`, `html_enrich.py`, `asset_pipeline.py` | Generatore statico |
+| Build | `scripts/build.py`, `scripts/site_builder/`, `asset_pipeline.py` | Generatore statico JSON→HTML |
 | Encoding | `scripts/fix_encoding.py` | Accentuazione italiana; preserva slug `/varieta/` e `?varieta=` |
 | Skill esperto | `.cursor/skills/the-verde-expert/` | Voce, varietà, cultura IT |
 | Skill UI | `.cursor/skills/uiux-designer/` | Design system M3, componenti, personas |
@@ -22,7 +22,7 @@ Analizzare e applicare miglioramenti mirati al sito statico **the-verde.it**: co
 1. **Identificare l'area** in base al task o al diff:
    - **Editoria**: `content/varieta/`, `content/impara/`, `content/guide/`, glossario
    - **UX/UI**: `templates/`, `assets/css/`, `assets/js/`
-   - **Build**: `scripts/build.py`, `html_enrich.py`, `asset_pipeline.py`
+   - **Build**: `scripts/build.py`, `scripts/site_builder/`, `asset_pipeline.py`
    - **Skill/agenti**: `.cursor/skills/`, `.cursor/rules/`
 2. **Contenuti editoriali** (se toccati):
    - Consultare `books/knowledge-base.json` e `.cursor/skills/the-verde-expert/`

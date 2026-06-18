@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "type": "controversy",
+  "slug": "qualita-sensoriale-vs-chimica",
+  "meta": {
+    "title": "Cosa definisce un buon tè verde?",
+    "description": "Palato, occhio e laboratorio: tre modi di misurare la stessa foglia.",
+    "keywords": [
+      "qualita sensoriale vs chimica",
+      "tè verde",
+      "controversia"
+    ],
+    "canonical_path": "/impara/controversie/qualita-sensoriale-vs-chimica/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Salute scienza vs tradizione",
+        "url": "/impara/controversie/salute-scienza-vs-tradizione/",
+        "reason": "correlata"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "positions",
+        "items": [
+          {
+            "fonte": "sommelier",
+            "tesi": "Scheda sensoriale professionale: assenza di difetti, equilibrio tra corpo e astringenza, note varietali tipiche del cultivar e del terroir. Il prezzo non basta."
+          },
+          {
+            "fonte": "onuma",
+            "tesi": "Aroma di erba fresca, brillantezza della foglia, sapore equilibrato senza domanda di laboratorio. Anche al supermercato si impara a scartare polveri spente."
+          },
+          {
+            "fonte": "hara",
+            "tesi": "Contenuto di catechine, cultivar e processo produttivo giapponese determinano il profilo «salutare». La chimica non è nemica del gusto ma lo misura diversamente."
+          },
+          {
+            "fonte": "rosen",
+            "tesi": "La bellezza della foglia essiccata e il piacere in tazza sono criteri legittimi. Un tè può emozionare senza scheda analitica."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Compri un gyokuro per l'umami o per le catechine? Spesso per entrambi, senza saperlo. Ma quando qualità scende, palato e laboratorio possono non coincidere."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Questa controversia riguarda chi produce, chi vende e chi beve: cosa intendiamo quando diciamo «buono»."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il cuore della questione"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Un verde eccellente al gusto tende a essere anche fresco e ben lavorato — quindi ricco di molecole interessanti. Ma un integratore di EGCG non ti regala il profilo sensoriale del gyokuro."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "In Italia il consumatore incontra spesso solo prezzo e packaging: imparare a degustare è difesa contro fregature."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Convergenza pratica"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Foglia intera, colore vivido, aroma pulito, assenza di muffa o tostatura rancida: palato e occhio filtrano già molto. Il laboratorio serve produttori e ricerca, non obbligatoriamente la tua cucina."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Quando paghi un gyokuro premium, paghi anche lavorazione e freschezza che tendono a coincidere con un profilo ricco — anche se non hai uno spettrometro in cucina."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Degustazione",
+                "url": "/impara/degustazione/",
+                "reason": "metodo"
+              },
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "esempio premium"
+              },
+              {
+                "name": "Lavorazione",
+                "url": "/impara/lavorazione/",
+                "reason": "dalla foglia"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, degustazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, catechine"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, estetica foglia"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<div class="tv-faq">
+  {% for item in body['items'] %}
+  <details class="tv-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary class="tv-faq__question" itemprop="name">{{ item.question }}</summary>
+    <div class="tv-faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">{% for span in item.answer_spans %}{% if span.type == 'strong' %}<strong>{{ span.value }}</strong>{% elif span.type == 'link' %}<a href="{{ span.href }}">{{ span.value }}</a>{% else %}{{ span.value }}{% endif %}{% endfor %}</p>
+    </div>
+  </details>
+  {% endfor %}
+</div>

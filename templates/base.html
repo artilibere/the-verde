@@ -6,6 +6,9 @@
   {% set page_title = seo_title if site_name in seo_title else seo_title ~ ' | ' ~ site_name %}
   <title>{% block title %}{{ page_title }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ seo_description }}{% endblock %}">
+  {% if seo_keywords is defined and seo_keywords %}
+  <meta name="keywords" content="{{ seo_keywords }}">
+  {% endif %}
   <meta name="robots" content="{{ seo_robots }}">
   {% if seo_url %}
   <link rel="canonical" href="{{ base_url }}{{ seo_url }}">
@@ -61,7 +64,23 @@
       </nav>
     </div>
   </header>
-  <main id="main" class="tv-main tv-main--{{ page_type | default('default') }}">{% block content %}{% endblock %}</main>
+  <main id="main" class="tv-main tv-main--{{ page_type | default('default') }}{% if page is defined and page.cards %} tv-feed-layout{% endif %}">{% block content %}{% endblock %}</main>
+  {% if page_type not in ('legal', 'search') %}
+  <nav class="tv-bottom-nav" aria-label="Navigazione app">
+    <a href="/varieta/" class="tv-bottom-nav__item{% if page_type in ('catalog', 'variety') %} tv-bottom-nav__item--active{% endif %}"{% if page_type in ('catalog', 'variety') %} aria-current="page"{% endif %}>
+      <span class="tv-bottom-nav__label">Varietà</span>
+    </a>
+    <a href="/italia/" class="tv-bottom-nav__item{% if page_type == 'hub' and seo_url is defined and seo_url.startswith('/italia') %} tv-bottom-nav__item--active{% endif %}">
+      <span class="tv-bottom-nav__label">Italia</span>
+    </a>
+    <a href="/impara/" class="tv-bottom-nav__item{% if page_type == 'hub' and seo_url is defined and seo_url.startswith('/impara') %} tv-bottom-nav__item--active{% endif %}">
+      <span class="tv-bottom-nav__label">Impara</span>
+    </a>
+    <a href="/guide/" class="tv-bottom-nav__item{% if page_type == 'article' and seo_url is defined and seo_url.startswith('/guide') %} tv-bottom-nav__item--active{% endif %}">
+      <span class="tv-bottom-nav__label">Guide</span>
+    </a>
+  </nav>
+  {% endif %}
   <footer class="tv-footer" role="contentinfo">
     <div class="tv-footer__inner">
       <p class="tv-footer__brand">The Verde</p>

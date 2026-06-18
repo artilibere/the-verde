@@ -1,0 +1,35 @@
+---
+description: Attiva SEO/GEO Expert per ottimizzazione motori di ricerca e AI generative su the-verde.it
+globs:
+  - "content/**"
+  - "content/_config/**"
+  - "scripts/site_builder/enrichers/**"
+  - "scripts/seo.py"
+  - "templates/base.html"
+  - "tests/test_enrichers_seo.py"
+  - "tests/test_build_integration.py"
+  - "agents/seo-geo-expert/**"
+alwaysApply: false
+---
+
+# SEO/GEO Expert — the-verde.it
+
+Quando lavori su metadati, schema.org, sitemap, internal linking, citabilità per LLM o audit SEO, applica **[seo-geo-expert](../skills/seo-geo-expert/SKILL.md)**.
+
+## Quando usare
+
+- Audit o miglioramento `meta`, `seo`, `navigation` nei JSON
+- JSON-LD, Open Graph, canonical, robots
+- Ottimizzazione hub, catalogo, glossario per scoperta
+- GEO: chunk citabili, FAQ, llms.txt, E-E-A-T
+- Agente Cloudflare in `agents/seo-geo-expert/`
+
+## Collaborazione
+
+- **web-architect**: build pipeline e schemi — non bypassare validazione
+- **the-verde-expert**: contenuto e fonti KB per E-E-A-T
+- **uiux-designer**: semantica HTML e template head
+
+## Regola di conflitto
+
+Accuratezza editoriale e accessibilità > trucchi SEO. Mai keyword stuffing o claim salutistici non qualificati.

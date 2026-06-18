@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "umami",
+  "meta": {
+    "title": "Umami",
+    "description": "Quinto gusto, sapidità brodosa percepita nei verdi giapponesi di alta gamma.",
+    "keywords": [
+      "umami",
+      "quinto gusto",
+      "sapidità",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/umami/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "riferimento"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Quinto gusto in tazza: l'umami è burro vegetale, brodo leggero, mare lontano. Non è sale — è rotondità che riempie il palato, soprattutto nel gyokuro e nel matcha di qualità."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dal glutammato alla foglia ombreggiata"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il termine giapponese umami indica una piacevole sapidità; nel tè verde emerge quando aminoacidi e lavorazione preservano dolcezza e riducono l'amaro grezzo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Se conosci il parmigiano o una colatura di alici, hai già un ponte sensoriale — senza forzare paragoni che snaturano il tè."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Segnale di qualità nei verdi ombreggiati"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Si perde con acqua bollente e foglie stantie"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Lessico utile per degustare come un sommelier"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "umami denso"
+              },
+              {
+                "name": "Matcha",
+                "url": "/varieta/matcha/",
+                "reason": "corpo pieno"
+              },
+              {
+                "name": "Degustazione",
+                "url": "/impara/degustazione/",
+                "reason": "scheda sensoriale"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "L'umami è solo giapponese?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Il concetto è giapponese; la sensazione compare anche in altri verdi ben fatti, ma è iconica nel gyokuro."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, tema onuma-salute-pratica"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, tema sommelier-degustazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Treccani — umami"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

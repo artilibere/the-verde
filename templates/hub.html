@@ -14,10 +14,16 @@
   <button type="button" class="tv-btn tv-btn--text tv-level-toggle" data-level-toggle aria-pressed="false" aria-label="Mostra sezione approfondimento">Vista completa</button>
   {% endif %}
 </header>
-{% if content_html %}
+{% if page and page.cards %}
+<div class="tv-feed">
+  {% for card in page.cards %}
+    {% include "partials/card.html" %}
+  {% endfor %}
+</div>
+{% elif content_html %}
 <div class="tv-article__body">{{ content_html | safe }}</div>
 {% endif %}
-{% if relazioni %}
+{% if relazioni and not page %}
 <section class="tv-relazioni" aria-labelledby="rel-heading">
   <h2 id="rel-heading">Collegamenti tematici</h2>
   <ul class="tv-relazioni__list">
@@ -27,7 +33,7 @@
   </ul>
 </section>
 {% endif %}
-{% if controversies %}
+{% if controversies and not page %}
 <section class="tv-section">
   <h2>Controversie collegate</h2>
   <ul class="tv-link-list">

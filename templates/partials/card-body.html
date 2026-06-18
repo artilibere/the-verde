@@ -1,0 +1,22 @@
+{% set b = card.body %}
+{% if b.type == 'prose' %}
+  {% with blocks=b.blocks %}{% include "partials/prose.html" %}{% endwith %}
+{% elif b.type == 'metrics' %}
+  {% with body=b %}{% include "partials/metrics.html" %}{% endwith %}
+{% elif b.type == 'sensory' %}
+  {% with body=b %}{% include "partials/sensory.html" %}{% endwith %}
+{% elif b.type == 'list' %}
+  <ul class="tv-prose__list">{% for item in b['items'] %}<li>{{ item }}</li>{% endfor %}</ul>
+{% elif b.type == 'howTo' %}
+  {% with body=b %}{% include "partials/steps.html" %}{% endwith %}
+{% elif b.type == 'faq' %}
+  {% with body=b %}{% include "partials/faq.html" %}{% endwith %}
+{% elif b.type == 'related' %}
+  {% with body=b %}{% include "partials/related.html" %}{% endwith %}
+{% elif b.type == 'positions' %}
+  {% with body=b %}{% include "partials/positions.html" %}{% endwith %}
+{% elif b.type == 'linkGrid' %}
+  {% with body=b %}{% include "partials/link-grid.html" %}{% endwith %}
+{% elif b.type == 'themeLinks' %}
+  {% with body=b %}{% include "partials/theme-links.html" %}{% endwith %}
+{% endif %}

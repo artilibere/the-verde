@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "hojicha",
+  "meta": {
+    "title": "Hojicha",
+    "description": "Tè verde tostato: nocciola, bassa caffeina, sera rassicurante.",
+    "keywords": [
+      "hojicha",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/hojicha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "caffeina_tannini"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Hojicha",
+        "url": "/varieta/hojicha/",
+        "reason": "scheda"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "L'hojicha profuma di pane tostato. Foglie o rametti passati al calore: il verde diventa ambrato, la caffeina cala, il gesto serale si fa semplice."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tostatura"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel tè verde, Hojicha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Capire Hojicha ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Ideale dopo cena"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Note di nocciola e caramello leggero"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "90 °C, tempi brevi"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Scheda hojicha",
+                "url": "/varieta/hojicha/",
+                "reason": "scheda"
+              },
+              {
+                "name": "Bancha",
+                "url": "/glossario/bancha/",
+                "reason": "materia possibile"
+              },
+              {
+                "name": "Caffeina",
+                "url": "/impara/caffeina/",
+                "reason": "contenuto"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "L'hojicha è tè nero?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No. Parte da verde; la tostatura cambia colore e profilo, non la botanica."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-lavorazione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

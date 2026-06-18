@@ -3,61 +3,90 @@
     {
       "slug": "che-varieta-sei",
       "title": "Che varietà sei?",
-      "description": "Un profilo sensoriale, non un test di personalità.",
+      "description": "Un profilo sensoriale, non un test di personalità: scopri quale verde risuona con i tuoi gusti.",
       "badge": "quiz-sensoriale",
       "questions": [
         {"q": "Preferisci sapori...", "options": ["Delicati e leggeri", "Ricchi e umami", "Tostati e rassicuranti"], "scores": [0, 2, 1]},
         {"q": "Quando bevi tè...", "options": ["Mattina presto", "Pausa pomeridiana", "Dopo cena"], "scores": [1, 2, 0]},
-        {"q": "Ti attraggono note...", "options": ["Vegetali fresche", "Marine e burrose", "Nocciola e caramello"], "scores": [2, 1, 0]}
+        {"q": "Ti attraggono note...", "options": ["Vegetali fresche", "Marine e burrose", "Nocciola e caramello"], "scores": [2, 1, 0]},
+        {"q": "Quanto tempo hai per preparare?", "options": ["Pochi secondi", "Un minuto di attenzione", "Rituale lento"], "scores": [0, 1, 2]},
+        {"q": "Con cosa abbineresti?", "options": ["Frutta e biscotti secchi", "Pesce crudo o risotto", "Cioccolato fondente"], "scores": [0, 2, 1]},
+        {"q": "Caffeina per te...", "options": ["Quanto meno possibile", "Equilibrio senza nervosismo", "Energia concentrata"], "scores": [0, 1, 2]},
+        {"q": "Ti piace la mineralità?", "options": ["Poco, preferisco dolcezza", "Sì, come un vino bianco", "Non ci penso"], "scores": [0, 2, 1]},
+        {"q": "Estate: tè freddo?", "options": ["Sì, cold brew", "Occasionalmente", "Preferisco caldo"], "scores": [2, 1, 0]}
       ],
       "results": [
-        {"min": 0, "max": 2, "title": "Bancha o kukicha", "url": "/varieta/bancha/", "text": "Cerchi leggerezza e bassa caffeina."},
-        {"min": 3, "max": 4, "title": "Sencha o dragon well", "url": "/varieta/sencha/", "text": "Equilibrio vegetale e quotidianità."},
-        {"min": 5, "max": 6, "title": "Gyokuro o matcha", "url": "/varieta/gyokuro/", "text": "Umami profondo e attenzione al gesto."}
+        {"min": 0, "max": 4, "title": "Bancha, kukicha o hojicha", "url": "/varieta/bancha/", "text": "Cerchi leggerezza, bassa caffeina e gesto semplice."},
+        {"min": 5, "max": 9, "title": "Sencha, dragon well o genmaicha", "url": "/varieta/sencha/", "text": "Equilibrio vegetale, quotidianità e versatilità."},
+        {"min": 10, "max": 14, "title": "Gyokuro, matcha o darjeeling verde", "url": "/varieta/gyokuro/", "text": "Umami profondo, attenzione al gesto o mineralità da esploratore."}
       ]
     },
     {
       "slug": "riconosci-errore",
       "title": "Riconosci l'errore",
-      "description": "Temperature e tempi: cosa rovina una tazza?",
+      "description": "Temperature e tempi: cosa rovina una tazza? Impara dagli errori più comuni in Italia.",
       "badge": "quiz-errori",
       "questions": [
-        {"q": "Sencha con acqua bollente?", "options": ["Ottimo", "Amaro eccessivo"], "correct": 1, "explain": "Il sencha chiede 70-80 °C.", "url": "/varieta/sencha/"},
-        {"q": "Gyokuro infusionato 5 minuti?", "options": ["Corretto", "Troppo astringente"], "correct": 1, "explain": "Il gyokuro va infusionato brevemente.", "url": "/varieta/gyokuro/"},
-        {"q": "Matcha sciolto con forchetta veloce?", "options": ["Tradizionale", "Serve frusta chasen"], "correct": 1, "explain": "La schiuma nasce dal gesto del chasen.", "url": "/varieta/matcha/"}
+        {"q": "Sencha con acqua bollente?", "options": ["Ottimo", "Amaro eccessivo"], "correct": 1, "explain": "Il sencha chiede 70–80 °C. L'acqua bollente estrae troppe catechine amare.", "url": "/varieta/sencha/"},
+        {"q": "Gyokuro infusionato 5 minuti?", "options": ["Corretto", "Troppo astringente"], "correct": 1, "explain": "Il gyokuro va infusionato brevemente con acqua tiepida, 50–60 °C.", "url": "/varieta/gyokuro/"},
+        {"q": "Matcha sciolto con forchetta veloce?", "options": ["Tradizionale", "Serve frusta chasen"], "correct": 1, "explain": "La schiuma e il corpo nascono dal gesto del chasen, non da una frusta da cucina.", "url": "/varieta/matcha/"},
+        {"q": "Dragon Well a 100 °C per tre minuti?", "options": ["Ideale", "Appiattisce nocciola e dolcezza"], "correct": 1, "explain": "Il Long Jing preferisce 75–80 °C e tempi moderati per preservare il profilo.", "url": "/varieta/dragon-well/"},
+        {"q": "Bi Luo Chun: doppia dose di foglia?", "options": ["Sempre meglio", "Rischio amaro floreale"], "correct": 1, "explain": "È un tè delicato: 3 g per 100 ml bastano; troppa foglia sovrastrae.", "url": "/varieta/bi-luo-chun/"},
+        {"q": "Gunpowder trattato come sencha delicato?", "options": ["Stessa temperatura minima", "Può reggere 85 °C"], "correct": 1, "explain": "Le perle compatte del gunpowder tollerano più calore del sencha premium.", "url": "/varieta/gunpowder/"},
+        {"q": "Hojicha prima di dormire: problema?", "options": ["Sempre, caffeina alta", "Di solito no, bassa caffeina"], "correct": 1, "explain": "La tostatura riduce la caffeina; è tra i verdi più adatti alla sera.", "url": "/varieta/hojicha/"},
+        {"q": "Cold brew gyokuro: 10 minuti in frigo?", "options": ["Basta", "Servono ore (4–8)"], "correct": 1, "explain": "L'estrazione fredda è lenta: pazienza per umami dolce senza amaro.", "url": "/varieta/cold-brew-gyokuro/"},
+        {"q": "Bancha con acqua dell'ebollitore lunga?", "options": ["Indifferente", "Può diventare aspro"], "correct": 1, "explain": "Anche il bancha preferisce 80 °C circa; è indulgente ma non immune al calore.", "url": "/varieta/bancha/"},
+        {"q": "Darjeeling verde: infusione di 30 secondi?", "options": ["Sufficiente", "Troppo breve per foglia intrecciata"], "correct": 1, "explain": "Foglie himalayane spesso chiedono fino a 3 minuti a 80 °C.", "url": "/varieta/darjeeling-verde/"}
       ]
     },
     {
       "slug": "mito-verita",
       "title": "Mito o verità",
-      "description": "Dieci affermazioni sulla salute del tè verde.",
+      "description": "Dieci affermazioni sulla salute del tè verde: distingui evidenza, tradizione e marketing.",
       "badge": "quiz-miti",
       "questions": [
-        {"q": "Il tè verde brucia grassi da solo?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Nessun alimento dimagrisce da solo.", "url": "/impara/controversie/salute-scienza-vs-tradizione/"},
-        {"q": "Le catechine sono antiossidanti?", "options": ["Mito", "Verità"], "correct": 1, "explain": "Evidenza solida sul potenziale antiossidante.", "url": "/impara/salute/"},
-        {"q": "Il tè verde sostituisce il medico?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Prevenzione si, terapia no.", "url": "/impara/salute/"}
+        {"q": "Il tè verde brucia grassi da solo?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Nessun alimento dimagrisce da solo. Eventuali effetti sul metabolismo non sostituiscono dieta ed esercizio.", "url": "/impara/controversie/salute-scienza-vs-tradizione/"},
+        {"q": "Le catechine sono antiossidanti?", "options": ["Mito", "Verità"], "correct": 1, "explain": "Evidenza solida sul potenziale antiossidante in vitro e in studi; dosi in tazza ≠ laboratorio.", "url": "/impara/salute/"},
+        {"q": "Il tè verde sostituisce il medico?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Prevenzione e stile di vita sì; terapie no. Mai abbandonare cure prescritte.", "url": "/impara/salute/"},
+        {"q": "Il matcha concentra più catechine del sencha infusionato?", "options": ["Mito", "Verità"], "correct": 1, "explain": "Bevi la foglia intera: più polifenoli in tazza rispetto a un filtrato.", "url": "/impara/controversie/bevanda-vs-integratore/"},
+        {"q": "Gli integratori di EGCG sono sempre più efficaci della tazza?", "options": ["Mito", "Verità"], "correct": 0, "explain": "La ricerca usa estratti; la bevanda integra piacere, ritualità e consumo regolare.", "url": "/impara/controversie/bevanda-vs-integratore/"},
+        {"q": "Il tè verde «detoxifica» il fegato?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Linguaggio marketing. Il fegato non ha bisogno di «detox» da una bevanda.", "url": "/impara/controversie/salute-scienza-vs-tradizione/"},
+        {"q": "La L-teanina modula gli effetti della caffeina?", "options": ["Mito", "Verità"], "correct": 1, "explain": "Nel tè caffeina e aminoacidi convivono: stimolazione più dolce del caffè per molti bevitori.", "url": "/impara/controversie/caffeina-stimolazione/"},
+        {"q": "Bere tè verde sporadico basta come gli studi?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Tradizione e ricerca concordano: regolarità conta più del singolo bicchiere «miracoloso».", "url": "/impara/salute/"},
+        {"q": "Tisana di camomilla = tè verde?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Solo Camellia sinensis è tè vero. Camomilla è infuso di erba diversa.", "url": "/glossario/camellia-sinensis/"},
+        {"q": "Il chanoyu misura le catechine in tazza?", "options": ["Mito", "Verità"], "correct": 0, "explain": "Il rito privilegia estetica e presenza; la scienza chiede dosi misurabili — due linguaggi.", "url": "/impara/controversie/consumo-quotidiano-vs-rituale/"}
       ]
     },
     {
       "slug": "cina-giappone",
       "title": "Cina o Giappone",
-      "description": "Associa varietà e tradizione.",
+      "description": "Associa varietà, utensili e tradizioni: due mondi del tè verde, non un blocco unico.",
       "badge": "quiz-oriente",
       "questions": [
-        {"q": "Dragon Well e...", "options": ["Cina", "Giappone"], "correct": 0, "url": "/varieta/dragon-well/"},
-        {"q": "Chanoyu e...", "options": ["Cina", "Giappone"], "correct": 1, "url": "/impara/cerimonia/"},
-        {"q": "Gong fu cha e...", "options": ["Cina", "Giappone"], "correct": 0, "url": "/impara/preparazione/"}
+        {"q": "Dragon Well (Long Jing) e...", "options": ["Cina", "Giappone"], "correct": 0, "explain": "Tè piatto di Zhejiang, pan-firing in wok.", "url": "/varieta/dragon-well/"},
+        {"q": "Chanoyu e...", "options": ["Cina", "Giappone"], "correct": 1, "explain": "Via del tè giapponese, matcha e cerimonia codificata.", "url": "/glossario/chanoyu/"},
+        {"q": "Gong fu cha e...", "options": ["Cina", "Giappone"], "correct": 0, "explain": "Arte cinese del tè: infusioni brevi, ospitalità, gaiwan o yixing.", "url": "/glossario/gong-fu-cha/"},
+        {"q": "Sencha al vapore e...", "options": ["Cina", "Giappone"], "correct": 1, "explain": "Metodo giapponese di steaming dopo raccolto al sole.", "url": "/varieta/sencha/"},
+        {"q": "Gunpowder (Zhu Cha) e...", "options": ["Cina", "Giappone"], "correct": 0, "explain": "Perle arrotolate, tradizione export cinese.", "url": "/varieta/gunpowder/"},
+        {"q": "Kyusu con manico laterale e...", "options": ["Cina", "Giappone"], "correct": 1, "explain": "Teiera giapponese per sencha quotidiano.", "url": "/glossario/kyusu/"},
+        {"q": "Bi Luo Chun a spirale e...", "options": ["Cina", "Giappone"], "correct": 0, "explain": "Raccolto primaverile del Jiangsu.", "url": "/varieta/bi-luo-chun/"},
+        {"q": "Chasen (frusta bambù) e...", "options": ["Cina", "Giappone"], "correct": 1, "explain": "Strumento per matcha e chanoyu.", "url": "/glossario/chasen/"}
       ]
     },
     {
       "slug": "ora-giusta",
       "title": "L'ora giusta",
-      "description": "Caffeina e momento della giornata.",
+      "description": "Caffeina, tannini e momento della giornata: scegli il verde giusto per l'orologio.",
       "badge": "quiz-ora",
       "questions": [
-        {"q": "Prima di dormire meglio...", "options": ["Gyokuro", "Hojicha"], "correct": 1, "url": "/varieta/hojicha/"},
-        {"q": "Pausa lavoro senza nervosismo...", "options": ["Matcha", "Sencha"], "correct": 1, "url": "/varieta/sencha/"},
-        {"q": "Stomaco vuoto delicato...", "options": ["Bancha", "Gyokuro"], "correct": 0, "url": "/varieta/bancha/"}
+        {"q": "Prima di dormire meglio...", "options": ["Gyokuro", "Hojicha"], "correct": 1, "explain": "Hojicha tostato, caffeina molto bassa. Gyokuro è tra i più ricchi.", "url": "/varieta/hojicha/"},
+        {"q": "Pausa lavoro senza nervosismo...", "options": ["Matcha", "Sencha"], "correct": 1, "explain": "Sencha: caffeina media, profilo equilibrato. Matcha concentra di più.", "url": "/varieta/sencha/"},
+        {"q": "Stomaco vuoto delicato...", "options": ["Bancha", "Gyokuro"], "correct": 0, "explain": "Bancha morbido e poco astringente. Gyokuro denso può essere troppo su stomaco vuoto.", "url": "/varieta/bancha/"},
+        {"q": "Mattina: energia concentrata...", "options": ["Matcha", "Kukicha"], "correct": 0, "explain": "Matcha: foglia intera, caffeina e L-teanina insieme.", "url": "/varieta/matcha/"},
+        {"q": "Dopo cena con cioccolato...", "options": ["Sencha", "Hojicha"], "correct": 1, "explain": "Note tostate dell'hojicha dialogano con il fondente senza tenerti sveglio.", "url": "/varieta/hojicha/"},
+        {"q": "Estate, aperitivo analcolico...", "options": ["Cold brew gyokuro", "Gunpowder caldo"], "correct": 0, "explain": "Estrazione fredda: dolcezza e umami senza amaro.", "url": "/varieta/cold-brew-gyokuro/"},
+        {"q": "Colazione leggera alternativa...", "options": ["Genmaicha", "Gyokuro"], "correct": 0, "explain": "Genmaicha comfort, bassa caffeina. Gyokuro è degustazione, non colazione rapida.", "url": "/varieta/genmaicha/"},
+        {"q": "Sport leggero pomeridiano...", "options": ["Gyokuro", "Darjeeling verde"], "correct": 0, "explain": "Onuma suggerisce gyokuro prima dello sport; la scelta dipende dalla tolleranza alla caffeina.", "url": "/impara/controversie/caffeina-stimolazione/"}
       ]
     }
   ]

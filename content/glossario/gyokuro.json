@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "gyokuro",
+  "meta": {
+    "title": "Gyokuro",
+    "description": "Tè ombreggiato: umami denso, infusione tiepida, gesto lento.",
+    "keywords": [
+      "gyokuro",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/gyokuro/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "scheda"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il gyokuro nasce all'ombra. Tre settimane senza sole diretto e la foglia cambia: più L-teanina, meno amaro, un verde profondo che chiede acqua tiepida e attenzione."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Ombreggiatura"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel tè verde, Gyokuro non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Capire Gyokuro ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Massimo rappresentante dell'umami giapponese"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "50–60 °C, dosaggio generoso"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Base culturale del tencha e del matcha cerimoniale"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Scheda gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "parametri"
+              },
+              {
+                "name": "Tencha",
+                "url": "/glossario/tencha/",
+                "reason": "senza arrotolamento"
+              },
+              {
+                "name": "Umami",
+                "url": "/glossario/umami/",
+                "reason": "gusto"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Perché costa di più?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "L'ombreggiatura riduce la resa e richiede manodopera; paghi qualità e lavorazione."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, scheda gyokuro"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

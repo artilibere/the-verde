@@ -1,0 +1,11 @@
+{% for block in blocks %}
+  {% if block.type == 'paragraph' %}
+    <p class="tv-prose__p">{% for span in block.spans %}{% if span.type == 'strong' %}<strong class="tv-prose__strong">{{ span.value }}</strong>{% elif span.type == 'em' %}<em class="tv-prose__em">{{ span.value }}</em>{% elif span.type == 'link' %}<a href="{{ span.href }}" class="tv-prose__link">{{ span.value }}</a>{% else %}{{ span.value }}{% endif %}{% endfor %}</p>
+  {% elif block.type == 'heading' %}
+    <h{{ block.level }} class="tv-prose__heading tv-prose__heading--{{ block.level }}">{% for span in block.spans %}{{ span.value }}{% endfor %}</h{{ block.level }}>
+  {% elif block.type == 'list' %}
+    {% if block.ordered %}<ol class="tv-prose__list">{% else %}<ul class="tv-prose__list">{% endif %}
+      {% for item in block['items'] %}<li>{% for span in item.spans %}{% if span.type == 'link' %}<a href="{{ span.href }}" class="tv-prose__link">{{ span.value }}</a>{% else %}{{ span.value }}{% endif %}{% endfor %}</li>{% endfor %}
+    {% if block.ordered %}</ol>{% else %}</ul>{% endif %}
+  {% endif %}
+{% endfor %}

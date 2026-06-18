@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "bancha",
+  "meta": {
+    "title": "Bancha — il verde quotidiano e leggero",
+    "description": "Profilo, preparazione e contesto italiano del bancha.",
+    "keywords": [
+      "bancha",
+      "tè verde",
+      "Camellia sinensis",
+      "bancha",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/bancha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "kukicha",
+      "hojicha"
+    ],
+    "temi_kb": [
+      "preparazione_servizio",
+      "caffeina_tannini"
+    ],
+    "controversie": [],
+    "momenti": [
+      "colazione",
+      "dopo-cena"
+    ],
+    "stagioni": [
+      "estate"
+    ],
+    "explore_next": [
+      {
+        "name": "Kukicha",
+        "url": "/varieta/kukicha/",
+        "reason": "ancora più leggero"
+      },
+      {
+        "name": "Glossario bancha",
+        "url": "/glossario/bancha/",
+        "reason": "definizione"
+      },
+      {
+        "name": "Colazione",
+        "url": "/italia/momenti/colazione/",
+        "reason": "momento italiano"
+      }
+    ],
+    "percorso_tappa": "dal-bancha-al-matcha",
+    "badge_sblocco": "esploratore-verde"
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "bancha",
+    "caffeina": "Bassa",
+    "stagione": "Estate",
+    "cultivar": "Yabukita e cultivar locali",
+    "sort_order": 1,
+    "brew": {
+      "temp": 80,
+      "grams": 3,
+      "seconds": 60,
+      "infusions": "2-3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il bancha non chiede attenzione da sommelier: è il verde della frigo in bottiglia, del pomeriggio pigro, della foglia matura che sa di fieno e cielo aperto."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Foglie larghe, verde oliva",
+        "aroma": "Vegetale leggero, note di fieno",
+        "gusto": "Morbido, poco astringente",
+        "retrogusto": "Pulito e breve"
+      },
+      {
+        "type": "brew_params",
+        "temp": 80,
+        "grams": 3,
+        "seconds": 60,
+        "infusions": "2-3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera o tazza grande",
+          "Acqua a temperatura controllata"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Scalda l'acqua a 80 °C",
+            "duration": "2 min"
+          },
+          {
+            "text": "Infusiona 3 g per 100 ml per 60 secondi",
+            "duration": "1 min"
+          },
+          {
+            "text": "Versa tutto il liquore",
+            "duration": "30 sec"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Acqua troppo bollente",
+          "Infusione eccessivamente lunga",
+          "Snobismo verso il bancha come tè «povero»"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il bancha e ideale per chi cerca un'alternativa delicata al cappuccino: non compete con il latte, accompagna una colazione leggera. Si trova nei tea shop specialty e online."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Biscotti secchi, fette biscottate",
+          "Frutta fresca di stagione"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Il bancha fa bene alla salute?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Il consumo regolare di tè verde può supportare uno stile di vita sano grazie alle catechine, ma non sostituisce una dieta equilibrata né le cure mediche."
+              }
+            ]
+          },
+          {
+            "question": "È adatto ai bambini?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Bassa caffeina e morbidezza lo rendono tra i verdi più accessibili; attenzione solo a temperature non eccessive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Lavorazione e quotidianità"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Raccolto tardivo o da foglie più grandi, fissato al vapore e essiccato con meno enfasi sul pregio estetico del sencha. In Giappone convive con il matcha cerimoniale senza contraddizione: pane quotidiano e occasione speciale nella stessa cultura."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, consumo quotidiano"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, lavorazione bancha"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Kukicha",
+            "url": "/varieta/kukicha/",
+            "reason": "ancora più leggero, rametti e piccioli"
+          },
+          {
+            "name": "Hojicha",
+            "url": "/varieta/hojicha/",
+            "reason": "tostato, note nocciola"
+          }
+        ]
+      }
+    ]
+  }
+}

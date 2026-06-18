@@ -5,6 +5,7 @@
     varieta: 'Varietà',
     hub: 'Approfondimento',
     controversia: 'Controversia',
+    glossary: 'Glossario',
   };
 
   function escapeHtml(value) {
@@ -27,6 +28,7 @@
     if (step.url) return step.url;
     if (step.type === 'controversia') return `/impara/controversie/${step.slug}/`;
     if (step.type === 'hub') return `/impara/${step.slug}/`;
+    if (step.type === 'glossary') return `/glossario/${step.slug}/`;
     return `/varieta/${step.slug}/`;
   }
 
@@ -89,9 +91,15 @@
         const ok = idx === quiz.correct;
         const feedback = wrap.querySelector('.tv-path-quiz__feedback');
         feedback.hidden = false;
-        feedback.textContent = ok
-          ? 'Esatto. Tappa completata.'
-          : 'Non proprio. Rileggi la scheda e riprova.';
+        if (ok) {
+          feedback.textContent = quiz.explain
+            ? `Esatto. ${quiz.explain}`
+            : 'Esatto. Tappa completata.';
+        } else {
+          feedback.textContent = quiz.explain
+            ? `Non proprio. ${quiz.explain} Rileggi la scheda e riprova.`
+            : 'Non proprio. Rileggi la scheda e riprova.';
+        }
         wrap.querySelectorAll('.tv-path-quiz__option').forEach((b) => {
           b.disabled = true;
         });

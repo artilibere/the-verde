@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "genmaicha",
+  "meta": {
+    "title": "Genmaicha — riso tostato e foglia verde",
+    "description": "Profilo, preparazione e contesto italiano del genmaicha.",
+    "keywords": [
+      "genmaicha",
+      "tè verde",
+      "Camellia sinensis",
+      "genmaicha",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/genmaicha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "hojicha",
+      "bancha"
+    ],
+    "temi_kb": [
+      "cucina_usi_pratici",
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "momenti": [
+      "colazione",
+      "dopo-cena"
+    ],
+    "stagioni": [
+      "inverno",
+      "autunno"
+    ],
+    "explore_next": [
+      {
+        "name": "Bancha",
+        "url": "/varieta/bancha/",
+        "reason": "base comune"
+      },
+      {
+        "name": "Inverno",
+        "url": "/italia/stagioni/inverno/",
+        "reason": "stagione ideale"
+      },
+      {
+        "name": "Glossario genmaicha",
+        "url": "/glossario/genmaicha/",
+        "reason": "definizione"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "genmaicha",
+    "caffeina": "Bassa",
+    "stagione": "Inverno",
+    "cultivar": "Bancha o sencha + riso mochi tostato",
+    "sort_order": 99,
+    "brew": {
+      "temp": 85,
+      "grams": 3,
+      "seconds": 45,
+      "infusions": "2"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Riso tostato e foglia verde insieme: il genmaicha profuma di padella e comfort, come pane caldo in una giornata uggiosa."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Foglie verdi con chicchi di riso",
+        "aroma": "Cereale tostato, nocciola",
+        "gusto": "Morbido, leggermente salato",
+        "retrogusto": "Comfort, breve"
+      },
+      {
+        "type": "brew_params",
+        "temp": 85,
+        "grams": 3,
+        "seconds": 45,
+        "infusions": "2"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera grande",
+          "Acqua non bollente"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Scalda l'acqua a 85 °C",
+            "duration": "2 min"
+          },
+          {
+            "text": "Infusiona 3 g per 100 ml per 45 secondi",
+            "duration": "1 min"
+          },
+          {
+            "text": "Versa tutto",
+            "duration": "30 sec"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Infusione troppo lunga (amaro)",
+          "Infusione troppo lunga (amaro dal riso bruciato in tazza)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Perfetto nelle sere d'inverno, quando cerchi calore senza la pesantezza del tè nero speziato."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Zuppe leggere, risotti delicati",
+          "Biscotti semplici"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Quanta caffeina?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Bassa: il riso diluisce la foglia e spesso si usa bancha."
+              }
+            ]
+          },
+          {
+            "question": "Si sente il riso in bocca?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Sì: note tostate e cereali convivono con il verde, senza coprirlo del tutto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Blend e storia"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nato come tè economico che allungava la foglia con cereale; oggi è scelta voluta per profilo nocciola e bassa caffeina. Il riso non è decorazione: modella corpo e dolcezza."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, ricette"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, varietà"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, cucina"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Hojicha",
+            "url": "/varieta/hojicha/",
+            "reason": "tostato senza riso"
+          },
+          {
+            "name": "Bancha",
+            "url": "/varieta/bancha/",
+            "reason": "base vegetale"
+          }
+        ]
+      }
+    ]
+  }
+}

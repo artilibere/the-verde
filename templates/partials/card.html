@@ -1,0 +1,8 @@
+<section class="tv-card tv-card--{{ card.id }}" id="{{ card.id }}" aria-labelledby="card-title-{{ card.id }}">
+  <header class="tv-card__header">
+    <h2 class="tv-card__title" id="card-title-{{ card.id }}">{{ card.title }}</h2>
+  </header>
+  <div class="tv-card__body">
+    {% include "partials/card-body.html" %}
+  </div>
+</section>

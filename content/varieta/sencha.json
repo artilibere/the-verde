@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "sencha",
+  "meta": {
+    "title": "Sencha — il verde quotidiano del Giappone",
+    "description": "Profilo, preparazione e contesto italiano del sencha.",
+    "keywords": [
+      "sencha",
+      "tè verde",
+      "Camellia sinensis",
+      "sencha",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/sencha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "gyokuro",
+      "bancha"
+    ],
+    "temi_kb": [
+      "preparazione_servizio",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [
+      "caffeina-stimolazione"
+    ],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera",
+      "estate"
+    ],
+    "explore_next": [
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "passo successivo umami"
+      },
+      {
+        "name": "Glossario sencha",
+        "url": "/glossario/sencha/",
+        "reason": "termine"
+      },
+      {
+        "name": "Percorso bancha→matcha",
+        "url": "/gioca/percorsi/dal-bancha-al-matcha/",
+        "reason": "tappa 2"
+      }
+    ],
+    "percorso_tappa": "dal-bancha-al-matcha"
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "sencha",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Yabukita (dominante in Giappone)",
+    "sort_order": 2,
+    "brew": {
+      "temp": 75,
+      "grams": 3,
+      "seconds": 60,
+      "infusions": "2-3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Ago verdi, profumo di erba tagliata al mattino: il sencha è il battito cardiaco del tè giapponese."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Ago sottili, verde brillante",
+        "aroma": "Vegetale, erba tagliata",
+        "gusto": "Umami delicato, amaro controllato",
+        "retrogusto": "Persistente, fresco"
+      },
+      {
+        "type": "brew_params",
+        "temp": 75,
+        "grams": 3,
+        "seconds": 60,
+        "infusions": "2-3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Kyusu o teiera occidentale",
+          "Termometro"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Scalda l'acqua a 75 °C",
+            "duration": "2 min"
+          },
+          {
+            "text": "Infusiona 3 g per 100 ml per 60 secondi",
+            "duration": "1 min"
+          },
+          {
+            "text": "Versa e degusta",
+            "duration": "1 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Acqua bollente (amaro eccessivo)",
+          "Infusione troppo lunga",
+          "Usare la stessa temperatura del gyokuro (troppo fredda, tazza piatta)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Dopo un pranzo in un ristorante giapponese, il sencha è spesso la prima rivelazione: non sa di erba amara se preparato bene. Perfetto per la pausa delle 16:00."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Pesce crudo, sashimi",
+          "Pasticceria a bassa grassosità"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Sencha o gyokuro?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Il sencha è più quotidiano e vegetale; il gyokuro è ombreggiato, più umami e dolce."
+              }
+            ]
+          },
+          {
+            "question": "Sencha e gyokuro: differenza?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Stessa pianta: il gyokuro è ombreggiato prima del raccolto; il sencha cresce al sole ed è più vegetale e accessibile."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dal sole alla tazza"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Foglie esposte al sole, fissate al vapore in pochi secondi, arrotolate in aghi. Ogni regione — Shizuoka, Uji, Kyushu — modula marinezza e amaro. Lo shincha è il suo primo raccolto primaverile, più vivido e effimero."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, pp. 123–125"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, scheda sencha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, lavorazione sencha"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Gyokuro",
+            "url": "/varieta/gyokuro/",
+            "reason": "più umami e ombreggiato"
+          },
+          {
+            "name": "Bancha",
+            "url": "/varieta/bancha/",
+            "reason": "più leggero"
+          }
+        ]
+      }
+    ]
+  }
+}

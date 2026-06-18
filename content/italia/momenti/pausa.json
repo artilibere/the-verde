@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "pausa",
+  "meta": {
+    "title": "Tè verde in pausa",
+    "description": "Pausa delle 10 o delle 16 senza nervosismo del caffè.",
+    "keywords": [
+      "tè verde in pausa",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/italia/momenti/pausa/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": []
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Pausa delle 10 o delle 16 senza nervosismo del caffè."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Varietà Consigliate"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Vedi le schede nel catalogo per preparazione e abbinamenti italiani."
+          }
+        ]
+      }
+    ]
+  }
+}

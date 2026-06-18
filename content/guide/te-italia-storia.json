@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "te-italia-storia",
+  "meta": {
+    "title": "Il tè verde in Italia: una storia di nicchia",
+    "description": "Da Venezia al boom wellness: come il verde è entrato nelle case italiane senza sfidare il caffè.",
+    "keywords": [
+      "tè verde Italia",
+      "storia del tè",
+      "cultura italiana",
+      "specialty tea",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/guide/te-italia-storia/",
+    "published": "2026-04-01"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "storia_cultura"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Storia e cultura",
+        "url": "/impara/storia-cultura/",
+        "reason": "hub tematico"
+      },
+      {
+        "name": "Matcha in Italia",
+        "url": "/guide/matcha-italia/",
+        "reason": "capitolo successivo"
+      },
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "verde cinese storico"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Se chiedi un tè al bar di quartiere, spesso ti guardano come se avessi ordinato un'insalata alle otto di mattina. Il caffè è il ritmo del Paese; il tè verde è cresciuto ai margini — poi, nelle grandi città, con forza sorprendente."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Questa guida racconta come il verde è arrivato in Italia, perché è rimasto di nicchia rispetto al caffè, e cosa sta cambiando oggi tra tea shop, ristorazione asiatica e curiosità per il single origin."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Venezia e le prime rotte"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè entra in Europa con le rotte commerciali che toccano Venezia e Genova tra XVI e XVIII secolo. Per secoli resta bevanda di élite, medicina esotica, dono diplomatico — non abitudine popolare come il caffè che conquisterà i caffè italiani dal Settecento in poi."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Rosen e i manuali di storia del tè ricordano che la diffusione globale passa da monaci, mercanti e colonie: l'Italia riceve il prodotto, ma non costruisce intorno ad esso un rito urbano paragonabile all'espresso."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Caffè al centro, tè ai margini"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel Novecento italiano il tè in bustina — spesso nero, Earl Grey, influenze britanniche — compare a colazione o nel pomeriggio domenicale. Il verde resta raro, confuso con le tisane dell'erboristeria, associato a «regime» o a estetica giapponese per pochi appassionati."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il caffè occupa la pausa lavoro, il dopo pranzo, il incontro veloce al bancone. Il tè non ha mai disputato quello spazio: ha cercato altri — casa, yoga studio, ristorante giapponese, scaffale bio — senza pretendere di essere «il nuovo caffè»."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il boom wellness e la confusione"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dagli anni Duemila il tè verde diventa sinonimo di detox, dimagrimento, antiossidanti sui packaging delle bustine scadenti. La KB è chiara: le catechine esistono, ma miracoli e integratori sono un'altra storia. In Italia questo boom ha fatto due cose opposte: ha popularizzato la parola «tè verde» e ha alimentato delusione quando l'erba amara in acqua bollente non curava nulla."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Chi è rimasto ha scoperto che il problema non era il tè, ma la qualità e la preparazione. È la stessa traiettoria del vino italiano dopo anni di tavola rossa: si sale di gradino quando il palato chiede di più."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Oggi: nicchia che cresce"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Tea shop specialty a Milano, Roma, Torino, Bologna, Firenze — consulenza e degustazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Ristorazione giapponese e coreana che normalizza gyokuro, sencha, matcha in tazza"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Pasticceria: matcha in gelato e dolci come ponte verso il verde «vero»"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Autori e formatori italiani (es. Davide Pellegrino) che traducono tradizioni orientali senza snaturarle"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "E-commerce e single origin: tracciabilità come nel vino e nell'olio EVO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il Nord vede più pasticceria matcha e coworking con teiere; il Centro turismo culturale e ristorazione; Sud e isole meno shop fisici ma più ordini online. Non è uniforme — e non deve esserlo: il tè verde in Italia cresce per curiosità, non per decreto."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa significa per te"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Non devi scegliere tra caffè e tè come tra due squadre. Il verde italiano maturo è complementare: sencha nella pausa delle dieci, hojicha dopo cena domenicale, matcha in pasticceria quando vuoi colore senza artificio. La nicchia è ampia abbastanza per chi vuole imparare — piccola abbastanza da restare scelta, non obbligo wellness."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, storia e diffusione del tè"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, cultura del tè in Occidente"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, commercio e rituali"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, adozione contemporanea"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Treccani — voce «tè»"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Gunpowder",
+            "url": "/varieta/gunpowder/",
+            "reason": "verde mediterraneo"
+          },
+          {
+            "name": "Italia hub",
+            "url": "/italia/",
+            "reason": "contesto locale"
+          },
+          {
+            "name": "Percorso palato italiano",
+            "url": "/gioca/percorsi/palato-italiano/",
+            "reason": "esercizio"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Perché in Italia si beve più caffè che tè?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Storia sociale e economica: il caffè ha legato bar, lavoro e incontro pubblico per due secoli. Il tè non ha avuto lo stesso investimento culturale — non è questione di qualità intrinseca."
+              }
+            ]
+          },
+          {
+            "question": "Il tè verde «detox» funziona?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Il tè può far parte di abitudini sane; non detoxifica organi né sostituisce medico o dieta equilibrata. Diffida di chi vende miracoli in bustina."
+              }
+            ]
+          },
+          {
+            "question": "Da dove iniziare oggi in Italia?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Un tea shop che fa assaggi, o una scheda varietà accessibile (bancha, genmaicha, sencha). Evita la prima bustina discount come giudizio sul mondo intero."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

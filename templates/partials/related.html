@@ -1,0 +1,8 @@
+<ul class="tv-related__list tv-scroll-rail">
+  {% for item in body['items'] %}
+  <li class="tv-related__item">
+    <a href="{{ item.url }}"><strong>{{ item.name }}</strong></a>
+    {% if item.reason %}<span class="tv-related__reason"> — {{ item.reason }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>

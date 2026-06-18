@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<article class="tv-article" data-slug="{{ meta.slug }}">
-  <nav class="tv-mininav" aria-label="Sezioni scheda">
+<article class="tv-article tv-feed-page" data-slug="{{ meta.slug }}" itemscope itemtype="https://schema.org/Article">
+  <nav class="tv-mininav tv-scroll-rail" aria-label="Sezioni scheda">
     <ul class="tv-mininav__list">
-      <li><a href="#scopri" class="tv-mininav__link tv-mininav__link--active" aria-current="location">Scopri</a></li>
-      <li><a href="#prepara" class="tv-mininav__link">Prepara</a></li>
-      <li><a href="#approfondisci" class="tv-mininav__link">Approfondisci</a></li>
+      <li><a href="#brief" class="tv-mininav__link">Scopri</a></li>
+      <li><a href="#brew" class="tv-mininav__link">Prepara</a></li>
+      <li><a href="#italy" class="tv-mininav__link">In Italia</a></li>
     </ul>
   </nav>
-  <section id="scopri" class="tv-scopri tv-zone">
+  <header class="tv-article__hero tv-card tv-card--hero">
     <nav class="tv-breadcrumb" aria-label="Breadcrumb">
       <ol class="tv-breadcrumb__list">
         {% for crumb in breadcrumbs %}
@@ -16,47 +16,21 @@
         {% endfor %}
       </ol>
     </nav>
-    <h1 class="tv-font-serif">{{ meta.title }}</h1>
-    <div class="tv-scopri__meta">
-      <dl class="tv-brew-card" aria-label="Parametri di preparazione">
-        <div class="tv-brew-card__row">
-          <dt class="tv-brew-card__label">Temperatura</dt>
-          <dd class="tv-brew-card__value"><span class="tv-brew-card__number">{{ meta.brew_temp }}</span>°C</dd>
-        </div>
-        <div class="tv-brew-card__row">
-          <dt class="tv-brew-card__label">Dosaggio</dt>
-          <dd class="tv-brew-card__value"><span class="tv-brew-card__number">{{ meta.brew_grams }}</span> g / 100 ml</dd>
-        </div>
-        <div class="tv-brew-card__row">
-          <dt class="tv-brew-card__label">Prima infusione</dt>
-          <dd class="tv-brew-card__value"><span class="tv-brew-card__number">{{ meta.brew_seconds }}</span> sec</dd>
-        </div>
-        <div class="tv-brew-card__row">
-          <dt class="tv-brew-card__label">Infusioni</dt>
-          <dd class="tv-brew-card__value">{{ meta.brew_infusions }}</dd>
-        </div>
-      </dl>
-      {% if meta.sensory %}
-      <dl class="tv-sensory-profile" aria-label="Profilo sensoriale">
-        {% for k, v in meta.sensory.items() %}
-        <div class="tv-sensory-profile__row">
-          <dt class="tv-sensory-profile__label">{{ k | capitalize }}</dt>
-          <dd class="tv-sensory-profile__value">{{ v }}</dd>
-        </div>
-        {% endfor %}
-      </dl>
-      {% endif %}
-    </div>
+    <h1 class="tv-font-serif" itemprop="headline">{{ meta.title }}</h1>
     <div class="tv-origin-chips">
       <a href="/varieta/?origine={{ meta.origine_slug }}" class="tv-chip">{{ meta.origine }}</a>
       <a href="/varieta/?stile={{ meta.stile_slug }}" class="tv-chip">{{ meta.stile }}</a>
     </div>
-  </section>
-  <div class="tv-article__body">{{ content_html | safe }}</div>
+  </header>
+  <div class="tv-feed">
+    {% for card in page.cards %}
+      {% include "partials/card.html" %}
+    {% endfor %}
+  </div>
   {% if meta.explore_next %}
-  <aside class="tv-explore-next">
-    <h2>Potrebbe interessarti</h2>
-    <ul class="tv-explore-next__list">
+  <aside class="tv-card tv-card--explore tv-explore-next">
+    <header class="tv-card__header"><h2 class="tv-card__title">Potrebbe interessarti</h2></header>
+    <ul class="tv-explore-next__list tv-scroll-rail">
       {% for link in meta.explore_next %}
       <li>
         {% if link.type %}<span class="tv-explore-next__type">{% if link.type == 'varieta' %}Varietà{% elif link.type == 'tema' %}Tema{% else %}{{ link.type | capitalize }}{% endif %}</span>{% endif %}

@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "gunpowder",
+  "meta": {
+    "title": "Gunpowder — perle verdi cinesi",
+    "description": "Profilo, preparazione e contesto italiano del gunpowder.",
+    "keywords": [
+      "gunpowder",
+      "tè verde",
+      "Camellia sinensis",
+      "gunpowder",
+      "Cina"
+    ],
+    "canonical_path": "/varieta/gunpowder/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "dragon-well",
+      "genmaicha"
+    ],
+    "temi_kb": [
+      "storia_cultura",
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "autunno"
+    ],
+    "explore_next": [
+      {
+        "name": "Wok",
+        "url": "/glossario/wok/",
+        "reason": "lavorazione"
+      },
+      {
+        "name": "Autunno",
+        "url": "/italia/stagioni/autunno/",
+        "reason": "stagione"
+      },
+      {
+        "name": "Storia",
+        "url": "/impara/storia-cultura/",
+        "reason": "commercio"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "gunpowder",
+    "caffeina": "Media",
+    "stagione": "Autunno",
+    "cultivar": "Zhucha, cultivar locali",
+    "sort_order": 99,
+    "brew": {
+      "temp": 85,
+      "grams": 3,
+      "seconds": 90,
+      "infusions": "2-3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Perle di foglia che rotolano in tazza: il gunpowder è robusto, legnoso, indulgente — il verde che ha attraversato i mari."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Perle verdi compatte",
+        "aroma": "Fumo leggero, erba",
+        "gusto": "Robusto, leggermentè affumicato",
+        "retrogusto": "Persistente"
+      },
+      {
+        "type": "brew_params",
+        "temp": 85,
+        "grams": 3,
+        "seconds": 90,
+        "infusions": "2-3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera",
+          "Acqua 85 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Risciacqua le perle con acqua calda",
+            "duration": "30 sec"
+          },
+          {
+            "text": "Infusiona 3 g per 100 ml, 90 secondi",
+            "duration": "2 min"
+          },
+          {
+            "text": "Seconda infusione più breve",
+            "duration": "1 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Confonderlo con tè affumicato lapsang",
+          "Trattarlo come bi luo chun delicato"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Storico nelle miscele al menta del Maghreb: in tazza pura rivela un verde più rustico e onesto."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Cucina mediterranea leggera",
+          "Olive e pane"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Perché gunpowder?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Le perle ricordano la polvere da sparo — nome evocativo, non di qualità."
+              }
+            ]
+          },
+          {
+            "question": "Perché «gunpowder»?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Nome occidentale per la forma a pallottola; in Cina è zhu cha, tè perla."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Zhu Cha"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Rolling compatto per conservazione e export. Regge temperature leggermente più alte del sencha delicato. Infusioni ripetute in teiera grande."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi cinesi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, storia export"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Dragon Well",
+            "url": "/varieta/dragon-well/",
+            "reason": "well/) — cinese più fine"
+          },
+          {
+            "name": "Genmaicha",
+            "url": "/varieta/genmaicha/",
+            "reason": "spesso usa base gunpowder"
+          }
+        ]
+      }
+    ]
+  }
+}

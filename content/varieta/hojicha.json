@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "hojicha",
+  "meta": {
+    "title": "Hojicha — il verde che abbraccia",
+    "description": "Profilo, preparazione e contesto italiano del hojicha.",
+    "keywords": [
+      "hojicha",
+      "tè verde",
+      "Camellia sinensis",
+      "hojicha",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/hojicha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "genmaicha",
+      "kukicha"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "caffeina_tannini"
+    ],
+    "controversie": [],
+    "momenti": [
+      "dopo-cena",
+      "aperitivo"
+    ],
+    "stagioni": [
+      "autunno",
+      "inverno"
+    ],
+    "explore_next": [
+      {
+        "name": "Dopo cena",
+        "url": "/italia/momenti/dopo-cena/",
+        "reason": "momento IT"
+      },
+      {
+        "name": "Kukicha",
+        "url": "/varieta/kukicha/",
+        "reason": "alternativa leggera"
+      },
+      {
+        "name": "Caffeina",
+        "url": "/impara/caffeina/",
+        "reason": "contenuti"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "hojicha",
+    "caffeina": "Bassa",
+    "stagione": "Autunno",
+    "cultivar": "Bancha o kukicha tostati",
+    "sort_order": 99,
+    "brew": {
+      "temp": 90,
+      "grams": 3,
+      "seconds": 30,
+      "infusions": "2-3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Foglie ambrate, profumo di nocciola tostata: l'hojicha è il verde che la sera non ti sveglia."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Foglie bruno-rossastre",
+        "aroma": "Tostato, nocciola, caramello",
+        "gusto": "Morbido, zero amarezza aggressiva",
+        "retrogusto": "Caldo e rassicurante"
+      },
+      {
+        "type": "brew_params",
+        "temp": 90,
+        "grams": 3,
+        "seconds": 30,
+        "infusions": "2-3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Teiera",
+          "Acqua calda ma non bollente"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Scalda l'acqua a 90 °C",
+            "duration": "2 min"
+          },
+          {
+            "text": "Infusiona 3 g per 100 ml per 30 secondi",
+            "duration": "1 min"
+          },
+          {
+            "text": "Versa",
+            "duration": "30 sec"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Trattarlo come sencha delicato",
+          "Confonderlo con tè nero",
+          "Acqua bollente prolungata (amarezza tostata)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Dopo cena, quando il palato chiede qualcosa di caldo senza tenere svegli: dialoga con cioccolato fondente e cantucci."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Cioccolato fondente",
+          "Biscotti di Prato"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Si può bere la sera?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Si: bassa caffeina, ideale dopo cena."
+              }
+            ]
+          },
+          {
+            "question": "Hojicha e sonno?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Bassa caffeina; adatto dopo cena, ma la sensibilità personale conta."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tostatura"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Passaggio al calore trasforma colore e chimica: caffeina ridotta, note caramellate. In Giappone si beve anche freddo in estate. Non è tè nero: parte sempre da verde."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, lavorazione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Kukicha",
+            "url": "/varieta/kukicha/",
+            "reason": "leggero, a volte tostato"
+          },
+          {
+            "name": "Genmaicha",
+            "url": "/varieta/genmaicha/",
+            "reason": "cereale e verde"
+          }
+        ]
+      }
+    ]
+  }
+}

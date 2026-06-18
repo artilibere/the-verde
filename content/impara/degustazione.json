@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "degustazione",
+  "meta": {
+    "title": "Degustazione sensoriale",
+    "description": "Occhio, naso, palato: leggere il tè verde come si legge un vino — senza snobismo, con precisione.",
+    "keywords": [
+      "degustazione tè",
+      "profilo sensoriale",
+      "gusto",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/impara/degustazione/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "degustazione_sensoriale"
+    ],
+    "controversie": [
+      "qualità-sensoriale-vs-chimica"
+    ],
+    "explore_next": [
+      {
+        "name": "Bi Luo Chun",
+        "url": "/varieta/bi-luo-chun/",
+        "reason": "floreale"
+      },
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "nocciola"
+      },
+      {
+        "name": "Darjeeling verde",
+        "url": "/varieta/darjeeling-verde/",
+        "reason": "mineralità"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Degustare il tè verde non significa trovare mille aggettivi poetici: significa osservare la foglia, annusare il liquore caldo, sentire amaro e dolcezza equilibrati, notare cosa resta dopo il sorso."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Se conosci già vino o olio extravergine, hai metà strada fatta. Qui trovi il lessico per capire cosa promette una scheda varietà e cosa stai bevendo davvero."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "I quattro passi"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Aspetto della foglia e del liquore: colore, limpidezza, consistenza. Aroma in tazza: vegetale, tostato, floreale, marine. Gusto: attacco, corpo, amaro, umami. Retrogusto: quanto dura e come evolve."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "L'umami nel gyokuro non è un termine da chef stellati: è la stessa rotondità che riconosci in un brodo o nel parmigiano — un ponte per il palato italiano, non un esotismo forzato."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Vegetale fresco → sencha, shincha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Umami denso → gyokuro, matcha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Nocciola e fagiolino → Dragon Well"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Tostato e nocciola → hojicha, genmaicha"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Mineralità → darjeeling verde"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Percorso palato italiano",
+                "url": "/gioca/percorsi/palato-italiano/",
+                "reason": "esercizio guidato"
+              },
+              {
+                "name": "Umami",
+                "url": "/glossario/umami/",
+                "reason": "quinto gusto"
+              },
+              {
+                "name": "Astringenza",
+                "url": "/glossario/astringenza/",
+                "reason": "sensazione chiave"
+              },
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "esempio umami"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Serve una scheda da sommelier?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Aiuta in formazione; a casa bastano quattro domande: cosa vedo, cosa odoro, cosa gusto, cosa resta."
+                  }
+                ]
+              },
+              {
+                "question": "Il prezzo garantisce qualità?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Non sempre. Occhio e naso rivelano foglia stantia o lavorazione scadente anche su packaging elegante."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, degustazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, schede varietà"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, riconoscere qualità"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

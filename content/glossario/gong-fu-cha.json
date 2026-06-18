@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "gong-fu-cha",
+  "meta": {
+    "title": "Gong fu cha",
+    "description": "Arte cinese del tè: infusioni brevi, ospitalità, abilità.",
+    "keywords": [
+      "gong fu cha",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/gong-fu-cha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "cerimonia_spiritualita"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Cerimonia",
+        "url": "/impara/cerimonia/",
+        "reason": "hub"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il gong fu cha non è spettacolo: è ospitalità concentrata. Piccole tazze, molte infusioni, attenzione all'acqua e al tempo — conviviale più che monacale."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Rito cinese"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Gong fu cha collega gesto e cultura: non è solo oggetto o parola, ma parte di un modo di bere il verde con attenzione."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia puoi incontrarlo nei tea shop, nei corsi di preparazione o nelle schede varietà: riconoscerlo ti orienta tra utensili e rituali diversi."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Sette passi classici ma adattabili"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Yixing o gaiwan"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Anche per alcuni verdi"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Cerimonia Cina vs Giappone",
+                "url": "/impara/controversie/cerimonia-cina-vs-giappone/",
+                "reason": "confronto KB"
+              },
+              {
+                "name": "Gaiwan",
+                "url": "/glossario/gaiwan/",
+                "reason": "strumento"
+              },
+              {
+                "name": "Preparazione",
+                "url": "/impara/preparazione/",
+                "reason": "tecnica"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Gong fu solo per oolong?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Nato per oolong; oggi anche verdi e bianchi in stile gong fu."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, cerimonie"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, tradizioni"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

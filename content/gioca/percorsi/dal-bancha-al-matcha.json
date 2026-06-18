@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "dal-bancha-al-matcha",
+  "meta": {
+    "title": "Dal bancha al matcha",
+    "description": "Quattro tappe dal verde più leggero al matcha cerimoniale: caffeina, ombra e foglia intera.",
+    "keywords": [
+      "dal bancha al matcha",
+      "tè verde",
+      "percorso",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/gioca/percorsi/dal-bancha-al-matcha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Quiz sensoriale",
+        "url": "/gioca/quiz/che-varieta-sei/",
+        "reason": "profilo"
+      },
+      {
+        "name": "Percorso palato italiano",
+        "url": "/gioca/percorsi/palato-italiano/",
+        "reason": "successivo"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Quattro tappe, un arco di sapore: dal bancha quotidiano al matcha che bevi intero. Non è una gara di pregi: è capire come la stessa pianta cambia voce."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Durata stimata: 30–45 minuti tra lettura e infusioni. Badge: Esploratore del verde."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Riconoscere caffeina bassa vs alta nei verdi giapponesi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Capire ombreggiatura e umami (gyokuro)"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Distinguere infusionato e matcha (foglia intera)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa hai imparato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè verde giapponese non è monolite: bancha e sencha al sole, gyokuro all'ombra, matcha da tencha macinato. Ogni tappa ha temperatura e gesto propri."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Completa i micro-quiz sotto ogni step per sbloccare il badge. Se sbagli, rileggi la scheda: l'errore è parte del metodo."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, consumo quotidiano"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, verdi giapponesi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

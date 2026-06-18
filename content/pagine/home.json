@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "type": "page",
+  "slug": "home",
+  "meta": {
+    "title": "Home",
+    "description": "Home",
+    "keywords": [
+      "home",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": []
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": []
+  }
+}

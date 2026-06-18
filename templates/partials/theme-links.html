@@ -1,0 +1,5 @@
+<ul class="tv-relazioni__list">
+  {% for r in body['items'] %}
+  <li><span class="tv-relazioni__tipo">{{ r.tipo }}</span> {{ r.descrizione }}</li>
+  {% endfor %}
+</ul>

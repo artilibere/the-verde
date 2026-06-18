@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "catechine",
+  "meta": {
+    "title": "Catechine",
+    "description": "Polifenoli antiossidanti del tè verde, responsabili di gran parte del profilo salutare.",
+    "keywords": [
+      "catechine",
+      "polifenoli",
+      "antiossidanti",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/catechine/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "salute_catechine"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Salute: scienza vs tradizione",
+        "url": "/impara/controversie/salute-scienza-vs-tradizione/",
+        "reason": "dibattito aperto"
+      },
+      {
+        "name": "Matcha",
+        "url": "/varieta/matcha/",
+        "reason": "concentrazione in tazza"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Le catechine sono molecole che la foglia di tè accumula per difendersi dal sole. Nel tè verde restano abbondanti perché la lavorazione interrompe l'ossidazione prima che si trasformino in altri composti."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel tè verde"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il gruppo più studiato include l'EGCG — epigallocatechina gallato — ma ce ne sono altre, ognuna con un ruolo nel gusto e nella ricerca sulla salute."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Temperatura e tempo di infusione ne modulano l'estrazione: acqua troppo calda può rendere la tazza amara senza necessariamente «fare più bene»."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Concentrate nel verde non ossidato rispetto al nero"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Legate all'amaro e all'astringenza in tazza"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Oggetto di trial clinici con cautela (hara)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "EGCG",
+                "url": "/glossario/egcg/",
+                "reason": "catechina più studiata"
+              },
+              {
+                "name": "Salute",
+                "url": "/impara/salute/",
+                "reason": "evidenze e limiti"
+              },
+              {
+                "name": "Matcha",
+                "url": "/varieta/matcha/",
+                "reason": "foglia intera = più catechine"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Bevendo tè verde assumo sempre molte catechine?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Dipende da varietà, freschezza, temperatura e tempo. Il matcha, bevendo la polvere, ne concentra di più rispetto a un infusionato filtrato."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, tema hara-anticancer"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Treccani — antiossidante"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "abbinamenti",
+  "meta": {
+    "title": "Abbinamenti gastronomici italiani",
+    "description": "Tè verde e cucina italiana: cosa funziona davvero.",
+    "keywords": [
+      "abbinamenti gastronomici italiani",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/italia/abbinamenti/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": []
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Gyokuro con pesce crudo, hojicha con cioccolato fondente, matcha con pasticceria leggera."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Evita abbinamenti con acidità forte del pomodoro; onestà su caffeina e digestione."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

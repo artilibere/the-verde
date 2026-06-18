@@ -5,10 +5,50 @@
       "title": "Dal bancha al matcha",
       "badge": "esploratore-verde",
       "steps": [
-        {"slug": "bancha", "type": "varieta", "title": "Bancha", "quiz": {"question": "Il bancha ha caffeina alta o bassa?", "options": ["Alta", "Bassa"], "correct": 1}},
-        {"slug": "sencha", "type": "varieta", "title": "Sencha", "quiz": {"question": "Temperatura ideale per sencha?", "options": ["100 °C", "75 °C"], "correct": 1}},
-        {"slug": "gyokuro", "type": "varieta", "title": "Gyokuro", "quiz": {"question": "Il gyokuro è ombreggiato?", "options": ["Sì", "No"], "correct": 0}},
-        {"slug": "matcha", "type": "varieta", "title": "Matcha", "quiz": {"question": "Nel matcha bevi la foglia intera?", "options": ["Sì", "No"], "correct": 0}}
+        {
+          "slug": "bancha",
+          "type": "varieta",
+          "title": "Bancha",
+          "quiz": {
+            "question": "Il bancha ha caffeina alta o bassa?",
+            "options": ["Alta", "Bassa", "Come il caffè"],
+            "correct": 1,
+            "explain": "Foglia matura e lavorazione quotidiana: caffeina contenuta, ideale per iniziare senza nervosismo."
+          }
+        },
+        {
+          "slug": "sencha",
+          "type": "varieta",
+          "title": "Sencha",
+          "quiz": {
+            "question": "Temperatura ideale per sencha?",
+            "options": ["100 °C", "75 °C", "50 °C"],
+            "correct": 1,
+            "explain": "70–80 °C preserva vegetale e marinezza senza estrarre amaro eccessivo."
+          }
+        },
+        {
+          "slug": "gyokuro",
+          "type": "varieta",
+          "title": "Gyokuro",
+          "quiz": {
+            "question": "Il gyokuro è ombreggiato prima del raccolto?",
+            "options": ["Sì", "No", "Solo in inverno"],
+            "correct": 0,
+            "explain": "Tre settimane all'ombra aumentano L-teanina e umami; è la stessa filiera del tencha."
+          }
+        },
+        {
+          "slug": "matcha",
+          "type": "varieta",
+          "title": "Matcha",
+          "quiz": {
+            "question": "Nel matcha bevi la foglia intera?",
+            "options": ["Sì, polvere sospesa", "No, solo infusionato", "Solo la parte verde"],
+            "correct": 0,
+            "explain": "Tencha macinato: nessun filtro, corpo pieno e più catechine rispetto a un infusionato."
+          }
+        }
       ]
     },
     {
@@ -16,10 +56,51 @@
       "title": "Il palato italiano",
       "badge": "sommelier-erba",
       "steps": [
-        {"slug": "degustazione", "type": "hub", "title": "Come degustare", "url": "/impara/degustazione/"},
-        {"slug": "sencha", "type": "varieta", "title": "Sencha"},
-        {"slug": "gyokuro", "type": "varieta", "title": "Gyokuro"},
-        {"slug": "dragon-well", "type": "varieta", "title": "Dragon Well"}
+        {
+          "slug": "degustazione",
+          "type": "hub",
+          "title": "Come degustare",
+          "url": "/impara/degustazione/",
+          "quiz": {
+            "question": "In degustazione, cosa osservi prima del sorso?",
+            "options": ["Solo il colore", "Aspetto foglia e aroma", "Solo la temperatura"],
+            "correct": 1,
+            "explain": "Occhio e naso anticipano il palato: foglia, liquore, profumo in tazza."
+          }
+        },
+        {
+          "slug": "sencha",
+          "type": "varieta",
+          "title": "Sencha",
+          "quiz": {
+            "question": "Nota tipica del sencha?",
+            "options": ["Nocciola tostata", "Erba tagliata e marinezza", "Muschio di montagna"],
+            "correct": 1,
+            "explain": "Verde al vapore al sole: profilo vegetale brillante, cuore del Giappone quotidiano."
+          }
+        },
+        {
+          "slug": "gyokuro",
+          "type": "varieta",
+          "title": "Gyokuro",
+          "quiz": {
+            "question": "Il gyokuro è più adatto a paragoni con...",
+            "options": ["Birra lager", "Vino bianco strutturato o brodo", "Liquore dolce"],
+            "correct": 1,
+            "explain": "Umami denso e corpo setoso: lessico da degustazione italiana, non da cocktail."
+          }
+        },
+        {
+          "slug": "dragon-well",
+          "type": "varieta",
+          "title": "Dragon Well",
+          "quiz": {
+            "question": "Dragon Well (Long Jing) profuma spesso di...",
+            "options": ["Riso tostato", "Nocciola e fagiolini", "Affumicatura"],
+            "correct": 1,
+            "explain": "Pan-firing cinese: dolcezza e verdura, abbinamento naturale con primavera italiana."
+          }
+        }
       ]
     },
     {
@@ -27,9 +108,39 @@
       "title": "Scienza o tradizione",
       "badge": "lettore-critico",
       "steps": [
-        {"slug": "salute-scienza-vs-tradizione", "type": "controversia", "title": "Salute: scienza vs tradizione"},
-        {"slug": "bevanda-vs-integratore", "type": "controversia", "title": "Bevanda vs integratore"},
-        {"slug": "caffeina-stimolazione", "type": "controversia", "title": "Caffeina e stimolazione"}
+        {
+          "slug": "salute-scienza-vs-tradizione",
+          "type": "controversia",
+          "title": "Salute: scienza vs tradizione",
+          "quiz": {
+            "question": "Hara (scienza) rispetto a Rosen (tradizione) è...",
+            "options": ["Più cauto sui claim", "Più entusiasta", "Indifferente"],
+            "correct": 0,
+            "explain": "Trial e meccanismi molecolari richiedono cautela; la tradizione accetta anche epidemiologia."
+          }
+        },
+        {
+          "slug": "bevanda-vs-integratore",
+          "type": "controversia",
+          "title": "Bevanda vs integratore",
+          "quiz": {
+            "question": "Il matcha in tazza rispetto all'estratto di EGCG...",
+            "options": ["Concentra più cultura che dose isolata", "È sempre inferiore", "È identico"],
+            "correct": 0,
+            "explain": "Bevi la foglia intera con piacere; gli estratti servono alla ricerca, non al rito."
+          }
+        },
+        {
+          "slug": "caffeina-stimolazione",
+          "type": "controversia",
+          "title": "Caffeina e stimolazione",
+          "quiz": {
+            "question": "Il tè verde stimola sempre meno del caffè?",
+            "options": ["Dipende da varietà e infusione", "Sempre meno", "Sempre di più"],
+            "correct": 0,
+            "explain": "Matcha e gyokuro possono essere ricchi; hojicha e bancha sono leggeri."
+          }
+        }
       ]
     },
     {
@@ -37,10 +148,64 @@
       "title": "Rituale è quotidiano",
       "badge": "maestro-gesto",
       "steps": [
-        {"slug": "cerimonia", "type": "hub", "title": "Cerimonia del tè", "url": "/impara/cerimonia/"},
-        {"slug": "preparazione", "type": "hub", "title": "Preparazione", "url": "/impara/preparazione/"},
-        {"slug": "matcha", "type": "varieta", "title": "Matcha"},
-        {"slug": "bancha", "type": "varieta", "title": "Bancha"}
+        {
+          "slug": "cerimonia",
+          "type": "hub",
+          "title": "Cerimonia del tè",
+          "url": "/impara/cerimonia/",
+          "quiz": {
+            "question": "Gong fu cha e chanoyu condividono...",
+            "options": ["Solo il nome", "Attenzione al gesto e all'ospite", "Identica liturgia"],
+            "correct": 1,
+            "explain": "Entrambi elevano acqua e foglia; il cinese è più conviviale, il giapponese più codificato."
+          }
+        },
+        {
+          "slug": "chanoyu",
+          "type": "glossary",
+          "title": "Chanoyu",
+          "url": "/glossario/chanoyu/",
+          "quiz": {
+            "question": "Il chanoyu usa principalmente...",
+            "options": ["Sencha in kyusu", "Matcha in chawan", "Gunpowder in gaiwan"],
+            "correct": 1,
+            "explain": "Via del tè giapponese: usucha e koicha con frusta chasen."
+          }
+        },
+        {
+          "slug": "preparazione",
+          "type": "hub",
+          "title": "Preparazione",
+          "url": "/impara/preparazione/",
+          "quiz": {
+            "question": "Una mini-cerimonia quotidiana può essere...",
+            "options": ["Solo per maestri", "Anche scalare kyusu e attesa consapevole", "Solo con kimono"],
+            "correct": 1,
+            "explain": "Onuma e Rosen: il gesto lento non richiede sala cerimoniale."
+          }
+        },
+        {
+          "slug": "matcha",
+          "type": "varieta",
+          "title": "Matcha",
+          "quiz": {
+            "question": "Strumento tradizionale per il matcha?",
+            "options": ["Gaiwan", "Chasen", "Wok"],
+            "correct": 1,
+            "explain": "Frusta di bambù: schiuma e incorporazione senza graffiare la ciotola."
+          }
+        },
+        {
+          "slug": "bancha",
+          "type": "varieta",
+          "title": "Bancha",
+          "quiz": {
+            "question": "In Giappone bancha in bottiglia e chanoyu...",
+            "options": ["Si contraddicono", "Coesistono", "Il bancha è vietato"],
+            "correct": 1,
+            "explain": "Pellegrino: quotidiano e rito formale nella stessa cultura, senza conflitto."
+          }
+        }
       ]
     }
   ]

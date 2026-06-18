@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "lavorazione",
+  "meta": {
+    "title": "Lavorazione e qualità",
+    "description": "Come una foglia diventa verde: vapore, padella, ombra e la chimica che resta in tazza.",
+    "keywords": [
+      "lavorazione tè verde",
+      "steaming",
+      "qualità foglia",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/impara/lavorazione/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "lavorazione_qualità"
+    ],
+    "controversie": [
+      "qualità-sensoriale-vs-chimica"
+    ],
+    "explore_next": [
+      {
+        "name": "Bi Luo Chun",
+        "url": "/varieta/bi-luo-chun/",
+        "reason": "spirali primaverili"
+      },
+      {
+        "name": "Hojicha",
+        "url": "/varieta/hojicha/",
+        "reason": "tostatura"
+      },
+      {
+        "name": "Lavorazione hub",
+        "url": "/impara/lavorazione/",
+        "reason": "questa pagina"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "La stessa pianta — Camellia sinensis — può diventare verde brillante o tè nero scuro. La differenza non è la botanica: è cosa succede alle foglie subito dopo il raccolto."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Capire la lavorazione ti spiega perché il gyokuro costa più del bancha, perché il Dragon Well sa di nocciola e perché una foglia stantia non si recupera con acqua calda."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fermare il tempo sulla foglia"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il cuore del tè verde è la fixation: bloccare l'ossidazione con calore. In Giappone domina il vapore (steaming); in Cina spesso la padella (pan-firing). Poi arrivano rolling, essiccazione, selezione."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "L'ombreggiatura — gyokuro, tencha — è una scelta agronomica prima ancora che di cucina: meno sole, più aminoacidi, più umami, meno amaro grezzo."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Steaming (Giappone): sencha, gyokuro, bancha — verde intenso, note marine"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Pan-firing (Cina): Long Jing, bi luo chun — nocciola, fagiolino"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Tostatura: hojicha — colore ambrato, caffeina ridotta"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Macinatura: tencha → matcha — foglia intera in polvere"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Gyokuro",
+                "url": "/varieta/gyokuro/",
+                "reason": "ombreggiato"
+              },
+              {
+                "name": "Vapore",
+                "url": "/glossario/vapore/",
+                "reason": "steaming"
+              },
+              {
+                "name": "Wok",
+                "url": "/glossario/wok/",
+                "reason": "padella cinese"
+              },
+              {
+                "name": "Qualità sensoriale vs chimica",
+                "url": "/impara/controversie/qualita-sensoriale-vs-chimica/",
+                "reason": "dibattito"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Tè verde in bustina: stessa lavorazione?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Spesso polvere o frammenti di bassa qualità, essiccazione industriale. Non rappresenta il verde specialty."
+                  }
+                ]
+              },
+              {
+                "question": "La freschezza conta?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Sì. Catechine e aromi volatili degradano con il tempo; il verde di primavera (shincha) è atteso proprio per vivacità."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-lavorazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, lavorazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, produzione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

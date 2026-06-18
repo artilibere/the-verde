@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "rituale-quotidiano",
+  "meta": {
+    "title": "Rituale è quotidiano",
+    "description": "Dal gong fu cinese al chanoyu: il gesto lento convive con il bancha in bottiglia.",
+    "keywords": [
+      "rituale quotidiano",
+      "tè verde",
+      "percorso",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/gioca/percorsi/rituale-quotidiano/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Cerimonia",
+        "url": "/impara/cerimonia/",
+        "reason": "hub"
+      },
+      {
+        "name": "Consumo vs rituale",
+        "url": "/impara/controversie/consumo-quotidiano-vs-rituale/",
+        "reason": "KB"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Non serve una sala di cerimonia per bere con attenzione. E il chanoyu non annulla il sencha al lavoro: due registri, stessa pianta."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Durata: 45 minuti. Badge: Maestro del gesto."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Differenza gong fu cha e chanoyu"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Strumenti: chasen, kyusu, gaiwan"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Mini-rituale quotidiano accessibile in Italia"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa hai imparato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè è insieme pane quotidiano e occasione straordinaria. Scegli il registro che ti serve oggi — bancha veloce o matcha lento — senza moralismi."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, cerimonia"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, cerimonie"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

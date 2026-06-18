@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "type": "glossary",
+  "slug": "genmaicha",
+  "meta": {
+    "title": "Genmaicha",
+    "description": "Bancha o sencha con riso tostato: comfort cereale in tazza.",
+    "keywords": [
+      "genmaicha",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/glossario/genmaicha/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "cucina_usi_pratici"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Genmaicha",
+        "url": "/varieta/genmaicha/",
+        "reason": "scheda"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il genmaicha sa di riso in padella e foglia verde insieme. È il tè del comfort: caldo, familiare, gentile con lo stomaco."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Blend giapponese"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Nel tè verde, Genmaicha non è un'etichetta generica: ha storia, lavorazione e un profilo in tazza che lo distingue dalle altre voci del catalogo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Capire Genmaicha ti aiuta a scegliere temperatura, momento della giornata e abbinamenti — senza trattare tutti i verdi come la stessa bevanda."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Riso tostato + verde"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Bassa caffeina"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Ottimo per neofiti"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Scheda genmaicha",
+                "url": "/varieta/genmaicha/",
+                "reason": "scheda"
+              },
+              {
+                "name": "Bancha",
+                "url": "/glossario/bancha/",
+                "reason": "base comune"
+              },
+              {
+                "name": "Cucina",
+                "url": "/impara/cucina/",
+                "reason": "usi"
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Il riso è solo decorazione?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "No. Modella sapore e corpo; è parte integrante del blend."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, ricette"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, varietà"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

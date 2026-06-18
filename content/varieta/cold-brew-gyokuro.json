@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "cold-brew-gyokuro",
+  "meta": {
+    "title": "Cold brew gyokuro — estate in bicchiere",
+    "description": "Profilo, preparazione e contesto italiano del cold-brew-gyokuro.",
+    "keywords": [
+      "cold brew gyokuro",
+      "tè verde",
+      "Camellia sinensis",
+      "gyokuro",
+      "Giappone"
+    ],
+    "canonical_path": "/varieta/cold-brew-gyokuro/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "gyokuro",
+      "sencha"
+    ],
+    "temi_kb": [
+      "preparazione_servizio",
+      "caffeina_tannini"
+    ],
+    "controversie": [],
+    "momenti": [
+      "aperitivo"
+    ],
+    "stagioni": [
+      "estate"
+    ],
+    "explore_next": [
+      {
+        "name": "Gyokuro",
+        "url": "/varieta/gyokuro/",
+        "reason": "stessa foglia calda"
+      },
+      {
+        "name": "Estate",
+        "url": "/italia/stagioni/estate/",
+        "reason": "contesto IT"
+      },
+      {
+        "name": "Aperitivo",
+        "url": "/italia/momenti/aperitivo/",
+        "reason": "momento"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Giappone",
+    "stile": "gyokuro",
+    "caffeina": "Media",
+    "stagione": "Estate",
+    "cultivar": "Gyokuro ombreggiato",
+    "sort_order": 99,
+    "brew": {
+      "temp": 4,
+      "grams": 5,
+      "seconds": 7200,
+      "infusions": "1"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Ore in frigo, umami dolce senza amaro: il cold brew gyokuro è estate in un bicchiere, lento e trasparente."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Liquore verde pallido",
+        "aroma": "Umami dolce, alghe",
+        "gusto": "Setoso, zero astringenza",
+        "retrogusto": "Lungo e fresco"
+      },
+      {
+        "type": "brew_params",
+        "temp": 4,
+        "grams": 5,
+        "seconds": 7200,
+        "infusions": "1"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Bottiglia o barattolo",
+          "Frigorifero"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "5 g di gyokuro in 500 ml acqua fredda",
+            "duration": "2 min"
+          },
+          {
+            "text": "Refrigerare 2-4 ore",
+            "duration": "4 ore"
+          },
+          {
+            "text": "Filtra e servi freddo",
+            "duration": "2 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Usare foglia scadente",
+          "Troppo tempo (amaro)",
+          "Ore insufficienti (acqua insipida)",
+          "Usare foglia non fresca"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Alternativa all'aperitivo estivo: elegante, senza zucchero, perfetta per Ferragosto."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Crudite, bruschette leggere",
+          "Frutta estiva"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Quanta caffeina nel cold brew?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Moderata: estrazione fredda più dolce ma non priva di caffeina."
+              }
+            ]
+          },
+          {
+            "question": "Posso freddare un gyokuro caldo?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Profilo diverso: il cold brew dall'inizio è più dolce e pulito."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Estrazione fredda"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "5 g per 500 ml, 4–8 ore a 4 °C. Estrae aminoacidi e zuccheri con poche catechine amare. Alternativa italiana alle bibite zuccherate estive."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, preparazione"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, estate"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Gyokuro",
+            "url": "/varieta/gyokuro/",
+            "reason": "versione calda"
+          },
+          {
+            "name": "Hojicha freddo",
+            "url": "/varieta/hojicha/",
+            "reason": "più tostato"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "palato-italiano",
+  "meta": {
+    "title": "Il palato italiano",
+    "description": "Degustazione consapevole: tre verdi per allenare occhio, naso e memoria del gusto.",
+    "keywords": [
+      "palato italiano",
+      "tè verde",
+      "percorso",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/gioca/percorsi/palato-italiano/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "hub"
+      },
+      {
+        "name": "Abbinamenti Italia",
+        "url": "/italia/abbinamenti/",
+        "reason": "gastronomia"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Conosci già vino o olio? Hai metà strada fatta. Il tè verde si legge con lo stesso rispetto: aspetto, aroma, corpo, persistenza."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Durata: 40 minuti. Badge: Sommelier in erba."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Metodo di degustazione in 4 passi"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Confronto sencha, gyokuro, dragon well"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Lessico italiano del gusto (vegetale, umami, astrigente)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa hai imparato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tre verdi, tre grammatiche: vapore giapponese al sole, ombra umami, nocciola cinese in padella. Il palato italiano trova ponti senza snaturare le origini."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, degustazione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

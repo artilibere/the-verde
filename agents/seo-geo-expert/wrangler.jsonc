@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "the-verde-seo-geo",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-06-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "SITE_BASE_URL": "https://the-verde.it"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "SeoGeoAgent",
+        "name": "SeoGeoAgent"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["SeoGeoAgent"]
+    }
+  ]
+}

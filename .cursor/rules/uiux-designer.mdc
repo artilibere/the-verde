@@ -1,5 +1,5 @@
 ---
-description: Attiva UI/UX Designer per frontend statico the-verde.it (HTML, CSS, JS, Cloudflare Pages)
+description: Attiva UI/UX Designer per web-app mobile-first the-verde.it (HTML, CSS, JS, d3, Jinja2, Cloudflare Pages)
 globs:
   - "**/the-verde-it-site/**"
   - "**/site/**/*.html"
@@ -7,6 +7,8 @@ globs:
   - "**/site/**/*.js"
   - "assets/css/**"
   - "assets/js/**"
+  - "templates/**"
+  - "schemas/**"
   - "dist/**"
   - "public/**/*.html"
   - "public/**/*.css"
@@ -15,32 +17,33 @@ alwaysApply: false
 
 # Frontend the-verde.it: UI/UX Designer
 
-Quando crei o modifichi il frontend statico di the-verde.it (HTML, CSS, JS, wireframe, catalogo varietà, schede tè, deploy Cloudflare Pages, repo site separato), applica la skill **[uiux-designer](../skills/uiux-designer/SKILL.md)**.
+Quando crei o modifichi il frontend (HTML, CSS, JS, wireframe, build JSON→HTML, deploy Cloudflare Pages, repo site separato), applica la skill **[uiux-designer](../skills/uiux-designer/SKILL.md)**.
 
 ## Quando usare
 
-- Layout schede varietà (modello 3 zone Scopri / Prepara / Approfondisci)
-- Design system Almost Acqua, token CSS Material 3, componenti `tv-*`
-- Catalogo filtrabile, hub origine/momento/stagione
-- Template articoli editoriali e guide
-- Build script Markdown → HTML
-- Configurazione `_headers`, `_redirects`, GitHub Actions, Cloudflare Pages
+- App shell mobile: app-bar, bottom-nav, card feed
+- Design system Almost Acqua, componenti `tv-*`, icone SVG
+- Chart d3.js con tabella fallback
+- Pipeline PageDocument JSON → template Jinja2
+- Catalogo, schede varietà, articoli, hub
+- `_headers`, `_redirects`, GitHub Actions
 
 ## Prima di implementare
 
-1. Leggi [the-verde-expert/SKILL.md](../skills/the-verde-expert/SKILL.md) e [cultura-italiana.md](../skills/the-verde-expert/cultura-italiana.md)
-2. Consulta i file di riferimento nella skill: `personas.md`, `design-system.md`, `componenti.md`, `template-pagine.md`, `mapping-contenuti.md`, `cloudflare-pages.md`
-3. Per microcopy UI: tono the-verde-expert (no detox, distinzione tè/tisane)
+1. [the-verde-expert/SKILL.md](../skills/the-verde-expert/SKILL.md) e [cultura-italiana.md](../skills/the-verde-expert/cultura-italiana.md)
+2. [app-shell.md](../skills/uiux-designer/app-shell.md), [icone.md](../skills/uiux-designer/icone.md), [charts-d3.md](../skills/uiux-designer/charts-d3.md), [rendering-json-html.md](../skills/uiux-designer/rendering-json-html.md)
+3. [design-system.md](../skills/uiux-designer/design-system.md), [componenti.md](../skills/uiux-designer/componenti.md), [template-pagine.md](../skills/uiux-designer/template-pagine.md)
 
 ## Regola di conflitto
 
-Accessibilità e leggibilità > decorazione. Tono the-verde-expert > copy marketing UI. Una sola CTA per pagina.
+Accessibilità > decorazione. Tono the-verde-expert > marketing. Tabella > chart se dubbio. Template Jinja2 > HTML ad hoc.
 
 ## Cosa fare sempre
 
-- Vanilla HTML+CSS+JS; token M3 in `tokens.css`; no Bootstrap/Tailwind
-- Pagina HTML statica per ogni URL indicizzabile (no SPA router)
-- Palette Almost Acqua (`#CAD3C1`) come brand wash; primary scuro `#3E5C4E` per CTA
-- No estetica zen kitsch o wellness neon; no emoji negli heading
-- Box "In Italia" su ogni scheda varietà
-- Chiudi con la checklist in SKILL.md
+- Mobile-first 390px; bottom nav + card feed
+- Template Jinja2 + PageDocument JSON validato
+- Prosa uniforme (`tv-prose__*`); schema.org = JSON-LD
+- Icone con label; touch ≥ 44px
+- d3 self-hosted; tabella fallback per ogni chart
+- Palette Almost Acqua; no zen kitsch / detox
+- Checklist in SKILL.md

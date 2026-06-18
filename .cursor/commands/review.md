@@ -2,7 +2,7 @@
 
 ## Objective
 
-Revisione del diff o dell'area indicata, adatta al sito statico **the-verde.it** (contenuti Markdown, build Python, template Jinja2, asset vanilla).
+Revisione del diff o dell'area indicata, adatta al sito statico **the-verde.it** (contenuti JSON, build Python, template Jinja2, asset vanilla).
 
 ## Tipo di review
 
@@ -19,27 +19,28 @@ Per Bugbot o Security: lanciare il subagent dedicato sul diff (`branch changes` 
 ## Process — checklist manuale
 
 1. **Build e pipeline**
+   - `python -m pytest tests/ -q` verde?
    - `scripts/build.py` completa senza errori?
-   - `html_enrich.py`: sezioni varietà (prepara/approfondisci), FAQ, varietà simili non perse?
-   - `parse_related_varieties`: path plain `(/varieta/slug/)` oltre a `href`?
+   - JSON valida contro `content/_schemas/`?
+   - `site_builder/blocks.py`: zone varietà (prepara/approfondisci), FAQ semantiche?
    - `asset_pipeline.py`: hash asset, bundle CSS coerente?
 
-2. **Contenuti editoriali** (`content/`)
+2. **Contenuti editoriali** (`content/**/*.json`)
    - Allineamento a `books/knowledge-base.json`?
    - Voce The Verde (sensoriale, non detox)?
    - UTF-8: accenti in prosa, slug senza accenti
-   - `fix_encoding.py`: regole non troppo aggressive (es. «ristorante» ≠ «ristorantè»)?
+   - `meta.keywords`, `navigation` popolati dove utile
 
 3. **Template e UX** (`templates/`, `assets/`)
    - Schede varietà: brew card, mininav, path nav, box Italia
-   - Catalogo: filtri URL-sync, reset filtri, `getAll` vs `get`
+   - Catalogo: filtri URL-sync, reset filtri
    - Diario: query `?varieta=` e campo form `name="varieta"` allineati
-   - Level-toggle su hub Impara con Approfondimento
-   - Accessibilità: breadcrumb, `aria-label`, focus visibile
+   - Level-toggle su hub Impara con `level_section` deep
+   - Accessibilità: breadcrumb, `aria-label`, un solo h1, landmark `main`
 
 4. **JavaScript** (`assets/js/`)
    - `filters.js`, `diario.js`, `quiz.js`, `paths.js`, `badges.js`
-   - localStorage diario: chiavi coerenti (`varietà` vs `varietà`)
+   - localStorage diario: chiavi coerenti
    - Nessun innerHTML non sanitizzato da input utente
 
 5. **Sicurezza**
@@ -53,6 +54,7 @@ Per Bugbot o Security: lanciare il subagent dedicato sul diff (`branch changes` 
 
 ## Checklist sintetica
 
+- [ ] pytest OK
 - [ ] Build OK
 - [ ] Encoding IT corretto; slug URL intatti
 - [ ] KB rispettata per contenuti editoriali
@@ -78,4 +80,4 @@ Per Bugbot o Security: lanciare il subagent dedicato sul diff (`branch changes` 
 
 - Non confondere con `/build` (solo verifica build) o `/commit` (pre-commit).
 - `dist/` si rigenera — revisionare sorgenti in `content/`, `templates/`, `scripts/`.
-- Skill di riferimento: `the-verde-expert`, `uiux-designer`.
+- Skill di riferimento: `the-verde-expert`, `uiux-designer`, `web-architect`.

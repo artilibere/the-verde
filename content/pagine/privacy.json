@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "type": "page",
+  "slug": "privacy",
+  "meta": {
+    "title": "Privacy policy",
+    "description": "Privacy policy",
+    "keywords": [
+      "privacy policy",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/privacy/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": []
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Informazioni sul trattamento dei dati. Il diario in fase 1 resta sul tuo dispositivo (localStorage)."
+          }
+        ]
+      }
+    ]
+  }
+}

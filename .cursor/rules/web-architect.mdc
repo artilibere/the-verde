@@ -1,0 +1,32 @@
+---
+description: Attiva Web Architect per content JSON, build pipeline e IA del sito the-verde.it
+globs:
+  - "content/**"
+  - "content/_schemas/**"
+  - "scripts/**"
+  - "templates/**"
+  - "tests/**"
+  - ".github/workflows/**"
+alwaysApply: false
+---
+
+# Web Architect — the-verde.it
+
+Quando modifichi contenuti JSON, build, schemi, test o architettura informativa, applica **[web-architect](../skills/web-architect/SKILL.md)**.
+
+## Quando usare
+
+- Nuovi tipi blocco o documento in `content/_schemas/`
+- Modifiche a `scripts/site_builder/` o `scripts/build.py`
+- Migrazione o validazione contenuti
+- SEO, schema.org, `explore_next`, grafo navigazione
+- Suite test pytest del build
+
+## Collaborazione
+
+- **the-verde-expert**: contenuto e accuratezza
+- **uiux-designer**: template e componenti `tv-*` — vedi [mapping-contenuti](../skills/uiux-designer/mapping-contenuti.md)
+
+## Regola di conflitto
+
+Accessibilità e validazione schema > velocità di pubblicazione. Test pytest verdi prima di merge su content/scripts.

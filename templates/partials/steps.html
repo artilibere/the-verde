@@ -1,0 +1,8 @@
+<ol class="tv-step-list" itemscope itemtype="https://schema.org/HowTo">
+  {% for step in body['items'] %}
+  <li class="tv-step-list__item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <span class="tv-step-list__action" itemprop="text">{{ step.text }}</span>
+    {% if step.duration %}<span class="tv-step-list__time">{{ step.duration }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ol>

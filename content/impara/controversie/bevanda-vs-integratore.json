@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "type": "controversy",
+  "slug": "bevanda-vs-integratore",
+  "meta": {
+    "title": "Meglio in tazza o in capsula?",
+    "description": "EGCG in polvere o matcha frustato: due modi di assumere catechine, due esperienze.",
+    "keywords": [
+      "bevanda vs integratore",
+      "tè verde",
+      "controversia"
+    ],
+    "canonical_path": "/impara/controversie/bevanda-vs-integratore/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Scienza vs tradizione",
+        "url": "/impara/controversie/salute-scienza-vs-tradizione/",
+        "reason": "correlata"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "positions",
+        "items": [
+          {
+            "fonte": "rosen",
+            "tesi": "Gli integratori offrono dosi concentrate di catechine senza caffeina, utili a chi non tollera stimoli. Ma privano del piacere rituale, del colore in tazza, della varietà sensoriale. La bevanda resta la forma completa."
+          },
+          {
+            "fonte": "pellegrino",
+            "tesi": "Il matcha, bevendo la foglia intera sospesa in acqua, concentra antiossidanti più di qualsiasi infusione filtrata — senza uscire dal mondo del tè vero."
+          },
+          {
+            "fonte": "hara",
+            "tesi": "I trial clinici sulla salute usano spesso estratti standardizzati di EGCG, non tazze di sencha. La biodisponibilità e il dosaggio misurabile favoriscono la capsula in laboratorio — non necessariamente in cucina."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In farmacia trovi estratti di tè verde; in teiera trovi umami, aroma, gesto. Non è lo stesso prodotto anche se la parola «catechine» compare in entrambi."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "La domanda non è solo «cosa fa più bene» ma «cosa stai cercando»: dose precisa, assenza di caffeina, o esperienza culturale e sensoriale?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il cuore della questione"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Gli integratori nascono quando la ricerca ha bisogno di standardizzare l'EGCG. La tazza nasce quando una cultura ha deciso che bere foglie è modo di stare al mondo. In Italia entrambi convivono: matcha latte zuccherato da un lato, capsule detox dall'altro — e al centro poco tè vero di qualità."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il matcha cerimoniale o da cucina è ponte: bevi la foglia intera senza industrializzare in capsula. Rosen lo considera ideale; Hara lo studierebbe ancora in trial separati."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Sintesi"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Bevanda integra corpo, mente e cultura; estratto integra protocolli e dosi. Per la maggior parte dei bevitori italiani curiosi, la tazza resta il punto di partenza — integratori solo su consiglio professionale."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Se scegli la capsula per comodità, accetta di perdere aroma, ritualità e la varietà infinita delle lavorazioni. Se scegli la tazza, accetta che la dose di EGCG non sarà quella di un trial clinico — e che forse va bene così."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Matcha",
+                "url": "/varieta/matcha/",
+                "reason": "foglia intera"
+              },
+              {
+                "name": "Salute",
+                "url": "/impara/salute/",
+                "reason": "hub"
+              },
+              {
+                "name": "Cucina",
+                "url": "/impara/cucina/",
+                "reason": "matcha fuori tazza"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, integratori"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, trial EGCG"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, matcha"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

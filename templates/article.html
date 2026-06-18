@@ -15,7 +15,17 @@
     <button type="button" class="tv-btn tv-btn--text tv-level-toggle" data-level-toggle aria-pressed="false" aria-label="Mostra sezione approfondimento">Vista completa</button>
     {% endif %}
   </header>
-  <div class="tv-article__body">{{ content_html | safe }}</div>
+  <div class="tv-article__body">
+    {% if page is defined and page.cards %}
+    <div class="tv-feed">
+      {% for card in page.cards %}
+        {% include "partials/card.html" %}
+      {% endfor %}
+    </div>
+    {% else %}
+    {{ content_html | safe }}
+    {% endif %}
+  </div>
   {% include "includes/share.html" %}
 </article>
 {% endblock %}

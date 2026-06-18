@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "type": "article",
+  "slug": "scienza-tradizione",
+  "meta": {
+    "title": "Scienza o tradizione",
+    "description": "Tre controversie dalla knowledge base: leggere il tè verde con spirito critico.",
+    "keywords": [
+      "scienza tradizione",
+      "tè verde",
+      "percorso",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/gioca/percorsi/scienza-tradizione/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [
+      "preparazione_servizio"
+    ],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Quiz miti",
+        "url": "/gioca/quiz/mito-verita/",
+        "reason": "verifica"
+      },
+      {
+        "name": "Salute",
+        "url": "/impara/salute/",
+        "reason": "hub"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il tè verde fa bene? Sì e no — dipende da cosa chiedi, a chi e con quale evidenza. Questo percorso attraversa tre dibattiti aperti senza fazioni."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Durata: 35 minuti. Badge: Lettore critico."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Salute: scienza (hara) vs tradizione (rosen, onuma)"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Bevanda vs integratore di EGCG"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "Caffeina: stimolazione o calma?"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Cosa hai imparato"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tradizione e laboratorio convergono sul potenziale preventivo, divergono su dosi e certezze. Bevi per piacere; eventuali benefici sono un plus, non una promessa."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, temi salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "prospettive_contrastanti in books/knowledge-base.json"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

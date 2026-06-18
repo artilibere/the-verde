@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "type": "hub",
+  "slug": "estate",
+  "meta": {
+    "title": "Estate",
+    "description": "Freddo e leggerezza.",
+    "keywords": [
+      "estate",
+      "tè verde",
+      "Camellia sinensis"
+    ],
+    "canonical_path": "/italia/stagioni/estate/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": []
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Freddo e leggerezza."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

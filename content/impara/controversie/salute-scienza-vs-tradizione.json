@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "type": "controversy",
+  "slug": "salute-scienza-vs-tradizione",
+  "meta": {
+    "title": "Quanto è davvero dimostrato che il tè verde faccia bene?",
+    "description": "Tradizione millenaria, studi epidemiologici e trial clinici: cosa possiamo dire con onestà.",
+    "keywords": [
+      "salute scienza vs tradizione",
+      "tè verde",
+      "controversia"
+    ],
+    "canonical_path": "/impara/controversie/salute-scienza-vs-tradizione/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Bevanda vs integratore",
+        "url": "/impara/controversie/bevanda-vs-integratore/",
+        "reason": "correlata"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "positions",
+        "items": [
+          {
+            "fonte": "hara",
+            "tesi": "Servono meccanismi molecolari, trial clinici randomizzati e misurazione della biodisponibilità delle catechine per affermare effetti terapeutici specifici. La letteratura è promettente ma non sempre trasferibile in «tre tazze al giorno»."
+          },
+          {
+            "fonte": "rosen",
+            "tesi": "Secoli di medicina tradizionale cinese e studi epidemiologici in Giappone (Shizuoka) supportano benefici su cuore, invecchiamento e prevenzione. Il tè è terapia in tazza anche prima dei paper."
+          },
+          {
+            "fonte": "onuma",
+            "tesi": "La saggezza popolare giapponese — Eisai, la nonna che beve matcha — e l'esperienza quotidiana confermano virtù salutari prima ancora che la chimica le nomini."
+          },
+          {
+            "fonte": "pellegrino",
+            "tesi": "Il tè verde va inserito nella prevenzione e nello stile di vita sano, con moderazione e qualità. Non sostituisce mai diagnosi e terapie del medico curante."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Ogni settimana un titolo promette che il tè verde «cura» qualcosa. Le catechine esistono, gli antiossidanti pure — ma la strada dalla foglia al claim in etichetta è tortuosa."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Questa controversia non chiede di scegliere tra scienza e tradizione: chiede di capire cosa ciascuna può promettere senza ingannare chi beve."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il cuore della questione"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "La medicina tradizionale cinese ha classificato il tè come allievo della salute molto prima degli analizzatori. Oggi Hara e collaboratori misurano EGCG in microgrammi e confrontano gruppi in trial. Entrambi guardano la stessa foglia con linguaggi diversi."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "In Italia il rischio è il taglio wellness: estratti in capsula, tisane verdi che non sono Camellia sinensis, promesse detox post festività. La risposta equilibrata: bevi tè verde di qualità per piacere e abitudine; eventuali benefici sono un plus documentato con cautela."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dove convergono le fonti"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Tutte concordano che il tè verde non è acqua colorata: contiene molecole bioattive. Tutte sconsigliano di trattarlo come farmaco sostitutivo."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Dove divergono"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Hara chiede rigore clinico prima di claim forti; Rosen e Onuma accettano evidenza storica e popolazione. Pellegrino media: prevenzione sì, terapia no."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "In pratica"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Bevi per gusto e ritualità; non per colpa. Se usi integratori EGCG, parlane con il medico — dosi alte possono interagire con farmaci."
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Il tè previene il cancro?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Studi osservazionali suggeriscono correlazioni; non sostituiscono screening e cure mediche."
+                  }
+                ]
+              },
+              {
+                "question": "Chi ha ragione?",
+                "answer_spans": [
+                  {
+                    "type": "text",
+                    "value": "Nessun vincitore assoluto: cautela scientifica e tradizione convivono."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Salute e catechine",
+                "url": "/impara/salute/",
+                "reason": "hub tema"
+              },
+              {
+                "name": "Catechine",
+                "url": "/glossario/catechine/",
+                "reason": "molecole"
+              },
+              {
+                "name": "Quiz miti",
+                "url": "/gioca/quiz/mito-verita/",
+                "reason": "verifica"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "hara, temi salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, tema rosen-salute"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "prospettive_contrastanti KB"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

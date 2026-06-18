@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "type": "controversy",
+  "slug": "consumo-quotidiano-vs-rituale",
+  "meta": {
+    "title": "Tè verde: abitudine quotidiana o esperienza speciale?",
+    "description": "Bancha in bottiglia e chanoyu nella stessa cultura: perché non è contraddizione.",
+    "keywords": [
+      "consumo quotidiano vs rituale",
+      "tè verde",
+      "controversia"
+    ],
+    "canonical_path": "/impara/controversie/consumo-quotidiano-vs-rituale/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [],
+    "temi_kb": [],
+    "controversie": [],
+    "explore_next": [
+      {
+        "name": "Gong fu vs chanoyu",
+        "url": "/impara/controversie/cerimonia-cina-vs-giappone/",
+        "reason": "correlata"
+      }
+    ]
+  },
+  "taxonomy": {},
+  "body": {
+    "blocks": [
+      {
+        "type": "positions",
+        "items": [
+          {
+            "fonte": "onuma",
+            "tesi": "In Giappone il tè accompagna colazione, ristorante, pause — presenza costante, non solo cerimonia del weekend."
+          },
+          {
+            "fonte": "rosen",
+            "tesi": "Il piacere quotidiano del tè con riso o con visitatori convive con la cerimonia formale cha-no-yu. Due registri, stessa pianta."
+          },
+          {
+            "fonte": "pellegrino",
+            "tesi": "In Giappone coesistono bancha in bottiglia al distributore e culto formale del Chado nella sala cerimoniale: due registri, stessa cultura, nessuna gerarchia morale tra «alto» e «basso»."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "intro",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Occidente il tè «cerimoniale» viene venduto come lusso; il quotidiano come bustina dimenticata. In Giappone la scala è più ricca."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "In Italia possiamo imparare: un gesto lento il sabato e un sencha veloce il lunedì — nessuno dei due è «meno autentico»."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il cuore della questione"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Il rischio italiano è l'alternativa ideologica: o tutto wellness lento, o tutto moda matcha. La tradizione giapponese è più semplice: il tè è bevanda, ospitalità, estetica — a seconda dell'ora."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Non devi scegliere tra rito e praticità: puoi scalare il chanoyu a una kyusu scaldata e tre attimi di silenzio."
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Proposta concreta"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Quotidiano: sencha o bancha in tazza grande, parametri semplici. Speciale: matcha con chasen la domenica, o percorso guidato sul sito."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Il gesto lento non è incompatibile con la vita veloce: è una scelta di pochi minuti, non di un'ora intera — anche in cucina italiana tra un caffè e l'altro."
+              }
+            ]
+          },
+          {
+            "type": "related_links",
+            "items": [
+              {
+                "name": "Percorso rituale",
+                "url": "/gioca/percorsi/rituale-quotidiano/",
+                "reason": "gioco"
+              },
+              {
+                "name": "Bancha",
+                "url": "/varieta/bancha/",
+                "reason": "quotidiano"
+              },
+              {
+                "name": "Cerimonia hub",
+                "url": "/impara/cerimonia/",
+                "reason": "rito"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "onuma, quotidianita"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "rosen, poesia"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, Giappone"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

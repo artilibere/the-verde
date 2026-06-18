@@ -42,7 +42,7 @@ Per parametri brew e profili del sito: [varietà.md](varietà.md).
 1. `pellegrino` → via del tè, acqua, teiere (tema `pellegrino-via-del-te`)
 2. `pellegrino` → varietà (schede cinesi e giapponesi)
 3. `sommelier` → degustazione (parametri sensoriali)
-4. Sito: schede in `content/varieta/` + [varietà.md](varietà.md)
+4. Sito: schede in `content/varieta/*.json` + [varietà.md](varietà.md)
 
 ### Capire salute senza hype
 
@@ -84,16 +84,17 @@ Per parametri brew e profili del sito: [varietà.md](varietà.md).
 
 ● = libro con temi collegati in `temi_trasversali[].libri_correlati`
 
-## Riferimenti esterni (non in KB)
+## Riferimenti esterni (secondarie)
 
-| Opera | Autore | Uso |
-|-------|--------|-----|
-| *The Story of Tea* | Mary Lou e Robert J. Heiss | Enciclopedia generale; integrazione, non fonte primaria |
-| *Tea: History, Terroirs, Varieties* | Gascoyne et al. | Riferimento visivo varietà; non sostituisce KB |
+| Fonte | Uso | Regola |
+|-------|-----|--------|
+| [Treccani](https://www.treccani.it) | Definizioni botaniche, chimiche, linguistiche (`umami`, `Camellia`, `catechine`) | Solo in **nota Fonti**; mai unica fonte senza ancoraggio KB |
+| *The Story of Tea* (Heiss) | Enciclopedia generale | Integrazione, non primaria |
+| *Tea: History, Terroirs, Varieties* (Gascoyne) | Riferimento visivo | Non sostituisce KB |
 
 ## Note operative
 
 - **Onuma (ES):** la KB estrae in italiano; per citazioni letterali verificare `lingua_originale` nel JSON.
 - **Hara (EN):** traduzione italiana nella KB; per trial specifici usare pagine indicate in `sotto_temi`.
 - **Pellegrino:** unico autore italiano nella KB — priorità per contestualizzazione tecnica locale (acqua, mercato).
-- Non citare fonti esterne alla KB come primarie in contenuti the-verde.it senza esplicita richiesta.
+- **Treccani:** ammessa in piè di pagina quando la KB non copre definizioni enciclopediche; il corpo del testo resta ancorato alla KB.

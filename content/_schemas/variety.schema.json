@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "variety.schema.json",
+  "allOf": [
+    { "$ref": "document.base.schema.json" },
+    {
+      "type": "object",
+      "properties": {
+        "type": { "const": "variety" },
+        "taxonomy": {
+          "type": "object",
+          "required": ["origine", "stile", "caffeina", "stagione", "brew"],
+          "properties": {
+            "origine": { "type": "string" },
+            "stile": { "type": "string" },
+            "caffeina": { "type": "string" },
+            "stagione": { "type": "string" },
+            "cultivar": { "type": "string" },
+            "sort_order": { "type": "integer" },
+            "brew": {
+              "type": "object",
+              "required": ["temp", "grams", "seconds", "infusions"],
+              "properties": {
+                "temp": { "type": "number" },
+                "grams": { "type": "number" },
+                "seconds": { "type": "number" },
+                "infusions": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

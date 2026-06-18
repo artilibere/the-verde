@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "bi-luo-chun",
+  "meta": {
+    "title": "Bi Luo Chun — conchiglie verdi di primavera",
+    "description": "Profilo, preparazione e contesto italiano del bi-luo-chun.",
+    "keywords": [
+      "bi luo chun",
+      "tè verde",
+      "Camellia sinensis",
+      "bi-luo-chun",
+      "Cina"
+    ],
+    "canonical_path": "/varieta/bi-luo-chun/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "dragon-well",
+      "sencha"
+    ],
+    "temi_kb": [
+      "lavorazione_qualità",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Dragon Well",
+        "url": "/varieta/dragon-well/",
+        "reason": "confronto cinese"
+      },
+      {
+        "name": "Gaiwan",
+        "url": "/glossario/gaiwan/",
+        "reason": "strumento"
+      },
+      {
+        "name": "Degustazione",
+        "url": "/impara/degustazione/",
+        "reason": "metodo"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "bi-luo-chun",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Cultivar di Dongting, Jiangsu",
+    "sort_order": 99,
+    "brew": {
+      "temp": 75,
+      "grams": 3,
+      "seconds": 90,
+      "infusions": "3"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Spirali verdi come conchiglie minuscole: il bi luo chun profuma di frutta bianca e fiori di primavera."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Spirali sottili verde argento",
+        "aroma": "Floreale, frutta bianca",
+        "gusto": "Dolce, delicato",
+        "retrogusto": "Fresco"
+      },
+      {
+        "type": "brew_params",
+        "temp": 75,
+        "grams": 3,
+        "seconds": 90,
+        "infusions": "3"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Gaiwan",
+          "Acqua 75 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Poca acqua, alta foglia",
+            "duration": "30 sec"
+          },
+          {
+            "text": "3 g per 100 ml, 90 secondi",
+            "duration": "2 min"
+          },
+          {
+            "text": "Infusioni brevi successive",
+            "duration": "1 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Temperatura troppo alta che uccide i fiori",
+          "Troppa foglia in tazza (amaro floreale)",
+          "Acqua dell'ebollitore"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "In primavera, in parallelo con asparagi e fave: un verde che celebra la rinascita."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Primavera: verdure tenere",
+          "Dolci poco burrosi"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Cosa significa Bi Luo Chun?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Conchiglia di giada verde — nome poetico cinese."
+              }
+            ]
+          },
+          {
+            "question": "Perché spirali?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Rolling artistico che protegge aromi volatili e rallenta infusione."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Raccolto primaverile"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Foglie a spirale raccolte presto, spesso in vigneti con pesche (tradizione locale). Profilo floreale delicato: gaiwan e acqua a 75 °C, non ebollizione."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, Bi Lo Chun"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, degustazione"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Dragon Well",
+            "url": "/varieta/dragon-well/",
+            "reason": "well/) — altro grande verde cinese"
+          },
+          {
+            "name": "Sencha",
+            "url": "/varieta/sencha/",
+            "reason": "giapponese primaverile"
+          }
+        ]
+      }
+    ]
+  }
+}

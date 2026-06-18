@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "type": "variety",
+  "slug": "dragon-well",
+  "meta": {
+    "title": "Dragon Well — Longjing della Cina",
+    "description": "Profilo, preparazione e contesto italiano del dragon-well.",
+    "keywords": [
+      "dragon well",
+      "tè verde",
+      "Camellia sinensis",
+      "longjing",
+      "Cina"
+    ],
+    "canonical_path": "/varieta/dragon-well/"
+  },
+  "seo": {
+    "robots": "index,follow",
+    "og_type": "article"
+  },
+  "navigation": {
+    "related_slugs": [
+      "bi-luo-chun",
+      "gunpowder"
+    ],
+    "temi_kb": [
+      "storia_cultura",
+      "degustazione_sensoriale"
+    ],
+    "controversie": [],
+    "momenti": [
+      "pausa"
+    ],
+    "stagioni": [
+      "primavera"
+    ],
+    "explore_next": [
+      {
+        "name": "Bi Luo Chun",
+        "url": "/varieta/bi-luo-chun/",
+        "reason": "altra primavera cinese"
+      },
+      {
+        "name": "Glossario Long Jing",
+        "url": "/glossario/longjing/",
+        "reason": "termine"
+      },
+      {
+        "name": "Primavera",
+        "url": "/italia/stagioni/primavera/",
+        "reason": "stagione"
+      }
+    ]
+  },
+  "taxonomy": {
+    "origine": "Cina",
+    "stile": "longjing",
+    "caffeina": "Media",
+    "stagione": "Primavera",
+    "cultivar": "Longjing #43 e cultivar di West Lake",
+    "sort_order": 99,
+    "brew": {
+      "temp": 80,
+      "grams": 3,
+      "seconds": 120,
+      "infusions": "3-4"
+    }
+  },
+  "body": {
+    "blocks": [
+      {
+        "type": "paragraph",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Foglie piattate a piastra, liquore verde-giallo: il Long Jing sa di nocciola fresca e fagiolini appena scottati."
+          }
+        ]
+      },
+      {
+        "type": "sensory_profile",
+        "aspetto": "Foglie piatte, verde giallastro",
+        "aroma": "Castagna, erba fresca",
+        "gusto": "Dolce, nocciola, vegetale",
+        "retrogusto": "Pulito e persistente"
+      },
+      {
+        "type": "brew_params",
+        "temp": 80,
+        "grams": 3,
+        "seconds": 120,
+        "infusions": "3-4"
+      },
+      {
+        "type": "equipment",
+        "items": [
+          "Gaiwan o bicchiere alto",
+          "Acqua a 80 °C"
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "text": "Scalda il recipiente",
+            "duration": "1 min"
+          },
+          {
+            "text": "Infusiona 3 g per 100 ml per 2 minuti",
+            "duration": "2 min"
+          },
+          {
+            "text": "Rein infusiona più volte",
+            "duration": "2 min"
+          }
+        ]
+      },
+      {
+        "type": "errors",
+        "items": [
+          "Acqua bollente",
+          "Acqua troppo calda che appiattisce il profilo",
+          "Infusione in teiera piccola senza spazio per foglia piatta"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "italia",
+        "spans": [
+          {
+            "type": "text",
+            "value": "Un cinese tra i verdi più accessibili al palato italiano: note tostate che ricordano frutta secca."
+          }
+        ]
+      },
+      {
+        "type": "pairings",
+        "items": [
+          "Pesce al vapore",
+          "Verdure di stagione"
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Perché si chiama pozzo del drago?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Leggenda locale a West Lake: il nome e parte della storia del Longjing."
+              }
+            ]
+          },
+          {
+            "question": "Dragon Well e Long Jing?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Stesso tè: nome cinese Long Jing, traduzione Dragon Well."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "level_section",
+        "level": "deep",
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Pan-firing a Hangzhou"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fissazione in wok, pressatura a mano, forma piatta iconica. Il terroir di Zhejiang imprime dolcezza e burro vegetale. Primavera è stagione d'eccellenza."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "spans": [
+              {
+                "type": "text",
+                "value": "Fonti"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "sommelier, Lung Ching"
+                  }
+                ]
+              },
+              {
+                "spans": [
+                  {
+                    "type": "text",
+                    "value": "pellegrino, Long Jing"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "related_links",
+        "items": [
+          {
+            "name": "Bi Luo Chun",
+            "url": "/varieta/bi-luo-chun/",
+            "reason": "luo-chun/) — spirale primaverile"
+          },
+          {
+            "name": "Gunpowder",
+            "url": "/varieta/gunpowder/",
+            "reason": "perle verdi"
+          }
+        ]
+      }
+    ]
+  }
+}
