@@ -148,7 +148,24 @@ class SiteBuilder:
         )
         (self.out_dir / "robots.txt").write_text(build_robots_txt(self.base_url), encoding="utf-8")
         (self.out_dir / "llms.txt").write_text(
-            build_llms_txt(self.base_url, self.site_name), encoding="utf-8"
+            build_llms_txt(
+                self.base_url,
+                self.site_name,
+                varieties=self.varieties,
+                glossary=self.glossary,
+                impara_topics=[
+                    {"title": t["nome"], "url": t["url"], "description": t.get("descrizione", "")}
+                    for t in (self.relazioni.get("temi", []) if isinstance(self.relazioni, dict) else [])
+                ],
+                controversies=self.controversies,
+                guides=self.guides,
+                italia_pages=[
+                    p
+                    for p in self.all_pages
+                    if p.get("url", "").startswith("/italia/") and p.get("url") != "/italia/"
+                ],
+            ),
+            encoding="utf-8",
         )
 
     def breadcrumbs(self, *crumbs: tuple[str, str]) -> list[dict]:
@@ -251,6 +268,8 @@ class SiteBuilder:
                 breadcrumbs=self.breadcrumbs(("In Italia", "/italia/"), ("Abbinamenti", url)),
             )
             write_page(self.out_dir / "italia" / "abbinamenti", page)
+            meta = document_to_meta(doc, url=url)
+            self.all_pages.append({**meta, "type": "italia"})
             self.track_sitemap(url, priority=0.6, changefreq="monthly")
 
     def build_glossario(self) -> None:

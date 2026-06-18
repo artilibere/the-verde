@@ -85,12 +85,11 @@ def test_home_body_geo_visible(built_dist):
     assert len(page.find_all("h1")) == 1
 
 
-def test_llms_txt_linked_in_head_and_footer(built_dist):
+def test_llms_txt_linked_in_head(built_dist):
     page = _soup(built_dist / "index.html")
     head_link = page.find("link", href="/llms.txt")
     assert head_link is not None
-    footer_link = page.find("footer").find("a", href="/llms.txt")
-    assert footer_link is not None
+    assert head_link.get("rel") == ["alternate"]
 
 
 def test_sencha_has_card_feed(built_dist):

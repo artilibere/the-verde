@@ -91,4 +91,18 @@ def test_build_llms_txt_contains_hubs():
     assert "Camellia sinensis" in text
     assert "/glossario/" in text
     assert "/varieta/" in text
+    assert "Domande tipiche" in text
+    assert "/feed.xml" in text
+
+
+def test_build_llms_txt_with_inventory():
+    text = build_llms_txt(
+        "https://the-verde.it",
+        "The Verde",
+        varieties=[{"title": "Sencha", "url": "/varieta/sencha/", "description": "Tè verde giapponese."}],
+        glossary=[{"title": "Umami", "url": "/glossario/umami/", "description": "Quinto gusto."}],
+    )
+    assert "[Sencha]" in text
+    assert "[Umami]" in text
+    assert "Varietà (schede complete)" in text
 

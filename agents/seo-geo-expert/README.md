@@ -33,6 +33,7 @@ npm run dev
 | `auditPage` | Meta, h1, JSON-LD, link interni su una URL |
 | `fetchSitemap` | Elenco URL da sitemap.xml |
 | `batchAudit` | Campiona N pagine e riporta criticità P0/P1 |
+| `auditLlmsTxt` | Verifica completezza e struttura di `/llms.txt` |
 | `scheduleTask` | Audit ricorrenti (cron) |
 | `runSiteAudit` | RPC `@callable` per audit programmatico |
 

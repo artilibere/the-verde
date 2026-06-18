@@ -248,35 +248,142 @@ def build_robots_txt(base_url: str) -> str:
     )
 
 
-def build_llms_txt(base_url: str, site_name: str) -> str:
+def _llms_abs(base_url: str, path: str) -> str:
+    if path.startswith("http"):
+        return path
+    return f"{base_url.rstrip('/')}{path if path.startswith('/') else f'/{path}'}"
+
+
+def _llms_brief(text: str, *, max_len: int = 110) -> str:
+    text = " ".join((text or "").split())
+    if len(text) <= max_len:
+        return text
+    cut = text[: max_len - 1].rsplit(" ", 1)[0]
+    return f"{cut}…"
+
+
+def _llms_list(
+    items: list[dict],
+    *,
+    base_url: str,
+    title_key: str = "title",
+    url_key: str = "url",
+    brief_key: str = "description",
+) -> str:
+    lines: list[str] = []
+    for item in items:
+        title = item.get(title_key) or item.get("slug", "")
+        url = item.get(url_key) or "/"
+        brief = _llms_brief(item.get(brief_key) or item.get("brief") or "")
+        if brief:
+            lines.append(f"- [{title}]({_llms_abs(base_url, url)}): {brief}")
+        else:
+            lines.append(f"- [{title}]({_llms_abs(base_url, url)})")
+    return "\n".join(lines)
+
+
+def build_llms_txt(
+    base_url: str,
+    site_name: str,
+    *,
+    varieties: list[dict] | None = None,
+    glossary: list[dict] | None = None,
+    impara_topics: list[dict] | None = None,
+    controversies: list[dict] | None = None,
+    guides: list[dict] | None = None,
+    italia_pages: list[dict] | None = None,
+) -> str:
     """Machine-readable site summary for generative engines (llms.txt)."""
-    return f"""# {site_name}
+    varieties = varieties or []
+    glossary = glossary or []
+    impara_topics = impara_topics or []
+    controversies = controversies or []
+    guides = guides or []
+    italia_pages = italia_pages or []
 
-> Cultura del tè verde (Camellia sinensis) per chi vive in Italia — non tisane, non hype detox.
+    query_map = [
+        ("Come preparare il sencha", "/varieta/sencha/"),
+        ("Differenza gyokuro e sencha", "/varieta/gyokuro/"),
+        ("Quanta caffeina nel tè verde", "/impara/caffeina/"),
+        ("Matcha in Italia: cultura e uso", "/guide/matcha-italia/"),
+        ("Tè verde e salute: cosa è dimostrato", "/impara/controversie/salute-scienza-vs-tradizione/"),
+        ("Abbinamenti tè verde e cucina italiana", "/italia/abbinamenti/"),
+        ("Cerimonia del tè: Cina vs Giappone", "/impara/controversie/cerimonia-cina-vs-giappone/"),
+        ("Cos'è l'umami nel tè", "/glossario/umami/"),
+    ]
+    query_lines = "\n".join(
+        f"- {question} → {_llms_abs(base_url, path)}" for question, path in query_map
+    )
 
-## Hub principali
+    sections: list[str] = [
+        f"# {site_name}",
+        "",
+        "> Cultura del tè verde (Camellia sinensis) per chi vive in Italia — non tisane, non hype detox.",
+        "",
+        f"{site_name} è un sito editoriale in italiano dedicato esclusivamente al tè verde "
+        "(*Camellia sinensis*). Ogni pagina espone meta title, description, canonical, "
+        "JSON-LD schema.org (Article, DefinedTerm, FAQPage, HowTo) e contestualizzazione per l'Italia.",
+        "",
+        "## Hub principali",
+        "",
+        f"- [Home]({_llms_abs(base_url, '/')}): punto di ingresso e navigazione tematica",
+        f"- [Varietà]({_llms_abs(base_url, '/varieta/')}): schede sensoriali, parametri infusione, contesto italiano",
+        f"- [Impara]({_llms_abs(base_url, '/impara/')}): storia, salute, cerimonia, preparazione, lavorazione",
+        f"- [Glossario]({_llms_abs(base_url, '/glossario/')}): termini definiti (schema DefinedTerm)",
+        f"- [In Italia]({_llms_abs(base_url, '/italia/')}): abbinamenti, stagioni, momenti della giornata",
+        f"- [Guide]({_llms_abs(base_url, '/guide/')}): articoli long-form editoriali",
+        f"- [Gioca]({_llms_abs(base_url, '/gioca/')}): percorsi guidati e quiz",
+        f"- [Diario]({_llms_abs(base_url, '/diario/')}): registro personale infusioni (area utente)",
+    ]
 
-- [Varietà]({base_url}/varieta/): schede sensoriali, parametri infusione, contesto italiano
-- [Impara]({base_url}/impara/): storia, salute, cerimonia, preparazione, controversie
-- [Glossario]({base_url}/glossario/): termini definiti (DefinedTerm)
-- [In Italia]({base_url}/italia/): abbinamenti, stagioni, momenti della giornata
-- [Guide]({base_url}/guide/): articoli long-form
-- [Gioca]({base_url}/gioca/): percorsi e quiz
+    if varieties:
+        sections += ["", "## Varietà (schede complete)", "", _llms_list(varieties, base_url=base_url)]
+    if glossary:
+        sections += ["", "## Glossario (termini definiti)", "", _llms_list(glossary, base_url=base_url)]
+    if impara_topics:
+        sections += ["", "## Impara — temi", "", _llms_list(impara_topics, base_url=base_url)]
+    if controversies:
+        sections += [
+            "",
+            "## Controversie (prospettive multiple, E-E-A-T)",
+            "",
+            _llms_list(controversies, base_url=base_url),
+        ]
+    if guides:
+        sections += ["", "## Guide", "", _llms_list(guides, base_url=base_url)]
+    if italia_pages:
+        sections += ["", "## In Italia", "", _llms_list(italia_pages, base_url=base_url)]
 
-## Formato contenuti
-
-Ogni pagina espone meta title, description (≤160 char), canonical, JSON-LD schema.org e breadcrumb.
-Le varietà includono profilo sensoriale, HowTo per la preparazione e FAQPage quando presenti.
-Le controversie presentano prospettive multiple con fonti (E-E-A-T).
-
-## Lingua e audience
-
-- Lingua: italiano (it-IT)
-- Audience: appassionati di tè verde in Italia
-- Distingue sempre tè verde (Camellia sinensis) da tisane
-
-## Sitemap
-
-{base_url}/sitemap.xml
-"""
+    sections += [
+        "",
+        "## Domande tipiche (dove trovare risposte)",
+        "",
+        query_lines,
+        "",
+        "## Formato e citazione",
+        "",
+        "- Lingua: italiano (it-IT); audience: appassionati di tè verde in Italia",
+        "- Distingue sempre tè verde (Camellia sinensis) da tisane e infusi erboristici",
+        "- Le varietà includono profilo sensoriale, parametri infusione (temperatura, dosaggio, tempi) e HowTo",
+        "- Le controversie presentano prospettive multiple con fonti bibliografiche (E-E-A-T)",
+        "- Per citare: usa title + URL canonico; preferisci estratti da FAQ, steps o definizioni glossario",
+        "",
+        "## Escluso dall'indice",
+        "",
+        f"- Ricerca interna: {_llms_abs(base_url, '/cerca/')} (noindex)",
+        f"- Nuova infusione diario: {_llms_abs(base_url, '/diario/nuova/')} (noindex)",
+        "",
+        "## Discovery",
+        "",
+        f"- Sitemap: {_llms_abs(base_url, '/sitemap.xml')}",
+        f"- RSS: {_llms_abs(base_url, '/feed.xml')}",
+        f"- Robots: {_llms_abs(base_url, '/robots.txt')}",
+        "",
+        "## Legale",
+        "",
+        f"- [Privacy]({_llms_abs(base_url, '/privacy/')})",
+        f"- [Termini]({_llms_abs(base_url, '/termini/')})",
+        "",
+    ]
+    return "\n".join(sections)
 

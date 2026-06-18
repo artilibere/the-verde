@@ -94,6 +94,74 @@ function buildIssues(meta: Omit<PageMeta, "issues">): string[] {
   return issues;
 }
 
+export interface LlmsTxtAudit {
+  url: string;
+  status: number;
+  hasTitle: boolean;
+  hasSummary: boolean;
+  hasCamelliaSinensis: boolean;
+  hasSitemap: boolean;
+  hasFeed: boolean;
+  sectionCount: number;
+  inventorySections: string[];
+  issues: string[];
+}
+
+function countMarkdownSections(text: string): number {
+  return (text.match(/^## /gm) || []).length;
+}
+
+function detectInventorySections(text: string): string[] {
+  const expected = [
+    "Varietà",
+    "Glossario",
+    "Impara",
+    "Controversie",
+    "Guide",
+    "In Italia",
+    "Domande tipiche",
+  ];
+  return expected.filter((s) => text.includes(`## ${s}`) || text.includes(s));
+}
+
+export function auditLlmsTxtContent(text: string, baseUrl: string): Omit<LlmsTxtAudit, "url" | "status"> {
+  const hasTitle = /^# .+/m.test(text);
+  const hasSummary = /^> .+/m.test(text);
+  const hasCamelliaSinensis = /Camellia sinensis/i.test(text);
+  const hasSitemap = text.includes("/sitemap.xml");
+  const hasFeed = text.includes("/feed.xml");
+  const sectionCount = countMarkdownSections(text);
+  const inventorySections = detectInventorySections(text);
+  const issues: string[] = [];
+  if (!hasTitle) issues.push("P0: titolo H1 mancante");
+  if (!hasSummary) issues.push("P1: blockquote riassuntivo mancante");
+  if (!hasCamelliaSinensis) issues.push("P0: entità Camellia sinensis assente");
+  if (!hasSitemap) issues.push("P1: link sitemap assente");
+  if (!hasFeed) issues.push("P2: link feed RSS assente");
+  if (sectionCount < 6) issues.push(`P1: poche sezioni H2 (${sectionCount}, attese ≥6)`);
+  if (!text.includes("Domande tipiche")) issues.push("P1: mappa intenti/domande tipiche assente");
+  if (!text.includes(baseUrl.replace(/\/$/, ""))) issues.push("P1: URL assoluti base_url assenti");
+  return {
+    hasTitle,
+    hasSummary,
+    hasCamelliaSinensis,
+    hasSitemap,
+    hasFeed,
+    sectionCount,
+    inventorySections,
+    issues,
+  };
+}
+
+export async function fetchAndAuditLlmsTxt(baseUrl: string): Promise<LlmsTxtAudit> {
+  const url = `${baseUrl.replace(/\/$/, "")}/llms.txt`;
+  const res = await fetch(url, {
+    headers: { "User-Agent": "TheVerde-SeoGeoAgent/1.0" },
+  });
+  const text = await res.text();
+  return { url, status: res.status, ...auditLlmsTxtContent(text, baseUrl) };
+}
+
 export async function fetchAndAuditPage(
   baseUrl: string,
   path: string

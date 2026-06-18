@@ -9,6 +9,7 @@ import {
   auditPageInput,
   batchAudit,
   batchAuditInput,
+  fetchAndAuditLlmsTxt,
   fetchAndAuditPage,
   fetchSitemapInput,
   fetchSitemapUrls,
@@ -78,6 +79,13 @@ Puoi schedulare audit settimanali con scheduleTask (cron: "0 8 * * 1" = lunedì 
           description: "Campiona N pagine dalla sitemap e le audita per problemi SEO",
           inputSchema: batchAuditInput,
           execute: async ({ limit }) => batchAudit(baseUrl, limit),
+        }),
+
+        auditLlmsTxt: tool({
+          description:
+            "Verifica llms.txt: sezioni GEO, inventario contenuti, link discovery e conformità citabilità LLM",
+          inputSchema: z.object({}),
+          execute: async () => fetchAndAuditLlmsTxt(baseUrl),
         }),
 
         scheduleTask: tool({
@@ -168,6 +176,10 @@ export default {
       });
     }
 
+    if (url.pathname === "/audit/llms.txt") {
+      return Response.json(await fetchAndAuditLlmsTxt(env.SITE_BASE_URL));
+    }
+
     if (url.pathname === "/health") {
       return Response.json({
         agent: "SeoGeoAgent",
@@ -184,6 +196,7 @@ export default {
           endpoints: {
             health: "/health",
             audit: "/audit?limit=10",
+            auditLlmsTxt: "/audit/llms.txt",
             websocket: "/agents/SeoGeoAgent/{session-id}",
           },
           docs: "https://developers.cloudflare.com/agents/",
