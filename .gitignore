@@ -8,4 +8,5 @@ pagefind/
 .wrangler/
 node_modules/
 books/
+exports/
 .env
