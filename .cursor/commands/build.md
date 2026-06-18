@@ -30,7 +30,9 @@ Validare i contenuti JSON, generare il sito statico in `dist/` e verificare che 
    ```
 
 3. Verificare output:
-   - Messaggio finale: `Built N pages → dist`
+   - Messaggio finale: `Built 70 pages → dist` (pagine editoriali in `all_pages`)
+   - **95** file `index.html` unici in `dist/` (hub, cataloghi, utility incluse)
+   - **91** URL in `dist/sitemap.xml` (escluse diario, community, cerca)
    - Campione: `dist/varieta/sencha/index.html`, `dist/index.html`
    - Breadcrumb «Varietà», link diario `?varieta=`, frecce path nav
 
@@ -38,7 +40,7 @@ Validare i contenuti JSON, generare il sito statico in `dist/` e verificare che 
 
 - [ ] `pytest` exit code 0
 - [ ] Build exit code 0
-- [ ] ~69 pagine generate
+- [ ] 95 pagine HTML (`index.html`) generate
 - [ ] Nessun errore UTF-8 in template
 - [ ] Asset CSS/JS hashed in `dist/assets/`
 
