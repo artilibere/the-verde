@@ -176,15 +176,53 @@ Pagina
 
 | Breakpoint | Valore | Comportamento |
 |------------|--------|---------------|
-| `sm` | 0–599px | **Design default** 390px; feed full-width con padding 16px |
-| `md` | 600–899px | Feed centrato; catalogo 2 colonne card |
-| `lg` | 900px+ | Feed max 480px centrato; filtri in scroll-rail o drawer |
+| `sm` | 0–599px | **Design default** 390px; feed full-width; griglie **1 colonna** |
+| `md` | 600–899px | Feed centrato; griglie con testo **max 2 colonne** |
+| `lg` | 900px+ | Feed max 480px centrato; griglie **max 2 colonne** (mai 3) |
 
 ```css
 /* Breakpoint helpers (in base.css) */
 @media (min-width: 600px) { /* md */ }
 @media (min-width: 900px) { /* lg */ }
 ```
+
+### Griglie responsive (`tv-grid`)
+
+**Problema da evitare:** box su 3 (o 4) colonne con paragrafi o label lunghe → colonne troppo strette, testo frammentato e illeggibile su viewport intermedi.
+
+**Regola:** massimo **1 o 2 colonne**, mai 3+ per contenuto leggibile.
+
+| Viewport | Colonne consentite | Quando |
+|----------|-------------------|--------|
+| `sm` (0–599px) | **1** | Sempre per box con prosa, card catalogo, meta, hub |
+| `md`+ (600px+) | **2** max | Tile entry (home stagioni), card catalogo, meta in scheda |
+| Qualsiasi | **1** obbligatorio | Prosa (`tv-prose__*`), FAQ, step, box "In Italia", articoli |
+
+```css
+/* base.css — pattern unico per tutte le griglie tv-grid */
+.tv-grid {
+  display: grid;
+  gap: var(--tv-feed-gap);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .tv-grid--2-up-md {
+    grid-template-columns: repeat(
+      2,
+      minmax(min(100%, var(--tv-grid-min-col-width)), 1fr)
+    );
+  }
+}
+
+/* Vietato in produzione: .tv-grid--3-up, repeat(3, …), repeat(4, …) su box testuali */
+```
+
+**Dentro `tv-feed` (max 480px):** preferire **1 colonna** anche su `md`/`lg`; due colonne solo per tile compatti (icona + label ≤ 2 righe, senza paragrafi).
+
+**Catalogo** (layout wide fuori feed): `tv-grid--cards` → 1 col `sm`, 2 col `md`+ — **non** 3 colonne su `lg`.
+
+**Test rapido:** ridimensiona a 768px e 1024px; se una colonna scende sotto ~240px con testo corpo, passa a 1 colonna.
 
 ---
 

@@ -49,7 +49,7 @@ tv-app-bar: The Verde
 tv-card (icon leaf): Esplora le varietà → /varietà/
 tv-card (icon path): Percorso guidato → bancha
 tv-scroll-rail: 4 entry momenti (icon cup)
-tv-grid 2×2: stagioni (icon sun/snow)
+tv-grid tv-grid--tiles tv-grid--2-up-md: stagioni (1 col sm, 2 col md+; solo icona + label)
 tv-card: Ultima guida
 tv-bottom-nav
 ```

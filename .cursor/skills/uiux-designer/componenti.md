@@ -101,6 +101,44 @@ Vedi [charts-d3.md](charts-d3.md). Sempre affiancato a `tv-data-table`.
 <div class="tv-chart" data-chart="{...}" role="img" aria-label="..."></div>
 ```
 
+### Grid (`tv-grid`)
+
+Griglia responsive per card catalogo, tile home, meta in scheda. **Mai 3+ colonne** con testo leggibile — vedi [design-system.md § Griglie](design-system.md#griglie-responsive-tv-grid).
+
+```html
+<!-- Catalogo: 1 col mobile, 2 col da md -->
+<div class="tv-grid tv-grid--cards tv-grid--2-up-md" id="variety-grid">
+  <!-- tv-variety-card × N -->
+</div>
+
+<!-- Home entry point (solo icona + label breve, no paragrafi) -->
+<div class="tv-grid tv-grid--tiles tv-grid--2-up-md" role="list">
+  <a href="/stagioni/primavera/" class="tv-card tv-card--tile" role="listitem">…</a>
+</div>
+```
+
+**Modificatori:**
+
+| Classe | Uso |
+|--------|-----|
+| `tv-grid--cards` | Lista `tv-variety-card` in catalogo/hub |
+| `tv-grid--tiles` | Entry point compatti (home stagioni, hub correlati) |
+| `tv-grid--2-up-md` | 2 colonne solo da `min-width: 600px` |
+| *(nessun `--3-up`)* | **Vietato** — testo troppo stretto |
+
+**CSS:**
+
+```css
+.tv-grid { display: grid; gap: var(--tv-feed-gap); grid-template-columns: 1fr; }
+@media (min-width: 600px) {
+  .tv-grid--2-up-md {
+    grid-template-columns: repeat(2, minmax(min(100%, var(--tv-grid-min-col-width)), 1fr));
+  }
+}
+```
+
+**Anti-pattern:** `grid-template-columns: repeat(3, 1fr)` o `repeat(4, 1fr)` su box con `tv-prose__p`, brief card o meta testuali.
+
 ### ScrollRail (`tv-scroll-rail`)
 
 ```html
@@ -213,7 +251,7 @@ Scheda rapida preparazione  critica per Elena e Giulia. Sostituisce QuickInfoTab
 
 **CSS:** sfondo `--md-sys-color-primary-container`; border-radius `--md-sys-shape-corner-medium`; numeri con `font-variant-numeric: tabular-nums; font: var(--md-sys-typescale-title-large);`
 
-**Desktop (`lg`):** griglia 4 colonne in `.tv-scopri__meta`.
+**Layout responsive (legacy `.tv-scopri__meta`):** 1 colonna su `sm`; 2 colonne max su `md`+ — **non** 3 o 4 colonne (metriche illeggibili).
 
 ---
 
