@@ -9,6 +9,7 @@
       <span class="tv-explore-next__reason">{{ link.reason }}</span>
       {% endif %}
       <a href="{{ link.url }}"
+         data-tv-prefetch="high"
          data-tv-track="explore_next"
          data-tv-track-url="{{ link.url }}"
          data-tv-track-label="{{ link.title }}"

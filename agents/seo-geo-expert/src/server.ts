@@ -9,10 +9,15 @@ import {
   auditPageInput,
   batchAudit,
   batchAuditInput,
+  compareMeta,
+  duplicateMetaInput,
   fetchAndAuditLlmsTxt,
   fetchAndAuditPage,
+  fetchAndAuditRobotsTxt,
+  fetchAndAuditSitemap,
   fetchSitemapInput,
   fetchSitemapUrls,
+  auditDuplicateMeta,
 } from "./seo-tools";
 
 export class SeoGeoAgent extends AIChatAgent<Env> {
@@ -37,6 +42,8 @@ export class SeoGeoAgent extends AIChatAgent<Env> {
         title: p.title,
         issues: p.issues,
         jsonLdTypes: p.jsonLdTypes,
+        seoSignals: p.seoSignals,
+        geoSignals: p.geoSignals,
       })),
     };
   }
@@ -61,9 +68,18 @@ Puoi schedulare audit settimanali con scheduleTask (cron: "0 8 * * 1" = lunedì 
       tools: {
         auditPage: tool({
           description:
-            "Analizza meta tag, canonical, h1, JSON-LD e link interni di una pagina del sito",
+            "Analizza SEO e GEO di una pagina: meta, canonical, Open Graph, hreflang, breadcrumb, JSON-LD, link interni",
           inputSchema: auditPageInput,
           execute: async ({ path }) => fetchAndAuditPage(baseUrl, path),
+        }),
+
+        compareMeta: tool({
+          description: "Confronta title e description con best practice SEO (≤60/≤160 char)",
+          inputSchema: z.object({
+            title: z.string().nullable(),
+            description: z.string().nullable(),
+          }),
+          execute: async ({ title, description }) => compareMeta(title, description),
         }),
 
         fetchSitemap: tool({
@@ -75,8 +91,26 @@ Puoi schedulare audit settimanali con scheduleTask (cron: "0 8 * * 1" = lunedì 
           },
         }),
 
+        auditSitemap: tool({
+          description: "Audita sitemap.xml: conteggio URL, trailing slash, hreflang, priority",
+          inputSchema: z.object({}),
+          execute: async () => fetchAndAuditSitemap(baseUrl),
+        }),
+
+        auditRobots: tool({
+          description: "Audita robots.txt: Sitemap assoluta, Disallow /diario/nuova/, discovery",
+          inputSchema: z.object({}),
+          execute: async () => fetchAndAuditRobotsTxt(baseUrl),
+        }),
+
+        auditDuplicateMeta: tool({
+          description: "Cerca title e description duplicati campionando URL dalla sitemap",
+          inputSchema: duplicateMetaInput,
+          execute: async ({ limit }) => auditDuplicateMeta(baseUrl, limit),
+        }),
+
         batchAudit: tool({
-          description: "Campiona N pagine dalla sitemap e le audita per problemi SEO",
+          description: "Campiona N pagine dalla sitemap e le audita per problemi SEO/GEO",
           inputSchema: batchAuditInput,
           execute: async ({ limit }) => batchAudit(baseUrl, limit),
         }),
@@ -180,6 +214,19 @@ export default {
       return Response.json(await fetchAndAuditLlmsTxt(env.SITE_BASE_URL));
     }
 
+    if (url.pathname === "/audit/robots.txt") {
+      return Response.json(await fetchAndAuditRobotsTxt(env.SITE_BASE_URL));
+    }
+
+    if (url.pathname === "/audit/sitemap") {
+      return Response.json(await fetchAndAuditSitemap(env.SITE_BASE_URL));
+    }
+
+    if (url.pathname === "/audit/duplicates") {
+      const limit = Math.min(Number(url.searchParams.get("limit") ?? "30"), 50);
+      return Response.json(await auditDuplicateMeta(env.SITE_BASE_URL, limit));
+    }
+
     if (url.pathname === "/health") {
       return Response.json({
         agent: "SeoGeoAgent",
@@ -197,6 +244,9 @@ export default {
             health: "/health",
             audit: "/audit?limit=10",
             auditLlmsTxt: "/audit/llms.txt",
+            auditRobots: "/audit/robots.txt",
+            auditSitemap: "/audit/sitemap",
+            auditDuplicates: "/audit/duplicates?limit=30",
             websocket: "/agents/SeoGeoAgent/{session-id}",
           },
           docs: "https://developers.cloudflare.com/agents/",

@@ -44,6 +44,16 @@ Limite: 4 link in sidebar "Potrebbe interessarti".
 
 Ordine pedagogico: `bancha` → `sencha` → `gyokuro` → `matcha` (`PATH_ORDER` in builder).
 
+### Prefetch navigazione
+
+Per ridurre la latenza percepita tra pagine statiche:
+
+1. **Head** — `partials/prefetch-hints.html`: `rel=prefetch` su `path_nav.next` e primi 2 `explore_next`
+2. **Core JS** — `assets/js/prefetch.js` nel bundle `core`: prefetch su hover/focus/touch su link di navigazione; hub bottom-nav con `data-tv-prefetch="high"`; hub principali in `requestIdleCallback`
+3. **Catalogo** — prefetch intent-only sulle card varietà (no prefetch massivo)
+
+Target: breadcrumb, explore_next, path nav, bottom nav, header nav — non ogni link del body.
+
 ### Hub impara
 
 Link automatici a varietà con `temi_kb` corrispondente e controversie del tema.

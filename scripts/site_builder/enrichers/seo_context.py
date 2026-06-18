@@ -10,7 +10,9 @@ from site_builder.enrichers._seo_core import (
     faq_schema,
     item_list_schema,
     italia_article_schema,
+    learning_resource_schema,
     organization_schema,
+    quiz_faq_items,
     variety_schema,
     webpage_schema,
     website_schema,
@@ -109,6 +111,11 @@ def apply_seo(ctx: dict, builder) -> None:
         ctx["article_published"] = meta["published"]
     if len(description) > 160:
         ctx["seo_description"] = description[:157].rstrip() + "…"
+    raw_title = str(ctx.get("seo_title") or title)
+    title_suffix = f" | {builder.site_name}"
+    if builder.site_name not in raw_title and len(raw_title) + len(title_suffix) > 60:
+        max_raw = max(20, 60 - len(title_suffix) - 1)
+        ctx["seo_title"] = raw_title[:max_raw].rstrip(" -—,") + "…"
     ctx.setdefault(
         "og_type",
         "article"
@@ -180,6 +187,10 @@ def build_schema_blocks(
                     url=url,
                     origin_slug=meta.get("origine_slug", ""),
                     origin_label=meta.get("origine", ""),
+                    brew_temp=meta.get("brew_temp"),
+                    brew_grams=meta.get("brew_grams"),
+                    brew_seconds=meta.get("brew_seconds"),
+                    brew_infusions=meta.get("brew_infusions"),
                 )
             )
         )
@@ -236,6 +247,33 @@ def build_schema_blocks(
                 )
             )
         )
+        if page_type == "quiz":
+            quiz = ctx.get("quiz") or {}
+            faq = faq_schema(quiz_faq_items(quiz))
+            if faq:
+                blocks.append(dumps_json_ld(faq))
+        elif page_type == "gioca":
+            hub_items: list[dict] = []
+            for p in ctx.get("percorsi") or []:
+                hub_items.append(
+                    {
+                        "title": p.get("title", ""),
+                        "url": p.get("url") or f"/gioca/percorsi/{p.get('slug', '')}/",
+                    }
+                )
+            for q in ctx.get("quizzes") or []:
+                hub_items.append(
+                    {
+                        "title": q.get("title", ""),
+                        "url": f"/gioca/quiz/{q.get('slug', '')}/",
+                    }
+                )
+            if hub_items:
+                blocks.append(
+                    dumps_json_ld(
+                        item_list_schema(base_url, name=title, url=url, items=hub_items)
+                    )
+                )
     elif page_type == "hub" and url and not url.startswith("/italia/"):
         blocks.append(
             dumps_json_ld(

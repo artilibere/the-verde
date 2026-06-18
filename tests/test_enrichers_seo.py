@@ -3,9 +3,18 @@
 from __future__ import annotations
 
 from site_builder.document import collect_faq_items
-from site_builder.enrichers._seo_core import build_llms_txt, dumps_json_ld, faq_schema, item_list_schema, webpage_schema
+from site_builder.enrichers._seo_core import (
+    build_llms_txt,
+    dumps_json_ld,
+    faq_schema,
+    item_list_schema,
+    learning_resource_schema,
+    quiz_faq_items,
+    variety_schema,
+    webpage_schema,
+)
 from site_builder.enrichers.schema_org import howto_schema, supplementary_schemas
-from site_builder.enrichers.seo_context import _collect_hub_list_items, build_schema_blocks
+from site_builder.enrichers.seo_context import _collect_hub_list_items, apply_seo, build_schema_blocks
 
 
 def test_webpage_schema_has_context():
@@ -151,4 +160,111 @@ def test_build_schema_blocks_hub_has_item_list():
         "Otto pilastri di conoscenza sul tè verde.",
     )
     assert any('"@type":"ItemList"' in block or '"@type": "ItemList"' in block for block in blocks)
+
+
+def test_quiz_faq_items_skips_personality_quiz():
+    quiz = {
+        "questions": [
+            {"q": "Q1?", "options": ["A", "B"], "correct": 0, "explain": "Perché A."},
+            {"q": "Q2?", "options": ["X", "Y"], "scores": {"x": 1}},
+        ]
+    }
+    items = quiz_faq_items(quiz)
+    assert len(items) == 1
+    assert items[0]["question"] == "Q1?"
+    assert "Perché A." in items[0]["answer"]
+
+
+def test_variety_schema_brew_properties():
+    schema = variety_schema(
+        "https://the-verde.it",
+        title="Sencha",
+        description="Tè verde giapponese.",
+        url="/varieta/sencha/",
+        origin_slug="giappone",
+        origin_label="Giappone",
+        brew_temp=70,
+        brew_grams=4,
+        brew_seconds=60,
+    )
+    props = schema.get("additionalProperty") or []
+    names = {p["name"] for p in props}
+    assert "Temperatura acqua" in names
+    assert "Dosaggio" in names
+
+
+def test_learning_resource_schema_for_path():
+    lr = learning_resource_schema(
+        "https://the-verde.it",
+        title="Primavera in tazza",
+        description="Percorso guidato.",
+        url="/gioca/percorsi/primavera-in-tazza/",
+        steps=[
+            {"title": "Shincha", "type": "varieta", "slug": "shincha"},
+            {"title": "Quiz", "type": "quiz", "url": "/gioca/quiz/calendario-primavera/"},
+        ],
+    )
+    assert lr is not None
+    assert lr["@type"] == "LearningResource"
+    assert len(lr["hasPart"]) == 2
+
+
+def test_build_llms_txt_includes_gioca_sections():
+    text = build_llms_txt(
+        "https://the-verde.it",
+        "The Verde",
+        paths=[{"slug": "primavera-in-tazza", "title": "Primavera in tazza", "description": "Raccolti."}],
+        quizzes=[{"slug": "verde-vero", "title": "Verde vero", "description": "Tè o tisana?"}],
+    )
+    assert "Gioca — percorsi guidati" in text
+    assert "Gioca — quiz" in text
+    assert "Entità chiave (disambiguazione)" in text
+    assert "/gioca/quiz/verde-vero/" in text
+
+
+def test_build_schema_blocks_quiz_has_faq():
+    class _Builder:
+        base_url = "https://the-verde.it"
+        site_name = "The Verde"
+        hreflang = "it"
+        locale = "it-IT"
+        og_image = "/assets/images/og-default.png"
+        social = {}
+
+    quiz = {
+        "slug": "verde-vero",
+        "title": "Verde vero",
+        "questions": [
+            {"q": "Camomilla è tè verde?", "options": ["Sì", "No"], "correct": 1, "explain": "È una tisana."},
+        ],
+    }
+    blocks = build_schema_blocks(
+        {"page_type": "quiz", "quiz": quiz},
+        _Builder(),
+        {},
+        "/gioca/quiz/verde-vero/",
+        "Verde vero",
+        "Quiz sul tè verde.",
+    )
+    assert any("FAQPage" in block for block in blocks)
+
+
+def test_apply_seo_truncates_long_title_with_brand_suffix():
+    class _Builder:
+        base_url = "https://the-verde.it"
+        site_name = "The Verde"
+        hreflang = "it"
+        locale = "it-IT"
+        og_image = ""
+        social = {}
+
+    ctx = {
+        "seo_title": "Huang Shan Mao Feng — lanugine delle Montagne Gialle",
+        "seo_description": "Descrizione valida abbastanza lunga per superare la soglia minima SEO del sito editoriale.",
+        "page_type": "variety",
+    }
+    apply_seo(ctx, _Builder())
+    rendered = f"{ctx['seo_title']} | The Verde"
+    assert len(rendered) <= 60
+    assert ctx["seo_title"].endswith("…")
 

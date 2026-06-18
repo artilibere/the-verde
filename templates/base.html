@@ -59,6 +59,7 @@
   <link rel="preload" href="{{ asset_css() }}" as="style" fetchpriority="high">
   <link rel="stylesheet" href="{{ asset_css() }}" fetchpriority="high">
   <link rel="preload" href="{{ asset_js('core') }}" as="script">
+  {% include "partials/prefetch-hints.html" %}
   {% for block in schema_blocks %}
   <script type="application/ld+json">{{ block | safe }}</script>
   {% endfor %}
@@ -96,19 +97,19 @@
   {% set guide_active = page_type == 'article' and seo_url is defined and seo_url.startswith('/guide') %}
   {% set varieta_active = page_type in ('catalog', 'variety') %}
   <nav class="tv-bottom-nav" aria-label="Navigazione app">
-    <a href="/varieta/" class="tv-bottom-nav__item{% if varieta_active %} tv-bottom-nav__item--active{% endif %}"{% if varieta_active %} aria-current="page"{% endif %}>
+    <a href="/varieta/" class="tv-bottom-nav__item{% if varieta_active %} tv-bottom-nav__item--active{% endif %}" data-tv-prefetch="high"{% if varieta_active %} aria-current="page"{% endif %}>
       {% with name='leaf' %}{% include 'partials/icon.html' %}{% endwith %}
       <span class="tv-bottom-nav__label">Varietà</span>
     </a>
-    <a href="/italia/" class="tv-bottom-nav__item{% if italia_active %} tv-bottom-nav__item--active{% endif %}"{% if italia_active %} aria-current="page"{% endif %}>
+    <a href="/italia/" class="tv-bottom-nav__item{% if italia_active %} tv-bottom-nav__item--active{% endif %}" data-tv-prefetch="high"{% if italia_active %} aria-current="page"{% endif %}>
       {% with name='map' %}{% include 'partials/icon.html' %}{% endwith %}
       <span class="tv-bottom-nav__label">Italia</span>
     </a>
-    <a href="/impara/" class="tv-bottom-nav__item{% if impara_active %} tv-bottom-nav__item--active{% endif %}"{% if impara_active %} aria-current="page"{% endif %}>
+    <a href="/impara/" class="tv-bottom-nav__item{% if impara_active %} tv-bottom-nav__item--active{% endif %}" data-tv-prefetch="high"{% if impara_active %} aria-current="page"{% endif %}>
       {% with name='book' %}{% include 'partials/icon.html' %}{% endwith %}
       <span class="tv-bottom-nav__label">Impara</span>
     </a>
-    <a href="/guide/" class="tv-bottom-nav__item{% if guide_active %} tv-bottom-nav__item--active{% endif %}"{% if guide_active %} aria-current="page"{% endif %}>
+    <a href="/guide/" class="tv-bottom-nav__item{% if guide_active %} tv-bottom-nav__item--active{% endif %}" data-tv-prefetch="high"{% if guide_active %} aria-current="page"{% endif %}>
       {% with name='cup' %}{% include 'partials/icon.html' %}{% endwith %}
       <span class="tv-bottom-nav__label">Guide</span>
     </a>

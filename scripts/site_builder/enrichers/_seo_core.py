@@ -17,7 +17,51 @@ ORIGIN_COUNTRIES: dict[str, dict] = {
     "cina": {"@type": "Country", "name": "China"},
     "india": {"@type": "Country", "name": "India"},
     "taiwan": {"@type": "Country", "name": "Taiwan"},
+    "corea": {"@type": "Country", "name": "South Korea"},
 }
+
+
+def _brew_properties(
+    *,
+    temp: float | int | None = None,
+    grams: float | int | None = None,
+    seconds: float | int | None = None,
+    infusions: str | None = None,
+) -> list[dict]:
+    props: list[dict] = []
+    if temp is not None:
+        props.append(
+            {
+                "@type": "PropertyValue",
+                "name": "Temperatura acqua",
+                "value": f"{temp} °C",
+            }
+        )
+    if grams is not None:
+        props.append(
+            {
+                "@type": "PropertyValue",
+                "name": "Dosaggio",
+                "value": f"{grams} g per 150 ml",
+            }
+        )
+    if seconds is not None and seconds > 0:
+        props.append(
+            {
+                "@type": "PropertyValue",
+                "name": "Tempo infusione",
+                "value": f"{seconds} secondi",
+            }
+        )
+    if infusions:
+        props.append(
+            {
+                "@type": "PropertyValue",
+                "name": "Infusioni",
+                "value": str(infusions),
+            }
+        )
+    return props
 
 
 def dumps_json_ld(data: object) -> str:
@@ -158,6 +202,10 @@ def variety_schema(
     url: str,
     origin_slug: str = "",
     origin_label: str = "",
+    brew_temp: float | int | None = None,
+    brew_grams: float | int | None = None,
+    brew_seconds: float | int | None = None,
+    brew_infusions: str | None = None,
 ) -> dict:
     about: dict = {
         "@type": "Thing",
@@ -169,7 +217,7 @@ def variety_schema(
     elif origin_label:
         about["description"] = f"Origine: {origin_label}"
 
-    return {
+    schema: dict = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": title,
@@ -180,6 +228,67 @@ def variety_schema(
         "spatialCoverage": ITALY_PLACE,
         "audience": ITALY_AUDIENCE,
         "publisher": {"@type": "Organization", "name": "The Verde", "url": base_url},
+    }
+    brew_props = _brew_properties(
+        temp=brew_temp,
+        grams=brew_grams,
+        seconds=brew_seconds,
+        infusions=brew_infusions,
+    )
+    if brew_props:
+        schema["additionalProperty"] = brew_props
+    return schema
+
+
+def quiz_faq_items(quiz: dict) -> list[dict]:
+    """Extract FAQ pairs from quiz config for GEO (skips personality quizzes)."""
+    items: list[dict] = []
+    for q in quiz.get("questions") or []:
+        if "correct" not in q or "explain" not in q:
+            continue
+        options = q.get("options") or []
+        correct_idx = q.get("correct")
+        if not isinstance(correct_idx, int) or correct_idx < 0 or correct_idx >= len(options):
+            continue
+        answer = f"{options[correct_idx]}. {q['explain']}"
+        items.append({"question": q.get("q", ""), "answer": answer})
+    return items
+
+
+def learning_resource_schema(
+    base_url: str,
+    *,
+    title: str,
+    description: str,
+    url: str,
+    steps: list[dict],
+) -> dict | None:
+    if not steps:
+        return None
+    parts: list[dict] = []
+    for step in steps:
+        part: dict = {
+            "@type": "LearningResource",
+            "name": step.get("title") or step.get("slug", ""),
+            "learningResourceType": step.get("type", "step"),
+        }
+        step_url = step.get("url")
+        if step_url:
+            part["url"] = _llms_abs(base_url, step_url)
+        elif step.get("type") == "varieta":
+            part["url"] = _llms_abs(base_url, f"/varieta/{step.get('slug', '')}/")
+        parts.append(part)
+    return {
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        "name": title,
+        "description": description,
+        "url": _llms_abs(base_url, url),
+        "inLanguage": "it-IT",
+        "audience": ITALY_AUDIENCE,
+        "learningResourceType": "guided learning path",
+        "teaches": "Tè verde (Camellia sinensis)",
+        "hasPart": parts,
     }
 
 
@@ -292,6 +401,8 @@ def build_llms_txt(
     controversies: list[dict] | None = None,
     guides: list[dict] | None = None,
     italia_pages: list[dict] | None = None,
+    paths: list[dict] | None = None,
+    quizzes: list[dict] | None = None,
 ) -> str:
     """Machine-readable site summary for generative engines (llms.txt)."""
     varieties = varieties or []
@@ -300,16 +411,27 @@ def build_llms_txt(
     controversies = controversies or []
     guides = guides or []
     italia_pages = italia_pages or []
+    paths = paths or []
+    quizzes = quizzes or []
 
     query_map = [
+        ("Cos'è il tè verde (Camellia sinensis)", "/glossario/camellia-sinensis/"),
         ("Come preparare il sencha", "/varieta/sencha/"),
         ("Differenza gyokuro e sencha", "/varieta/gyokuro/"),
+        ("Cos'è lo shincha", "/varieta/shincha/"),
+        ("Kabusecha: tra sencha e gyokuro", "/varieta/kabusecha/"),
         ("Quanta caffeina nel tè verde", "/impara/caffeina/"),
+        ("Nilgiri verde vs Darjeeling verde", "/varieta/nilgiri-verde/"),
+        ("Jeoncha tè verde coreano", "/varieta/jeoncha/"),
+        ("Huang Shan Mao Feng preparazione", "/varieta/huangshan-maofeng/"),
         ("Matcha in Italia: cultura e uso", "/guide/matcha-italia/"),
         ("Tè verde e salute: cosa è dimostrato", "/impara/controversie/salute-scienza-vs-tradizione/"),
         ("Abbinamenti tè verde e cucina italiana", "/italia/abbinamenti/"),
         ("Cerimonia del tè: Cina vs Giappone", "/impara/controversie/cerimonia-cina-vs-giappone/"),
         ("Cos'è l'umami nel tè", "/glossario/umami/"),
+        ("Tè verde o tisana: differenza", "/gioca/quiz/verde-vero/"),
+        ("Temperatura acqua per ogni varietà", "/gioca/quiz/quale-temperatura/"),
+        ("Primavera: shincha e raccolti", "/gioca/percorsi/primavera-in-tazza/"),
     ]
     query_lines = "\n".join(
         f"- {question} → {_llms_abs(base_url, path)}" for question, path in query_map
@@ -353,8 +475,36 @@ def build_llms_txt(
         sections += ["", "## Guide", "", _llms_list(guides, base_url=base_url)]
     if italia_pages:
         sections += ["", "## In Italia", "", _llms_list(italia_pages, base_url=base_url)]
+    if paths:
+        path_items = [
+            {
+                "title": p.get("title", p.get("slug", "")),
+                "url": f"/gioca/percorsi/{p.get('slug', '')}/",
+                "description": p.get("description", ""),
+            }
+            for p in paths
+        ]
+        sections += ["", "## Gioca — percorsi guidati", "", _llms_list(path_items, base_url=base_url)]
+    if quizzes:
+        quiz_items = [
+            {
+                "title": q.get("title", q.get("slug", "")),
+                "url": f"/gioca/quiz/{q.get('slug', '')}/",
+                "description": q.get("description", ""),
+            }
+            for q in quizzes
+        ]
+        sections += ["", "## Gioca — quiz", "", _llms_list(quiz_items, base_url=base_url)]
 
     sections += [
+        "",
+        "## Entità chiave (disambiguazione)",
+        "",
+        "- **Tè verde** = foglia di *Camellia sinensis*, non ossidata — distinto da tisane (camomilla, menta, rooibos)",
+        "- **Matcha** = tencha ombreggiato macinato; si beve la foglia intera in polvere",
+        "- **Shincha** = primo raccolto primaverile giapponese (sencha giovane)",
+        "- **Gyokuro / kabusecha / tencha** = scala di ombreggiatura giapponese",
+        "- Fonti editoriali: manuali Pellegrino, Sommelier del tè, Rosen, Onuma, Hara (citati in bibliografia pagine)",
         "",
         "## Domande tipiche (dove trovare risposte)",
         "",

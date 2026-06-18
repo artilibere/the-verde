@@ -14,8 +14,27 @@
 <div id="quiz-app" class="tv-quiz" data-quiz-slug="{{ quiz.slug }}" aria-busy="true">
   <p class="tv-quiz__loading">Caricamento quiz…</p>
 </div>
+{% if quiz.questions and quiz.questions[0].correct is defined %}
+<section class="tv-section tv-quiz-reference" aria-labelledby="quiz-reference-heading">
+  <h2 id="quiz-reference-heading" class="tv-section__title">Risposte di riferimento</h2>
+  <p class="tv-quiz-reference__intro">Contenuto citabile per motori di ricerca e lettori senza JavaScript.</p>
+  <div class="tv-faq">
+    {% for q in quiz.questions %}
+    {% if q.correct is defined and q.explain %}
+    <details class="tv-faq__item tv-faq">
+      <summary class="tv-faq__question">{{ q.q }}</summary>
+      <div class="tv-faq__answer">
+        <p><strong>Risposta:</strong> {{ q.options[q.correct] }}. {{ q.explain }}</p>
+        {% if q.url %}<p><a href="{{ q.url }}">Approfondisci</a></p>{% endif %}
+      </div>
+    </details>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 {% include "includes/share.html" %}
-<noscript><p>Attiva JavaScript per giocare al quiz.</p></noscript>
+<noscript><p>Attiva JavaScript per giocare al quiz, oppure consulta le risposte di riferimento sopra.</p></noscript>
 {% endblock %}
 {% block scripts %}
 <script src="{{ asset_js('quiz-page') }}" defer></script>

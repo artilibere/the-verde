@@ -150,7 +150,28 @@ def test_variety_loads_core_and_variety_bundle(built_dist):
     assert any("variety-page." in src for src in scripts)
 
 
-def test_gtm_deferred_until_load(built_dist):
+def test_variety_prefetches_path_nav_and_explore_next(built_dist):
+    page = _soup(built_dist / "varieta" / "sencha" / "index.html")
+    prefetches = page.find_all("link", rel="prefetch")
+    hrefs = {link.get("href") for link in prefetches}
+    assert "/varieta/gyokuro/" in hrefs
+    assert len(hrefs) >= 2
+    assert page.find("a", attrs={"data-tv-prefetch": "high"}) is not None
+
+
+def test_core_bundle_includes_prefetch_script(built_dist):
+    core_files = list((built_dist / "assets" / "js").glob("core.*.js"))
+    assert core_files, "core bundle missing"
+    text = core_files[0].read_text(encoding="utf-8")
+    assert "prefetchPath" in text or "rel=prefetch" in text or 'rel="prefetch"' in text
+
+
+def test_bottom_nav_marks_prefetch_high(built_dist):
+    page = _soup(built_dist / "varieta" / "sencha" / "index.html")
+    nav = page.find("nav", class_="tv-bottom-nav")
+    assert nav is not None
+    assert nav.find("a", href="/impara/", attrs={"data-tv-prefetch": "high"}) is not None
+
     html = (built_dist / "index.html").read_text(encoding="utf-8")
     assert "window.addEventListener('load'" in html
     assert "googletagmanager.com/gtm.js" in html

@@ -302,6 +302,8 @@ h3 { font: var(--md-sys-typescale-title-large); }
   margin-top: var(--tv-spacing-4);
 }
 .tv-quiz__intro { margin-bottom: var(--tv-spacing-4); }
+.tv-quiz-reference { margin-top: var(--tv-spacing-6); }
+.tv-quiz-reference__intro { color: var(--md-sys-color-on-surface-variant); margin-bottom: var(--tv-spacing-3); }
 
 .tv-search { min-height: 200px; }
 

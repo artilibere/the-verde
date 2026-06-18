@@ -165,6 +165,8 @@ class SiteBuilder:
                     for p in self.all_pages
                     if p.get("url", "").startswith("/italia/") and p.get("url") != "/italia/"
                 ],
+                paths=self.paths_config.get("paths", []) if isinstance(self.paths_config, dict) else [],
+                quizzes=self.quizzes.get("quizzes", []) if isinstance(self.quizzes, dict) else [],
             ),
             encoding="utf-8",
         )
@@ -192,6 +194,8 @@ class SiteBuilder:
         extra: dict | None = None,
     ) -> str:
         meta = document_to_meta(doc, url=url)
+        if extra and extra.get("meta"):
+            meta = {**meta, **extra["meta"]}
         page = document_to_page(
             doc,
             url=url,
@@ -282,6 +286,12 @@ class SiteBuilder:
             slug = doc["slug"]
             url = f"/gioca/percorsi/{slug}/"
             meta = document_to_meta(doc, url=url)
+            path_cfg = next(
+                (p for p in self.paths_config.get("paths", []) if p.get("slug") == slug),
+                None,
+            )
+            if path_cfg:
+                meta["path_config"] = path_cfg
             blocks = doc.get("body", {}).get("blocks", [])
             html = render_blocks(blocks)
             meta.update({"url": url, "content_html": html})
@@ -296,6 +306,7 @@ class SiteBuilder:
                     ("Percorsi", "/gioca/percorsi/"),
                     (meta["title"], url),
                 ),
+                extra={"meta": meta},
             )
             write_page(self.out_dir / "gioca" / "percorsi" / slug, page)
             self.track_sitemap(url, priority=0.6, changefreq="monthly")
@@ -338,7 +349,7 @@ class SiteBuilder:
                 "hub.html",
                 page_type="hub",
                 title="Percorsi guidati",
-                lead="Quattro itinerari per esplorare il tè verde passo dopo passo.",
+                lead=f"{len(percorsi)} itinerari per esplorare il tè verde passo dopo passo.",
                 url="/gioca/percorsi/",
                 items=[
                     {"title": p["title"], "url": p["url"], "brief": p.get("meta_description", "")}

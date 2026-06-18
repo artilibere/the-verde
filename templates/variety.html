@@ -38,11 +38,11 @@
 {% if meta.path_nav %}
 <nav class="tv-path-nav" aria-label="Percorso dal bancha al matcha">
   {% if meta.path_nav.prev %}
-  <a href="{{ meta.path_nav.prev.url }}" class="tv-path-nav__link">← {{ meta.path_nav.prev.title }}</a>
+  <a href="{{ meta.path_nav.prev.url }}" class="tv-path-nav__link" data-tv-prefetch="high">← {{ meta.path_nav.prev.title }}</a>
   {% else %}<span></span>{% endif %}
   <span class="tv-path-nav__progress">{{ meta.path_nav.index }} / {{ meta.path_nav.total }}</span>
   {% if meta.path_nav.next %}
-  <a href="{{ meta.path_nav.next.url }}" class="tv-path-nav__link">{{ meta.path_nav.next.title }} →</a>
+  <a href="{{ meta.path_nav.next.url }}" class="tv-path-nav__link" data-tv-prefetch="high">{{ meta.path_nav.next.title }} →</a>
   {% else %}<span></span>{% endif %}
 </nav>
 {% endif %}

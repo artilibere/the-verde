@@ -786,9 +786,7 @@ details.tv-faq summary:focus-visible { outline: none; box-shadow: var(--tv-focus
   .tv-share__actions {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .tv-share__btn--whatsapp {
-    flex: 1 1 100%;
+    align-items: center;
   }
 }
 .tv-share__preview {

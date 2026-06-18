@@ -14,6 +14,7 @@ from site_builder.enrichers._seo_core import (
     faq_schema,
     item_list_schema,
     italia_article_schema,
+    learning_resource_schema,
     variety_schema,
     webpage_schema,
 )
@@ -443,6 +444,10 @@ def build_schema_graph(
                 url=url,
                 origin_slug=meta.get("origine_slug", ""),
                 origin_label=meta.get("origine", ""),
+                brew_temp=meta.get("brew_temp"),
+                brew_grams=meta.get("brew_grams"),
+                brew_seconds=meta.get("brew_seconds"),
+                brew_infusions=meta.get("brew_infusions"),
             )
         )
         faq_items = collect_faq_items(doc=doc, page=page)
@@ -468,6 +473,17 @@ def build_schema_graph(
             )
         else:
             graph.append(article_schema(base_url, title=title, description=description, url=url))
+        path_cfg = meta.get("path_config")
+        if url.startswith("/gioca/percorsi/") and path_cfg:
+            lr = learning_resource_schema(
+                base_url,
+                title=title,
+                description=description,
+                url=url,
+                steps=path_cfg.get("steps") or [],
+            )
+            if lr:
+                graph.append(lr)
     elif page_type == "hub":
         if url.startswith("/italia/"):
             graph.append(
