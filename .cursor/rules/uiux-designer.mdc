@@ -48,5 +48,6 @@ Accessibilità > decorazione. Tono the-verde-expert > marketing. Tabella > chart
 - Prosa uniforme (`tv-prose__*`); schema.org = JSON-LD
 - Icone con label; touch ≥ 44px
 - d3 self-hosted; tabella fallback per ogni chart
+- Griglie `tv-grid`: 1 colonna mobile, max 2 colonne da tablet — mai 3 colonne con testo
 - Palette Almost Acqua; no zen kitsch / detox
 - Checklist in SKILL.md

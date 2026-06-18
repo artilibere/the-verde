@@ -124,6 +124,11 @@ Prima di considerare un layout completo, verifica:
 ### Dati comparativi (Giulia / Elena)
 - [ ] Tabella leggibile su 390px (scroll orizzontale ok)?
 - [ ] Chart solo se presente tabella fallback?
+
+### Leggibilità griglie (tutte le personas)
+- [ ] Box multi-colonna: 1 colonna su mobile, max 2 su tablet/desktop?
+- [ ] Nessuna griglia a 3 colonne con paragrafi o brief card (testo non frammentato)?
+- [ ] Ridimensionando a 768px le colonne restano ≥ ~240px o collassano a 1 col?
 ### Scelta guidata (Marco)
 - [ ] Card catalogo con profilo sintetico e icona?
 - [ ] Hub stagione o momento da bottom nav?

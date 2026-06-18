@@ -45,6 +45,7 @@ Documentazione (progressive disclosure):
 | Icone guidano | Ogni sezione/tab/azione chiave: simbolo + label |
 | Schede scorrevoli | Ogni blocco = `tv-card`; scroll verticale tra schede |
 | Dati leggibili | Tabella default; chart d3 solo se [charts-d3.md](charts-d3.md) lo consiglia |
+| Colonne leggibili | Griglie max 1 col (`sm`) o 2 col (`md`+); mai 3 colonne con testo |
 | Rendering uniforme | Solo template Jinja2 + PageDocument; prosa e schema.org unici |
 | Rispetto origini | Chip paese/tradizione; no iconografia zen kitsch |
 | Radicamento italiano | Card `italy` obbligatoria in scheda varietà |
@@ -125,12 +126,14 @@ Task Progress:
 - Zen kitsch; verde neon detox; emoji negli heading
 - JSON-LD scritto a mano diverso dal body visibile
 - d3 per singola varietà (usa metric-row)
+- Griglie a 3+ colonne su box con prosa o card testuali (usa 1 col `sm`, max 2 col `md`+)
 
 ## Checklist finale
 
 - [ ] PageDocument validato; template Jinja2 usato
 - [ ] App shell: app-bar + bottom-nav + feed card
 - [ ] Mobile-first 390px; touch ≥ 44px
+- [ ] Griglie `tv-grid`: 1 col mobile, max 2 col tablet+; nessun box a 3 colonne con testo
 - [ ] Icone sezioni + label accessibili
 - [ ] Prosa via render_prose; strong/em/quote uniformi
 - [ ] Schema.org: microdata = JSON-LD

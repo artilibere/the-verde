@@ -93,6 +93,7 @@ Ogni blocco informativo = una **card autonoma** con header (icona + titolo) e co
 
 - Max **3 righe** di teaser nel body senza expand
 - Dettaglio lungo: `<details>` dentro card o card figlia
+- **Griglie nel feed:** dentro `tv-feed` (max 480px) preferire **1 colonna**; tile compatti (icona + label ≤ 2 righe) possono usare `tv-grid--2-up-md` — **mai 3 colonne** con testo (vedi [design-system.md § Griglie](design-system.md#griglie-responsive-tv-grid))
 - Ogni card ha `id` per anchor (`#brew`, `#italy`) e scroll-margin per app-bar + mininav
 - Ordine card **fisso per tipo pagina** (vedi [rendering-json-html.md](rendering-json-html.md))
 

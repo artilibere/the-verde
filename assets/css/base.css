@@ -89,11 +89,14 @@ h3 { font: var(--md-sys-typescale-title-large); }
 .tv-grid--badges { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
 
 @media (min-width: 600px) {
-  .tv-grid--cards { grid-template-columns: repeat(2, 1fr); }
-  .tv-grid--intent { grid-template-columns: repeat(2, 1fr); }
+  .tv-grid--cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tv-grid--intent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 @media (min-width: 900px) {
-  .tv-grid--cards { grid-template-columns: repeat(3, 1fr); }
   .tv-hero__title { font-size: 2.5rem; }
 }
 

@@ -109,6 +109,10 @@ Design system basato su **Material 3 tokens** implementati come CSS custom prope
   --tv-chart-container: #cad3c1;
   --tv-chart-grid: var(--md-sys-color-outline-variant);
   --tv-chart-label: var(--md-sys-color-on-surface-variant);
+
+  /* Griglie responsive (box multi-colonna) */
+  --tv-grid-min-col-width: 16rem;   /* ~256px — larghezza minima leggibile */
+  --tv-grid-max-cols: 2;            /* mai 3+ colonne con testo */
 }
 ```
 

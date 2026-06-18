@@ -46,6 +46,7 @@
   --tv-bottom-nav-height: 64px;
   --tv-feed-max-width: 480px;
   --tv-feed-gap: 16px;
+  --tv-grid-min-col-width: 16rem;
   --tv-safe-bottom: env(safe-area-inset-bottom, 0px);
   --md-sys-motion-duration-short: 150ms;
   --tv-focus-ring: 0 0 0 2px var(--md-sys-color-surface), 0 0 0 4px var(--md-sys-color-primary);
