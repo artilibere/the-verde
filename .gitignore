@@ -7,5 +7,5 @@ pagefind/
 .DS_Store
 .wrangler/
 node_modules/
-books/*.pdf
+books/
 .env
