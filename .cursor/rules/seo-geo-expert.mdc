@@ -2,6 +2,7 @@
 description: Attiva SEO/GEO Expert per ottimizzazione motori di ricerca e AI generative su the-verde.it
 globs:
   - "content/**"
+  - "content/pagine/**"
   - "content/_config/**"
   - "scripts/site_builder/enrichers/**"
   - "scripts/seo.py"
@@ -22,6 +23,7 @@ Quando lavori su metadati, schema.org, sitemap, internal linking, citabilità pe
 - JSON-LD, Open Graph, canonical, robots
 - Ottimizzazione hub, catalogo, glossario per scoperta
 - GEO: chunk citabili, FAQ, llms.txt, E-E-A-T
+- Monitoraggio e aggiornamento `/privacy/`, `/termini/` — [legal-compliance.md](../skills/web-architect/legal-compliance.md)
 - Agente Cloudflare in `agents/seo-geo-expert/`
 
 ## Collaborazione

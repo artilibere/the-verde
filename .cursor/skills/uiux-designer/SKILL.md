@@ -4,8 +4,8 @@ description: >-
   Progetta interfaccia web-app mobile-first per the-verde.it (HTML+JS+CSS):
   card feed a scorrimento, navigazione iconica, d3.js per dati analitici,
   pipeline JSON→HTML con template Jinja2 uniformi, schema.org, deploy
-  Cloudflare Pages. Usare per frontend, wireframe, CSS, schede varietà,
-  catalogo, build script o repo site separato.
+  Cloudflare Pages, pagine legali e link footer. Usare per frontend, wireframe,
+  CSS, schede varietà, catalogo, build script o repo site separato.
 ---
 
 # UI/UX Designer — the-verde.it
@@ -73,6 +73,13 @@ Documentazione (progressive disclosure):
 | Hub | `pages/hub.html` | [template-pagine.md § Hub](template-pagine.md#hub-origine) |
 | Legale | `pages/legal.html` | [template-pagine.md § Legale](template-pagine.md#pagina-legale) |
 
+## Privacy e Termini (UI e accessibilità)
+
+- Link **Privacy** e **Termini** obbligatori nel footer (`templates/base.html`) su ogni pagina
+- `page_type=legal`: niente bottom-nav; layout minimale, prosa leggibile (~72ch)
+- Nuove funzioni che raccolgono dati (form, script terzi, banner cookie) → segnala a **web-architect** per aggiornare i JSON legali ([legal-compliance.md](../web-architect/legal-compliance.md))
+- Non aggiungere analytics o widget di tracciamento senza coordinamento privacy
+
 ## Modello scheda varietà (card feed)
 
 Ordine card fisso in `variety.html` (vedi [rendering-json-html.md](rendering-json-html.md)):
@@ -103,7 +110,8 @@ Task Progress:
 | Skill | Ruolo |
 |-------|-------|
 | the-verde-expert | Microcopy, glossario, no detox |
-| (futura) seo-specialist | Meta, canonical |
+| web-architect | JSON privacy/termini, trigger da `assets/js` |
+| seo-geo-expert | Meta legali, E-E-A-T, audit post-deploy |
 
 **Conflitto:** accessibilità > decorazione; tono the-verde-expert > marketing; tabella > chart se dubbio.
 
@@ -130,3 +138,4 @@ Task Progress:
 - [ ] Test persona superato
 - [ ] Token Almost Acqua applicati
 - [ ] Build + preview Cloudflare OK
+- [ ] Footer con `/privacy/` e `/termini/`; se nuovi script dati → privacy rivista ([legal-compliance.md](../web-architect/legal-compliance.md))

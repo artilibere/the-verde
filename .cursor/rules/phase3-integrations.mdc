@@ -35,3 +35,7 @@ File: `assets/js/supabase-config.js`, pagina `/diario/`
 ## Ordine consigliato
 
 Giscus prima (solo frontend), Supabase dopo (schema + auth).
+
+## Aggiornamento pagine legali (obbligatorio)
+
+Dopo aver configurato o modificato Giscus o Supabase, aggiorna `content/pagine/privacy.json` e/o `termini.json` prima del merge. Segui [legal-compliance.md](../skills/web-architect/legal-compliance.md): destinatari dati, cookie terze parti, base giuridica sync diario, date di revisione.

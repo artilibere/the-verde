@@ -178,6 +178,16 @@ Compito principale su `the-verde.it`: arricchire i JSON editoriali in `content/`
 
 **Consegna:** `pytest tests/` + `python scripts/build.py`.
 
+## Allineamento con Privacy e Termini
+
+I contenuti su salute, caffeina e benefici devono essere coerenti con `content/pagine/termini.json` (§3) e `privacy.json`:
+
+- Nessun claim miracoloso; disclaimer esplicito dove serve
+- Distinguere bevanda da integratore (coerente con controversie e KB)
+- Se modifichi tono o scope degli articoli salute/controversie → segnala a **web-architect** revisione termini/privacy se necessario
+
+Checklist condivisa: [legal-compliance.md](../web-architect/legal-compliance.md)
+
 ## Cosa evitare
 
 - Confondere tè verde con tisane (camomilla, menta…)
@@ -196,6 +206,7 @@ Compito principale su `the-verde.it`: arricchire i JSON editoriali in `content/`
 - **Contesto Italia**: [cultura-italiana.md](cultura-italiana.md)
 - **Bibliografia**: [bibliografia.md](bibliografia.md)
 - **Template JSON**: [content-templates.md](content-templates.md)
+- **Privacy/Termini**: [legal-compliance.md](../web-architect/legal-compliance.md)
 
 ## Esempi di contestualizzazione
 

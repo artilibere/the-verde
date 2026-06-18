@@ -1,5 +1,5 @@
 import { createWorkersAI } from "workers-ai-provider";
-import { callable, routeAgentRequest, type Schedule } from "agents";
+import { routeAgentRequest, type Schedule } from "agents";
 import { getSchedulePrompt, scheduleSchema } from "agents/schedule";
 import { AIChatAgent, type OnChatMessageOptions } from "@cloudflare/ai-chat";
 import { convertToModelMessages, pruneMessages, stepCountIs, streamText, tool } from "ai";
@@ -14,13 +14,12 @@ import {
   fetchSitemapUrls,
 } from "./seo-tools";
 
-export class SeoGeoAgent extends AIChatAgent {
+export class SeoGeoAgent extends AIChatAgent<Env> {
   maxPersistedMessages = 80;
 
   async onStart() {
   }
 
-  @callable()
   async runSiteAudit(limit = 10) {
     const baseUrl = this.env.SITE_BASE_URL;
     const result = await batchAudit(baseUrl, Math.min(limit, 20));
@@ -154,6 +153,21 @@ export default {
   async fetch(request: Request, env: Env) {
     const url = new URL(request.url);
 
+    if (url.pathname === "/audit") {
+      const limit = Math.min(Number(url.searchParams.get("limit") ?? "10"), 20);
+      const result = await batchAudit(env.SITE_BASE_URL, limit);
+      const p0 = result.audited.flatMap((p) => p.issues.filter((i) => i.startsWith("P0")));
+      const p1 = result.audited.flatMap((p) => p.issues.filter((i) => i.startsWith("P1")));
+      return Response.json({
+        site: env.SITE_BASE_URL,
+        sampled: result.audited.length,
+        totalInSitemap: result.totalInSitemap,
+        criticalP0: p0.length,
+        warningsP1: p1.length,
+        pages: result.audited,
+      });
+    }
+
     if (url.pathname === "/health") {
       return Response.json({
         agent: "SeoGeoAgent",
@@ -169,6 +183,7 @@ export default {
           agent: "the-verde-seo-geo-expert",
           endpoints: {
             health: "/health",
+            audit: "/audit?limit=10",
             websocket: "/agents/SeoGeoAgent/{session-id}",
           },
           docs: "https://developers.cloudflare.com/agents/",
@@ -177,4 +192,4 @@ export default {
       )
     );
   },
-} satisfies ExportedHandler;
+} satisfies ExportedHandler<Env>;

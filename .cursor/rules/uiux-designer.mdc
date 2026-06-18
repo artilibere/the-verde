@@ -7,6 +7,8 @@ globs:
   - "**/site/**/*.js"
   - "assets/css/**"
   - "assets/js/**"
+  - "content/pagine/privacy.json"
+  - "content/pagine/termini.json"
   - "templates/**"
   - "schemas/**"
   - "dist/**"
@@ -27,6 +29,7 @@ Quando crei o modifichi il frontend (HTML, CSS, JS, wireframe, build JSON→HTML
 - Pipeline PageDocument JSON → template Jinja2
 - Catalogo, schede varietà, articoli, hub
 - `_headers`, `_redirects`, GitHub Actions
+- Footer e pagine legali (`/privacy/`, `/termini/`) — [legal-compliance.md](../skills/web-architect/legal-compliance.md)
 
 ## Prima di implementare
 

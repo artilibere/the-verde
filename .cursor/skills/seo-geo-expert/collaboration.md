@@ -47,6 +47,17 @@ Quando il problema è semantico/HTML:
 - card senza heading linkabile
 - OG image mancante nel template
 
+## Handoff privacy e termini
+
+Quando audit o deploy rivelano trattamenti dati non documentati, analytics senza informativa, o footer senza link legale:
+
+1. Segnala a **web-architect** con file e sezione JSON da aggiornare
+2. Indica `meta.description` e `meta.published` proposti
+3. Se coinvolti claim salute → coordina **the-verde-expert** per allineamento termini §3
+4. Se layout/footer → coordina **uiux-designer**
+
+Checklist completa: [legal-compliance.md](../web-architect/legal-compliance.md)
+
 ## Conflitti di priorità
 
 1. Accuratezza editoriale (the-verde-expert) > keyword optimization

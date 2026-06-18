@@ -15,6 +15,8 @@
 | Gioca | `/gioca/`, percorsi, quiz | article/hub | 0.4–0.6 |
 | Legale | `/privacy/`, `/termini/` | page | 0.2 |
 
+Pagine legali: contenuto in `content/pagine/privacy.json` e `termini.json`. Monitoraggio condiviso in [legal-compliance.md](../web-architect/legal-compliance.md) — verificare meta, date e allineamento E-E-A-T a ogni audit o cambio integrazioni.
+
 ## Config globale
 
 - Base URL: `https://the-verde.it` (`content/_config/sitemap.json`)

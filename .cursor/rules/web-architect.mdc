@@ -2,6 +2,9 @@
 description: Attiva Web Architect per content JSON, build pipeline e IA del sito the-verde.it
 globs:
   - "content/**"
+  - "content/pagine/privacy.json"
+  - "content/pagine/termini.json"
+  - "assets/js/**"
   - "content/_schemas/**"
   - "scripts/**"
   - "templates/**"
@@ -20,6 +23,7 @@ Quando modifichi contenuti JSON, build, schemi, test o architettura informativa,
 - Modifiche a `scripts/site_builder/` o `scripts/build.py`
 - Migrazione o validazione contenuti
 - SEO, schema.org, `explore_next`, grafo navigazione
+- Pagine legali: `content/pagine/privacy.json`, `termini.json` — vedi [legal-compliance.md](../skills/web-architect/legal-compliance.md)
 - Suite test pytest del build
 
 ## Collaborazione

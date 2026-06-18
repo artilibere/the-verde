@@ -2,9 +2,10 @@
 name: web-architect
 description: >-
   Architetto del sito the-verde.it: content model JSON, information architecture,
-  pipeline di build Python, SEO/schema.org, navigazione interna e test. Usa quando
-  l'utente lavora su content/, scripts/build, schemi JSON, dist/, IA del sito,
-  migrazione contenuti, pytest del build o struttura del repository statico.
+  pipeline di build Python, SEO/schema.org, navigazione interna, test e monitoraggio
+  privacy/termini. Usa quando l'utente lavora su content/, scripts/build, schemi JSON,
+  dist/, IA del sito, pagine legali, migrazione contenuti, pytest del build o struttura
+  del repository statico.
 ---
 
 # Web Architect — the-verde.it
@@ -54,6 +55,16 @@ Dettaglio: [ia-priorities.md](ia-priorities.md)
 - Auto-generazione in `site_builder/enrichers/schema_org.py` quando assenti
 - Vedi [seo-metadata.md](seo-metadata.md)
 
+### Privacy e Termini (compliance tecnica)
+
+Sei **owner** delle pagine legali nel content model. Monitora e aggiorna `content/pagine/privacy.json` e `content/pagine/termini.json` quando cambiano dati trattati, funzioni client (`assets/js/`), integrazioni terze parti o pipeline.
+
+1. Leggi [legal-compliance.md](legal-compliance.md) — trigger, checklist, ruoli
+2. Allinea il testo al codice reale (chiavi `localStorage`, Giscus, Supabase, Cloudflare)
+3. Aggiorna `meta.published` e la data in fondo al body
+4. `build_legal()` in `builder.py` → verifica `dist/privacy/` e `dist/termini/`
+5. Coordina **seo-geo-expert** (meta/JSON-LD), **uiux-designer** (footer/layout), **the-verde-expert** (disclaimer salute)
+
 ## Checklist pre-consegna
 
 - [ ] JSON valida contro schema del suo `type`
@@ -62,9 +73,11 @@ Dettaglio: [ia-priorities.md](ia-priorities.md)
 - [ ] Canonical, meta description, JSON-LD presenti
 - [ ] Navigazione interna: breadcrumb + almeno 2 link contestuali
 - [ ] Nessun Markdown residuo in `content/` (solo JSON editoriali)
+- [ ] Se toccati `assets/js/`, community, diario o analytics: privacy/termini rivisti o confermati ([legal-compliance.md](legal-compliance.md))
 
 ## Riferimenti
 
+- [legal-compliance.md](legal-compliance.md) — monitoraggio e aggiornamento privacy/termini
 - [content-model.md](content-model.md) — blocchi e tipi documento
 - [ia-priorities.md](ia-priorities.md) — navigazione e grafo
 - [build-pipeline.md](build-pipeline.md) — moduli e comandi

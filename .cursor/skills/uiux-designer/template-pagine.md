@@ -268,7 +268,10 @@ Niente colonna wiki continua: ogni `##` del MD = una `tv-card`.
 ## Pagina legale
 
 **URL:** `/privacy/`, `/termini/`  
-**Layout:** colonna singola 72ch, nessuna CTA, nessun PathNav.
+**Sorgente:** `content/pagine/privacy.json`, `content/pagine/termini.json`  
+**Layout:** colonna singola 72ch, nessuna CTA, nessun PathNav, nessuna bottom-nav.
+
+Monitoraggio e aggiornamento testi: [legal-compliance.md](../web-architect/legal-compliance.md) (trigger da JS, integrazioni, footer).
 
 ```html
 <main id="main" class="tv-main tv-main--legal">

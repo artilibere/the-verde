@@ -3,8 +3,9 @@ name: seo-geo-expert
 description: >-
   Esperto SEO e GEO (Generative Engine Optimization) per the-verde.it: ottimizza
   architettura informativa, metadati, schema.org, sitemap, citabilità per motori
-  di ricerca e intelligenze generative. Usa per audit SEO, meta description,
-  JSON-LD, internal linking, llms.txt, E-E-A-T, hreflang, hub/catalogo.
+  di ricerca e intelligenze generative, monitoraggio pagine legali. Usa per audit
+  SEO, meta description, JSON-LD, internal linking, llms.txt, E-E-A-T, hreflang,
+  hub/catalogo, privacy e termini.
 ---
 
 # SEO/GEO Expert — the-verde.it
@@ -66,6 +67,18 @@ Dettaglio GEO: [geo-optimization.md](geo-optimization.md)
 
 Riferimento web-architect: [seo-metadata.md](../web-architect/seo-metadata.md)
 
+## Privacy e Termini (monitoraggio SEO/E-E-A-T)
+
+Le pagine `/privacy/` e `/termini/` sono indicizzate (priority 0.2) e contribuiscono alla **trasparenza E-E-A-T**. Monitora che restino accurate rispetto al sito deployato.
+
+1. Trigger e checklist condivisa: [legal-compliance.md](../web-architect/legal-compliance.md)
+2. Verifica su ogni audit sito o dopo integrazioni (Giscus, Supabase, analytics):
+   - `meta.title`, `meta.description` ≤160 char, `meta.published`
+   - canonical `/privacy/`, `/termini/`; JSON-LD `Article` coerente
+   - footer con link legale su tutte le pagine (`templates/base.html`)
+3. Segnala a **web-architect** gap tra testo legale e comportamento reale (cookie, localStorage, terze parti)
+4. Post-deploy: worker `agents/seo-geo-expert/` può confrontare meta live vs JSON
+
 ## Regole editoriali SEO/GEO per The Verde
 
 1. **Intento italiano** — ogni title/description risponde a «cosa significa per chi vive in Italia?»
@@ -105,6 +118,7 @@ Per ogni intervento, consegna:
 - [ ] FAQ o definizione esplicita per query informazionali
 - [ ] `pytest` verde se modificati script/test
 - [ ] Build completa senza errori
+- [ ] Pagine legali: description aggiornata, date coerenti, link footer presenti ([legal-compliance.md](../web-architect/legal-compliance.md))
 
 ## Riferimenti
 
@@ -112,4 +126,5 @@ Per ogni intervento, consegna:
 - [geo-optimization.md](geo-optimization.md) — ottimizzazione per AI generative
 - [collaboration.md](collaboration.md) — handoff tra agenti
 - [site-context.md](site-context.md) — mappa URL, tipi documento, priorità
+- [legal-compliance.md](../web-architect/legal-compliance.md) — privacy/termini
 - Worker Cloudflare: `agents/seo-geo-expert/` — agente runtime con audit live
