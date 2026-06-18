@@ -3,9 +3,9 @@
 <article class="tv-article tv-feed-page" data-slug="{{ meta.slug }}" itemscope itemtype="https://schema.org/Article">
   <nav class="tv-mininav tv-scroll-rail" aria-label="Sezioni scheda">
     <ul class="tv-mininav__list">
-      <li><a href="#brief" class="tv-mininav__link">Scopri</a></li>
-      <li><a href="#brew" class="tv-mininav__link">Prepara</a></li>
-      <li><a href="#italy" class="tv-mininav__link">In Italia</a></li>
+      <li><a href="#brief" class="tv-mininav__link">{% with name='grid', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}<span>Scopri</span></a></li>
+      <li><a href="#brew" class="tv-mininav__link">{% with name='list', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}<span>Prepara</span></a></li>
+      <li><a href="#italy" class="tv-mininav__link">{% with name='italy', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}<span>In Italia</span></a></li>
     </ul>
   </nav>
   <header class="tv-article__hero tv-card tv-card--hero">

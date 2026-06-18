@@ -1,10 +1,10 @@
 (function () {
   const FONTI = {
-    rosen: 'Rosen',
-    sommelier: 'Sommelier',
-    pellegrino: 'Pellegrino',
-    onuma: 'Onuma',
-    hara: 'Hara',
+    rosen: 'Rosen, Diana',
+    sommelier: 'Bisogno, Victoria; Pettigrew, Jane',
+    pellegrino: 'Pellegrino, Davide',
+    onuma: 'Onuma, Izumi Forasté',
+    hara: 'Hara, Yukihiko (a cura di)',
   };
 
   function label(value) {

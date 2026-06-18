@@ -74,8 +74,35 @@ def test_render_bibliography_formal():
     assert "Bibliografia" in html
     assert "Hara, Yukihiko" in html
     assert "<cite" in html
-    assert "hara-anticancer" in html
-    assert "pp. 113" in html
+    assert "Tema" not in html
+    assert "hara-anticancer" not in html
+
+
+def test_render_bibliography_skips_kb_entry():
+    html = render_block(
+        {
+            "type": "bibliography",
+            "items": [
+                {
+                    "author": "Rosen, Diana",
+                    "title": "Il libro del tè verde",
+                    "tema": "rosen-salute",
+                    "sotto_tema": "Salute",
+                    "pages": "2714",
+                },
+                {
+                    "author": "The Verde",
+                    "title": "Knowledge base sul tè verde",
+                    "tema": "qualita-sensoriale-vs-chimica",
+                    "sotto_tema": "Prospettiva contrastante",
+                    "pages": None,
+                    "kb_ref": "books/knowledge-base.json",
+                },
+            ],
+        }
+    )
+    assert "knowledge-base.json" not in html
+    assert "Rosen, Diana" in html
 
 
 def test_article_blocks_no_zones():

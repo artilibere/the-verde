@@ -77,11 +77,13 @@ def test_home_meta_from_json(built_dist):
 
 def test_home_body_geo_visible(built_dist):
     page = _soup(built_dist / "index.html")
-    hero = page.select_one(".tv-hero__intro")
+    hero = page.select_one(".tv-card--hero-entry")
     assert hero is not None
     h1 = hero.find("h1")
     assert h1 is not None
-    assert "Camellia sinensis" in hero.get_text()
+    details = page.select_one(".tv-card--collapsible .tv-prose")
+    assert details is not None
+    assert "Camellia sinensis" in details.get_text()
     assert len(page.find_all("h1")) == 1
 
 
@@ -109,6 +111,12 @@ def test_controversy_has_card_feed(built_dist):
     assert page.find(class_="tv-feed") is not None
     assert page.find(id="positions") is not None
     assert page.find(class_="tv-poll") is not None
+    fonte = page.find(class_="tv-position__fonte")
+    assert fonte is not None
+    text = fonte.get_text()
+    assert "sommelier" not in text.lower()
+    assert "rosen" not in text.lower()
+    assert "pellegrino" not in text.lower() or "Davide" in text
 
 
 def test_impara_hub_has_card_feed(built_dist):
@@ -144,6 +152,21 @@ def test_gtm_deferred_until_load(built_dist):
     html = (built_dist / "index.html").read_text(encoding="utf-8")
     assert "window.addEventListener('load'" in html
     assert "googletagmanager.com/gtm.js" in html
+    assert 'rel="preconnect" href="https://www.googletagmanager.com"' not in html
+
+
+def test_icons_inlined_without_external_sprite_request(built_dist):
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    assert 'href="#tv-icon-leaf"' in html
+    assert "/assets/icons/tv-icons.svg#tv-icon-" not in html
+    assert 'id="tv-icon-leaf"' in html
+
+
+def test_home_schema_single_json_ld_block(built_dist):
+    page = _soup(built_dist / "index.html")
+    scripts = page.find_all("script", type="application/ld+json")
+    assert len(scripts) == 1
+    assert '"@graph"' in scripts[0].string
 
 
 def test_skip_link_targets_main(built_dist):

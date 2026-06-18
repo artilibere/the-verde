@@ -28,6 +28,22 @@ BOOKS: dict[str, dict[str, str]] = {
     },
 }
 
+def fonte_autore(fonte_id: str) -> str:
+    """Display name for a KB book id in prospettive / citazioni."""
+    book = BOOKS.get(fonte_id.strip().lower())
+    if book:
+        return book["author"]
+    return fonte_id.replace("-", " ").strip().title()
+
+
+def enrich_position_items(items: list[dict]) -> list[dict]:
+    """Add autore label while keeping fonte id for polls and cite."""
+    return [
+        {**pos, "autore": fonte_autore(pos.get("fonte", ""))}
+        for pos in items
+    ]
+
+
 # tema_id → (book_id, sotto_tema, pages)
 TEMA_REF: dict[str, tuple[str, str, str | None]] = {
     "rosen-poesia": ("rosen", "Poesia e filosofia del tè verde", "97–189"),
@@ -56,33 +72,6 @@ TEMA_REF: dict[str, tuple[str, str, str | None]] = {
     "hara-anticancer": ("hara", "Effetti anticancerogeni", "102–113"),
     "hara-metabolismo": ("hara", "Obesità, metabolismo e cuore", "118–131"),
     "hara-altri-effetti": ("hara", "Immunità, fegato, cervello e oral health", "136–171"),
-}
-
-CONTROVERSY_PROSPETTIVE: dict[str, tuple[str, str]] = {
-    "bevanda-vs-integratore": (
-        "bevanda-vs-integratore",
-        "Meglio bere tè verde o assumere estratti?",
-    ),
-    "caffeina-stimolazione": (
-        "caffeina-stimolazione",
-        "Il tè verde stimola o rilassa?",
-    ),
-    "cerimonia-cina-vs-giappone": (
-        "cerimonia-cina-vs-giappone",
-        "Come si confrontano Gongfu Cha e Chanoyu?",
-    ),
-    "consumo-quotidiano-vs-rituale": (
-        "consumo-quotidiano-vs-rituale",
-        "Abitudine quotidiana o esperienza speciale?",
-    ),
-    "qualita-sensoriale-vs-chimica": (
-        "qualita-sensoriale-vs-chimica",
-        "Cosa definisce un buon tè verde?",
-    ),
-    "salute-scienza-vs-tradizione": (
-        "salute-scienza-vs-tradizione",
-        "Quanto è dimostrato che il tè verde faccia bene?",
-    ),
 }
 
 # Legacy free-text citation → (book_id, tema, sotto_tema, pages)
@@ -195,8 +184,18 @@ def bib_treccani(voce: str) -> dict:
     }
 
 
-def bib_treccani(voce: str) -> dict:
+def bibliography_block(items: list[dict]) -> dict:
     return {"type": "bibliography", "items": items}
+
+
+def is_kb_bibliography_entry(item: dict) -> bool:
+    """True for internal KB entries — excluded from public bibliography."""
+    if item.get("kb_ref") == "books/knowledge-base.json":
+        return True
+    return (
+        item.get("author") == "The Verde"
+        and item.get("title") == "Knowledge base sul tè verde"
+    )
 
 
 def legacy_to_bib_entry(
@@ -213,17 +212,7 @@ def legacy_to_bib_entry(
     if raw in LEGACY_CITATIONS:
         book_id, tema, sotto, pages = LEGACY_CITATIONS[raw]
         if book_id == "_kb":
-            if slug and slug in CONTROVERSY_PROSPETTIVE:
-                pid, q = CONTROVERSY_PROSPETTIVE[slug]
-                return bib_kb_prospettiva(pid, q)
-            return {
-                "author": "The Verde",
-                "title": "Knowledge base sul tè verde",
-                "tema": "prospettive_contrastanti",
-                "sotto_tema": "Prospettive contrastanti incrociate",
-                "pages": None,
-                "kb_ref": "books/knowledge-base.json",
-            }
+            return None
         return bib_item(book_id, tema, sotto, pages)
 
     m = _TEMA_RE.match(raw)
@@ -319,19 +308,19 @@ def transform_fonti_blocks(
                 seen.add(key)
                 items.append(entry)
 
-            if doc_type == "controversy" and slug and slug in CONTROVERSY_PROSPETTIVE:
-                pid, q = CONTROVERSY_PROSPETTIVE[slug]
-                kb_key = f"The Verde|{pid}|"
-                if not any(k.startswith(kb_key) for k in seen):
-                    items.append(bib_kb_prospettiva(pid, q))
-
             if items:
                 out.append(bibliography_block(items))
             i += 2
             continue
 
         if block.get("type") == "bibliography":
-            out.append(block)
+            items = [
+                item
+                for item in block.get("items", [])
+                if not is_kb_bibliography_entry(item)
+            ]
+            if items:
+                out.append({**block, "items": items})
             i += 1
             continue
 
@@ -348,7 +337,33 @@ def migrate_document(doc: dict) -> dict:
     blocks = body.get("blocks", [])
     if not blocks:
         return doc
-    new_blocks = transform_fonti_blocks(blocks, slug=slug, doc_type=doc_type)
+    new_blocks = sanitize_bibliography_blocks(
+        transform_fonti_blocks(blocks, slug=slug, doc_type=doc_type)
+    )
     if new_blocks != blocks:
         doc = {**doc, "body": {**body, "blocks": new_blocks}}
     return doc
+
+
+def sanitize_bibliography_blocks(blocks: list[dict]) -> list[dict]:
+    """Drop internal KB entries from bibliography blocks."""
+    out: list[dict] = []
+    for block in blocks:
+        if block.get("type") == "level_section":
+            out.append(
+                {
+                    **block,
+                    "blocks": sanitize_bibliography_blocks(block.get("blocks", [])),
+                }
+            )
+        elif block.get("type") == "bibliography":
+            items = [
+                item
+                for item in block.get("items", [])
+                if not is_kb_bibliography_entry(item)
+            ]
+            if items:
+                out.append({**block, "items": items})
+        else:
+            out.append(block)
+    return out

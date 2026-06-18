@@ -140,6 +140,22 @@
 
   document.getElementById('filter-reset')?.addEventListener('click', resetFilters);
 
+  const filterToggle = document.getElementById('catalog-filter-toggle');
+  const filterPanel = document.getElementById('catalog-filters');
+  if (filterToggle && filterPanel) {
+    filterToggle.addEventListener('click', () => {
+      const open = filterPanel.classList.toggle('tv-filter-bar--open');
+      filterToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && filterPanel.classList.contains('tv-filter-bar--open')) {
+        filterPanel.classList.remove('tv-filter-bar--open');
+        filterToggle.setAttribute('aria-expanded', 'false');
+        filterToggle.focus();
+      }
+    });
+  }
+
   function render(items) {
     grid.classList.remove('tv-catalog-results__grid--loading');
     grid.setAttribute('aria-busy', 'false');

@@ -2,7 +2,7 @@
   {% for pos in body['items'] %}
   <blockquote class="tv-position" cite="{{ pos.fonte }}">
     <p class="tv-position__tesi">{{ pos.tesi }}</p>
-    <footer class="tv-position__fonte">— {{ pos.fonte }}</footer>
+    <footer class="tv-position__fonte">— {{ pos.autore or pos.fonte }}</footer>
   </blockquote>
   {% endfor %}
 </div>

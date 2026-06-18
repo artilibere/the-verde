@@ -187,19 +187,18 @@
                 "pages": "89"
               },
               {
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-salute-pratica",
+                "sotto_tema": "Proprietà e consumo consapevole",
+                "pages": "1202–1348"
+              },
+              {
                 "author": "Rosen, Diana",
                 "title": "Il libro del tè verde",
                 "tema": "rosen-poesia",
                 "sotto_tema": "La foglia come oggetto estetico",
                 "pages": "146–151"
-              },
-              {
-                "author": "The Verde",
-                "title": "Knowledge base sul tè verde",
-                "tema": "qualita-sensoriale-vs-chimica",
-                "sotto_tema": "Prospettiva contrastante: Cosa definisce un buon tè verde?",
-                "pages": null,
-                "kb_ref": "books/knowledge-base.json"
               }
             ]
           }

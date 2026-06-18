@@ -22,7 +22,7 @@
     <h2 id="poll-heading">Tu da che parte ti senti?</h2>
     <form class="tv-poll__form" id="controversy-poll" role="radiogroup" aria-labelledby="poll-heading">
       {% for p in meta.posizioni %}
-      <label class="tv-poll__option"><input type="radio" name="poll" value="{{ p.fonte }}"> {{ p.fonte | capitalize }}</label>
+      <label class="tv-poll__option"><input type="radio" name="poll" value="{{ p.fonte }}"> {{ p.autore or p.fonte }}</label>
       {% endfor %}
       <button type="submit" class="tv-btn tv-btn--outlined">Registra la tua riflessione</button>
     </form>

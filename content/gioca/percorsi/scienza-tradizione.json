@@ -125,14 +125,6 @@
                 "tema": "hara-panoramica",
                 "sotto_tema": "Prospettiva scientifica globale",
                 "pages": "71–89"
-              },
-              {
-                "author": "The Verde",
-                "title": "Knowledge base sul tè verde",
-                "tema": "prospettive_contrastanti",
-                "sotto_tema": "Prospettive contrastanti incrociate",
-                "pages": null,
-                "kb_ref": "books/knowledge-base.json"
               }
             ]
           }

@@ -166,10 +166,10 @@ Esempio da `rosen-poesia`:
 
 ### Controversie e più fonti
 
-Presenta posizioni per id libro; in Fonti elenca **ogni fonte con riferimento preciso**:
+Presenta posizioni per id libro; in Bibliografia elenca **solo le opere di riferimento** (Rosen, Bisogno/Pettigrew, Pellegrino, Onuma, Hara, Treccani) — non citare `books/knowledge-base.json` nel testo pubblicato.
 
 ```
-Fonti
+Bibliografia
 - hara, tema `hara-anticancer`, pp. 102–104
 - rosen, tema `rosen-salute`, «Integratori vs bevanda», pp. 2807–2819
 - onuma, tema `onuma-salute-pratica`, «Quantità giornaliera», pp. 1242–1253

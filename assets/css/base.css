@@ -122,6 +122,22 @@ h3 { font: var(--md-sys-typescale-title-large); }
 .tv-page-header__lead { max-width: var(--tv-content-max-width); color: var(--md-sys-color-on-surface-variant); }
 
 .tv-catalog-layout { display: grid; gap: var(--tv-spacing-4); }
+.tv-catalog-header__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--tv-spacing-3);
+}
+.tv-catalog-filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tv-spacing-2);
+  flex-shrink: 0;
+  min-height: 44px;
+}
+@media (min-width: 900px) {
+  .tv-catalog-filter-toggle { display: none; }
+}
 .tv-catalog-results__count {
   margin: 0 0 var(--tv-spacing-3);
   font: var(--md-sys-typescale-label-large);
@@ -146,7 +162,23 @@ h3 { font: var(--md-sys-typescale-title-large); }
 .tv-footer__nav ul { display: flex; flex-wrap: wrap; gap: var(--tv-spacing-3); list-style: none; padding: 0; }
 .tv-footer__copy { font-size: 0.875rem; color: var(--md-sys-color-on-surface-variant); }
 
-.tv-page--has-path-nav { padding-bottom: 72px; }
+.tv-page--has-bottom-nav {
+  padding-bottom: calc(var(--tv-bottom-nav-height) + var(--tv-safe-bottom) + var(--tv-spacing-3));
+}
+.tv-page--has-bottom-nav.tv-page--has-path-nav {
+  padding-bottom: calc(
+    var(--tv-bottom-nav-height) + var(--tv-path-nav-height) + var(--tv-safe-bottom) + var(--tv-spacing-3)
+  );
+}
+@media (min-width: 900px) {
+  .tv-page--has-bottom-nav,
+  .tv-page--has-bottom-nav.tv-page--has-path-nav {
+    padding-bottom: 0;
+  }
+  .tv-page--has-path-nav {
+    padding-bottom: calc(var(--tv-path-nav-height) + var(--tv-spacing-3));
+  }
+}
 
 .tv-diario-form { max-width: 36rem; }
 .tv-diario-form__fieldset { border: none; margin: 0; padding: 0; }
@@ -202,7 +234,10 @@ h3 { font: var(--md-sys-typescale-title-large); }
   margin-bottom: var(--tv-spacing-3);
 }
 .tv-form-group { margin-bottom: var(--tv-spacing-3); display: flex; flex-direction: column; gap: var(--tv-spacing-2); }
-.tv-form-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--tv-spacing-3); }
+.tv-form-row { display: grid; grid-template-columns: 1fr; gap: var(--tv-spacing-3); }
+@media (min-width: 600px) {
+  .tv-form-row { grid-template-columns: repeat(3, 1fr); }
+}
 .tv-tag-picker { display: flex; flex-wrap: wrap; gap: var(--tv-spacing-2); }
 
 .tv-quiz { max-width: var(--tv-content-max-width); }

@@ -127,14 +127,23 @@ def build_schema_blocks(
     doc = ctx.get("_doc") or {}
 
     if page_type == "home":
-        blocks.append(dumps_json_ld(website_schema(base_url, builder.site_name)))
         blocks.append(
             dumps_json_ld(
-                organization_schema(
-                    base_url,
-                    builder.site_name,
-                    same_as=builder.social.get("same_as") or None,
-                )
+                {
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {k: v for k, v in website_schema(base_url, builder.site_name).items() if k != "@context"},
+                        {
+                            k: v
+                            for k, v in organization_schema(
+                                base_url,
+                                builder.site_name,
+                                same_as=builder.social.get("same_as") or None,
+                            ).items()
+                            if k != "@context"
+                        },
+                    ],
+                }
             )
         )
 
@@ -198,20 +207,27 @@ def build_schema_blocks(
         if faq:
             blocks.append(dumps_json_ld(faq))
     elif page_type == "catalog" and url:
-        blocks.append(
-            dumps_json_ld(
-                webpage_schema(
-                    base_url, title=title, description=description, url=url, italy_context=True
-                )
+        catalog_schemas = [
+            webpage_schema(
+                base_url, title=title, description=description, url=url, italy_context=True
             )
-        )
+        ]
         varieties = ctx.get("varieties") or []
         if varieties:
-            blocks.append(
-                dumps_json_ld(
-                    item_list_schema(base_url, name=title, url=url, items=varieties)
-                )
+            catalog_schemas.append(
+                item_list_schema(base_url, name=title, url=url, items=varieties)
             )
+        blocks.append(
+            dumps_json_ld(
+                {
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {k: v for k, v in schema.items() if k != "@context"}
+                        for schema in catalog_schemas
+                    ],
+                }
+            )
+        )
     elif page_type in ("gioca", "diario", "community", "quiz") and url:
         blocks.append(
             dumps_json_ld(

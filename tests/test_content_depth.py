@@ -169,9 +169,23 @@ def test_controversy_depth(path: Path):
     doc = json.loads(path.read_text(encoding="utf-8"))
     text = _controversy_text(doc)
     positions = [b for b in doc["body"]["blocks"] if b.get("type") == "positions"]
+    bibliography = [b for b in doc["body"]["blocks"] if b.get("type") == "bibliography"]
+    for section in [b for b in doc["body"]["blocks"] if b.get("type") == "level_section"]:
+        bibliography.extend(
+            b for b in section.get("blocks", []) if b.get("type") == "bibliography"
+        )
     assert positions, f"{path.name} missing positions"
+    cited_books = {
+        str(item.get("tema", "")).split("-", 1)[0]
+        for block in bibliography
+        for item in block.get("items", [])
+        if item.get("tema")
+    }
     for item in positions[0]["items"]:
         assert len(item.get("tesi", "")) >= 80, f"{path.name} tesi too short for {item.get('fonte')}"
+        assert item.get("fonte") in cited_books, (
+            f"{path.name} missing bibliography reference for fonte {item.get('fonte')}"
+        )
     assert _word_count(text) >= 210, f"{path.name} total too short ({_word_count(text)} words)"
     assert "Il cuore della questione" in text, f"{path.name} missing cuore section"
     desc = doc.get("meta", {}).get("description", "")

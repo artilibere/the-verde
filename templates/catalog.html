@@ -3,12 +3,18 @@
 <link rel="preload" href="/assets/js/config/varieties.json" as="fetch" crossorigin>
 {% endblock %}
 {% block content %}
-<header class="tv-page-header">
-  <h1 class="tv-font-serif">{{ title | default('Varietà di tè verde') }}</h1>
+<header class="tv-page-header tv-catalog-header">
+  <div class="tv-catalog-header__top">
+    <h1 class="tv-font-serif">{{ title | default('Varietà di tè verde') }}</h1>
+    <button type="button" id="catalog-filter-toggle" class="tv-btn tv-btn--outlined tv-catalog-filter-toggle" aria-expanded="false" aria-controls="catalog-filters">
+      {% with name='filter', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}
+      Filtra
+    </button>
+  </div>
   <p class="tv-page-header__lead">Catalogo enciclopedico: origine, stile, preparazione e contesto italiano. Solo <em>Camellia sinensis</em>.</p>
 </header>
 <div class="tv-catalog-layout">
-  <aside class="tv-filter-bar" aria-label="Filtri catalogo">
+  <aside class="tv-filter-bar" id="catalog-filters" aria-label="Filtri catalogo">
     <fieldset class="tv-filter-group">
       <legend class="tv-filter-group__legend">Origine</legend>
       <div id="filter-origine" class="tv-filter-options"></div>

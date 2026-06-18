@@ -10,12 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from site_builder.citations import (
-    CONTROVERSY_PROSPETTIVE,
-    bib_kb_prospettiva,
-    bibliography_block,
-    legacy_to_bib_entry,
-)
+from site_builder.citations import bibliography_block, legacy_to_bib_entry
 
 GUIDE = ROOT / "content" / "guide"
 

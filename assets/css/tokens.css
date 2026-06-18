@@ -44,8 +44,9 @@
   --tv-header-height: 64px;
   --tv-app-bar-height: 56px;
   --tv-bottom-nav-height: 64px;
+  --tv-path-nav-height: 56px;
   --tv-feed-max-width: 480px;
-  --tv-feed-gap: 16px;
+  --tv-feed-gap: 12px;
   --tv-grid-min-col-width: 16rem;
   --tv-safe-bottom: env(safe-area-inset-bottom, 0px);
   --md-sys-motion-duration-short: 150ms;

@@ -141,13 +141,7 @@ ARTICLES = {
         [
             {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Cosa hai imparato"}]},
             p("Tradizione e laboratorio convergono sul potenziale preventivo, divergono su dosi e certezze. Bevi per piacere; eventuali benefici sono un plus, non una promessa."),
-            *fonti(
-                [
-                    "hara, temi salute",
-                    "prospettive_contrastanti in books/knowledge-base.json",
-                ],
-                slug="scienza-tradizione",
-            ),
+            *fonti(["hara, temi salute"], slug="scienza-tradizione"),
         ],
         [
             ("Quiz miti", "/gioca/quiz/mito-verita/", "verifica"),

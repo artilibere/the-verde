@@ -5,6 +5,8 @@ from __future__ import annotations
 from html import escape
 from typing import Any
 
+from site_builder.citations import enrich_position_items, fonte_autore, is_kb_bibliography_entry
+
 
 def render_spans(spans: list[dict]) -> str:
     out: list[str] = []
@@ -75,13 +77,14 @@ def render_block(block: dict) -> str:
 
     if btype == "positions":
         items = []
-        for pos in block.get("items", []):
-            fonte = escape(pos.get("fonte", ""))
+        for pos in enrich_position_items(block.get("items", [])):
+            fonte_id = escape(pos.get("fonte", ""))
+            autore = escape(pos.get("autore", fonte_autore(pos.get("fonte", ""))))
             tesi = escape(pos.get("tesi", ""))
             items.append(
-                f'<blockquote class="tv-position" cite="{fonte}">'
+                f'<blockquote class="tv-position" cite="{fonte_id}">'
                 f'<p class="tv-position__tesi">{tesi}</p>'
-                f'<footer class="tv-position__fonte">— {fonte}</footer></blockquote>'
+                f'<footer class="tv-position__fonte">— {autore}</footer></blockquote>'
             )
         return f'<div class="tv-positions">{"".join(items)}</div>'
 
@@ -156,42 +159,21 @@ def _render_related(items: list[dict]) -> str:
 
 
 def render_bibliography(items: list[dict]) -> str:
-    """Formal bibliography section (author, title, KB tema, pages)."""
+    """Formal bibliography: author and book title only."""
+    items = [item for item in items if not is_kb_bibliography_entry(item)]
     if not items:
         return ""
     entries = []
     for item in items:
         author = escape(item.get("author", ""))
         title = escape(item.get("title", ""))
-        tema = escape(item.get("tema", ""))
-        sotto = escape(item.get("sotto_tema", ""))
-        pages = item.get("pages")
-        kb_ref = item.get("kb_ref")
-
-        work = (
+        entries.append(
+            f'<li class="tv-bibliography__item">'
             f'<span class="tv-bibliography__work">'
             f'<span class="tv-bibliography__author">{author}</span>, '
-            f'<cite class="tv-bibliography__title">{title}</cite>.</span>'
+            f'<cite class="tv-bibliography__title">{title}</cite>.'
+            f"</span></li>"
         )
-        if kb_ref and not pages:
-            loc = (
-                f'<span class="tv-bibliography__loc">'
-                f'<span class="tv-bibliography__tema">{tema}</span> — '
-                f'«{sotto}» '
-                f'(<code class="tv-bibliography__kb">{escape(kb_ref)}</code>).</span>'
-            )
-        else:
-            page_label = f"pp. {escape(str(pages))}" if pages else ""
-            loc = (
-                f'<span class="tv-bibliography__loc">'
-                f'Tema <span class="tv-bibliography__tema">{tema}</span>, '
-                f'«{sotto}»'
-            )
-            if page_label:
-                loc += f", {page_label}"
-            loc += ".</span>"
-
-        entries.append(f'<li class="tv-bibliography__item">{work} {loc}</li>')
 
     return (
         '<section class="tv-bibliography" aria-label="Bibliografia">'

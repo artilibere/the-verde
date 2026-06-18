@@ -52,7 +52,7 @@ def build_catalog_and_pages(builder) -> None:
             {
                 "slug": v["slug"],
                 "title": v["title"],
-                "brief": (v.get("brief") or "")[:120],
+                "brief": (v.get("brief") or "")[:80],
                 "origine": v.get("origine_slug", ""),
                 "stile": v.get("stile_slug", ""),
                 "caffeina": v.get("caffeina_slug", ""),

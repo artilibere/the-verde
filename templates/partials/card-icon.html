@@ -1,0 +1,21 @@
+{% set card_icons = {
+  'brief': 'grid',
+  'brew': 'thermo',
+  'sensory': 'nose',
+  'gear': 'list',
+  'steps': 'list',
+  'errors': 'info',
+  'italy': 'italy',
+  'pairings': 'cup',
+  'faq': 'info',
+  'related': 'book',
+  'positions': 'info',
+  'intro': 'grid',
+  'content': 'book',
+  'deep': 'info',
+  'controversies': 'info',
+  'themes': 'grid'
+} %}
+{% if card.id in card_icons %}
+{% with name=card_icons[card.id], class='tv-card__icon' %}{% include 'partials/icon.html' %}{% endwith %}
+{% endif %}

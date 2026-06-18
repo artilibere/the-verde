@@ -2,7 +2,12 @@
 
 from __future__ import annotations
 
-from site_builder.citations import legacy_to_bib_entry, migrate_document
+from site_builder.citations import fonte_autore, legacy_to_bib_entry, migrate_document
+
+
+def test_fonte_autore_maps_book_id():
+    assert fonte_autore("sommelier") == "Bisogno, Victoria; Pettigrew, Jane"
+    assert fonte_autore("rosen") == "Rosen, Diana"
 
 
 def test_legacy_tema_pattern():

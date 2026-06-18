@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 import shutil
 import sys
 from datetime import date
@@ -430,6 +431,8 @@ class SiteBuilder:
         blocks = doc.get("body", {}).get("blocks", []) if doc else []
         season = self._current_season()
         infusion = self._infusion_of_day(season)
+        raw_html = render_blocks(blocks) if blocks else ""
+        content_html = re.sub(r"<h1[^>]*>.*?</h1>\s*", "", raw_html, count=1, flags=re.I | re.S) if raw_html else ""
         page = self.render(
             "home.html",
             page_type="home",
@@ -437,7 +440,7 @@ class SiteBuilder:
             seo_title=meta.get("title", self.site_name),
             meta_description=meta.get("meta_description") or meta.get("description", ""),
             meta=meta,
-            content_html=render_blocks(blocks) if blocks else "",
+            content_html=content_html,
             varieties=self.varieties[:4],
             guides=self.guides[:3],
             season=season,
@@ -529,6 +532,13 @@ class SiteBuilder:
             for img in images_src.iterdir():
                 if img.is_file():
                     shutil.copy(img, images_out / img.name)
+        icons_src = self.assets_dir / "icons"
+        if icons_src.exists():
+            icons_out = self.out_dir / "assets" / "icons"
+            icons_out.mkdir(parents=True, exist_ok=True)
+            for icon in icons_src.iterdir():
+                if icon.is_file():
+                    shutil.copy(icon, icons_out / icon.name)
         for name in ("_headers", "_redirects"):
             src = ROOT / name
             if src.exists():

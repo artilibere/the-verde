@@ -12,6 +12,7 @@ CSS_BUNDLE = ("tokens.css", "base.css", "components.css")
 # Bundled to cut HTTP requests on hot pages (order preserved).
 JS_PAGE_BUNDLES: dict[str, tuple[str, ...]] = {
     "core": ("nav", "level-toggle"),
+    "article-page": ("share",),
     "diario-page": ("supabase-config", "diario", "badges"),
     "percorsi": ("badges", "paths"),
     "variety-page": ("scroll-spy", "share"),
@@ -85,6 +86,7 @@ def minify_js(text: str) -> str:
 
 
 def minify_html(html: str) -> str:
+    html = re.sub(r"<!--.*?-->", "", html, flags=re.DOTALL)
     html = re.sub(r">\s+<", "><", html)
     return html.strip() + "\n"
 
@@ -93,7 +95,15 @@ def dumps_compact(data: object) -> str:
     return json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 
 
+def _purge_hashed_assets(directory: Path, base_name: str, ext: str) -> None:
+    if not directory.exists():
+        return
+    for path in directory.glob(f"{base_name}.*{ext}"):
+        path.unlink(missing_ok=True)
+
+
 def _write_hashed_file(directory: Path, base_name: str, ext: str, content: str) -> str:
+    _purge_hashed_assets(directory, base_name, ext)
     content_hash = short_hash(content.encode("utf-8"))
     out_name = f"{base_name}.{content_hash}{ext}"
     (directory / out_name).write_text(content, encoding="utf-8")

@@ -1,18 +1,22 @@
-<dl class="tv-brew-card tv-metric-row" aria-label="Parametri di preparazione">
-  <div class="tv-brew-card__row">
-    <dt class="tv-brew-card__label">Temperatura</dt>
-    <dd class="tv-brew-card__value"><span class="tv-brew-card__number">{{ body.temp }}</span>°C</dd>
+<dl class="tv-metric-row" aria-label="Parametri di preparazione">
+  <div class="tv-metric-row__item">
+    {% with name='thermo', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}
+    <span class="tv-metric-row__value">{{ body.temp }}</span><span class="tv-metric-row__unit">°C</span>
+    <span class="tv-metric-row__label">Temperatura</span>
   </div>
-  <div class="tv-brew-card__row">
-    <dt class="tv-brew-card__label">Dosaggio</dt>
-    <dd class="tv-brew-card__value"><span class="tv-brew-card__number">{{ body.grams }}</span> g / 100 ml</dd>
+  <div class="tv-metric-row__item">
+    {% with name='scale', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}
+    <span class="tv-metric-row__value">{{ body.grams }}</span><span class="tv-metric-row__unit">g</span>
+    <span class="tv-metric-row__label">/ 100 ml</span>
   </div>
-  <div class="tv-brew-card__row">
-    <dt class="tv-brew-card__label">Prima infusione</dt>
-    <dd class="tv-brew-card__value"><span class="tv-brew-card__number">{{ body.seconds }}</span> sec</dd>
+  <div class="tv-metric-row__item">
+    {% with name='timer', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}
+    <span class="tv-metric-row__value">{{ body.seconds }}</span><span class="tv-metric-row__unit">sec</span>
+    <span class="tv-metric-row__label">Prima infusione</span>
   </div>
-  <div class="tv-brew-card__row">
-    <dt class="tv-brew-card__label">Infusioni</dt>
-    <dd class="tv-brew-card__value">{{ body.infusions }}</dd>
+  <div class="tv-metric-row__item">
+    {% with name='cup', size='sm' %}{% include 'partials/icon.html' %}{% endwith %}
+    <span class="tv-metric-row__value">{{ body.infusions }}</span>
+    <span class="tv-metric-row__label">Infusioni</span>
   </div>
 </dl>

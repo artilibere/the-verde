@@ -188,14 +188,6 @@
                 "tema": "pellegrino-varietà",
                 "sotto_tema": "Tè verde e cucina (Matcha, kombucha)",
                 "pages": "76–81"
-              },
-              {
-                "author": "The Verde",
-                "title": "Knowledge base sul tè verde",
-                "tema": "bevanda-vs-integratore",
-                "sotto_tema": "Prospettiva contrastante: Meglio bere tè verde o assumere estratti?",
-                "pages": null,
-                "kb_ref": "books/knowledge-base.json"
               }
             ]
           }

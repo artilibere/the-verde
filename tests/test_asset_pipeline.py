@@ -17,6 +17,18 @@ def test_core_bundle_includes_nav_and_level_toggle():
     assert JS_PAGE_BUNDLES["core"] == ("nav", "level-toggle")
 
 
+def test_article_page_bundle_includes_share():
+    assert JS_PAGE_BUNDLES["article-page"] == ("share",)
+
+
+def test_minify_html_strips_comments():
+    from asset_pipeline import minify_html
+
+    html = "<div><!-- comment --><p>ok</p></div>"
+    assert "<!--" not in minify_html(html)
+    assert "<p>ok</p>" in minify_html(html)
+
+
 def test_variety_and_controversy_page_bundles():
     assert JS_PAGE_BUNDLES["variety-page"] == ("scroll-spy", "share")
     assert JS_PAGE_BUNDLES["controversy-page"] == ("poll", "share")

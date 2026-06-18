@@ -10,12 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from site_builder.citations import (
-    CONTROVERSY_PROSPETTIVE,
-    bib_kb_prospettiva,
-    bibliography_block,
-    legacy_to_bib_entry,
-)
+from site_builder.citations import bibliography_block, legacy_to_bib_entry
 IMPARA = ROOT / "content" / "impara"
 CONTRO = IMPARA / "controversie"
 
@@ -73,11 +68,6 @@ def fonti(
             continue
         seen.add(key)
         entries.append(entry)
-    if doc_type == "controversy" and slug and slug in CONTROVERSY_PROSPETTIVE:
-        pid, q = CONTROVERSY_PROSPETTIVE[slug]
-        kb_key = f"The Verde|{pid}|"
-        if not any(k.startswith(kb_key) for k in seen):
-            entries.append(bib_kb_prospettiva(pid, q))
     return [bibliography_block(entries)] if entries else []
 
 def intro_deep(intro_paras: list[str], deep_blocks: list[dict]) -> list[dict]:
@@ -648,7 +638,6 @@ CONTROVERSIES: dict[str, dict] = {
                 [
                     "hara, temi salute",
                     "rosen, tema rosen-salute",
-                    "prospettive_contrastanti KB",
                 ],
                 slug="salute-scienza-vs-tradizione",
                 doc_type="controversy",

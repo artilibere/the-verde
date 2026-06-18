@@ -5,6 +5,7 @@ from __future__ import annotations
 from copy import deepcopy
 from typing import Any
 
+from site_builder.citations import enrich_position_items, is_kb_bibliography_entry
 from site_builder.document import document_to_meta, spans_to_plain, collect_faq_items
 from site_builder.enrichers._seo_core import (
     article_schema,
@@ -180,7 +181,13 @@ def _prose_blocks_from_list(blocks: list[dict]) -> list[dict]:
                 }
             )
         elif btype == "bibliography":
-            prose.append({"type": "bibliography", "items": block.get("items", [])})
+            items = [
+                item
+                for item in block.get("items", [])
+                if not is_kb_bibliography_entry(item)
+            ]
+            if items:
+                prose.append({"type": "bibliography", "items": items})
         elif btype == "callout":
             prose.extend(spans_to_prose_blocks(block.get("spans", [])))
     return prose
@@ -228,7 +235,10 @@ def blocks_to_controversy_cards(blocks: list[dict]) -> list[dict]:
     for block in blocks:
         btype = block.get("type")
         if btype == "positions":
-            cards["positions"] = _card("positions", {"type": "positions", "items": block.get("items", [])})
+            cards["positions"] = _card(
+                "positions",
+                {"type": "positions", "items": enrich_position_items(block.get("items", []))},
+            )
         elif btype == "level_section":
             level = block.get("level", "intro")
             if level == "intro":
@@ -366,7 +376,12 @@ def blocks_to_article_cards(blocks: list[dict]) -> list[dict]:
             if inner:
                 cards.append(_card(card_id, {"type": "prose", "blocks": inner}))
         elif btype == "positions":
-            cards.append(_card("positions", {"type": "positions", "items": block.get("items", [])}))
+            cards.append(
+                _card(
+                    "positions",
+                    {"type": "positions", "items": enrich_position_items(block.get("items", []))},
+                )
+            )
         elif btype == "related_links":
             cards.append(_card("related", {"type": "related", "items": block.get("items", [])}))
         elif btype == "faq":

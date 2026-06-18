@@ -12,14 +12,11 @@
       <h2 class="tv-prose__heading tv-prose__heading--2">Bibliografia</h2>
       <ol class="tv-bibliography__list">
         {% for item in block['items'] %}
+        {% if item.kb_ref != 'books/knowledge-base.json' and item.author != 'The Verde' %}
         <li class="tv-bibliography__item">
           <span class="tv-bibliography__work"><span class="tv-bibliography__author">{{ item.author }}</span>, <cite class="tv-bibliography__title">{{ item.title }}</cite>.</span>
-          {% if item.kb_ref and not item.pages %}
-          <span class="tv-bibliography__loc"><span class="tv-bibliography__tema">{{ item.tema }}</span> — «{{ item.sotto_tema }}» (<code class="tv-bibliography__kb">{{ item.kb_ref }}</code>).</span>
-          {% else %}
-          <span class="tv-bibliography__loc">Tema <span class="tv-bibliography__tema">{{ item.tema }}</span>, «{{ item.sotto_tema }}»{% if item.pages %}, pp. {{ item.pages }}{% endif %}.</span>
-          {% endif %}
         </li>
+        {% endif %}
         {% endfor %}
       </ol>
     </section>

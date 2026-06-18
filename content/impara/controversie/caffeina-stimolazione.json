@@ -216,14 +216,6 @@
                 "tema": "onuma-salute-pratica",
                 "sotto_tema": "Contenuto caffeina per varietà",
                 "pages": "1267–1275"
-              },
-              {
-                "author": "The Verde",
-                "title": "Knowledge base sul tè verde",
-                "tema": "caffeina-stimolazione",
-                "sotto_tema": "Prospettiva contrastante: Il tè verde stimola o rilassa?",
-                "pages": null,
-                "kb_ref": "books/knowledge-base.json"
               }
             ]
           }

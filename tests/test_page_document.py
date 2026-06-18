@@ -70,6 +70,10 @@ def test_controversy_page_has_positions_card():
     assert "positions" in ids
     assert "intro" in ids
     assert ids == sorted(ids, key=lambda x: CONTROVERSY_CARD_ORDER.index(x))
+    positions_card = next(c for c in page["cards"] if c["id"] == "positions")
+    for pos in positions_card["body"]["items"]:
+        assert pos.get("autore")
+        assert pos["autore"] != pos.get("fonte")
 
 
 def test_hub_page_merges_link_cards():

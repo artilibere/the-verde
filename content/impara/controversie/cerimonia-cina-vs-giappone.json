@@ -188,14 +188,6 @@
                 "tema": "onuma-cerimonia",
                 "sotto_tema": "Cerimonia e protocollo del tè verde",
                 "pages": "15–22"
-              },
-              {
-                "author": "The Verde",
-                "title": "Knowledge base sul tè verde",
-                "tema": "cerimonia-cina-vs-giappone",
-                "sotto_tema": "Prospettiva contrastante: Come si confrontano Gongfu Cha e Chanoyu?",
-                "pages": null,
-                "kb_ref": "books/knowledge-base.json"
               }
             ]
           }

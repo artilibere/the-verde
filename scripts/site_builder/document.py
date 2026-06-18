@@ -6,6 +6,8 @@ import re
 from html import escape
 from typing import Any
 
+from site_builder.citations import enrich_position_items
+
 
 def slugify(text: str) -> str:
     text = text.lower().strip()
@@ -194,7 +196,7 @@ def document_to_meta(doc: dict, *, url: str | None = None) -> dict[str, Any]:
     )
 
     if doc.get("type") == "controversy" and meta.get("positions"):
-        meta["posizioni"] = meta["positions"]
+        meta["posizioni"] = enrich_position_items(meta["positions"])
 
     if not meta.get("brief"):
         for block in blocks:

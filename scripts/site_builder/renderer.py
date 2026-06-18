@@ -11,6 +11,9 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from site_builder.blocks import has_level_sections, render_blocks
 from site_builder.enrichers.seo_context import apply_seo
 
+ROOT = Path(__file__).resolve().parent.parent.parent
+ICON_SPRITE_PATH = ROOT / "assets" / "icons" / "tv-icons.svg"
+
 
 class TemplateRenderer:
     def __init__(self, templates_dir: Path, site_name: str, base_url: str, nav: list):
@@ -25,6 +28,9 @@ class TemplateRenderer:
         )
         self.env.globals["asset_css"] = lambda: self.css_url
         self.env.globals["asset_js"] = lambda name: self.js_urls.get(name, f"/assets/js/{name}.js")
+        self.env.globals["icon_sprite"] = (
+            ICON_SPRITE_PATH.read_text(encoding="utf-8") if ICON_SPRITE_PATH.is_file() else ""
+        )
         self._hreflang = "it"
         self._locale = "it-IT"
         self._og_image = ""
