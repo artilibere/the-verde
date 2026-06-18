@@ -333,7 +333,7 @@ def build_llms_txt(
         f"- [In Italia]({_llms_abs(base_url, '/italia/')}): abbinamenti, stagioni, momenti della giornata",
         f"- [Guide]({_llms_abs(base_url, '/guide/')}): articoli long-form editoriali",
         f"- [Gioca]({_llms_abs(base_url, '/gioca/')}): percorsi guidati e quiz",
-        f"- [Diario]({_llms_abs(base_url, '/diario/')}): registro personale infusioni (area utente)",
+        f"- [Diario]({_llms_abs(base_url, '/diario/')}): registro personale infusioni (area utente, noindex)",
     ]
 
     if varieties:

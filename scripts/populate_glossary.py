@@ -4,9 +4,14 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from site_builder.citations import bibliography_block, legacy_to_bib_entry
+
 GLOSS_DIR = ROOT / "content" / "glossario"
 
 
@@ -40,8 +45,19 @@ def faq(q: str, a: str) -> dict:
     }
 
 
-def fonti(items: list[str]) -> list[dict]:
-    return [h2("Fonti"), ul(items)]
+def fonti(items: list[str], *, slug: str | None = None) -> list[dict]:
+    entries = []
+    seen: set[str] = set()
+    for text in items:
+        entry = legacy_to_bib_entry(text, slug=slug)
+        if not entry:
+            continue
+        key = f"{entry['author']}|{entry['tema']}"
+        if key in seen:
+            continue
+        seen.add(key)
+        entries.append(entry)
+    return [bibliography_block(entries)] if entries else []
 
 
 def build_glossary(
@@ -109,7 +125,7 @@ def _entry(
     deep.append(ul(bullets))
     deep.append(links(rl))
     deep.append(faq(fq[0], fq[1]))
-    deep.extend(fonti(fonti_list))
+    deep.extend(fonti(fonti_list, slug=slug))
     ENTRIES[slug] = build_glossary(
         slug, title, description, keywords, intro, deep, temi_kb, explore_next, related_slugs
     )

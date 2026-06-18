@@ -188,34 +188,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, preparazione"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-via-del-te",
+                "sotto_tema": "Tè freddo e conservazione foglie",
+                "pages": "69"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, estate"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-salute-pratica",
+                "sotto_tema": "Tè prima dello sport, prima di dormire, a digiuno",
+                "pages": "1202–1241"
               }
             ]
           }

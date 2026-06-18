@@ -117,34 +117,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, cerimonia"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-cerimonia",
+                "sotto_tema": "Cerimonia e protocollo del tè verde",
+                "pages": "15–22"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, cerimonie"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-cerimonie",
+                "sotto_tema": "Cerimonie e galateo",
+                "pages": "4358"
               }
             ]
           }

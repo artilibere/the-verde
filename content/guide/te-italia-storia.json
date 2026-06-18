@@ -244,58 +244,53 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
+            "type": "callout",
+            "variant": "italia",
             "spans": [
               {
                 "type": "text",
-                "value": "Fonti"
+                "value": "In Italia il tè verde non compete con l'espresso al bar: trova spazio a colazione lenta, pausa pomeridiana in ufficio, dopo cena con dolci poco zuccherati. Bancha e hojicha sono i ponti più naturali per chi parte dal caffè filtro o dal decaffeinato."
               }
             ]
           },
           {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, storia e diffusione del tè"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-storia",
+                "sotto_tema": "Storia e tradizioni del tè verde",
+                "pages": "47–51"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, cultura del tè in Occidente"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Tradizioni mondiali del tè verde",
+                "pages": "85–2727"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, commercio e rituali"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-storia",
+                "sotto_tema": "Storia e cultura del tè",
+                "pages": "190–200"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, adozione contemporanea"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-vincolo",
+                "sotto_tema": "Takeko's Tea: dal ricordo al progetto imprenditoriale",
+                "pages": "165–172"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "Treccani — voce «tè»"
-                  }
-                ]
+                "author": "Treccani",
+                "title": "Enciclopedia on line",
+                "tema": "treccani",
+                "sotto_tema": "voce «voce «tè»»",
+                "pages": null,
+                "kb_ref": "https://www.treccani.it"
               }
             ]
           }

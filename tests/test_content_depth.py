@@ -37,6 +37,14 @@ def _all_text_from_blocks(blocks: list[dict]) -> str:
                 parts.append(item.get("reason", ""))
         elif btype == "level_section":
             parts.append(_all_text_from_blocks(block.get("blocks", [])))
+        elif btype == "bibliography":
+            parts.append("Bibliografia")
+            for item in block.get("items", []):
+                parts.extend(
+                    str(item.get(k, ""))
+                    for k in ("author", "title", "tema", "sotto_tema", "pages")
+                    if item.get(k)
+                )
     return " ".join(parts)
 
 

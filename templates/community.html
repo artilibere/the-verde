@@ -1,3 +1,6 @@
 {% extends "base.html" %}
-{% block content %}<h1>Community</h1><p>Discussione moderata via Giscus.</p><div id="giscus-container"></div>{% endblock %}
+{% block head_extra %}
+<link rel="preconnect" href="https://giscus.app" crossorigin>
+{% endblock %}
+{% block content %}<h1>Community</h1><p>Discussione moderata via Giscus.</p><div id="giscus-container" aria-label="Commenti della community"></div>{% endblock %}
 {% block scripts %}<script src="{{ asset_js('giscus') }}" defer></script>{% endblock %}

@@ -24,10 +24,23 @@ h3 { font: var(--md-sys-typescale-title-large); }
   border-radius: var(--md-sys-shape-corner-small);
   text-decoration: none;
 }
-.tv-skip-link:focus {
+.tv-skip-link:focus,
+.tv-skip-link:focus-visible {
   left: var(--tv-spacing-3);
   box-shadow: var(--tv-focus-ring);
   outline: none;
+}
+
+.tv-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .tv-main {

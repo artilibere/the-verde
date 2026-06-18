@@ -158,34 +158,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, Lung Ching"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Scheda sensoriale Lung Ching (Dragon Well)",
+                "pages": null
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, Long Jing"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Verdi cinesi (Long Jing, Bi Lo Chun, Gunpowder…)",
+                "pages": "112–122"
               }
             ]
           }

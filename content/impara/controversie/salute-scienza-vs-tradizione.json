@@ -3,7 +3,7 @@
   "type": "controversy",
   "slug": "salute-scienza-vs-tradizione",
   "meta": {
-    "title": "Quanto è davvero dimostrato che il tè verde faccia bene?",
+    "title": "Tè verde e salute: cosa è dimostrato?",
     "description": "Tradizione millenaria, studi epidemiologici e trial clinici: cosa possiamo dire con onestà.",
     "keywords": [
       "salute scienza vs tradizione",
@@ -265,6 +265,38 @@
                 "sotto_tema": "Prospettiva contrastante: Quanto è dimostrato che il tè verde faccia bene?",
                 "pages": null,
                 "kb_ref": "books/knowledge-base.json"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Il tè verde fa davvero bene alla salute?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Le catechine hanno potenziale antiossidante documentato, ma gli effetti clinici dipendono da dose, biodisponibilità e stile di vita. Non è una medicina miracolosa."
+              }
+            ]
+          },
+          {
+            "question": "Quante tazze al giorno sono «scientifiche»?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Non esiste un numero magico valido per tutti: studi usano estratti o popolazioni specifiche. In Italia conviene moderazione e qualità, non litri per obbligo."
+              }
+            ]
+          },
+          {
+            "question": "Tradizione e scienza si contraddicono?",
+            "answer_spans": [
+              {
+                "type": "text",
+                "value": "Si integrano con onestà: la tradizione osserva benefici secolari; la scienza li qualifica e limita. Entrambe sconsigliano hype detox e claim non provati."
               }
             ]
           }

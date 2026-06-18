@@ -4,10 +4,30 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from site_builder.citations import bibliography_block, legacy_to_bib_entry
+
 VAR_DIR = ROOT / "content" / "varieta"
+
+
+def _fonti_block(strings: list[str], *, slug: str) -> dict:
+    entries = []
+    seen: set[str] = set()
+    for text in strings:
+        entry = legacy_to_bib_entry(text, slug=slug)
+        if not entry:
+            continue
+        key = f"{entry['author']}|{entry['tema']}"
+        if key in seen:
+            continue
+        seen.add(key)
+        entries.append(entry)
+    return bibliography_block(entries)
 
 ENRICHMENT: dict[str, dict] = {
     "bancha": {
@@ -228,12 +248,7 @@ def enrich_variety(doc: dict, data: dict) -> dict:
         "blocks": [
             h2(data["deep_title"]),
             p(data["deep_text"]),
-            h2("Fonti"),
-            {
-                "type": "list",
-                "ordered": False,
-                "items": [{"spans": [{"type": "text", "value": f}]} for f in data["fonti"]],
-            },
+            _fonti_block(data["fonti"], slug=slug),
         ],
     }
     # Insert before related_links if present, else append

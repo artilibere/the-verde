@@ -1,4 +1,8 @@
 {% extends "base.html" %}
+{% block head_extra %}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://*.supabase.co" crossorigin>
+{% endblock %}
 {% block content %}
 <header class="tv-page-header"><h1>{{ title }}</h1></header>
 {% if form_mode == "new" %}

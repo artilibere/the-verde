@@ -154,42 +154,29 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, pp. 45–52"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-pianta",
+                "sotto_tema": "La pianta del tè e la raccolta",
+                "pages": "15–17"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, pp. 47–51"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-storia",
+                "sotto_tema": "Scoperta e miti (Shen Nong, Bodhidharma)",
+                "pages": "47–51"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "Treccani — Camellia"
-                  }
-                ]
+                "author": "Treccani",
+                "title": "Enciclopedia on line",
+                "tema": "treccani",
+                "sotto_tema": "voce «Camellia»",
+                "pages": null,
+                "kb_ref": "https://www.treccani.it"
               }
             ]
           }

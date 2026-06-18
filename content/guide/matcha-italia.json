@@ -3,7 +3,7 @@
   "type": "article",
   "slug": "matcha-italia",
   "meta": {
-    "title": "Perché il matcha non è una moda passeggera in Italia",
+    "title": "Matcha in Italia: oltre la moda",
     "description": "Dal boom pasticceria al matcha cerimoniale: come il verde in polvere ha trovato radici nel gusto italiano.",
     "keywords": [
       "matcha Italia",
@@ -239,58 +239,43 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, verdi giapponesi e matcha"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Verdi giapponesi (Sencha, Matcha, Gyokuro, Bancha…)",
+                "pages": "123–128"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, matcha in cucina e quotidianità"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-matcha-cucina",
+                "sotto_tema": "Matcha, pelle e riuso",
+                "pages": "23–24"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, usi pratici e estetica della foglia"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-poesia",
+                "sotto_tema": "La foglia come oggetto estetico",
+                "pages": "146–151"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "hara, catechine e foglia intera"
-                  }
-                ]
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-panoramica",
+                "sotto_tema": "Caratteristiche del tè verde giapponese",
+                "pages": "74"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "Treccani — voce «tè» (storia del consumo in Europa)"
-                  }
-                ]
+                "author": "Treccani",
+                "title": "Enciclopedia on line",
+                "tema": "treccani",
+                "sotto_tema": "voce «voce «tè» (storia del consumo in Europa)»",
+                "pages": null,
+                "kb_ref": "https://www.treccani.it"
               }
             ]
           }

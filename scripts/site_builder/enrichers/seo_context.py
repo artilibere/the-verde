@@ -19,6 +19,52 @@ from site_builder.enrichers.schema_org import supplementary_schemas
 from site_builder.document import collect_faq_items
 
 
+def _collect_hub_list_items(ctx: dict) -> list[dict]:
+    """Flatten hub navigation links for ItemList JSON-LD."""
+    items: list[dict] = []
+    seen_urls: set[str] = set()
+
+    def add(title: str, url: str) -> None:
+        u = (url or "").strip()
+        t = (title or "").strip()
+        if not u or u in seen_urls:
+            return
+        seen_urls.add(u)
+        items.append({"title": t, "url": u})
+
+    for item in ctx.get("hub_list_items") or ctx.get("items") or []:
+        add(item.get("title", ""), item.get("url", ""))
+
+    for section in ctx.get("sections") or []:
+        for item in section.get("items") or []:
+            add(item.get("title", ""), item.get("url", ""))
+
+    page = ctx.get("page") or {}
+    for card in page.get("cards", []):
+        body = card.get("body") or {}
+        if body.get("type") not in ("linkGrid", "related"):
+            continue
+        for item in body.get("items") or []:
+            add(item.get("title") or item.get("name", ""), item.get("url", ""))
+
+    return items
+
+
+def _append_hub_item_list(
+    blocks: list[str],
+    *,
+    base_url: str,
+    title: str,
+    url: str,
+    ctx: dict,
+) -> None:
+    hub_items = _collect_hub_list_items(ctx)
+    if hub_items:
+        blocks.append(
+            dumps_json_ld(item_list_schema(base_url, name=title, url=url, items=hub_items))
+        )
+
+
 def apply_seo(ctx: dict, builder) -> None:
     meta = ctx.get("meta") or {}
     url = ctx.get("seo_url") or ctx.get("url") or meta.get("url")
@@ -138,6 +184,7 @@ def build_schema_blocks(
                 italia_article_schema(base_url, title=title, description=description, url=url)
             )
         )
+        _append_hub_item_list(blocks, base_url=base_url, title=title, url=url, ctx=ctx)
     elif page_type == "glossary" and url:
         blocks.append(
             dumps_json_ld(
@@ -181,6 +228,7 @@ def build_schema_blocks(
                 )
             )
         )
+        _append_hub_item_list(blocks, base_url=base_url, title=title, url=url, ctx=ctx)
 
     if doc:
         for extra in supplementary_schemas(base_url, doc=doc, meta=meta, url=url or ""):

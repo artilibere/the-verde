@@ -166,42 +166,68 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-cerimonie",
+                "sotto_tema": "Cerimonie e galateo",
+                "pages": "4358"
+              },
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Chanoyu giapponese: koicha e usucha",
+                "pages": "91–93"
+              },
+              {
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-cerimonia",
+                "sotto_tema": "Cerimonia e protocollo del tè verde",
+                "pages": "15–22"
+              },
+              {
+                "author": "The Verde",
+                "title": "Knowledge base sul tè verde",
+                "tema": "cerimonia-cina-vs-giappone",
+                "sotto_tema": "Prospettiva contrastante: Come si confrontano Gongfu Cha e Chanoyu?",
+                "pages": null,
+                "kb_ref": "books/knowledge-base.json"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Qual è la differenza tra gong fu cha e chanoyu?",
+            "answer_spans": [
               {
                 "type": "text",
-                "value": "Fonti"
+                "value": "Il gong fu cha cinese è conviviale, con infusioni multiple in tazze piccole; il chanoyu giapponese è rituale formale attorno al matcha, con percorso estetico nel roji."
               }
             ]
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
+            "question": "Posso praticare un rito del tè in casa in Italia?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, cerimonie"
-                  }
-                ]
-              },
+                "type": "text",
+                "value": "Sì: un gong fu semplificato con gaiwan o un usucha quotidiano con chasen non richiedono sala cerimoniale. L'autenticità sta nell'attenzione, non nel kitsch."
+              }
+            ]
+          },
+          {
+            "question": "Il tè «cerimoniale» in confezione regalo è chanoyu?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, chanoyu"
-                  }
-                ]
-              },
-              {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, cerimonia"
-                  }
-                ]
+                "type": "text",
+                "value": "Spesso no: è marketing. Il chanoyu è disciplina anni; la confezione può contenere matcha da cucina valido, ma non è automaticamente rito."
               }
             ]
           }

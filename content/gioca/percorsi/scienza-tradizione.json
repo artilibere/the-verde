@@ -117,34 +117,22 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "hara, temi salute"
-                  }
-                ]
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-panoramica",
+                "sotto_tema": "Prospettiva scientifica globale",
+                "pages": "71–89"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "prospettive_contrastanti in books/knowledge-base.json"
-                  }
-                ]
+                "author": "The Verde",
+                "title": "Knowledge base sul tè verde",
+                "tema": "prospettive_contrastanti",
+                "sotto_tema": "Prospettive contrastanti incrociate",
+                "pages": null,
+                "kb_ref": "books/knowledge-base.json"
               }
             ]
           }

@@ -385,14 +385,15 @@ class SiteBuilder:
             url="/diario/",
             meta_description="Registra le tue infusioni: varietà, temperatura e note sensoriali.",
             varieties=self.varieties,
+            noindex=True,
             breadcrumbs=self.breadcrumbs(("Diario", "/diario/")),
         )
         write_page(self.out_dir / "diario", page)
-        self.track_sitemap("/diario/", priority=0.4, changefreq="monthly")
         nuova = self.render(
             "diario.html",
             page_type="diario",
             title="Nuova infusione",
+            url="/diario/nuova/",
             varieties=self.varieties,
             form_mode="new",
             noindex=True,
@@ -407,16 +408,18 @@ class SiteBuilder:
             title="Community",
             url="/community/",
             meta_description="Discussioni sul tè verde in Italia — commenti e scambio tra appassionati.",
+            noindex=True,
             breadcrumbs=self.breadcrumbs(("Community", "/community/")),
         )
         write_page(self.out_dir / "community", page)
-        self.track_sitemap("/community/", priority=0.4, changefreq="monthly")
 
     def build_search(self) -> None:
         page = self.render(
             "search.html",
             page_type="search",
             title="Cerca",
+            url="/cerca/",
+            meta_description="Cerca varietà, glossario, guide e articoli su the-verde.it.",
             breadcrumbs=self.breadcrumbs(("Cerca", "/cerca/")),
         )
         write_page(self.out_dir / "cerca", page)

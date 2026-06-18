@@ -11,6 +11,7 @@ from site_builder.enrichers._seo_core import (
     breadcrumb_schema,
     defined_term_schema,
     faq_schema,
+    item_list_schema,
     italia_article_schema,
     variety_schema,
     webpage_schema,
@@ -461,6 +462,21 @@ def build_schema_graph(
             graph.append(
                 webpage_schema(base_url, title=title, description=description, url=url, italy_context=True)
             )
+        hub_items: list[dict] = []
+        seen_urls: set[str] = set()
+        for card in page.get("cards", []):
+            body = card.get("body") or {}
+            if body.get("type") not in ("linkGrid", "related"):
+                continue
+            for item in body.get("items") or []:
+                item_url = (item.get("url") or "").strip()
+                item_title = (item.get("title") or item.get("name") or "").strip()
+                if not item_url or item_url in seen_urls:
+                    continue
+                seen_urls.add(item_url)
+                hub_items.append({"title": item_title, "url": item_url})
+        if hub_items:
+            graph.append(item_list_schema(base_url, name=title, url=url, items=hub_items))
 
     faq_types = ("article", "controversy", "glossary", "hub", "legal", "guide")
     if page_type in faq_types or page_type == "variety":

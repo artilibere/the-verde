@@ -10,7 +10,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from site_builder.citations import bib_item, bib_kb_prospettiva, bibliography_block
+from site_builder.citations import (
+    CONTROVERSY_PROSPETTIVE,
+    bib_kb_prospettiva,
+    bibliography_block,
+    legacy_to_bib_entry,
+)
 IMPARA = ROOT / "content" / "impara"
 CONTRO = IMPARA / "controversie"
 
@@ -51,14 +56,29 @@ def callout_italia(text: str) -> dict:
     return {"type": "callout", "variant": "italia", "spans": [{"type": "text", "value": text}]}
 
 
-def fonti(items: list[str]) -> list[dict]:
-    """Legacy bullet list — prefer bibliography_block() for new content."""
-    return [h2("Fonti"), ul(items)]
-
-
-def fonti_bibliography(items: list[dict]) -> list[dict]:
-    return [bibliography_block(items)]
-
+def fonti(
+    items: list[str],
+    *,
+    slug: str | None = None,
+    doc_type: str | None = None,
+) -> list[dict]:
+    entries: list[dict] = []
+    seen: set[str] = set()
+    for text in items:
+        entry = legacy_to_bib_entry(text, slug=slug, doc_type=doc_type)
+        if not entry:
+            continue
+        key = f"{entry['author']}|{entry['tema']}|{entry['sotto_tema']}"
+        if key in seen:
+            continue
+        seen.add(key)
+        entries.append(entry)
+    if doc_type == "controversy" and slug and slug in CONTROVERSY_PROSPETTIVE:
+        pid, q = CONTROVERSY_PROSPETTIVE[slug]
+        kb_key = f"The Verde|{pid}|"
+        if not any(k.startswith(kb_key) for k in seen):
+            entries.append(bib_kb_prospettiva(pid, q))
+    return [bibliography_block(entries)] if entries else []
 
 def intro_deep(intro_paras: list[str], deep_blocks: list[dict]) -> list[dict]:
     return [
@@ -187,7 +207,7 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti(["rosen, tema rosen-storia", "pellegrino, tradizioni mondiali", "onuma, cultura quotidiana"]),
+                *fonti(["rosen, tema rosen-storia", "pellegrino, tradizioni mondiali", "onuma, cultura quotidiana"], slug="storia-cultura"),
             ],
         ),
         "storia_cultura",
@@ -240,7 +260,7 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti(["rosen, tema rosen-lavorazione", "pellegrino, lavorazione", "sommelier, produzione"]),
+                *fonti(["rosen, tema rosen-lavorazione", "pellegrino, lavorazione", "sommelier, produzione"], slug="lavorazione"),
             ],
         ),
         "lavorazione_qualità",
@@ -296,7 +316,7 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti(["pellegrino, via del tè", "sommelier, servizio", "onuma, preparazione quotidiana"]),
+                *fonti(["pellegrino, via del tè", "sommelier, servizio", "onuma, preparazione quotidiana"], slug="preparazione"),
             ],
         ),
         "preparazione_servizio",
@@ -349,7 +369,7 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti(["sommelier, degustazione", "pellegrino, schede varietà", "onuma, riconoscere qualità"]),
+                *fonti(["sommelier, degustazione", "pellegrino, schede varietà", "onuma, riconoscere qualità"], slug="degustazione"),
             ],
         ),
         "degustazione_sensoriale",
@@ -405,13 +425,13 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti_bibliography(
+                *fonti(
                     [
-                        bib_item("hara", "hara-panoramica", "Efficacia del tè nella salute umana", "71"),
-                        bib_item("hara", "hara-anticancer", "Catechine in prevenzione e terapia del cancro", "102–104"),
-                        bib_item("rosen", "rosen-salute", "Polifenoli, EGCG e antiossidanti", "2714–2838"),
-                        bib_item("pellegrino", "pellegrino-salute", "Oncologia, diabete e dimagrimento", "2938–2964"),
-                    ]
+                        "hara, temi salute",
+                        "rosen, tema rosen-salute",
+                        "pellegrino, prevenzione",
+                    ],
+                    slug="salute",
                 ),
             ],
         ),
@@ -456,7 +476,7 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti(["onuma, cerimonia", "pellegrino, chanoyu", "sommelier, cerimonie"]),
+                *fonti(["onuma, cerimonia", "pellegrino, chanoyu", "sommelier, cerimonie"], slug="cerimonia"),
             ],
         ),
         "cerimonia_spiritualita",
@@ -508,7 +528,7 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti(["pellegrino, salute", "sommelier, proprietà", "onuma, mg caffeina"]),
+                *fonti(["pellegrino, salute", "sommelier, proprietà", "onuma, mg caffeina"], slug="caffeina"),
             ],
         ),
         "caffeina_tannini",
@@ -555,7 +575,7 @@ HUBS: dict[str, dict] = {
                         ),
                     ]
                 ),
-                *fonti(["onuma, ricette matcha", "rosen, cucina e bellezza", "pellegrino, matcha"]),
+                *fonti(["onuma, ricette matcha", "rosen, cucina e bellezza", "pellegrino, matcha"], slug="cucina"),
             ],
         ),
         "cucina_usi_pratici",
@@ -624,18 +644,14 @@ CONTROVERSIES: dict[str, dict] = {
                     ("Quiz miti", "/gioca/quiz/mito-verita/", "verifica"),
                 ]
             ),
-            *fonti_bibliography(
+            *fonti(
                 [
-                    bib_item("hara", "hara-panoramica", "Biodisponibilità dei polifenoli", "89"),
-                    bib_item("hara", "hara-anticancer", "Catechine in prevenzione e terapia del cancro", "102–104"),
-                    bib_item("rosen", "rosen-salute", "Polifenoli, EGCG e antiossidanti", "2714–2838"),
-                    bib_item("onuma", "onuma-storia", "Eisai: «il tè è l'elisir della salute»", "196"),
-                    bib_item("pellegrino", "pellegrino-salute", "Il tè verde va inserito nella prevenzione", "2907–2964"),
-                    bib_kb_prospettiva(
-                        "salute-scienza-vs-tradizione",
-                        "Quanto è dimostrato che il tè verde faccia bene?",
-                    ),
-                ]
+                    "hara, temi salute",
+                    "rosen, tema rosen-salute",
+                    "prospettive_contrastanti KB",
+                ],
+                slug="salute-scienza-vs-tradizione",
+                doc_type="controversy",
             ),
         ],
         [("Bevanda vs integratore", "/impara/controversie/bevanda-vs-integratore/", "correlata")],
@@ -677,7 +693,11 @@ CONTROVERSIES: dict[str, dict] = {
                     ("Cucina", "/impara/cucina/", "matcha fuori tazza"),
                 ]
             ),
-            *fonti(["rosen, integratori", "hara, trial EGCG", "pellegrino, matcha"]),
+            *fonti(
+                ["rosen, integratori", "hara, trial EGCG", "pellegrino, matcha"],
+                slug="bevanda-vs-integratore",
+                doc_type="controversy",
+            ),
         ],
         [("Scienza vs tradizione", "/impara/controversie/salute-scienza-vs-tradizione/", "correlata")],
     ),
@@ -718,7 +738,11 @@ CONTROVERSIES: dict[str, dict] = {
                     ("Cerimonia hub", "/impara/cerimonia/", "approfondimento"),
                 ]
             ),
-            *fonti(["sommelier, cerimonie", "pellegrino, chanoyu", "onuma, cerimonia"]),
+            *fonti(
+                ["sommelier, cerimonie", "pellegrino, chanoyu", "onuma, cerimonia"],
+                slug="cerimonia-cina-vs-giappone",
+                doc_type="controversy",
+            ),
         ],
         [("Consumo vs rituale", "/impara/controversie/consumo-quotidiano-vs-rituale/", "correlata")],
     ),
@@ -763,7 +787,11 @@ CONTROVERSIES: dict[str, dict] = {
                     ("Lavorazione", "/impara/lavorazione/", "dalla foglia"),
                 ]
             ),
-            *fonti(["sommelier, degustazione", "hara, catechine", "rosen, estetica foglia"]),
+            *fonti(
+                ["sommelier, degustazione", "hara, catechine", "rosen, estetica foglia"],
+                slug="qualita-sensoriale-vs-chimica",
+                doc_type="controversy",
+            ),
         ],
         [("Salute scienza vs tradizione", "/impara/controversie/salute-scienza-vs-tradizione/", "correlata")],
     ),
@@ -811,7 +839,11 @@ CONTROVERSIES: dict[str, dict] = {
                     ("L-teanina", "/glossario/l-teanina/", "modulazione"),
                 ]
             ),
-            *fonti(["pellegrino, salute", "sommelier, proprieta", "onuma, varieta"]),
+            *fonti(
+                ["pellegrino, salute", "sommelier, proprieta", "onuma, varieta"],
+                slug="caffeina-stimolazione",
+                doc_type="controversy",
+            ),
         ],
         [("Salute", "/impara/salute/", "contesto")],
     ),
@@ -852,7 +884,11 @@ CONTROVERSIES: dict[str, dict] = {
                     ("Cerimonia hub", "/impara/cerimonia/", "rito"),
                 ]
             ),
-            *fonti(["onuma, quotidianita", "rosen, poesia", "pellegrino, Giappone"]),
+            *fonti(
+                ["onuma, quotidianita", "rosen, poesia", "pellegrino, Giappone"],
+                slug="consumo-quotidiano-vs-rituale",
+                doc_type="controversy",
+            ),
         ],
         [("Gong fu vs chanoyu", "/impara/controversie/cerimonia-cina-vs-giappone/", "correlata")],
     ),

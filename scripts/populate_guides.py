@@ -4,9 +4,19 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from site_builder.citations import (
+    CONTROVERSY_PROSPETTIVE,
+    bib_kb_prospettiva,
+    bibliography_block,
+    legacy_to_bib_entry,
+)
+
 GUIDE = ROOT / "content" / "guide"
 
 
@@ -42,8 +52,19 @@ def faq_block(items: list[tuple[str, str]]) -> dict:
     }
 
 
-def fonti(items: list[str]) -> list[dict]:
-    return [h2("Fonti"), ul(items)]
+def fonti(items: list[str], *, slug: str | None = None) -> list[dict]:
+    entries: list[dict] = []
+    seen: set[str] = set()
+    for text in items:
+        entry = legacy_to_bib_entry(text, slug=slug)
+        if not entry:
+            continue
+        key = f"{entry['author']}|{entry['tema']}"
+        if key in seen:
+            continue
+        seen.add(key)
+        entries.append(entry)
+    return [bibliography_block(entries)] if entries else []
 
 
 def guide_doc(
@@ -143,7 +164,8 @@ GUIDES: dict[str, dict] = {
                     "rosen, usi pratici e estetica della foglia",
                     "hara, catechine e foglia intera",
                     "Treccani — voce «tè» (storia del consumo in Europa)",
-                ]
+                ],
+                slug="matcha-italia",
             ),
         ],
         ["cucina_usi_pratici", "cerimonia_spiritualita"],
@@ -235,7 +257,8 @@ GUIDES: dict[str, dict] = {
                     "sommelier, commercio e rituali",
                     "onuma, adozione contemporanea",
                     "Treccani — voce «tè»",
-                ]
+                ],
+                slug="te-italia-storia",
             ),
         ],
         ["storia_cultura"],

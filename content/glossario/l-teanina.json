@@ -159,42 +159,29 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, tema pellegrino-salute"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-salute",
+                "sotto_tema": "Il tè verde e la salute",
+                "pages": "2811–3058"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, tema sommelier-proprieta"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-proprieta",
+                "sotto_tema": "Proprietà chimiche e salute",
+                "pages": null
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "Treccani — teanina"
-                  }
-                ]
+                "author": "Treccani",
+                "title": "Enciclopedia on line",
+                "tema": "treccani",
+                "sotto_tema": "voce «teanina»",
+                "pages": null,
+                "kb_ref": "https://www.treccani.it"
               }
             ]
           }

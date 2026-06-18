@@ -11,7 +11,7 @@
   <h1>{{ title }}</h1>
   {% if lead %}<p class="tv-page-header__lead">{{ lead }}</p>{% endif %}
   {% if has_levels %}
-  <button type="button" class="tv-btn tv-btn--text tv-level-toggle" data-level-toggle aria-pressed="false" aria-label="Mostra sezione approfondimento">Vista completa</button>
+  <button type="button" class="tv-btn tv-btn--text tv-level-toggle" data-level-toggle aria-expanded="false" aria-label="Mostra sezione approfondimento">Vista completa</button>
   {% endif %}
 </header>
 {% if page and page.cards %}
@@ -81,6 +81,5 @@
 {% endif %}
 {% endblock %}
 {% block scripts %}
-{% if has_levels %}<script src="{{ asset_js('level-toggle') }}" defer></script>{% endif %}
 {% if badges %}<script src="{{ asset_js('badges') }}" defer></script>{% endif %}
 {% endblock %}

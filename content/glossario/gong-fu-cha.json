@@ -158,34 +158,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, cerimonie"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-cerimonie",
+                "sotto_tema": "Cerimonie e galateo",
+                "pages": "4358"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, tradizioni"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Tradizioni mondiali del tè verde",
+                "pages": "85–93"
               }
             ]
           }

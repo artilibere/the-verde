@@ -158,34 +158,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, lavorazione matcha"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Lavorazione del Matcha",
+                "pages": "1585"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, matcha"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Tè verde e cucina (Matcha, kombucha)",
+                "pages": "76–81"
               }
             ]
           }

@@ -158,42 +158,29 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "hara, tema hara-anticancer"
-                  }
-                ]
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-anticancer",
+                "sotto_tema": "Effetti anticancerogeni",
+                "pages": "102–113"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "hara, tema hara-metabolismo"
-                  }
-                ]
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-metabolismo",
+                "sotto_tema": "Obesità, metabolismo e cuore",
+                "pages": "118–131"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "Treccani — epigallocatechina"
-                  }
-                ]
+                "author": "Treccani",
+                "title": "Enciclopedia on line",
+                "tema": "treccani",
+                "sotto_tema": "voce «epigallocatechina»",
+                "pages": null,
+                "kb_ref": "https://www.treccani.it"
               }
             ]
           }

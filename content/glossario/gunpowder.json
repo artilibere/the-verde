@@ -158,34 +158,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, verdi cinesi"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Verdi cinesi (Long Jing, Bi Lo Chun, Gunpowder…)",
+                "pages": "112–122"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, produzione"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-produzione-verde",
+                "sotto_tema": "Produzione del tè verde",
+                "pages": null
               }
             ]
           }

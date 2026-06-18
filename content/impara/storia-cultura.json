@@ -201,42 +201,28 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, tema rosen-storia"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-storia",
+                "sotto_tema": "Storia e tradizioni del tè verde",
+                "pages": "47–51"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, tradizioni mondiali"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Tradizioni mondiali del tè verde",
+                "pages": "85–2727"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, cultura quotidiana"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-vincolo",
+                "sotto_tema": "Rituale quotidiano in famiglia",
+                "pages": "108–131"
               }
             ]
           }

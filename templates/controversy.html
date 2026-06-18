@@ -20,7 +20,7 @@
   {% if meta.posizioni %}
   <section class="tv-poll" aria-labelledby="poll-heading" data-controversy="{{ meta.slug }}">
     <h2 id="poll-heading">Tu da che parte ti senti?</h2>
-    <form class="tv-poll__form" id="controversy-poll">
+    <form class="tv-poll__form" id="controversy-poll" role="radiogroup" aria-labelledby="poll-heading">
       {% for p in meta.posizioni %}
       <label class="tv-poll__option"><input type="radio" name="poll" value="{{ p.fonte }}"> {{ p.fonte | capitalize }}</label>
       {% endfor %}
@@ -33,6 +33,5 @@
 </article>
 {% endblock %}
 {% block scripts %}
-<script src="{{ asset_js('poll') }}" defer></script>
-<script src="{{ asset_js('share') }}" defer></script>
+<script src="{{ asset_js('controversy-page') }}" defer></script>
 {% endblock %}

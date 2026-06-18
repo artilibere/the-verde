@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 from site_builder.document import collect_faq_items
-from site_builder.enrichers._seo_core import build_llms_txt, dumps_json_ld, faq_schema, webpage_schema
+from site_builder.enrichers._seo_core import build_llms_txt, dumps_json_ld, faq_schema, item_list_schema, webpage_schema
 from site_builder.enrichers.schema_org import howto_schema, supplementary_schemas
+from site_builder.enrichers.seo_context import _collect_hub_list_items, build_schema_blocks
 
 
 def test_webpage_schema_has_context():
@@ -105,4 +106,49 @@ def test_build_llms_txt_with_inventory():
     assert "[Sencha]" in text
     assert "[Umami]" in text
     assert "Varietà (schede complete)" in text
+
+
+def test_hub_item_list_schema_from_ctx():
+    items = _collect_hub_list_items(
+        {
+            "items": [
+                {"title": "Sencha", "url": "/varieta/sencha/"},
+                {"title": "Gyokuro", "url": "/varieta/gyokuro/"},
+            ]
+        }
+    )
+    schema = item_list_schema(
+        "https://the-verde.it",
+        name="Impara",
+        url="/impara/",
+        items=items,
+    )
+    assert schema["@type"] == "ItemList"
+    assert len(schema["itemListElement"]) == 2
+
+
+def test_build_schema_blocks_hub_has_item_list():
+    class _Builder:
+        base_url = "https://the-verde.it"
+        site_name = "The Verde"
+        hreflang = "it"
+        locale = "it-IT"
+        og_image = "/assets/images/og-default.png"
+        social = {}
+
+    blocks = build_schema_blocks(
+        {
+            "page_type": "hub",
+            "items": [
+                {"title": "Storia", "url": "/impara/storia-cultura/"},
+                {"title": "Salute", "url": "/impara/salute/"},
+            ],
+        },
+        _Builder(),
+        {},
+        "/impara/",
+        "Impara",
+        "Otto pilastri di conoscenza sul tè verde.",
+    )
+    assert any('"@type":"ItemList"' in block or '"@type": "ItemList"' in block for block in blocks)
 

@@ -126,34 +126,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, consumo quotidiano"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-vincolo",
+                "sotto_tema": "Rituale quotidiano in famiglia",
+                "pages": "108–131"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, verdi giapponesi"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Verdi giapponesi (Sencha, Matcha, Gyokuro, Bancha…)",
+                "pages": "123–128"
               }
             ]
           }

@@ -154,34 +154,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, pp. 123–125"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Verdi giapponesi (Sencha, Matcha, Gyokuro, Bancha…)",
+                "pages": "123–128"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, tema rosen-lavorazione"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Lavorazione e varietà",
+                "pages": "1575–1592"
               }
             ]
           }

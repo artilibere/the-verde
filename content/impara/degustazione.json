@@ -198,42 +198,28 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, degustazione"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Analisi sensoriale e varietà",
+                "pages": null
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, schede varietà"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Schede tecniche varietali",
+                "pages": "112–128"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, riconoscere qualità"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-salute-pratica",
+                "sotto_tema": "Come riconoscere un buon tè verde",
+                "pages": "1312–1348"
               }
             ]
           }

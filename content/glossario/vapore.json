@@ -160,42 +160,28 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, tema rosen-lavorazione"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Lavorazione e varietà",
+                "pages": "1575–1592"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, tema pellegrino-lavorazione"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-lavorazione",
+                "sotto_tema": "pellegrino lavorazione",
+                "pages": null
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, tema sommelier-produzione"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-produzione",
+                "sotto_tema": "sommelier produzione",
+                "pages": null
               }
             ]
           }

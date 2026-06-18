@@ -157,34 +157,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, cerimonia"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-cerimonia",
+                "sotto_tema": "Cerimonia e protocollo del tè verde",
+                "pages": "15–22"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, chanoyu"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Chanoyu giapponese: koicha e usucha",
+                "pages": "91–93"
               }
             ]
           }

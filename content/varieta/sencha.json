@@ -191,42 +191,28 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, pp. 123–125"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Verdi giapponesi (Sencha, Matcha, Gyokuro, Bancha…)",
+                "pages": "123–128"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, scheda sencha"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Scheda sensoriale Sencha",
+                "pages": null
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, lavorazione sencha"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Lavorazione di Bancha e Sencha",
+                "pages": "1592"
               }
             ]
           }

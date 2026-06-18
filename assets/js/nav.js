@@ -5,12 +5,22 @@
 
   const links = nav.querySelectorAll('a[href]');
   const path = window.location.pathname.replace(/\/$/, '') || '/';
+  const background = [document.getElementById('main'), document.querySelector('.tv-bottom-nav'), document.querySelector('.tv-footer')];
+
+  function setBackgroundInert(inert) {
+    background.forEach((el) => {
+      if (!el) return;
+      if ('inert' in el) el.inert = inert;
+      else el.setAttribute('aria-hidden', inert ? 'true' : 'false');
+    });
+  }
 
   function setOpen(open) {
     nav.classList.toggle('tv-header__nav--open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     btn.setAttribute('aria-label', open ? 'Chiudi menu' : 'Apri menu');
     document.body.classList.toggle('tv-nav-open', open);
+    setBackgroundInert(open);
   }
 
   links.forEach((link) => {

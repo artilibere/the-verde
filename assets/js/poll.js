@@ -33,7 +33,15 @@
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const choice = form.querySelector('input[name="poll"]:checked');
-    if (!choice) return;
+    if (!choice) {
+      if (result) {
+        result.hidden = false;
+        result.textContent = 'Seleziona una prospettiva prima di inviare.';
+      }
+      const first = form.querySelector('input[name="poll"]');
+      first?.focus();
+      return;
+    }
     localStorage.setItem(key, choice.value);
     showResult(choice.value);
   });

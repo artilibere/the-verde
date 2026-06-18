@@ -194,42 +194,68 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-salute",
+                "sotto_tema": "Il tè verde e la salute",
+                "pages": "2811–3058"
+              },
+              {
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-proprieta",
+                "sotto_tema": "Proprietà chimiche e salute",
+                "pages": null
+              },
+              {
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-salute-pratica",
+                "sotto_tema": "Contenuto caffeina per varietà",
+                "pages": "1267–1275"
+              },
+              {
+                "author": "The Verde",
+                "title": "Knowledge base sul tè verde",
+                "tema": "caffeina-stimolazione",
+                "sotto_tema": "Prospettiva contrastante: Il tè verde stimola o rilassa?",
+                "pages": null,
+                "kb_ref": "books/knowledge-base.json"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Il tè verde stimola o rilassa?",
+            "answer_spans": [
               {
                 "type": "text",
-                "value": "Fonti"
+                "value": "Dipende da varietà, dose e momento: matcha e gyokuro possono stimolare; hojicha e kukicha tendono a rilassare. La L-teanina modula la caffeina verso una calma vigile, diversa dall'espresso."
               }
             ]
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
+            "question": "Quale tè verde ha meno caffeina?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, salute"
-                  }
-                ]
-              },
+                "type": "text",
+                "value": "Hojicha tostato, kukicha da rametti e bancha da foglia matura hanno generalmente meno caffeina di matcha, gyokuro e sencha pregiato."
+              }
+            ]
+          },
+          {
+            "question": "Posso bere tè verde la sera in Italia?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, proprieta"
-                  }
-                ]
-              },
-              {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, varieta"
-                  }
-                ]
+                "type": "text",
+                "value": "Sì, se scegli verdi tostati o da rametti e eviti matcha dopo le 16. Chi è sensibile alla caffeina può preferirli al posto del caffè dopo cena."
               }
             ]
           }

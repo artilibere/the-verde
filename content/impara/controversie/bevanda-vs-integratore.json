@@ -166,42 +166,68 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-salute",
+                "sotto_tema": "Integratori vs bevanda",
+                "pages": "2807–2819"
+              },
+              {
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-anticancer",
+                "sotto_tema": "Trial clinici e sviluppo farmaci",
+                "pages": "113"
+              },
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Tè verde e cucina (Matcha, kombucha)",
+                "pages": "76–81"
+              },
+              {
+                "author": "The Verde",
+                "title": "Knowledge base sul tè verde",
+                "tema": "bevanda-vs-integratore",
+                "sotto_tema": "Prospettiva contrastante: Meglio bere tè verde o assumere estratti?",
+                "pages": null,
+                "kb_ref": "books/knowledge-base.json"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Meglio tè verde in tazza o in capsula?",
+            "answer_spans": [
               {
                 "type": "text",
-                "value": "Fonti"
+                "value": "La capsula offre dose standardizzata di catechine senza caffeina; la tazza offre esperienza sensoriale, ritualità e sinergia tra molecole. Non sono equivalenti."
               }
             ]
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
+            "question": "Il matcha conta come integratore?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, integratori"
-                  }
-                ]
-              },
+                "type": "text",
+                "value": "No: è bevanda alimentare. Bevi la foglia intera, quindi assumi più catechine di un infusionato filtrato, ma resti nel mondo del tè vero."
+              }
+            ]
+          },
+          {
+            "question": "Gli estratti di EGCG sostituiscono il sencha?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "hara, trial EGCG"
-                  }
-                ]
-              },
-              {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, matcha"
-                  }
-                ]
+                "type": "text",
+                "value": "In laboratorio sì, per misurare effetti; in cucina no. Gli integratori non replicano aroma, gesto e moderazione di una tazza quotidiana."
               }
             ]
           }

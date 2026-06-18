@@ -4,10 +4,30 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from site_builder.citations import bibliography_block, legacy_to_bib_entry
+
 OUT = ROOT / "content" / "gioca" / "percorsi"
+
+
+def fonti(items: list[str], *, slug: str | None = None) -> list[dict]:
+    entries = []
+    seen: set[str] = set()
+    for text in items:
+        entry = legacy_to_bib_entry(text, slug=slug)
+        if not entry:
+            continue
+        key = f"{entry['author']}|{entry['tema']}"
+        if key in seen:
+            continue
+        seen.add(key)
+        entries.append(entry)
+    return [bibliography_block(entries)] if entries else []
 
 
 def p(t: str) -> dict:
@@ -64,15 +84,10 @@ ARTICLES = {
             {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Cosa hai imparato"}]},
             p("Il tè verde giapponese non è monolite: bancha e sencha al sole, gyokuro all'ombra, matcha da tencha macinato. Ogni tappa ha temperatura e gesto propri."),
             p("Completa i micro-quiz sotto ogni step per sbloccare il badge. Se sbagli, rileggi la scheda: l'errore è parte del metodo."),
-            {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Fonti"}]},
-            {
-                "type": "list",
-                "ordered": False,
-                "items": [
-                    {"spans": [{"type": "text", "value": "onuma, consumo quotidiano"}]},
-                    {"spans": [{"type": "text", "value": "pellegrino, verdi giapponesi"}]},
-                ],
-            },
+            *fonti(
+                ["onuma, consumo quotidiano", "pellegrino, verdi giapponesi"],
+                slug="dal-bancha-al-matcha",
+            ),
         ],
         [
             ("Quiz sensoriale", "/gioca/quiz/che-varieta-sei/", "profilo"),
@@ -99,12 +114,7 @@ ARTICLES = {
         [
             {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Cosa hai imparato"}]},
             p("Tre verdi, tre grammatiche: vapore giapponese al sole, ombra umami, nocciola cinese in padella. Il palato italiano trova ponti senza snaturare le origini."),
-            {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Fonti"}]},
-            {
-                "type": "list",
-                "ordered": False,
-                "items": [{"spans": [{"type": "text", "value": "sommelier, degustazione"}]}],
-            },
+            *fonti(["sommelier, degustazione"], slug="palato-italiano"),
         ],
         [
             ("Degustazione", "/impara/degustazione/", "hub"),
@@ -131,15 +141,13 @@ ARTICLES = {
         [
             {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Cosa hai imparato"}]},
             p("Tradizione e laboratorio convergono sul potenziale preventivo, divergono su dosi e certezze. Bevi per piacere; eventuali benefici sono un plus, non una promessa."),
-            {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Fonti"}]},
-            {
-                "type": "list",
-                "ordered": False,
-                "items": [
-                    {"spans": [{"type": "text", "value": "hara, temi salute"}]},
-                    {"spans": [{"type": "text", "value": "prospettive_contrastanti in books/knowledge-base.json"}]},
+            *fonti(
+                [
+                    "hara, temi salute",
+                    "prospettive_contrastanti in books/knowledge-base.json",
                 ],
-            },
+                slug="scienza-tradizione",
+            ),
         ],
         [
             ("Quiz miti", "/gioca/quiz/mito-verita/", "verifica"),
@@ -166,15 +174,10 @@ ARTICLES = {
         [
             {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Cosa hai imparato"}]},
             p("Il tè è insieme pane quotidiano e occasione straordinaria. Scegli il registro che ti serve oggi — bancha veloce o matcha lento — senza moralismi."),
-            {"type": "heading", "level": 2, "spans": [{"type": "text", "value": "Fonti"}]},
-            {
-                "type": "list",
-                "ordered": False,
-                "items": [
-                    {"spans": [{"type": "text", "value": "onuma, cerimonia"}]},
-                    {"spans": [{"type": "text", "value": "sommelier, cerimonie"}]},
-                ],
-            },
+            *fonti(
+                ["onuma, cerimonia", "sommelier, cerimonie"],
+                slug="rituale-quotidiano",
+            ),
         ],
         [
             ("Cerimonia", "/impara/cerimonia/", "hub"),

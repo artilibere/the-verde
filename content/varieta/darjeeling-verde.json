@@ -187,34 +187,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, contesto indiano"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-pianta",
+                "sotto_tema": "Zone di coltivazione mondiali",
+                "pages": "33"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, Nilgiri verde"
-                  }
-                ]
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Scheda sensoriale Nilgiri verde",
+                "pages": null
               }
             ]
           }

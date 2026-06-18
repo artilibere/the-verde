@@ -3,7 +3,7 @@
   "type": "controversy",
   "slug": "consumo-quotidiano-vs-rituale",
   "meta": {
-    "title": "Tè verde: abitudine quotidiana o esperienza speciale?",
+    "title": "Tè verde: quotidiano o rituale?",
     "description": "Bancha in bottiglia e chanoyu nella stessa cultura: perché abitudine quotidiana ed esperienza speciale non si escludono.",
     "keywords": [
       "consumo quotidiano vs rituale",
@@ -166,42 +166,68 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-vincolo",
+                "sotto_tema": "Rituale quotidiano in famiglia",
+                "pages": "108–131"
+              },
+              {
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-poesia",
+                "sotto_tema": "Poesia e filosofia del tè verde",
+                "pages": "97–189"
+              },
+              {
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Chanoyu giapponese: koicha e usucha",
+                "pages": "91–93"
+              },
+              {
+                "author": "The Verde",
+                "title": "Knowledge base sul tè verde",
+                "tema": "consumo-quotidiano-vs-rituale",
+                "sotto_tema": "Prospettiva contrastante: Abitudine quotidiana o esperienza speciale?",
+                "pages": null,
+                "kb_ref": "books/knowledge-base.json"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Il tè verde quotidiano è meno autentico del rituale?",
+            "answer_spans": [
               {
                 "type": "text",
-                "value": "Fonti"
+                "value": "No: in Giappone bancha in bottiglia e chanoyu convivono nella stessa cultura. In Italia un sencha veloce il lunedì e un matcha lento il sabato sono entrambi legittimi."
               }
             ]
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
+            "question": "Serve una cerimonia per «fare bene» il tè?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, quotidianita"
-                  }
-                ]
-              },
+                "type": "text",
+                "value": "Serve attenzione, non necessariamente sala cerimoniale: temperatura corretta, dosaggio e pausa bastano per onorare la foglia."
+              }
+            ]
+          },
+          {
+            "question": "Quale varietà per l'abitudine italiana?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, poesia"
-                  }
-                ]
-              },
-              {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, Giappone"
-                  }
-                ]
+                "type": "text",
+                "value": "Bancha e sencha per la routine; genmaicha e hojicha per comfort; gyokuro e matcha per momenti speciali — senza gerarchia morale."
               }
             ]
           }

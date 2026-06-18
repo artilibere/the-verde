@@ -158,34 +158,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, tema rosen-lavorazione"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-lavorazione",
+                "sotto_tema": "Lavorazione e varietà",
+                "pages": "1575–1592"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, tema onuma-matcha-cucina"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-matcha-cucina",
+                "sotto_tema": "Matcha, pelle e riuso",
+                "pages": "23–24"
               }
             ]
           }

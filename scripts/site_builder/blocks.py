@@ -134,8 +134,9 @@ def _render_faqs(items: list[dict]) -> str:
             f'<p class="tv-faq__answer">{a}</p></details>'
         )
     return (
+        '<section class="tv-faq-section" aria-labelledby="domande-frequenti">'
         '<h2 id="domande-frequenti">Domande frequenti</h2>'
-        f'<div class="tv-faq">{"".join(parts)}</div>'
+        f'<div class="tv-faq">{"".join(parts)}</div></section>'
     )
 
 

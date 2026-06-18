@@ -11,8 +11,11 @@ CSS_BUNDLE = ("tokens.css", "base.css", "components.css")
 
 # Bundled to cut HTTP requests on hot pages (order preserved).
 JS_PAGE_BUNDLES: dict[str, tuple[str, ...]] = {
+    "core": ("nav", "level-toggle"),
     "diario-page": ("supabase-config", "diario", "badges"),
     "percorsi": ("badges", "paths"),
+    "variety-page": ("scroll-spy", "share"),
+    "controversy-page": ("poll", "share"),
 }
 
 # Built only when referenced; omit dead scripts from dist.
@@ -46,8 +49,39 @@ def minify_css(text: str) -> str:
 
 
 def minify_js(text: str) -> str:
-    lines = [line.rstrip() for line in text.splitlines()]
-    return "\n".join(line for line in lines if line).strip() + "\n"
+    lines = []
+    for line in text.splitlines():
+        stripped = line.rstrip()
+        if not stripped:
+            continue
+        in_string = False
+        quote = ""
+        out = []
+        i = 0
+        while i < len(stripped):
+            ch = stripped[i]
+            if in_string:
+                out.append(ch)
+                if ch == "\\" and i + 1 < len(stripped):
+                    out.append(stripped[i + 1])
+                    i += 2
+                    continue
+                if ch == quote:
+                    in_string = False
+                i += 1
+                continue
+            if ch in ("'", '"', "`"):
+                in_string = True
+                quote = ch
+                out.append(ch)
+                i += 1
+                continue
+            if ch == "/" and i + 1 < len(stripped) and stripped[i + 1] == "/":
+                break
+            out.append(ch)
+            i += 1
+        lines.append("".join(out).rstrip())
+    return "\n".join(lines).strip() + "\n"
 
 
 def minify_html(html: str) -> str:

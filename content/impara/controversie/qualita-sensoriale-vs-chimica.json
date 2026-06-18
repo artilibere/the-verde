@@ -170,42 +170,68 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
+            "type": "bibliography",
+            "items": [
+              {
+                "author": "Bisogno, Victoria; Pettigrew, Jane",
+                "title": "Manuale del sommelier del tè",
+                "tema": "sommelier-degustazione",
+                "sotto_tema": "Analisi sensoriale e varietà",
+                "pages": null
+              },
+              {
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-panoramica",
+                "sotto_tema": "Biodisponibilità dei polifenoli",
+                "pages": "89"
+              },
+              {
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-poesia",
+                "sotto_tema": "La foglia come oggetto estetico",
+                "pages": "146–151"
+              },
+              {
+                "author": "The Verde",
+                "title": "Knowledge base sul tè verde",
+                "tema": "qualita-sensoriale-vs-chimica",
+                "sotto_tema": "Prospettiva contrastante: Cosa definisce un buon tè verde?",
+                "pages": null,
+                "kb_ref": "books/knowledge-base.json"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "Cosa definisce un buon tè verde?",
+            "answer_spans": [
               {
                 "type": "text",
-                "value": "Fonti"
+                "value": "Equilibrio sensoriale (aroma, corpo, assenza di difetti), tracciabilità e coerenza tra foglia e tazza. Il laboratorio misura catechine; il palato misura piacere — entrambi sono legittimi."
               }
             ]
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
+            "question": "Un tè costoso è sempre migliore?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "sommelier, degustazione"
-                  }
-                ]
-              },
+                "type": "text",
+                "value": "Non necessariamente: il prezzo riflette resa, origine e lavorazione. Un sencha onesto può battere un gyokuro scadente se preparato bene."
+              }
+            ]
+          },
+          {
+            "question": "Le catechine garantiscono qualità in tazza?",
+            "answer_spans": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "hara, catechine"
-                  }
-                ]
-              },
-              {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, estetica foglia"
-                  }
-                ]
+                "type": "text",
+                "value": "No da sole: una foglia ricca di polifenoli può essere amara o piatta se mal lavorata o scottata. Chimica e sensoriale si completano, non si sostituiscono."
               }
             ]
           }

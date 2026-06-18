@@ -1,4 +1,7 @@
 {% extends "base.html" %}
-{% block content %}<h1>Cerca</h1><div id="search"></div>{% endblock %}
+{% block content %}
+<h1>Cerca nel sito</h1>
+<div id="search" class="tv-search" role="search" aria-label="Cerca pagine e contenuti sul tè verde"></div>
+{% endblock %}
 {% block head_extra %}<link rel="stylesheet" href="/pagefind/pagefind-ui.css">{% endblock %}
 {% block scripts %}<script src="/pagefind/pagefind-ui.js"></script><script>document.addEventListener("DOMContentLoaded",()=>{if(window.PagefindUI)new PagefindUI({element:"#search",showImages:false});});</script>{% endblock %}

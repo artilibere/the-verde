@@ -188,42 +188,28 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "onuma, ricette"
-                  }
-                ]
+                "author": "Onuma, Izumi Forasté",
+                "title": "El secreto japones del tè verde",
+                "tema": "onuma-matcha-cucina",
+                "sotto_tema": "Ricette con matcha",
+                "pages": "24"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, varietà"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-varietà",
+                "sotto_tema": "Varietà di tè verde",
+                "pages": "112–128"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, cucina"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-bellezza-cucina",
+                "sotto_tema": "Ricette con tè verde in cucina",
+                "pages": "57–58"
               }
             ]
           }

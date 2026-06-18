@@ -159,34 +159,21 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, teiere Yixing"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-preparazione",
+                "sotto_tema": "Teiere Yixing e cura degli utensili",
+                "pages": "2300–2351"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "pellegrino, tradizioni"
-                  }
-                ]
+                "author": "Pellegrino, Davide",
+                "title": "Manuale per la preparazione del tè",
+                "tema": "pellegrino-tradizioni",
+                "sotto_tema": "Tradizioni mondiali del tè verde",
+                "pages": "85–93"
               }
             ]
           }

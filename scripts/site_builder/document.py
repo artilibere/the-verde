@@ -219,4 +219,10 @@ def plain_text_from_blocks(blocks: list[dict]) -> str:
             parts.append(spans_to_plain(block.get("spans", [])))
         elif btype == "level_section":
             parts.append(plain_text_from_blocks(block.get("blocks", [])))
+        elif btype == "bibliography":
+            parts.append("Bibliografia")
+            for item in block.get("items", []):
+                parts.append(item.get("author", ""))
+                parts.append(item.get("title", ""))
+                parts.append(item.get("sotto_tema", ""))
     return " ".join(parts).strip()

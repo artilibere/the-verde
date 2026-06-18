@@ -2,13 +2,16 @@
 <html lang="it">
 <head>
   {% if gtm_id %}
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','{{ gtm_id }}');</script>
-  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <script>
+  window.addEventListener('load', function () {
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ gtm_id }}');
+  });
+  </script>
   {% endif %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,8 +57,8 @@
   <meta name="twitter:image" content="{{ og_image }}">
   <meta name="twitter:image:alt" content="{{ og_image_alt | default(site_name) }}">
   {% endif %}
-  <link rel="preload" href="{{ asset_css() }}" as="style">
-  <link rel="stylesheet" href="{{ asset_css() }}">
+  <link rel="preload" href="{{ asset_css() }}" as="style" fetchpriority="high">
+  <link rel="stylesheet" href="{{ asset_css() }}" fetchpriority="high">
   {% for block in schema_blocks %}
   <script type="application/ld+json">{{ block | safe }}</script>
   {% endfor %}
@@ -64,7 +67,7 @@
 <body class="tv-page tv-page--{{ page_type | default('default') }}{% if meta is defined and meta.path_nav %} tv-page--has-path-nav{% endif %}">
   {% if gtm_id %}
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_id }}"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_id }}" title="Google Tag Manager"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   {% endif %}
@@ -87,13 +90,13 @@
     <a href="/varieta/" class="tv-bottom-nav__item{% if page_type in ('catalog', 'variety') %} tv-bottom-nav__item--active{% endif %}"{% if page_type in ('catalog', 'variety') %} aria-current="page"{% endif %}>
       <span class="tv-bottom-nav__label">Varietà</span>
     </a>
-    <a href="/italia/" class="tv-bottom-nav__item{% if page_type == 'hub' and seo_url is defined and seo_url.startswith('/italia') %} tv-bottom-nav__item--active{% endif %}">
+    <a href="/italia/" class="tv-bottom-nav__item{% if page_type == 'hub' and seo_url is defined and seo_url.startswith('/italia') %} tv-bottom-nav__item--active{% endif %}"{% if page_type == 'hub' and seo_url is defined and seo_url.startswith('/italia') %} aria-current="page"{% endif %}>
       <span class="tv-bottom-nav__label">Italia</span>
     </a>
-    <a href="/impara/" class="tv-bottom-nav__item{% if page_type == 'hub' and seo_url is defined and seo_url.startswith('/impara') %} tv-bottom-nav__item--active{% endif %}">
+    <a href="/impara/" class="tv-bottom-nav__item{% if page_type == 'hub' and seo_url is defined and seo_url.startswith('/impara') %} tv-bottom-nav__item--active{% endif %}"{% if page_type == 'hub' and seo_url is defined and seo_url.startswith('/impara') %} aria-current="page"{% endif %}>
       <span class="tv-bottom-nav__label">Impara</span>
     </a>
-    <a href="/guide/" class="tv-bottom-nav__item{% if page_type == 'article' and seo_url is defined and seo_url.startswith('/guide') %} tv-bottom-nav__item--active{% endif %}">
+    <a href="/guide/" class="tv-bottom-nav__item{% if page_type == 'article' and seo_url is defined and seo_url.startswith('/guide') %} tv-bottom-nav__item--active{% endif %}"{% if page_type == 'article' and seo_url is defined and seo_url.startswith('/guide') %} aria-current="page"{% endif %}>
       <span class="tv-bottom-nav__label">Guide</span>
     </a>
   </nav>
@@ -108,7 +111,7 @@
       <p class="tv-footer__copy">&copy; {{ year }} The Verde. Solo <em>Camellia sinensis</em>.</p>
     </div>
   </footer>
-  <script src="{{ asset_js('nav') }}" defer></script>
+  <script src="{{ asset_js('core') }}" defer></script>
   {% block scripts %}{% endblock %}
 </body>
 </html>

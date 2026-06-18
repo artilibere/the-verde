@@ -115,3 +115,72 @@ def test_impara_hub_has_card_feed(built_dist):
     page = _soup(built_dist / "impara" / "preparazione" / "index.html")
     assert page.find(class_="tv-feed") is not None
     assert len(page.find_all(class_="tv-card")) >= 2
+
+
+def test_home_loads_single_core_script(built_dist):
+    page = _soup(built_dist / "index.html")
+    scripts = [
+        s["src"]
+        for s in page.find_all("script", src=True)
+        if s["src"].startswith("/assets/js/")
+    ]
+    assert len(scripts) == 1
+    assert "core." in scripts[0]
+
+
+def test_variety_loads_core_and_variety_bundle(built_dist):
+    page = _soup(built_dist / "varieta" / "sencha" / "index.html")
+    scripts = [
+        s["src"]
+        for s in page.find_all("script", src=True)
+        if s["src"].startswith("/assets/js/")
+    ]
+    assert len(scripts) == 2
+    assert any("core." in src for src in scripts)
+    assert any("variety-page." in src for src in scripts)
+
+
+def test_gtm_deferred_until_load(built_dist):
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    assert "window.addEventListener('load'" in html
+    assert "googletagmanager.com/gtm.js" in html
+
+
+def test_skip_link_targets_main(built_dist):
+    page = _soup(built_dist / "index.html")
+    skip = page.find("a", class_="tv-skip-link")
+    main = page.find("main", id="main")
+    assert skip is not None
+    assert skip["href"] == "#main"
+    assert main is not None
+
+
+def test_impara_hub_level_toggle_aria(built_dist):
+    page = _soup(built_dist / "impara" / "preparazione" / "index.html")
+    toggle = page.find("button", attrs={"data-level-toggle": True})
+    assert toggle is not None
+    assert toggle.get("aria-expanded") == "false"
+    assert toggle.get("aria-label")
+
+
+def test_bottom_nav_active_has_aria_current(built_dist):
+    page = _soup(built_dist / "italia" / "index.html")
+    current = page.select_one('.tv-bottom-nav__item[aria-current="page"]')
+    assert current is not None
+    assert current.get("href", current.get("href")) == "/italia/" or current["href"].endswith("/italia/")
+
+
+def test_controversy_poll_radiogroup(built_dist):
+    page = _soup(built_dist / "impara" / "controversie" / "caffeina-stimolazione" / "index.html")
+    form = page.find("form", id="controversy-poll")
+    assert form is not None
+    assert form.get("role") == "radiogroup"
+    assert form.get("aria-labelledby") == "poll-heading"
+
+
+def test_glossary_faq_card_landmark(built_dist):
+    page = _soup(built_dist / "glossario" / "umami" / "index.html")
+    faq_card = page.find(id="faq")
+    assert faq_card is not None
+    assert faq_card.get("aria-labelledby") == "card-title-faq"
+    assert page.find(id="card-title-faq") is not None

@@ -155,42 +155,29 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "spans": [
-              {
-                "type": "text",
-                "value": "Fonti"
-              }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
+            "type": "bibliography",
             "items": [
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "hara, tema hara-anticancer"
-                  }
-                ]
+                "author": "Hara, Yukihiko (a cura di)",
+                "title": "Health Benefits of Green Tea",
+                "tema": "hara-anticancer",
+                "sotto_tema": "Effetti anticancerogeni",
+                "pages": "102–113"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "rosen, tema rosen-salute"
-                  }
-                ]
+                "author": "Rosen, Diana",
+                "title": "Il libro del tè verde",
+                "tema": "rosen-salute",
+                "sotto_tema": "Salute e benessere",
+                "pages": "2714–2838"
               },
               {
-                "spans": [
-                  {
-                    "type": "text",
-                    "value": "Treccani — antiossidante"
-                  }
-                ]
+                "author": "Treccani",
+                "title": "Enciclopedia on line",
+                "tema": "treccani",
+                "sotto_tema": "voce «antiossidante»",
+                "pages": null,
+                "kb_ref": "https://www.treccani.it"
               }
             ]
           }
