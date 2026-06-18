@@ -2,10 +2,7 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# JSON indexes and config
-/varieta/index.json
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
-
+# JSON config for client-side runtime
 /assets/js/config/*
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 

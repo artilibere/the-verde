@@ -31,7 +31,7 @@ def test_build_page_count(build_out):
 
 
 def test_varieta_catalog_json(build_out):
-    catalog = build_out / "varieta" / "index.json"
+    catalog = build_out / "assets" / "js" / "config" / "varieties.json"
     assert catalog.exists()
     assert "varieties" in catalog.read_text(encoding="utf-8")
 

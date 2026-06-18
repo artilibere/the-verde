@@ -69,7 +69,7 @@
     });
   }
 
-  fetch('/varieta/index.json')
+  fetch('/assets/js/config/varieties.json')
     .then((r) => {
       if (!r.ok) throw new Error('fetch failed');
       return r.json();

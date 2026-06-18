@@ -62,9 +62,9 @@ def build_catalog_and_pages(builder) -> None:
             for v in builder.varieties
         ],
     }
-    var_out = builder.out_dir / "varieta"
-    var_out.mkdir(parents=True, exist_ok=True)
-    (var_out / "index.json").write_text(dumps_compact(index_json), encoding="utf-8")
+    config_out = builder.out_dir / "assets" / "js" / "config"
+    config_out.mkdir(parents=True, exist_ok=True)
+    (config_out / "varieties.json").write_text(dumps_compact(index_json), encoding="utf-8")
 
     for _path, doc in items:
         slug = doc["slug"]
