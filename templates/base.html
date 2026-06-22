@@ -14,6 +14,8 @@
   {% endif %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.svg">
   {% set page_title = seo_title if site_name in seo_title else seo_title ~ ' | ' ~ site_name %}
   <title>{% block title %}{{ page_title }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ seo_description }}{% endblock %}">
