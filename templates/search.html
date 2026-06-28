@@ -11,7 +11,7 @@
 </div>
 {% endblock %}
 {% block head_extra %}
-<link rel="preload" href="/pagefind/pagefind-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="/pagefind/pagefind-ui.css"></noscript>
 {% endblock %}
 {% block scripts %}

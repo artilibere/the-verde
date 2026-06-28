@@ -10,6 +10,7 @@
 
 #hero-title {
   font: var(--md-sys-typescale-title-large);
+  min-height: 2.8em;
 }
 
 .tv-card__header {

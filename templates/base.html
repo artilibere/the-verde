@@ -6,18 +6,27 @@
   {% if critical_css() %}
   <style>{{ critical_css() | safe }}</style>
   {% endif %}
-  <link rel="icon" href="/favicon.ico" sizes="48x48">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="{{ asset_css() }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ asset_css() }}"></noscript>
   {% set page_title = seo_title if site_name in seo_title else seo_title ~ ' | ' ~ site_name %}
   <title>{% block title %}{{ page_title }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ seo_description }}{% endblock %}">
-  {% if seo_keywords is defined and seo_keywords %}
-  <meta name="keywords" content="{{ seo_keywords }}">
-  {% endif %}
   <meta name="robots" content="{{ seo_robots }}">
   {% if seo_url %}
   <link rel="canonical" href="{{ base_url }}{{ seo_url }}">
+  {% endif %}
+  {% if theme_color is defined and theme_color %}
+  <meta name="theme-color" content="{{ theme_color }}">
+  {% endif %}
+  {% include "partials/prefetch-hints.html" %}
+  {% block head_extra %}{% endblock %}
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  {% if seo_keywords is defined and seo_keywords %}
+  <meta name="keywords" content="{{ seo_keywords }}">
+  {% endif %}
+  {% if seo_url %}
   <link rel="alternate" hreflang="{{ seo_hreflang }}" href="{{ base_url }}{{ seo_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ base_url }}{{ seo_url }}">
   {% endif %}
@@ -36,9 +45,6 @@
   <meta name="twitter:card" content="{{ twitter_card | default('summary_large_image') }}">
   <meta name="twitter:title" content="{{ seo_title }}">
   <meta name="twitter:description" content="{{ seo_description }}">
-  {% if theme_color is defined and theme_color %}
-  <meta name="theme-color" content="{{ theme_color }}">
-  {% endif %}
   <link rel="alternate" type="application/rss+xml" title="The Verde Guide" href="/feed.xml">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
@@ -51,10 +57,6 @@
   <meta name="twitter:image" content="{{ og_image }}">
   <meta name="twitter:image:alt" content="{{ og_image_alt | default(site_name) }}">
   {% endif %}
-  <link rel="preload" href="{{ asset_css() }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ asset_css() }}"></noscript>
-  {% include "partials/prefetch-hints.html" %}
-  {% block head_extra %}{% endblock %}
 </head>
 <body class="tv-page tv-page--{{ page_type | default('default') }}{% if page_type not in ('legal', 'search') %} tv-page--has-bottom-nav{% endif %}{% if meta is defined and meta.path_nav %} tv-page--has-path-nav{% endif %}">
   {% if gtm_id %}
@@ -120,7 +122,7 @@
   </footer>
   {% if icon_sprite %}<div class="tv-icon-sprite" hidden aria-hidden="true">{{ icon_sprite | safe }}</div>{% endif %}
   <script src="{{ asset_js('core') }}" defer></script>
-  <script>
+  <script defer>
   (function () {
     function loadDeferred() {
       if (document.getElementById('tv-deferred-js')) return;
@@ -133,15 +135,11 @@
     var schedule = window.requestIdleCallback || function (cb) { window.setTimeout(cb, 1); };
     if (document.readyState === 'complete') schedule(loadDeferred);
     else window.addEventListener('load', function () { schedule(loadDeferred); });
-  })();
-  </script>
-  {% if gtm_id %}
-  <script>
-  (function () {
-    var loaded = false;
+    {% if gtm_id %}
+    var gtmLoaded = false;
     function loadGtm() {
-      if (loaded) return;
-      loaded = true;
+      if (gtmLoaded) return;
+      gtmLoaded = true;
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -151,12 +149,9 @@
     ['scroll', 'click', 'keydown', 'touchstart', 'pointerdown'].forEach(function (evt) {
       window.addEventListener(evt, loadGtm, { once: true, passive: true });
     });
-    window.addEventListener('load', function () {
-      window.setTimeout(loadGtm, 5000);
-    });
+    {% endif %}
   })();
   </script>
-  {% endif %}
   {% block scripts %}{% endblock %}
 </body>
 </html>

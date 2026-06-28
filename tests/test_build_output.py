@@ -176,6 +176,23 @@ def test_icon_sprite_before_scripts(built_dist):
     assert sprite_idx < html.index("/assets/js/core.")
 
 
+def test_async_stylesheet_early_in_head(built_dist):
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    head = html.split("</head>")[0]
+    css_idx = head.find("/assets/css/site.")
+    title_idx = head.find("<title>")
+    assert css_idx != -1 and title_idx != -1
+    assert css_idx < title_idx
+    assert css_idx < head.find('property="og:title"')
+    assert 'media="print"' in head
+    blocking = [
+        link
+        for link in BeautifulSoup(head, "html.parser").find_all("link", rel="stylesheet")
+        if link.get("media") != "print" and link.find_parent("noscript") is None
+    ]
+    assert blocking == []
+
+
 def test_critical_css_covers_feed_and_cards(built_dist):
     html = (built_dist / "index.html").read_text(encoding="utf-8")
     style = html.split("<style>")[1].split("</style>")[0]
@@ -186,15 +203,7 @@ def test_critical_css_covers_feed_and_cards(built_dist):
     page = _soup(built_dist / "index.html")
     head = page.find("head")
     assert head.find("style") is not None
-    async_css = head.find("link", rel="preload", attrs={"as": "style"})
-    assert async_css is not None
-    assert async_css.get("onload")
-    blocking = [
-        link
-        for link in head.find_all("link", rel="stylesheet")
-        if link.find_parent("noscript") is None
-    ]
-    assert blocking == []
+    assert head.find("link", rel="stylesheet", attrs={"media": "print"}) is not None
     assert head.find("noscript").find("link", rel="stylesheet") is not None
 
 
@@ -241,7 +250,7 @@ def test_bottom_nav_marks_prefetch_high(built_dist):
 
     html = (built_dist / "index.html").read_text(encoding="utf-8")
     assert "loadGtm" in html or "googletagmanager.com/gtm.js" in html
-    assert "setTimeout(loadGtm" in html
+    assert "setTimeout(loadGtm" not in html
     assert html.index("<meta charset") < html.index("loadGtm")
     assert 'rel="preconnect" href="https://www.googletagmanager.com"' not in html
 
