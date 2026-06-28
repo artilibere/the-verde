@@ -24,6 +24,10 @@
   Cache-Control: public, max-age=86400
   Content-Type: text/plain; charset=utf-8
 
+/favicon.svg
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Content-Type: image/svg+xml
+
 # HTML: revalidate quickly, serve stale while updating
 /
   Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400

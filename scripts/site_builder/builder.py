@@ -550,6 +550,9 @@ class SiteBuilder:
             for icon in icons_src.iterdir():
                 if icon.is_file():
                     shutil.copy(icon, icons_out / icon.name)
+            favicon = icons_src / "favicon.svg"
+            if favicon.is_file():
+                shutil.copy(favicon, self.out_dir / "favicon.svg")
         for name in ("_headers", "_redirects"):
             src = ROOT / name
             if src.exists():
