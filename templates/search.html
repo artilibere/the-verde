@@ -10,5 +10,15 @@
   </div>
 </div>
 {% endblock %}
-{% block head_extra %}<link rel="stylesheet" href="/pagefind/pagefind-ui.css">{% endblock %}
-{% block scripts %}<script src="/pagefind/pagefind-ui.js"></script><script>document.addEventListener("DOMContentLoaded",()=>{if(window.PagefindUI)new PagefindUI({element:"#search",showImages:false});});</script>{% endblock %}
+{% block head_extra %}
+<link rel="preload" href="/pagefind/pagefind-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/pagefind/pagefind-ui.css"></noscript>
+{% endblock %}
+{% block scripts %}
+<script src="/pagefind/pagefind-ui.js" defer></script>
+<script defer>
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.PagefindUI) new PagefindUI({ element: '#search', showImages: false });
+});
+</script>
+{% endblock %}

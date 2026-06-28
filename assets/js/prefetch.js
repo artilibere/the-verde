@@ -1,6 +1,6 @@
 /**
- * Navigation prefetch — warm cache for likely next pages (explore_next, path nav, hubs).
- * Uses link[rel=prefetch] on intent (hover/touch) and for high-priority anchors.
+ * Navigation prefetch — warm cache for likely next pages on user intent.
+ * Avoids burst requests on load (PageSpeed / rate limits).
  */
 (function () {
   'use strict';
@@ -18,6 +18,14 @@
     '.tv-mininav a[href]',
     '.tv-footer__nav a[href]',
   ].join(',');
+
+  function canPrefetch() {
+    var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    if (conn && (conn.saveData || conn.effectiveType === 'slow-2g' || conn.effectiveType === '2g')) {
+      return false;
+    }
+    return true;
+  }
 
   function normalizePath(href) {
     if (!href || href.charAt(0) === '#') return null;
@@ -41,7 +49,7 @@
   }
 
   function prefetchPath(path) {
-    if (shouldSkip(path) || prefetched.has(path)) return;
+    if (!canPrefetch() || shouldSkip(path) || prefetched.has(path)) return;
     prefetched.add(path);
     var link = document.createElement('link');
     link.rel = 'prefetch';
@@ -108,19 +116,6 @@
     scope.querySelectorAll(INTENT_SELECTORS).forEach(bindIntent);
   }
 
-  function prefetchHighPriority() {
-    document.querySelectorAll('a[data-tv-prefetch="high"][href]').forEach(function (link) {
-      prefetchPath(normalizePath(link.getAttribute('href')));
-    });
-  }
-
-  function prefetchIdleHubs() {
-    if (window.location.pathname.indexOf('/cerca') === 0) return;
-    ['/varieta/', '/italia/', '/impara/', '/guide/'].forEach(function (path) {
-      prefetchPath(path);
-    });
-  }
-
   function onCatalogHover(event) {
     var link = event.target.closest('.tv-catalog-results a[href]');
     if (!link) return;
@@ -128,20 +123,13 @@
   }
 
   function init() {
+    if (!canPrefetch()) return;
     bindIntentLinks();
-    prefetchHighPriority();
 
     var catalog = document.querySelector('.tv-catalog-results');
     if (catalog) {
       catalog.addEventListener('mouseover', onCatalogHover, { passive: true });
     }
-
-    var idle = window.requestIdleCallback || function (cb) {
-      window.setTimeout(cb, 1200);
-    };
-    idle(function () {
-      prefetchIdleHubs();
-    });
   }
 
   if (document.readyState === 'loading') {

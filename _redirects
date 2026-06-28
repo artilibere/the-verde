@@ -2,3 +2,5 @@
 /guide/:slug  /guide/:slug/  301
 /impara/:slug  /impara/:slug/  301
 /glossario/:slug  /glossario/:slug/  301
+/percorsi/:slug  /gioca/percorsi/:slug/  301
+/percorsi/  /gioca/percorsi/  301

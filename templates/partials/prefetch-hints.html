@@ -1,11 +1,4 @@
-{# Early prefetch for predictable next pages (path nav + explore_next). #}
-{% if meta is defined %}
-{% if meta.path_nav is defined and meta.path_nav.next %}
+{# Single prefetch: next step in path nav only (explore_next handled on intent). #}
+{% if meta is defined and meta.path_nav is defined and meta.path_nav.next %}
 <link rel="prefetch" href="{{ meta.path_nav.next.url }}" as="document">
-{% endif %}
-{% if meta.explore_next %}
-{% for link in meta.explore_next[:2] %}
-<link rel="prefetch" href="{{ link.url }}" as="document">
-{% endfor %}
-{% endif %}
 {% endif %}

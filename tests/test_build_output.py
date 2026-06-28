@@ -150,20 +150,51 @@ def test_variety_loads_core_and_variety_bundle(built_dist):
     assert any("variety-page." in src for src in scripts)
 
 
-def test_variety_prefetches_path_nav_and_explore_next(built_dist):
+def test_variety_prefetches_path_nav_next(built_dist):
     page = _soup(built_dist / "varieta" / "sencha" / "index.html")
     prefetches = page.find_all("link", rel="prefetch")
     hrefs = {link.get("href") for link in prefetches}
-    assert "/varieta/gyokuro/" in hrefs
-    assert len(hrefs) >= 2
+    assert hrefs == {"/varieta/shincha/"}
     assert page.find("a", attrs={"data-tv-prefetch": "high"}) is not None
 
 
-def test_core_bundle_includes_prefetch_script(built_dist):
+def test_async_stylesheet_with_critical_inline(built_dist):
+    page = _soup(built_dist / "index.html")
+    head = page.find("head")
+    assert head.find("style") is not None
+    async_css = head.find("link", rel="preload", attrs={"as": "style"})
+    assert async_css is not None
+    assert async_css.get("onload")
+    blocking = [
+        link
+        for link in head.find_all("link", rel="stylesheet")
+        if link.find_parent("noscript") is None
+    ]
+    assert blocking == []
+    assert head.find("noscript").find("link", rel="stylesheet") is not None
+
+
+def test_core_bundle_is_nav_only(built_dist):
     core_files = list((built_dist / "assets" / "js").glob("core.*.js"))
     assert core_files, "core bundle missing"
     text = core_files[0].read_text(encoding="utf-8")
-    assert "prefetchPath" in text or "rel=prefetch" in text or 'rel="prefetch"' in text
+    assert "tv-header__menu-btn" in text or "tv-header__nav--open" in text
+    assert "prefetchPath" not in text
+    assert "tv_internal_link" not in text
+
+
+def test_deferred_bundle_has_prefetch_and_tracking(built_dist):
+    deferred_files = list((built_dist / "assets" / "js").glob("deferred.*.js"))
+    assert deferred_files, "deferred bundle missing"
+    text = deferred_files[0].read_text(encoding="utf-8")
+    assert "prefetchPath" in text or 'rel="prefetch"' in text
+    assert "tv_internal_link" in text
+
+
+def test_deferred_loader_in_base(built_dist):
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    assert "tv-deferred-js" in html
+    assert "requestIdleCallback" in html or "setTimeout(cb, 1)" in html
 
 
 def test_bottom_nav_marks_prefetch_high(built_dist):
@@ -173,8 +204,9 @@ def test_bottom_nav_marks_prefetch_high(built_dist):
     assert nav.find("a", href="/impara/", attrs={"data-tv-prefetch": "high"}) is not None
 
     html = (built_dist / "index.html").read_text(encoding="utf-8")
-    assert "window.addEventListener('load'" in html
-    assert "googletagmanager.com/gtm.js" in html
+    assert "loadGtm" in html or "googletagmanager.com/gtm.js" in html
+    assert "setTimeout(loadGtm" in html
+    assert html.index("<meta charset") < html.index("loadGtm")
     assert 'rel="preconnect" href="https://www.googletagmanager.com"' not in html
 
 

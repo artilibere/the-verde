@@ -36,6 +36,7 @@ class TemplateRenderer:
         self._og_image = ""
         self._social: dict = {}
         self._gtm_id = ""
+        self._critical_css = ""
 
     def configure_site(
         self,
@@ -47,6 +48,7 @@ class TemplateRenderer:
         css_url: str,
         js_urls: dict[str, str],
         gtm_id: str = "",
+        critical_css: str = "",
     ) -> None:
         self._hreflang = hreflang
         self._locale = locale
@@ -55,6 +57,8 @@ class TemplateRenderer:
         self._gtm_id = gtm_id
         self.css_url = css_url
         self.js_urls = js_urls
+        self._critical_css = critical_css
+        self.env.globals["critical_css"] = lambda: self._critical_css
 
     def render(self, template: str, **ctx) -> str:
         ctx.setdefault("site_name", self.site_name)

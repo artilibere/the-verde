@@ -82,6 +82,7 @@ class SiteBuilder:
         self.sitemap_urls: list[dict] = []
         self.css_url = "/assets/css/site.css"
         self.js_urls: dict[str, str] = {}
+        self.critical_css = ""
         self._docs_by_path: dict[Path, dict] = {}
 
     def write_page(self, out_dir: Path, html: str) -> None:
@@ -518,9 +519,13 @@ class SiteBuilder:
 
     def prepare_assets(self, rebuild: bool = True) -> None:
         if rebuild:
-            self.css_url, self.js_urls = build_assets(self.assets_dir, self.out_dir)
+            self.css_url, self.js_urls, self.critical_css = build_assets(self.assets_dir, self.out_dir)
             sig = asset_source_signature(self.assets_dir)
-            save_asset_manifest(ASSET_MANIFEST, sig, self.css_url, self.js_urls)
+            save_asset_manifest(ASSET_MANIFEST, sig, self.css_url, self.js_urls, self.critical_css)
+        elif not self.critical_css:
+            from asset_pipeline import build_critical_css
+
+            self.critical_css = build_critical_css(self.assets_dir)
         self.renderer.configure_site(
             hreflang=self.hreflang,
             locale=self.locale,
@@ -529,6 +534,7 @@ class SiteBuilder:
             css_url=self.css_url,
             js_urls=self.js_urls,
             gtm_id=self.gtm_id,
+            critical_css=self.critical_css,
         )
         config_out = self.out_dir / "assets" / "js" / "config"
         config_out.mkdir(parents=True, exist_ok=True)
@@ -602,6 +608,7 @@ class SiteBuilder:
         if assets_unchanged and cached:
             self.css_url = cached["css_url"]
             self.js_urls = cached["js_urls"]
+            self.critical_css = cached.get("critical_css", "")
             self.prepare_assets(rebuild=False)
         else:
             self.prepare_assets(rebuild=True)

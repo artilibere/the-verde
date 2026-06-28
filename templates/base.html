@@ -1,22 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  {% if gtm_id %}
-  <script>
-  window.addEventListener('load', function () {
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','{{ gtm_id }}');
-  });
-  </script>
-  {% endif %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   {% set page_title = seo_title if site_name in seo_title else seo_title ~ ' | ' ~ site_name %}
@@ -61,9 +48,11 @@
   <meta name="twitter:image" content="{{ og_image }}">
   <meta name="twitter:image:alt" content="{{ og_image_alt | default(site_name) }}">
   {% endif %}
-  <link rel="preload" href="{{ asset_css() }}" as="style" fetchpriority="high">
-  <link rel="stylesheet" href="{{ asset_css() }}" fetchpriority="high">
-  <link rel="preload" href="{{ asset_js('core') }}" as="script">
+  {% if critical_css() %}
+  <style>{{ critical_css() | safe }}</style>
+  {% endif %}
+  <link rel="preload" href="{{ asset_css() }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ asset_css() }}"></noscript>
   {% include "partials/prefetch-hints.html" %}
   {% for block in schema_blocks %}
   <script type="application/ld+json">{{ block | safe }}</script>
@@ -131,6 +120,43 @@
     </div>
   </footer>
   <script src="{{ asset_js('core') }}" defer></script>
+  <script>
+  (function () {
+    function loadDeferred() {
+      if (document.getElementById('tv-deferred-js')) return;
+      var s = document.createElement('script');
+      s.id = 'tv-deferred-js';
+      s.src = '{{ asset_js('deferred') }}';
+      s.defer = true;
+      document.body.appendChild(s);
+    }
+    var schedule = window.requestIdleCallback || function (cb) { window.setTimeout(cb, 1); };
+    if (document.readyState === 'complete') schedule(loadDeferred);
+    else window.addEventListener('load', function () { schedule(loadDeferred); });
+  })();
+  </script>
+  {% if gtm_id %}
+  <script>
+  (function () {
+    var loaded = false;
+    function loadGtm() {
+      if (loaded) return;
+      loaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','{{ gtm_id }}');
+    }
+    ['scroll', 'click', 'keydown', 'touchstart', 'pointerdown'].forEach(function (evt) {
+      window.addEventListener(evt, loadGtm, { once: true, passive: true });
+    });
+    window.addEventListener('load', function () {
+      window.setTimeout(loadGtm, 5000);
+    });
+  })();
+  </script>
+  {% endif %}
   {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -8,10 +8,12 @@ import re
 from pathlib import Path
 
 CSS_BUNDLE = ("tokens.css", "base.css", "components.css")
+CRITICAL_CSS_BUNDLE = ("tokens.css", "critical-shell.css")
 
 # Bundled to cut HTTP requests on hot pages (order preserved).
 JS_PAGE_BUNDLES: dict[str, tuple[str, ...]] = {
-    "core": ("nav", "prefetch", "level-toggle", "explore-tracking"),
+    "core": ("nav", "level-toggle"),
+    "deferred": ("prefetch", "explore-tracking"),
     "article-page": ("share",),
     "diario-page": ("supabase-config", "diario", "badges"),
     "percorsi": ("badges", "paths"),
@@ -32,10 +34,18 @@ def short_hash(content: bytes) -> str:
     return hashlib.sha256(content).hexdigest()[:10]
 
 
+def build_critical_css(assets_dir: Path) -> str:
+    bundle = "\n".join(
+        (assets_dir / "css" / name).read_text(encoding="utf-8") for name in CRITICAL_CSS_BUNDLE
+    )
+    return minify_css(bundle)
+
+
 def asset_source_signature(assets_dir: Path) -> str:
     """Hash of CSS bundle inputs + JS sources (excluding skipped)."""
     chunks: list[bytes] = []
-    for name in CSS_BUNDLE:
+    css_names = list(dict.fromkeys(CSS_BUNDLE + CRITICAL_CSS_BUNDLE))
+    for name in css_names:
         chunks.append((assets_dir / "css" / name).read_bytes())
     bundled = {stem for stems in JS_PAGE_BUNDLES.values() for stem in stems}
     for js_path in sorted((assets_dir / "js").glob("*.js")):
@@ -115,8 +125,8 @@ def _write_hashed_file(directory: Path, base_name: str, ext: str, content: str) 
     return f"/assets/{directory.name}/{out_name}"
 
 
-def build_assets(assets_dir: Path, out_dir: Path) -> tuple[str, dict[str, str]]:
-    """Write hashed CSS/JS to out_dir/assets. Returns (css_url, js_url_map)."""
+def build_assets(assets_dir: Path, out_dir: Path) -> tuple[str, dict[str, str], str]:
+    """Write hashed CSS/JS to out_dir/assets. Returns (css_url, js_url_map, critical_css)."""
     css_dir = out_dir / "assets" / "css"
     js_dir = out_dir / "assets" / "js"
     css_dir.mkdir(parents=True, exist_ok=True)
@@ -124,6 +134,7 @@ def build_assets(assets_dir: Path, out_dir: Path) -> tuple[str, dict[str, str]]:
 
     bundle = "\n".join((assets_dir / "css" / name).read_text(encoding="utf-8") for name in CSS_BUNDLE)
     css_url = _write_hashed_file(css_dir, "site", ".css", minify_css(bundle))
+    critical_css = build_critical_css(assets_dir)
 
     bundled_stems = {stem for stems in JS_PAGE_BUNDLES.values() for stem in stems}
     js_urls: dict[str, str] = {}
@@ -141,13 +152,21 @@ def build_assets(assets_dir: Path, out_dir: Path) -> tuple[str, dict[str, str]]:
         minified = minify_js(js_path.read_text(encoding="utf-8"))
         js_urls[stem] = _write_hashed_file(js_dir, stem, ".js", minified)
 
-    return css_url, js_urls
+    return css_url, js_urls, critical_css
 
 
-def save_asset_manifest(cache_path: Path, signature: str, css_url: str, js_urls: dict[str, str]) -> None:
+def save_asset_manifest(
+    cache_path: Path,
+    signature: str,
+    css_url: str,
+    js_urls: dict[str, str],
+    critical_css: str = "",
+) -> None:
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     cache_path.write_text(
-        dumps_compact({"signature": signature, "css_url": css_url, "js_urls": js_urls}),
+        dumps_compact(
+            {"signature": signature, "css_url": css_url, "js_urls": js_urls, "critical_css": critical_css}
+        ),
         encoding="utf-8",
     )
 
