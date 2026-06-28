@@ -200,6 +200,7 @@ def test_critical_css_covers_feed_and_cards(built_dist):
     assert ".tv-feed{" in style.replace(" ", "") or ".tv-feed {" in style
     assert ".tv-card{" in style.replace(" ", "") or ".tv-card {" in style
     assert ".tv-btn--filled" in style
+    assert "content-visibility:auto" in style.replace(" ", "") or "content-visibility: auto" in style
     page = _soup(built_dist / "index.html")
     head = page.find("head")
     assert head.find("style") is not None
@@ -253,6 +254,13 @@ def test_bottom_nav_marks_prefetch_high(built_dist):
     assert "setTimeout(loadGtm" not in html
     assert html.index("<meta charset") < html.index("loadGtm")
     assert 'rel="preconnect" href="https://www.googletagmanager.com"' not in html
+
+
+def test_dist_includes_headers_and_redirects(built_dist):
+    assert (built_dist / "_headers").is_file()
+    assert (built_dist / "_redirects").is_file()
+    headers = (built_dist / "_headers").read_text(encoding="utf-8")
+    assert headers.index("/assets/*") > headers.index("/*")
 
 
 def test_icons_inlined_without_external_sprite_request(built_dist):

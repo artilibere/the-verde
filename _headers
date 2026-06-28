@@ -1,14 +1,43 @@
-# Hashed static assets — long cache, safe with fingerprinted filenames
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
+# Security headers (all routes). Cache-Control is set per path below; last matching rule wins.
+/*
+  Content-Language: it
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
 
-# JSON config for client-side runtime
-/assets/js/config/*
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+# HTML: revalidate quickly, serve stale while updating
+/
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
 
-# Pagefind search assets (deploy only)
-/pagefind/*
-  Cache-Control: public, max-age=31536000, immutable
+/varieta/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/impara/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/italia/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/guide/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/glossario/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/gioca/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/diario/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/cerca/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/privacy/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+
+/termini/*
+  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
 
 /feed.xml
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
@@ -44,13 +73,12 @@
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
   Content-Type: image/png
 
-# HTML: revalidate quickly, serve stale while updating
-/
-  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
+# Hashed static assets — must follow HTML rules so Cache-Control is not overwritten
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
 
-/*
-  Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400
-  Content-Language: it
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  Referrer-Policy: strict-origin-when-cross-origin
+/assets/js/config/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/pagefind/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -65,6 +65,11 @@
   box-shadow: var(--md-sys-elevation-1);
 }
 
+.tv-feed .tv-card:not(.tv-card--hero-entry) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 12rem;
+}
+
 .tv-card__body {
   padding: var(--tv-spacing-2) var(--tv-spacing-3) var(--tv-spacing-3);
   font: var(--md-sys-typescale-body-large);
