@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if critical_css() %}
+  <style>{{ critical_css() | safe }}</style>
+  {% endif %}
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -48,15 +51,9 @@
   <meta name="twitter:image" content="{{ og_image }}">
   <meta name="twitter:image:alt" content="{{ og_image_alt | default(site_name) }}">
   {% endif %}
-  {% if critical_css() %}
-  <style>{{ critical_css() | safe }}</style>
-  {% endif %}
   <link rel="preload" href="{{ asset_css() }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ asset_css() }}"></noscript>
   {% include "partials/prefetch-hints.html" %}
-  {% for block in schema_blocks %}
-  <script type="application/ld+json">{{ block | safe }}</script>
-  {% endfor %}
   {% block head_extra %}{% endblock %}
 </head>
 <body class="tv-page tv-page--{{ page_type | default('default') }}{% if page_type not in ('legal', 'search') %} tv-page--has-bottom-nav{% endif %}{% if meta is defined and meta.path_nav %} tv-page--has-path-nav{% endif %}">
@@ -67,7 +64,6 @@
   <!-- End Google Tag Manager (noscript) -->
   {% endif %}
   <a class="tv-skip-link" href="#main">Vai al contenuto</a>
-  {% if icon_sprite %}<div class="tv-icon-sprite" hidden aria-hidden="true">{{ icon_sprite | safe }}</div>{% endif %}
   <button type="button" class="tv-nav-scrim" hidden aria-label="Chiudi menu"></button>
   <header class="tv-header" role="banner">
     <div class="tv-header__inner">
@@ -85,6 +81,9 @@
     </div>
   </header>
   <main id="main" class="tv-main tv-main--{{ page_type | default('default') }}">{% block content %}{% endblock %}</main>
+  {% for block in schema_blocks %}
+  <script type="application/ld+json">{{ block | safe }}</script>
+  {% endfor %}
   {% if page_type not in ('legal', 'search') %}
   {% set impara_active = page_type in ('glossary', 'controversy') or (page_type == 'hub' and seo_url is defined and seo_url.startswith('/impara')) or (page_type == 'article' and seo_url is defined and seo_url.startswith('/impara')) %}
   {% set italia_active = page_type == 'hub' and seo_url is defined and seo_url.startswith('/italia') %}
@@ -119,6 +118,7 @@
       <p class="tv-footer__copy">&copy; {{ year }} The Verde. Solo <em>Camellia sinensis</em>.</p>
     </div>
   </footer>
+  {% if icon_sprite %}<div class="tv-icon-sprite" hidden aria-hidden="true">{{ icon_sprite | safe }}</div>{% endif %}
   <script src="{{ asset_js('core') }}" defer></script>
   <script>
   (function () {

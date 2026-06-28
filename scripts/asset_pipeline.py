@@ -8,20 +8,20 @@ import re
 from pathlib import Path
 
 CSS_BUNDLE = ("tokens.css", "base.css", "components.css")
-CRITICAL_CSS_BUNDLE = ("tokens.css", "critical-shell.css")
+CRITICAL_CSS_BUNDLE = ("critical-tokens.css", "critical-shell.css", "critical-content.css")
 
 # Bundled to cut HTTP requests on hot pages (order preserved).
 JS_PAGE_BUNDLES: dict[str, tuple[str, ...]] = {
-    "core": ("nav", "level-toggle"),
+    "core": ("nav",),
     "deferred": ("prefetch", "explore-tracking"),
-    "article-page": ("share",),
+    "article-page": ("level-toggle", "share"),
     "diario-page": ("supabase-config", "diario", "badges"),
     "percorsi": ("badges", "paths"),
     "variety-page": ("scroll-spy", "share"),
     "controversy-page": ("poll", "share"),
     "home-page": ("share",),
     "glossary-page": ("share",),
-    "hub-page": ("share",),
+    "hub-page": ("level-toggle", "share"),
     "catalog-page": ("share",),
     "quiz-page": ("quiz", "share"),
 }

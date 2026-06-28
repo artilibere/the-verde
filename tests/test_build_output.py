@@ -158,7 +158,31 @@ def test_variety_prefetches_path_nav_next(built_dist):
     assert page.find("a", attrs={"data-tv-prefetch": "high"}) is not None
 
 
-def test_async_stylesheet_with_critical_inline(built_dist):
+def test_critical_css_before_title(built_dist):
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    assert html.index("<style>") < html.index("<title>")
+
+
+def test_home_hero_title_before_icon(built_dist):
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    hero = html.split('id="hero"')[1].split("</article>")[0]
+    assert hero.index("hero-title") < hero.index("tv-icon-leaf")
+
+
+def test_icon_sprite_before_scripts(built_dist):
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    sprite_idx = html.index("tv-icon-sprite")
+    assert sprite_idx > html.index("</main>")
+    assert sprite_idx < html.index("/assets/js/core.")
+
+
+def test_critical_css_covers_feed_and_cards(built_dist):
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    style = html.split("<style>")[1].split("</style>")[0]
+    assert len(style) < 7200
+    assert ".tv-feed{" in style.replace(" ", "") or ".tv-feed {" in style
+    assert ".tv-card{" in style.replace(" ", "") or ".tv-card {" in style
+    assert ".tv-btn--filled" in style
     page = _soup(built_dist / "index.html")
     head = page.find("head")
     assert head.find("style") is not None
@@ -181,6 +205,18 @@ def test_core_bundle_is_nav_only(built_dist):
     assert "tv-header__menu-btn" in text or "tv-header__nav--open" in text
     assert "prefetchPath" not in text
     assert "tv_internal_link" not in text
+    assert "data-level-toggle" not in text
+
+
+def test_json_ld_after_main(built_dist):
+    page = _soup(built_dist / "index.html")
+    main = page.find("main", id="main")
+    scripts = page.find_all("script", type="application/ld+json")
+    assert main is not None
+    assert scripts
+    assert scripts[0].sourceline is None or main.sourceline is None or scripts[0].sourceline > main.sourceline
+    html = (built_dist / "index.html").read_text(encoding="utf-8")
+    assert html.index("</main>") < html.index('application/ld+json')
 
 
 def test_deferred_bundle_has_prefetch_and_tracking(built_dist):

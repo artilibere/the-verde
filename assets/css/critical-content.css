@@ -1,0 +1,129 @@
+/* Card feed + hero — must match components.css to prevent CLS when async CSS loads. */
+
+.tv-card__title {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  font: var(--md-sys-typescale-title-large);
+  color: var(--md-sys-color-primary);
+}
+
+#hero-title {
+  font: var(--md-sys-typescale-title-large);
+}
+
+.tv-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--tv-spacing-2);
+  padding: var(--tv-spacing-3) var(--tv-spacing-3) 0;
+}
+
+.tv-card__header .tv-card__icon {
+  order: -1;
+  flex-shrink: 0;
+  color: var(--md-sys-color-primary);
+}
+
+.tv-main--home,
+.tv-main--variety,
+.tv-main--catalog,
+.tv-main--hub,
+.tv-main--glossary,
+.tv-main--search {
+  padding-top: var(--tv-spacing-2);
+}
+
+@media (max-width: 899px) {
+  .tv-main--home,
+  .tv-main--variety,
+  .tv-main--search {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.tv-home-feed {
+  padding-top: var(--tv-spacing-3);
+}
+
+.tv-feed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tv-feed-gap);
+  width: 100%;
+  max-width: var(--tv-feed-max-width);
+  margin: 0 auto;
+  padding: 0 var(--tv-spacing-3) var(--tv-spacing-4);
+}
+
+.tv-card {
+  background: var(--md-sys-color-surface);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-medium);
+  box-shadow: var(--md-sys-elevation-1);
+}
+
+.tv-card__body {
+  padding: var(--tv-spacing-2) var(--tv-spacing-3) var(--tv-spacing-3);
+  font: var(--md-sys-typescale-body-large);
+}
+
+.tv-card__body p {
+  margin: 0 0 var(--tv-spacing-2);
+}
+
+.tv-card__body p:last-child {
+  margin-bottom: 0;
+}
+
+.tv-hero__eyebrow {
+  margin: 0 0 var(--tv-spacing-2);
+  font: var(--md-sys-typescale-label-large);
+  color: var(--md-sys-color-on-surface-variant);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--md-sys-shape-corner-full);
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.tv-btn--filled {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.tv-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  color: var(--md-sys-color-primary);
+}
+
+.tv-diario-cta,
+.tv-invite,
+.tv-card--explore {
+  max-width: var(--tv-feed-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--tv-spacing-3);
+  padding-right: var(--tv-spacing-3);
+}
+
+.tv-share__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tv-spacing-2);
+}

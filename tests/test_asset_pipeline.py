@@ -13,16 +13,21 @@ def test_minify_js_strips_line_comments_outside_strings():
     assert "const x = 1;" in out
 
 
-def test_core_bundle_includes_nav_and_level_toggle():
-    assert JS_PAGE_BUNDLES["core"] == ("nav", "level-toggle")
+def test_core_bundle_is_nav_only():
+    assert JS_PAGE_BUNDLES["core"] == ("nav",)
 
 
 def test_deferred_bundle_includes_prefetch_and_tracking():
     assert JS_PAGE_BUNDLES["deferred"] == ("prefetch", "explore-tracking")
 
 
+def test_article_and_hub_bundles_include_level_toggle():
+    assert JS_PAGE_BUNDLES["article-page"] == ("level-toggle", "share")
+    assert JS_PAGE_BUNDLES["hub-page"] == ("level-toggle", "share")
+
+
 def test_article_page_bundle_includes_share():
-    assert JS_PAGE_BUNDLES["article-page"] == ("share",)
+    assert "share" in JS_PAGE_BUNDLES["article-page"]
 
 
 def test_minify_html_strips_comments():
@@ -42,3 +47,4 @@ def test_referral_page_bundles_include_share():
     assert JS_PAGE_BUNDLES["home-page"] == ("share",)
     assert JS_PAGE_BUNDLES["quiz-page"] == ("quiz", "share")
     assert JS_PAGE_BUNDLES["catalog-page"] == ("share",)
+    assert "share" in JS_PAGE_BUNDLES["hub-page"]
