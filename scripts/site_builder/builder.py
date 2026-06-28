@@ -550,9 +550,16 @@ class SiteBuilder:
             for icon in icons_src.iterdir():
                 if icon.is_file():
                     shutil.copy(icon, icons_out / icon.name)
-            favicon = icons_src / "favicon.svg"
-            if favicon.is_file():
-                shutil.copy(favicon, self.out_dir / "favicon.svg")
+            for name in (
+                "favicon.svg",
+                "favicon.ico",
+                "favicon-16x16.png",
+                "favicon-32x32.png",
+                "apple-touch-icon.png",
+            ):
+                root_icon = icons_src / name
+                if root_icon.is_file():
+                    shutil.copy(root_icon, self.out_dir / name)
         for name in ("_headers", "_redirects"):
             src = ROOT / name
             if src.exists():

@@ -28,6 +28,22 @@
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
   Content-Type: image/svg+xml
 
+/favicon.ico
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Content-Type: image/x-icon
+
+/favicon-16x16.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Content-Type: image/png
+
+/favicon-32x32.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Content-Type: image/png
+
+/apple-touch-icon.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Content-Type: image/png
+
 # HTML: revalidate quickly, serve stale while updating
 /
   Cache-Control: public, max-age=0, must-revalidate, stale-while-revalidate=86400

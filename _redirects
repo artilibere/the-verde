@@ -2,4 +2,3 @@
 /guide/:slug  /guide/:slug/  301
 /impara/:slug  /impara/:slug/  301
 /glossario/:slug  /glossario/:slug/  301
-/favicon.ico  /favicon.svg  301
