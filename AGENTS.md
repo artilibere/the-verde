@@ -1,4 +1,4 @@
-<!-- BEGIN hal-contract: generato da a-agentzero 1.17.1 · tpl 2 — NON EDITARE TRA I FENCE -->
+<!-- BEGIN hal-contract: generato da a-agentzero 1.17.2 · tpl 2 — NON EDITARE TRA I FENCE -->
 ## HAL — contratto consumer
 
 - HAL canonico: `/var/www/hal_gateway` (repo `hal_gateway`). **Da questo progetto**: mai modificare
